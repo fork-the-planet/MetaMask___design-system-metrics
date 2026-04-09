@@ -14,9 +14,6 @@
     "sync-config": "node scripts/sync-config.js",
     "sync-config:dry-run": "node scripts/sync-config.js --dry-run",
     "sync-config:skip-update": "node scripts/sync-config.js --skip-update",
-    "fetch-migration-targets": "node scripts/fetch-migration-list.js",
-    "slack-report": "node scripts/generate-slack-report.js",
-    "extract-json": "node scripts/xlsx-to-json.js",
     "update-timeline": "node scripts/update-timeline.js",
     "validate-metrics": "node scripts/validate-metrics-consistency.js",
     "collect-history": "node scripts/collect-historical-metrics.js",
@@ -32,7 +29,6 @@
     "brace-expansion": "^5.0.5",
     "chalk": "^4.1.2",
     "commander": "^12.1.0",
-    "exceljs": "^4.4.0",
     "glob": "^11.0.0",
     "minimatch": "^10.2.4"
   },

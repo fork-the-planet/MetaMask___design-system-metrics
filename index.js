@@ -6,7 +6,6 @@ const babelParser = require("@babel/parser");
 const traverse = require("@babel/traverse").default;
 const { program } = require("commander");
 const chalk = require("chalk");
-const ExcelJS = require("exceljs");
 const CodeOwnersParser = require("./scripts/codeowners-parser");
 const { minimatch } = require("minimatch");
 
@@ -62,7 +61,6 @@ const validateConfig = (cfg) => {
 
 /**
  * Count MMDS components available in the design system package
- * Includes components in temp-components folders
  */
 const countAvailableMMDSComponents = (currentComponents) => {
   if (!currentComponents) return 0;
@@ -70,7 +68,7 @@ const countAvailableMMDSComponents = (currentComponents) => {
 };
 
 /**
- * Get filtered list of MMDS components (excluding prop variants)
+ * Get filtered list of MMDS components
  */
 const getMMDSComponentsList = (currentComponents) => {
   if (!currentComponents) return [];
@@ -80,16 +78,14 @@ const getMMDSComponentsList = (currentComponents) => {
 /**
  * Find new MMDS components by comparing with previous summary
  */
-const findNewComponents = async (outputFile, currentComponents) => {
+const findNewComponents = async (outputBasePath, currentComponents) => {
   try {
-    // Get previous week's summary
-    const outputDir = path.dirname(outputFile);
+    const outputDir = path.dirname(outputBasePath);
     const files = await fs.readdir(outputDir);
+    const prefix = path.basename(outputBasePath).split("-")[0];
     const summaryFiles = files
       .filter(
-        (f) =>
-          f.includes("-summary.json") &&
-          f.startsWith(path.basename(outputFile).split("-")[0]),
+        (f) => f.includes("-summary.json") && f.startsWith(prefix),
       )
       .sort()
       .reverse();
@@ -109,7 +105,6 @@ const findNewComponents = async (outputFile, currentComponents) => {
       }
     }
   } catch (err) {
-    // If we can't find previous summary, just return empty array
     console.log(
       chalk.yellow(
         `Could not find previous summary to compare: ${err.message}`,
@@ -391,10 +386,11 @@ const main = async () => {
   // Add date to the output filename (from env var or today)
   const today =
     process.env.METRICS_DATE || new Date().toISOString().split("T")[0]; // YYYY-MM-DD format
-  const ext = path.extname(baseOutputFile);
-  const basename = path.basename(baseOutputFile, ext);
-  const dirname = path.dirname(baseOutputFile);
-  const outputFile = path.join(dirname, `${basename}-${today}${ext}`);
+
+  // Derive a base output path (no extension) for JSON outputs
+  const outputDir = path.dirname(baseOutputFile);
+  const baseName = path.basename(baseOutputFile, path.extname(baseOutputFile));
+  const outputBasePath = path.join(outputDir, `${baseName}-${today}`);
 
   const currentComponentsSet = new Set(currentComponents);
 
@@ -507,20 +503,7 @@ const main = async () => {
       }
     });
 
-    // Generate XLSX file with multiple sheets using ExcelJS
-    const workbook = new ExcelJS.Workbook();
-
-    // Sheet 1: MMDS vs Legacy (comparison of MMDS and legacy component usage)
-    const migrationSheet = workbook.addWorksheet("MMDS vs Legacy");
-    migrationSheet.addRow([
-      "Deprecated Component",
-      "Source Paths",
-      "MMDS Component",
-      "Deprecated Instances",
-      "MMDS Instances",
-      "Migrated %",
-    ]);
-
+    // Filter to components that have an MMDS replacement
     const componentsWithMMDSReplacement = Array.from(
       deprecatedMetrics.entries(),
     ).filter(
@@ -540,88 +523,33 @@ const main = async () => {
       groupedByMMDS.get(mmdsComp).push([componentName, metrics]);
     });
 
+    // Compute totals for migration summary
     let totalDeprecated = 0;
     let totalMMDS = 0;
 
-    // Process each MMDS component group
-    for (const [mmdsComp, deprecatedComponents] of groupedByMMDS.entries()) {
+    for (const [mmdsComp, deprecatedGroup] of groupedByMMDS.entries()) {
       const mmdsCount = currentMetrics.get(mmdsComp)?.count || 0;
-
-      if (deprecatedComponents.length === 1) {
-        // Single component mapping - show normally
-        const [componentName, metrics] = deprecatedComponents[0];
-        const deprecatedCount = metrics.totalCount;
-        const total = deprecatedCount + mmdsCount;
-        const percentage = total > 0 ? (mmdsCount / total) * 100 : 0;
-        const sourcePaths =
-          config.projects[projectName].deprecatedComponents[
-            componentName
-          ].paths.join(", ");
-
-        totalDeprecated += deprecatedCount;
-        totalMMDS += mmdsCount;
-
-        migrationSheet.addRow([
-          componentName,
-          sourcePaths,
-          mmdsComp,
-          deprecatedCount,
-          mmdsCount,
-          `${percentage.toFixed(2)}%`,
-        ]);
-      } else {
-        // Multiple components mapping to same MMDS component
-        let groupDeprecatedTotal = 0;
-
-        // Add individual rows (without MMDS count and percentage)
-        deprecatedComponents.forEach(([componentName, metrics]) => {
-          const deprecatedCount = metrics.totalCount;
-          const sourcePaths =
-            config.projects[projectName].deprecatedComponents[
-              componentName
-            ].paths.join(", ");
-
-          groupDeprecatedTotal += deprecatedCount;
-
-          migrationSheet.addRow([
-            componentName,
-            sourcePaths,
-            mmdsComp,
-            deprecatedCount,
-            "-",
-            "-",
-          ]);
-        });
-
-        // Add summary row for the group
-        const total = groupDeprecatedTotal + mmdsCount;
-        const percentage = total > 0 ? (mmdsCount / total) * 100 : 0;
-
-        migrationSheet.addRow([
-          `→ ${mmdsComp} Total`,
-          "",
-          mmdsComp,
-          groupDeprecatedTotal,
-          mmdsCount,
-          `${percentage.toFixed(2)}%`,
-        ]);
-
-        totalDeprecated += groupDeprecatedTotal;
-        totalMMDS += mmdsCount;
-      }
+      totalMMDS += mmdsCount;
+      deprecatedGroup.forEach(([, metrics]) => {
+        totalDeprecated += metrics.totalCount;
+      });
     }
 
-    // Add totals row
-    const totalAll = totalDeprecated + totalMMDS;
-    const totalPercentage = totalAll > 0 ? (totalMMDS / totalAll) * 100 : 0;
-    migrationSheet.addRow([
-      "TOTAL",
-      "",
-      "",
-      totalDeprecated,
-      totalMMDS,
-      `${totalPercentage.toFixed(2)}%`,
-    ]);
+    // Total MMDS usage across all tracked components
+    let totalMMDSUsage = 0;
+    currentComponentsSet.forEach((componentName) => {
+      const metrics = currentMetrics.get(componentName);
+      if (metrics) totalMMDSUsage += metrics.count;
+    });
+
+    const componentsWithNoReplacement = Array.from(
+      deprecatedMetrics.entries(),
+    ).filter(([, metrics]) => !metrics.replacement);
+
+    let totalNoReplacement = 0;
+    componentsWithNoReplacement.forEach(([, metrics]) => {
+      totalNoReplacement += metrics.totalCount;
+    });
 
     console.log(
       chalk.blue(
@@ -630,122 +558,22 @@ const main = async () => {
     );
     console.log(
       chalk.blue(
-        `Total: ${totalMMDS} MMDS / ${totalDeprecated} Legacy (${totalPercentage.toFixed(2)}%)`,
+        `Total: ${totalMMDS} MMDS / ${totalDeprecated} Legacy (${totalDeprecated + totalMMDS > 0 ? ((totalMMDS / (totalDeprecated + totalMMDS)) * 100).toFixed(2) : "0.00"}%)`,
       ),
     );
-
-    // Sheet 2: Legacy Component Library Usage (detailed breakdown of legacy component usage)
-    const pathDetailSheet = workbook.addWorksheet(
-      "Legacy Component Library Usage",
-    );
-    pathDetailSheet.addRow([
-      "Component",
-      "Specific Path",
-      "Instances",
-      "File Paths",
-    ]);
-
-    deprecatedMetrics.forEach((metrics, componentName) => {
-      metrics.pathBreakdown.forEach((pathMetrics, specificPath) => {
-        pathDetailSheet.addRow([
-          componentName,
-          specificPath,
-          pathMetrics.count,
-          pathMetrics.files.join(", "),
-        ]);
-      });
-    });
-
     console.log(
-      chalk.blue(
-        `Legacy Component Library Usage: ${deprecatedMetrics.size} components with path breakdowns`,
-      ),
+      chalk.blue(`Total MMDS Usage: ${totalMMDSUsage} instances`),
     );
-
-    // Sheet 3: MMDS Usage
-    const mmdsSheet = workbook.addWorksheet("MMDS Usage");
-    mmdsSheet.addRow(["Component", "Instances", "File Paths"]);
-
-    // Include all MMDS components, even those with 0 instances
-    let totalMMDSUsage = 0;
-
-    currentComponentsSet.forEach((componentName) => {
-      const metrics = currentMetrics.get(componentName);
-      const count = metrics ? metrics.count : 0;
-      const files = metrics ? metrics.files.join(", ") : "";
-
-      totalMMDSUsage += count;
-
-      console.log(`${chalk.cyan(componentName)}: ${count} (MMDS)`);
-      mmdsSheet.addRow([componentName, count, files]);
-    });
-
-    // Add totals row
-    mmdsSheet.addRow(["TOTAL", totalMMDSUsage, ""]);
-
-    console.log(chalk.blue(`Total MMDS Usage: ${totalMMDSUsage} instances`));
-
-    // Sheet 4: No MMDS Replacement Yet (components without defined MMDS replacements)
-    const noReplacementSheet = workbook.addWorksheet("No MMDS Replacement Yet");
-    noReplacementSheet.addRow(["Component", "Path", "Instances", "File Paths"]);
-
-    const componentsWithNoReplacement = Array.from(
-      deprecatedMetrics.entries(),
-    ).filter(([, metrics]) => !metrics.replacement);
-
-    let totalNoReplacement = 0;
-
-    componentsWithNoReplacement.forEach(([componentName, metrics]) => {
-      const paths = deprecatedComponents[componentName].paths.join(", ");
-      totalNoReplacement += metrics.totalCount;
-
-      noReplacementSheet.addRow([
-        componentName,
-        paths,
-        metrics.totalCount,
-        metrics.files.join(", "),
-      ]);
-    });
-
-    // Add totals row
-    noReplacementSheet.addRow(["TOTAL", "", totalNoReplacement, ""]);
-
     console.log(
       chalk.blue(
         `No MMDS Replacement Yet: ${componentsWithNoReplacement.length} components`,
       ),
     );
-    console.log(
-      chalk.blue(
-        `Total No MMDS Replacement Yet Instances: ${totalNoReplacement}`,
-      ),
-    );
 
     // Create output directory if it doesn't exist
-    const outputDir = path.dirname(outputFile);
     await fs.mkdir(outputDir, { recursive: true });
 
-    // Write the XLSX file
-    await workbook.xlsx.writeFile(outputFile);
-
-    // Write summary JSON for Slack report
-    const summaryFile = outputFile.replace(".xlsx", "-summary.json");
-    const summaryTotalAll = totalDeprecated + totalMMDSUsage;
-    const summaryTotalPercentage =
-      summaryTotalAll > 0 ? (totalMMDSUsage / summaryTotalAll) * 100 : 0;
-
-    const mmdsComponentsAvailable = countAvailableMMDSComponents(
-      projectConfig.currentComponents,
-    );
-    const mmdsComponentsList = getMMDSComponentsList(
-      projectConfig.currentComponents,
-    );
-    const newComponents = await findNewComponents(
-      outputFile,
-      mmdsComponentsList,
-    );
-
-    // Build canonical machine-readable component list grouped by MMDS replacement.
+    // Build canonical machine-readable component list grouped by MMDS replacement
     const groupedComponentData = Array.from(groupedByMMDS.entries())
       .map(([mmdsComp, deprecatedGroup]) => {
         let legacyInstances = 0;
@@ -805,6 +633,23 @@ const main = async () => {
       };
     }
 
+    const mmdsComponentsAvailable = countAvailableMMDSComponents(
+      projectConfig.currentComponents,
+    );
+    const mmdsComponentsList = getMMDSComponentsList(
+      projectConfig.currentComponents,
+    );
+    const newComponents = await findNewComponents(
+      outputBasePath,
+      mmdsComponentsList,
+    );
+
+    const summaryTotalAll = totalDeprecated + totalMMDSUsage;
+    const summaryTotalPercentage =
+      summaryTotalAll > 0 ? (totalMMDSUsage / summaryTotalAll) * 100 : 0;
+
+    // Write summary JSON
+    const summaryFile = `${outputBasePath}-summary.json`;
     const summary = {
       project: projectName,
       date: today,
@@ -823,9 +668,8 @@ const main = async () => {
     };
     await fs.writeFile(summaryFile, JSON.stringify(summary, null, 2));
 
-    // Write canonical data JSON used by dashboard/timeline.
-    // This avoids reparsing XLSX and keeps all derived outputs in sync.
-    const dataFile = outputFile.replace(".xlsx", "-data.json");
+    // Write data JSON used by dashboard/timeline
+    const dataFile = `${outputBasePath}-data.json`;
     const dataSummary = {
       totalComponents: groupedByMMDS.size,
       mmdsInstances: summary.mmdsInstances,
@@ -857,10 +701,9 @@ const main = async () => {
 
     await fs.writeFile(dataFile, JSON.stringify(dataOutput, null, 2));
 
-    console.log(chalk.green(`\n✓ Metrics written to ${outputFile}`));
-    console.log(chalk.green(`✓ Summary written to ${summaryFile}`));
+    console.log(chalk.green(`\n✓ Summary written to ${summaryFile}`));
     console.log(chalk.green(`✓ Data written to ${dataFile}`));
-    console.log(chalk.green("✓ All reports generated successfully!\n"));
+    console.log(chalk.green("✓ Metrics generated successfully!\n"));
   } catch (err) {
     console.error(chalk.red(`Error: ${err.message}`));
     console.error(chalk.red(err.stack));

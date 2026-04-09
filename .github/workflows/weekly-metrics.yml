@@ -75,9 +75,6 @@ jobs:
           cp metrics/extension-untracked-${{ steps.date.outputs.date }}.json metrics/extension-untracked-latest.json
           cp metrics/mobile-untracked-${{ steps.date.outputs.date }}.json metrics/mobile-untracked-latest.json
 
-      - name: Generate Slack report
-        run: yarn slack-report --output metrics/slack-report-${{ steps.date.outputs.date }}.md
-
       - name: Copy metrics to dashboard
         run: cp metrics/*.json dashboard/public/metrics/
 
@@ -109,7 +106,6 @@ jobs:
             -m "- Updated git submodules to latest versions" \
             -m "- Regenerated component metrics for extension and mobile" \
             -m "- Updated config.json with latest component mappings" \
-            -m "- Generated weekly Slack report" \
             -m "- Updated dashboard data and rebuilt" \
             -m "" \
             -m "🤖 Automated weekly update"
