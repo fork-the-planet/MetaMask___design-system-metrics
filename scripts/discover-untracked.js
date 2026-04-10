@@ -29,7 +29,6 @@ const babelParser = require('@babel/parser');
 const traverse = require('@babel/traverse').default;
 const { program } = require('commander');
 const chalk = require('chalk');
-const ExcelJS = require('exceljs');
 const CodeOwnersParser = require('./codeowners-parser');
 
 // ─── CLI ────────────────────────────────────────────────────────────────────
@@ -636,78 +635,7 @@ async function main() {
   await fs.writeFile(outputPath, JSON.stringify(output, null, 2));
   console.log(chalk.green(`  ✓ JSON report written to ${path.relative(process.cwd(), outputPath)}`));
 
-  // Write XLSX
-  const xlsxPath = path.join(outputDir, `${options.project}-untracked-${today}.xlsx`);
-  const workbook = new ExcelJS.Workbook();
-  const headerStyle = { font: { bold: true }, fill: { type: 'pattern', pattern: 'solid', fgColor: { argb: 'FFE2E8F0' } } };
-
-  // Sheet 1: Potential MMDS Replacements
-  const replaceSheet = workbook.addWorksheet('Potential MMDS Replacements');
-  replaceSheet.addRow(['Rank', 'Component', 'Instances', 'Files', 'Source Category', 'Canonical Source', 'Best MMDS Match', 'Confidence', 'Top Teams']);
-  replaceSheet.getRow(1).eachCell(cell => { Object.assign(cell, headerStyle); });
-
-  replaceable.forEach((c, i) => {
-    const bestMatch = c.mmdsMatches[0];
-    replaceSheet.addRow([
-      i + 1,
-      c.component,
-      c.instances,
-      c.fileCount,
-      c.sourceCategory,
-      c.canonicalSource,
-      bestMatch?.component || '',
-      bestMatch?.confidence || '',
-      c.codeOwners.filter(o => o !== '@unknown').slice(0, 3).join(', '),
-    ]);
-  });
-
-  replaceSheet.columns = [
-    { width: 6 }, { width: 35 }, { width: 12 }, { width: 8 },
-    { width: 18 }, { width: 40 }, { width: 25 }, { width: 12 }, { width: 55 },
-  ];
-
-  // Sheet 2: Future DS Candidates
-  const candidateSheet = workbook.addWorksheet('Future DS Candidates');
-  candidateSheet.addRow(['Rank', 'Component', 'Instances', 'Files', 'Source Category', 'Canonical Source', 'Top Teams']);
-  candidateSheet.getRow(1).eachCell(cell => { Object.assign(cell, headerStyle); });
-
-  candidates.forEach((c, i) => {
-    candidateSheet.addRow([
-      i + 1,
-      c.component,
-      c.instances,
-      c.fileCount,
-      c.sourceCategory,
-      c.canonicalSource,
-      c.codeOwners.filter(o => o !== '@unknown').slice(0, 3).join(', '),
-    ]);
-  });
-
-  candidateSheet.columns = [
-    { width: 6 }, { width: 35 }, { width: 12 }, { width: 8 },
-    { width: 18 }, { width: 40 }, { width: 55 },
-  ];
-
-  // Sheet 3: Summary
-  const summarySheet = workbook.addWorksheet('Summary');
-  summarySheet.addRow(['Metric', 'Value']);
-  summarySheet.getRow(1).eachCell(cell => { Object.assign(cell, headerStyle); });
-  summarySheet.addRow(['Project', options.project]);
-  summarySheet.addRow(['Date', today]);
-  summarySheet.addRow(['Files Scanned', filesProcessed]);
-  summarySheet.addRow(['Total JSX Usages', allUsages.length]);
-  summarySheet.addRow(['Tracked (MMDS)', trackedMMDS]);
-  summarySheet.addRow(['Tracked (Deprecated)', trackedDeprecated]);
-  summarySheet.addRow(['Untracked', trackedUntracked]);
-  summarySheet.addRow([`Unique Untracked (≥${minInstances} uses)`, sorted.length]);
-  summarySheet.addRow(['Potential MMDS Replacements', replaceable.length]);
-  summarySheet.addRow(['Replaceable Instances', replaceableInstances]);
-  summarySheet.addRow(['Future DS Candidates', candidates.length]);
-  summarySheet.addRow(['Teams with One-offs', teams.length]);
-  summarySheet.columns = [{ width: 35 }, { width: 15 }];
-
-  await workbook.xlsx.writeFile(xlsxPath);
-  console.log(chalk.green(`  ✓ XLSX report written to ${path.relative(process.cwd(), xlsxPath)}\n`));
+  console.log();
 }
 
 main().catch(err => {
