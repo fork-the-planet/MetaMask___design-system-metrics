@@ -340,11 +340,17 @@ The low coverage means many components won't appear in auto-generated config yet
 - Output filename handling updated: base path derived from config, no `.xlsx` extension needed
 - **Outcome**: Simpler codebase, JSON-only output, no behavior change for dashboard
 
-### Phase 2 — Orchestrator
-- Create `pipeline/run.js`
-- Move `update-timeline.js` and `validate-metrics-consistency.js` into `pipeline/`
-- Wire up CI to use `yarn pipeline` instead of individual commands
-- **Outcome**: Stable ordering, one command to run everything
+### Phase 2 — Orchestrator ✅ (2026-04-10)
+- Introduced TypeScript + `tsx` for all new pipeline code
+- Created `pipeline/types.ts` — shared interfaces for config, metrics, timeline, index
+- Ported `update-timeline.js` → `pipeline/update-timeline.ts` (removed migration-targets publishing)
+- Ported `validate-metrics-consistency.js` → `pipeline/validate.ts`
+- Created `pipeline/run.ts` — single orchestrator with `--date` and `--only` flags
+- Deleted `scripts/update-timeline.js`, `scripts/validate-metrics-consistency.js`, `scripts/run-metrics.js`
+- Added `yarn pipeline` and `yarn typecheck` scripts to `package.json`
+- Updated CI workflow to use `yarn pipeline` — single step replaces 6 individual steps
+- Installed `typescript`, `tsx`, `@types/node`; configured Yarn SDK for PnP-aware type checking
+- **Outcome**: Stable stage ordering, one command to run everything, fully typed
 
 ### Phase 3 — Rewrite `sync-config`
 - Parse `@deprecated` JSDoc from component folders in both repos
