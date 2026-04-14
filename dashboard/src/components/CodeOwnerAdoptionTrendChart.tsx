@@ -14,23 +14,21 @@ function isUnknownOwner(owner: string) {
 }
 
 function formatOwnerLabel(owner: string) {
-  if (isUnknownOwner(owner)) {
-    return 'No CODEOWNERS';
-  }
+  if (isUnknownOwner(owner)) return 'No CODEOWNERS';
   return owner.replace('@MetaMask/', '').replace(/^@/, '');
-}
-
-interface CodeOwnerTrendChartProps {
-  codeOwnerTimeline: CodeOwnerTimeline;
-  title: string;
-  excludedOwners?: Set<string>;
 }
 
 function normalizeOwner(owner: string) {
   return owner.replace('@MetaMask/', '').replace(/^@/, '').toLowerCase();
 }
 
-export function CodeOwnerTrendChart({ codeOwnerTimeline, title, excludedOwners }: CodeOwnerTrendChartProps) {
+interface Props {
+  codeOwnerTimeline: CodeOwnerTimeline;
+  title: string;
+  excludedOwners?: Set<string>;
+}
+
+export function CodeOwnerAdoptionTrendChart({ codeOwnerTimeline, title, excludedOwners }: Props) {
   const { dates, owners } = codeOwnerTimeline;
 
   if (dates.length === 0) {
@@ -42,36 +40,35 @@ export function CodeOwnerTrendChart({ codeOwnerTimeline, title, excludedOwners }
     );
   }
 
+  // Sort by latest MMDS instance count descending so the most active teams are listed first
   const activeOwners = Object.entries(owners)
     .filter(([owner, data]) => {
       if (excludedOwners?.has(normalizeOwner(owner))) return false;
-      return data.totalInstances.some(v => v > 0);
+      return data.mmdsInstances.some(v => v > 0);
     })
     .sort((a, b) => {
-      const aLatest = a[1].totalInstances[a[1].totalInstances.length - 1];
-      const bLatest = b[1].totalInstances[b[1].totalInstances.length - 1];
+      const aLatest = a[1].mmdsInstances[a[1].mmdsInstances.length - 1];
+      const bLatest = b[1].mmdsInstances[b[1].mmdsInstances.length - 1];
       return bLatest - aLatest;
     });
 
   const chartData = dates.map((date, i) => {
     const point: Record<string, string | number> = { date };
     for (const [owner, data] of activeOwners) {
-      point[formatOwnerLabel(owner)] = data.migrationPercentage[i];
+      point[formatOwnerLabel(owner)] = data.mmdsInstances[i];
     }
     return point;
   });
 
   const CustomTooltip = ({ active, payload, label }: any) => {
     if (!active || !payload?.length) return null;
-
     const sorted = [...payload].sort((a: any, b: any) => (b.value ?? 0) - (a.value ?? 0));
-
     return (
       <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-3 max-h-80 overflow-y-auto">
         <p className="font-semibold text-gray-900 dark:text-white mb-2">{label}</p>
         {sorted.map((entry: any) => (
           <p key={entry.dataKey} className="text-sm" style={{ color: entry.color }}>
-            {entry.dataKey}: {entry.value?.toFixed(1)}%
+            {entry.dataKey}: {entry.value?.toLocaleString()} instances
           </p>
         ))}
       </div>
@@ -82,7 +79,7 @@ export function CodeOwnerTrendChart({ codeOwnerTimeline, title, excludedOwners }
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
       <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">{title}</h3>
       <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
-        Percentage of component library component instances per team that are using MMDS, tracked week over week.
+        MMDS component instances per team — tracks which teams are actively growing their design system usage week over week.
       </p>
       <ResponsiveContainer width="100%" height={450}>
         <LineChart data={chartData}>
@@ -95,8 +92,8 @@ export function CodeOwnerTrendChart({ codeOwnerTimeline, title, excludedOwners }
             height={80}
           />
           <YAxis
-            domain={[0, 100]}
-            label={{ value: 'Migration %', angle: -90, position: 'insideLeft' }}
+            label={{ value: 'MMDS Instances', angle: -90, position: 'insideLeft', offset: 10 }}
+            tick={{ fontSize: 12 }}
           />
           <Tooltip content={<CustomTooltip />} />
           <Legend wrapperStyle={{ fontSize: 12 }} />
