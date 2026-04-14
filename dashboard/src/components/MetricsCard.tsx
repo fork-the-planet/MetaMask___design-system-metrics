@@ -95,7 +95,23 @@ export function MetricsCard({
             New components:
           </p>
           <p className="text-xs text-gray-600 dark:text-gray-300">
-            {newComponents.join(", ")}
+            {newComponents.map((name, i) => {
+              const pkg = project === 'mobile' ? 'design-system-react-native' : 'design-system-react';
+              const href = `https://github.com/MetaMask/metamask-design-system/tree/main/packages/${pkg}/src/components/${name}`;
+              return (
+                <span key={name}>
+                  {i > 0 && ', '}
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="underline hover:text-blue-600 dark:hover:text-blue-400"
+                  >
+                    {name}
+                  </a>
+                </span>
+              );
+            })}
           </p>
         </div>
       )}

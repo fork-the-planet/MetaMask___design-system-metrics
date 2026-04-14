@@ -145,7 +145,7 @@ export interface ComponentPropsAuditIndexData {
 
 export interface MigrationTargetComponent {
   name: string;
-  status?: 'to_do' | 'not_doing' | 'complete';
+  status?: 'to_do' | 'not_doing' | 'complete' | 'cancelled';
 }
 
 export interface MigrationTargetsProject {

@@ -5,6 +5,7 @@ import { ErrorMessage } from '../components/ErrorMessage';
 import { MetricsCard } from '../components/MetricsCard';
 import { CodeOwnerAdoptionChart } from '../components/CodeOwnerAdoptionChart';
 import { CodeOwnerTrendChart } from '../components/CodeOwnerTrendChart';
+import { CodeOwnerAdoptionTrendChart } from '../components/CodeOwnerAdoptionTrendChart';
 import { ComponentPropsAuditSection } from '../components/ComponentPropsAuditSection';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
@@ -44,9 +45,16 @@ function normalizeTargetEntries(projectTargets?: MigrationTargetsProject | null)
     .filter((entry) => typeof entry.name === 'string' && entry.name.length > 0);
 }
 
+const EXCLUDED_STATUSES = new Set(['not_doing', 'cancelled']);
+
 function getPlannedTargetCount(projectTargets?: MigrationTargetsProject | null) {
   const entries = normalizeTargetEntries(projectTargets);
-  return entries.filter((entry) => entry.status !== 'not_doing').length;
+  return entries.filter((entry) => !EXCLUDED_STATUSES.has(entry.status ?? '')).length;
+}
+
+function getMigratedTargetCount(projectTargets?: MigrationTargetsProject | null) {
+  const entries = normalizeTargetEntries(projectTargets);
+  return entries.filter((entry) => entry.status === 'complete').length;
 }
 
 function normalizeOwner(owner: string) {
@@ -142,12 +150,14 @@ export function Overview() {
 
   const mobilePlannedTargets = getPlannedTargetCount(migrationTargets?.mobile);
   const extensionPlannedTargets = getPlannedTargetCount(migrationTargets?.extension);
+  const mobileMigratedTargets = getMigratedTargetCount(migrationTargets?.mobile);
+  const extensionMigratedTargets = getMigratedTargetCount(migrationTargets?.extension);
 
-  const mobileMigratedPercent = mobilePlannedTargets > 0 && mobileLatest
-    ? Math.round((mobileLatest.mmdsComponentsAvailable / mobilePlannedTargets) * 100)
+  const mobileMigratedPercent = mobilePlannedTargets > 0
+    ? Math.round((mobileMigratedTargets / mobilePlannedTargets) * 100)
     : 0;
-  const extensionMigratedPercent = extensionPlannedTargets > 0 && extensionLatest
-    ? Math.round((extensionLatest.mmdsComponentsAvailable / extensionPlannedTargets) * 100)
+  const extensionMigratedPercent = extensionPlannedTargets > 0
+    ? Math.round((extensionMigratedTargets / extensionPlannedTargets) * 100)
     : 0;
 
   return (
@@ -181,9 +191,13 @@ export function Overview() {
                       target="_blank"
                       rel="noreferrer"
                       className="hover:underline"
+                      title="Components migrated from the legacy Mobile component library to MMDS"
                     >
-                      {`${mobileLatest.mmdsComponentsAvailable}/${mobilePlannedTargets} (${mobileMigratedPercent}%)`}
+                      {`${mobileMigratedTargets}/${mobilePlannedTargets} (${mobileMigratedPercent}%) migrated`}
                     </a>
+                    <p className="text-xs font-normal text-gray-500 dark:text-gray-400 mt-0.5">
+                      Legacy component library → MMDS
+                    </p>
                   </div>
                 ) : (
                   <p>Components available in package</p>
@@ -339,13 +353,22 @@ export function Overview() {
           )}
 
           {data.mobile.codeOwnerTimeline && data.mobile.codeOwnerTimeline.dates.length > 0 && (
-            <div className="mt-6">
-              <CodeOwnerTrendChart
-                codeOwnerTimeline={data.mobile.codeOwnerTimeline}
-                title="Mobile - Code Owner Migration Trend"
-                excludedOwners={MOBILE_EXCLUDED_OWNERS}
-              />
-            </div>
+            <>
+              <div className="mt-6">
+                <CodeOwnerTrendChart
+                  codeOwnerTimeline={data.mobile.codeOwnerTimeline}
+                  title="Mobile - Code Owner Migration Trend"
+                  excludedOwners={MOBILE_EXCLUDED_OWNERS}
+                />
+              </div>
+              <div className="mt-6">
+                <CodeOwnerAdoptionTrendChart
+                  codeOwnerTimeline={data.mobile.codeOwnerTimeline}
+                  title="Mobile - Team DS Adoption Trend"
+                  excludedOwners={MOBILE_EXCLUDED_OWNERS}
+                />
+              </div>
+            </>
           )}
         </section>
 
@@ -365,9 +388,13 @@ export function Overview() {
                       target="_blank"
                       rel="noreferrer"
                       className="hover:underline"
+                      title="Components migrated from the legacy Extension component library to MMDS"
                     >
-                      {`${extensionLatest.mmdsComponentsAvailable}/${extensionPlannedTargets} (${extensionMigratedPercent}%)`}
+                      {`${extensionMigratedTargets}/${extensionPlannedTargets} (${extensionMigratedPercent}%) migrated`}
                     </a>
+                    <p className="text-xs font-normal text-gray-500 dark:text-gray-400 mt-0.5">
+                      Legacy component library → MMDS
+                    </p>
                   </div>
                 ) : (
                   <p>Components available in package</p>
@@ -523,13 +550,22 @@ export function Overview() {
           )}
 
           {data.extension.codeOwnerTimeline && data.extension.codeOwnerTimeline.dates.length > 0 && (
-            <div className="mt-6">
-              <CodeOwnerTrendChart
-                codeOwnerTimeline={data.extension.codeOwnerTimeline}
-                title="Extension - Code Owner Migration Trend"
-                excludedOwners={EXTENSION_EXCLUDED_OWNERS}
-              />
-            </div>
+            <>
+              <div className="mt-6">
+                <CodeOwnerTrendChart
+                  codeOwnerTimeline={data.extension.codeOwnerTimeline}
+                  title="Extension - Code Owner Migration Trend"
+                  excludedOwners={EXTENSION_EXCLUDED_OWNERS}
+                />
+              </div>
+              <div className="mt-6">
+                <CodeOwnerAdoptionTrendChart
+                  codeOwnerTimeline={data.extension.codeOwnerTimeline}
+                  title="Extension - Team DS Adoption Trend"
+                  excludedOwners={EXTENSION_EXCLUDED_OWNERS}
+                />
+              </div>
+            </>
           )}
         </section>
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-10T21:39:07.936Z",
+  "generatedAt": "2026-04-14T10:54:36.154Z",
   "mobile": {
     "source": "DSYS-272",
     "components": [
@@ -61,7 +61,7 @@
       },
       {
         "name": "BannerAlert",
-        "status": "to_do"
+        "status": "complete"
       },
       {
         "name": "BannerBase",
@@ -73,7 +73,7 @@
       },
       {
         "name": "BottomSheet",
-        "status": "to_do"
+        "status": "complete"
       },
       {
         "name": "BottomSheetFooter",
@@ -105,7 +105,7 @@
       },
       {
         "name": "ButtonFilter",
-        "status": "to_do"
+        "status": "complete"
       },
       {
         "name": "ButtonHero",
@@ -133,15 +133,15 @@
       },
       {
         "name": "HeaderCollapsibleSubpage",
-        "status": "to_do"
+        "status": "cancelled"
       },
       {
         "name": "HeaderStackedStandard",
-        "status": "to_do"
+        "status": "cancelled"
       },
       {
         "name": "HeaderStackedSubpage",
-        "status": "to_do"
+        "status": "cancelled"
       },
       {
         "name": "Icon",
@@ -165,7 +165,7 @@
       },
       {
         "name": "MainActionButton",
-        "status": "to_do"
+        "status": "complete"
       },
       {
         "name": "Maskicon",
@@ -177,7 +177,7 @@
       },
       {
         "name": "SensitiveText",
-        "status": "to_do"
+        "status": "complete"
       },
       {
         "name": "Skeleton",
@@ -205,7 +205,7 @@
       },
       {
         "name": "TextFieldSearch",
-        "status": "to_do"
+        "status": "complete"
       },
       {
         "name": "TextOrChildren",
@@ -270,7 +270,7 @@
       },
       {
         "name": "BannerAlert",
-        "status": "to_do"
+        "status": "complete"
       },
       {
         "name": "BannerBase",

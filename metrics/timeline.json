@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-10T21:39:07.931Z",
+  "generatedAt": "2026-04-14T10:54:36.145Z",
   "mobile": {
     "dates": [
       "2025-08-29",
@@ -1441,7 +1441,33 @@
       ]
     ],
     "newComponents": [
-      [],
+      [
+        "AvatarAccount",
+        "AvatarBase",
+        "AvatarFavicon",
+        "AvatarGroup",
+        "AvatarIcon",
+        "AvatarNetwork",
+        "AvatarToken",
+        "BadgeCount",
+        "BadgeIcon",
+        "BadgeNetwork",
+        "BadgeStatus",
+        "BadgeWrapper",
+        "Blockies",
+        "Box",
+        "Button",
+        "ButtonAnimated",
+        "ButtonBase",
+        "ButtonIcon",
+        "Checkbox",
+        "Icon",
+        "Jazzicon",
+        "Maskicon",
+        "Text",
+        "TextButton",
+        "TextOrChildren"
+      ],
       [],
       [],
       [],
@@ -1510,16 +1536,12 @@
         "TextFieldSearch"
       ],
       [
-        "BottomSheetDialog",
         "BoxColumn",
         "BoxRow",
-        "HeaderRoot",
         "HeaderSearch",
-        "HeaderStandard",
         "IconAlert",
         "KeyValueColumn",
-        "KeyValueRow",
-        "TextFieldSearch"
+        "KeyValueRow"
       ]
     ],
     "codeOwnerTimeline": {
@@ -3617,7 +3639,31 @@
       ]
     ],
     "newComponents": [
-      [],
+      [
+        "AvatarAccount",
+        "AvatarBase",
+        "AvatarFavicon",
+        "AvatarGroup",
+        "AvatarIcon",
+        "AvatarNetwork",
+        "AvatarToken",
+        "BadgeCount",
+        "BadgeIcon",
+        "BadgeNetwork",
+        "BadgeStatus",
+        "BadgeWrapper",
+        "Blockies",
+        "Box",
+        "Button",
+        "ButtonBase",
+        "ButtonIcon",
+        "Checkbox",
+        "Icon",
+        "Jazzicon",
+        "Maskicon",
+        "Text",
+        "TextButton"
+      ],
       [],
       [],
       [],

@@ -104,9 +104,18 @@ function buildProjectTimeline(projectData) {
     newComponents: []
   };
 
+  let prevComponentSet = new Set();
+
   for (const entry of projectData) {
     const { date, data } = entry;
     const { summary } = data;
+
+    const currentList = data.mmdsComponentsList || [];
+
+    // Recalculate newComponents by diffing against the previous week's list.
+    // This prevents duplicates caused by stale stored values in data files.
+    const newComponents = currentList.filter(c => !prevComponentSet.has(c));
+    prevComponentSet = new Set(currentList);
 
     timeline.dates.push(date);
     timeline.migrationPercentage.push(parseFloat(summary.migrationPercentage));
@@ -118,8 +127,8 @@ function buildProjectTimeline(projectData) {
     timeline.componentsNotStarted.push(summary.notStarted);
     timeline.totalComponents.push(summary.totalComponents);
     timeline.mmdsComponentsAvailable.push(data.mmdsComponentsAvailable || 0);
-    timeline.mmdsComponentsList.push(data.mmdsComponentsList || []);
-    timeline.newComponents.push(data.newComponents || []);
+    timeline.mmdsComponentsList.push(currentList);
+    timeline.newComponents.push(newComponents);
   }
 
   timeline.codeOwnerTimeline = buildCodeOwnerTimeline(projectData);
@@ -292,22 +301,63 @@ async function buildIndex(allData) {
 }
 
 /**
- * Publish migration targets alongside metrics outputs for dashboard/runtime consumers.
+ * Auto-complete any migration target whose component now exists in the MMDS package.
+ * Returns the updated components array and logs what changed.
  */
-async function publishMigrationTargets() {
+function reconcileTargets(components, mmdsComponentsSet, project) {
+  let autoCompleted = 0;
+  const updated = components.map(entry => {
+    if (entry.status !== 'to_do') return entry;
+    if (mmdsComponentsSet.has(entry.name)) {
+      console.log(`    ✓ Auto-completed ${project}/${entry.name} (found in MMDS package)`);
+      autoCompleted++;
+      return { ...entry, status: 'complete' };
+    }
+    return entry;
+  });
+  if (autoCompleted > 0) {
+    console.log(`    → ${autoCompleted} component(s) auto-completed for ${project}\n`);
+  }
+  return updated;
+}
+
+/**
+ * Publish migration targets alongside metrics outputs for dashboard/runtime consumers.
+ * Auto-completes any to_do entries that are already present in the MMDS package.
+ */
+async function publishMigrationTargets(timeline) {
   try {
     const content = await fs.readFile(MIGRATION_TARGETS_PATH, 'utf8');
     const source = JSON.parse(content);
+
+    // Build sets of current MMDS components from the latest timeline entry
+    const latestMobile = new Set(
+      timeline.mobile.mmdsComponentsList[timeline.mobile.mmdsComponentsList.length - 1] || []
+    );
+    const latestExtension = new Set(
+      timeline.extension.mmdsComponentsList[timeline.extension.mmdsComponentsList.length - 1] || []
+    );
+
+    const mobileComponents = reconcileTargets(source.mobile?.components || [], latestMobile, 'mobile');
+    const extensionComponents = reconcileTargets(source.extension?.components || [], latestExtension, 'extension');
+
+    // Write corrected statuses back to the source file so they persist across runs
+    const updatedSource = {
+      ...source,
+      mobile: { ...source.mobile, components: mobileComponents },
+      extension: { ...source.extension, components: extensionComponents },
+    };
+    await fs.writeFile(MIGRATION_TARGETS_PATH, JSON.stringify(updatedSource, null, 2));
 
     const output = {
       generatedAt: new Date().toISOString(),
       mobile: {
         source: source.mobile?.source || null,
-        components: source.mobile?.components || [],
+        components: mobileComponents,
       },
       extension: {
         source: source.extension?.source || null,
-        components: source.extension?.components || [],
+        components: extensionComponents,
       },
     };
 
@@ -329,7 +379,7 @@ async function main() {
     const allData = await loadAllDataFiles();
     const timeline = await buildTimeline(allData);
     const index = await buildIndex(allData);
-    await publishMigrationTargets();
+    await publishMigrationTargets(timeline);
 
     console.log('✅ Successfully updated timeline and index!\n');
 
