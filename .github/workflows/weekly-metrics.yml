@@ -45,38 +45,19 @@ jobs:
           cd repos/metamask-design-system && git fetch origin && git checkout main && git pull origin main && cd ../..
           git add repos/
 
-      - name: Sync config
-        run: yarn sync-config
-
       - name: Get current date
         id: date
         run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
-      - name: Generate extension metrics
-        run: yarn start
-
-      - name: Generate mobile metrics
-        run: yarn start:mobile
-
-      - name: Update timeline data
-        run: yarn update-timeline
-
-      - name: Validate metrics consistency
-        run: yarn validate-metrics
-
-      - name: Discover untracked components (extension)
-        run: yarn discover:extension
-
-      - name: Discover untracked components (mobile)
-        run: yarn discover:mobile
+      - name: Run pipeline
+        run: yarn pipeline
 
       - name: Copy untracked latest for dashboard
         run: |
           cp metrics/extension-untracked-${{ steps.date.outputs.date }}.json metrics/extension-untracked-latest.json
           cp metrics/mobile-untracked-${{ steps.date.outputs.date }}.json metrics/mobile-untracked-latest.json
-
-      - name: Copy metrics to dashboard
-        run: cp metrics/*.json dashboard/public/metrics/
+          cp metrics/extension-untracked-${{ steps.date.outputs.date }}.json dashboard/public/metrics/extension-untracked-latest.json
+          cp metrics/mobile-untracked-${{ steps.date.outputs.date }}.json dashboard/public/metrics/mobile-untracked-latest.json
 
       - name: Install dashboard dependencies
         run: |

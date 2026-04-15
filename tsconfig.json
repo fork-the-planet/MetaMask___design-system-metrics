@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "typeRoots": [
+      ".yarn/unplugged/@types-node-npm-25.5.2-cef63bb6b3/node_modules/@types"
+    ],
+    "types": ["node"]
+  },
+  "include": ["pipeline/**/*"],
+  "exclude": ["node_modules", "repos", "dashboard"]
+}
