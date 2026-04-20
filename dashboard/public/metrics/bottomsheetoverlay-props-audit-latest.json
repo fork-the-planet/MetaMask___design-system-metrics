@@ -1,9 +1,9 @@
 {
   "component": "BottomSheetOverlay",
-  "generatedAt": "2026-03-04T22:24:56.962Z",
+  "generatedAt": "2026-04-20T17:09:16.413Z",
   "projects": {
-    "mobile": {
-      "filesScanned": 5390,
+    "extension": {
+      "filesScanned": 3082,
       "targetComponent": "BottomSheetOverlay",
       "mmds": {
         "totalInstances": 0,
@@ -22,8 +22,8 @@
       },
       "deprecatedByLegacyComponent": {}
     },
-    "extension": {
-      "filesScanned": 2980,
+    "mobile": {
+      "filesScanned": 5996,
       "targetComponent": "BottomSheetOverlay",
       "mmds": {
         "totalInstances": 0,

@@ -1,6 +1,6 @@
 {
   "project": "extension",
-  "date": "2026-04-10",
+  "date": "2026-04-20",
   "teams": [
     "@MetaMask/accounts-engineers",
     "@MetaMask/confirmations",
@@ -14,15 +14,15 @@
     "@MetaMask/web3auth"
   ],
   "summary": {
-    "filesScanned": 1537,
-    "totalJSXUsages": 9141,
-    "trackedDeprecated": 3942,
-    "trackedMMDS": 2356,
-    "untrackedTotal": 2843,
-    "uniqueUntrackedComponents": 101,
+    "filesScanned": 1535,
+    "totalJSXUsages": 9139,
+    "trackedDeprecated": 3821,
+    "trackedMMDS": 2493,
+    "untrackedTotal": 2825,
+    "uniqueUntrackedComponents": 102,
     "replaceableNow": 26,
-    "replaceableInstances": 381,
-    "futureDSCandidates": 75,
+    "replaceableInstances": 377,
+    "futureDSCandidates": 76,
     "codeOwnerBreakdown": {
       "@MetaMask/swaps-engineers": {
         "replaceableComponents": 7,
@@ -36,12 +36,12 @@
       },
       "@MetaMask/confirmations": {
         "replaceableComponents": 9,
-        "futureDSComponents": 30,
+        "futureDSComponents": 32,
         "replaceableInstances": 91
       },
       "@MetaMask/accounts-engineers": {
         "replaceableComponents": 6,
-        "futureDSComponents": 13,
+        "futureDSComponents": 12,
         "replaceableInstances": 25
       },
       "@MetaMask/core-extension-ux": {
@@ -164,8 +164,8 @@
     },
     {
       "component": "ToggleButton",
-      "instances": 40,
-      "fileCount": 17,
+      "instances": 37,
+      "fileCount": 16,
       "sourceCategory": "local-oneoff",
       "canonicalSource": "components/ui/toggle-button",
       "importSources": [
@@ -198,7 +198,7 @@
         "@MetaMask/web3auth"
       ],
       "codeOwnerBreakdown": {
-        "@unknown": 30,
+        "@unknown": 27,
         "@MetaMask/web3auth": 1,
         "@MetaMask/accounts-engineers": 4,
         "@MetaMask/core-extension-ux": 2,
@@ -375,12 +375,11 @@
     },
     {
       "component": "SnapIcon",
-      "instances": 13,
-      "fileCount": 13,
+      "instances": 12,
+      "fileCount": 12,
       "sourceCategory": "local-oneoff",
       "canonicalSource": "components/app/snaps/snap-icon",
       "importSources": [
-        "../../components/app/snaps/snap-icon",
         "../../app/snaps/snap-icon",
         "../snaps/snap-icon",
         "../../../../components/app/snaps/snap-icon",
@@ -403,13 +402,13 @@
       ],
       "codeOwners": [
         "@MetaMask/core-platform",
-        "@unknown",
         "@MetaMask/core-extension-ux",
+        "@unknown",
         "@MetaMask/notifications"
       ],
       "codeOwnerBreakdown": {
-        "@unknown": 3,
         "@MetaMask/core-extension-ux": 2,
+        "@unknown": 2,
         "@MetaMask/core-platform": 7,
         "@MetaMask/notifications": 1
       }
@@ -934,8 +933,8 @@
   "futureDSCandidates": [
     {
       "component": "Tooltip",
-      "instances": 90,
-      "fileCount": 73,
+      "instances": 94,
+      "fileCount": 75,
       "sourceCategory": "mixed",
       "canonicalSource": "components/ui/tooltip/tooltip",
       "importSources": [
@@ -969,6 +968,7 @@
         "@MetaMask/core-platform"
       ],
       "codeOwnerBreakdown": {
+        "@MetaMask/perps": 4,
         "@unknown": 25,
         "@MetaMask/web3auth": 2,
         "@MetaMask/accounts-engineers": 4,
@@ -1051,6 +1051,44 @@
       }
     },
     {
+      "component": "Toast",
+      "instances": 38,
+      "fileCount": 20,
+      "sourceCategory": "local-oneoff",
+      "canonicalSource": "components/multichain/toast/toast",
+      "importSources": [
+        "../../components/multichain/toast",
+        "../../../components/multichain/toast",
+        "../../../components/multichain",
+        "../../multichain",
+        "../../multichain/toast",
+        "../../multichain/toast/toast",
+        "../../../../components/multichain/toast/toast",
+        "../../../multichain/toast/toast",
+        "../..",
+        "../../toast",
+        "../../../multichain/toast",
+        "../../../../../../../components/multichain"
+      ],
+      "mmdsMatches": [],
+      "codeOwners": [
+        "@unknown",
+        "@MetaMask/core-extension-ux",
+        "@MetaMask/perps",
+        "@MetaMask/earn",
+        "@MetaMask/confirmations"
+      ],
+      "codeOwnerBreakdown": {
+        "@unknown": 22,
+        "@MetaMask/swaps-engineers": 1,
+        "@MetaMask/perps": 4,
+        "@MetaMask/earn": 2,
+        "@MetaMask/confirmations": 2,
+        "@MetaMask/accounts-engineers": 2,
+        "@MetaMask/core-extension-ux": 5
+      }
+    },
+    {
       "component": "Header",
       "instances": 35,
       "fileCount": 35,
@@ -1125,43 +1163,6 @@
       }
     },
     {
-      "component": "Toast",
-      "instances": 34,
-      "fileCount": 18,
-      "sourceCategory": "local-oneoff",
-      "canonicalSource": "components/multichain/toast",
-      "importSources": [
-        "../../components/multichain/toast",
-        "../../../components/multichain/toast",
-        "../../../components/multichain",
-        "../../multichain",
-        "../../multichain/toast",
-        "../../multichain/toast/toast",
-        "../../../multichain/toast/toast",
-        "../..",
-        "../../toast",
-        "../../../multichain/toast",
-        "../../../../../../../components/multichain"
-      ],
-      "mmdsMatches": [],
-      "codeOwners": [
-        "@unknown",
-        "@MetaMask/core-extension-ux",
-        "@MetaMask/perps",
-        "@MetaMask/earn",
-        "@MetaMask/accounts-engineers"
-      ],
-      "codeOwnerBreakdown": {
-        "@unknown": 21,
-        "@MetaMask/swaps-engineers": 1,
-        "@MetaMask/perps": 2,
-        "@MetaMask/earn": 2,
-        "@MetaMask/accounts-engineers": 2,
-        "@MetaMask/core-extension-ux": 5,
-        "@MetaMask/confirmations": 1
-      }
-    },
-    {
       "component": "Content",
       "instances": 32,
       "fileCount": 30,
@@ -1217,38 +1218,6 @@
       }
     },
     {
-      "component": "InfoTooltip",
-      "instances": 21,
-      "fileCount": 13,
-      "sourceCategory": "local-oneoff",
-      "canonicalSource": "components/ui/info-tooltip/info-tooltip",
-      "importSources": [
-        "../../components/ui/info-tooltip/info-tooltip",
-        "../../../components/ui/info-tooltip",
-        "../info-tooltip/info-tooltip",
-        "../info-tooltip",
-        "../../../../components/ui/info-tooltip",
-        "../../../ui/info-tooltip",
-        "../../../ui/info-tooltip/info-tooltip",
-        "../../../../ui/info-tooltip"
-      ],
-      "mmdsMatches": [],
-      "codeOwners": [
-        "@MetaMask/swaps-engineers",
-        "@MetaMask/perps",
-        "@unknown",
-        "@MetaMask/metamask-assets",
-        "@MetaMask/core-platform"
-      ],
-      "codeOwnerBreakdown": {
-        "@MetaMask/perps": 4,
-        "@MetaMask/swaps-engineers": 11,
-        "@unknown": 3,
-        "@MetaMask/core-platform": 1,
-        "@MetaMask/metamask-assets": 2
-      }
-    },
-    {
       "component": "MenuItem",
       "instances": 18,
       "fileCount": 11,
@@ -1272,6 +1241,39 @@
       }
     },
     {
+      "component": "ToastContainer",
+      "instances": 18,
+      "fileCount": 12,
+      "sourceCategory": "local-oneoff",
+      "canonicalSource": "components/multichain/toast/toast",
+      "importSources": [
+        "../../components/multichain/toast",
+        "../../../components/multichain/toast",
+        "../../../components/multichain",
+        "../../multichain/toast",
+        "../../multichain",
+        "../../../../components/multichain/toast/toast",
+        "../../../multichain/toast/toast",
+        "../..",
+        "../../toast"
+      ],
+      "mmdsMatches": [],
+      "codeOwners": [
+        "@unknown",
+        "@MetaMask/core-extension-ux",
+        "@MetaMask/accounts-engineers",
+        "@MetaMask/swaps-engineers",
+        "@MetaMask/confirmations"
+      ],
+      "codeOwnerBreakdown": {
+        "@unknown": 9,
+        "@MetaMask/swaps-engineers": 1,
+        "@MetaMask/confirmations": 1,
+        "@MetaMask/accounts-engineers": 2,
+        "@MetaMask/core-extension-ux": 5
+      }
+    },
+    {
       "component": "NotificationDetailAsset",
       "instances": 18,
       "fileCount": 9,
@@ -1292,33 +1294,31 @@
       }
     },
     {
-      "component": "ToastContainer",
+      "component": "InfoTooltip",
       "instances": 17,
       "fileCount": 11,
       "sourceCategory": "local-oneoff",
-      "canonicalSource": "components/multichain/toast",
+      "canonicalSource": "components/ui/info-tooltip",
       "importSources": [
-        "../../components/multichain/toast",
-        "../../../components/multichain/toast",
-        "../../../components/multichain",
-        "../../multichain/toast",
-        "../../multichain",
-        "../../../multichain/toast/toast",
-        "../..",
-        "../../toast"
+        "../../../components/ui/info-tooltip",
+        "../info-tooltip/info-tooltip",
+        "../info-tooltip",
+        "../../../../components/ui/info-tooltip",
+        "../../../ui/info-tooltip",
+        "../../../../ui/info-tooltip"
       ],
       "mmdsMatches": [],
       "codeOwners": [
+        "@MetaMask/swaps-engineers",
         "@unknown",
-        "@MetaMask/core-extension-ux",
-        "@MetaMask/accounts-engineers",
-        "@MetaMask/swaps-engineers"
+        "@MetaMask/metamask-assets",
+        "@MetaMask/core-platform"
       ],
       "codeOwnerBreakdown": {
-        "@unknown": 9,
-        "@MetaMask/swaps-engineers": 1,
-        "@MetaMask/accounts-engineers": 2,
-        "@MetaMask/core-extension-ux": 5
+        "@MetaMask/swaps-engineers": 11,
+        "@unknown": 3,
+        "@MetaMask/core-platform": 1,
+        "@MetaMask/metamask-assets": 2
       }
     },
     {
@@ -1486,25 +1486,6 @@
       }
     },
     {
-      "component": "SettingsTab",
-      "instances": 14,
-      "fileCount": 13,
-      "sourceCategory": "local-oneoff",
-      "canonicalSource": "settings-v2/shared",
-      "importSources": [
-        "./settings-tab",
-        "../shared",
-        "../../settings-v2/shared"
-      ],
-      "mmdsMatches": [],
-      "codeOwners": [
-        "@unknown"
-      ],
-      "codeOwnerBreakdown": {
-        "@unknown": 14
-      }
-    },
-    {
       "component": "PageContainerFooter",
       "instances": 14,
       "fileCount": 14,
@@ -1559,37 +1540,6 @@
       }
     },
     {
-      "component": "Dropdown",
-      "instances": 13,
-      "fileCount": 10,
-      "sourceCategory": "local-oneoff",
-      "canonicalSource": "market-list/components/dropdown",
-      "importSources": [
-        "./market-list/components/dropdown",
-        "../../../components/ui/dropdown",
-        "(local or re-export)",
-        "../../ui/dropdown",
-        "../../../ui/dropdown",
-        "../dropdown"
-      ],
-      "mmdsMatches": [],
-      "codeOwners": [
-        "@unknown",
-        "@MetaMask/perps",
-        "@MetaMask/web3auth",
-        "@MetaMask/accounts-engineers",
-        "@MetaMask/core-extension-ux"
-      ],
-      "codeOwnerBreakdown": {
-        "@MetaMask/perps": 2,
-        "@unknown": 7,
-        "@MetaMask/web3auth": 1,
-        "@MetaMask/accounts-engineers": 1,
-        "@MetaMask/core-extension-ux": 1,
-        "@MetaMask/core-platform": 1
-      }
-    },
-    {
       "component": "Name",
       "instances": 13,
       "fileCount": 11,
@@ -1611,6 +1561,24 @@
       "codeOwnerBreakdown": {
         "@unknown": 2,
         "@MetaMask/confirmations": 11
+      }
+    },
+    {
+      "component": "SettingsTab",
+      "instances": 12,
+      "fileCount": 12,
+      "sourceCategory": "local-oneoff",
+      "canonicalSource": "settings-v2/shared",
+      "importSources": [
+        "../shared",
+        "../../settings-v2/shared"
+      ],
+      "mmdsMatches": [],
+      "codeOwners": [
+        "@unknown"
+      ],
+      "codeOwnerBreakdown": {
+        "@unknown": 12
       }
     },
     {
@@ -1650,21 +1618,22 @@
       }
     },
     {
-      "component": "ToastContent",
+      "component": "PerpsGeoBlockModal",
       "instances": 11,
-      "fileCount": 2,
+      "fileCount": 11,
       "sourceCategory": "local-oneoff",
-      "canonicalSource": "components/ui/toast/toast",
+      "canonicalSource": "components/app/perps/perps-geo-block-modal",
       "importSources": [
-        "(local or re-export)",
-        "../../../../components/ui/toast/toast"
+        "../../components/app/perps/perps-geo-block-modal",
+        "./perps-geo-block-modal",
+        "../perps-geo-block-modal"
       ],
       "mmdsMatches": [],
       "codeOwners": [
-        "@unknown"
+        "@MetaMask/perps"
       ],
       "codeOwnerBreakdown": {
-        "@unknown": 11
+        "@MetaMask/perps": 11
       }
     },
     {
@@ -1675,8 +1644,8 @@
       "canonicalSource": "asset-list/sort-control/sort-control",
       "importSources": [
         "../../asset-list/sort-control/sort-control",
-        "../sort-control/sort-control",
-        "(local or re-export)"
+        "(local or re-export)",
+        "../sort-control/sort-control"
       ],
       "mmdsMatches": [],
       "codeOwners": [
@@ -1858,6 +1827,37 @@
       }
     },
     {
+      "component": "Dropdown",
+      "instances": 9,
+      "fileCount": 9,
+      "sourceCategory": "local-oneoff",
+      "canonicalSource": "market-list/components/dropdown",
+      "importSources": [
+        "./market-list/components/dropdown",
+        "../../../components/ui/dropdown",
+        "(local or re-export)",
+        "../../ui/dropdown",
+        "../../../ui/dropdown",
+        "../dropdown"
+      ],
+      "mmdsMatches": [],
+      "codeOwners": [
+        "@unknown",
+        "@MetaMask/perps",
+        "@MetaMask/web3auth",
+        "@MetaMask/accounts-engineers",
+        "@MetaMask/core-extension-ux"
+      ],
+      "codeOwnerBreakdown": {
+        "@MetaMask/perps": 2,
+        "@unknown": 3,
+        "@MetaMask/web3auth": 1,
+        "@MetaMask/accounts-engineers": 1,
+        "@MetaMask/core-extension-ux": 1,
+        "@MetaMask/core-platform": 1
+      }
+    },
+    {
       "component": "GasFeesSection",
       "instances": 9,
       "fileCount": 9,
@@ -1944,9 +1944,10 @@
       "instances": 8,
       "fileCount": 8,
       "sourceCategory": "local-oneoff",
-      "canonicalSource": "settings/settings-toggle-item",
+      "canonicalSource": "shared/settings-toggle-item",
       "importSources": [
-        "../../settings/settings-toggle-item"
+        "./settings-toggle-item",
+        "../shared/settings-toggle-item"
       ],
       "mmdsMatches": [],
       "codeOwners": [
@@ -2285,6 +2286,24 @@
       "codeOwnerBreakdown": {
         "@unknown": 2,
         "@MetaMask/core-extension-ux": 3
+      }
+    },
+    {
+      "component": "ToastContent",
+      "instances": 5,
+      "fileCount": 2,
+      "sourceCategory": "local-oneoff",
+      "canonicalSource": "components/ui/toast/toast",
+      "importSources": [
+        "(local or re-export)",
+        "../../../../components/ui/toast/toast"
+      ],
+      "mmdsMatches": [],
+      "codeOwners": [
+        "@unknown"
+      ],
+      "codeOwnerBreakdown": {
+        "@unknown": 5
       }
     },
     {

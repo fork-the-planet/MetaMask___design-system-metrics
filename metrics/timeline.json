@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-14T10:54:36.145Z",
+  "generatedAt": "2026-04-20T17:16:21.391Z",
   "mobile": {
     "dates": [
       "2025-08-29",
@@ -34,7 +34,8 @@
       "2026-03-24",
       "2026-03-27",
       "2026-04-03",
-      "2026-04-10"
+      "2026-04-10",
+      "2026-04-20"
     ],
     "migrationPercentage": [
       6.35,
@@ -69,7 +70,8 @@
       46.64,
       49.86,
       52.52,
-      54.53
+      54.53,
+      57.21
     ],
     "mmdsInstances": [
       169,
@@ -104,7 +106,8 @@
       2814,
       3138,
       3355,
-      3636
+      3636,
+      4020
     ],
     "deprecatedInstances": [
       2492,
@@ -139,7 +142,8 @@
       3219,
       3156,
       3033,
-      3032
+      3032,
+      3007
     ],
     "totalInstances": [
       2661,
@@ -174,9 +178,11 @@
       6033,
       6294,
       6388,
-      6668
+      6668,
+      7027
     ],
     "componentsFullyMigrated": [
+      0,
       0,
       0,
       0,
@@ -244,7 +250,8 @@
       14,
       14,
       15,
-      17
+      17,
+      22
     ],
     "componentsNotStarted": [
       21,
@@ -279,7 +286,8 @@
       21,
       22,
       23,
-      22
+      22,
+      17
     ],
     "totalComponents": [
       25,
@@ -314,6 +322,7 @@
       35,
       36,
       38,
+      39,
       39
     ],
     "mmdsComponentsAvailable": [
@@ -349,7 +358,8 @@
       49,
       49,
       55,
-      59
+      59,
+      60
     ],
     "mmdsComponentsList": [
       [
@@ -1438,10 +1448,9 @@
         "TextFieldSearch",
         "TextOrChildren",
         "Toast"
-      ]
-    ],
-    "newComponents": [
+      ],
       [
+        "ActionListItem",
         "AvatarAccount",
         "AvatarBase",
         "AvatarFavicon",
@@ -1454,20 +1463,57 @@
         "BadgeNetwork",
         "BadgeStatus",
         "BadgeWrapper",
+        "BannerAlert",
+        "BannerBase",
         "Blockies",
+        "BottomSheet",
+        "BottomSheetDialog",
+        "BottomSheetFooter",
+        "BottomSheetHeader",
+        "BottomSheetOverlay",
         "Box",
+        "BoxColumn",
+        "BoxRow",
         "Button",
         "ButtonAnimated",
         "ButtonBase",
+        "ButtonFilter",
+        "ButtonHero",
         "ButtonIcon",
+        "ButtonSemantic",
+        "Card",
         "Checkbox",
+        "HeaderBase",
+        "HeaderRoot",
+        "HeaderSearch",
+        "HeaderStandard",
         "Icon",
+        "IconAlert",
+        "ImageOrSvg",
+        "Input",
         "Jazzicon",
+        "KeyValueColumn",
+        "KeyValueRow",
+        "Label",
+        "ListItem",
+        "MainActionButton",
         "Maskicon",
+        "RadioButton",
+        "SensitiveText",
+        "Skeleton",
+        "Spinner",
+        "TabEmptyState",
         "Text",
         "TextButton",
-        "TextOrChildren"
-      ],
+        "TextField",
+        "TextFieldSearch",
+        "TextOrChildren",
+        "TitleHub",
+        "Toast"
+      ]
+    ],
+    "newComponents": [
+      [],
       [],
       [],
       [],
@@ -1536,12 +1582,25 @@
         "TextFieldSearch"
       ],
       [
+        "BottomSheetDialog",
+        "BoxColumn",
+        "BoxRow",
+        "HeaderRoot",
+        "HeaderSearch",
+        "HeaderStandard",
+        "IconAlert",
+        "KeyValueColumn",
+        "KeyValueRow",
+        "TextFieldSearch"
+      ],
+      [
         "BoxColumn",
         "BoxRow",
         "HeaderSearch",
         "IconAlert",
         "KeyValueColumn",
-        "KeyValueRow"
+        "KeyValueRow",
+        "TitleHub"
       ]
     ],
     "codeOwnerTimeline": {
@@ -1553,7 +1612,8 @@
         "2026-03-24",
         "2026-03-27",
         "2026-04-03",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-20"
       ],
       "owners": {
         "@MetaMask/accounts-engineers": {
@@ -1565,7 +1625,8 @@
             27.03,
             27.03,
             27.03,
-            27.03
+            27.03,
+            32.63
           ],
           "mmdsInstances": [
             38,
@@ -1575,7 +1636,8 @@
             50,
             50,
             50,
-            50
+            50,
+            62
           ],
           "deprecatedInstances": [
             159,
@@ -1585,7 +1647,8 @@
             135,
             135,
             135,
-            135
+            135,
+            128
           ],
           "totalInstances": [
             197,
@@ -1595,7 +1658,8 @@
             185,
             185,
             185,
-            185
+            185,
+            190
           ]
         },
         "@MetaMask/card": {
@@ -1607,7 +1671,8 @@
             70.96,
             77.18,
             77.18,
-            77.33
+            77.33,
+            77.22
           ],
           "mmdsInstances": [
             266,
@@ -1617,7 +1682,8 @@
             303,
             345,
             345,
-            348
+            348,
+            339
           ],
           "deprecatedInstances": [
             152,
@@ -1627,7 +1693,8 @@
             124,
             102,
             102,
-            102
+            102,
+            100
           ],
           "totalInstances": [
             418,
@@ -1637,7 +1704,8 @@
             427,
             447,
             447,
-            450
+            450,
+            439
           ]
         },
         "@MetaMask/confirmations": {
@@ -1649,7 +1717,8 @@
             19.67,
             23.47,
             23.09,
-            26.2
+            26.2,
+            26.3
           ],
           "mmdsInstances": [
             71,
@@ -1659,7 +1728,8 @@
             83,
             100,
             100,
-            115
+            115,
+            116
           ],
           "deprecatedInstances": [
             314,
@@ -1669,7 +1739,8 @@
             339,
             326,
             333,
-            324
+            324,
+            325
           ],
           "totalInstances": [
             385,
@@ -1679,7 +1750,8 @@
             422,
             426,
             433,
-            439
+            439,
+            441
           ]
         },
         "@MetaMask/core-platform": {
@@ -1691,7 +1763,8 @@
             7.92,
             7.92,
             7.92,
-            7.92
+            7.92,
+            10.68
           ],
           "mmdsInstances": [
             1,
@@ -1701,7 +1774,8 @@
             8,
             8,
             8,
-            8
+            8,
+            11
           ],
           "deprecatedInstances": [
             100,
@@ -1711,7 +1785,8 @@
             93,
             93,
             93,
-            93
+            93,
+            92
           ],
           "totalInstances": [
             101,
@@ -1721,7 +1796,8 @@
             101,
             101,
             101,
-            101
+            101,
+            103
           ]
         },
         "@MetaMask/metamask-assets": {
@@ -1733,7 +1809,8 @@
             47.72,
             47.9,
             47.9,
-            53.59
+            53.59,
+            56.05
           ],
           "mmdsInstances": [
             103,
@@ -1743,7 +1820,8 @@
             136,
             137,
             137,
-            164
+            164,
+            176
           ],
           "deprecatedInstances": [
             164,
@@ -1753,7 +1831,8 @@
             149,
             149,
             149,
-            142
+            142,
+            138
           ],
           "totalInstances": [
             267,
@@ -1763,7 +1842,8 @@
             285,
             286,
             286,
-            306
+            306,
+            314
           ]
         },
         "@MetaMask/metamask-earn": {
@@ -1775,6 +1855,7 @@
             15.55,
             32.45,
             0,
+            0,
             0
           ],
           "mmdsInstances": [
@@ -1784,6 +1865,7 @@
             51,
             51,
             134,
+            0,
             0,
             0
           ],
@@ -1795,6 +1877,7 @@
             277,
             279,
             0,
+            0,
             0
           ],
           "totalInstances": [
@@ -1804,6 +1887,7 @@
             328,
             328,
             413,
+            0,
             0,
             0
           ]
@@ -1817,7 +1901,8 @@
             14.33,
             14.33,
             20.83,
-            20.98
+            20.98,
+            21.28
           ],
           "mmdsInstances": [
             35,
@@ -1826,6 +1911,7 @@
             42,
             42,
             42,
+            60,
             60,
             60
           ],
@@ -1837,7 +1923,8 @@
             251,
             251,
             228,
-            226
+            226,
+            222
           ],
           "totalInstances": [
             340,
@@ -1847,11 +1934,13 @@
             293,
             293,
             288,
-            286
+            286,
+            282
           ]
         },
         "@MetaMask/mobile-platform": {
           "migrationPercentage": [
+            75,
             75,
             75,
             75,
@@ -1869,6 +1958,7 @@
             3,
             3,
             3,
+            3,
             3
           ],
           "deprecatedInstances": [
@@ -1879,9 +1969,11 @@
             1,
             1,
             1,
+            1,
             1
           ],
           "totalInstances": [
+            4,
             4,
             4,
             4,
@@ -1901,12 +1993,14 @@
             15.38,
             15.38,
             15.38,
+            15.38,
             15.38
           ],
           "mmdsInstances": [
             4,
             4,
             4,
+            12,
             12,
             12,
             12,
@@ -1921,10 +2015,12 @@
             66,
             66,
             66,
+            66,
             66
           ],
           "totalInstances": [
             79,
+            78,
             78,
             78,
             78,
@@ -1943,7 +2039,8 @@
             13.4,
             13.64,
             13.83,
-            14.56
+            14.56,
+            14.49
           ],
           "mmdsInstances": [
             104,
@@ -1953,6 +2050,7 @@
             110,
             112,
             114,
+            120,
             120
           ],
           "deprecatedInstances": [
@@ -1963,7 +2061,8 @@
             711,
             709,
             710,
-            704
+            704,
+            708
           ],
           "totalInstances": [
             806,
@@ -1973,7 +2072,8 @@
             821,
             821,
             824,
-            824
+            824,
+            828
           ]
         },
         "@MetaMask/predict": {
@@ -1985,7 +2085,8 @@
             75.54,
             75.62,
             75.74,
-            77.74
+            77.74,
+            78.83
           ],
           "mmdsInstances": [
             409,
@@ -1995,7 +2096,8 @@
             454,
             456,
             459,
-            524
+            524,
+            566
           ],
           "deprecatedInstances": [
             149,
@@ -2005,7 +2107,8 @@
             147,
             147,
             147,
-            150
+            150,
+            152
           ],
           "totalInstances": [
             558,
@@ -2015,7 +2118,8 @@
             601,
             603,
             606,
-            674
+            674,
+            718
           ]
         },
         "@MetaMask/ramp": {
@@ -2027,6 +2131,7 @@
             32.25,
             32.25,
             0,
+            0,
             0
           ],
           "mmdsInstances": [
@@ -2036,6 +2141,7 @@
             89,
             89,
             89,
+            0,
             0,
             0
           ],
@@ -2047,6 +2153,7 @@
             187,
             187,
             0,
+            0,
             0
           ],
           "totalInstances": [
@@ -2056,6 +2163,7 @@
             276,
             276,
             276,
+            0,
             0,
             0
           ]
@@ -2069,7 +2177,8 @@
             89.76,
             90.63,
             90.81,
-            90.63
+            90.63,
+            91.63
           ],
           "mmdsInstances": [
             451,
@@ -2079,7 +2188,8 @@
             552,
             638,
             652,
-            696
+            696,
+            766
           ],
           "deprecatedInstances": [
             56,
@@ -2089,7 +2199,8 @@
             63,
             66,
             66,
-            72
+            72,
+            70
           ],
           "totalInstances": [
             507,
@@ -2099,7 +2210,8 @@
             615,
             704,
             718,
-            768
+            768,
+            836
           ]
         },
         "@MetaMask/swaps-engineers": {
@@ -2111,7 +2223,8 @@
             41.49,
             45.21,
             47.8,
-            49.04
+            49.04,
+            49.28
           ],
           "mmdsInstances": [
             28,
@@ -2121,7 +2234,8 @@
             78,
             85,
             98,
-            102
+            102,
+            103
           ],
           "deprecatedInstances": [
             122,
@@ -2131,6 +2245,7 @@
             110,
             103,
             107,
+            106,
             106
           ],
           "totalInstances": [
@@ -2141,7 +2256,8 @@
             188,
             188,
             205,
-            208
+            208,
+            209
           ]
         },
         "@MetaMask/transactions": {
@@ -2150,6 +2266,7 @@
             0,
             0,
             0,
+            50,
             50,
             50,
             50,
@@ -2163,6 +2280,7 @@
             2,
             2,
             2,
+            2,
             2
           ],
           "deprecatedInstances": [
@@ -2173,9 +2291,11 @@
             2,
             2,
             2,
+            2,
             2
           ],
           "totalInstances": [
+            4,
             4,
             4,
             4,
@@ -2195,6 +2315,7 @@
             0,
             20.59,
             20.59,
+            20.59,
             20.59
           ],
           "mmdsInstances": [
@@ -2203,6 +2324,7 @@
             0,
             0,
             0,
+            7,
             7,
             7,
             7
@@ -2215,10 +2337,12 @@
             34,
             27,
             27,
+            27,
             27
           ],
           "totalInstances": [
             33,
+            34,
             34,
             34,
             34,
@@ -2237,7 +2361,8 @@
             76.26,
             89.19,
             89.46,
-            92.36
+            92.36,
+            92.59
           ],
           "mmdsInstances": [
             0,
@@ -2247,7 +2372,8 @@
             212,
             264,
             263,
-            290
+            290,
+            300
           ],
           "deprecatedInstances": [
             11,
@@ -2257,6 +2383,7 @@
             66,
             32,
             31,
+            24,
             24
           ],
           "totalInstances": [
@@ -2267,7 +2394,8 @@
             278,
             296,
             294,
-            314
+            314,
+            324
           ]
         },
         "@unknown": {
@@ -2279,7 +2407,8 @@
             44.83,
             45.75,
             48.51,
-            50.77
+            50.77,
+            47.09
           ],
           "mmdsInstances": [
             460,
@@ -2289,7 +2418,8 @@
             616,
             641,
             700,
-            759
+            759,
+            632
           ],
           "deprecatedInstances": [
             921,
@@ -2299,7 +2429,8 @@
             758,
             760,
             743,
-            736
+            736,
+            710
           ],
           "totalInstances": [
             1381,
@@ -2309,7 +2440,8 @@
             1374,
             1401,
             1443,
-            1495
+            1495,
+            1342
           ]
         },
         "@MetaMask/earn": {
@@ -2321,7 +2453,8 @@
             0,
             0,
             32.45,
-            36.91
+            36.91,
+            42.13
           ],
           "mmdsInstances": [
             0,
@@ -2331,7 +2464,8 @@
             0,
             0,
             134,
-            165
+            165,
+            206
           ],
           "deprecatedInstances": [
             0,
@@ -2341,7 +2475,8 @@
             0,
             0,
             279,
-            282
+            282,
+            283
           ],
           "totalInstances": [
             0,
@@ -2351,7 +2486,8 @@
             0,
             0,
             413,
-            447
+            447,
+            489
           ]
         },
         "@MetaMask/money-movement": {
@@ -2363,7 +2499,8 @@
             0,
             0,
             71.74,
-            71.74
+            71.74,
+            71.75
           ],
           "mmdsInstances": [
             0,
@@ -2373,7 +2510,8 @@
             0,
             0,
             198,
-            198
+            198,
+            226
           ],
           "deprecatedInstances": [
             0,
@@ -2383,7 +2521,8 @@
             0,
             0,
             78,
-            78
+            78,
+            89
           ],
           "totalInstances": [
             0,
@@ -2393,18 +2532,65 @@
             0,
             0,
             276,
-            276
+            276,
+            315
+          ]
+        },
+        "@MetaMask/social-ai": {
+          "migrationPercentage": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            90.55
+          ],
+          "mmdsInstances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            297
+          ],
+          "deprecatedInstances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            31
+          ],
+          "totalInstances": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            328
           ]
         }
       }
     },
     "latestChange": {
-      "migrationPercentageChange": "2.01",
-      "mmdsInstancesChange": 281,
-      "deprecatedInstancesChange": -1,
+      "migrationPercentageChange": "2.68",
+      "mmdsInstancesChange": 384,
+      "deprecatedInstancesChange": -25,
       "componentsFullyMigratedChange": 0,
-      "componentsInProgressChange": 2,
-      "mmdsComponentsAvailableChange": 4
+      "componentsInProgressChange": 5,
+      "mmdsComponentsAvailableChange": 1
     }
   },
   "extension": {
@@ -2441,7 +2627,8 @@
       "2026-03-24",
       "2026-03-27",
       "2026-04-03",
-      "2026-04-10"
+      "2026-04-10",
+      "2026-04-20"
     ],
     "migrationPercentage": [
       2.57,
@@ -2476,7 +2663,8 @@
       37.95,
       39.52,
       42,
-      44.05
+      44.05,
+      46.37
     ],
     "mmdsInstances": [
       101,
@@ -2511,7 +2699,8 @@
       2083,
       2171,
       2342,
-      2463
+      2463,
+      2603
     ],
     "deprecatedInstances": [
       3823,
@@ -2546,7 +2735,8 @@
       3406,
       3323,
       3234,
-      3129
+      3129,
+      3011
     ],
     "totalInstances": [
       3924,
@@ -2581,9 +2771,11 @@
       5489,
       5494,
       5576,
-      5592
+      5592,
+      5614
     ],
     "componentsFullyMigrated": [
+      0,
       0,
       0,
       0,
@@ -2651,6 +2843,7 @@
       13,
       13,
       13,
+      14,
       14
     ],
     "componentsNotStarted": [
@@ -2686,6 +2879,7 @@
       4,
       4,
       4,
+      3,
       3
     ],
     "totalComponents": [
@@ -2721,6 +2915,7 @@
       17,
       17,
       17,
+      17,
       17
     ],
     "mmdsComponentsAvailable": [
@@ -2751,6 +2946,7 @@
       25,
       25,
       26,
+      28,
       28,
       28,
       28,
@@ -3636,9 +3832,7 @@
         "Maskicon",
         "Text",
         "TextButton"
-      ]
-    ],
-    "newComponents": [
+      ],
       [
         "AvatarAccount",
         "AvatarBase",
@@ -3652,18 +3846,26 @@
         "BadgeNetwork",
         "BadgeStatus",
         "BadgeWrapper",
+        "BannerAlert",
+        "BannerBase",
         "Blockies",
         "Box",
         "Button",
         "ButtonBase",
+        "ButtonFilter",
+        "ButtonHero",
         "ButtonIcon",
         "Checkbox",
         "Icon",
+        "Input",
         "Jazzicon",
         "Maskicon",
         "Text",
         "TextButton"
-      ],
+      ]
+    ],
+    "newComponents": [
+      [],
       [],
       [],
       [],
@@ -3704,6 +3906,7 @@
       [],
       [],
       [],
+      [],
       []
     ],
     "codeOwnerTimeline": {
@@ -3715,7 +3918,8 @@
         "2026-03-24",
         "2026-03-27",
         "2026-04-03",
-        "2026-04-10"
+        "2026-04-10",
+        "2026-04-20"
       ],
       "owners": {
         "@MetaMask/accounts-engineers": {
@@ -3727,7 +3931,8 @@
             15.53,
             15.17,
             30.24,
-            42.46
+            42.46,
+            60
           ],
           "mmdsInstances": [
             72,
@@ -3737,7 +3942,8 @@
             73,
             71,
             150,
-            214
+            214,
+            312
           ],
           "deprecatedInstances": [
             374,
@@ -3747,7 +3953,8 @@
             397,
             397,
             346,
-            290
+            290,
+            208
           ],
           "totalInstances": [
             446,
@@ -3757,7 +3964,8 @@
             470,
             468,
             496,
-            504
+            504,
+            520
           ]
         },
         "@MetaMask/confirmations": {
@@ -3769,7 +3977,8 @@
             24.23,
             24.08,
             24.77,
-            24.44
+            24.44,
+            24.54
           ],
           "mmdsInstances": [
             103,
@@ -3779,7 +3988,8 @@
             196,
             189,
             191,
-            186
+            186,
+            187
           ],
           "deprecatedInstances": [
             631,
@@ -3789,6 +3999,7 @@
             613,
             596,
             580,
+            575,
             575
           ],
           "totalInstances": [
@@ -3799,7 +4010,8 @@
             809,
             785,
             771,
-            761
+            761,
+            762
           ]
         },
         "@MetaMask/core-extension-ux": {
@@ -3811,6 +4023,7 @@
             16.83,
             18.01,
             18.01,
+            18.03,
             18.03
           ],
           "mmdsInstances": [
@@ -3819,6 +4032,7 @@
             159,
             159,
             159,
+            172,
             172,
             172,
             172
@@ -3831,6 +4045,7 @@
             786,
             783,
             783,
+            782,
             782
           ],
           "totalInstances": [
@@ -3841,6 +4056,7 @@
             945,
             955,
             955,
+            954,
             954
           ]
         },
@@ -3848,6 +4064,7 @@
           "migrationPercentage": [
             0.25,
             0.25,
+            0.74,
             0.74,
             0.74,
             0.74,
@@ -3863,6 +4080,7 @@
             3,
             3,
             3,
+            3,
             3
           ],
           "deprecatedInstances": [
@@ -3873,9 +4091,11 @@
             401,
             401,
             401,
+            401,
             401
           ],
           "totalInstances": [
+            404,
             404,
             404,
             404,
@@ -3895,6 +4115,7 @@
             2.24,
             2.24,
             2.24,
+            2.59,
             2.59
           ],
           "mmdsInstances": [
@@ -3902,6 +4123,7 @@
             2,
             1,
             1,
+            5,
             5,
             5,
             5,
@@ -3915,6 +4137,7 @@
             218,
             218,
             218,
+            188,
             188
           ],
           "totalInstances": [
@@ -3925,6 +4148,7 @@
             223,
             223,
             223,
+            193,
             193
           ]
         },
@@ -3937,6 +4161,7 @@
             91.89,
             91.89,
             0,
+            0,
             0
           ],
           "mmdsInstances": [
@@ -3946,6 +4171,7 @@
             34,
             34,
             34,
+            0,
             0,
             0
           ],
@@ -3957,6 +4183,7 @@
             3,
             3,
             0,
+            0,
             0
           ],
           "totalInstances": [
@@ -3966,6 +4193,7 @@
             37,
             37,
             37,
+            0,
             0,
             0
           ]
@@ -3979,7 +4207,8 @@
             30.51,
             30.51,
             30.51,
-            30.51
+            30.51,
+            32.79
           ],
           "mmdsInstances": [
             0,
@@ -3989,10 +4218,12 @@
             18,
             18,
             18,
-            18
+            18,
+            20
           ],
           "deprecatedInstances": [
             57,
+            41,
             41,
             41,
             41,
@@ -4009,7 +4240,8 @@
             59,
             59,
             59,
-            59
+            59,
+            61
           ]
         },
         "@MetaMask/perps": {
@@ -4021,7 +4253,8 @@
             85.16,
             85.06,
             85.87,
-            85.11
+            85.11,
+            84.99
           ],
           "mmdsInstances": [
             634,
@@ -4031,7 +4264,8 @@
             568,
             575,
             620,
-            663
+            663,
+            685
           ],
           "deprecatedInstances": [
             76,
@@ -4041,7 +4275,8 @@
             99,
             101,
             102,
-            116
+            116,
+            121
           ],
           "totalInstances": [
             710,
@@ -4051,7 +4286,8 @@
             667,
             676,
             722,
-            779
+            779,
+            806
           ]
         },
         "@MetaMask/swaps-engineers": {
@@ -4063,6 +4299,7 @@
             14.02,
             14.02,
             13.96,
+            15.09,
             15.09
           ],
           "mmdsInstances": [
@@ -4073,6 +4310,7 @@
             37,
             37,
             37,
+            40,
             40
           ],
           "deprecatedInstances": [
@@ -4083,6 +4321,7 @@
             227,
             227,
             228,
+            225,
             225
           ],
           "totalInstances": [
@@ -4092,6 +4331,7 @@
             262,
             264,
             264,
+            265,
             265,
             265
           ]
@@ -4105,6 +4345,7 @@
             83.4,
             83.4,
             83.4,
+            83.4,
             83.4
           ],
           "mmdsInstances": [
@@ -4112,6 +4353,7 @@
             211,
             306,
             396,
+            407,
             407,
             407,
             407,
@@ -4125,6 +4367,7 @@
             81,
             81,
             81,
+            81,
             81
           ],
           "totalInstances": [
@@ -4132,6 +4375,7 @@
             495,
             491,
             491,
+            488,
             488,
             488,
             488,
@@ -4147,7 +4391,8 @@
             28.08,
             31.73,
             33.4,
-            34.14
+            34.14,
+            35.36
           ],
           "mmdsInstances": [
             254,
@@ -4157,7 +4402,8 @@
             583,
             660,
             705,
-            721
+            721,
+            738
           ],
           "deprecatedInstances": [
             1691,
@@ -4167,7 +4413,8 @@
             1493,
             1420,
             1406,
-            1391
+            1391,
+            1349
           ],
           "totalInstances": [
             1945,
@@ -4177,7 +4424,8 @@
             2076,
             2080,
             2111,
-            2112
+            2112,
+            2087
           ]
         },
         "@MetaMask/earn": {
@@ -4189,6 +4437,7 @@
             0,
             0,
             91.89,
+            91.89,
             91.89
           ],
           "mmdsInstances": [
@@ -4198,6 +4447,7 @@
             0,
             0,
             0,
+            34,
             34,
             34
           ],
@@ -4209,6 +4459,7 @@
             0,
             0,
             3,
+            3,
             3
           ],
           "totalInstances": [
@@ -4219,25 +4470,26 @@
             0,
             0,
             37,
+            37,
             37
           ]
         }
       }
     },
     "latestChange": {
-      "migrationPercentageChange": "2.05",
-      "mmdsInstancesChange": 121,
-      "deprecatedInstancesChange": -105,
+      "migrationPercentageChange": "2.32",
+      "mmdsInstancesChange": 140,
+      "deprecatedInstancesChange": -118,
       "componentsFullyMigratedChange": 0,
-      "componentsInProgressChange": 1,
+      "componentsInProgressChange": 0,
       "mmdsComponentsAvailableChange": 0
     }
   },
   "summary": {
-    "totalWeeks": 33,
+    "totalWeeks": 34,
     "dateRange": {
       "start": "2025-08-29",
-      "end": "2026-04-10"
+      "end": "2026-04-20"
     }
   }
 }

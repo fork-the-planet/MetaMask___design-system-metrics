@@ -1,0 +1,254 @@
+{
+  "project": "mobile",
+  "date": "2026-04-20",
+  "mmdsInstances": 4020,
+  "deprecatedInstances": 3007,
+  "mmdsUsageTotal": 2016,
+  "totalInstances": 7027,
+  "migrationPercentage": "57.21",
+  "componentsTracked": 39,
+  "mmdsComponentsAvailable": 60,
+  "mmdsComponentsList": [
+    "ActionListItem",
+    "AvatarAccount",
+    "AvatarBase",
+    "AvatarFavicon",
+    "AvatarGroup",
+    "AvatarIcon",
+    "AvatarNetwork",
+    "AvatarToken",
+    "BadgeCount",
+    "BadgeIcon",
+    "BadgeNetwork",
+    "BadgeStatus",
+    "BadgeWrapper",
+    "BannerAlert",
+    "BannerBase",
+    "Blockies",
+    "BottomSheet",
+    "BottomSheetDialog",
+    "BottomSheetFooter",
+    "BottomSheetHeader",
+    "BottomSheetOverlay",
+    "Box",
+    "BoxColumn",
+    "BoxRow",
+    "Button",
+    "ButtonAnimated",
+    "ButtonBase",
+    "ButtonFilter",
+    "ButtonHero",
+    "ButtonIcon",
+    "ButtonSemantic",
+    "Card",
+    "Checkbox",
+    "HeaderBase",
+    "HeaderRoot",
+    "HeaderSearch",
+    "HeaderStandard",
+    "Icon",
+    "IconAlert",
+    "ImageOrSvg",
+    "Input",
+    "Jazzicon",
+    "KeyValueColumn",
+    "KeyValueRow",
+    "Label",
+    "ListItem",
+    "MainActionButton",
+    "Maskicon",
+    "RadioButton",
+    "SensitiveText",
+    "Skeleton",
+    "Spinner",
+    "TabEmptyState",
+    "Text",
+    "TextButton",
+    "TextField",
+    "TextFieldSearch",
+    "TextOrChildren",
+    "TitleHub",
+    "Toast"
+  ],
+  "newComponents": [
+    "BoxColumn",
+    "BoxRow",
+    "HeaderSearch",
+    "IconAlert",
+    "KeyValueColumn",
+    "KeyValueRow",
+    "TitleHub"
+  ],
+  "noReplacementComponents": 37,
+  "totalNoReplacementInstances": 557,
+  "codeOwnerStats": {
+    "@MetaMask/accounts-engineers": {
+      "mmdsInstances": 62,
+      "deprecatedInstances": 128,
+      "totalInstances": 190,
+      "migrationPercentage": "32.63",
+      "filesCount": 36
+    },
+    "@MetaMask/card": {
+      "mmdsInstances": 339,
+      "deprecatedInstances": 100,
+      "totalInstances": 439,
+      "migrationPercentage": "77.22",
+      "filesCount": 46
+    },
+    "@MetaMask/confirmations": {
+      "mmdsInstances": 116,
+      "deprecatedInstances": 325,
+      "totalInstances": 441,
+      "migrationPercentage": "26.30",
+      "filesCount": 129
+    },
+    "@MetaMask/core-platform": {
+      "mmdsInstances": 11,
+      "deprecatedInstances": 92,
+      "totalInstances": 103,
+      "migrationPercentage": "10.68",
+      "filesCount": 31
+    },
+    "@MetaMask/delegation": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/design-system-engineers": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/earn": {
+      "mmdsInstances": 206,
+      "deprecatedInstances": 283,
+      "totalInstances": 489,
+      "migrationPercentage": "42.13",
+      "filesCount": 91
+    },
+    "@MetaMask/metamask-assets": {
+      "mmdsInstances": 176,
+      "deprecatedInstances": 138,
+      "totalInstances": 314,
+      "migrationPercentage": "56.05",
+      "filesCount": 60
+    },
+    "@MetaMask/mobile-admins": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/mobile-core-ux": {
+      "mmdsInstances": 60,
+      "deprecatedInstances": 222,
+      "totalInstances": 282,
+      "migrationPercentage": "21.28",
+      "filesCount": 57
+    },
+    "@MetaMask/mobile-platform": {
+      "mmdsInstances": 3,
+      "deprecatedInstances": 1,
+      "totalInstances": 4,
+      "migrationPercentage": "75.00",
+      "filesCount": 2
+    },
+    "@MetaMask/money-movement": {
+      "mmdsInstances": 226,
+      "deprecatedInstances": 89,
+      "totalInstances": 315,
+      "migrationPercentage": "71.75",
+      "filesCount": 38
+    },
+    "@MetaMask/notifications": {
+      "mmdsInstances": 12,
+      "deprecatedInstances": 66,
+      "totalInstances": 78,
+      "migrationPercentage": "15.38",
+      "filesCount": 23
+    },
+    "@MetaMask/perps": {
+      "mmdsInstances": 120,
+      "deprecatedInstances": 708,
+      "totalInstances": 828,
+      "migrationPercentage": "14.49",
+      "filesCount": 109
+    },
+    "@MetaMask/predict": {
+      "mmdsInstances": 566,
+      "deprecatedInstances": 152,
+      "totalInstances": 718,
+      "migrationPercentage": "78.83",
+      "filesCount": 92
+    },
+    "@MetaMask/qa": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/rewards": {
+      "mmdsInstances": 766,
+      "deprecatedInstances": 70,
+      "totalInstances": 836,
+      "migrationPercentage": "91.63",
+      "filesCount": 93
+    },
+    "@MetaMask/social-ai": {
+      "mmdsInstances": 297,
+      "deprecatedInstances": 31,
+      "totalInstances": 328,
+      "migrationPercentage": "90.55",
+      "filesCount": 29
+    },
+    "@MetaMask/supply-chain": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/swaps-engineers": {
+      "mmdsInstances": 103,
+      "deprecatedInstances": 106,
+      "totalInstances": 209,
+      "migrationPercentage": "49.28",
+      "filesCount": 43
+    },
+    "@MetaMask/transactions": {
+      "mmdsInstances": 2,
+      "deprecatedInstances": 2,
+      "totalInstances": 4,
+      "migrationPercentage": "50.00",
+      "filesCount": 1
+    },
+    "@MetaMask/wallet-integrations": {
+      "mmdsInstances": 7,
+      "deprecatedInstances": 27,
+      "totalInstances": 34,
+      "migrationPercentage": "20.59",
+      "filesCount": 8
+    },
+    "@MetaMask/web3auth": {
+      "mmdsInstances": 300,
+      "deprecatedInstances": 24,
+      "totalInstances": 324,
+      "migrationPercentage": "92.59",
+      "filesCount": 31
+    },
+    "@unknown": {
+      "mmdsInstances": 632,
+      "deprecatedInstances": 710,
+      "totalInstances": 1342,
+      "migrationPercentage": "47.09",
+      "filesCount": 231
+    }
+  }
+}
