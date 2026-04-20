@@ -1,253 +1,81 @@
 {
   "component": "AvatarNetwork",
-  "generatedAt": "2026-03-04T22:22:52.837Z",
+  "generatedAt": "2026-04-20T17:06:08.602Z",
   "projects": {
-    "mobile": {
-      "filesScanned": 5390,
-      "targetComponent": "AvatarNetwork",
-      "mmds": {
-        "totalInstances": 1,
-        "filesCount": 1,
-        "props": {
-          "src": {
-            "count": 1,
-            "values": {
-              "{imageSource}": 1
-            }
-          },
-          "size": {
-            "count": 1,
-            "values": {
-              "{AvatarNetworkSize.Xs}": 1
-            }
-          },
-          "name": {
-            "count": 1,
-            "values": {
-              "{chain.name}": 1
-            }
-          },
-          "shape": {
-            "count": 1,
-            "values": {
-              "{AvatarBaseShape.Square}": 1
-            }
-          },
-          "twClassName": {
-            "count": 1,
-            "values": {
-              "\"rounded translate-y-px\"": 1
-            }
-          }
-        }
-      },
-      "deprecated": {
-        "totalInstances": 13,
-        "filesCount": 12,
-        "props": {
-          "imageSource": {
-            "count": 13,
-            "values": {
-              "{networkImageSource}": 5,
-              "{imageSource}": 3,
-              "{networkImage}": 2,
-              "{getNetworkImageSource({ chainId: network.chainId, })}": 1,
-              "{item.imageSource}": 1,
-              "{networkConfiguration.rpcPrefs.imageSource || (networkConfiguration.rpcPrefs.i...}": 1
-            }
-          },
-          "size": {
-            "count": 11,
-            "values": {
-              "{AvatarSize.Xs}": 8,
-              "{AvatarSize.Md}": 3
-            }
-          },
-          "name": {
-            "count": 10,
-            "values": {
-              "{displayName}": 3,
-              "{depositNetworkName ?? networkName}": 1,
-              "{network.name}": 1,
-              "{nativeCurrency}": 1,
-              "{formHook.form.nickname}": 1,
-              "{item.name}": 1,
-              "{networkConfiguration.nickname}": 1,
-              "{name}": 1
-            }
-          },
-          "style": {
-            "count": 5,
-            "values": {
-              "{styles.selectedNetworkIcon}": 2,
-              "{styles.overlappedNetworkIcon}": 1,
-              "{styles.avatarNetwork}": 1,
-              "{styles.avatar}": 1
-            }
-          },
-          "key": {
-            "count": 2,
-            "values": {
-              "{chainId}": 2
-            }
-          },
-          "includesBorder": {
-            "count": 1,
-            "values": {
-              "true (shorthand)": 1
-            }
-          },
-          "testID": {
-            "count": 1,
-            "values": {
-              "\"simulation-details-asset-pill-avatar-network\"": 1
-            }
-          }
-        }
-      },
-      "overall": {
-        "totalInstances": 14,
-        "filesCount": 13,
-        "props": {
-          "imageSource": {
-            "count": 13,
-            "values": {
-              "{networkImageSource}": 5,
-              "{imageSource}": 3,
-              "{networkImage}": 2,
-              "{getNetworkImageSource({ chainId: network.chainId, })}": 1,
-              "{item.imageSource}": 1,
-              "{networkConfiguration.rpcPrefs.imageSource || (networkConfiguration.rpcPrefs.i...}": 1
-            }
-          },
-          "size": {
-            "count": 12,
-            "values": {
-              "{AvatarSize.Xs}": 8,
-              "{AvatarSize.Md}": 3,
-              "{AvatarNetworkSize.Xs}": 1
-            }
-          },
-          "name": {
-            "count": 11,
-            "values": {
-              "{displayName}": 3,
-              "{chain.name}": 1,
-              "{depositNetworkName ?? networkName}": 1,
-              "{network.name}": 1,
-              "{nativeCurrency}": 1,
-              "{formHook.form.nickname}": 1,
-              "{item.name}": 1,
-              "{networkConfiguration.nickname}": 1,
-              "{name}": 1
-            }
-          },
-          "style": {
-            "count": 5,
-            "values": {
-              "{styles.selectedNetworkIcon}": 2,
-              "{styles.overlappedNetworkIcon}": 1,
-              "{styles.avatarNetwork}": 1,
-              "{styles.avatar}": 1
-            }
-          },
-          "key": {
-            "count": 2,
-            "values": {
-              "{chainId}": 2
-            }
-          },
-          "src": {
-            "count": 1,
-            "values": {
-              "{imageSource}": 1
-            }
-          },
-          "shape": {
-            "count": 1,
-            "values": {
-              "{AvatarBaseShape.Square}": 1
-            }
-          },
-          "twClassName": {
-            "count": 1,
-            "values": {
-              "\"rounded translate-y-px\"": 1
-            }
-          },
-          "includesBorder": {
-            "count": 1,
-            "values": {
-              "true (shorthand)": 1
-            }
-          },
-          "testID": {
-            "count": 1,
-            "values": {
-              "\"simulation-details-asset-pill-avatar-network\"": 1
-            }
-          }
-        }
-      },
-      "deprecatedByLegacyComponent": {
-        "AvatarNetwork": 13
-      }
-    },
     "extension": {
-      "filesScanned": 2980,
+      "filesScanned": 3082,
       "targetComponent": "AvatarNetwork",
       "mmds": {
-        "totalInstances": 10,
-        "filesCount": 10,
+        "totalInstances": 20,
+        "filesCount": 20,
         "props": {
           "src": {
-            "count": 10,
+            "count": 20,
             "values": {
-              "{networkImageSrc}": 2,
+              "{networkImageSrc}": 3,
               "{networkImageUrl}": 2,
+              "{networkImage}": 2,
+              "{getNetworkImageUrl()}": 1,
               "{networkIcon}": 1,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[network.chainId]}": 1,
               "{getImageForChainId(chainId)}": 1,
+              "{tokenChainImage}": 1,
               "{BRIDGE_CHAIN_ID_TO_NETWORK_IMAGE_MAP[ formatChainIdToCaip(asset.chainId) ]}": 1,
               "{BRIDGE_CHAIN_ID_TO_NETWORK_IMAGE_MAP[caipChainId]}": 1,
+              "{typeof selectedChainId === 'string' ? getImageForChainId(selectedChainId) || ...}": 1,
+              "{iconSrc}": 1,
+              "{contactChainId ? getImageForChainId(contactChainId) || undefined : undefined}": 1,
+              "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[ network.chainId ]}": 1,
+              "{arbitrumNetworkImageUrl}": 1,
               "{getImageForChainId(selectedNetworkInfo.chainId)}": 1
             }
           },
           "name": {
-            "count": 9,
+            "count": 19,
             "values": {
-              "{networkName}": 3,
+              "{networkName}": 6,
               "{chainId}": 2,
-              "{network.name}": 1,
+              "{network.name}": 2,
+              "{displayNetwork?.name || displayNetwork?.nickname}": 1,
+              "{(dappActiveNetwork as { name?: string })?.name ?? (dappActiveNetwork as { nic...}": 1,
               "{NETWORK_TO_SHORT_NETWORK_NAME_MAP[ formatChainIdToCaip(asset.chainId) ]}": 1,
               "{NETWORK_TO_SHORT_NETWORK_NAME_MAP[caipChainId]}": 1,
-              "{requestData.chainName}": 1
+              "{requestData.chainName}": 1,
+              "{String(selectedNetworkName)}": 1,
+              "{displayName}": 1,
+              "{selectedNetworkName}": 1,
+              "{arbitrumNetworkName}": 1
             }
           },
           "size": {
-            "count": 8,
+            "count": 17,
             "values": {
-              "{AvatarNetworkSize.Xs}": 4,
+              "{AvatarNetworkSize.Xs}": 11,
+              "{AvatarNetworkSize.Md}": 2,
+              "{AvatarNetworkSize.Sm}": 2,
               "{size}": 1,
-              "{AvatarNetworkSize.Md}": 1,
-              "{AvatarNetworkSize.Lg}": 1,
-              "{AvatarNetworkSize.Sm}": 1
+              "{AvatarNetworkSize.Lg}": 1
+            }
+          },
+          "className": {
+            "count": 10,
+            "values": {
+              "\"rounded-md\"": 4,
+              "\"border-2 border-background-default rounded-md\"": 2,
+              "\"border-transparent\"": 1,
+              "\"dapp-connection-control-bar__network-icon\"": 1,
+              "\"bg-white\"": 1,
+              "\"box-border border-2 border-default\"": 1
             }
           },
           "style": {
-            "count": 4,
+            "count": 5,
             "values": {
               "{getTestNetworkBackground(chainId)}": 1,
               "{{ borderRadius: '50%' }}": 1,
               "{{ width: 20, height: 20, borderWidth: 2, borderRadius: 4 }}": 1,
-              "{{ borderWidth: 1, borderRadius: 6 }}": 1
-            }
-          },
-          "className": {
-            "count": 2,
-            "values": {
-              "\"border-2 border-background-default rounded-md\"": 1,
-              "\"bg-white\"": 1
+              "{{ borderWidth: 1, borderRadius: 6 }}": 1,
+              "{networkAvatarStyle}": 1
             }
           },
           "hasBorder": {
@@ -277,34 +105,30 @@
         }
       },
       "deprecated": {
-        "totalInstances": 60,
-        "filesCount": 50,
+        "totalInstances": 49,
+        "filesCount": 41,
         "props": {
           "name": {
-            "count": 60,
+            "count": 49,
             "values": {
-              "{network.name}": 7,
+              "{network.name}": 6,
               "{networkName}": 5,
-              "{transaction.chain}": 4,
               "{allNetworks?.[chainId as Hex]?.name}": 3,
               "{networkImageUrl}": 2,
-              "{currentNetwork?.nickname || ''}": 2,
               "{currentNetwork?.nickname}": 2,
               "{sourceNetworkNickname ?? ''}": 2,
               "{member.symbol ?? ''}": 2,
               "{name}": 2,
               "{nftData.networkName ?? ''}": 2,
-              "{networks?.[selectedChainId]?.name}": 2,
               "{NETWORK_TO_NAME_MAP[CHAIN_IDS.MAINNET]}": 2,
               "{currentMultichainNetwork.nickname}": 1,
+              "{currentNetwork?.nickname || ''}": 1,
               "{currentNetworkImageUrl ?? ''}": 1,
               "{networkImageUrl ?? ''}": 1,
               "{networkConfiguration.name}": 1,
               "{destNetwork?.chainId ? (NETWORK_TO_SHORT_NETWORK_NAME_MAP[ destNetwork?.chain...}": 1,
-              "{displayNetwork?.name || displayNetwork?.nickname}": 1,
               "{currentChain?.nickname}": 1,
               "\"Network Name\"": 1,
-              "{dappActiveNetwork.name || dappActiveNetwork.nickname}": 1,
               "{dappActiveNetwork?.name || ''}": 1,
               "{networkConfigurationToUse.name}": 1,
               "{NETWORK_TO_SHORT_NETWORK_NAME_MAP[toChain.chainId]}": 1,
@@ -312,7 +136,6 @@
               "{destNetwork?.name}": 1,
               "{tokenData.networkName ?? ''}": 1,
               "{networkName || chainNetworkNameAndImage?.networkName || ''}": 1,
-              "{networkDisplayName}": 1,
               "{displayName}": 1,
               "{nativeCurrency}": 1,
               "{networkConfiguration?.name ?? ''}": 1,
@@ -322,18 +145,15 @@
             }
           },
           "src": {
-            "count": 60,
+            "count": 49,
             "values": {
-              "{networkImageUrl}": 4,
-              "{networkLogo}": 4,
               "{networkImageUrl ?? undefined}": 3,
+              "{networkIcon}": 3,
+              "{networkImageUrl}": 3,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[network.chainId]}": 3,
-              "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[chainId]}": 2,
               "{sourceNetworkImage ?? ''}": 2,
-              "{networkIcon}": 2,
               "{member.avatarValue}": 2,
               "{nftData.networkImage}": 2,
-              "{getImageForChainId(selectedChainId) || undefined}": 2,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[CHAIN_IDS.MAINNET]}": 2,
               "{singleNetworkIconUrl}": 1,
               "{badgeWrapperSrc}": 1,
@@ -342,11 +162,9 @@
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[ currentNetwork?.chainId ]}": 1,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[ networkConfiguration.chainId as keyof type...}": 1,
               "{destNetwork?.isEvm ? CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[ formatChainIdToHex(de...}": 1,
-              "{getNetworkImageUrl()}": 1,
               "{currentChain?.rpcPrefs?.imageUrl}": 1,
               "\"./images/eth_logo.svg\"": 1,
               "{getImageForChainId(chainId)}": 1,
-              "{getNetworkImageSrc()}": 1,
               "{dappActiveNetwork?.chainId?.includes(':') ? getImageForChainId( getChainIdFor...}": 1,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[ pendingTokens[address]?.chainId ]}": 1,
               "{iconSrc}": 1,
@@ -355,7 +173,6 @@
               "{networkSrc}": 1,
               "{tokenChainImage || undefined}": 1,
               "{networkImageSrc}": 1,
-              "{tokenChainImage}": 1,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[ isNonEvmChainId(toChain.chainId) ? toChain...}": 1,
               "{srcChainIconUrl}": 1,
               "{destChainIconUrl}": 1,
@@ -363,70 +180,57 @@
               "{networkImage || chainNetworkNameAndImage?.networkImage}": 1,
               "{displayIcon}": 1,
               "{imgSrc}": 1,
+              "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[chainId]}": 1,
               "{fromNetworkDetails.iconUrl}": 1,
               "{toNetworkDetails.iconUrl}": 1,
-              "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[ network.chainId ]}": 1,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[ selectedToken.chainId ]}": 1
             }
           },
           "size": {
-            "count": 59,
+            "count": 49,
             "values": {
-              "{AvatarNetworkSize.Xs}": 36,
-              "{AvatarNetworkSize.Sm}": 14,
+              "{AvatarNetworkSize.Xs}": 29,
+              "{AvatarNetworkSize.Sm}": 12,
               "{AvatarNetworkSize.Md}": 4,
               "{AvatarNetworkSize.Xl}": 2,
-              "{AvatarAccountSize.Md}": 1,
               "{iconSize as AvatarNetworkSize}": 1,
               "{NETWORK_BADGE_SIZE_MAP[size]}": 1
             }
           },
           "borderColor": {
-            "count": 19,
+            "count": 13,
             "values": {
-              "{BorderColor.backgroundDefault}": 7,
-              "{BackgroundColor.backgroundDefault}": 7,
+              "{BorderColor.backgroundDefault}": 6,
+              "{BackgroundColor.backgroundDefault}": 3,
               "{BorderColor.borderMuted}": 3,
-              "{BorderColor.transparent}": 1,
               "{BorderColor.borderDefault}": 1
             }
           },
           "borderWidth": {
-            "count": 16,
+            "count": 12,
             "values": {
               "0": 2,
               "1": 2,
-              "2": 12
-            }
-          },
-          "className": {
-            "count": 13,
-            "values": {
-              "\"activity-tx__network-badge\"": 7,
-              "\"multichain-bridge-transaction-details-modal__network-badge\"": 2,
-              "\"token-list__token_component__network-badge\"": 1,
-              "\"nft-item__network-badge\"": 1,
-              "\"multichain-token-list-item__badge__avatar-network\"": 1,
-              "\"confirm_header__avatar-network\"": 1
+              "2": 8
             }
           },
           "backgroundColor": {
-            "count": 12,
-            "values": {
-              "{testNetworkBackgroundColor}": 4,
-              "{BackgroundColor.backgroundDefault}": 3,
-              "{BackgroundColor.backgroundSection}": 2,
-              "{getAvatarNetworkColor(name)}": 2,
-              "{getAvatarNetworkColor(networkDisplayName)}": 1
-            }
-          },
-          "data-testid": {
             "count": 10,
             "values": {
-              "\"activity-tx-network-badge\"": 7,
-              "\"nft-network-badge\"": 1,
-              "\"multichain-address-row-network-icon\"": 1,
-              "{`network-avatar-${i}`}": 1
+              "{BackgroundColor.backgroundDefault}": 4,
+              "{testNetworkBackgroundColor}": 3,
+              "{getAvatarNetworkColor(name)}": 2,
+              "{BackgroundColor.backgroundSection}": 1
+            }
+          },
+          "className": {
+            "count": 8,
+            "values": {
+              "\"activity-tx__network-badge\"": 3,
+              "\"multichain-bridge-transaction-details-modal__network-badge\"": 2,
+              "\"token-list__token_component__network-badge\"": 1,
+              "\"nft-item__network-badge\"": 1,
+              "\"multichain-token-list-item__badge__avatar-network\"": 1
             }
           },
           "style": {
@@ -436,6 +240,15 @@
               "{{ width: 20, height: 20, borderWidth: 2, }}": 2,
               "{{ borderWidth: 0 }}": 1,
               "{NETWORK_BADGE_STYLE_MAP[size]}": 1
+            }
+          },
+          "data-testid": {
+            "count": 6,
+            "values": {
+              "\"activity-tx-network-badge\"": 3,
+              "\"nft-network-badge\"": 1,
+              "\"multichain-address-row-network-icon\"": 1,
+              "{`network-avatar-${i}`}": 1
             }
           },
           "key": {
@@ -472,24 +285,23 @@
         }
       },
       "overall": {
-        "totalInstances": 70,
-        "filesCount": 60,
+        "totalInstances": 69,
+        "filesCount": 61,
         "props": {
           "src": {
-            "count": 70,
+            "count": 69,
             "values": {
-              "{networkImageUrl}": 6,
-              "{networkLogo}": 4,
+              "{networkImageUrl}": 5,
+              "{networkImageSrc}": 4,
+              "{networkIcon}": 4,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[network.chainId]}": 4,
               "{networkImageUrl ?? undefined}": 3,
-              "{networkImageSrc}": 3,
-              "{networkIcon}": 3,
-              "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[chainId]}": 2,
               "{sourceNetworkImage ?? ''}": 2,
               "{getImageForChainId(chainId)}": 2,
               "{member.avatarValue}": 2,
+              "{iconSrc}": 2,
               "{nftData.networkImage}": 2,
-              "{getImageForChainId(selectedChainId) || undefined}": 2,
+              "{networkImage}": 2,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[CHAIN_IDS.MAINNET]}": 2,
               "{singleNetworkIconUrl}": 1,
               "{badgeWrapperSrc}": 1,
@@ -501,10 +313,8 @@
               "{getNetworkImageUrl()}": 1,
               "{currentChain?.rpcPrefs?.imageUrl}": 1,
               "\"./images/eth_logo.svg\"": 1,
-              "{getNetworkImageSrc()}": 1,
               "{dappActiveNetwork?.chainId?.includes(':') ? getImageForChainId( getChainIdFor...}": 1,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[ pendingTokens[address]?.chainId ]}": 1,
-              "{iconSrc}": 1,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[ network.chainId as keyof typeof CHAIN_ID_T...}": 1,
               "{image}": 1,
               "{networkSrc}": 1,
@@ -519,31 +329,34 @@
               "{networkImage || chainNetworkNameAndImage?.networkImage}": 1,
               "{displayIcon}": 1,
               "{imgSrc}": 1,
+              "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[chainId]}": 1,
               "{fromNetworkDetails.iconUrl}": 1,
               "{toNetworkDetails.iconUrl}": 1,
+              "{typeof selectedChainId === 'string' ? getImageForChainId(selectedChainId) || ...}": 1,
+              "{contactChainId ? getImageForChainId(contactChainId) || undefined : undefined}": 1,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[ network.chainId ]}": 1,
+              "{arbitrumNetworkImageUrl}": 1,
               "{getImageForChainId(selectedNetworkInfo.chainId)}": 1,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[ selectedToken.chainId ]}": 1
             }
           },
           "name": {
-            "count": 69,
+            "count": 68,
             "values": {
-              "{networkName}": 8,
+              "{networkName}": 11,
               "{network.name}": 8,
-              "{transaction.chain}": 4,
               "{allNetworks?.[chainId as Hex]?.name}": 3,
               "{networkImageUrl}": 2,
-              "{currentNetwork?.nickname || ''}": 2,
               "{currentNetwork?.nickname}": 2,
               "{sourceNetworkNickname ?? ''}": 2,
               "{member.symbol ?? ''}": 2,
               "{name}": 2,
               "{chainId}": 2,
               "{nftData.networkName ?? ''}": 2,
-              "{networks?.[selectedChainId]?.name}": 2,
+              "{displayName}": 2,
               "{NETWORK_TO_NAME_MAP[CHAIN_IDS.MAINNET]}": 2,
               "{currentMultichainNetwork.nickname}": 1,
+              "{currentNetwork?.nickname || ''}": 1,
               "{currentNetworkImageUrl ?? ''}": 1,
               "{networkImageUrl ?? ''}": 1,
               "{networkConfiguration.name}": 1,
@@ -551,8 +364,8 @@
               "{displayNetwork?.name || displayNetwork?.nickname}": 1,
               "{currentChain?.nickname}": 1,
               "\"Network Name\"": 1,
-              "{dappActiveNetwork.name || dappActiveNetwork.nickname}": 1,
               "{dappActiveNetwork?.name || ''}": 1,
+              "{(dappActiveNetwork as { name?: string })?.name ?? (dappActiveNetwork as { nic...}": 1,
               "{networkConfigurationToUse.name}": 1,
               "{NETWORK_TO_SHORT_NETWORK_NAME_MAP[ formatChainIdToCaip(asset.chainId) ]}": 1,
               "{NETWORK_TO_SHORT_NETWORK_NAME_MAP[caipChainId]}": 1,
@@ -561,83 +374,65 @@
               "{destNetwork?.name}": 1,
               "{tokenData.networkName ?? ''}": 1,
               "{networkName || chainNetworkNameAndImage?.networkName || ''}": 1,
-              "{networkDisplayName}": 1,
-              "{displayName}": 1,
               "{nativeCurrency}": 1,
               "{networkConfiguration?.name ?? ''}": 1,
               "{fromNetworkDetails.name}": 1,
               "{toNetworkDetails.name}": 1,
               "{requestData.chainName}": 1,
+              "{String(selectedNetworkName)}": 1,
+              "{selectedNetworkName}": 1,
+              "{arbitrumNetworkName}": 1,
               "{NETWORK_TO_NAME_MAP[ selectedToken.chainId as keyof typeof NETWORK_TO_NAME_MAP ]}": 1
             }
           },
           "size": {
-            "count": 67,
+            "count": 66,
             "values": {
               "{AvatarNetworkSize.Xs}": 40,
-              "{AvatarNetworkSize.Sm}": 15,
-              "{AvatarNetworkSize.Md}": 5,
+              "{AvatarNetworkSize.Sm}": 14,
+              "{AvatarNetworkSize.Md}": 6,
               "{AvatarNetworkSize.Xl}": 2,
               "{size}": 1,
-              "{AvatarAccountSize.Md}": 1,
               "{iconSize as AvatarNetworkSize}": 1,
               "{AvatarNetworkSize.Lg}": 1,
               "{NETWORK_BADGE_SIZE_MAP[size]}": 1
             }
           },
-          "borderColor": {
-            "count": 19,
+          "className": {
+            "count": 18,
             "values": {
-              "{BorderColor.backgroundDefault}": 7,
-              "{BackgroundColor.backgroundDefault}": 7,
+              "\"rounded-md\"": 4,
+              "\"activity-tx__network-badge\"": 3,
+              "\"border-2 border-background-default rounded-md\"": 2,
+              "\"multichain-bridge-transaction-details-modal__network-badge\"": 2,
+              "\"token-list__token_component__network-badge\"": 1,
+              "\"border-transparent\"": 1,
+              "\"dapp-connection-control-bar__network-icon\"": 1,
+              "\"nft-item__network-badge\"": 1,
+              "\"multichain-token-list-item__badge__avatar-network\"": 1,
+              "\"bg-white\"": 1,
+              "\"box-border border-2 border-default\"": 1
+            }
+          },
+          "borderColor": {
+            "count": 13,
+            "values": {
+              "{BorderColor.backgroundDefault}": 6,
+              "{BackgroundColor.backgroundDefault}": 3,
               "{BorderColor.borderMuted}": 3,
-              "{BorderColor.transparent}": 1,
               "{BorderColor.borderDefault}": 1
             }
           },
           "borderWidth": {
-            "count": 16,
+            "count": 12,
             "values": {
               "0": 2,
               "1": 2,
-              "2": 12
-            }
-          },
-          "className": {
-            "count": 15,
-            "values": {
-              "\"activity-tx__network-badge\"": 7,
-              "\"multichain-bridge-transaction-details-modal__network-badge\"": 2,
-              "\"border-2 border-background-default rounded-md\"": 1,
-              "\"token-list__token_component__network-badge\"": 1,
-              "\"nft-item__network-badge\"": 1,
-              "\"multichain-token-list-item__badge__avatar-network\"": 1,
-              "\"bg-white\"": 1,
-              "\"confirm_header__avatar-network\"": 1
-            }
-          },
-          "backgroundColor": {
-            "count": 12,
-            "values": {
-              "{testNetworkBackgroundColor}": 4,
-              "{BackgroundColor.backgroundDefault}": 3,
-              "{BackgroundColor.backgroundSection}": 2,
-              "{getAvatarNetworkColor(name)}": 2,
-              "{getAvatarNetworkColor(networkDisplayName)}": 1
-            }
-          },
-          "data-testid": {
-            "count": 11,
-            "values": {
-              "\"activity-tx-network-badge\"": 7,
-              "\"nft-network-badge\"": 1,
-              "\"permission-group-list-item__avatar-network\"": 1,
-              "\"multichain-address-row-network-icon\"": 1,
-              "{`network-avatar-${i}`}": 1
+              "2": 8
             }
           },
           "style": {
-            "count": 10,
+            "count": 11,
             "values": {
               "{{ marginLeft: index === 0 ? 0 : '-20px', zIndex: 5 - index, }}": 2,
               "{{ width: 20, height: 20, borderWidth: 2, }}": 2,
@@ -646,7 +441,27 @@
               "{{ width: 20, height: 20, borderWidth: 2, borderRadius: 4 }}": 1,
               "{{ borderWidth: 1, borderRadius: 6 }}": 1,
               "{{ borderWidth: 0 }}": 1,
-              "{NETWORK_BADGE_STYLE_MAP[size]}": 1
+              "{NETWORK_BADGE_STYLE_MAP[size]}": 1,
+              "{networkAvatarStyle}": 1
+            }
+          },
+          "backgroundColor": {
+            "count": 10,
+            "values": {
+              "{BackgroundColor.backgroundDefault}": 4,
+              "{testNetworkBackgroundColor}": 3,
+              "{getAvatarNetworkColor(name)}": 2,
+              "{BackgroundColor.backgroundSection}": 1
+            }
+          },
+          "data-testid": {
+            "count": 7,
+            "values": {
+              "\"activity-tx-network-badge\"": 3,
+              "\"nft-network-badge\"": 1,
+              "\"permission-group-list-item__avatar-network\"": 1,
+              "\"multichain-address-row-network-icon\"": 1,
+              "{`network-avatar-${i}`}": 1
             }
           },
           "key": {
@@ -701,7 +516,226 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "AvatarNetwork": 60
+        "AvatarNetwork": 49
+      }
+    },
+    "mobile": {
+      "filesScanned": 5996,
+      "targetComponent": "AvatarNetwork",
+      "mmds": {
+        "totalInstances": 3,
+        "filesCount": 3,
+        "props": {
+          "src": {
+            "count": 3,
+            "values": {
+              "{imageSource}": 1,
+              "{networkImageSource as React.ComponentProps< typeof AvatarNetwork >['src']}": 1,
+              "{imageSource as ImageOrSvgSrc}": 1
+            }
+          },
+          "size": {
+            "count": 3,
+            "values": {
+              "{AvatarNetworkSize.Xs}": 3
+            }
+          },
+          "name": {
+            "count": 3,
+            "values": {
+              "{chain.name}": 1,
+              "{displayName}": 1,
+              "{label}": 1
+            }
+          },
+          "shape": {
+            "count": 3,
+            "values": {
+              "{AvatarBaseShape.Square}": 3
+            }
+          },
+          "twClassName": {
+            "count": 3,
+            "values": {
+              "\"rounded translate-y-px\"": 3
+            }
+          },
+          "testID": {
+            "count": 1,
+            "values": {
+              "{chainId !== undefined ? getNetworkFilterAvatarTestId(chainId) : undefined}": 1
+            }
+          }
+        }
+      },
+      "deprecated": {
+        "totalInstances": 14,
+        "filesCount": 12,
+        "props": {
+          "imageSource": {
+            "count": 14,
+            "values": {
+              "{networkImageSource}": 4,
+              "{imageSource}": 3,
+              "{networkImage}": 2,
+              "{getNetworkImageSource({ chainId: cardNetworkInfos.base.caipChainId, })}": 1,
+              "{getNetworkImageSource({ chainId: cardNetworkInfos.solana.caipChainId, })}": 1,
+              "{getNetworkImageSource({ chainId: network.chainId, })}": 1,
+              "{item.imageSource}": 1,
+              "{networkConfiguration.rpcPrefs.imageSource || (networkConfiguration.rpcPrefs.i...}": 1
+            }
+          },
+          "size": {
+            "count": 12,
+            "values": {
+              "{AvatarSize.Xs}": 7,
+              "{AvatarSize.Md}": 3,
+              "{AvatarSize.Sm}": 2
+            }
+          },
+          "name": {
+            "count": 11,
+            "values": {
+              "{displayName}": 2,
+              "\"Base\"": 1,
+              "\"Solana\"": 1,
+              "{depositNetworkName ?? networkName}": 1,
+              "{network.name}": 1,
+              "{nativeCurrency}": 1,
+              "{formHook.form.nickname}": 1,
+              "{item.name}": 1,
+              "{networkConfiguration.nickname}": 1,
+              "{name}": 1
+            }
+          },
+          "style": {
+            "count": 6,
+            "values": {
+              "{tw.style('rounded-full overflow-hidden')}": 1,
+              "{tw.style('-ml-2 rounded-full overflow-hidden')}": 1,
+              "{styles.overlappedNetworkIcon}": 1,
+              "{styles.selectedNetworkIcon}": 1,
+              "{styles.avatarNetwork}": 1,
+              "{styles.avatar}": 1
+            }
+          },
+          "key": {
+            "count": 2,
+            "values": {
+              "{chainId}": 2
+            }
+          },
+          "includesBorder": {
+            "count": 1,
+            "values": {
+              "true (shorthand)": 1
+            }
+          },
+          "testID": {
+            "count": 1,
+            "values": {
+              "\"simulation-details-asset-pill-avatar-network\"": 1
+            }
+          }
+        }
+      },
+      "overall": {
+        "totalInstances": 17,
+        "filesCount": 15,
+        "props": {
+          "size": {
+            "count": 15,
+            "values": {
+              "{AvatarSize.Xs}": 7,
+              "{AvatarNetworkSize.Xs}": 3,
+              "{AvatarSize.Md}": 3,
+              "{AvatarSize.Sm}": 2
+            }
+          },
+          "name": {
+            "count": 14,
+            "values": {
+              "{displayName}": 3,
+              "{chain.name}": 1,
+              "\"Base\"": 1,
+              "\"Solana\"": 1,
+              "{depositNetworkName ?? networkName}": 1,
+              "{network.name}": 1,
+              "{nativeCurrency}": 1,
+              "{formHook.form.nickname}": 1,
+              "{item.name}": 1,
+              "{networkConfiguration.nickname}": 1,
+              "{label}": 1,
+              "{name}": 1
+            }
+          },
+          "imageSource": {
+            "count": 14,
+            "values": {
+              "{networkImageSource}": 4,
+              "{imageSource}": 3,
+              "{networkImage}": 2,
+              "{getNetworkImageSource({ chainId: cardNetworkInfos.base.caipChainId, })}": 1,
+              "{getNetworkImageSource({ chainId: cardNetworkInfos.solana.caipChainId, })}": 1,
+              "{getNetworkImageSource({ chainId: network.chainId, })}": 1,
+              "{item.imageSource}": 1,
+              "{networkConfiguration.rpcPrefs.imageSource || (networkConfiguration.rpcPrefs.i...}": 1
+            }
+          },
+          "style": {
+            "count": 6,
+            "values": {
+              "{tw.style('rounded-full overflow-hidden')}": 1,
+              "{tw.style('-ml-2 rounded-full overflow-hidden')}": 1,
+              "{styles.overlappedNetworkIcon}": 1,
+              "{styles.selectedNetworkIcon}": 1,
+              "{styles.avatarNetwork}": 1,
+              "{styles.avatar}": 1
+            }
+          },
+          "src": {
+            "count": 3,
+            "values": {
+              "{imageSource}": 1,
+              "{networkImageSource as React.ComponentProps< typeof AvatarNetwork >['src']}": 1,
+              "{imageSource as ImageOrSvgSrc}": 1
+            }
+          },
+          "shape": {
+            "count": 3,
+            "values": {
+              "{AvatarBaseShape.Square}": 3
+            }
+          },
+          "twClassName": {
+            "count": 3,
+            "values": {
+              "\"rounded translate-y-px\"": 3
+            }
+          },
+          "key": {
+            "count": 2,
+            "values": {
+              "{chainId}": 2
+            }
+          },
+          "testID": {
+            "count": 2,
+            "values": {
+              "\"simulation-details-asset-pill-avatar-network\"": 1,
+              "{chainId !== undefined ? getNetworkFilterAvatarTestId(chainId) : undefined}": 1
+            }
+          },
+          "includesBorder": {
+            "count": 1,
+            "values": {
+              "true (shorthand)": 1
+            }
+          }
+        }
+      },
+      "deprecatedByLegacyComponent": {
+        "AvatarNetwork": 14
       }
     }
   }

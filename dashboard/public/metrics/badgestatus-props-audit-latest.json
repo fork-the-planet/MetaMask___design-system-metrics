@@ -1,26 +1,18 @@
 {
   "component": "BadgeStatus",
-  "generatedAt": "2026-03-04T22:24:02.667Z",
+  "generatedAt": "2026-04-20T17:07:56.165Z",
   "projects": {
-    "mobile": {
-      "filesScanned": 5390,
+    "extension": {
+      "filesScanned": 3082,
       "targetComponent": "BadgeStatus",
       "mmds": {
-        "totalInstances": 3,
+        "totalInstances": 2,
         "filesCount": 2,
         "props": {
           "status": {
-            "count": 3,
+            "count": 2,
             "values": {
-              "{BadgeStatusStatus.Active}": 1,
-              "{BadgeStatusStatus.Attention}": 1,
-              "{BadgeStatusStatus.New}": 1
-            }
-          },
-          "style": {
-            "count": 1,
-            "values": {
-              "{statusStyle}": 1
+              "{BadgeStatusStatus.New}": 2
             }
           }
         }
@@ -31,38 +23,43 @@
         "props": {}
       },
       "overall": {
-        "totalInstances": 3,
+        "totalInstances": 2,
         "filesCount": 2,
         "props": {
           "status": {
-            "count": 3,
+            "count": 2,
             "values": {
-              "{BadgeStatusStatus.Active}": 1,
-              "{BadgeStatusStatus.Attention}": 1,
-              "{BadgeStatusStatus.New}": 1
-            }
-          },
-          "style": {
-            "count": 1,
-            "values": {
-              "{statusStyle}": 1
+              "{BadgeStatusStatus.New}": 2
             }
           }
         }
       },
       "deprecatedByLegacyComponent": {}
     },
-    "extension": {
-      "filesScanned": 2980,
+    "mobile": {
+      "filesScanned": 5996,
       "targetComponent": "BadgeStatus",
       "mmds": {
-        "totalInstances": 2,
-        "filesCount": 2,
+        "totalInstances": 3,
+        "filesCount": 3,
         "props": {
           "status": {
-            "count": 2,
+            "count": 3,
             "values": {
-              "{BadgeStatusStatus.New}": 2
+              "{BadgeStatusStatus.Attention}": 2,
+              "{BadgeStatusStatus.New}": 1
+            }
+          },
+          "testID": {
+            "count": 1,
+            "values": {
+              "{WalletViewSelectorsIDs.CARD_BUTTON_BADGE}": 1
+            }
+          },
+          "style": {
+            "count": 1,
+            "values": {
+              "{statusStyle}": 1
             }
           }
         }
@@ -73,13 +70,26 @@
         "props": {}
       },
       "overall": {
-        "totalInstances": 2,
-        "filesCount": 2,
+        "totalInstances": 3,
+        "filesCount": 3,
         "props": {
           "status": {
-            "count": 2,
+            "count": 3,
             "values": {
-              "{BadgeStatusStatus.New}": 2
+              "{BadgeStatusStatus.Attention}": 2,
+              "{BadgeStatusStatus.New}": 1
+            }
+          },
+          "testID": {
+            "count": 1,
+            "values": {
+              "{WalletViewSelectorsIDs.CARD_BUTTON_BADGE}": 1
+            }
+          },
+          "style": {
+            "count": 1,
+            "values": {
+              "{statusStyle}": 1
             }
           }
         }

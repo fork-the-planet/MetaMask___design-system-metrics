@@ -1,0 +1,652 @@
+{
+  "project": "mobile",
+  "date": "2026-04-20",
+  "generatedAt": "2026-04-20T16:59:06.452Z",
+  "mmdsComponentsAvailable": 60,
+  "mmdsComponentsList": [
+    "ActionListItem",
+    "AvatarAccount",
+    "AvatarBase",
+    "AvatarFavicon",
+    "AvatarGroup",
+    "AvatarIcon",
+    "AvatarNetwork",
+    "AvatarToken",
+    "BadgeCount",
+    "BadgeIcon",
+    "BadgeNetwork",
+    "BadgeStatus",
+    "BadgeWrapper",
+    "BannerAlert",
+    "BannerBase",
+    "Blockies",
+    "BottomSheet",
+    "BottomSheetDialog",
+    "BottomSheetFooter",
+    "BottomSheetHeader",
+    "BottomSheetOverlay",
+    "Box",
+    "BoxColumn",
+    "BoxRow",
+    "Button",
+    "ButtonAnimated",
+    "ButtonBase",
+    "ButtonFilter",
+    "ButtonHero",
+    "ButtonIcon",
+    "ButtonSemantic",
+    "Card",
+    "Checkbox",
+    "HeaderBase",
+    "HeaderRoot",
+    "HeaderSearch",
+    "HeaderStandard",
+    "Icon",
+    "IconAlert",
+    "ImageOrSvg",
+    "Input",
+    "Jazzicon",
+    "KeyValueColumn",
+    "KeyValueRow",
+    "Label",
+    "ListItem",
+    "MainActionButton",
+    "Maskicon",
+    "RadioButton",
+    "SensitiveText",
+    "Skeleton",
+    "Spinner",
+    "TabEmptyState",
+    "Text",
+    "TextButton",
+    "TextField",
+    "TextFieldSearch",
+    "TextOrChildren",
+    "TitleHub",
+    "Toast"
+  ],
+  "newComponents": [
+    "BoxColumn",
+    "BoxRow",
+    "HeaderSearch",
+    "IconAlert",
+    "KeyValueColumn",
+    "KeyValueRow",
+    "TitleHub"
+  ],
+  "summary": {
+    "totalComponents": 39,
+    "mmdsInstances": 4020,
+    "deprecatedInstances": 3007,
+    "totalInstances": 7027,
+    "migrationPercentage": "57.21",
+    "fullyMigrated": 0,
+    "inProgress": 22,
+    "notStarted": 17,
+    "codeOwnerStats": {
+      "@MetaMask/accounts-engineers": {
+        "mmdsInstances": 62,
+        "deprecatedInstances": 128,
+        "totalInstances": 190,
+        "migrationPercentage": "32.63",
+        "filesCount": 36
+      },
+      "@MetaMask/card": {
+        "mmdsInstances": 339,
+        "deprecatedInstances": 100,
+        "totalInstances": 439,
+        "migrationPercentage": "77.22",
+        "filesCount": 46
+      },
+      "@MetaMask/confirmations": {
+        "mmdsInstances": 116,
+        "deprecatedInstances": 325,
+        "totalInstances": 441,
+        "migrationPercentage": "26.30",
+        "filesCount": 129
+      },
+      "@MetaMask/core-platform": {
+        "mmdsInstances": 11,
+        "deprecatedInstances": 92,
+        "totalInstances": 103,
+        "migrationPercentage": "10.68",
+        "filesCount": 31
+      },
+      "@MetaMask/delegation": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/design-system-engineers": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/earn": {
+        "mmdsInstances": 206,
+        "deprecatedInstances": 283,
+        "totalInstances": 489,
+        "migrationPercentage": "42.13",
+        "filesCount": 91
+      },
+      "@MetaMask/metamask-assets": {
+        "mmdsInstances": 176,
+        "deprecatedInstances": 138,
+        "totalInstances": 314,
+        "migrationPercentage": "56.05",
+        "filesCount": 60
+      },
+      "@MetaMask/mobile-admins": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/mobile-core-ux": {
+        "mmdsInstances": 60,
+        "deprecatedInstances": 222,
+        "totalInstances": 282,
+        "migrationPercentage": "21.28",
+        "filesCount": 57
+      },
+      "@MetaMask/mobile-platform": {
+        "mmdsInstances": 3,
+        "deprecatedInstances": 1,
+        "totalInstances": 4,
+        "migrationPercentage": "75.00",
+        "filesCount": 2
+      },
+      "@MetaMask/money-movement": {
+        "mmdsInstances": 226,
+        "deprecatedInstances": 89,
+        "totalInstances": 315,
+        "migrationPercentage": "71.75",
+        "filesCount": 38
+      },
+      "@MetaMask/notifications": {
+        "mmdsInstances": 12,
+        "deprecatedInstances": 66,
+        "totalInstances": 78,
+        "migrationPercentage": "15.38",
+        "filesCount": 23
+      },
+      "@MetaMask/perps": {
+        "mmdsInstances": 120,
+        "deprecatedInstances": 708,
+        "totalInstances": 828,
+        "migrationPercentage": "14.49",
+        "filesCount": 109
+      },
+      "@MetaMask/predict": {
+        "mmdsInstances": 566,
+        "deprecatedInstances": 152,
+        "totalInstances": 718,
+        "migrationPercentage": "78.83",
+        "filesCount": 92
+      },
+      "@MetaMask/qa": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/rewards": {
+        "mmdsInstances": 766,
+        "deprecatedInstances": 70,
+        "totalInstances": 836,
+        "migrationPercentage": "91.63",
+        "filesCount": 93
+      },
+      "@MetaMask/social-ai": {
+        "mmdsInstances": 297,
+        "deprecatedInstances": 31,
+        "totalInstances": 328,
+        "migrationPercentage": "90.55",
+        "filesCount": 29
+      },
+      "@MetaMask/supply-chain": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/swaps-engineers": {
+        "mmdsInstances": 103,
+        "deprecatedInstances": 106,
+        "totalInstances": 209,
+        "migrationPercentage": "49.28",
+        "filesCount": 43
+      },
+      "@MetaMask/transactions": {
+        "mmdsInstances": 2,
+        "deprecatedInstances": 2,
+        "totalInstances": 4,
+        "migrationPercentage": "50.00",
+        "filesCount": 1
+      },
+      "@MetaMask/wallet-integrations": {
+        "mmdsInstances": 7,
+        "deprecatedInstances": 27,
+        "totalInstances": 34,
+        "migrationPercentage": "20.59",
+        "filesCount": 8
+      },
+      "@MetaMask/web3auth": {
+        "mmdsInstances": 300,
+        "deprecatedInstances": 24,
+        "totalInstances": 324,
+        "migrationPercentage": "92.59",
+        "filesCount": 31
+      },
+      "@unknown": {
+        "mmdsInstances": 632,
+        "deprecatedInstances": 710,
+        "totalInstances": 1342,
+        "migrationPercentage": "47.09",
+        "filesCount": 231
+      }
+    }
+  },
+  "components": [
+    {
+      "replacementComponent": "Text",
+      "legacyComponents": [
+        "Text"
+      ],
+      "legacyInstances": 1656,
+      "mmdsInstances": 1296,
+      "totalInstances": 2952,
+      "migrationPercentage": "43.90"
+    },
+    {
+      "replacementComponent": "Button",
+      "legacyComponents": [
+        "Button",
+        "ButtonPrimary",
+        "ButtonSecondary"
+      ],
+      "legacyInstances": 200,
+      "mmdsInstances": 305,
+      "totalInstances": 505,
+      "migrationPercentage": "60.40"
+    },
+    {
+      "replacementComponent": "Icon",
+      "legacyComponents": [
+        "Icon"
+      ],
+      "legacyInstances": 289,
+      "mmdsInstances": 184,
+      "totalInstances": 473,
+      "migrationPercentage": "38.90"
+    },
+    {
+      "replacementComponent": "BottomSheet",
+      "legacyComponents": [
+        "BottomSheet"
+      ],
+      "legacyInstances": 171,
+      "mmdsInstances": 29,
+      "totalInstances": 200,
+      "migrationPercentage": "14.50"
+    },
+    {
+      "replacementComponent": "ButtonIcon",
+      "legacyComponents": [
+        "ButtonIcon"
+      ],
+      "legacyInstances": 73,
+      "mmdsInstances": 65,
+      "totalInstances": 138,
+      "migrationPercentage": "47.10"
+    },
+    {
+      "replacementComponent": "BottomSheetHeader",
+      "legacyComponents": [
+        "BottomSheetHeader"
+      ],
+      "legacyInstances": 77,
+      "mmdsInstances": 16,
+      "totalInstances": 93,
+      "migrationPercentage": "17.20"
+    },
+    {
+      "replacementComponent": "BadgeWrapper",
+      "legacyComponents": [
+        "BadgeWrapper"
+      ],
+      "legacyInstances": 66,
+      "mmdsInstances": 6,
+      "totalInstances": 72,
+      "migrationPercentage": "8.33"
+    },
+    {
+      "replacementComponent": "SensitiveText",
+      "legacyComponents": [
+        "SensitiveText"
+      ],
+      "legacyInstances": 65,
+      "mmdsInstances": 1,
+      "totalInstances": 66,
+      "migrationPercentage": "1.52"
+    },
+    {
+      "replacementComponent": "Label",
+      "legacyComponents": [
+        "Label"
+      ],
+      "legacyInstances": 3,
+      "mmdsInstances": 53,
+      "totalInstances": 56,
+      "migrationPercentage": "94.64"
+    },
+    {
+      "replacementComponent": "TextField",
+      "legacyComponents": [
+        "TextField"
+      ],
+      "legacyInstances": 43,
+      "mmdsInstances": 10,
+      "totalInstances": 53,
+      "migrationPercentage": "18.87"
+    },
+    {
+      "replacementComponent": "BottomSheetFooter",
+      "legacyComponents": [
+        "BottomSheetFooter"
+      ],
+      "legacyInstances": 44,
+      "mmdsInstances": 7,
+      "totalInstances": 51,
+      "migrationPercentage": "13.73"
+    },
+    {
+      "replacementComponent": "AvatarToken",
+      "legacyComponents": [
+        "AvatarToken"
+      ],
+      "legacyInstances": 36,
+      "mmdsInstances": 14,
+      "totalInstances": 50,
+      "migrationPercentage": "28.00"
+    },
+    {
+      "replacementComponent": "BannerAlert",
+      "legacyComponents": [
+        "Banner",
+        "BannerAlert"
+      ],
+      "legacyInstances": 38,
+      "mmdsInstances": 3,
+      "totalInstances": 41,
+      "migrationPercentage": "7.32"
+    },
+    {
+      "replacementComponent": "KeyValueRow",
+      "legacyComponents": [
+        "KeyValueRow"
+      ],
+      "legacyInstances": 36,
+      "mmdsInstances": 0,
+      "totalInstances": 36,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "ListItem",
+      "legacyComponents": [
+        "ListItem"
+      ],
+      "legacyInstances": 32,
+      "mmdsInstances": 1,
+      "totalInstances": 33,
+      "migrationPercentage": "3.03"
+    },
+    {
+      "replacementComponent": "ActionListItem",
+      "legacyComponents": [
+        "ActionListItem"
+      ],
+      "legacyInstances": 20,
+      "mmdsInstances": 0,
+      "totalInstances": 20,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "ButtonBase",
+      "legacyComponents": [
+        "ButtonBase"
+      ],
+      "legacyInstances": 10,
+      "mmdsInstances": 10,
+      "totalInstances": 20,
+      "migrationPercentage": "50.00"
+    },
+    {
+      "replacementComponent": "Checkbox",
+      "legacyComponents": [
+        "Checkbox"
+      ],
+      "legacyInstances": 17,
+      "mmdsInstances": 2,
+      "totalInstances": 19,
+      "migrationPercentage": "10.53"
+    },
+    {
+      "replacementComponent": "AvatarNetwork",
+      "legacyComponents": [
+        "AvatarNetwork"
+      ],
+      "legacyInstances": 13,
+      "mmdsInstances": 3,
+      "totalInstances": 16,
+      "migrationPercentage": "18.75"
+    },
+    {
+      "replacementComponent": "TextFieldSearch",
+      "legacyComponents": [
+        "TextFieldSearch"
+      ],
+      "legacyInstances": 14,
+      "mmdsInstances": 0,
+      "totalInstances": 14,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "HeaderBase",
+      "legacyComponents": [
+        "HeaderBase"
+      ],
+      "legacyInstances": 12,
+      "mmdsInstances": 1,
+      "totalInstances": 13,
+      "migrationPercentage": "7.69"
+    },
+    {
+      "replacementComponent": "TabEmptyState",
+      "legacyComponents": [
+        "TabEmptyState"
+      ],
+      "legacyInstances": 11,
+      "mmdsInstances": 0,
+      "totalInstances": 11,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "AvatarAccount",
+      "legacyComponents": [
+        "AvatarAccount"
+      ],
+      "legacyInstances": 11,
+      "mmdsInstances": 0,
+      "totalInstances": 11,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "AvatarGroup",
+      "legacyComponents": [
+        "AvatarGroup"
+      ],
+      "legacyInstances": 9,
+      "mmdsInstances": 0,
+      "totalInstances": 9,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "BadgeNetwork",
+      "legacyComponents": [
+        "BadgeNetwork"
+      ],
+      "legacyInstances": 8,
+      "mmdsInstances": 0,
+      "totalInstances": 8,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "AvatarBase",
+      "legacyComponents": [
+        "AvatarBase"
+      ],
+      "legacyInstances": 4,
+      "mmdsInstances": 4,
+      "totalInstances": 8,
+      "migrationPercentage": "50.00"
+    },
+    {
+      "replacementComponent": "MainActionButton",
+      "legacyComponents": [
+        "MainActionButton"
+      ],
+      "legacyInstances": 7,
+      "mmdsInstances": 0,
+      "totalInstances": 7,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "Card",
+      "legacyComponents": [
+        "Card"
+      ],
+      "legacyInstances": 7,
+      "mmdsInstances": 0,
+      "totalInstances": 7,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "ButtonHero",
+      "legacyComponents": [
+        "ButtonHero"
+      ],
+      "legacyInstances": 4,
+      "mmdsInstances": 2,
+      "totalInstances": 6,
+      "migrationPercentage": "33.33"
+    },
+    {
+      "replacementComponent": "AvatarFavicon",
+      "legacyComponents": [
+        "AvatarFavicon"
+      ],
+      "legacyInstances": 6,
+      "mmdsInstances": 0,
+      "totalInstances": 6,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "ButtonSemantic",
+      "legacyComponents": [
+        "ButtonSemantic"
+      ],
+      "legacyInstances": 5,
+      "mmdsInstances": 0,
+      "totalInstances": 5,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "HeaderRoot",
+      "legacyComponents": [
+        "HeaderRoot"
+      ],
+      "legacyInstances": 4,
+      "mmdsInstances": 0,
+      "totalInstances": 4,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "ButtonFilter",
+      "legacyComponents": [
+        "ButtonFilter"
+      ],
+      "legacyInstances": 1,
+      "mmdsInstances": 3,
+      "totalInstances": 4,
+      "migrationPercentage": "75.00"
+    },
+    {
+      "replacementComponent": "RadioButton",
+      "legacyComponents": [
+        "RadioButton"
+      ],
+      "legacyInstances": 4,
+      "mmdsInstances": 0,
+      "totalInstances": 4,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "Input",
+      "legacyComponents": [
+        "Input"
+      ],
+      "legacyInstances": 4,
+      "mmdsInstances": 0,
+      "totalInstances": 4,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "BannerBase",
+      "legacyComponents": [
+        "BannerBase"
+      ],
+      "legacyInstances": 3,
+      "mmdsInstances": 1,
+      "totalInstances": 4,
+      "migrationPercentage": "25.00"
+    },
+    {
+      "replacementComponent": "Toast",
+      "legacyComponents": [
+        "Toast"
+      ],
+      "legacyInstances": 2,
+      "mmdsInstances": 0,
+      "totalInstances": 2,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "BottomSheetDialog",
+      "legacyComponents": [
+        "BottomSheetDialog"
+      ],
+      "legacyInstances": 1,
+      "mmdsInstances": 0,
+      "totalInstances": 1,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "AvatarIcon",
+      "legacyComponents": [
+        "AvatarIcon"
+      ],
+      "legacyInstances": 1,
+      "mmdsInstances": 0,
+      "totalInstances": 1,
+      "migrationPercentage": "0.00"
+    }
+  ]
+}
