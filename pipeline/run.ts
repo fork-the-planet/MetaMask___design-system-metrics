@@ -155,7 +155,10 @@ async function main(): Promise<void> {
     name: 'props-audit',
     command: 'node',
     args: ['scripts/component-props-audit.js'],
-    env: dateEnv,
+    env: {
+      ...dateEnv,
+      NODE_OPTIONS: '',
+    },
   });
 
   // 6. Update timeline + index
