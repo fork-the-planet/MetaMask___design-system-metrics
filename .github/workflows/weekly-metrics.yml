@@ -49,6 +49,11 @@ jobs:
         id: date
         run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
 
+      - name: Install dashboard dependencies
+        run: |
+          cd dashboard
+          npm ci
+
       - name: Run pipeline
         run: yarn pipeline
 
@@ -58,11 +63,6 @@ jobs:
           cp metrics/mobile-untracked-${{ steps.date.outputs.date }}.json metrics/mobile-untracked-latest.json
           cp metrics/extension-untracked-${{ steps.date.outputs.date }}.json dashboard/public/metrics/extension-untracked-latest.json
           cp metrics/mobile-untracked-${{ steps.date.outputs.date }}.json dashboard/public/metrics/mobile-untracked-latest.json
-
-      - name: Install dashboard dependencies
-        run: |
-          cd dashboard
-          npm ci
 
       - name: Build dashboard
         run: |
