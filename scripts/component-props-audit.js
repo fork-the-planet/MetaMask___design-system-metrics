@@ -1,25 +1,12 @@
 #!/usr/bin/env node
 
 const fs = require('fs').promises;
+const { createRequire } = require('module');
 const path = require('path');
 
-const { Linter } = require(path.join(
-  __dirname,
-  '..',
-  'dashboard',
-  'node_modules',
-  'eslint',
-));
-const tsEslintParser = require(path.join(
-  __dirname,
-  '..',
-  'dashboard',
-  'node_modules',
-  '@typescript-eslint',
-  'parser',
-  'dist',
-  'index.js',
-));
+const dashboardRequire = createRequire(path.join(__dirname, '..', 'dashboard', 'package.json'));
+const { Linter } = dashboardRequire('eslint');
+const tsEslintParser = dashboardRequire('@typescript-eslint/parser');
 
 function printHelpAndExit() {
   console.log(`Component Props Audit
@@ -81,11 +68,6 @@ function parseArgs(argv) {
       opts.output = argv[++i];
       continue;
     }
-  }
-
-  if (!opts.component && !opts.components) {
-    console.error('Error: --component or --components is required');
-    process.exit(1);
   }
 
   return opts;
@@ -302,6 +284,26 @@ function counterToJson(counter) {
 async function loadConfig(configPath) {
   const raw = await fs.readFile(configPath, 'utf8');
   return JSON.parse(raw);
+}
+
+async function loadDefaultTargetComponents(metricsDir) {
+  const indexPath = path.join(metricsDir, 'component-props-audit-index.json');
+  const indexRaw = await fs.readFile(indexPath, 'utf8');
+  const index = JSON.parse(indexRaw);
+
+  if (!Array.isArray(index.components)) {
+    throw new Error('component-props-audit-index.json is missing a components array');
+  }
+
+  const components = index.components
+    .map((entry) => entry?.component)
+    .filter((component) => typeof component === 'string' && component.length > 0);
+
+  if (components.length === 0) {
+    throw new Error('component-props-audit-index.json does not list any components');
+  }
+
+  return components;
 }
 
 function createCollectorRule({
@@ -554,12 +556,14 @@ async function main() {
     throw new Error(`Unknown project(s): ${missingProjects.join(', ')}`);
   }
 
-  const targetComponents = parsed.components
-    ? parsed.components.split(',').map((v) => v.trim()).filter(Boolean)
-    : [parsed.component];
-
   const metricsDir = path.join(__dirname, '..', 'metrics');
   await fs.mkdir(metricsDir, { recursive: true });
+
+  const targetComponents = parsed.components
+    ? parsed.components.split(',').map((v) => v.trim()).filter(Boolean)
+    : parsed.component
+      ? [parsed.component]
+      : await loadDefaultTargetComponents(metricsDir);
 
   const indexEntries = [];
 
