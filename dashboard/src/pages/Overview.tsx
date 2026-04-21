@@ -128,6 +128,7 @@ export function Overview() {
     mmdsComponents: data.mobile.mmdsComponentsAvailable?.[i] || 0,
     mmdsInstances: data.mobile.mmdsInstances[i],
     deprecatedInstances: data.mobile.deprecatedInstances[i],
+    totalInstances: data.mobile.mmdsInstances[i] + data.mobile.deprecatedInstances[i],
     migration: data.mobile.migrationPercentage[i],
   }));
 
@@ -136,6 +137,7 @@ export function Overview() {
     mmdsComponents: data.extension.mmdsComponentsAvailable?.[i] || 0,
     mmdsInstances: data.extension.mmdsInstances[i],
     deprecatedInstances: data.extension.deprecatedInstances[i],
+    totalInstances: data.extension.mmdsInstances[i] + data.extension.deprecatedInstances[i],
     migration: data.extension.migrationPercentage[i],
   }));
 
@@ -305,6 +307,16 @@ export function Overview() {
                   name="Deprecated Instances"
                   stroke="#ef4444"
                   strokeWidth={2}
+                  dot={{ r: 3 }}
+                />
+                <Line
+                  yAxisId="left"
+                  type="monotone"
+                  dataKey="totalInstances"
+                  name="Total DS Instances"
+                  stroke="#f59e0b"
+                  strokeWidth={2}
+                  strokeDasharray="5 5"
                   dot={{ r: 3 }}
                 />
                 <Line
@@ -502,6 +514,16 @@ export function Overview() {
                   name="Deprecated Instances"
                   stroke="#ef4444"
                   strokeWidth={2}
+                  dot={{ r: 3 }}
+                />
+                <Line
+                  yAxisId="left"
+                  type="monotone"
+                  dataKey="totalInstances"
+                  name="Total DS Instances"
+                  stroke="#f59e0b"
+                  strokeWidth={2}
+                  strokeDasharray="5 5"
                   dot={{ r: 3 }}
                 />
                 <Line

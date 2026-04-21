@@ -67,10 +67,10 @@ export function CodeOwnerTrendChart({ codeOwnerTimeline, title, excludedOwners }
     const sorted = [...payload].sort((a: any, b: any) => (b.value ?? 0) - (a.value ?? 0));
 
     return (
-      <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg p-3 max-h-80 overflow-y-auto">
-        <p className="font-semibold text-gray-900 dark:text-white mb-2">{label}</p>
+      <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-xl p-3 min-w-[220px] max-h-[480px] overflow-y-auto">
+        <p className="font-semibold text-gray-900 dark:text-white mb-2 whitespace-nowrap">{label}</p>
         {sorted.map((entry: any) => (
-          <p key={entry.dataKey} className="text-sm" style={{ color: entry.color }}>
+          <p key={entry.dataKey} className="text-sm whitespace-nowrap" style={{ color: entry.color }}>
             {entry.dataKey}: {entry.value?.toFixed(1)}%
           </p>
         ))}
@@ -98,7 +98,11 @@ export function CodeOwnerTrendChart({ codeOwnerTimeline, title, excludedOwners }
             domain={[0, 100]}
             label={{ value: 'Migration %', angle: -90, position: 'insideLeft' }}
           />
-          <Tooltip content={<CustomTooltip />} />
+          <Tooltip
+            content={<CustomTooltip />}
+            allowEscapeViewBox={{ x: true, y: true }}
+            wrapperStyle={{ zIndex: 100, overflow: 'visible' }}
+          />
           <Legend wrapperStyle={{ fontSize: 12 }} />
           {activeOwners.map(([owner], i) => (
             <Line
