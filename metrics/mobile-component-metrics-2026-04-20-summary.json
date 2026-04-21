@@ -71,12 +71,6 @@
     "Toast"
   ],
   "newComponents": [
-    "BoxColumn",
-    "BoxRow",
-    "HeaderSearch",
-    "IconAlert",
-    "KeyValueColumn",
-    "KeyValueRow",
     "TitleHub"
   ],
   "noReplacementComponents": 37,

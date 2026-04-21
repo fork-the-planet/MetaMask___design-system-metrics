@@ -1594,12 +1594,6 @@
         "TextFieldSearch"
       ],
       [
-        "BoxColumn",
-        "BoxRow",
-        "HeaderSearch",
-        "IconAlert",
-        "KeyValueColumn",
-        "KeyValueRow",
         "TitleHub"
       ]
     ],

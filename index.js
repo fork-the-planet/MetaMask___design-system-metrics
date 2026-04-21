@@ -83,16 +83,19 @@ const findNewComponents = async (outputBasePath, currentComponents) => {
     const outputDir = path.dirname(outputBasePath);
     const files = await fs.readdir(outputDir);
     const prefix = path.basename(outputBasePath).split("-")[0];
+    const currentFilename = path.basename(outputBasePath) + "-summary.json";
     const summaryFiles = files
       .filter(
-        (f) => f.includes("-summary.json") && f.startsWith(prefix),
+        (f) =>
+          f.includes("-summary.json") &&
+          f.startsWith(prefix) &&
+          f !== currentFilename,
       )
       .sort()
       .reverse();
 
-    // Skip the current file (first in sorted list) and get the previous one
-    if (summaryFiles.length > 1) {
-      const previousSummaryPath = path.join(outputDir, summaryFiles[1]);
+    if (summaryFiles.length > 0) {
+      const previousSummaryPath = path.join(outputDir, summaryFiles[0]);
       const previousSummary = JSON.parse(
         await fs.readFile(previousSummaryPath, "utf8"),
       );
