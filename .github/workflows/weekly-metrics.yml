@@ -2,9 +2,9 @@ name: Weekly Design System Metrics
 
 on:
   schedule:
-    # Friday 16:00 UTC. GitHub.com supports `timezone:` on schedules; this org's runners reject it ("not yet supported"),
-    # so we use UTC only. 16:00 UTC ≈ 8:00 AM PST / 9:00 AM PDT (America/Los_Angeles).
-    - cron: '0 16 * * 5'
+    # Friday 15:00 UTC. Cron is UTC-only (workflow timezone not supported on these runners).
+    # London: 16:00 BST / 15:00 GMT. Pacific: ~8:00 PDT / ~7:00 PST.
+    - cron: '0 15 * * 5'
   workflow_dispatch: # Allow manual trigger
 
 permissions:
