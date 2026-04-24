@@ -1,6 +1,6 @@
 {
   "component": "Text",
-  "generatedAt": "2026-04-24T16:26:34.586Z",
+  "generatedAt": "2026-04-24T17:02:09.011Z",
   "projects": {
     "extension": {
       "filesScanned": 3089,
@@ -2134,14 +2134,14 @@
       "filesScanned": 6077,
       "targetComponent": "Text",
       "mmds": {
-        "totalInstances": 1363,
+        "totalInstances": 1365,
         "filesCount": 395,
         "props": {
           "variant": {
-            "count": 1288,
+            "count": 1290,
             "values": {
               "{TextVariant.BodyMd}": 557,
-              "{TextVariant.BodySm}": 388,
+              "{TextVariant.BodySm}": 390,
               "{TextVariant.HeadingMd}": 85,
               "{TextVariant.BodyXs}": 81,
               "{TextVariant.HeadingSm}": 45,
@@ -2165,11 +2165,11 @@
             }
           },
           "color": {
-            "count": 684,
+            "count": 686,
             "values": {
-              "{TextColor.TextAlternative}": 325,
+              "{TextColor.TextAlternative}": 326,
               "{TextColor.TextDefault}": 175,
-              "{TextColor.SuccessDefault}": 28,
+              "{TextColor.SuccessDefault}": 29,
               "{TextColor.ErrorDefault}": 28,
               "{TextColor.PrimaryDefault}": 24,
               "{TextColor.TextMuted}": 10,
@@ -2396,9 +2396,9 @@
             }
           },
           "fontWeight": {
-            "count": 384,
+            "count": 385,
             "values": {
-              "{FontWeight.Medium}": 285,
+              "{FontWeight.Medium}": 286,
               "{FontWeight.Bold}": 67,
               "{FontWeight.Regular}": 23,
               "{fontWeight}": 2,
@@ -2410,7 +2410,7 @@
             }
           },
           "testID": {
-            "count": 194,
+            "count": 195,
             "values": {
               "{TokenOverviewSelectorsIDs.TOKEN_PRICE}": 2,
               "\"price-label\"": 2,
@@ -2490,6 +2490,7 @@
               "{MoneyConvertStablecoinsTestIds.DESCRIPTION}": 1,
               "{MoneyHowItWorksTestIds.DESCRIPTION}": 1,
               "{MoneyHowItWorksTestIds.APY}": 1,
+              "{MoneyMetaMaskCardTestIds.LINK_SUBTITLE}": 1,
               "{MoneyOnboardingCardTestIds.STEP_LABEL}": 1,
               "{MoneyOnboardingCardTestIds.TITLE}": 1,
               "{MoneyOnboardingCardTestIds.DESCRIPTION}": 1,
@@ -3561,15 +3562,15 @@
         }
       },
       "overall": {
-        "totalInstances": 3083,
+        "totalInstances": 3085,
         "filesCount": 918,
         "props": {
           "variant": {
-            "count": 2678,
+            "count": 2680,
             "values": {
               "{TextVariant.BodyMd}": 557,
               "{TextVariant.BodyMD}": 508,
-              "{TextVariant.BodySm}": 388,
+              "{TextVariant.BodySm}": 390,
               "{TextVariant.BodySM}": 228,
               "{TextVariant.BodyMDMedium}": 181,
               "{TextVariant.BodyLGMedium}": 112,
@@ -3614,16 +3615,16 @@
             }
           },
           "color": {
-            "count": 1482,
+            "count": 1484,
             "values": {
               "{TextColor.Alternative}": 399,
-              "{TextColor.TextAlternative}": 325,
+              "{TextColor.TextAlternative}": 326,
               "{TextColor.Default}": 178,
               "{TextColor.TextDefault}": 175,
               "{TextColor.Error}": 37,
               "{TextColor.Primary}": 29,
               "{TextColor.Muted}": 29,
-              "{TextColor.SuccessDefault}": 28,
+              "{TextColor.SuccessDefault}": 29,
               "{TextColor.ErrorDefault}": 28,
               "{TextColor.PrimaryDefault}": 24,
               "{textColor}": 17,
@@ -4292,9 +4293,9 @@
             }
           },
           "fontWeight": {
-            "count": 384,
+            "count": 385,
             "values": {
-              "{FontWeight.Medium}": 285,
+              "{FontWeight.Medium}": 286,
               "{FontWeight.Bold}": 67,
               "{FontWeight.Regular}": 23,
               "{fontWeight}": 2,
@@ -4306,7 +4307,7 @@
             }
           },
           "testID": {
-            "count": 323,
+            "count": 324,
             "values": {
               "{testID}": 8,
               "{TransactionPayComponentIDs.PAY_WITH_SYMBOL}": 4,
@@ -4411,6 +4412,7 @@
               "{MoneyConvertStablecoinsTestIds.DESCRIPTION}": 1,
               "{MoneyHowItWorksTestIds.DESCRIPTION}": 1,
               "{MoneyHowItWorksTestIds.APY}": 1,
+              "{MoneyMetaMaskCardTestIds.LINK_SUBTITLE}": 1,
               "{MoneyOnboardingCardTestIds.STEP_LABEL}": 1,
               "{MoneyOnboardingCardTestIds.TITLE}": 1,
               "{MoneyOnboardingCardTestIds.DESCRIPTION}": 1,

@@ -1,6 +1,6 @@
 {
   "component": "Box",
-  "generatedAt": "2026-04-24T16:21:22.965Z",
+  "generatedAt": "2026-04-24T16:56:56.999Z",
   "projects": {
     "extension": {
       "filesScanned": 3089,
@@ -4395,19 +4395,19 @@
       "filesScanned": 6077,
       "targetComponent": "Box",
       "mmds": {
-        "totalInstances": 2016,
+        "totalInstances": 2020,
         "filesCount": 493,
         "props": {
           "twClassName": {
-            "count": 1599,
+            "count": 1603,
             "values": {
               "\"flex-1\"": 138,
-              "\"gap-1\"": 43,
+              "\"gap-1\"": 44,
               "\"gap-2\"": 42,
-              "\"gap-3\"": 35,
+              "\"gap-3\"": 36,
               "\"w-full\"": 28,
               "\"px-4\"": 26,
-              "\"gap-4\"": 19,
+              "\"gap-4\"": 20,
               "\"mb-4\"": 16,
               "\"px-4 py-3\"": 16,
               "\"flex-1 px-4\"": 12,
@@ -4705,6 +4705,7 @@
               "\"px-4 pt-3\"": 1,
               "\"mt-3 gap-4\"": 1,
               "\"px-4 pt-4 bg-default\"": 1,
+              "\"gap-2 flex-1 justify-center\"": 1,
               "\"mx-4 my-3 rounded-2xl bg-muted overflow-hidden\"": 1,
               "\"p-4 gap-2\"": 1,
               "\"h-[202px]\"": 1,
@@ -5210,16 +5211,16 @@
             }
           },
           "flexDirection": {
-            "count": 493,
+            "count": 495,
             "values": {
-              "{BoxFlexDirection.Row}": 415,
+              "{BoxFlexDirection.Row}": 417,
               "{BoxFlexDirection.Column}": 78
             }
           },
           "alignItems": {
-            "count": 470,
+            "count": 471,
             "values": {
-              "{BoxAlignItems.Center}": 409,
+              "{BoxAlignItems.Center}": 410,
               "{BoxAlignItems.Start}": 39,
               "{BoxAlignItems.End}": 17,
               "{typeof title === 'string' ? BoxAlignItems.Center : BoxAlignItems.Start}": 2,
@@ -5228,9 +5229,9 @@
             }
           },
           "testID": {
-            "count": 278,
+            "count": 280,
             "values": {
-              "{testID}": 48,
+              "{testID}": 49,
               "{ONDO_PRIZE_POOL_TEST_IDS.CONTAINER}": 3,
               "\"onboarding-step-actions\"": 2,
               "{CAMPAIGN_STATS_SUMMARY_TEST_IDS.NOT_ELIGIBLE_BANNER}": 2,
@@ -5303,6 +5304,7 @@
               "{MoneyEarningsTestIds.LIFETIME}": 1,
               "{MoneyFooterTestIds.CONTAINER}": 1,
               "{MoneyHowItWorksTestIds.CONTAINER}": 1,
+              "{MoneyMetaMaskCardTestIds.LINK_CONTAINER}": 1,
               "{MoneyMetaMaskCardTestIds.CONTAINER}": 1,
               "{MoneyOnboardingCardTestIds.CONTAINER}": 1,
               "{MoneyOnboardingCardTestIds.COIN_ILLUSTRATION}": 1,
@@ -5836,19 +5838,19 @@
         "props": {}
       },
       "overall": {
-        "totalInstances": 2016,
+        "totalInstances": 2020,
         "filesCount": 493,
         "props": {
           "twClassName": {
-            "count": 1599,
+            "count": 1603,
             "values": {
               "\"flex-1\"": 138,
-              "\"gap-1\"": 43,
+              "\"gap-1\"": 44,
               "\"gap-2\"": 42,
-              "\"gap-3\"": 35,
+              "\"gap-3\"": 36,
               "\"w-full\"": 28,
               "\"px-4\"": 26,
-              "\"gap-4\"": 19,
+              "\"gap-4\"": 20,
               "\"mb-4\"": 16,
               "\"px-4 py-3\"": 16,
               "\"flex-1 px-4\"": 12,
@@ -6146,6 +6148,7 @@
               "\"px-4 pt-3\"": 1,
               "\"mt-3 gap-4\"": 1,
               "\"px-4 pt-4 bg-default\"": 1,
+              "\"gap-2 flex-1 justify-center\"": 1,
               "\"mx-4 my-3 rounded-2xl bg-muted overflow-hidden\"": 1,
               "\"p-4 gap-2\"": 1,
               "\"h-[202px]\"": 1,
@@ -6651,16 +6654,16 @@
             }
           },
           "flexDirection": {
-            "count": 493,
+            "count": 495,
             "values": {
-              "{BoxFlexDirection.Row}": 415,
+              "{BoxFlexDirection.Row}": 417,
               "{BoxFlexDirection.Column}": 78
             }
           },
           "alignItems": {
-            "count": 470,
+            "count": 471,
             "values": {
-              "{BoxAlignItems.Center}": 409,
+              "{BoxAlignItems.Center}": 410,
               "{BoxAlignItems.Start}": 39,
               "{BoxAlignItems.End}": 17,
               "{typeof title === 'string' ? BoxAlignItems.Center : BoxAlignItems.Start}": 2,
@@ -6669,9 +6672,9 @@
             }
           },
           "testID": {
-            "count": 278,
+            "count": 280,
             "values": {
-              "{testID}": 48,
+              "{testID}": 49,
               "{ONDO_PRIZE_POOL_TEST_IDS.CONTAINER}": 3,
               "\"onboarding-step-actions\"": 2,
               "{CAMPAIGN_STATS_SUMMARY_TEST_IDS.NOT_ELIGIBLE_BANNER}": 2,
@@ -6744,6 +6747,7 @@
               "{MoneyEarningsTestIds.LIFETIME}": 1,
               "{MoneyFooterTestIds.CONTAINER}": 1,
               "{MoneyHowItWorksTestIds.CONTAINER}": 1,
+              "{MoneyMetaMaskCardTestIds.LINK_CONTAINER}": 1,
               "{MoneyMetaMaskCardTestIds.CONTAINER}": 1,
               "{MoneyOnboardingCardTestIds.CONTAINER}": 1,
               "{MoneyOnboardingCardTestIds.COIN_ILLUSTRATION}": 1,

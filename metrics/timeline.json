@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-24T16:27:52.815Z",
+  "generatedAt": "2026-04-24T17:03:27.805Z",
   "mobile": {
     "dates": [
       "2025-08-29",
@@ -73,7 +73,7 @@
       52.52,
       54.53,
       57.21,
-      58.33
+      58.38
     ],
     "mmdsInstances": [
       169,
@@ -110,7 +110,7 @@
       3355,
       3636,
       4020,
-      4217
+      4225
     ],
     "deprecatedInstances": [
       2492,
@@ -184,7 +184,7 @@
       6388,
       6668,
       7027,
-      7229
+      7237
     ],
     "componentsFullyMigrated": [
       0,
@@ -2602,7 +2602,7 @@
             32.45,
             36.91,
             42.13,
-            47.43
+            48.19
           ],
           "mmdsInstances": [
             0,
@@ -2614,7 +2614,7 @@
             134,
             165,
             206,
-            258
+            266
           ],
           "deprecatedInstances": [
             0,
@@ -2638,7 +2638,7 @@
             413,
             447,
             489,
-            544
+            552
           ]
         },
         "@MetaMask/money-movement": {
@@ -2744,8 +2744,8 @@
       }
     },
     "latestChange": {
-      "migrationPercentageChange": "1.12",
-      "mmdsInstancesChange": 197,
+      "migrationPercentageChange": "1.17",
+      "mmdsInstancesChange": 205,
       "deprecatedInstancesChange": 5,
       "componentsFullyMigratedChange": 0,
       "componentsInProgressChange": 0,

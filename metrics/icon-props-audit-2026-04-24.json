@@ -1,6 +1,6 @@
 {
   "component": "Icon",
-  "generatedAt": "2026-04-24T16:24:26.092Z",
+  "generatedAt": "2026-04-24T16:59:59.100Z",
   "projects": {
     "extension": {
       "filesScanned": 3089,
@@ -894,11 +894,11 @@
       "filesScanned": 6077,
       "targetComponent": "Icon",
       "mmds": {
-        "totalInstances": 194,
-        "filesCount": 138,
+        "totalInstances": 195,
+        "filesCount": 139,
         "props": {
           "name": {
-            "count": 193,
+            "count": 194,
             "values": {
               "{IconName.ArrowRight}": 20,
               "{IconName.ArrowDown}": 12,
@@ -906,8 +906,8 @@
               "{IconName.Danger}": 10,
               "{IconName.Info}": 10,
               "{IconName.Clock}": 9,
+              "{IconName.Check}": 8,
               "{IconName.ArrowLeft}": 8,
-              "{IconName.Check}": 7,
               "{icon}": 5,
               "{IconName.Export}": 5,
               "{IconName.CircleX}": 4,
@@ -979,9 +979,9 @@
             }
           },
           "size": {
-            "count": 188,
+            "count": 189,
             "values": {
-              "{IconSize.Sm}": 59,
+              "{IconSize.Sm}": 60,
               "{IconSize.Lg}": 50,
               "{IconSize.Md}": 44,
               "{IconSize.Xl}": 28,
@@ -991,12 +991,12 @@
             }
           },
           "color": {
-            "count": 129,
+            "count": 130,
             "values": {
               "{IconColor.IconAlternative}": 51,
               "{IconColor.IconDefault}": 20,
               "{IconColor.ErrorDefault}": 12,
-              "{IconColor.SuccessDefault}": 10,
+              "{IconColor.SuccessDefault}": 11,
               "{IconColor.PrimaryDefault}": 6,
               "{IconColor.IconMuted}": 6,
               "{iconColor}": 4,
@@ -1366,18 +1366,18 @@
         }
       },
       "overall": {
-        "totalInstances": 495,
-        "filesCount": 337,
+        "totalInstances": 496,
+        "filesCount": 338,
         "props": {
           "name": {
-            "count": 494,
+            "count": 495,
             "values": {
               "{IconName.ArrowRight}": 53,
               "{IconName.Info}": 40,
               "{IconName.ArrowDown}": 34,
               "{IconName.Danger}": 33,
               "{IconName.ArrowLeft}": 23,
-              "{IconName.Check}": 20,
+              "{IconName.Check}": 21,
               "{iconName}": 14,
               "{IconName.Export}": 14,
               "{IconName.Close}": 13,
@@ -1502,10 +1502,10 @@
             }
           },
           "size": {
-            "count": 470,
+            "count": 471,
             "values": {
               "24": 2,
-              "{IconSize.Sm}": 140,
+              "{IconSize.Sm}": 141,
               "{IconSize.Md}": 131,
               "{IconSize.Lg}": 87,
               "{IconSize.Xl}": 69,
@@ -1523,7 +1523,7 @@
             }
           },
           "color": {
-            "count": 372,
+            "count": 373,
             "values": {
               "{IconColor.Alternative}": 54,
               "{IconColor.IconAlternative}": 51,
@@ -1535,7 +1535,7 @@
               "{colors.text.alternative}": 14,
               "{IconColor.ErrorDefault}": 12,
               "{colors.primary.default}": 11,
-              "{IconColor.SuccessDefault}": 10,
+              "{IconColor.SuccessDefault}": 11,
               "{colors.icon.alternative}": 9,
               "{iconColor}": 8,
               "{IconColor.Success}": 7,

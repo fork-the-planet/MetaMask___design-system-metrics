@@ -1043,8 +1043,8 @@
         "../../multichain/toast/toast",
         "../../../../components/multichain/toast/toast",
         "../../../multichain/toast/toast",
-        "../../toast",
         "../..",
+        "../../toast",
         "../../../multichain/toast",
         "../../../../../../../components/multichain"
       ],
@@ -1209,8 +1209,8 @@
         "../../multichain",
         "../../../../components/multichain/toast/toast",
         "../../../multichain/toast/toast",
-        "../../toast",
-        "../.."
+        "../..",
+        "../../toast"
       ],
       "mmdsMatches": [],
       "codeOwners": [
@@ -1357,8 +1357,8 @@
       "canonicalSource": "components/ui/icon/preloader/preloader-icon.component",
       "importSources": [
         "../../components/ui/icon/preloader/preloader-icon.component",
-        "../icon/preloader/preloader-icon.component",
         "../../ui/icon/preloader",
+        "../icon/preloader/preloader-icon.component",
         "../../ui/icon/preloader/preloader-icon.component",
         "../../../ui/icon/preloader/preloader-icon.component",
         "../../../../../components/ui/icon/preloader",
@@ -1375,8 +1375,8 @@
       ],
       "codeOwnerBreakdown": {
         "@MetaMask/notifications": 1,
-        "@unknown": 1,
         "@MetaMask/accounts-engineers": 4,
+        "@unknown": 1,
         "@MetaMask/core-extension-ux": 2,
         "@MetaMask/core-platform": 1,
         "@MetaMask/confirmations": 6

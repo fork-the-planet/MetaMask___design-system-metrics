@@ -22,13 +22,13 @@
   ],
   "summary": {
     "filesScanned": 4640,
-    "totalJSXUsages": 16882,
+    "totalJSXUsages": 16894,
     "trackedDeprecated": 3826,
-    "trackedMMDS": 4215,
-    "untrackedTotal": 8841,
+    "trackedMMDS": 4223,
+    "untrackedTotal": 8845,
     "uniqueUntrackedComponents": 156,
     "replaceableNow": 90,
-    "replaceableInstances": 1860,
+    "replaceableInstances": 1861,
     "futureDSCandidates": 66,
     "codeOwnerBreakdown": {
       "@MetaMask/wallet-integrations": {
@@ -114,7 +114,7 @@
       "@MetaMask/earn": {
         "replaceableComponents": 15,
         "futureDSComponents": 14,
-        "replaceableInstances": 84
+        "replaceableInstances": 85
       },
       "@MetaMask/mobile-platform": {
         "replaceableComponents": 1,
@@ -233,7 +233,7 @@
     },
     {
       "component": "Image",
-      "instances": 134,
+      "instances": 135,
       "fileCount": 120,
       "sourceCategory": "platform-primitive",
       "canonicalSource": "react-native",
@@ -267,7 +267,7 @@
         "@MetaMask/confirmations": 2,
         "@MetaMask/money-movement": 9,
         "@MetaMask/perps": 7,
-        "@MetaMask/earn": 4,
+        "@MetaMask/earn": 5,
         "@MetaMask/card": 8
       }
     },
@@ -717,8 +717,8 @@
         "../Ramp/Aggregator/components/SkeletonText",
         "../../../Ramp/Aggregator/components/SkeletonText",
         "./SkeletonText",
-        "../SkeletonText",
-        "../../components/SkeletonText"
+        "../../components/SkeletonText",
+        "../SkeletonText"
       ],
       "mmdsMatches": [
         {
@@ -850,10 +850,10 @@
       "canonicalSource": "Perps/components/PerpsBottomSheetTooltip",
       "importSources": [
         "../../Perps/components/PerpsBottomSheetTooltip",
-        "../PerpsBottomSheetTooltip/PerpsBottomSheetTooltip",
-        "../PerpsBottomSheetTooltip",
         "../../components/PerpsBottomSheetTooltip",
         "../../components/PerpsBottomSheetTooltip/PerpsBottomSheetTooltip",
+        "../PerpsBottomSheetTooltip/PerpsBottomSheetTooltip",
+        "../PerpsBottomSheetTooltip",
         "../../../Perps/components/PerpsBottomSheetTooltip"
       ],
       "mmdsMatches": [
@@ -889,8 +889,8 @@
       "canonicalSource": "UI/Perps/components/PerpsTokenLogo",
       "importSources": [
         "../Perps/components/PerpsTokenLogo",
-        "../PerpsTokenLogo",
         "../../components/PerpsTokenLogo",
+        "../PerpsTokenLogo",
         "../../../../../../UI/Perps/components/PerpsTokenLogo"
       ],
       "mmdsMatches": [
@@ -1730,8 +1730,8 @@
       "sourceCategory": "local-oneoff",
       "canonicalSource": "components/PerpsRowSkeleton",
       "importSources": [
-        "../PerpsRowSkeleton",
-        "../../components/PerpsRowSkeleton"
+        "../../components/PerpsRowSkeleton",
+        "../PerpsRowSkeleton"
       ],
       "mmdsMatches": [
         {
@@ -2155,8 +2155,8 @@
       "canonicalSource": "components/ListItemColumnEnd",
       "importSources": [
         "./ListItemColumnEnd",
-        "../ListItemColumnEnd",
-        "../../components/ListItemColumnEnd"
+        "../../components/ListItemColumnEnd",
+        "../ListItemColumnEnd"
       ],
       "mmdsMatches": [
         {
@@ -2355,8 +2355,8 @@
       "canonicalSource": "UI/Perps/components/PerpsMarketRowItem",
       "importSources": [
         "../../UI/Perps/components/PerpsMarketRowItem",
-        "../PerpsMarketRowItem",
-        "../../components/PerpsMarketRowItem"
+        "../../components/PerpsMarketRowItem",
+        "../PerpsMarketRowItem"
       ],
       "mmdsMatches": [
         {
@@ -4496,8 +4496,8 @@
       "sourceCategory": "local-oneoff",
       "canonicalSource": "UI/Perps/components/PerpsLeverage/PerpsLeverage",
       "importSources": [
-        "../PerpsLeverage/PerpsLeverage",
         "../../components/PerpsLeverage/PerpsLeverage",
+        "../PerpsLeverage/PerpsLeverage",
         "../../../../../../UI/Perps/components/PerpsLeverage/PerpsLeverage"
       ],
       "mmdsMatches": [],
