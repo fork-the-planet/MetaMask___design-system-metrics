@@ -1,9 +1,9 @@
 {
   "component": "AvatarBase",
-  "generatedAt": "2026-04-20T17:04:21.646Z",
+  "generatedAt": "2026-04-24T16:16:13.896Z",
   "projects": {
     "extension": {
-      "filesScanned": 3082,
+      "filesScanned": 3089,
       "targetComponent": "AvatarBase",
       "mmds": {
         "totalInstances": 0,
@@ -183,24 +183,25 @@
       }
     },
     "mobile": {
-      "filesScanned": 5996,
+      "filesScanned": 6077,
       "targetComponent": "AvatarBase",
       "mmds": {
-        "totalInstances": 4,
-        "filesCount": 4,
+        "totalInstances": 5,
+        "filesCount": 5,
         "props": {
           "size": {
-            "count": 4,
+            "count": 5,
             "values": {
-              "{AvatarBaseSize.Lg}": 3,
+              "{AvatarBaseSize.Lg}": 4,
               "{AvatarBaseSize.Md}": 1
             }
           },
           "fallbackText": {
-            "count": 4,
+            "count": 5,
             "values": {
               "{trader.username.charAt(0).toUpperCase()}": 2,
-              "{trade.traderName.charAt(0).toUpperCase()}": 1,
+              "{username.charAt(0).toUpperCase()}": 1,
+              "{traderName.charAt(0).toUpperCase()}": 1,
               "{profile.name.charAt(0).toUpperCase()}": 1
             }
           }
@@ -243,17 +244,26 @@
         }
       },
       "overall": {
-        "totalInstances": 8,
-        "filesCount": 7,
+        "totalInstances": 9,
+        "filesCount": 8,
         "props": {
           "size": {
-            "count": 8,
+            "count": 9,
             "values": {
-              "{AvatarBaseSize.Lg}": 3,
+              "{AvatarBaseSize.Lg}": 4,
               "{AvatarSize.Sm}": 2,
               "{AvatarSize.Xl}": 1,
               "{avatarSize as unknown as AvatarSize}": 1,
               "{AvatarBaseSize.Md}": 1
+            }
+          },
+          "fallbackText": {
+            "count": 5,
+            "values": {
+              "{trader.username.charAt(0).toUpperCase()}": 2,
+              "{username.charAt(0).toUpperCase()}": 1,
+              "{traderName.charAt(0).toUpperCase()}": 1,
+              "{profile.name.charAt(0).toUpperCase()}": 1
             }
           },
           "style": {
@@ -263,14 +273,6 @@
               "{styles.icon}": 1,
               "{styles.completeStep}": 1,
               "{isCompletedStep(index) ? styles.completeStep : styles.incompleteStep}": 1
-            }
-          },
-          "fallbackText": {
-            "count": 4,
-            "values": {
-              "{trader.username.charAt(0).toUpperCase()}": 2,
-              "{trade.traderName.charAt(0).toUpperCase()}": 1,
-              "{profile.name.charAt(0).toUpperCase()}": 1
             }
           },
           "testID": {

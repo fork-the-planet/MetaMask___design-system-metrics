@@ -1,9 +1,9 @@
 {
   "component": "Checkbox",
-  "generatedAt": "2026-04-20T17:11:58.022Z",
+  "generatedAt": "2026-04-24T16:23:34.176Z",
   "projects": {
     "extension": {
-      "filesScanned": 3082,
+      "filesScanned": 3089,
       "targetComponent": "Checkbox",
       "mmds": {
         "totalInstances": 10,
@@ -470,35 +470,44 @@
       }
     },
     "mobile": {
-      "filesScanned": 5996,
+      "filesScanned": 6077,
       "targetComponent": "Checkbox",
       "mmds": {
-        "totalInstances": 2,
-        "filesCount": 2,
+        "totalInstances": 3,
+        "filesCount": 3,
         "props": {
           "onChange": {
-            "count": 2,
+            "count": 3,
             "values": {
               "{setSelection}": 1,
+              "{setIsCheckboxChecked}": 1,
               "{toggleSelection}": 1
             }
           },
           "isSelected": {
-            "count": 2,
+            "count": 3,
             "values": {
-              "{isSelected}": 2
+              "{isSelected}": 2,
+              "{isCheckboxChecked}": 1
             }
           },
           "testID": {
-            "count": 2,
+            "count": 3,
             "values": {
-              "{ChoosePasswordSelectorsIDs.I_UNDERSTAND_CHECKBOX_ID}": 2
+              "{ChoosePasswordSelectorsIDs.I_UNDERSTAND_CHECKBOX_ID}": 2,
+              "{LEARN_MORE_BOTTOM_SHEET_TEST_IDS.CHECKBOX}": 1
             }
           },
           "accessibilityLabel": {
             "count": 2,
             "values": {
               "{ChoosePasswordSelectorsIDs.I_UNDERSTAND_CHECKBOX_ID}": 2
+            }
+          },
+          "label": {
+            "count": 1,
+            "values": {
+              "{strings('multichain_accounts.learn_more.checkbox_label')}": 1
             }
           },
           "style": {
@@ -510,11 +519,11 @@
         }
       },
       "deprecated": {
-        "totalInstances": 17,
-        "filesCount": 14,
+        "totalInstances": 16,
+        "filesCount": 13,
         "props": {
           "onPress": {
-            "count": 17,
+            "count": 16,
             "values": {
               "{() => setIsChecked(!isChecked)}": 2,
               "{onPress}": 2,
@@ -528,13 +537,12 @@
               "{handleNetworkOnPress(chainId)}": 1,
               "{toggleSkipCheckbox}": 1,
               "{() => setLearnMore(!learnMore)}": 1,
-              "{handleCheckboxToggle}": 1,
               "{() => onCheckboxClick(isConfirmed)}": 1,
               "{handleConfirmCheckbox}": 1
             }
           },
           "isChecked": {
-            "count": 17,
+            "count": 16,
             "values": {
               "{isChecked}": 3,
               "{value}": 1,
@@ -547,14 +555,13 @@
               "{skipCheckbox}": 1,
               "{areAllAccountsSelected}": 1,
               "{learnMore}": 1,
-              "{isCheckboxChecked}": 1,
               "{areAllNetworksSelected}": 1,
               "{isConfirmed}": 1,
               "{confirmCheckbox}": 1
             }
           },
           "testID": {
-            "count": 11,
+            "count": 10,
             "values": {
               "\"snap-ui-renderer__checkbox\"": 1,
               "\"physical-address-electronic-consent-checkbox\"": 1,
@@ -563,14 +570,13 @@
               "{SkipAccountSecurityModalSelectorsIDs.iOS_SKIP_BACKUP_BUTTON_ID}": 1,
               "{ConnectAccountBottomSheetSelectorsIDs.SELECT_ALL_BUTTON}": 1,
               "{ChoosePasswordSelectorsIDs.I_UNDERSTAND_CHECKBOX_ID}": 1,
-              "{LEARN_MORE_BOTTOM_SHEET_TEST_IDS.CHECKBOX}": 1,
               "{ConnectedAccountsSelectorsIDs.SELECT_ALL_NETWORKS_BUTTON}": 1,
               "\"alert-modal-checkbox\"": 1,
               "\"confirm-alert-checkbox\"": 1
             }
           },
           "label": {
-            "count": 10,
+            "count": 9,
             "values": {
               "{<Box style={tw.style('flex-1 flex-shrink mr-2 -mt-1')}> <Text variant={TextVa...}": 3,
               "{label}": 1,
@@ -578,7 +584,6 @@
               "{strings('deep_link_modal.private_link.checkbox_label')}": 1,
               "{checkBoxLabel}": 1,
               "{strings('accounts.select_all')}": 1,
-              "{strings('multichain_accounts.learn_more.checkbox_label')}": 1,
               "{strings('networks.select_all')}": 1
             }
           },
@@ -642,7 +647,7 @@
         "filesCount": 16,
         "props": {
           "onPress": {
-            "count": 17,
+            "count": 16,
             "values": {
               "{() => setIsChecked(!isChecked)}": 2,
               "{onPress}": 2,
@@ -656,13 +661,12 @@
               "{handleNetworkOnPress(chainId)}": 1,
               "{toggleSkipCheckbox}": 1,
               "{() => setLearnMore(!learnMore)}": 1,
-              "{handleCheckboxToggle}": 1,
               "{() => onCheckboxClick(isConfirmed)}": 1,
               "{handleConfirmCheckbox}": 1
             }
           },
           "isChecked": {
-            "count": 17,
+            "count": 16,
             "values": {
               "{isChecked}": 3,
               "{value}": 1,
@@ -675,7 +679,6 @@
               "{skipCheckbox}": 1,
               "{areAllAccountsSelected}": 1,
               "{learnMore}": 1,
-              "{isCheckboxChecked}": 1,
               "{areAllNetworksSelected}": 1,
               "{isConfirmed}": 1,
               "{confirmCheckbox}": 1
@@ -721,6 +724,21 @@
               "{tw.style('flex items-start')}": 1
             }
           },
+          "onChange": {
+            "count": 3,
+            "values": {
+              "{setSelection}": 1,
+              "{setIsCheckboxChecked}": 1,
+              "{toggleSelection}": 1
+            }
+          },
+          "isSelected": {
+            "count": 3,
+            "values": {
+              "{isSelected}": 2,
+              "{isCheckboxChecked}": 1
+            }
+          },
           "accessibilityLabel": {
             "count": 3,
             "values": {
@@ -747,19 +765,6 @@
               "{areSomeNetworksSelectedButNotAll}": 1
             }
           },
-          "onChange": {
-            "count": 2,
-            "values": {
-              "{setSelection}": 1,
-              "{toggleSelection}": 1
-            }
-          },
-          "isSelected": {
-            "count": 2,
-            "values": {
-              "{isSelected}": 2
-            }
-          },
           "[spread]": {
             "count": 1,
             "values": {
@@ -781,7 +786,7 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "Checkbox": 17
+        "Checkbox": 16
       }
     }
   }

@@ -1,9 +1,9 @@
 {
   "component": "BottomSheetFooter",
-  "generatedAt": "2026-04-20T17:08:49.502Z",
+  "generatedAt": "2026-04-24T16:20:31.465Z",
   "projects": {
     "extension": {
-      "filesScanned": 3082,
+      "filesScanned": 3089,
       "targetComponent": "BottomSheetFooter",
       "mmds": {
         "totalInstances": 0,
@@ -23,16 +23,16 @@
       "deprecatedByLegacyComponent": {}
     },
     "mobile": {
-      "filesScanned": 5996,
+      "filesScanned": 6077,
       "targetComponent": "BottomSheetFooter",
       "mmds": {
-        "totalInstances": 7,
-        "filesCount": 6,
+        "totalInstances": 8,
+        "filesCount": 7,
         "props": {
           "primaryButtonProps": {
-            "count": 7,
+            "count": 8,
             "values": {
-              "{{ children: strings('bridge.cancel'), onPress: handleClose, isDisabled: loadi...}": 1,
+              "{{ children: strings('bridge.cancel'), onPress: handleClose, isDisabled: loadi...}": 2,
               "{{ children: strings('bridge.got_it'), onPress: handleClose, testID: 'footer-p...}": 1,
               "{{ children: strings('perps.tooltips.got_it_button'), onPress: handleGotItPres...}": 1,
               "{{ children: strings('perps.deposit.quote_expired_modal.get_new_quote'), onPre...}": 1,
@@ -51,16 +51,16 @@
             }
           },
           "secondaryButtonProps": {
-            "count": 2,
+            "count": 3,
             "values": {
-              "{{ children: strings('bridge.proceed'), onPress: handleProceed, isDisabled: lo...}": 1,
+              "{{ children: strings('bridge.proceed'), onPress: handleProceed, isDisabled: lo...}": 2,
               "{cancelButtonProps}": 1
             }
           },
           "buttonsAlignment": {
-            "count": 1,
+            "count": 2,
             "values": {
-              "{ButtonsAlignment.Horizontal}": 1
+              "{ButtonsAlignment.Horizontal}": 2
             }
           },
           "testID": {
@@ -78,11 +78,11 @@
         }
       },
       "deprecated": {
-        "totalInstances": 44,
-        "filesCount": 43,
+        "totalInstances": 43,
+        "filesCount": 42,
         "props": {
           "buttonPropsArray": {
-            "count": 44,
+            "count": 43,
             "values": {
               "{footerButtons}": 7,
               "{buttons}": 5,
@@ -102,7 +102,6 @@
               "{[ { variant: ButtonVariants.Primary, label: buttonLabel, onPress: onRetry, te...}": 1,
               "{[ { variant: ButtonVariants.Primary, label: strings('predict.unavailable.butt...}": 1,
               "{quotesByPriceWithoutError.length > 1 ? [ { accessible: true, accessibilityRol...}": 1,
-              "{addAccountButtonProps}": 1,
               "{[ { onPress: () => navigation.goBack(), label: strings('confirmation_modal.ca...}": 1,
               "{[acceptButtonProps]}": 1,
               "{[cancelButtonProps, acceptButtonProps]}": 1,
@@ -122,7 +121,7 @@
             }
           },
           "style": {
-            "count": 24,
+            "count": 23,
             "values": {
               "{styles.footer}": 6,
               "{styles.footerContainer}": 5,
@@ -131,7 +130,6 @@
               "{styles.footerButtonsContainer}": 1,
               "{tw.style('px-4')}": 1,
               "{style}": 1,
-              "{styles.sheet}": 1,
               "{tw.style('px-4 pt-6', Platform.OS !== 'android' && 'pb-4')}": 1,
               "{styles.buttonContainer}": 1,
               "{styles.base}": 1,
@@ -145,7 +143,7 @@
         "filesCount": 49,
         "props": {
           "buttonPropsArray": {
-            "count": 44,
+            "count": 43,
             "values": {
               "{footerButtons}": 7,
               "{buttons}": 5,
@@ -165,7 +163,6 @@
               "{[ { variant: ButtonVariants.Primary, label: buttonLabel, onPress: onRetry, te...}": 1,
               "{[ { variant: ButtonVariants.Primary, label: strings('predict.unavailable.butt...}": 1,
               "{quotesByPriceWithoutError.length > 1 ? [ { accessible: true, accessibilityRol...}": 1,
-              "{addAccountButtonProps}": 1,
               "{[ { onPress: () => navigation.goBack(), label: strings('confirmation_modal.ca...}": 1,
               "{[acceptButtonProps]}": 1,
               "{[cancelButtonProps, acceptButtonProps]}": 1,
@@ -178,14 +175,14 @@
             }
           },
           "buttonsAlignment": {
-            "count": 36,
+            "count": 37,
             "values": {
-              "{ButtonsAlignment.Horizontal}": 33,
+              "{ButtonsAlignment.Horizontal}": 34,
               "{ButtonsAlignment.Vertical}": 3
             }
           },
           "style": {
-            "count": 28,
+            "count": 27,
             "values": {
               "{styles.footer}": 7,
               "{styles.footerContainer}": 6,
@@ -194,7 +191,6 @@
               "{tw.style('px-4')}": 2,
               "{styles.footerButtonsContainer}": 1,
               "{style}": 1,
-              "{styles.sheet}": 1,
               "{tw.style('px-4 pt-6', Platform.OS !== 'android' && 'pb-4')}": 1,
               "{styles.buttonContainer}": 1,
               "{tw.style({ paddingBottom: footerText ? 0 : insets.bottom })}": 1,
@@ -203,9 +199,9 @@
             }
           },
           "primaryButtonProps": {
-            "count": 7,
+            "count": 8,
             "values": {
-              "{{ children: strings('bridge.cancel'), onPress: handleClose, isDisabled: loadi...}": 1,
+              "{{ children: strings('bridge.cancel'), onPress: handleClose, isDisabled: loadi...}": 2,
               "{{ children: strings('bridge.got_it'), onPress: handleClose, testID: 'footer-p...}": 1,
               "{{ children: strings('perps.tooltips.got_it_button'), onPress: handleGotItPres...}": 1,
               "{{ children: strings('perps.deposit.quote_expired_modal.get_new_quote'), onPre...}": 1,
@@ -215,9 +211,9 @@
             }
           },
           "secondaryButtonProps": {
-            "count": 2,
+            "count": 3,
             "values": {
-              "{{ children: strings('bridge.proceed'), onPress: handleProceed, isDisabled: lo...}": 1,
+              "{{ children: strings('bridge.proceed'), onPress: handleProceed, isDisabled: lo...}": 2,
               "{cancelButtonProps}": 1
             }
           },
@@ -236,7 +232,7 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "BottomSheetFooter": 44
+        "BottomSheetFooter": 43
       }
     }
   }

@@ -1,16 +1,16 @@
 {
   "component": "Button",
-  "generatedAt": "2026-04-20T17:10:11.488Z",
+  "generatedAt": "2026-04-24T16:21:49.237Z",
   "projects": {
     "extension": {
-      "filesScanned": 3082,
+      "filesScanned": 3089,
       "targetComponent": "Button",
       "mmds": {
-        "totalInstances": 183,
-        "filesCount": 114,
+        "totalInstances": 186,
+        "filesCount": 117,
         "props": {
           "onClick": {
-            "count": 176,
+            "count": 179,
             "values": {
               "{onClose}": 8,
               "{() => setIsOpen(true)}": 8,
@@ -20,9 +20,9 @@
               "{onCancel}": 5,
               "{onContinue}": 4,
               "{handleSubmit}": 4,
-              "{handleAddFunds}": 3,
               "{handleClose}": 3,
               "{handleCancel}": 2,
+              "{handleAddFunds}": 2,
               "{onSkip}": 2,
               "{onActionClick}": 2,
               "{handleOpen}": 2,
@@ -64,6 +64,7 @@
               "{onSubmit}": 1,
               "{() => { trackEvent({ category: MetaMetricsEventCategory.Accounts, event: Meta...}": 1,
               "{() => { onExportClick('SRP'); }}": 1,
+              "{handleConnectClick}": 1,
               "{onRemoveAll}": 1,
               "{() => setIsOpen(false)}": 1,
               "{() => setIsOpen(!isOpen)}": 1,
@@ -72,6 +73,9 @@
               "{handleCopyClick}": 1,
               "{handleExplorerNavigation}": 1,
               "{onAction}": 1,
+              "{hasClaimable ? handleClaimBonusClick : undefined}": 1,
+              "{() => handleConvert(token)}": 1,
+              "{openLearnMore}": 1,
               "{handleOpenFeaturePage}": 1,
               "{async () => await buttonProps.onClick?.()}": 1,
               "{async () => { if (activeQuote) { await submitBridgeTransaction(activeQuote); } }}": 1,
@@ -136,24 +140,24 @@
             }
           },
           "variant": {
-            "count": 146,
+            "count": 149,
             "values": {
-              "{ButtonVariant.Primary}": 73,
-              "{ButtonVariant.Secondary}": 66,
+              "{ButtonVariant.Primary}": 74,
+              "{ButtonVariant.Secondary}": 68,
               "{ButtonVariant.Tertiary}": 7
             }
           },
           "size": {
-            "count": 128,
+            "count": 131,
             "values": {
               "{ButtonSize.Lg}": 104,
-              "{ButtonSize.Md}": 12,
-              "{ButtonSize.Sm}": 11,
+              "{ButtonSize.Md}": 14,
+              "{ButtonSize.Sm}": 12,
               "{ButtonBaseSize.Sm}": 1
             }
           },
           "data-testid": {
-            "count": 126,
+            "count": 128,
             "values": {
               "\"import-srp-confirm\"": 3,
               "\"reset-password-modal-button\"": 3,
@@ -194,12 +198,15 @@
               "\"speedup-button\"": 1,
               "\"account-details-display-export-private-key\"": 1,
               "\"account-details-display-export-srp\"": 1,
+              "\"dapp-connection-control-bar__connect-button\"": 1,
               "\"skip-disconnect-permissions\"": 1,
               "\"remove-all-disconnect-permissions\"": 1,
               "\"tour-cta-button\"": 1,
               "\"address-qr-code-modal-copy-button\"": 1,
               "\"view-address-on-etherscan\"": 1,
               "\"market-closed-action-button\"": 1,
+              "\"musd-claim-bonus-button\"": 1,
+              "\"musd-learn-more-button\"": 1,
               "\"basic-functionality-off-open-feature\"": 1,
               "\"bridge-cta-button\"": 1,
               "\"cancel-speedup-confirm-button\"": 1,
@@ -238,7 +245,6 @@
               "\"sort-modal-apply\"": 1,
               "\"perps-modify-cta-button\"": 1,
               "\"perps-close-cta-button\"": 1,
-              "\"perps-add-funds-cta-button\"": 1,
               "\"perps-long-cta-button\"": 1,
               "\"perps-short-cta-button\"": 1,
               "\"submit-order-button\"": 1,
@@ -272,9 +278,9 @@
             }
           },
           "className": {
-            "count": 113,
+            "count": 114,
             "values": {
-              "\"w-full\"": 47,
+              "\"w-full\"": 46,
               "\"flex-1\"": 14,
               "\"w-full my-2\"": 5,
               "\"flex-1 rounded-xl\"": 4,
@@ -290,8 +296,10 @@
               "\"w-full text-default\"": 1,
               "{`w-full my-2 bg-white ${theme === 'light' ? 'hover:bg-default-hover' : 'hover...}": 1,
               "\"w-full bg-gray-500 border-gray-500 hover:bg-primary-default-hover\"": 1,
+              "\"whitespace-nowrap\"": 1,
               "\"mt-6\"": 1,
               "\"mb-1\"": 1,
+              "\"dapp-connection-control-bar__connect-button\"": 1,
               "\"mt-4\"": 1,
               "\"mt-2 ml-3 mr-3\"": 1,
               "{`mb-4 min-h-12 ${hasBlockingError ? 'bg-error-default' : ''}`}": 1,
@@ -317,7 +325,7 @@
             }
           },
           "disabled": {
-            "count": 37,
+            "count": 38,
             "values": {
               "{isDisabled}": 4,
               "{!secretRecoveryPhrase.trim() || Boolean(srpError)}": 3,
@@ -327,6 +335,8 @@
               "{confirmDisabled}": 1,
               "{password === ''}": 1,
               "{isPendingRevocation}": 1,
+              "{bonusButtonDisabled}": 1,
+              "{isGeoBlocked}": 1,
               "{useExternalServices !== true}": 1,
               "{buttonProps.disabled}": 1,
               "{disabled}": 1,
@@ -337,7 +347,6 @@
               "{isSidePanelEnabled && isSidePanelOpen}": 1,
               "{answerSrp.trim() === ''}": 1,
               "{!phraseRevealed}": 1,
-              "{!selectedAddress || isDepositLoading}": 1,
               "{isSubmitDisabled}": 1,
               "{isIncorrectPasswordError || !currentPassword}": 1,
               "{!currentPassword || !newPassword || !termsChecked}": 1,
@@ -357,14 +366,15 @@
             }
           },
           "style": {
-            "count": 17,
+            "count": 20,
             "values": {
               "{{ flex: 1 }}": 6,
-              "{{ width: '100%' }}": 3,
+              "{{ width: '100%' }}": 5,
               "{{ width: '100%', backgroundColor: 'transparent', border: 'none', padding: 0, }}": 2,
               "{{ backgroundColor: 'transparent', border: 'none', padding: 0, }}": 1,
               "{addressCopied ? { backgroundColor: `var(--color-${BackgroundColor.successMute...}": 1,
               "{{ justifyContent: JustifyContent.flexStart, }}": 1,
+              "{{ flexShrink: 0, minWidth: MUSD_CONVERT_LIST_BUTTON_MIN_WIDTH_PX, minHeight: ...}": 1,
               "{{ width: '100%', marginBottom: 12 }}": 1,
               "{{ boxShadow: 'none' }}": 1,
               "{{ width: '100%', color: 'var(--color-text-default)' }}": 1
@@ -386,7 +396,7 @@
             }
           },
           "isLoading": {
-            "count": 12,
+            "count": 13,
             "values": {
               "{isSubmitting}": 4,
               "{isAddFundsLoading}": 2,
@@ -394,6 +404,7 @@
               "{onConfirmLoading}": 1,
               "{optinAllowedForGeoLoading || candidateSubscriptionId === 'pending' || candida...}": 1,
               "{optinLoading}": 1,
+              "{isClaiming || isClaimInFlight}": 1,
               "{isLoading && !isDisabled}": 1,
               "{loading}": 1
             }
@@ -1034,11 +1045,11 @@
         }
       },
       "overall": {
-        "totalInstances": 360,
-        "filesCount": 226,
+        "totalInstances": 363,
+        "filesCount": 229,
         "props": {
           "onClick": {
-            "count": 336,
+            "count": 339,
             "values": {
               "{onClose}": 14,
               "{onClick}": 11,
@@ -1057,12 +1068,12 @@
               "{handleSubmit}": 4,
               "{closeModal}": 3,
               "{handleSaveClick}": 3,
-              "{handleAddFunds}": 3,
               "{(e: React.MouseEvent<HTMLAnchorElement>) => { e.preventDefault(); e.stopPropa...}": 3,
               "{async () => { await reloadExtensionFromUi(); }}": 2,
               "{deleteMetaMetricsData}": 2,
               "{onAccept}": 2,
               "{handleCancel}": 2,
+              "{handleAddFunds}": 2,
               "{onSkip}": 2,
               "{() => handleClick(percentage)}": 2,
               "{() => { onSubmit(selectedChainIds); // Get networks that are in `selectedChai...}": 2,
@@ -1131,6 +1142,7 @@
               "{handleCreateAccount}": 1,
               "{() => { dispatch(addPermittedAccounts(activeTabOrigin, selectedAccounts)); on...}": 1,
               "{async () => await onActionComplete(false)}": 1,
+              "{handleConnectClick}": 1,
               "{onRemoveAll}": 1,
               "{() => { onSubmit([]); onClose(); }}": 1,
               "{() => { const addedAccounts = selectedAccountAddresses.filter( (address) => !...}": 1,
@@ -1160,6 +1172,9 @@
               "{(e) => onCancel(e)}": 1,
               "{(e) => onSubmit(e)}": 1,
               "{onAction}": 1,
+              "{hasClaimable ? handleClaimBonusClick : undefined}": 1,
+              "{() => handleConvert(token)}": 1,
+              "{openLearnMore}": 1,
               "{handleOpenFeaturePage}": 1,
               "{() => { navigateToBridgePage(); }}": 1,
               "{async () => await buttonProps.onClick?.()}": 1,
@@ -1263,10 +1278,10 @@
             }
           },
           "variant": {
-            "count": 236,
+            "count": 239,
             "values": {
-              "{ButtonVariant.Primary}": 103,
-              "{ButtonVariant.Secondary}": 95,
+              "{ButtonVariant.Primary}": 104,
+              "{ButtonVariant.Secondary}": 97,
               "{ButtonVariant.Link}": 15,
               "{ButtonVariant.Tertiary}": 7,
               "{BUTTON_VARIANT.SECONDARY}": 4,
@@ -1283,12 +1298,12 @@
             }
           },
           "size": {
-            "count": 225,
+            "count": 228,
             "values": {
               "{ButtonSize.Lg}": 151,
-              "{ButtonSize.Md}": 21,
+              "{ButtonSize.Md}": 23,
               "{ButtonPrimarySize.Lg}": 16,
-              "{ButtonSize.Sm}": 13,
+              "{ButtonSize.Sm}": 14,
               "{ButtonSecondarySize.Lg}": 7,
               "{BUTTON_SIZES.LG}": 6,
               "{Size.LG}": 5,
@@ -1300,7 +1315,7 @@
             }
           },
           "data-testid": {
-            "count": 202,
+            "count": 204,
             "values": {
               "\"connect-more-accounts-button\"": 3,
               "\"page-container-footer-cancel\"": 3,
@@ -1372,6 +1387,7 @@
               "\"create-solana-account-button\"": 1,
               "\"cancel-add-account-with-name\"": 1,
               "\"submit-add-account-with-name\"": 1,
+              "\"dapp-connection-control-bar__connect-button\"": 1,
               "\"disconnect-all\"": 1,
               "\"disconnect-all-sites-confirm\"": 1,
               "\"skip-disconnect-permissions\"": 1,
@@ -1388,6 +1404,8 @@
               "\"open-modal-button\"": 1,
               "\"confirm-button\"": 1,
               "\"market-closed-action-button\"": 1,
+              "\"musd-claim-bonus-button\"": 1,
+              "\"musd-learn-more-button\"": 1,
               "\"basic-functionality-off-open-feature\"": 1,
               "\"bridge-cta-button\"": 1,
               "\"bridge__tx-settings-modal-custom-button\"": 1,
@@ -1442,7 +1460,6 @@
               "\"sort-modal-apply\"": 1,
               "\"perps-modify-cta-button\"": 1,
               "\"perps-close-cta-button\"": 1,
-              "\"perps-add-funds-cta-button\"": 1,
               "\"perps-long-cta-button\"": 1,
               "\"perps-short-cta-button\"": 1,
               "\"submit-order-button\"": 1,
@@ -1479,9 +1496,9 @@
             }
           },
           "className": {
-            "count": 137,
+            "count": 138,
             "values": {
-              "\"w-full\"": 47,
+              "\"w-full\"": 46,
               "\"flex-1\"": 14,
               "\"w-full my-2\"": 5,
               "\"flex-1 rounded-xl\"": 4,
@@ -1507,8 +1524,10 @@
               "\"show-more__button\"": 1,
               "{classnames('snap-ui-renderer__footer-button', { 'snap-ui-renderer__footer-but...}": 1,
               "\"terms-of-use-popup__scroll-button\"": 1,
+              "\"whitespace-nowrap\"": 1,
               "\"mt-6\"": 1,
               "\"mb-1\"": 1,
+              "\"dapp-connection-control-bar__connect-button\"": 1,
               "\"mt-4\"": 1,
               "\"import-nfts-modal__cancel-button\"": 1,
               "\"mt-2 ml-3 mr-3\"": 1,
@@ -1551,7 +1570,7 @@
             }
           },
           "disabled": {
-            "count": 78,
+            "count": 79,
             "values": {
               "true (shorthand)": 7,
               "{disabled}": 5,
@@ -1579,6 +1598,8 @@
               "{isPendingRevocation}": 1,
               "{!accountName.trim()}": 1,
               "{selectedAccountGroups.length === 0 && snapsPermissionsRequestType === SnapsPe...}": 1,
+              "{bonusButtonDisabled}": 1,
+              "{isGeoBlocked}": 1,
               "{useExternalServices !== true}": 1,
               "{buttonProps.disabled}": 1,
               "{slippageValue === slippage || // Disable Submit if custom input is shown and ...}": 1,
@@ -1593,7 +1614,6 @@
               "{answerSrp.trim() === ''}": 1,
               "{!phraseRevealed}": 1,
               "{selectedCaipAccountAddresses.length === 0 || selectedChainIds.length === 0}": 1,
-              "{!selectedAddress || isDepositLoading}": 1,
               "{isSubmitDisabled}": 1,
               "{lockTimeError !== ''}": 1,
               "{!name || !chainId || !ticker || !rpcUrls?.rpcEndpoints?.length || Object.valu...}": 1,
@@ -1623,6 +1643,24 @@
               "true (shorthand)": 29
             }
           },
+          "style": {
+            "count": 23,
+            "values": {
+              "{{ flex: 1 }}": 6,
+              "{{ width: '100%' }}": 5,
+              "{{ width: '100%', backgroundColor: 'transparent', border: 'none', padding: 0, }}": 2,
+              "{{ width: '75%', marginTop: '10px' }}": 1,
+              "{{ backgroundColor: 'transparent', border: 'none', padding: 0, }}": 1,
+              "{addressCopied ? { backgroundColor: `var(--color-${BackgroundColor.successMute...}": 1,
+              "{{ justifyContent: JustifyContent.flexStart, }}": 1,
+              "{{ flexShrink: 0, minWidth: MUSD_CONVERT_LIST_BUTTON_MIN_WIDTH_PX, minHeight: ...}": 1,
+              "{{ width: '100%', marginBottom: 12 }}": 1,
+              "{{ boxShadow: 'none' }}": 1,
+              "{{ textDecoration: 'none' }}": 1,
+              "{{ width: '100%', color: 'var(--color-text-default)' }}": 1,
+              "{{ fontSize: '14px' }}": 1
+            }
+          },
           "danger": {
             "count": 20,
             "values": {
@@ -1631,23 +1669,6 @@
               "{snapVariant === 'destructive'}": 1,
               "{trustSignalState === TrustSignalDisplayState.Malicious}": 1,
               "\"true\"": 1
-            }
-          },
-          "style": {
-            "count": 20,
-            "values": {
-              "{{ flex: 1 }}": 6,
-              "{{ width: '100%' }}": 3,
-              "{{ width: '100%', backgroundColor: 'transparent', border: 'none', padding: 0, }}": 2,
-              "{{ width: '75%', marginTop: '10px' }}": 1,
-              "{{ backgroundColor: 'transparent', border: 'none', padding: 0, }}": 1,
-              "{addressCopied ? { backgroundColor: `var(--color-${BackgroundColor.successMute...}": 1,
-              "{{ justifyContent: JustifyContent.flexStart, }}": 1,
-              "{{ width: '100%', marginBottom: 12 }}": 1,
-              "{{ boxShadow: 'none' }}": 1,
-              "{{ textDecoration: 'none' }}": 1,
-              "{{ width: '100%', color: 'var(--color-text-default)' }}": 1,
-              "{{ fontSize: '14px' }}": 1
             }
           },
           "startIconName": {
@@ -1682,6 +1703,20 @@
               "{!hasValidInputs || isSubmitting}": 1
             }
           },
+          "isLoading": {
+            "count": 13,
+            "values": {
+              "{isSubmitting}": 4,
+              "{isAddFundsLoading}": 2,
+              "{continueLoading}": 1,
+              "{onConfirmLoading}": 1,
+              "{optinAllowedForGeoLoading || candidateSubscriptionId === 'pending' || candida...}": 1,
+              "{optinLoading}": 1,
+              "{isClaiming || isClaimInFlight}": 1,
+              "{isLoading && !isDisabled}": 1,
+              "{loading}": 1
+            }
+          },
           "type": {
             "count": 13,
             "values": {
@@ -1693,19 +1728,6 @@
               "\"secondary\"": 1,
               "\"primary\"": 1,
               "\"link\"": 1
-            }
-          },
-          "isLoading": {
-            "count": 12,
-            "values": {
-              "{isSubmitting}": 4,
-              "{isAddFundsLoading}": 2,
-              "{continueLoading}": 1,
-              "{onConfirmLoading}": 1,
-              "{optinAllowedForGeoLoading || candidateSubscriptionId === 'pending' || candida...}": 1,
-              "{optinLoading}": 1,
-              "{isLoading && !isDisabled}": 1,
-              "{loading}": 1
             }
           },
           "isDanger": {
@@ -1957,38 +1979,37 @@
       }
     },
     "mobile": {
-      "filesScanned": 5996,
+      "filesScanned": 6077,
       "targetComponent": "Button",
       "mmds": {
-        "totalInstances": 306,
-        "filesCount": 209,
+        "totalInstances": 309,
+        "filesCount": 213,
         "props": {
           "onPress": {
-            "count": 306,
+            "count": 309,
             "values": {
               "{handleClose}": 10,
               "{handleContinue}": 10,
-              "{onConfirm}": 9,
+              "{onConfirm}": 8,
               "{handleSubmit}": 7,
               "{onPress}": 6,
               "{handleConfirm}": 5,
-              "{onDismiss}": 4,
+              "{onDismiss}": 5,
               "{handleRetry}": 4,
               "{handlePress}": 3,
               "{onCancel}": 3,
               "{handleWithdraw}": 3,
               "{onStakePress}": 3,
-              "{handleBuyPress}": 3,
+              "{onViewAllPress}": 3,
               "{onRetry}": 3,
               "{goNext}": 3,
+              "{handleBuyPress}": 3,
               "{option.onPress}": 2,
               "{() => { navigation.navigate(Routes.WEBVIEW.MAIN, { screen: Routes.WEBVIEW.SIM...}": 2,
               "{onAddFunds}": 2,
               "{navigateToHome}": 2,
               "{onUnstakePress}": 2,
-              "{onViewAllPress}": 2,
               "{onLearnMorePress}": 2,
-              "{onAddPress}": 2,
               "{handleRemove}": 2,
               "{handleSheetClose}": 2,
               "{handleCancel}": 2,
@@ -2027,7 +2048,7 @@
               "{handleResetOnboardingState}": 1,
               "{isWaitlistMode ? handleJoinWaitlist : handleContinue}": 1,
               "{handleGotIt}": 1,
-              "{handleGoBack}": 1,
+              "{handleNotNow}": 1,
               "{handleClaimPress}": 1,
               "{handleNavigateToWithdrawalInputScreen}": 1,
               "{handleNavigateToDepositInputScreen}": 1,
@@ -2036,11 +2057,13 @@
               "{handleClaimUnstakedTrx}": 1,
               "{() => handlePerpsDirectionPress('long')}": 1,
               "{() => handlePerpsDirectionPress('short')}": 1,
-              "{handleSwapPress}": 1,
               "{() => setFilter(MoneyActivityFilter.All)}": 1,
               "{() => setFilter(MoneyActivityFilter.Deposits)}": 1,
               "{() => setFilter(MoneyActivityFilter.Transfers)}": 1,
+              "{handleGoBack}": 1,
               "{onAddMoneyPress}": 1,
+              "{onAddPress}": 1,
+              "{handleCtaPress}": 1,
               "{handleViewAllNfts}": 1,
               "{handleRefreshMetadata}": 1,
               "{handleCta}": 1,
@@ -2051,6 +2074,8 @@
               "{() => handleBuy(awayToken)}": 1,
               "{() => onCashOut(position)}": 1,
               "{this.onLearnMore}": 1,
+              "{handleHeadlessGetQuotes}": 1,
+              "{handleStartHeadlessBuy}": 1,
               "{handleGoToSupport}": 1,
               "{handleChangeToken}": 1,
               "{handleSelectDifferentState}": 1,
@@ -2061,6 +2086,7 @@
               "{navigateToContactSupport}": 1,
               "{() => onAmountPress(amount)}": 1,
               "{handleClaim}": 1,
+              "{handleOpenMail}": 1,
               "{handleShareLink}": 1,
               "{handleGeoLockedPress}": 1,
               "{() => { if (isGeoLoading) return; onJoinPress?.(); setIsOptInSheetOpen(true); }}": 1,
@@ -2085,20 +2111,18 @@
               "{onButtonPress}": 1,
               "{handlePasteOrClear}": 1,
               "{handleProceed}": 1,
-              "{() => { trackStickyFooterTapped({ ctaType: 'swap', balanceFiatUsd, tokenAddre...}": 1,
-              "{() => { trackStickyFooterTapped({ ctaType: 'buy', balanceFiatUsd, tokenAddres...}": 1,
+              "{() => { onSwapPress?.(); trackStickyFooterTapped({ ctaType: 'swap', balanceFi...}": 1,
+              "{() => { onBuyPress?.(); trackStickyFooterTapped({ ctaType: 'buy', balanceFiat...}": 1,
               "{goToNetworkEdit}": 1,
               "{handleViewAllTokens}": 1,
               "{() => { if (type === 'found') { navigateNextScreen( Routes.ONBOARDING.ONBOARD...}": 1,
               "{() => { navigation.goBack(); }}": 1,
               "{goToConfirmAddToken}": 1,
               "{handleConvertPress}": 1,
-              "{() => goToSwaps()}": 1,
-              "{() => goToBuy()}": 1,
+              "{handleSwapsPress}": 1,
               "{onPressCreate}": 1,
               "{goBack}": 1,
               "{saveAccountName}": 1,
-              "{() => { Alert.alert( `${flag.key} (${flag.type})`, JSON.stringify(localValue,...}": 1,
               "{handleResetOverride}": 1,
               "{() => setTypeFilter(typeFilter === 'boolean' ? 'all' : 'boolean')}": 1,
               "{handleClearAllOverrides}": 1,
@@ -2165,6 +2189,7 @@
               "{onProtectYourWalletPressed}": 1,
               "{toggleClearBrowserHistoryModal}": 1,
               "{handleRemoveSnap}": 1,
+              "{() => undefined}": 1,
               "{() => onPresetPress(preset)}": 1,
               "{toggleFollow}": 1,
               "{isUserTypeNew ? handleSetMetaMaskPin : handleSecureWallet}": 1,
@@ -2186,11 +2211,11 @@
             }
           },
           "variant": {
-            "count": 294,
+            "count": 297,
             "values": {
               "{ButtonVariant.Primary}": 154,
-              "{ButtonVariant.Secondary}": 105,
-              "{ButtonVariant.Tertiary}": 17,
+              "{ButtonVariant.Secondary}": 107,
+              "{ButtonVariant.Tertiary}": 18,
               "{confirmAction.variant || ButtonVariant.Primary}": 5,
               "{trader.isFollowing ? ButtonVariant.Primary : ButtonVariant.Secondary}": 2,
               "{buttonVariant}": 1,
@@ -2207,23 +2232,23 @@
             }
           },
           "size": {
-            "count": 247,
+            "count": 248,
             "values": {
-              "{ButtonSize.Lg}": 171,
+              "{ButtonSize.Lg}": 173,
               "{ButtonSize.Md}": 32,
-              "{ButtonBaseSize.Lg}": 25,
-              "{ButtonSize.Sm}": 8,
+              "{ButtonBaseSize.Lg}": 24,
+              "{ButtonSize.Sm}": 7,
               "{ButtonBaseSize.Sm}": 3,
               "{isSmallScreen ? ButtonSize.Md : ButtonSize.Lg}": 2,
               "{Device.isMediumDevice() ? ButtonSize.Md : ButtonSize.Lg}": 2,
+              "{ButtonBaseSize.Md}": 2,
               "{size}": 1,
               "{isEndOfSeasonReward ? ButtonSize.Md : ButtonSize.Sm}": 1,
-              "{ButtonBaseSize.Md}": 1,
               "{isMedium ? ButtonSize.Md : ButtonSize.Lg}": 1
             }
           },
           "testID": {
-            "count": 185,
+            "count": 191,
             "values": {
               "{testID}": 5,
               "{CAMPAIGN_CTA_TEST_IDS.CTA_BUTTON}": 4,
@@ -2273,17 +2298,17 @@
               "{TronUnstakedBannerTestIds.CLAIM_BUTTON}": 1,
               "{MarketInsightsSelectorsIDs.LONG_BUTTON}": 1,
               "{MarketInsightsSelectorsIDs.SHORT_BUTTON}": 1,
-              "{MarketInsightsSelectorsIDs.SWAP_BUTTON}": 1,
-              "{MarketInsightsSelectorsIDs.BUY_BUTTON}": 1,
               "{MarketInsightsSelectorsIDs.FEEDBACK_SUBMIT_BUTTON}": 1,
               "{MoneyActivityViewTestIds.FILTER_ALL}": 1,
               "{MoneyActivityViewTestIds.FILTER_DEPOSITS}": 1,
               "{MoneyActivityViewTestIds.FILTER_TRANSFERS}": 1,
+              "{MoneyHowItWorksViewTestIds.SOUNDS_GOOD_BUTTON}": 1,
               "{MoneyActivityListTestIds.VIEW_ALL_BUTTON}": 1,
               "{MoneyConvertStablecoinsTestIds.LEARN_MORE_CTA}": 1,
               "{MoneyFooterTestIds.ADD_MONEY_BUTTON}": 1,
               "{MoneyMusdTokenRowTestIds.ADD_BUTTON}": 1,
-              "{MoneyOnboardingCardTestIds.ADD_BUTTON}": 1,
+              "{MoneyOnboardingCardTestIds.CTA_BUTTON}": 1,
+              "{MoneyPotentialEarningsTestIds.VIEW_POTENTIAL_EARNINGS_BUTTON}": 1,
               "{MoneyPotentialEarningsTestIds.VIEW_ALL_BUTTON}": 1,
               "{MoneyWhatYouGetTestIds.LEARN_MORE_BUTTON}": 1,
               "\"view-all-nfts-button\"": 1,
@@ -2299,6 +2324,8 @@
               "{`${PREDICT_PICK_ITEM_TEST_IDS.PREDICT_PICKS_CASH_OUT_BUTTON}-${position.id}`}": 1,
               "{ProtectWalletModalSelectorsIDs.LEARN_MORE_BUTTON}": 1,
               "{BuildQuoteSelectors.CONTINUE_BUTTON}": 1,
+              "{HEADLESS_PLAYGROUND_GET_QUOTES_BUTTON_TEST_ID}": 1,
+              "{HEADLESS_PLAYGROUND_START_BUTTON_TEST_ID}": 1,
               "{TOKEN_NOT_AVAILABLE_MODAL_TEST_IDS.CHANGE_TOKEN_BUTTON}": 1,
               "{TOKEN_NOT_AVAILABLE_MODAL_TEST_IDS.CHANGE_PROVIDER_BUTTON}": 1,
               "{BANK_DETAILS_TEST_IDS.MAIN_ACTION_BUTTON}": 1,
@@ -2327,9 +2354,13 @@
               "\"bonus-code-submit-button\"": 1,
               "unstake-button": 1,
               "stake-more-button": 1,
+              "{swapTestID}": 1,
+              "{buyTestID}": 1,
               "\"remove-token-bottom-sheet-remove-button\"": 1,
               "{type === 'found' ? AccountStatusSelectorIDs.ACCOUNT_FOUND_LOGIN_BUTTON : Acco...}": 1,
               "{type === 'found' ? AccountStatusSelectorIDs.ACCOUNT_FOUND_DIFFERENT_METHOD_BU...}": 1,
+              "{CashTokensFullViewTestIds.SWAP_BUTTON}": 1,
+              "{CashTokensFullViewTestIds.BUY_BUTTON}": 1,
               "{EditAccountNameSelectorIDs.EDIT_ACCOUNT_NAME_SAVE}": 1,
               "{CashGetMusdEmptyStateSelectors.BUTTON}": 1,
               "{CashGetMusdEmptyStateSelectors.CLAIM_BONUS_BUTTON}": 1,
@@ -2379,8 +2410,8 @@
               "{SecurityPrivacyViewSelectorsIDs.PROTECT_YOUR_WALLET}": 1,
               "{SNAP_SETTINGS_REMOVE_BUTTON}": 1,
               "{TraderPositionViewSelectorsIDs.BUY_BUTTON}": 1,
+              "{`quick-buy-skeleton-preset-${preset}`}": 1,
               "{`quick-buy-preset-${preset}`}": 1,
-              "\"quick-buy-confirm-button\"": 1,
               "{TraderProfileViewSelectorsIDs.FOLLOW_BUTTON}": 1,
               "{isUserTypeNew ? OnboardingSelectorIDs.SOCIAL_LOGIN_IOS_NEW_USER_BUTTON : Onbo...}": 1,
               "\"empty-error-trending-state--retry-button\"": 1,
@@ -2397,9 +2428,9 @@
             }
           },
           "isFullWidth": {
-            "count": 167,
+            "count": 171,
             "values": {
-              "true (shorthand)": 167
+              "true (shorthand)": 171
             }
           },
           "style": {
@@ -2443,7 +2474,7 @@
             }
           },
           "isDisabled": {
-            "count": 72,
+            "count": 74,
             "values": {
               "{isLoading}": 6,
               "{isDisabled}": 6,
@@ -2452,7 +2483,7 @@
               "{loading}": 3,
               "{loading || !!error}": 2,
               "{!password}": 2,
-              "{isConfirmDisabled}": 2,
+              "true (shorthand)": 2,
               "{hasError}": 2,
               "{shouldDisableConfirm}": 1,
               "{needsNewQuote ? false : isSubmitDisabled}": 1,
@@ -2468,6 +2499,8 @@
               "{hascheckBox ? !isChecked : false}": 1,
               "{isOptimistic}": 1,
               "{!canContinue}": 1,
+              "{!canGetQuotes || headlessQuotesStatus === 'loading'}": 1,
+              "{!canGetQuotes || activeSession !== null}": 1,
               "{isLoadingConfirmPayment || isLoadingCancelOrder}": 1,
               "{isLoadingCancelOrder || isLoadingConfirmPayment}": 1,
               "{isLoading || value.length !== CELL_COUNT}": 1,
@@ -2492,7 +2525,7 @@
               "{!hasCookies}": 1,
               "{browserHistory.length === 0}": 1,
               "{actionItem.isDisabled}": 1,
-              "true (shorthand)": 1,
+              "{isConfirmDisabled}": 1,
               "{!confirmCheckbox}": 1,
               "{isDataUpdating}": 1,
               "{!!error}": 1,
@@ -2500,10 +2533,10 @@
             }
           },
           "twClassName": {
-            "count": 64,
+            "count": 63,
             "values": {
               "\"w-full\"": 22,
-              "\"flex-1\"": 9,
+              "\"flex-1\"": 7,
               "\"w-full text-center\"": 4,
               "\"min-w-0 shrink\"": 3,
               "\"bg-success-muted\"": 3,
@@ -2516,8 +2549,9 @@
               "\"w-full mb-3.5\"": 1,
               "\"px-0\"": 1,
               "\"w-full bg-gray-500 border-gray-500\"": 1,
-              "{swapIsSuccess ? 'bg-success-default' : 'bg-transparent border-success-default'}": 1,
-              "{buyIsSuccess ? 'bg-success-default' : 'bg-transparent border-success-default'}": 1,
+              "{severity === 'Malicious' ? 'bg-error-default' : ''}": 1,
+              "{swapIsSuccess ? successBg : `bg-transparent ${successBorder}`}": 1,
+              "{buyIsSuccess ? successBg : `bg-transparent ${successBorder}`}": 1,
               "\"min-w-[96px]\"": 1,
               "self-center": 1,
               "\"mt-1\"": 1,
@@ -2547,16 +2581,16 @@
               "{phoneVerificationIsLoading}": 1,
               "{!isWaitlistMode && emailVerificationIsLoading}": 1,
               "{isLaunchingVeriff}": 1,
-              "{selectedQuoteLoading || isContinueLoading}": 1,
+              "{selectedQuoteLoading || isContinueLoading || isTokenUnavailable || !tokenStat...}": 1,
               "{isLoadingCancelOrder}": 1,
               "{isLoadingConfirmPayment}": 1,
+              "{isOutcomeLoading && !winningCode}": 1,
               "{isGeoLoading}": 1,
               "{isOptingIn}": 1,
               "{onNextLoading}": 1,
               "{isApplyingBonusCode}": 1,
               "{isClaiming}": 1,
               "{finalLoading}": 1,
-              "{isConfirmLoading}": 1,
               "{isSubmittingTransaction || loading}": 1
             }
           },
@@ -2593,19 +2627,20 @@
               "{DesignSystemIconName.Danger}": 1
             }
           },
+          "textProps": {
+            "count": 6,
+            "values": {
+              "{{ style: { color: colors.background.default } }}": 2,
+              "{{ adjustsFontSizeToFit: true, numberOfLines: 1, }}": 1,
+              "{{ color: TextColor.TextDefault }}": 1,
+              "{swapIsSuccess ? SUCCESS_TEXT_PROPS : secondaryTextProps}": 1,
+              "{buyIsSuccess ? SUCCESS_TEXT_PROPS : secondaryTextProps}": 1
+            }
+          },
           "accessibilityRole": {
             "count": 5,
             "values": {
               "button": 5
-            }
-          },
-          "textProps": {
-            "count": 5,
-            "values": {
-              "{{ style: { color: colors.background.default } }}": 2,
-              "{{ adjustsFontSizeToFit: true, numberOfLines: 1, }}": 1,
-              "{swapIsSuccess ? SUCCESS_TEXT_PROPS : SECONDARY_TEXT_PROPS}": 1,
-              "{buyIsSuccess ? SUCCESS_TEXT_PROPS : SECONDARY_TEXT_PROPS}": 1
             }
           },
           "accessible": {
@@ -2650,8 +2685,8 @@
             "count": 3,
             "values": {
               "{{ size: IconSize.Sm }}": 1,
-              "{swapIsSuccess ? PRIMARY_ICON_PROPS : SECONDARY_ICON_PROPS}": 1,
-              "{buyIsSuccess ? PRIMARY_ICON_PROPS : SECONDARY_ICON_PROPS}": 1
+              "{swapIsSuccess ? PRIMARY_ICON_PROPS : secondaryIconProps}": 1,
+              "{buyIsSuccess ? PRIMARY_ICON_PROPS : secondaryIconProps}": 1
             }
           },
           "loadingText": {
@@ -2670,11 +2705,11 @@
         }
       },
       "deprecated": {
-        "totalInstances": 234,
-        "filesCount": 145,
+        "totalInstances": 238,
+        "filesCount": 146,
         "props": {
           "label": {
-            "count": 234,
+            "count": 237,
             "values": {
               "{buttonLabel}": 6,
               "{<Icon name={IconName.ArrowLeft} size={IconSize.Md} />}": 6,
@@ -2686,6 +2721,7 @@
               "{strings('perps.transactions.view_on_explorer')}": 3,
               "{<Box twClassName=\"flex-row items-center gap-1\"> <ActivityIndicator size=\"smal...}": 3,
               "{strings('accounts.cancel')}": 3,
+              "{strings('hardware_wallet.common.cancel')}": 3,
               "{strings('default_settings.sheet.buttons.cancel')}": 2,
               "{<Text variant={TextVariant.BodyMDMedium} style={styles.getStartedButtonText} ...}": 2,
               "{primaryButtonText}": 2,
@@ -2706,7 +2742,6 @@
               "{strings( 'app_settings.delete_metrics_description_privacy_policy', )}": 2,
               "{primaryButtonLabel}": 2,
               "{strings('hardware_wallet.common.continue')}": 2,
-              "{strings('hardware_wallet.common.cancel')}": 2,
               "{buttonContent}": 1,
               "{inlineButtonLabel}": 1,
               "{cancelText}": 1,
@@ -2776,6 +2811,7 @@
               "{strings('app_settings.fiat_on_ramp.add_activation_key')}": 1,
               "{strings('app_settings.fiat_on_ramp.change_region')}": 1,
               "{strings('app_settings.fiat_on_ramp.reset_region')}": 1,
+              "{strings( 'app_settings.fiat_on_ramp.headless_playground.entry_button', )}": 1,
               "{ctaLabel || strings('fiat_on_ramp_aggregator.try_again')}": 1,
               "{strings( 'fiat_on_ramp_aggregator.incompatible_token_account_modal.cta', )}": 1,
               "{strings('fiat_on_ramp_aggregator.region.select_region')}": 1,
@@ -2858,6 +2894,7 @@
               "{action.label}": 1,
               "{strings('alert_system.confirm_modal.review_alerts')}": 1,
               "{strings('alert_system.pending_transaction.learn_more')}": 1,
+              "{strings('confirm.qr_get_sign')}": 1,
               "{strings('hardware_wallet.device_selection.connect')}": 1,
               "{strings('hardware_wallet.device_selection.rescan')}": 1,
               "{strings('sample_feature.counter.increment')}": 1,
@@ -2866,7 +2903,7 @@
             }
           },
           "onPress": {
-            "count": 234,
+            "count": 237,
             "values": {
               "{handleContinue}": 6,
               "{handleSubmit}": 6,
@@ -2963,6 +3000,7 @@
               "{handleAddNewKeyPress}": 1,
               "{handleChangeRegion}": 1,
               "{handleResetRegion}": 1,
+              "{handleOpenHeadlessPlayground}": 1,
               "{ctaOnPressCallback}": 1,
               "{handleContinuePress}": 1,
               "{handleBankTransferSent}": 1,
@@ -3034,6 +3072,8 @@
               "{showAlertModal}": 1,
               "{() => Linking.openURL(SPEEDUP_CANCEL_TRANSACTION_URL)}": 1,
               "{onContinue}": 1,
+              "{onQrCancel}": 1,
+              "{onShowScanner}": 1,
               "{onConfirmSelection}": 1,
               "{onRescan}": 1,
               "{incrementCount}": 1,
@@ -3042,10 +3082,10 @@
             }
           },
           "variant": {
-            "count": 210,
+            "count": 213,
             "values": {
-              "{ButtonVariants.Primary}": 99,
-              "{ButtonVariants.Secondary}": 83,
+              "{ButtonVariants.Primary}": 100,
+              "{ButtonVariants.Secondary}": 85,
               "{ButtonVariants.Link}": 22,
               "{OldButtonVariants.Link}": 1,
               "{hasBalance ? ButtonVariants.Secondary : ButtonVariants.Primary}": 1,
@@ -3056,9 +3096,9 @@
             }
           },
           "size": {
-            "count": 205,
+            "count": 208,
             "values": {
-              "{ButtonSize.Lg}": 156,
+              "{ButtonSize.Lg}": 159,
               "{ButtonSize.Md}": 28,
               "{ButtonSize.Sm}": 11,
               "{ButtonSize.Auto}": 4,
@@ -3070,14 +3110,14 @@
             }
           },
           "width": {
-            "count": 137,
+            "count": 140,
             "values": {
-              "{ButtonWidthTypes.Full}": 133,
+              "{ButtonWidthTypes.Full}": 136,
               "{ButtonWidthTypes.Auto}": 4
             }
           },
           "style": {
-            "count": 125,
+            "count": 126,
             "values": {
               "{styles.button}": 33,
               "{styles.percentageButton}": 12,
@@ -3127,6 +3167,7 @@
               "{{ ...styles.button, ...(isLoading && styles.disabled), }}": 1,
               "{{ ...styles.button, }}": 1,
               "{styles.newAccountButton}": 1,
+              "{index > 0 ? styles.footerButtonSubsequent : styles.footerButton}": 1,
               "{styles.controlButton}": 1,
               "{tw.style( 'flex-row items-start justify-start gap-px flex-wrap w-[90%] -mt-1....}": 1,
               "{styles.viewHint}": 1,
@@ -3134,7 +3175,7 @@
             }
           },
           "testID": {
-            "count": 109,
+            "count": 111,
             "values": {
               "{AccountDetailsIds.BACK_BUTTON}": 3,
               "\"review-button\"": 2,
@@ -3191,6 +3232,7 @@
               "{PREDICT_GTM_MODAL_TEST_IDS.GET_STARTED_BUTTON}": 1,
               "{PREDICT_GTM_MODAL_TEST_IDS.NOT_NOW_BUTTON}": 1,
               "{PredictMarketDetailsSelectorsIDs.MARKET_DETAILS_CASH_OUT_BUTTON}": 1,
+              "{RAMP_SETTINGS_HEADLESS_PLAYGROUND_BUTTON_TEST_ID}": 1,
               "{BANK_DETAILS_TEST_IDS.MAIN_ACTION_BUTTON}": 1,
               "{BASIC_INFO_TEST_IDS.CONTINUE_BUTTON}": 1,
               "{ENTER_ADDRESS_TEST_IDS.CONTINUE_BUTTON}": 1,
@@ -3235,6 +3277,7 @@
               "{btn.testID}": 1,
               "\"alert-modal-close-button\"": 1,
               "\"alert-modal-acknowledge-button\"": 1,
+              "{AWAITING_CONFIRMATION_QR_GET_SIGN_BUTTON_TEST_ID}": 1,
               "{ERROR_CONTENT_CONTINUE_BUTTON_TEST_ID}": 1,
               "\"sample-counter-pane-increment-button\"": 1,
               "\"add-pet-name-button\"": 1
@@ -3275,14 +3318,14 @@
               "{!feedback}": 1,
               "{loading}": 1,
               "{isActionDisabled}": 1,
-              "{!blockExplorerUrlForm || !isUrl(blockExplorerUrlForm)}": 1,
-              "{!rpcUrlForm || !validatedRpcURL || !!warningRpcUrl}": 1,
+              "{!blockExplorerUrlForm || !isUrl(blockExplorerUrlForm) || isBlockExplorerSheet...}": 1,
+              "{!rpcUrlForm || !validatedRpcURL || !!warningRpcUrl || isRpcSheetSubmitting}": 1,
               "{isButtonDisabled}": 1,
               "{showLoading}": 1
             }
           },
           "loading": {
-            "count": 31,
+            "count": 33,
             "values": {
               "{isLoading}": 8,
               "{loading}": 4,
@@ -3303,6 +3346,8 @@
               "{isLoadingConfirmPayment}": 1,
               "{isLoadingOnClaim}": 1,
               "{didSubmitTransaction}": 1,
+              "{isBlockExplorerSheetSubmitting}": 1,
+              "{isRpcSheetSubmitting}": 1,
               "{showLoading}": 1
             }
           },
@@ -3377,10 +3422,11 @@
             }
           },
           "key": {
-            "count": 3,
+            "count": 4,
             "values": {
               "{amount}": 1,
               "{chainId}": 1,
+              "{index}": 1,
               "{idx}": 1
             }
           },
@@ -3399,30 +3445,31 @@
             }
           },
           "[spread]": {
-            "count": 1,
+            "count": 2,
             "values": {
-              "{value === 1 && !isStablecoinLendingEnabled ? { startIconName: IconName.Sparkl...}": 1
+              "{value === 1 && !isStablecoinLendingEnabled ? { startIconName: IconName.Sparkl...}": 1,
+              "{buttonProp}": 1
             }
           }
         }
       },
       "overall": {
-        "totalInstances": 540,
-        "filesCount": 346,
+        "totalInstances": 547,
+        "filesCount": 351,
         "props": {
           "onPress": {
-            "count": 540,
+            "count": 546,
             "values": {
               "{handleContinue}": 16,
               "{handleSubmit}": 13,
               "{handleClose}": 11,
-              "{onConfirm}": 10,
+              "{onConfirm}": 9,
               "{handleConfirm}": 9,
               "{onPress}": 8,
               "{onCancel}": 7,
+              "{onDismiss}": 7,
               "{handlePress}": 6,
               "{handleCancel}": 6,
-              "{onDismiss}": 6,
               "{handleOnPressContinue}": 5,
               "{() => navigation.goBack()}": 5,
               "{handleWithdraw}": 4,
@@ -3433,7 +3480,7 @@
               "{handleViewOnBlockExplorer}": 4,
               "{onRetry}": 4,
               "{onStakePress}": 3,
-              "{handleBuyPress}": 3,
+              "{onViewAllPress}": 3,
               "{() => handlePercentagePress(0.25)}": 3,
               "{() => handlePercentagePress(0.5)}": 3,
               "{handleCancelOrder}": 3,
@@ -3441,6 +3488,7 @@
               "{handleContinuePress}": 3,
               "{handleContactSupport}": 3,
               "{goNext}": 3,
+              "{handleBuyPress}": 3,
               "{onCancelPress}": 2,
               "{handleSwitchToggle}": 2,
               "{option.onPress}": 2,
@@ -3451,9 +3499,7 @@
               "{dismissModal}": 2,
               "{handleWithdrawPress}": 2,
               "{onUnstakePress}": 2,
-              "{onViewAllPress}": 2,
               "{onLearnMorePress}": 2,
-              "{onAddPress}": 2,
               "{handleRemove}": 2,
               "{handleSheetClose}": 2,
               "{toggleRevokeAllPermissionsModal}": 2,
@@ -3528,7 +3574,7 @@
               "{deleteWallet}": 1,
               "{triggerClose}": 1,
               "{handleEarnPress}": 1,
-              "{handleGoBack}": 1,
+              "{handleNotNow}": 1,
               "{handleClaimPress}": 1,
               "{handleNavigateToWithdrawalInputScreen}": 1,
               "{handleNavigateToDepositInputScreen}": 1,
@@ -3540,11 +3586,13 @@
               "{handleClaimUnstakedTrx}": 1,
               "{() => handlePerpsDirectionPress('long')}": 1,
               "{() => handlePerpsDirectionPress('short')}": 1,
-              "{handleSwapPress}": 1,
               "{() => setFilter(MoneyActivityFilter.All)}": 1,
               "{() => setFilter(MoneyActivityFilter.Deposits)}": 1,
               "{() => setFilter(MoneyActivityFilter.Transfers)}": 1,
+              "{handleGoBack}": 1,
               "{onAddMoneyPress}": 1,
+              "{onAddPress}": 1,
+              "{handleCtaPress}": 1,
               "{() => viewOnBlockExplorer(TransactionDetailRow.TransactionID)}": 1,
               "{handleViewAllNfts}": 1,
               "{handleRefreshMetadata}": 1,
@@ -3588,6 +3636,7 @@
               "{handleAddNewKeyPress}": 1,
               "{handleChangeRegion}": 1,
               "{handleResetRegion}": 1,
+              "{handleOpenHeadlessPlayground}": 1,
               "{ctaOnPressCallback}": 1,
               "{handleNavigateToBuy}": 1,
               "{handleTryAnotherOption}": 1,
@@ -3597,12 +3646,15 @@
               "{() => { setNetworkFilter(networks); setIsEditingNetworkFilter(true); }}": 1,
               "{() => { setNetworkFilter( networks.length === networkFilter?.length ? [] : ne...}": 1,
               "{() => { if ( networkFilter?.length === networks.length || networkFilter?.leng...}": 1,
+              "{handleHeadlessGetQuotes}": 1,
+              "{handleStartHeadlessBuy}": 1,
               "{handleGoToSupport}": 1,
               "{handleChangeToken}": 1,
               "{handleManageBankTransfer}": 1,
               "{navigateToContactSupport}": 1,
               "{() => onAmountPress(amount)}": 1,
               "{handleClaim}": 1,
+              "{handleOpenMail}": 1,
               "{handleShareLink}": 1,
               "{handleGeoLockedPress}": 1,
               "{() => { if (isGeoLoading) return; onJoinPress?.(); setIsOptInSheetOpen(true); }}": 1,
@@ -3631,8 +3683,8 @@
               "{handlePasteOrClear}": 1,
               "{onClaimPress}": 1,
               "{handleConfirmation}": 1,
-              "{() => { trackStickyFooterTapped({ ctaType: 'swap', balanceFiatUsd, tokenAddre...}": 1,
-              "{() => { trackStickyFooterTapped({ ctaType: 'buy', balanceFiatUsd, tokenAddres...}": 1,
+              "{() => { onSwapPress?.(); trackStickyFooterTapped({ ctaType: 'swap', balanceFi...}": 1,
+              "{() => { onBuyPress?.(); trackStickyFooterTapped({ ctaType: 'buy', balanceFiat...}": 1,
               "{goToNetworkEdit}": 1,
               "{handleViewAllTokens}": 1,
               "{onViewBlockExplorer}": 1,
@@ -3653,14 +3705,12 @@
               "{handleOnBack}": 1,
               "{executeTest}": 1,
               "{handleConvertPress}": 1,
-              "{() => goToSwaps()}": 1,
-              "{() => goToBuy()}": 1,
+              "{handleSwapsPress}": 1,
               "{onPressCreate}": 1,
               "{goBack}": 1,
               "{saveAccountName}": 1,
               "{onPrimary}": 1,
               "{onSecondary}": 1,
-              "{() => { Alert.alert( `${flag.key} (${flag.type})`, JSON.stringify(localValue,...}": 1,
               "{handleResetOverride}": 1,
               "{() => setTypeFilter(typeFilter === 'boolean' ? 'all' : 'boolean')}": 1,
               "{handleClearAllOverrides}": 1,
@@ -3739,6 +3789,7 @@
               "{toggleClearBrowserHistoryModal}": 1,
               "{() => { Linking.openURL(SIMULATION_DETALS_ARTICLE_URL); trackEvent( createEve...}": 1,
               "{handleRemoveSnap}": 1,
+              "{() => undefined}": 1,
               "{() => onPresetPress(preset)}": 1,
               "{toggleFollow}": 1,
               "{isUserTypeNew ? handleSetMetaMaskPin : handleSecureWallet}": 1,
@@ -3760,6 +3811,8 @@
               "{handleSubmitPressLocal}": 1,
               "{() => Linking.openURL(SPEEDUP_CANCEL_TRANSACTION_URL)}": 1,
               "{onContinue}": 1,
+              "{onQrCancel}": 1,
+              "{onShowScanner}": 1,
               "{onConfirmSelection}": 1,
               "{onRescan}": 1,
               "{incrementCount}": 1,
@@ -3767,14 +3820,14 @@
             }
           },
           "variant": {
-            "count": 504,
+            "count": 510,
             "values": {
               "{ButtonVariant.Primary}": 154,
-              "{ButtonVariant.Secondary}": 105,
-              "{ButtonVariants.Primary}": 99,
-              "{ButtonVariants.Secondary}": 83,
+              "{ButtonVariant.Secondary}": 107,
+              "{ButtonVariants.Primary}": 100,
+              "{ButtonVariants.Secondary}": 85,
               "{ButtonVariants.Link}": 22,
-              "{ButtonVariant.Tertiary}": 17,
+              "{ButtonVariant.Tertiary}": 18,
               "{confirmAction.variant || ButtonVariant.Primary}": 5,
               "{trader.isFollowing ? ButtonVariant.Primary : ButtonVariant.Secondary}": 2,
               "{buttonVariant}": 1,
@@ -3797,29 +3850,29 @@
             }
           },
           "size": {
-            "count": 452,
+            "count": 456,
             "values": {
-              "{ButtonSize.Lg}": 327,
+              "{ButtonSize.Lg}": 332,
               "{ButtonSize.Md}": 60,
-              "{ButtonBaseSize.Lg}": 25,
-              "{ButtonSize.Sm}": 19,
+              "{ButtonBaseSize.Lg}": 24,
+              "{ButtonSize.Sm}": 18,
               "{ButtonSize.Auto}": 4,
               "{ButtonBaseSize.Sm}": 3,
               "{isCarousel ? ButtonSize.Sm : ButtonSize.Md}": 2,
               "{isSmallScreen ? ButtonSize.Md : ButtonSize.Lg}": 2,
               "{Device.isMediumDevice() ? ButtonSize.Md : ButtonSize.Lg}": 2,
+              "{ButtonBaseSize.Md}": 2,
               "{cover ? ButtonSize.Lg : ButtonSize.Auto}": 1,
               "{size}": 1,
               "{isEndOfSeasonReward ? ButtonSize.Md : ButtonSize.Sm}": 1,
               "{OldButtonSize.Auto}": 1,
-              "{ButtonBaseSize.Md}": 1,
               "{isMedium ? ButtonSize.Md : ButtonSize.Lg}": 1,
               "{OldButtonSize.Sm}": 1,
               "{ButtonLinkSize.Lg}": 1
             }
           },
           "testID": {
-            "count": 294,
+            "count": 302,
             "values": {
               "{testID}": 6,
               "{CAMPAIGN_CTA_TEST_IDS.CTA_BUTTON}": 4,
@@ -3896,17 +3949,17 @@
               "{TronUnstakedBannerTestIds.CLAIM_BUTTON}": 1,
               "{MarketInsightsSelectorsIDs.LONG_BUTTON}": 1,
               "{MarketInsightsSelectorsIDs.SHORT_BUTTON}": 1,
-              "{MarketInsightsSelectorsIDs.SWAP_BUTTON}": 1,
-              "{MarketInsightsSelectorsIDs.BUY_BUTTON}": 1,
               "{MarketInsightsSelectorsIDs.FEEDBACK_SUBMIT_BUTTON}": 1,
               "{MoneyActivityViewTestIds.FILTER_ALL}": 1,
               "{MoneyActivityViewTestIds.FILTER_DEPOSITS}": 1,
               "{MoneyActivityViewTestIds.FILTER_TRANSFERS}": 1,
+              "{MoneyHowItWorksViewTestIds.SOUNDS_GOOD_BUTTON}": 1,
               "{MoneyActivityListTestIds.VIEW_ALL_BUTTON}": 1,
               "{MoneyConvertStablecoinsTestIds.LEARN_MORE_CTA}": 1,
               "{MoneyFooterTestIds.ADD_MONEY_BUTTON}": 1,
               "{MoneyMusdTokenRowTestIds.ADD_BUTTON}": 1,
-              "{MoneyOnboardingCardTestIds.ADD_BUTTON}": 1,
+              "{MoneyOnboardingCardTestIds.CTA_BUTTON}": 1,
+              "{MoneyPotentialEarningsTestIds.VIEW_POTENTIAL_EARNINGS_BUTTON}": 1,
               "{MoneyPotentialEarningsTestIds.VIEW_ALL_BUTTON}": 1,
               "{MoneyWhatYouGetTestIds.LEARN_MORE_BUTTON}": 1,
               "\"view-all-nfts-button\"": 1,
@@ -3954,8 +4007,11 @@
               "{`${PREDICT_PICK_ITEM_TEST_IDS.PREDICT_PICKS_CASH_OUT_BUTTON}-${position.id}`}": 1,
               "{PredictMarketDetailsSelectorsIDs.MARKET_DETAILS_CASH_OUT_BUTTON}": 1,
               "{ProtectWalletModalSelectorsIDs.LEARN_MORE_BUTTON}": 1,
+              "{RAMP_SETTINGS_HEADLESS_PLAYGROUND_BUTTON_TEST_ID}": 1,
               "{OTP_CODE_TEST_IDS.SUBMIT_BUTTON}": 1,
               "{BuildQuoteSelectors.CONTINUE_BUTTON}": 1,
+              "{HEADLESS_PLAYGROUND_GET_QUOTES_BUTTON_TEST_ID}": 1,
+              "{HEADLESS_PLAYGROUND_START_BUTTON_TEST_ID}": 1,
               "{TOKEN_NOT_AVAILABLE_MODAL_TEST_IDS.CHANGE_TOKEN_BUTTON}": 1,
               "{TOKEN_NOT_AVAILABLE_MODAL_TEST_IDS.CHANGE_PROVIDER_BUTTON}": 1,
               "{EnterEmailSelectorsIDs.SEND_EMAIL_BUTTON}": 1,
@@ -3986,6 +4042,8 @@
               "stake-more-button": 1,
               "\"cancel-button\"": 1,
               "\"continue-button\"": 1,
+              "{swapTestID}": 1,
+              "{buyTestID}": 1,
               "\"remove-token-bottom-sheet-remove-button\"": 1,
               "{networkFilterTestId}": 1,
               "{AccountConnectSelectorsIDs.CREATE_ACCOUNT_BUTTON}": 1,
@@ -4003,6 +4061,8 @@
               "{AddNewAccountIds.CANCEL}": 1,
               "{AddNewAccountIds.CONFIRM}": 1,
               "{callbackTestId}": 1,
+              "{CashTokensFullViewTestIds.SWAP_BUTTON}": 1,
+              "{CashTokensFullViewTestIds.BUY_BUTTON}": 1,
               "{REJECT_BUTTON_TEST_ID}": 1,
               "{PROCEED_BUTTON_TEST_ID}": 1,
               "{EditAccountNameSelectorIDs.EDIT_ACCOUNT_NAME_SAVE}": 1,
@@ -4062,8 +4122,8 @@
               "{SecurityPrivacyViewSelectorsIDs.PROTECT_YOUR_WALLET}": 1,
               "{SNAP_SETTINGS_REMOVE_BUTTON}": 1,
               "{TraderPositionViewSelectorsIDs.BUY_BUTTON}": 1,
+              "{`quick-buy-skeleton-preset-${preset}`}": 1,
               "{`quick-buy-preset-${preset}`}": 1,
-              "\"quick-buy-confirm-button\"": 1,
               "{TraderProfileViewSelectorsIDs.FOLLOW_BUTTON}": 1,
               "{isUserTypeNew ? OnboardingSelectorIDs.SOCIAL_LOGIN_IOS_NEW_USER_BUTTON : Onbo...}": 1,
               "\"empty-error-trending-state--retry-button\"": 1,
@@ -4078,13 +4138,14 @@
               "\"confirm-alert-cancel-button\"": 1,
               "\"confirm-alert-confirm-button\"": 1,
               "{ApproveComponentIDs.EDIT_SPENDING_CAP_SAVE_BUTTON}": 1,
+              "{AWAITING_CONFIRMATION_QR_GET_SIGN_BUTTON_TEST_ID}": 1,
               "{ERROR_CONTENT_CONTINUE_BUTTON_TEST_ID}": 1,
               "\"sample-counter-pane-increment-button\"": 1,
               "\"add-pet-name-button\"": 1
             }
           },
           "label": {
-            "count": 234,
+            "count": 237,
             "values": {
               "{buttonLabel}": 6,
               "{<Icon name={IconName.ArrowLeft} size={IconSize.Md} />}": 6,
@@ -4096,6 +4157,7 @@
               "{strings('perps.transactions.view_on_explorer')}": 3,
               "{<Box twClassName=\"flex-row items-center gap-1\"> <ActivityIndicator size=\"smal...}": 3,
               "{strings('accounts.cancel')}": 3,
+              "{strings('hardware_wallet.common.cancel')}": 3,
               "{strings('default_settings.sheet.buttons.cancel')}": 2,
               "{<Text variant={TextVariant.BodyMDMedium} style={styles.getStartedButtonText} ...}": 2,
               "{primaryButtonText}": 2,
@@ -4116,7 +4178,6 @@
               "{strings( 'app_settings.delete_metrics_description_privacy_policy', )}": 2,
               "{primaryButtonLabel}": 2,
               "{strings('hardware_wallet.common.continue')}": 2,
-              "{strings('hardware_wallet.common.cancel')}": 2,
               "{buttonContent}": 1,
               "{inlineButtonLabel}": 1,
               "{cancelText}": 1,
@@ -4186,6 +4247,7 @@
               "{strings('app_settings.fiat_on_ramp.add_activation_key')}": 1,
               "{strings('app_settings.fiat_on_ramp.change_region')}": 1,
               "{strings('app_settings.fiat_on_ramp.reset_region')}": 1,
+              "{strings( 'app_settings.fiat_on_ramp.headless_playground.entry_button', )}": 1,
               "{ctaLabel || strings('fiat_on_ramp_aggregator.try_again')}": 1,
               "{strings( 'fiat_on_ramp_aggregator.incompatible_token_account_modal.cta', )}": 1,
               "{strings('fiat_on_ramp_aggregator.region.select_region')}": 1,
@@ -4268,6 +4330,7 @@
               "{action.label}": 1,
               "{strings('alert_system.confirm_modal.review_alerts')}": 1,
               "{strings('alert_system.pending_transaction.learn_more')}": 1,
+              "{strings('confirm.qr_get_sign')}": 1,
               "{strings('hardware_wallet.device_selection.connect')}": 1,
               "{strings('hardware_wallet.device_selection.rescan')}": 1,
               "{strings('sample_feature.counter.increment')}": 1,
@@ -4276,7 +4339,7 @@
             }
           },
           "style": {
-            "count": 201,
+            "count": 202,
             "values": {
               "{styles.button}": 59,
               "{styles.percentageButton}": 14,
@@ -4337,6 +4400,7 @@
               "{styles.actionButton}": 1,
               "{isDisabled ? styles.controlButtonDisabled : styles.controlButton}": 1,
               "{styles.newAccountButton}": 1,
+              "{index > 0 ? styles.footerButtonSubsequent : styles.footerButton}": 1,
               "{styles.controlButton}": 1,
               "{!accountName?.length ? { ...styles.saveButton, ...styles.saveButtonDisabled }...}": 1,
               "{tw.style( 'flex-row items-start justify-start gap-px flex-wrap w-[90%] -mt-1....}": 1,
@@ -4357,20 +4421,20 @@
             }
           },
           "isFullWidth": {
-            "count": 167,
+            "count": 171,
             "values": {
-              "true (shorthand)": 167
+              "true (shorthand)": 171
             }
           },
           "width": {
-            "count": 137,
+            "count": 140,
             "values": {
-              "{ButtonWidthTypes.Full}": 133,
+              "{ButtonWidthTypes.Full}": 136,
               "{ButtonWidthTypes.Auto}": 4
             }
           },
           "isDisabled": {
-            "count": 118,
+            "count": 120,
             "values": {
               "{isLoading}": 10,
               "{isDisabled}": 8,
@@ -4383,7 +4447,7 @@
               "{isAtOICap}": 2,
               "{isLoading || value.length !== CELL_COUNT}": 2,
               "{!password}": 2,
-              "{isConfirmDisabled}": 2,
+              "true (shorthand)": 2,
               "{hasError}": 2,
               "{confirmed}": 1,
               "{confirmed || confirmDisabled || loading}": 1,
@@ -4417,6 +4481,8 @@
               "{isLoadingKeys}": 1,
               "{amountAsNumber <= 0 || isLoading || !!regionsError || !!cryptosError || !!pay...}": 1,
               "{!canContinue}": 1,
+              "{!canGetQuotes || headlessQuotesStatus === 'loading'}": 1,
+              "{!canGetQuotes || activeSession !== null}": 1,
               "{isLoadingConfirmPayment || isLoadingCancelOrder}": 1,
               "{isLoadingCancelOrder || isLoadingConfirmPayment}": 1,
               "{isOptingIn}": 1,
@@ -4439,15 +4505,15 @@
               "{!isCheckboxChecked}": 1,
               "{isAligning}": 1,
               "{isActionDisabled}": 1,
-              "{!blockExplorerUrlForm || !isUrl(blockExplorerUrlForm)}": 1,
-              "{!rpcUrlForm || !validatedRpcURL || !!warningRpcUrl}": 1,
+              "{!blockExplorerUrlForm || !isUrl(blockExplorerUrlForm) || isBlockExplorerSheet...}": 1,
+              "{!rpcUrlForm || !validatedRpcURL || !!warningRpcUrl || isRpcSheetSubmitting}": 1,
               "{finalLoading}": 1,
               "{password.length === 0 || disabledInput || finalLoading}": 1,
               "{!showSeedPhrase}": 1,
               "{!hasCookies}": 1,
               "{browserHistory.length === 0}": 1,
               "{actionItem.isDisabled}": 1,
-              "true (shorthand)": 1,
+              "{isConfirmDisabled}": 1,
               "{!confirmCheckbox}": 1,
               "{isDataUpdating}": 1,
               "{!!error}": 1,
@@ -4456,10 +4522,10 @@
             }
           },
           "twClassName": {
-            "count": 64,
+            "count": 63,
             "values": {
               "\"w-full\"": 22,
-              "\"flex-1\"": 9,
+              "\"flex-1\"": 7,
               "\"w-full text-center\"": 4,
               "\"min-w-0 shrink\"": 3,
               "\"bg-success-muted\"": 3,
@@ -4472,8 +4538,9 @@
               "\"w-full mb-3.5\"": 1,
               "\"px-0\"": 1,
               "\"w-full bg-gray-500 border-gray-500\"": 1,
-              "{swapIsSuccess ? 'bg-success-default' : 'bg-transparent border-success-default'}": 1,
-              "{buyIsSuccess ? 'bg-success-default' : 'bg-transparent border-success-default'}": 1,
+              "{severity === 'Malicious' ? 'bg-error-default' : ''}": 1,
+              "{swapIsSuccess ? successBg : `bg-transparent ${successBorder}`}": 1,
+              "{buyIsSuccess ? successBg : `bg-transparent ${successBorder}`}": 1,
               "\"min-w-[96px]\"": 1,
               "self-center": 1,
               "\"mt-1\"": 1,
@@ -4503,21 +4570,21 @@
               "{phoneVerificationIsLoading}": 1,
               "{!isWaitlistMode && emailVerificationIsLoading}": 1,
               "{isLaunchingVeriff}": 1,
-              "{selectedQuoteLoading || isContinueLoading}": 1,
+              "{selectedQuoteLoading || isContinueLoading || isTokenUnavailable || !tokenStat...}": 1,
               "{isLoadingCancelOrder}": 1,
               "{isLoadingConfirmPayment}": 1,
+              "{isOutcomeLoading && !winningCode}": 1,
               "{isGeoLoading}": 1,
               "{isOptingIn}": 1,
               "{onNextLoading}": 1,
               "{isApplyingBonusCode}": 1,
               "{isClaiming}": 1,
               "{finalLoading}": 1,
-              "{isConfirmLoading}": 1,
               "{isSubmittingTransaction || loading}": 1
             }
           },
           "loading": {
-            "count": 31,
+            "count": 33,
             "values": {
               "{isLoading}": 8,
               "{loading}": 4,
@@ -4538,6 +4605,8 @@
               "{isLoadingConfirmPayment}": 1,
               "{isLoadingOnClaim}": 1,
               "{didSubmitTransaction}": 1,
+              "{isBlockExplorerSheetSubmitting}": 1,
+              "{isRpcSheetSubmitting}": 1,
               "{showLoading}": 1
             }
           },
@@ -4624,6 +4693,18 @@
               "true (shorthand)": 9
             }
           },
+          "key": {
+            "count": 7,
+            "values": {
+              "{option.label}": 1,
+              "{amount}": 1,
+              "{chainId}": 1,
+              "{index}": 1,
+              "{idx}": 1,
+              "{buttonValue}": 1,
+              "{`${val}-${label}`}": 1
+            }
+          },
           "activeOpacity": {
             "count": 7,
             "values": {
@@ -4631,32 +4712,23 @@
               "0.2": 1
             }
           },
-          "key": {
-            "count": 6,
-            "values": {
-              "{option.label}": 1,
-              "{amount}": 1,
-              "{chainId}": 1,
-              "{idx}": 1,
-              "{buttonValue}": 1,
-              "{`${val}-${label}`}": 1
-            }
-          },
           "textProps": {
-            "count": 5,
+            "count": 6,
             "values": {
               "{{ style: { color: colors.background.default } }}": 2,
               "{{ adjustsFontSizeToFit: true, numberOfLines: 1, }}": 1,
-              "{swapIsSuccess ? SUCCESS_TEXT_PROPS : SECONDARY_TEXT_PROPS}": 1,
-              "{buyIsSuccess ? SUCCESS_TEXT_PROPS : SECONDARY_TEXT_PROPS}": 1
+              "{{ color: TextColor.TextDefault }}": 1,
+              "{swapIsSuccess ? SUCCESS_TEXT_PROPS : secondaryTextProps}": 1,
+              "{buyIsSuccess ? SUCCESS_TEXT_PROPS : secondaryTextProps}": 1
             }
           },
           "[spread]": {
-            "count": 4,
+            "count": 5,
             "values": {
               "{getCommonButtonProps()}": 2,
               "{props}": 1,
-              "{value === 1 && !isStablecoinLendingEnabled ? { startIconName: IconName.Sparkl...}": 1
+              "{value === 1 && !isStablecoinLendingEnabled ? { startIconName: IconName.Sparkl...}": 1,
+              "{buttonProp}": 1
             }
           },
           "startAccessory": {
@@ -4671,8 +4743,8 @@
             "count": 3,
             "values": {
               "{{ size: IconSize.Sm }}": 1,
-              "{swapIsSuccess ? PRIMARY_ICON_PROPS : SECONDARY_ICON_PROPS}": 1,
-              "{buyIsSuccess ? PRIMARY_ICON_PROPS : SECONDARY_ICON_PROPS}": 1
+              "{swapIsSuccess ? PRIMARY_ICON_PROPS : secondaryIconProps}": 1,
+              "{buyIsSuccess ? PRIMARY_ICON_PROPS : secondaryIconProps}": 1
             }
           },
           "labelColor": {
@@ -4705,7 +4777,7 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "Button": 234
+        "Button": 238
       }
     }
   }

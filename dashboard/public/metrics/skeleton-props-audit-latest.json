@@ -1,9 +1,9 @@
 {
   "component": "Skeleton",
-  "generatedAt": "2026-04-20T17:14:35.620Z",
+  "generatedAt": "2026-04-24T16:26:08.819Z",
   "projects": {
     "extension": {
-      "filesScanned": 3082,
+      "filesScanned": 3089,
       "targetComponent": "Skeleton",
       "mmds": {
         "totalInstances": 0,
@@ -23,14 +23,52 @@
       "deprecatedByLegacyComponent": {}
     },
     "mobile": {
-      "filesScanned": 5996,
+      "filesScanned": 6077,
       "targetComponent": "Skeleton",
       "mmds": {
-        "totalInstances": 43,
-        "filesCount": 20,
+        "totalInstances": 75,
+        "filesCount": 22,
         "props": {
+          "height": {
+            "count": 43,
+            "values": {
+              "12": 4,
+              "14": 2,
+              "16": 8,
+              "18": 4,
+              "20": 4,
+              "24": 8,
+              "32": 6,
+              "36": 1,
+              "40": 2,
+              "48": 3,
+              "154": 1
+            }
+          },
+          "width": {
+            "count": 42,
+            "values": {
+              "32": 4,
+              "40": 2,
+              "50": 1,
+              "56": 1,
+              "60": 7,
+              "80": 7,
+              "94": 1,
+              "100": 2,
+              "120": 4,
+              "160": 5,
+              "\"100%\"": 2,
+              "\"90%\"": 1,
+              "\"80%\"": 1,
+              "\"38%\"": 1,
+              "\"30%\"": 1,
+              "\"42%\"": 1,
+              "\"32%\"": 1
+            }
+          },
           "style": {
-            "count": 32,
+            "count": 34,
             "values": {
               "{tw.style('rounded-md')}": 2,
               "{tw.style('h-6 w-24 rounded bg-muted')}": 2,
@@ -47,6 +85,8 @@
               "{tw.style('h-[22px] w-[220px] rounded-md')}": 1,
               "{tw.style('h-12 rounded-lg')}": 1,
               "{tw.style('h-14 rounded-xl')}": 1,
+              "{tw.style('h-8 w-36 rounded-lg')}": 1,
+              "{tw.style('h-6 w-28 rounded-lg')}": 1,
               "{tw.style('h-50 rounded-xl')}": 1,
               "{tw.style('h-9 w-28 rounded')}": 1,
               "{tw.style('h-5 w-8 rounded')}": 1,
@@ -58,25 +98,15 @@
               "{styles.skeletonCircle}": 1
             }
           },
-          "height": {
-            "count": 13,
+          "twClassName": {
+            "count": 17,
             "values": {
-              "18": 4,
-              "20": 2,
-              "24": 2,
-              "32": 3,
-              "48": 1,
-              "154": 1
-            }
-          },
-          "width": {
-            "count": 12,
-            "values": {
-              "32": 2,
-              "60": 2,
-              "80": 4,
-              "120": 2,
-              "160": 2
+              "\"rounded-full\"": 6,
+              "\"rounded-lg\"": 4,
+              "\"rounded\"": 4,
+              "\"mb-2 rounded-md\"": 1,
+              "\"rounded-md\"": 1,
+              "\"rounded-xl\"": 1
             }
           },
           "hideChildren": {
@@ -85,18 +115,11 @@
               "{loading}": 4
             }
           },
-          "twClassName": {
-            "count": 3,
-            "values": {
-              "\"mb-2\"": 1,
-              "\"rounded-lg\"": 1,
-              "\"rounded-full\"": 1
-            }
-          },
           "testID": {
-            "count": 3,
+            "count": 4,
             "values": {
               "{MoneyBalanceSummaryTestIds.BALANCE_SKELETON}": 1,
+              "{MoneyBalanceSummaryTestIds.APY_SKELETON}": 1,
               "{MoneyEarningsTestIds.LIFETIME_SKELETON}": 1,
               "{MoneyEarningsTestIds.PROJECTED_SKELETON}": 1
             }
@@ -115,11 +138,49 @@
         "props": {}
       },
       "overall": {
-        "totalInstances": 43,
-        "filesCount": 20,
+        "totalInstances": 75,
+        "filesCount": 22,
         "props": {
+          "height": {
+            "count": 43,
+            "values": {
+              "12": 4,
+              "14": 2,
+              "16": 8,
+              "18": 4,
+              "20": 4,
+              "24": 8,
+              "32": 6,
+              "36": 1,
+              "40": 2,
+              "48": 3,
+              "154": 1
+            }
+          },
+          "width": {
+            "count": 42,
+            "values": {
+              "32": 4,
+              "40": 2,
+              "50": 1,
+              "56": 1,
+              "60": 7,
+              "80": 7,
+              "94": 1,
+              "100": 2,
+              "120": 4,
+              "160": 5,
+              "\"100%\"": 2,
+              "\"90%\"": 1,
+              "\"80%\"": 1,
+              "\"38%\"": 1,
+              "\"30%\"": 1,
+              "\"42%\"": 1,
+              "\"32%\"": 1
+            }
+          },
           "style": {
-            "count": 32,
+            "count": 34,
             "values": {
               "{tw.style('rounded-md')}": 2,
               "{tw.style('h-6 w-24 rounded bg-muted')}": 2,
@@ -136,6 +197,8 @@
               "{tw.style('h-[22px] w-[220px] rounded-md')}": 1,
               "{tw.style('h-12 rounded-lg')}": 1,
               "{tw.style('h-14 rounded-xl')}": 1,
+              "{tw.style('h-8 w-36 rounded-lg')}": 1,
+              "{tw.style('h-6 w-28 rounded-lg')}": 1,
               "{tw.style('h-50 rounded-xl')}": 1,
               "{tw.style('h-9 w-28 rounded')}": 1,
               "{tw.style('h-5 w-8 rounded')}": 1,
@@ -147,25 +210,15 @@
               "{styles.skeletonCircle}": 1
             }
           },
-          "height": {
-            "count": 13,
+          "twClassName": {
+            "count": 17,
             "values": {
-              "18": 4,
-              "20": 2,
-              "24": 2,
-              "32": 3,
-              "48": 1,
-              "154": 1
-            }
-          },
-          "width": {
-            "count": 12,
-            "values": {
-              "32": 2,
-              "60": 2,
-              "80": 4,
-              "120": 2,
-              "160": 2
+              "\"rounded-full\"": 6,
+              "\"rounded-lg\"": 4,
+              "\"rounded\"": 4,
+              "\"mb-2 rounded-md\"": 1,
+              "\"rounded-md\"": 1,
+              "\"rounded-xl\"": 1
             }
           },
           "hideChildren": {
@@ -174,18 +227,11 @@
               "{loading}": 4
             }
           },
-          "twClassName": {
-            "count": 3,
-            "values": {
-              "\"mb-2\"": 1,
-              "\"rounded-lg\"": 1,
-              "\"rounded-full\"": 1
-            }
-          },
           "testID": {
-            "count": 3,
+            "count": 4,
             "values": {
               "{MoneyBalanceSummaryTestIds.BALANCE_SKELETON}": 1,
+              "{MoneyBalanceSummaryTestIds.APY_SKELETON}": 1,
               "{MoneyEarningsTestIds.LIFETIME_SKELETON}": 1,
               "{MoneyEarningsTestIds.PROJECTED_SKELETON}": 1
             }

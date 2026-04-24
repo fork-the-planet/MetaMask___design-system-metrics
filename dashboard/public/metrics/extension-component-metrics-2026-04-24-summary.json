@@ -1,0 +1,214 @@
+{
+  "project": "extension",
+  "date": "2026-04-24",
+  "mmdsInstances": 2733,
+  "deprecatedInstances": 2929,
+  "mmdsUsageTotal": 2716,
+  "totalInstances": 5662,
+  "migrationPercentage": "48.27",
+  "componentsTracked": 17,
+  "mmdsComponentsAvailable": 28,
+  "mmdsComponentsList": [
+    "AvatarAccount",
+    "AvatarBase",
+    "AvatarFavicon",
+    "AvatarGroup",
+    "AvatarIcon",
+    "AvatarNetwork",
+    "AvatarToken",
+    "BadgeCount",
+    "BadgeIcon",
+    "BadgeNetwork",
+    "BadgeStatus",
+    "BadgeWrapper",
+    "BannerAlert",
+    "BannerBase",
+    "Blockies",
+    "Box",
+    "Button",
+    "ButtonBase",
+    "ButtonFilter",
+    "ButtonHero",
+    "ButtonIcon",
+    "Checkbox",
+    "Icon",
+    "Input",
+    "Jazzicon",
+    "Maskicon",
+    "Text",
+    "TextButton"
+  ],
+  "newComponents": [],
+  "noReplacementComponents": 23,
+  "totalNoReplacementInstances": 670,
+  "codeOwnerStats": {
+    "@HowardBraham": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/accounts-engineers": {
+      "mmdsInstances": 376,
+      "deprecatedInstances": 144,
+      "totalInstances": 520,
+      "migrationPercentage": "72.31",
+      "filesCount": 67
+    },
+    "@MetaMask/confirmations": {
+      "mmdsInstances": 183,
+      "deprecatedInstances": 577,
+      "totalInstances": 760,
+      "migrationPercentage": "24.08",
+      "filesCount": 168
+    },
+    "@MetaMask/core-extension-ux": {
+      "mmdsInstances": 180,
+      "deprecatedInstances": 768,
+      "totalInstances": 948,
+      "migrationPercentage": "18.99",
+      "filesCount": 135
+    },
+    "@MetaMask/core-platform": {
+      "mmdsInstances": 3,
+      "deprecatedInstances": 401,
+      "totalInstances": 404,
+      "migrationPercentage": "0.74",
+      "filesCount": 54
+    },
+    "@MetaMask/delegation": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/design-system-engineers": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/earn": {
+      "mmdsInstances": 35,
+      "deprecatedInstances": 4,
+      "totalInstances": 39,
+      "migrationPercentage": "89.74",
+      "filesCount": 6
+    },
+    "@MetaMask/extension-platform": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/extension-privacy-reviewers": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/extension-security-team": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/metamask-assets": {
+      "mmdsInstances": 5,
+      "deprecatedInstances": 188,
+      "totalInstances": 193,
+      "migrationPercentage": "2.59",
+      "filesCount": 38
+    },
+    "@MetaMask/new-networks": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/notifications": {
+      "mmdsInstances": 20,
+      "deprecatedInstances": 41,
+      "totalInstances": 61,
+      "migrationPercentage": "32.79",
+      "filesCount": 18
+    },
+    "@MetaMask/perps": {
+      "mmdsInstances": 685,
+      "deprecatedInstances": 122,
+      "totalInstances": 807,
+      "migrationPercentage": "84.88",
+      "filesCount": 70
+    },
+    "@MetaMask/policy-reviewers": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/qa": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/ramp": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/swaps-engineers": {
+      "mmdsInstances": 43,
+      "deprecatedInstances": 222,
+      "totalInstances": 265,
+      "migrationPercentage": "16.23",
+      "filesCount": 50
+    },
+    "@MetaMask/transactions": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/wallet-integrations": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@MetaMask/web3auth": {
+      "mmdsInstances": 407,
+      "deprecatedInstances": 81,
+      "totalInstances": 488,
+      "migrationPercentage": "83.40",
+      "filesCount": 45
+    },
+    "@itsyoboieltr": {
+      "mmdsInstances": 0,
+      "deprecatedInstances": 0,
+      "totalInstances": 0,
+      "migrationPercentage": "0.00",
+      "filesCount": 0
+    },
+    "@unknown": {
+      "mmdsInstances": 796,
+      "deprecatedInstances": 1347,
+      "totalInstances": 2143,
+      "migrationPercentage": "37.14",
+      "filesCount": 281
+    }
+  }
+}

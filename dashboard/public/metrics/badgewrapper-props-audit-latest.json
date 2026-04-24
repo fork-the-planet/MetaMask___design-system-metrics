@@ -1,21 +1,22 @@
 {
   "component": "BadgeWrapper",
-  "generatedAt": "2026-04-20T17:08:22.869Z",
+  "generatedAt": "2026-04-24T16:20:05.674Z",
   "projects": {
     "extension": {
-      "filesScanned": 3082,
+      "filesScanned": 3089,
       "targetComponent": "BadgeWrapper",
       "mmds": {
-        "totalInstances": 14,
-        "filesCount": 9,
+        "totalInstances": 15,
+        "filesCount": 10,
         "props": {
           "badge": {
-            "count": 14,
+            "count": 15,
             "values": {
               "{<BadgeNetwork name=\"Ethereum\" src=\"https://assets.coingecko.com/coins/images/...}": 4,
               "{<AvatarNetwork size={AvatarNetworkSize.Xs} name={NETWORK_TO_NAME_MAP[CHAIN_ID...}": 2,
               "{<AvatarNetwork className=\"border-2 border-background-default rounded-md\" styl...}": 1,
               "{<BadgeStatus status={BadgeStatusStatus.New} />}": 1,
+              "{<AvatarNetwork name={networkName} src={networkIcon} style={{ width: 20, heigh...}": 1,
               "{<AvatarNetwork name={ NETWORK_TO_SHORT_NETWORK_NAME_MAP[ formatChainIdToCaip(...}": 1,
               "{<AvatarNetwork name={NETWORK_TO_SHORT_NETWORK_NAME_MAP[caipChainId]} src={BRI...}": 1,
               "{<AvatarNetwork className=\"border-2 border-background-default rounded-md\" size...}": 1,
@@ -25,10 +26,23 @@
             }
           },
           "position": {
-            "count": 3,
+            "count": 4,
             "values": {
               "{BadgeWrapperPosition.TopRight}": 2,
-              "{BadgeWrapperPosition.BottomRight}": 1
+              "{BadgeWrapperPosition.BottomRight}": 2
+            }
+          },
+          "positionAnchorShape": {
+            "count": 2,
+            "values": {
+              "{BadgeWrapperPositionAnchorShape.Circular}": 1,
+              "{BadgeWrapperPositionAnchorShape.Rectangular}": 1
+            }
+          },
+          "badgeContainerProps": {
+            "count": 2,
+            "values": {
+              "{{ color: BackgroundColor.backgroundDefault, }}": 2
             }
           },
           "key": {
@@ -48,18 +62,6 @@
             "count": 1,
             "values": {
               "{{ alignSelf: 'center' }}": 1
-            }
-          },
-          "badgeContainerProps": {
-            "count": 1,
-            "values": {
-              "{{ color: BackgroundColor.backgroundDefault, }}": 1
-            }
-          },
-          "positionAnchorShape": {
-            "count": 1,
-            "values": {
-              "{BadgeWrapperPositionAnchorShape.Rectangular}": 1
             }
           }
         }
@@ -161,11 +163,11 @@
         }
       },
       "overall": {
-        "totalInstances": 35,
-        "filesCount": 28,
+        "totalInstances": 36,
+        "filesCount": 29,
         "props": {
           "badge": {
-            "count": 35,
+            "count": 36,
             "values": {
               "{<BadgeNetwork name=\"Ethereum\" src=\"https://assets.coingecko.com/coins/images/...}": 4,
               "{<AvatarNetwork size={AvatarNetworkSize.Xs} name={allNetworks?.[chainId as Hex...}": 3,
@@ -182,6 +184,7 @@
               "{<AvatarNetwork className=\"nft-item__network-badge\" backgroundColor={testNetwo...}": 1,
               "{<AvatarIcon iconName={badge.icon} size={AvatarIconSize.Sm} backgroundColor={B...}": 1,
               "{<BadgeStatus status={BadgeStatusStatus.New} />}": 1,
+              "{<AvatarNetwork name={networkName} src={networkIcon} style={{ width: 20, heigh...}": 1,
               "{<AvatarNetwork name={ NETWORK_TO_SHORT_NETWORK_NAME_MAP[ formatChainIdToCaip(...}": 1,
               "{<AvatarNetwork name={NETWORK_TO_SHORT_NETWORK_NAME_MAP[caipChainId]} src={BRI...}": 1,
               "{nftData.chainId ? ( <AvatarNetwork size={AvatarNetworkSize.Xs} name={nftData....}": 1,
@@ -196,13 +199,13 @@
             }
           },
           "position": {
-            "count": 6,
+            "count": 7,
             "values": {
               "{BadgeWrapperPosition.TopRight}": 2,
+              "{BadgeWrapperPosition.BottomRight}": 2,
               "{icon.badge.position || BadgeWrapperPosition.topRight}": 1,
               "{BadgeWrapperPosition.topRight}": 1,
-              "{badge.position || BadgeWrapperPosition.bottomRight}": 1,
-              "{BadgeWrapperPosition.BottomRight}": 1
+              "{badge.position || BadgeWrapperPosition.bottomRight}": 1
             }
           },
           "marginRight": {
@@ -240,6 +243,13 @@
               "{BadgeWrapperAnchorElementShape.circular}": 3
             }
           },
+          "badgeContainerProps": {
+            "count": 3,
+            "values": {
+              "{{ color: BackgroundColor.backgroundDefault, }}": 2,
+              "{{ className: 'multichain-send-page__recipient__item__badge', }}": 1
+            }
+          },
           "marginTop": {
             "count": 2,
             "values": {
@@ -253,18 +263,18 @@
               "\"badge-wrapper\"": 1
             }
           },
-          "badgeContainerProps": {
-            "count": 2,
-            "values": {
-              "{{ className: 'multichain-send-page__recipient__item__badge', }}": 1,
-              "{{ color: BackgroundColor.backgroundDefault, }}": 1
-            }
-          },
           "className": {
             "count": 2,
             "values": {
               "{classnames('nft-item__badge-wrapper', { 'nft-item__badge-wrapper__clickable':...}": 1,
               "\"multichain-token-list-item__badge\"": 1
+            }
+          },
+          "positionAnchorShape": {
+            "count": 2,
+            "values": {
+              "{BadgeWrapperPositionAnchorShape.Circular}": 1,
+              "{BadgeWrapperPositionAnchorShape.Rectangular}": 1
             }
           },
           "key": {
@@ -279,12 +289,6 @@
             "values": {
               "4": 1
             }
-          },
-          "positionAnchorShape": {
-            "count": 1,
-            "values": {
-              "{BadgeWrapperPositionAnchorShape.Rectangular}": 1
-            }
           }
         }
       },
@@ -293,7 +297,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 5996,
+      "filesScanned": 6077,
       "targetComponent": "BadgeWrapper",
       "mmds": {
         "totalInstances": 6,

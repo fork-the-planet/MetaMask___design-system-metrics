@@ -1,9 +1,9 @@
 {
   "component": "ButtonBase",
-  "generatedAt": "2026-04-20T17:10:37.431Z",
+  "generatedAt": "2026-04-24T16:22:15.159Z",
   "projects": {
     "extension": {
-      "filesScanned": 3082,
+      "filesScanned": 3089,
       "targetComponent": "ButtonBase",
       "mmds": {
         "totalInstances": 28,
@@ -48,6 +48,7 @@
               "{() => setIsMoreModalOpen(true)}": 1,
               "{handleSeeAllPerps}": 1,
               "{() => onClick(symbol)}": 1,
+              "{() => navigate(PERPS_ACTIVITY_ROUTE)}": 1,
               "{handleSeeAll}": 1,
               "{() => { removeQuizWord(quizWord.word); }}": 1,
               "{handleToggle}": 1,
@@ -55,8 +56,7 @@
               "{handleOpen}": 1,
               "{() => setPendingField(option.id)}": 1,
               "{() => setPendingDirection(value)}": 1,
-              "{handleBack}": 1,
-              "{() => navigate(PERPS_ACTIVITY_ROUTE)}": 1
+              "{handleBack}": 1
             }
           },
           "data-testid": {
@@ -74,6 +74,7 @@
               "\"perps-candle-period-more\"": 1,
               "\"perps-explore-markets-row\"": 1,
               "{testId}": 1,
+              "\"perps-market-detail-view-all-activity\"": 1,
               "\"perps-recent-activity-see-all\"": 1,
               "{`position-card-${position.symbol}`}": 1,
               "\"start-new-trade-cta\"": 1,
@@ -84,8 +85,7 @@
               "\"sort-dropdown-button\"": 1,
               "{`sort-field-option-${option.id}`}": 1,
               "{`sort-direction-${value}`}": 1,
-              "\"back-button\"": 1,
-              "\"perps-market-detail-view-all-activity\"": 1
+              "\"back-button\"": 1
             }
           },
           "key": {
@@ -107,6 +107,13 @@
             "count": 3,
             "values": {
               "{ButtonBaseSize.Sm}": 3
+            }
+          },
+          "aria-label": {
+            "count": 3,
+            "values": {
+              "{t('perpsSeeAll')}": 2,
+              "{t('back')}": 1
             }
           },
           "ref": {
@@ -163,12 +170,6 @@
             "count": 1,
             "values": {
               "{`${testId}-option-${option.id}`}": 1
-            }
-          },
-          "aria-label": {
-            "count": 1,
-            "values": {
-              "{t('back')}": 1
             }
           }
         }
@@ -491,6 +492,7 @@
               "{() => setIsMoreModalOpen(true)}": 1,
               "{handleSeeAllPerps}": 1,
               "{() => onClick(symbol)}": 1,
+              "{() => navigate(PERPS_ACTIVITY_ROUTE)}": 1,
               "{handleSeeAll}": 1,
               "{handleModalOpen}": 1,
               "{() => { trace({ name: TraceName.AccountList }); onClick(); }}": 1,
@@ -504,8 +506,7 @@
               "{handleOpen}": 1,
               "{() => setPendingField(option.id)}": 1,
               "{() => setPendingDirection(value)}": 1,
-              "{handleBack}": 1,
-              "{() => navigate(PERPS_ACTIVITY_ROUTE)}": 1
+              "{handleBack}": 1
             }
           },
           "data-testid": {
@@ -528,6 +529,7 @@
               "\"perps-candle-period-more\"": 1,
               "\"perps-explore-markets-row\"": 1,
               "{testId}": 1,
+              "\"perps-market-detail-view-all-activity\"": 1,
               "\"perps-recent-activity-see-all\"": 1,
               "{`position-card-${position.symbol}`}": 1,
               "\"start-new-trade-cta\"": 1,
@@ -541,8 +543,7 @@
               "\"sort-dropdown-button\"": 1,
               "{`sort-field-option-${option.id}`}": 1,
               "{`sort-direction-${value}`}": 1,
-              "\"back-button\"": 1,
-              "\"perps-market-detail-view-all-activity\"": 1
+              "\"back-button\"": 1
             }
           },
           "size": {
@@ -684,6 +685,13 @@
               "{{ marginInlineEnd: 0, size: IconSize.Md }}": 3
             }
           },
+          "aria-label": {
+            "count": 3,
+            "values": {
+              "{t('perpsSeeAll')}": 2,
+              "{t('back')}": 1
+            }
+          },
           "paddingTop": {
             "count": 3,
             "values": {
@@ -810,12 +818,6 @@
             "values": {
               "{`${testId}-option-${option.id}`}": 1
             }
-          },
-          "aria-label": {
-            "count": 1,
-            "values": {
-              "{t('back')}": 1
-            }
           }
         }
       },
@@ -824,7 +826,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 5996,
+      "filesScanned": 6077,
       "targetComponent": "ButtonBase",
       "mmds": {
         "totalInstances": 10,
@@ -839,10 +841,10 @@
               "{onPress}": 1,
               "{() => toggleWalletExpanded(walletId)}": 1,
               "{() => handleEarningWayPress(wayToEarn)}": 1,
-              "{() => openLink(metadata.externalLinks.homepage || '')}": 1,
-              "{() => openLink( `https://x.com/${metadata.externalLinks.twitterPage}`, )}": 1,
-              "{() => openLink( `https://t.me/${metadata.externalLinks.telegramChannelId}`, )}": 1,
-              "{() => openLink(blockExplorerUrl)}": 1
+              "{() => openLink(metadata.externalLinks.homepage || '', 'website')}": 1,
+              "{() => openLink( `https://x.com/${metadata.externalLinks.twitterPage}`, 'twitt...}": 1,
+              "{() => openLink( `https://t.me/${metadata.externalLinks.telegramChannelId}`, '...}": 1,
+              "{() => openLink(blockExplorerUrl, 'block_explorer')}": 1
             }
           },
           "twClassName": {
@@ -1059,10 +1061,10 @@
               "{() => handleGetStarted()}": 1,
               "{() => toggleWalletExpanded(walletId)}": 1,
               "{() => handleEarningWayPress(wayToEarn)}": 1,
-              "{() => openLink(metadata.externalLinks.homepage || '')}": 1,
-              "{() => openLink( `https://x.com/${metadata.externalLinks.twitterPage}`, )}": 1,
-              "{() => openLink( `https://t.me/${metadata.externalLinks.telegramChannelId}`, )}": 1,
-              "{() => openLink(blockExplorerUrl)}": 1,
+              "{() => openLink(metadata.externalLinks.homepage || '', 'website')}": 1,
+              "{() => openLink( `https://x.com/${metadata.externalLinks.twitterPage}`, 'twitt...}": 1,
+              "{() => openLink( `https://t.me/${metadata.externalLinks.telegramChannelId}`, '...}": 1,
+              "{() => openLink(blockExplorerUrl, 'block_explorer')}": 1,
               "{handleFilterControls}": 1,
               "{showFilterControls}": 1
             }
