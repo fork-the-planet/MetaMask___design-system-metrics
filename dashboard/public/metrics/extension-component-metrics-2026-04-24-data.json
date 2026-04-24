@@ -1,0 +1,391 @@
+{
+  "project": "extension",
+  "date": "2026-04-24",
+  "generatedAt": "2026-04-24T16:07:03.410Z",
+  "mmdsComponentsAvailable": 28,
+  "mmdsComponentsList": [
+    "AvatarAccount",
+    "AvatarBase",
+    "AvatarFavicon",
+    "AvatarGroup",
+    "AvatarIcon",
+    "AvatarNetwork",
+    "AvatarToken",
+    "BadgeCount",
+    "BadgeIcon",
+    "BadgeNetwork",
+    "BadgeStatus",
+    "BadgeWrapper",
+    "BannerAlert",
+    "BannerBase",
+    "Blockies",
+    "Box",
+    "Button",
+    "ButtonBase",
+    "ButtonFilter",
+    "ButtonHero",
+    "ButtonIcon",
+    "Checkbox",
+    "Icon",
+    "Input",
+    "Jazzicon",
+    "Maskicon",
+    "Text",
+    "TextButton"
+  ],
+  "newComponents": [],
+  "summary": {
+    "totalComponents": 17,
+    "mmdsInstances": 2733,
+    "deprecatedInstances": 2929,
+    "totalInstances": 5662,
+    "migrationPercentage": "48.27",
+    "fullyMigrated": 0,
+    "inProgress": 14,
+    "notStarted": 3,
+    "codeOwnerStats": {
+      "@HowardBraham": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/accounts-engineers": {
+        "mmdsInstances": 376,
+        "deprecatedInstances": 144,
+        "totalInstances": 520,
+        "migrationPercentage": "72.31",
+        "filesCount": 67
+      },
+      "@MetaMask/confirmations": {
+        "mmdsInstances": 183,
+        "deprecatedInstances": 577,
+        "totalInstances": 760,
+        "migrationPercentage": "24.08",
+        "filesCount": 168
+      },
+      "@MetaMask/core-extension-ux": {
+        "mmdsInstances": 180,
+        "deprecatedInstances": 768,
+        "totalInstances": 948,
+        "migrationPercentage": "18.99",
+        "filesCount": 135
+      },
+      "@MetaMask/core-platform": {
+        "mmdsInstances": 3,
+        "deprecatedInstances": 401,
+        "totalInstances": 404,
+        "migrationPercentage": "0.74",
+        "filesCount": 54
+      },
+      "@MetaMask/delegation": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/design-system-engineers": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/earn": {
+        "mmdsInstances": 35,
+        "deprecatedInstances": 4,
+        "totalInstances": 39,
+        "migrationPercentage": "89.74",
+        "filesCount": 6
+      },
+      "@MetaMask/extension-platform": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/extension-privacy-reviewers": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/extension-security-team": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/metamask-assets": {
+        "mmdsInstances": 5,
+        "deprecatedInstances": 188,
+        "totalInstances": 193,
+        "migrationPercentage": "2.59",
+        "filesCount": 38
+      },
+      "@MetaMask/new-networks": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/notifications": {
+        "mmdsInstances": 20,
+        "deprecatedInstances": 41,
+        "totalInstances": 61,
+        "migrationPercentage": "32.79",
+        "filesCount": 18
+      },
+      "@MetaMask/perps": {
+        "mmdsInstances": 685,
+        "deprecatedInstances": 122,
+        "totalInstances": 807,
+        "migrationPercentage": "84.88",
+        "filesCount": 70
+      },
+      "@MetaMask/policy-reviewers": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/qa": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/ramp": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/swaps-engineers": {
+        "mmdsInstances": 43,
+        "deprecatedInstances": 222,
+        "totalInstances": 265,
+        "migrationPercentage": "16.23",
+        "filesCount": 50
+      },
+      "@MetaMask/transactions": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/wallet-integrations": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@MetaMask/web3auth": {
+        "mmdsInstances": 407,
+        "deprecatedInstances": 81,
+        "totalInstances": 488,
+        "migrationPercentage": "83.40",
+        "filesCount": 45
+      },
+      "@itsyoboieltr": {
+        "mmdsInstances": 0,
+        "deprecatedInstances": 0,
+        "totalInstances": 0,
+        "migrationPercentage": "0.00",
+        "filesCount": 0
+      },
+      "@unknown": {
+        "mmdsInstances": 796,
+        "deprecatedInstances": 1347,
+        "totalInstances": 2143,
+        "migrationPercentage": "37.14",
+        "filesCount": 281
+      }
+    }
+  },
+  "components": [
+    {
+      "replacementComponent": "Box",
+      "legacyComponents": [
+        "Box"
+      ],
+      "legacyInstances": 1184,
+      "mmdsInstances": 1288,
+      "totalInstances": 2472,
+      "migrationPercentage": "52.10"
+    },
+    {
+      "replacementComponent": "Text",
+      "legacyComponents": [
+        "Text"
+      ],
+      "legacyInstances": 981,
+      "mmdsInstances": 814,
+      "totalInstances": 1795,
+      "migrationPercentage": "45.35"
+    },
+    {
+      "replacementComponent": "Button",
+      "legacyComponents": [
+        "Button",
+        "ButtonPrimary",
+        "ButtonSecondary"
+      ],
+      "legacyInstances": 191,
+      "mmdsInstances": 186,
+      "totalInstances": 377,
+      "migrationPercentage": "49.34"
+    },
+    {
+      "replacementComponent": "Icon",
+      "legacyComponents": [
+        "Icon"
+      ],
+      "legacyInstances": 160,
+      "mmdsInstances": 167,
+      "totalInstances": 327,
+      "migrationPercentage": "51.07"
+    },
+    {
+      "replacementComponent": "ButtonIcon",
+      "legacyComponents": [
+        "ButtonIcon"
+      ],
+      "legacyInstances": 108,
+      "mmdsInstances": 86,
+      "totalInstances": 194,
+      "migrationPercentage": "44.33"
+    },
+    {
+      "replacementComponent": "TextButton",
+      "legacyComponents": [
+        "ButtonLink"
+      ],
+      "legacyInstances": 85,
+      "mmdsInstances": 63,
+      "totalInstances": 148,
+      "migrationPercentage": "42.57"
+    },
+    {
+      "replacementComponent": "AvatarNetwork",
+      "legacyComponents": [
+        "AvatarNetwork"
+      ],
+      "legacyInstances": 46,
+      "mmdsInstances": 24,
+      "totalInstances": 70,
+      "migrationPercentage": "34.29"
+    },
+    {
+      "replacementComponent": "BannerAlert",
+      "legacyComponents": [
+        "BannerAlert"
+      ],
+      "legacyInstances": 45,
+      "mmdsInstances": 7,
+      "totalInstances": 52,
+      "migrationPercentage": "13.46"
+    },
+    {
+      "replacementComponent": "AvatarToken",
+      "legacyComponents": [
+        "AvatarToken"
+      ],
+      "legacyInstances": 26,
+      "mmdsInstances": 22,
+      "totalInstances": 48,
+      "migrationPercentage": "45.83"
+    },
+    {
+      "replacementComponent": "ButtonBase",
+      "legacyComponents": [
+        "ButtonBase"
+      ],
+      "legacyInstances": 13,
+      "mmdsInstances": 28,
+      "totalInstances": 41,
+      "migrationPercentage": "68.29"
+    },
+    {
+      "replacementComponent": "BadgeWrapper",
+      "legacyComponents": [
+        "BadgeWrapper"
+      ],
+      "legacyInstances": 21,
+      "mmdsInstances": 15,
+      "totalInstances": 36,
+      "migrationPercentage": "41.67"
+    },
+    {
+      "replacementComponent": "Checkbox",
+      "legacyComponents": [
+        "Checkbox"
+      ],
+      "legacyInstances": 24,
+      "mmdsInstances": 10,
+      "totalInstances": 34,
+      "migrationPercentage": "29.41"
+    },
+    {
+      "replacementComponent": "AvatarIcon",
+      "legacyComponents": [
+        "AvatarIcon"
+      ],
+      "legacyInstances": 20,
+      "mmdsInstances": 4,
+      "totalInstances": 24,
+      "migrationPercentage": "16.67"
+    },
+    {
+      "replacementComponent": "AvatarFavicon",
+      "legacyComponents": [
+        "AvatarFavicon"
+      ],
+      "legacyInstances": 14,
+      "mmdsInstances": 2,
+      "totalInstances": 16,
+      "migrationPercentage": "12.50"
+    },
+    {
+      "replacementComponent": "AvatarBase",
+      "legacyComponents": [
+        "AvatarBase"
+      ],
+      "legacyInstances": 8,
+      "mmdsInstances": 0,
+      "totalInstances": 8,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "BannerBase",
+      "legacyComponents": [
+        "BannerBase"
+      ],
+      "legacyInstances": 2,
+      "mmdsInstances": 0,
+      "totalInstances": 2,
+      "migrationPercentage": "0.00"
+    },
+    {
+      "replacementComponent": "Input",
+      "legacyComponents": [
+        "Input"
+      ],
+      "legacyInstances": 1,
+      "mmdsInstances": 0,
+      "totalInstances": 1,
+      "migrationPercentage": "0.00"
+    }
+  ]
+}

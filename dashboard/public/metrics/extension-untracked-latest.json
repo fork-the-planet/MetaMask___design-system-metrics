@@ -1,6 +1,6 @@
 {
   "project": "extension",
-  "date": "2026-04-20",
+  "date": "2026-04-24",
   "teams": [
     "@MetaMask/accounts-engineers",
     "@MetaMask/confirmations",
@@ -15,14 +15,14 @@
   ],
   "summary": {
     "filesScanned": 1535,
-    "totalJSXUsages": 9139,
-    "trackedDeprecated": 3821,
-    "trackedMMDS": 2493,
-    "untrackedTotal": 2825,
-    "uniqueUntrackedComponents": 102,
-    "replaceableNow": 26,
-    "replaceableInstances": 377,
-    "futureDSCandidates": 76,
+    "totalJSXUsages": 9169,
+    "trackedDeprecated": 3742,
+    "trackedMMDS": 2624,
+    "untrackedTotal": 2803,
+    "uniqueUntrackedComponents": 99,
+    "replaceableNow": 25,
+    "replaceableInstances": 369,
+    "futureDSCandidates": 74,
     "codeOwnerBreakdown": {
       "@MetaMask/swaps-engineers": {
         "replaceableComponents": 7,
@@ -35,9 +35,9 @@
         "replaceableInstances": 16
       },
       "@MetaMask/confirmations": {
-        "replaceableComponents": 9,
-        "futureDSComponents": 32,
-        "replaceableInstances": 91
+        "replaceableComponents": 8,
+        "futureDSComponents": 29,
+        "replaceableInstances": 85
       },
       "@MetaMask/accounts-engineers": {
         "replaceableComponents": 6,
@@ -46,7 +46,7 @@
       },
       "@MetaMask/core-extension-ux": {
         "replaceableComponents": 10,
-        "futureDSComponents": 23,
+        "futureDSComponents": 24,
         "replaceableInstances": 45
       },
       "@MetaMask/web3auth": {
@@ -113,16 +113,16 @@
     },
     {
       "component": "PreferredAvatar",
-      "instances": 46,
-      "fileCount": 45,
+      "instances": 45,
+      "fileCount": 44,
       "sourceCategory": "local-oneoff",
       "canonicalSource": "components/app/preferred-avatar",
       "importSources": [
         "../../components/app/preferred-avatar",
         "../../../components/app/preferred-avatar",
         "../../app/preferred-avatar",
-        "../preferred-avatar",
         "../preferred-avatar/preferred-avatar",
+        "../preferred-avatar",
         "../../../../components/app/preferred-avatar",
         "../../../app/preferred-avatar",
         "../../preferred-avatar",
@@ -153,7 +153,7 @@
         "@MetaMask/web3auth"
       ],
       "codeOwnerBreakdown": {
-        "@unknown": 16,
+        "@unknown": 15,
         "@MetaMask/accounts-engineers": 8,
         "@MetaMask/core-extension-ux": 8,
         "@MetaMask/web3auth": 3,
@@ -483,35 +483,6 @@
       }
     },
     {
-      "component": "TextField",
-      "instances": 9,
-      "fileCount": 7,
-      "sourceCategory": "local-oneoff",
-      "canonicalSource": "components/ui/text-field",
-      "importSources": [
-        "../../../components/ui/text-field",
-        "../text-field",
-        "../../ui/text-field",
-        "../../../ui/text-field"
-      ],
-      "mmdsMatches": [
-        {
-          "component": "Text",
-          "confidence": "high"
-        },
-        {
-          "component": "TextButton",
-          "confidence": "medium"
-        }
-      ],
-      "codeOwners": [
-        "@unknown"
-      ],
-      "codeOwnerBreakdown": {
-        "@unknown": 9
-      }
-    },
-    {
       "component": "TransactionStatusLabel",
       "instances": 9,
       "fileCount": 6,
@@ -534,6 +505,35 @@
       "codeOwnerBreakdown": {
         "@MetaMask/core-extension-ux": 8,
         "@unknown": 1
+      }
+    },
+    {
+      "component": "TextField",
+      "instances": 8,
+      "fileCount": 6,
+      "sourceCategory": "local-oneoff",
+      "canonicalSource": "components/ui/text-field",
+      "importSources": [
+        "../../../components/ui/text-field",
+        "../text-field",
+        "../../ui/text-field",
+        "../../../ui/text-field"
+      ],
+      "mmdsMatches": [
+        {
+          "component": "Text",
+          "confidence": "high"
+        },
+        {
+          "component": "TextButton",
+          "confidence": "medium"
+        }
+      ],
+      "codeOwners": [
+        "@unknown"
+      ],
+      "codeOwnerBreakdown": {
+        "@unknown": 8
       }
     },
     {
@@ -838,28 +838,6 @@
       }
     },
     {
-      "component": "TokenAmountRow",
-      "instances": 6,
-      "fileCount": 3,
-      "sourceCategory": "local-oneoff",
-      "canonicalSource": "token-amount-row",
-      "importSources": [
-        "./token-amount-row"
-      ],
-      "mmdsMatches": [
-        {
-          "component": "AvatarToken",
-          "confidence": "medium"
-        }
-      ],
-      "codeOwners": [
-        "@MetaMask/confirmations"
-      ],
-      "codeOwnerBreakdown": {
-        "@MetaMask/confirmations": 6
-      }
-    },
-    {
       "component": "SwapFailureIcon",
       "instances": 5,
       "fileCount": 1,
@@ -934,7 +912,7 @@
     {
       "component": "Tooltip",
       "instances": 94,
-      "fileCount": 75,
+      "fileCount": 76,
       "sourceCategory": "mixed",
       "canonicalSource": "components/ui/tooltip/tooltip",
       "importSources": [
@@ -981,8 +959,8 @@
     },
     {
       "component": "ConfirmInfoRow",
-      "instances": 72,
-      "fileCount": 44,
+      "instances": 69,
+      "fileCount": 41,
       "sourceCategory": "local-oneoff",
       "canonicalSource": "components/app/confirm/info/row/row",
       "importSources": [
@@ -1005,15 +983,15 @@
         "@MetaMask/perps"
       ],
       "codeOwnerBreakdown": {
-        "@MetaMask/confirmations": 66,
+        "@MetaMask/confirmations": 63,
         "@MetaMask/perps": 1,
         "@unknown": 5
       }
     },
     {
       "component": "ConfirmInfoSection",
-      "instances": 50,
-      "fileCount": 33,
+      "instances": 42,
+      "fileCount": 28,
       "sourceCategory": "local-oneoff",
       "canonicalSource": "components/app/confirm/info/row/section",
       "importSources": [
@@ -1028,13 +1006,13 @@
         "@MetaMask/confirmations"
       ],
       "codeOwnerBreakdown": {
-        "@MetaMask/confirmations": 50
+        "@MetaMask/confirmations": 42
       }
     },
     {
       "component": "Row",
       "instances": 40,
-      "fileCount": 11,
+      "fileCount": 12,
       "sourceCategory": "local-oneoff",
       "canonicalSource": "layout",
       "importSources": [
@@ -1065,23 +1043,23 @@
         "../../multichain/toast/toast",
         "../../../../components/multichain/toast/toast",
         "../../../multichain/toast/toast",
-        "../..",
         "../../toast",
+        "../..",
         "../../../multichain/toast",
         "../../../../../../../components/multichain"
       ],
       "mmdsMatches": [],
       "codeOwners": [
         "@unknown",
-        "@MetaMask/core-extension-ux",
         "@MetaMask/perps",
+        "@MetaMask/core-extension-ux",
         "@MetaMask/earn",
         "@MetaMask/confirmations"
       ],
       "codeOwnerBreakdown": {
-        "@unknown": 22,
+        "@unknown": 21,
         "@MetaMask/swaps-engineers": 1,
-        "@MetaMask/perps": 4,
+        "@MetaMask/perps": 5,
         "@MetaMask/earn": 2,
         "@MetaMask/confirmations": 2,
         "@MetaMask/accounts-engineers": 2,
@@ -1218,6 +1196,39 @@
       }
     },
     {
+      "component": "ToastContainer",
+      "instances": 19,
+      "fileCount": 12,
+      "sourceCategory": "local-oneoff",
+      "canonicalSource": "components/multichain/toast/toast",
+      "importSources": [
+        "../../components/multichain/toast",
+        "../../../components/multichain/toast",
+        "../../../components/multichain",
+        "../../multichain/toast",
+        "../../multichain",
+        "../../../../components/multichain/toast/toast",
+        "../../../multichain/toast/toast",
+        "../../toast",
+        "../.."
+      ],
+      "mmdsMatches": [],
+      "codeOwners": [
+        "@unknown",
+        "@MetaMask/core-extension-ux",
+        "@MetaMask/accounts-engineers",
+        "@MetaMask/swaps-engineers",
+        "@MetaMask/confirmations"
+      ],
+      "codeOwnerBreakdown": {
+        "@unknown": 10,
+        "@MetaMask/swaps-engineers": 1,
+        "@MetaMask/confirmations": 1,
+        "@MetaMask/accounts-engineers": 2,
+        "@MetaMask/core-extension-ux": 5
+      }
+    },
+    {
       "component": "MenuItem",
       "instances": 18,
       "fileCount": 11,
@@ -1238,39 +1249,6 @@
         "@unknown": 9,
         "@MetaMask/core-extension-ux": 7,
         "@MetaMask/accounts-engineers": 2
-      }
-    },
-    {
-      "component": "ToastContainer",
-      "instances": 18,
-      "fileCount": 12,
-      "sourceCategory": "local-oneoff",
-      "canonicalSource": "components/multichain/toast/toast",
-      "importSources": [
-        "../../components/multichain/toast",
-        "../../../components/multichain/toast",
-        "../../../components/multichain",
-        "../../multichain/toast",
-        "../../multichain",
-        "../../../../components/multichain/toast/toast",
-        "../../../multichain/toast/toast",
-        "../..",
-        "../../toast"
-      ],
-      "mmdsMatches": [],
-      "codeOwners": [
-        "@unknown",
-        "@MetaMask/core-extension-ux",
-        "@MetaMask/accounts-engineers",
-        "@MetaMask/swaps-engineers",
-        "@MetaMask/confirmations"
-      ],
-      "codeOwnerBreakdown": {
-        "@unknown": 9,
-        "@MetaMask/swaps-engineers": 1,
-        "@MetaMask/confirmations": 1,
-        "@MetaMask/accounts-engineers": 2,
-        "@MetaMask/core-extension-ux": 5
       }
     },
     {
@@ -1522,7 +1500,6 @@
       "importSources": [
         "./divider",
         "../shared",
-        "../../settings-v2/shared",
         "../../../components/app/confirm/info/row",
         "(local or re-export)",
         "../confirm/info/row"
@@ -1540,9 +1517,26 @@
       }
     },
     {
+      "component": "SettingsTab",
+      "instances": 12,
+      "fileCount": 12,
+      "sourceCategory": "local-oneoff",
+      "canonicalSource": "shared",
+      "importSources": [
+        "../shared"
+      ],
+      "mmdsMatches": [],
+      "codeOwners": [
+        "@unknown"
+      ],
+      "codeOwnerBreakdown": {
+        "@unknown": 12
+      }
+    },
+    {
       "component": "Name",
-      "instances": 13,
-      "fileCount": 11,
+      "instances": 12,
+      "fileCount": 10,
       "sourceCategory": "local-oneoff",
       "canonicalSource": "components/app/name/name",
       "importSources": [
@@ -1560,25 +1554,7 @@
       ],
       "codeOwnerBreakdown": {
         "@unknown": 2,
-        "@MetaMask/confirmations": 11
-      }
-    },
-    {
-      "component": "SettingsTab",
-      "instances": 12,
-      "fileCount": 12,
-      "sourceCategory": "local-oneoff",
-      "canonicalSource": "settings-v2/shared",
-      "importSources": [
-        "../shared",
-        "../../settings-v2/shared"
-      ],
-      "mmdsMatches": [],
-      "codeOwners": [
-        "@unknown"
-      ],
-      "codeOwnerBreakdown": {
-        "@unknown": 12
+        "@MetaMask/confirmations": 10
       }
     },
     {
@@ -1596,25 +1572,6 @@
       ],
       "codeOwnerBreakdown": {
         "@MetaMask/notifications": 12
-      }
-    },
-    {
-      "component": "ConfirmInfoRowDivider",
-      "instances": 12,
-      "fileCount": 9,
-      "sourceCategory": "local-oneoff",
-      "canonicalSource": "components/app/confirm/info/row",
-      "importSources": [
-        "../../../../../components/app/confirm/info/row",
-        "../../../../../../components/app/confirm/info/row",
-        "../../../../../../../components/app/confirm/info/row"
-      ],
-      "mmdsMatches": [],
-      "codeOwners": [
-        "@MetaMask/confirmations"
-      ],
-      "codeOwnerBreakdown": {
-        "@MetaMask/confirmations": 12
       }
     },
     {
@@ -1891,6 +1848,25 @@
       ],
       "codeOwnerBreakdown": {
         "@MetaMask/notifications": 9
+      }
+    },
+    {
+      "component": "ConfirmInfoRowDivider",
+      "instances": 9,
+      "fileCount": 6,
+      "sourceCategory": "local-oneoff",
+      "canonicalSource": "components/app/confirm/info/row",
+      "importSources": [
+        "../../../../../components/app/confirm/info/row",
+        "../../../../../../components/app/confirm/info/row",
+        "../../../../../../../components/app/confirm/info/row"
+      ],
+      "mmdsMatches": [],
+      "codeOwners": [
+        "@MetaMask/confirmations"
+      ],
+      "codeOwnerBreakdown": {
+        "@MetaMask/confirmations": 9
       }
     },
     {
@@ -2174,23 +2150,6 @@
         "@MetaMask/confirmations": 2,
         "@MetaMask/notifications": 1,
         "@MetaMask/core-platform": 3
-      }
-    },
-    {
-      "component": "NativeAmountRow",
-      "instances": 6,
-      "fileCount": 3,
-      "sourceCategory": "local-oneoff",
-      "canonicalSource": "native-amount-row",
-      "importSources": [
-        "./native-amount-row"
-      ],
-      "mmdsMatches": [],
-      "codeOwners": [
-        "@MetaMask/confirmations"
-      ],
-      "codeOwnerBreakdown": {
-        "@MetaMask/confirmations": 6
       }
     },
     {
@@ -2541,6 +2500,23 @@
       }
     },
     {
+      "component": "GatorPermissionDetailRow",
+      "instances": 5,
+      "fileCount": 1,
+      "sourceCategory": "local-oneoff",
+      "canonicalSource": "gator-permission-detail-row",
+      "importSources": [
+        "./gator-permission-detail-row"
+      ],
+      "mmdsMatches": [],
+      "codeOwners": [
+        "@MetaMask/core-extension-ux"
+      ],
+      "codeOwnerBreakdown": {
+        "@MetaMask/core-extension-ux": 5
+      }
+    },
+    {
       "component": "PerpsTutorialAnimation",
       "instances": 5,
       "fileCount": 5,
@@ -2584,40 +2560,6 @@
         "../../../../../../components/app/confirm/info/row",
         "../../../../../../../components/app/confirm/info/row/url",
         "../../../../../../../components/app/confirm/info/row"
-      ],
-      "mmdsMatches": [],
-      "codeOwners": [
-        "@MetaMask/confirmations"
-      ],
-      "codeOwnerBreakdown": {
-        "@MetaMask/confirmations": 5
-      }
-    },
-    {
-      "component": "DateAndTimeRow",
-      "instances": 5,
-      "fileCount": 5,
-      "sourceCategory": "local-oneoff",
-      "canonicalSource": "date-and-time-row",
-      "importSources": [
-        "./date-and-time-row"
-      ],
-      "mmdsMatches": [],
-      "codeOwners": [
-        "@MetaMask/confirmations"
-      ],
-      "codeOwnerBreakdown": {
-        "@MetaMask/confirmations": 5
-      }
-    },
-    {
-      "component": "Expiry",
-      "instances": 5,
-      "fileCount": 5,
-      "sourceCategory": "local-oneoff",
-      "canonicalSource": "expiry",
-      "importSources": [
-        "./expiry"
       ],
       "mmdsMatches": [],
       "codeOwners": [

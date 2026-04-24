@@ -1,9 +1,9 @@
 {
   "component": "Toast",
-  "generatedAt": "2026-04-20T17:16:20.330Z",
+  "generatedAt": "2026-04-24T16:27:51.760Z",
   "projects": {
     "extension": {
-      "filesScanned": 3082,
+      "filesScanned": 3089,
       "targetComponent": "Toast",
       "mmds": {
         "totalInstances": 0,
@@ -23,7 +23,7 @@
       "deprecatedByLegacyComponent": {}
     },
     "mobile": {
-      "filesScanned": 5996,
+      "filesScanned": 6077,
       "targetComponent": "Toast",
       "mmds": {
         "totalInstances": 0,

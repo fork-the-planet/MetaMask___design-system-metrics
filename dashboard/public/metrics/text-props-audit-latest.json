@@ -1,24 +1,25 @@
 {
   "component": "Text",
-  "generatedAt": "2026-04-20T17:15:01.661Z",
+  "generatedAt": "2026-04-24T16:26:34.586Z",
   "projects": {
     "extension": {
-      "filesScanned": 3082,
+      "filesScanned": 3089,
       "targetComponent": "Text",
       "mmds": {
-        "totalInstances": 777,
-        "filesCount": 240,
+        "totalInstances": 814,
+        "filesCount": 253,
         "props": {
           "variant": {
-            "count": 699,
+            "count": 736,
             "values": {
-              "{TextVariant.BodyMd}": 282,
-              "{TextVariant.BodySm}": 276,
-              "{TextVariant.HeadingSm}": 45,
+              "{TextVariant.BodyMd}": 306,
+              "{TextVariant.BodySm}": 279,
+              "{TextVariant.HeadingSm}": 48,
               "{TextVariant.BodyXs}": 32,
               "{TextVariant.HeadingLg}": 30,
-              "{TextVariant.HeadingMd}": 18,
+              "{TextVariant.HeadingMd}": 20,
               "{TextVariant.BodyLg}": 8,
+              "{DsrTextVariant.BodyMd}": 5,
               "{TextVariant.DisplayMd}": 4,
               "{textVariant}": 2,
               "{TextVariant.DisplayLg}": 1,
@@ -26,25 +27,26 @@
             }
           },
           "color": {
-            "count": 442,
+            "count": 471,
             "values": {
-              "{TextColor.TextAlternative}": 265,
-              "{TextColor.TextDefault}": 70,
-              "{TextColor.ErrorDefault}": 27,
+              "{TextColor.TextAlternative}": 274,
+              "{TextColor.TextDefault}": 77,
+              "{TextColor.ErrorDefault}": 28,
               "{TextColor.WarningDefault}": 8,
+              "{TextColor.InfoInverse}": 8,
               "{TextColor.Inherit}": 8,
               "{TextColor.PrimaryDefault}": 7,
+              "{TextColor.SuccessDefault}": 5,
               "{TextColor.InfoDefault}": 4,
-              "{TextColor.InfoInverse}": 4,
+              "{TextColor.TextMuted}": 4,
               "{isProfit ? TextColor.SuccessDefault : TextColor.ErrorDefault}": 3,
               "{isSelected ? TextColor.TextDefault : TextColor.TextAlternative}": 3,
               "{textColor}": 3,
-              "{TextColor.SuccessDefault}": 3,
+              "{TextColor.OverlayInverse}": 3,
+              "{addressCopied ? TextColor.SuccessDefault : TextColor.TextAlternative}": 3,
               "{getPnlDisplayColor(estimatedPnlAtTp)}": 2,
               "{getPnlDisplayColor(estimatedPnlAtSl)}": 2,
               "{changeColor}": 2,
-              "{TextColor.TextMuted}": 2,
-              "{addressCopied ? TextColor.SuccessDefault : TextColor.TextAlternative}": 2,
               "{getChangeColor(displayChange)}": 2,
               "{unrealizedPnl >= 0 ? TextColor.SuccessDefault : TextColor.ErrorDefault}": 1,
               "{marginMode === 'add' ? TextColor.PrimaryInverse : TextColor.TextDefault}": 1,
@@ -55,12 +57,12 @@
               "{error ? TextColor.ErrorDefault : TextColor.TextAlternative}": 1,
               "{amountDisplay.color}": 1,
               "{shouldTriggerBackup ? TextColor.ErrorDefault : TextColor.TextAlternative}": 1,
-              "{TextColor.OverlayInverse}": 1,
               "{isPendingRevocation ? TextColor.TextMuted : TextColor.ErrorDefault}": 1,
               "{labelColor ?? TextColor.TextDefault}": 1,
               "{isLoadingState ? TextColor.TextMuted : TextColor.InfoDefault}": 1,
               "{item.textColor}": 1,
               "{getTextColor()}": 1,
+              "{priceImpactTextColor}": 1,
               "{getPriceChangeColor(priceChange24h)}": 1,
               "{isSelected ? TextColor.PrimaryDefault : TextColor.TextAlternative}": 1,
               "{correctAnswer ? TextColor.SuccessDefault : TextColor.ErrorDefault}": 1,
@@ -74,10 +76,10 @@
             }
           },
           "fontWeight": {
-            "count": 259,
+            "count": 284,
             "values": {
-              "{FontWeight.Medium}": 224,
-              "{FontWeight.Bold}": 21,
+              "{FontWeight.Medium}": 246,
+              "{FontWeight.Bold}": 24,
               "{FontWeight.Regular}": 10,
               "{valueFontWeight}": 1,
               "{fontWeight}": 1,
@@ -86,7 +88,7 @@
             }
           },
           "className": {
-            "count": 180,
+            "count": 182,
             "values": {
               "\"mb-4\"": 10,
               "\"text-center\"": 9,
@@ -108,6 +110,7 @@
               "\"text-error-default\"": 2,
               "\"mt-2 mb-2\"": 2,
               "\"text-alternative\"": 2,
+              "\"w-full\"": 2,
               "\"multichain-account-cell__account-name\"": 2,
               "\"text-default font-medium\"": 2,
               "\"mt-2\"": 2,
@@ -136,11 +139,11 @@
               "\"text-sm text-alternative\"": 1,
               "\"activity-list-item__primary-currency\"": 1,
               "\"srp-list__account-name\"": 1,
-              "\"w-full\"": 1,
               "\"multichain-account-details__label\"": 1,
               "\"multichain-account-details__value\"": 1,
               "\"add-multichain-account__text\"": 1,
               "\"break-all max-w-64\"": 1,
+              "\"pt-8\"": 1,
               "{twMerge( 'flex align-middle justify-center border-b-2 border-transparent px-0...}": 1,
               "\"asset-page__balance-heading\"": 1,
               "\"asset-page__details-heading\"": 1,
@@ -175,13 +178,13 @@
               "\"w-max px-2 mx-auto relative z-[1]\"": 1,
               "\"w-full mx-auto pt-8\"": 1,
               "\"mb-2 uppercase tracking-wide\"": 1,
-              "\"info-tab__version-number\"": 1,
               "\"px-4 py-2\"": 1,
               "{classnames({ 'opacity-50': isView, })}": 1,
               "\"mt-0.5\"": 1,
               "\"mb-3\"": 1,
               "{twMerge('text-text-alternative', descriptionClassName)}": 1,
               "\"flex items-center gap-1\"": 1,
+              "\"info-tab__version-number\"": 1,
               "\"py-2 px-4\"": 1,
               "\"flex-1 min-w-0 text-left\"": 1,
               "\"whitespace-nowrap\"": 1,
@@ -193,7 +196,7 @@
             }
           },
           "data-testid": {
-            "count": 89,
+            "count": 96,
             "values": {
               "\"confirm-info-row-display-name\"": 2,
               "\"perps-edit-margin-liquidation-price-value\"": 2,
@@ -201,6 +204,7 @@
               "\"tp-validation-error\"": 2,
               "\"sl-validation-error\"": 2,
               "\"transaction-list-item-primary-currency\"": 2,
+              "\"accounts-list-item-connected-account-name\"": 2,
               "\"claim-bonus-error\"": 1,
               "\"claim-bonus-badge\"": 1,
               "\"musd-convert-link-text\"": 1,
@@ -227,16 +231,21 @@
               "\"account-list-address\"": 1,
               "\"activity-list-item-action\"": 1,
               "\"dapp-connection-control-bar__account-name\"": 1,
+              "{testId}": 1,
               "\"permissions-cell-network-name\"": 1,
               "\"permissions-cell-plus-more-tooltip\"": 1,
-              "{testId}": 1,
               "\"review-gator-permission-account-name\"": 1,
               "\"review-gator-permission-network-name\"": 1,
               "\"review-gator-permissions-page-title\"": 1,
               "{`account-details-row-value-${label .toLowerCase() .replaceAll(' ', '-')}`}": 1,
               "\"account-address\"": 1,
               "\"default-address-container\"": 1,
+              "\"multichain-address-row-network-name\"": 1,
+              "\"multichain-address-row-address\"": 1,
+              "\"multichain-address-rows-list-empty-message\"": 1,
               "\"wrong-password-msg\"": 1,
+              "\"accounts-list-item-plus-more-tooltip\"": 1,
+              "\"networks-list-item-plus-more-tooltip\"": 1,
               "{dataTestId}": 1,
               "\"asset-name\"": 1,
               "\"bridge-asset-symbol\"": 1,
@@ -281,23 +290,41 @@
             }
           },
           "textAlign": {
-            "count": 70,
+            "count": 75,
             "values": {
-              "{TextAlign.Center}": 39,
-              "{TextAlign.Left}": 22,
+              "{TextAlign.Center}": 41,
+              "{TextAlign.Left}": 25,
               "{TextAlign.Right}": 9
             }
           },
           "asChild": {
-            "count": 63,
+            "count": 64,
             "values": {
-              "true (shorthand)": 63
+              "true (shorthand)": 64
             }
           },
           "ellipsis": {
-            "count": 28,
+            "count": 31,
             "values": {
-              "true (shorthand)": 28
+              "true (shorthand)": 31
+            }
+          },
+          "style": {
+            "count": 17,
+            "values": {
+              "{{ whiteSpace: 'nowrap' }}": 3,
+              "{{ minWidth: 0 }}": 2,
+              "{{ whiteSpace: 'pre-line' }}": 2,
+              "{{ textAlign: 'end' }}": 1,
+              "{isLoading ? { opacity: 0.5 } : undefined}": 1,
+              "{{ width: '100%', fontVariantNumeric: 'tabular-nums' }}": 1,
+              "{{ fontSize, lineHeight }}": 1,
+              "{{ lineHeight: '1', }}": 1,
+              "{{ minWidth: '100px', }}": 1,
+              "{{ width: '100%' }}": 1,
+              "{{ paddingInline: 16 }}": 1,
+              "{{ opacity: 0.8 }}": 1,
+              "{{ backgroundColor: backgroundColorForLoginOptions, }}": 1
             }
           },
           "key": {
@@ -316,22 +343,6 @@
               "\"reset-password-step-2-srp\"": 1,
               "\"reset-wallet-bold-text-one\"": 1,
               "\"reset-wallet-bold-text-two\"": 1
-            }
-          },
-          "style": {
-            "count": 14,
-            "values": {
-              "{{ whiteSpace: 'nowrap' }}": 3,
-              "{{ whiteSpace: 'pre-line' }}": 2,
-              "{{ textAlign: 'end' }}": 1,
-              "{isLoading ? { opacity: 0.5 } : undefined}": 1,
-              "{{ width: '100%', fontVariantNumeric: 'tabular-nums' }}": 1,
-              "{{ fontSize, lineHeight }}": 1,
-              "{{ lineHeight: '1', }}": 1,
-              "{{ minWidth: '100px', }}": 1,
-              "{{ paddingInline: 16 }}": 1,
-              "{{ opacity: 0.8 }}": 1,
-              "{{ backgroundColor: backgroundColorForLoginOptions, }}": 1
             }
           },
           "fontFamily": {
@@ -369,19 +380,19 @@
         }
       },
       "deprecated": {
-        "totalInstances": 1003,
-        "filesCount": 346,
+        "totalInstances": 983,
+        "filesCount": 337,
         "props": {
           "variant": {
-            "count": 799,
+            "count": 779,
             "values": {
-              "{TextVariant.bodySm}": 260,
-              "{TextVariant.bodyMd}": 196,
-              "{TextVariant.bodyMdMedium}": 105,
+              "{TextVariant.bodySm}": 256,
+              "{TextVariant.bodyMd}": 195,
+              "{TextVariant.bodyMdMedium}": 91,
               "{TextVariant.headingSm}": 43,
-              "{TextVariant.bodySmMedium}": 32,
               "{TextVariant.bodyLgMedium}": 32,
               "{TextVariant.inherit}": 32,
+              "{TextVariant.bodySmMedium}": 31,
               "{TextVariant.headingMd}": 25,
               "{TextVariant.bodyXs}": 16,
               "{TextVariant.headingLg}": 16,
@@ -401,18 +412,18 @@
             }
           },
           "color": {
-            "count": 447,
+            "count": 428,
             "values": {
-              "{TextColor.textAlternative}": 196,
-              "{TextColor.textDefault}": 85,
+              "{TextColor.textAlternative}": 188,
+              "{TextColor.textDefault}": 81,
               "{TextColor.inherit}": 48,
-              "{TextColor.errorDefault}": 17,
-              "{TextColor.textMuted}": 15,
+              "{TextColor.errorDefault}": 16,
+              "{TextColor.textMuted}": 13,
               "{color}": 9,
               "{TextColor.primaryDefault}": 8,
               "{Color.textAlternative}": 7,
-              "{TextColor.overlayInverse}": 6,
               "{TextColor.infoDefault}": 4,
+              "{TextColor.overlayInverse}": 4,
               "{TextColor.warningDefault}": 4,
               "{Color.textDefault}": 4,
               "{TextColor.infoInverse}": 4,
@@ -429,7 +440,6 @@
               "{active ? IconColor.infoDefault : IconColor.iconAlternative}": 1,
               "{icon?.props.color}": 1,
               "{name ? TextColor.textDefault : TextColor.textAlternative}": 1,
-              "{addressCopied ? TextColor.successDefault : TextColor.textAlternative}": 1,
               "{TextColor.primaryInverse}": 1,
               "{TextColor.successInverse}": 1,
               "{TextColor.warningInverse}": 1,
@@ -439,7 +449,6 @@
               "{isAmountReadOnly && isEstimatedReturnLow ? TextColor.warningDefault : TextCol...}": 1,
               "{isInsufficientBalance ? TextColor.errorDefault : TextColor.textAlternative}": 1,
               "{getTimerColor(secondsUntilNextRefresh)}": 1,
-              "{isPriceImpactWarning ? TextColor.warningDefault : isPriceImpactError ? TextCo...}": 1,
               "{stepStatus === StatusTypes.PENDING || stepStatus === StatusTypes.COMPLETE ? T...}": 1,
               "{status ? STATUS_TO_COLOR_MAP[status] : undefined}": 1,
               "{getStatusTextColor(status)}": 1,
@@ -450,11 +459,11 @@
             }
           },
           "marginBottom": {
-            "count": 186,
+            "count": 185,
             "values": {
               "0": 4,
               "1": 7,
-              "2": 33,
+              "2": 32,
               "3": 3,
               "4": 137,
               "5": 1,
@@ -496,9 +505,9 @@
             }
           },
           "textAlign": {
-            "count": 109,
+            "count": 108,
             "values": {
-              "{TextAlign.Center}": 83,
+              "{TextAlign.Center}": 82,
               "{TextAlign.Left}": 10,
               "{TextAlign.Right}": 8,
               "{TextAlign.End}": 3,
@@ -508,15 +517,14 @@
             }
           },
           "data-testid": {
-            "count": 106,
+            "count": 99,
             "values": {
               "\"alert-modal__selected-alert\"": 5,
-              "\"accounts-list-item-connected-account-name\"": 4,
               "\"transaction-list-item-primary-currency\"": 3,
               "\"simulation-token-value\"": 3,
               "\"multichain-token-list-item-token-name\"": 2,
               "\"transaction-list-item-secondary-currency\"": 2,
-              "\"accounts-list-item-plus-more-tooltip\"": 2,
+              "\"accounts-list-item-connected-account-name\"": 2,
               "\"account-list-address\"": 2,
               "\"confirmation-text\"": 2,
               "\"pay-with-symbol\"": 2,
@@ -542,14 +550,11 @@
               "\"global-menu-notification-count\"": 1,
               "\"gator-permissions-page-title\"": 1,
               "\"permissions-page-title\"": 1,
+              "\"accounts-list-item-plus-more-tooltip\"": 1,
               "\"multichain-product-tour-menu-popover-step-counter\"": 1,
               "\"token-increase-decrease-value\"": 1,
               "\"token-increase-decrease-percentage\"": 1,
               "{`token-increase-decrease-percentage-${address}`}": 1,
-              "\"multichain-address-row-network-name\"": 1,
-              "\"multichain-address-row-address\"": 1,
-              "\"multichain-address-rows-list-empty-message\"": 1,
-              "\"networks-list-item-plus-more-tooltip\"": 1,
               "\"srp_text\"": 1,
               "{`${dataTestId}-text`}": 1,
               "\"asset-market-cap\"": 1,
@@ -601,10 +606,10 @@
             }
           },
           "ellipsis": {
-            "count": 78,
+            "count": 75,
             "values": {
-              "true (shorthand)": 76,
-              "true": 2
+              "true (shorthand)": 74,
+              "true": 1
             }
           },
           "className": {
@@ -779,14 +784,13 @@
             }
           },
           "paddingTop": {
-            "count": 26,
+            "count": 25,
             "values": {
               "1": 3,
               "2": 6,
               "3": 4,
               "4": 7,
-              "6": 5,
-              "8": 1
+              "6": 5
             }
           },
           "marginLeft": {
@@ -815,9 +819,9 @@
             }
           },
           "width": {
-            "count": 18,
+            "count": 17,
             "values": {
-              "{BlockSize.Full}": 9,
+              "{BlockSize.Full}": 8,
               "{BlockSize.Max}": 3,
               "{BlockSize.ThreeFourths}": 2,
               "{BlockSize.FiveSixths}": 1,
@@ -1111,26 +1115,26 @@
         }
       },
       "overall": {
-        "totalInstances": 1780,
-        "filesCount": 584,
+        "totalInstances": 1797,
+        "filesCount": 588,
         "props": {
           "variant": {
-            "count": 1498,
+            "count": 1515,
             "values": {
-              "{TextVariant.BodyMd}": 282,
-              "{TextVariant.BodySm}": 276,
-              "{TextVariant.bodySm}": 261,
-              "{TextVariant.bodyMd}": 196,
-              "{TextVariant.bodyMdMedium}": 105,
-              "{TextVariant.HeadingSm}": 45,
+              "{TextVariant.BodyMd}": 306,
+              "{TextVariant.BodySm}": 279,
+              "{TextVariant.bodySm}": 257,
+              "{TextVariant.bodyMd}": 195,
+              "{TextVariant.bodyMdMedium}": 91,
+              "{TextVariant.HeadingSm}": 48,
               "{TextVariant.headingSm}": 43,
-              "{TextVariant.bodySmMedium}": 32,
               "{TextVariant.bodyLgMedium}": 32,
               "{TextVariant.BodyXs}": 32,
               "{TextVariant.inherit}": 32,
+              "{TextVariant.bodySmMedium}": 31,
               "{TextVariant.HeadingLg}": 30,
               "{TextVariant.headingMd}": 25,
-              "{TextVariant.HeadingMd}": 18,
+              "{TextVariant.HeadingMd}": 20,
               "{TextVariant.bodyXs}": 16,
               "{TextVariant.headingLg}": 16,
               "{TextVariant.bodyMdBold}": 12,
@@ -1138,6 +1142,7 @@
               "{TextVariant.BodyLg}": 8,
               "{TextVariant.bodyXsMedium}": 6,
               "{TextVariant.bodySmBold}": 5,
+              "{DsrTextVariant.BodyMd}": 5,
               "{TextVariant.DisplayMd}": 4,
               "{TextVariant.displayMd}": 4,
               "{variant}": 2,
@@ -1152,43 +1157,44 @@
             }
           },
           "color": {
-            "count": 889,
+            "count": 899,
             "values": {
-              "{TextColor.TextAlternative}": 265,
-              "{TextColor.textAlternative}": 196,
-              "{TextColor.textDefault}": 85,
-              "{TextColor.TextDefault}": 70,
+              "{TextColor.TextAlternative}": 274,
+              "{TextColor.textAlternative}": 188,
+              "{TextColor.textDefault}": 81,
+              "{TextColor.TextDefault}": 77,
               "{TextColor.inherit}": 48,
-              "{TextColor.ErrorDefault}": 27,
-              "{TextColor.errorDefault}": 17,
-              "{TextColor.textMuted}": 15,
+              "{TextColor.ErrorDefault}": 28,
+              "{TextColor.errorDefault}": 16,
+              "{TextColor.textMuted}": 13,
               "{color}": 9,
               "{TextColor.primaryDefault}": 8,
               "{TextColor.WarningDefault}": 8,
+              "{TextColor.InfoInverse}": 8,
               "{TextColor.Inherit}": 8,
               "{TextColor.PrimaryDefault}": 7,
               "{Color.textAlternative}": 7,
-              "{TextColor.overlayInverse}": 6,
               "{textColor}": 5,
+              "{TextColor.SuccessDefault}": 5,
               "{TextColor.infoDefault}": 4,
+              "{TextColor.overlayInverse}": 4,
               "{TextColor.warningDefault}": 4,
               "{TextColor.InfoDefault}": 4,
               "{Color.textDefault}": 4,
+              "{TextColor.TextMuted}": 4,
               "{TextColor.infoInverse}": 4,
-              "{TextColor.InfoInverse}": 4,
               "{isProfit ? TextColor.SuccessDefault : TextColor.ErrorDefault}": 3,
               "{isSelected ? TextColor.TextDefault : TextColor.TextAlternative}": 3,
               "{Color.textMuted}": 3,
               "{TextColor.errorInverse}": 3,
+              "{TextColor.OverlayInverse}": 3,
+              "{addressCopied ? TextColor.SuccessDefault : TextColor.TextAlternative}": 3,
               "{isEstimatedReturnLow ? TextColor.warningDefault : TextColor.textAlternative}": 3,
-              "{TextColor.SuccessDefault}": 3,
               "{valueColor || TextColor.textDefault}": 2,
               "{TextColor.successDefault}": 2,
               "{getPnlDisplayColor(estimatedPnlAtTp)}": 2,
               "{getPnlDisplayColor(estimatedPnlAtSl)}": 2,
               "{changeColor}": 2,
-              "{TextColor.TextMuted}": 2,
-              "{addressCopied ? TextColor.SuccessDefault : TextColor.TextAlternative}": 2,
               "{getChangeColor(displayChange)}": 2,
               "{LEFT_TEXT_COLORS[variant] as TextColor}": 1,
               "{statusColor}": 1,
@@ -1206,12 +1212,10 @@
               "{icon?.props.color}": 1,
               "{shouldTriggerBackup ? TextColor.ErrorDefault : TextColor.TextAlternative}": 1,
               "{name ? TextColor.textDefault : TextColor.textAlternative}": 1,
-              "{TextColor.OverlayInverse}": 1,
               "{isPendingRevocation ? TextColor.TextMuted : TextColor.ErrorDefault}": 1,
               "{labelColor ?? TextColor.TextDefault}": 1,
               "{isLoadingState ? TextColor.TextMuted : TextColor.InfoDefault}": 1,
               "{item.textColor}": 1,
-              "{addressCopied ? TextColor.successDefault : TextColor.textAlternative}": 1,
               "{getTextColor()}": 1,
               "{TextColor.primaryInverse}": 1,
               "{TextColor.successInverse}": 1,
@@ -1219,10 +1223,10 @@
               "{TextColor.sepoliaInverse}": 1,
               "{TextColor.goerliInverse}": 1,
               "{Color.primaryDefault}": 1,
+              "{priceImpactTextColor}": 1,
               "{isAmountReadOnly && isEstimatedReturnLow ? TextColor.warningDefault : TextCol...}": 1,
               "{isInsufficientBalance ? TextColor.errorDefault : TextColor.textAlternative}": 1,
               "{getTimerColor(secondsUntilNextRefresh)}": 1,
-              "{isPriceImpactWarning ? TextColor.warningDefault : isPriceImpactError ? TextCo...}": 1,
               "{getPriceChangeColor(priceChange24h)}": 1,
               "{stepStatus === StatusTypes.PENDING || stepStatus === StatusTypes.COMPLETE ? T...}": 1,
               "{status ? STATUS_TO_COLOR_MAP[status] : undefined}": 1,
@@ -1243,10 +1247,10 @@
             }
           },
           "fontWeight": {
-            "count": 394,
+            "count": 419,
             "values": {
-              "{FontWeight.Medium}": 313,
-              "{FontWeight.Bold}": 46,
+              "{FontWeight.Medium}": 335,
+              "{FontWeight.Bold}": 49,
               "{FontWeight.Normal}": 17,
               "{FontWeight.Regular}": 10,
               "{fontWeight}": 3,
@@ -1258,7 +1262,7 @@
             }
           },
           "className": {
-            "count": 250,
+            "count": 252,
             "values": {
               "\"mb-4\"": 10,
               "\"text-center\"": 9,
@@ -1276,6 +1280,7 @@
               "\"hw-connect__title\"": 4,
               "\"flex items-center\"": 4,
               "\"mb-2\"": 4,
+              "\"w-full\"": 3,
               "\"settings-page__security-tab-sub-header\"": 3,
               "\"edit-gas-tooltip__container__label\"": 3,
               "\"edit-gas-tooltip__container__value\"": 3,
@@ -1289,7 +1294,6 @@
               "\"mt-2 mb-2\"": 2,
               "\"text-alternative\"": 2,
               "\"carousel-empty-state__text\"": 2,
-              "\"w-full\"": 2,
               "\"multichain-account-cell__account-name\"": 2,
               "\"confirm-add-suggested-nft__nft-name\"": 2,
               "\"confirm-add-suggested-nft__nft-tokenId\"": 2,
@@ -1343,6 +1347,7 @@
               "\"multichain-account-details__value\"": 1,
               "\"add-multichain-account__text\"": 1,
               "\"break-all max-w-64\"": 1,
+              "\"pt-8\"": 1,
               "\"callout__content\"": 1,
               "\"chip__label\"": 1,
               "\"confusable__point\"": 1,
@@ -1397,13 +1402,13 @@
               "\"snap-update__content__permission-description\"": 1,
               "\"mb-2 uppercase tracking-wide\"": 1,
               "\"multichain-account-list-item__account-name__button\"": 1,
-              "\"info-tab__version-number\"": 1,
               "\"px-4 py-2\"": 1,
               "{classnames({ 'opacity-50': isView, })}": 1,
               "\"mt-0.5\"": 1,
               "\"mb-3\"": 1,
               "{twMerge('text-text-alternative', descriptionClassName)}": 1,
               "\"flex items-center gap-1\"": 1,
+              "\"info-tab__version-number\"": 1,
               "\"py-2 px-4\"": 1,
               "\"flex-1 min-w-0 text-left\"": 1,
               "\"whitespace-nowrap\"": 1,
@@ -1476,9 +1481,9 @@
               "\"multichain-network-menu-popover-no-results\"": 1,
               "\"notifications-tag-counter__unread-dot\"": 1,
               "\"global-menu-notification-count\"": 1,
+              "{testId}": 1,
               "\"permissions-cell-network-name\"": 1,
               "\"permissions-cell-plus-more-tooltip\"": 1,
-              "{testId}": 1,
               "\"review-gator-permission-account-name\"": 1,
               "\"review-gator-permission-network-name\"": 1,
               "\"gator-permissions-page-title\"": 1,
@@ -1586,11 +1591,11 @@
             }
           },
           "marginBottom": {
-            "count": 186,
+            "count": 185,
             "values": {
               "0": 4,
               "1": 7,
-              "2": 33,
+              "2": 32,
               "3": 3,
               "4": 137,
               "5": 1,
@@ -1598,10 +1603,10 @@
             }
           },
           "textAlign": {
-            "count": 179,
+            "count": 183,
             "values": {
-              "{TextAlign.Center}": 122,
-              "{TextAlign.Left}": 32,
+              "{TextAlign.Center}": 123,
+              "{TextAlign.Left}": 35,
               "{TextAlign.Right}": 17,
               "{TextAlign.End}": 3,
               "\"center\"": 3,
@@ -1635,8 +1640,8 @@
           "ellipsis": {
             "count": 106,
             "values": {
-              "true (shorthand)": 104,
-              "true": 2
+              "true (shorthand)": 105,
+              "true": 1
             }
           },
           "key": {
@@ -1692,14 +1697,8 @@
               "\"reset-wallet-bold-text-two\"": 1
             }
           },
-          "asChild": {
-            "count": 63,
-            "values": {
-              "true (shorthand)": 63
-            }
-          },
           "style": {
-            "count": 62,
+            "count": 65,
             "values": {
               "{{ whiteSpace: 'nowrap' }}": 9,
               "{{ lineBreak: 'anywhere' }}": 5,
@@ -1708,6 +1707,7 @@
               "{frameTextValueStyle}": 2,
               "{{ whiteSpace: 'nowrap', }}": 2,
               "{{ fontSize, lineHeight }}": 2,
+              "{{ minWidth: 0 }}": 2,
               "{{ paddingTop: '1px', paddingBottom: '1px' }}": 2,
               "{{ wordBreak: 'break-word', whiteSpace: 'normal', }}": 2,
               "{{ whiteSpace: 'pre-line' }}": 2,
@@ -1730,6 +1730,7 @@
               "{{ marginTop: '-4px' }}": 1,
               "{textStyle}": 1,
               "{{ opacity: shouldShowMainPriceMuted ? loadingOpacity : 1 }}": 1,
+              "{{ width: '100%' }}": 1,
               "{{ cursor: 'default', textDecoration: 'none', }}": 1,
               "{{ cursor: isAmountReadOnly ? 'pointer' : 'default', textDecoration: isAmountR...}": 1,
               "{{ paddingInline: 16 }}": 1,
@@ -1741,6 +1742,12 @@
               "{error ? { marginBottom: 2 } : {}}": 1,
               "{{ flex: '1 0 auto' }}": 1,
               "{{ backgroundColor: backgroundColorForLoginOptions, }}": 1
+            }
+          },
+          "asChild": {
+            "count": 64,
+            "values": {
+              "true (shorthand)": 64
             }
           },
           "marginTop": {
@@ -1780,14 +1787,13 @@
             }
           },
           "paddingTop": {
-            "count": 26,
+            "count": 25,
             "values": {
               "1": 3,
               "2": 6,
               "3": 4,
               "4": 7,
-              "6": 5,
-              "8": 1
+              "6": 5
             }
           },
           "[spread]": {
@@ -1817,9 +1823,9 @@
             }
           },
           "width": {
-            "count": 18,
+            "count": 17,
             "values": {
-              "{BlockSize.Full}": 9,
+              "{BlockSize.Full}": 8,
               "{BlockSize.Max}": 3,
               "{BlockSize.ThreeFourths}": 2,
               "{BlockSize.FiveSixths}": 1,
@@ -2121,57 +2127,58 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "Text": 1003
+        "Text": 983
       }
     },
     "mobile": {
-      "filesScanned": 5996,
+      "filesScanned": 6077,
       "targetComponent": "Text",
       "mmds": {
-        "totalInstances": 1301,
-        "filesCount": 381,
+        "totalInstances": 1363,
+        "filesCount": 395,
         "props": {
           "variant": {
-            "count": 1225,
+            "count": 1288,
             "values": {
-              "{TextVariant.BodyMd}": 544,
-              "{TextVariant.BodySm}": 366,
-              "{TextVariant.HeadingMd}": 81,
-              "{TextVariant.BodyXs}": 66,
+              "{TextVariant.BodyMd}": 557,
+              "{TextVariant.BodySm}": 388,
+              "{TextVariant.HeadingMd}": 85,
+              "{TextVariant.BodyXs}": 81,
+              "{TextVariant.HeadingSm}": 45,
               "{TextVariant.HeadingLg}": 42,
-              "{TextVariant.HeadingSm}": 40,
-              "{TextVariant.BodyLg}": 37,
+              "{TextVariant.BodyLg}": 38,
               "{TextVariant.DisplayMd}": 20,
               "{TextVariant.DisplayLg}": 5,
               "{textVariant}": 5,
               "{isCarousel ? TextVariant.BodyXs : TextVariant.BodyMd}": 4,
+              "{DSTextVariant.BodyMd}": 4,
               "{variant}": 3,
               "{TextVariantDS.BodyMd}": 2,
               "{TextVariantDS.BodySm}": 2,
-              "{DSTextVariant.BodyMd}": 2,
               "{isCarousel ? TextVariant.BodyMd : TextVariant.HeadingSm}": 1,
               "{headingVariantMap[node.nodeType]}": 1,
               "{DsTextVariant.BodyMd}": 1,
               "{DsTextVariant.BodySm}": 1,
               "{TextVariant.SectionHeading}": 1,
-              "{DSTextVariant.HeadingLg}": 1
+              "{DSTextVariant.HeadingMd}": 1,
+              "{DesignSystemTextVariant.BodySm}": 1
             }
           },
           "color": {
-            "count": 637,
+            "count": 684,
             "values": {
-              "{TextColor.TextAlternative}": 298,
-              "{TextColor.TextDefault}": 170,
-              "{TextColor.SuccessDefault}": 26,
-              "{TextColor.ErrorDefault}": 25,
-              "{TextColor.PrimaryDefault}": 21,
+              "{TextColor.TextAlternative}": 325,
+              "{TextColor.TextDefault}": 175,
+              "{TextColor.SuccessDefault}": 28,
+              "{TextColor.ErrorDefault}": 28,
+              "{TextColor.PrimaryDefault}": 24,
               "{TextColor.TextMuted}": 10,
               "{textColor}": 7,
               "{TextColor.PrimaryInverse}": 6,
+              "{color}": 4,
               "{isSupported ? TextColor.TextDefault : TextColor.TextAlternative}": 4,
               "{isSelected ? TextColor.PrimaryInverse : TextColor.TextDefault}": 3,
               "{TextColor.PrimaryAlternative}": 3,
-              "{color}": 3,
               "{TextColor.WarningDefault}": 3,
               "{TextColor.OverlayInverse}": 3,
               "{displayDiff > 0 ? TextColor.SuccessDefault : displayDiff < 0 ? TextColor.Erro...}": 2,
@@ -2181,7 +2188,9 @@
               "{amountInputHasError ? TextColor.ErrorDefault : undefined}": 2,
               "{isStateSupported ? TextColor.TextDefault : TextColor.TextAlternative}": 2,
               "{TextColor.InfoDefault}": 2,
+              "{DSTextColor.TextDefault}": 2,
               "{isPasswordTooShort ? TextColor.ErrorDefault : TextColor.TextAlternative}": 2,
+              "{globalOff ? TextColor.TextMuted : TextColor.TextDefault}": 2,
               "{isActive ? TextColor.TextDefault : TextColor.TextAlternative}": 2,
               "{description.color}": 1,
               "{priceImpactViewData.textColor}": 1,
@@ -2194,7 +2203,8 @@
               "{outcomeToken.price === 1 ? TextColor.TextDefault : TextColor.TextAlternative}": 1,
               "{outcomeToken?.title === 'Yes' ? TextColor.SuccessDefault : TextColor.ErrorDef...}": 1,
               "{outcomeTokenTitle === 'Yes' ? TextColor.SuccessDefault : TextColor.ErrorDefault}": 1,
-              "{activeTab === index ? TextColor.TextDefault : TextColor.TextAlternative}": 1,
+              "{isOverridden ? TextColor.WarningDefault : TextColor.TextAlternative}": 1,
+              "{isSelected ? TextColor.PrimaryDefault : TextColor.TextDefault}": 1,
               "{paymentMethodsError ? TextColor.TextAlternative : TextColor.PrimaryDefault}": 1,
               "{valueColor}": 1,
               "{colorScheme === 'dark' ? TextColor.SuccessDefault : TextColor.OverlayInverse}": 1,
@@ -2205,10 +2215,10 @@
               "{top10Pct !== null ? TextColor.TextDefault : TextColor.TextAlternative}": 1,
               "{otherPct !== null ? TextColor.TextDefault : TextColor.TextAlternative}": 1,
               "{config.textColor}": 1,
-              "{securityBadge.textColor}": 1,
-              "{DSTextColor.TextDefault}": 1,
               "{DSTextColor.TextAlternative}": 1,
+              "{severity === 'Malicious' ? DSTextColor.PrimaryInverse : DSTextColor.TextDefault}": 1,
               "{DSTextColor.PrimaryInverse}": 1,
+              "{securityBadge.textColor}": 1,
               "{hasClaimableBonus ? TextColor.PrimaryDefault : TextColor.SuccessDefault}": 1,
               "{isPositive ? TextColor.SuccessDefault : TextColor.ErrorDefault}": 1,
               "{resolvedValueColor}": 1,
@@ -2216,6 +2226,7 @@
               "{TextColor.InfoInverse}": 1,
               "{showError ? TextColor.ErrorDefault : TextColor.TextAlternative}": 1,
               "{correctAnswer ? TextColor.SuccessDefault : TextColor.ErrorDefault}": 1,
+              "{isDisabled ? TextColor.TextMuted : TextColor.TextDefault}": 1,
               "{usdAmount ? TextColor.TextDefault : TextColor.TextAlternative}": 1,
               "{hasPnl ? undefined : TextColor.TextAlternative}": 1,
               "{isWinRatePositive ? undefined : TextColor.TextDefault}": 1,
@@ -2223,18 +2234,18 @@
             }
           },
           "twClassName": {
-            "count": 462,
+            "count": 473,
             "values": {
-              "\"font-medium\"": 44,
-              "\"text-center\"": 39,
+              "\"text-center\"": 45,
+              "\"font-medium\"": 43,
               "\"text-alternative\"": 39,
               "\"text-text-alternative\"": 32,
-              "\"text-error-default\"": 27,
+              "\"text-error-default\"": 29,
               "\"text-default\"": 27,
               "\"text-alternative text-center\"": 9,
+              "\"flex-1\"": 7,
               "\"text-info-default\"": 6,
               "\"text-primary-default underline\"": 6,
-              "\"flex-1\"": 6,
               "\"mb-2\"": 6,
               "\"text-text-default\"": 5,
               "\"text-error-default text-center\"": 5,
@@ -2253,8 +2264,9 @@
               "\"shrink\"": 3,
               "\"mt-2\"": 3,
               "\"mt-3\"": 3,
+              "\"mt-1\"": 3,
               "\"font-bold\"": 3,
-              "\"text-center mb-2\"": 3,
+              "{isPnlPositive ? 'text-success-default' : 'text-error-default'}": 3,
               "\"text-warning-default\"": 3,
               "\"text-alternative mt-2\"": 2,
               "\"mb-3\"": 2,
@@ -2263,24 +2275,23 @@
               "\"text-white opacity-80 mt-4\"": 2,
               "\"flex-1 flex-shrink text-text-alternative\"": 2,
               "{isSelected ? 'text-text-default' : 'text-text-alternative'}": 2,
-              "\"text-success-default\"": 2,
               "\"underline\"": 2,
               "\"flex-1 pr-2\"": 2,
               "\"text-right\"": 2,
-              "\"mt-1\"": 2,
               "\"text-primary\"": 2,
               "\"text-default text-center\"": 2,
               "\"text-default leading-none\"": 2,
               "\"text-primary text-primary-default\"": 2,
               "{`text-[${amountFontSize}px] tracking-tight leading-[${amountLineHeight}px] fo...}": 2,
+              "\"text-center mb-2\"": 2,
               "\"text-alternative text-center mb-8\"": 2,
               "\"mb-1\"": 2,
               "{bodyClassName}": 2,
               "\"flex-1 text-center\"": 2,
+              "\"mt-0.5\"": 2,
               "\"text-primary shrink-0\"": 2,
               "\"uppercase\"": 2,
               "{isRoiPositive ? 'text-success-default' : 'text-error-default'}": 2,
-              "{isPnlPositive ? 'text-success-default' : 'text-error-default'}": 2,
               "{hasPnl ? isPnlPositive ? 'text-success-default' : 'text-error-default' : unde...}": 2,
               "\"m-4\"": 2,
               "\"font-medium text-center\"": 1,
@@ -2312,6 +2323,7 @@
               "\"text-text-muted uppercase mb-1 tracking-widest\"": 1,
               "\"text-text-muted mt-0.5\"": 1,
               "\"text-text-muted\"": 1,
+              "\"text-success-default\"": 1,
               "{showClaimButton ? 'pt-1 pb-4' : 'pt-1'}": 1,
               "\"pt-1\"": 1,
               "\"pt-3\"": 1,
@@ -2335,6 +2347,7 @@
               "\"text-primary-default mr-1\"": 1,
               "\"mr-2\"": 1,
               "\"py-3\"": 1,
+              "\"text-center px-10\"": 1,
               "\"max-w-[60%]\"": 1,
               "\"w-8\"": 1,
               "\"px-3\"": 1,
@@ -2355,16 +2368,16 @@
               "\"text-white mb-2\"": 1,
               "\"min-w-0 shrink\"": 1,
               "\"pt-6 pb-3\"": 1,
-              "\"mt-0.5\"": 1,
               "\"text-primary shrink\"": 1,
               "\"-mr-1\"": 1,
-              "\"overflow-hidden text-center\"": 1,
+              "\"text-center mb-1\"": 1,
+              "\"whitespace-nowrap\"": 1,
               "\"text-left self-start mb-4\"": 1,
               "{twClassName}": 1,
               "\"my-4\"": 1,
               "\"mt-5 text-center\"": 1,
               "\"text-right max-w-[100px] flex-wrap\"": 1,
-              "\"w-6 text-right\"": 1,
+              "\"w-8 text-right\"": 1,
               "\"w-[95%]\"": 1,
               "\"my-6 text-center\"": 1,
               "\"flex-row items-center w-[90%]\"": 1,
@@ -2372,8 +2385,8 @@
               "\"text-center p-2\"": 1,
               "\"mt-6\"": 1,
               "\"w-[90%] mb-6\"": 1,
-              "{trade.isPositive ? 'text-success-default' : 'text-error-default'}": 1,
-              "{MOCK_POSITION.isPositive ? 'text-success-default' : 'text-error-default'}": 1,
+              "{isEntry ? 'text-success-default' : 'text-error-default'}": 1,
+              "{pricePercentChange >= 0 ? 'text-success-default' : 'text-error-default'}": 1,
               "{isWinRatePositive ? 'text-success-default' : undefined}": 1,
               "\"text-left mb-6 w-full\"": 1,
               "\"bg-background-alternative ml-2 mt-1 py-0 px-1 rounded-md\"": 1,
@@ -2383,19 +2396,21 @@
             }
           },
           "fontWeight": {
-            "count": 363,
+            "count": 384,
             "values": {
-              "{FontWeight.Medium}": 274,
-              "{FontWeight.Bold}": 61,
-              "{FontWeight.Regular}": 22,
+              "{FontWeight.Medium}": 285,
+              "{FontWeight.Bold}": 67,
+              "{FontWeight.Regular}": 23,
               "{fontWeight}": 2,
+              "{isSelected ? FontWeight.Medium : FontWeight.Regular}": 2,
               "{'600' as FontWeight}": 2,
-              "{isSelected ? FontWeight.Medium : FontWeight.Regular}": 1,
-              "{isBold ? FontWeight.Bold : undefined}": 1
+              "{isOverridden ? FontWeight.Medium : FontWeight.Regular}": 1,
+              "{isBold ? FontWeight.Bold : undefined}": 1,
+              "{titleFontWeight}": 1
             }
           },
           "testID": {
-            "count": 188,
+            "count": 194,
             "values": {
               "{TokenOverviewSelectorsIDs.TOKEN_PRICE}": 2,
               "\"price-label\"": 2,
@@ -2465,6 +2480,10 @@
               "{MoneyActivityViewTestIds.DATE_HEADER}": 1,
               "{MoneyActivityViewTestIds.TITLE}": 1,
               "{MoneyActivityViewTestIds.EMPTY_LIST_MESSAGE}": 1,
+              "{MoneyHowItWorksViewTestIds.SECTION_TITLE}": 1,
+              "{MoneyHowItWorksViewTestIds.DESCRIPTION_1}": 1,
+              "{MoneyHowItWorksViewTestIds.DESCRIPTION_2}": 1,
+              "{MoneyHowItWorksViewTestIds.FAQ_TITLE}": 1,
               "{MoneyBalanceSummaryTestIds.TITLE}": 1,
               "{MoneyBalanceSummaryTestIds.BALANCE}": 1,
               "{MoneyBalanceSummaryTestIds.APY}": 1,
@@ -2564,8 +2583,10 @@
               "{MULTICHAIN_ACCOUNTS_INTRO_MODAL_TEST_IDS.SECTION_2_DESCRIPTION}": 1,
               "{PrivateKeyListIds.PASSWORD_TITLE}": 1,
               "{PrivateKeyListIds.PASSWORD_ERROR}": 1,
+              "{NetworkDetailsViewSelectorsIDs.BLOCK_EXPLORER_SHEET_SUBMIT_ERROR}": 1,
               "{NetworkDetailsViewSelectorsIDs.RPC_WARNING_BANNER}": 1,
               "{CellComponentSelectorsIDs.BASE_TITLE}": 1,
+              "{NetworkDetailsViewSelectorsIDs.RPC_SHEET_SUBMIT_ERROR}": 1,
               "{LoginViewSelectors.TITLE_ID}": 1,
               "\"terms-of-use-link\"": 1,
               "\"privacy-notice-link\"": 1,
@@ -2578,12 +2599,12 @@
             }
           },
           "style": {
-            "count": 177,
+            "count": 191,
             "values": {
               "{tw.style('font-medium')}": 16,
               "{tw.style('text-pretty')}": 13,
-              "{tw.style('text-center')}": 8,
               "{styles.description}": 8,
+              "{tw.style('text-center')}": 7,
               "{styles.title}": 7,
               "{tw.style('mt-1 text-error-default pb-2')}": 6,
               "{tw.style('pb-[3px]')}": 5,
@@ -2596,12 +2617,14 @@
               "{tw.style('font-bold text-center')}": 3,
               "{styles.error}": 3,
               "{styles.heading}": 3,
+              "{isLightMode && displayDiff > 0 ? { color: LIGHT_MODE_SUCCESS_GREEN } : undefined}": 2,
               "{styles.descriptionText}": 2,
               "{{ color: theme.colors.error.default }}": 2,
               "{{ color: roeValue >= 0 ? theme.colors.success.default : theme.colors.error.de...}": 2,
               "{tw.style('font-medium text-center')}": 2,
               "{tw.style('text-center pb-2')}": 2,
               "{styles.centeredText}": 2,
+              "{styles.actionsHint}": 2,
               "{styles.paragraph}": 2,
               "{styles.subtitle}": 2,
               "{styles.resendButtonText}": 2,
@@ -2640,6 +2663,17 @@
               "{styles.percentPnl}": 1,
               "{styles.cashOutButtonText}": 1,
               "{styles.poweredByText}": 1,
+              "{styles.selectedRowLabel}": 1,
+              "{styles.selectableRowLabel}": 1,
+              "{styles.summaryTitle}": 1,
+              "{styles.headlessSectionTitle}": 1,
+              "{styles.headlessSectionWarning}": 1,
+              "{styles.amountLabel}": 1,
+              "{styles.eventLogTitle}": 1,
+              "{styles.eventLogLine}": 1,
+              "{styles.quoteErrorsTitle}": 1,
+              "{styles.quoteRowDetailLabel}": 1,
+              "{styles.quoteRowDetailValue}": 1,
               "{styles.phoneFlagEmoji}": 1,
               "{styles.phonePrefix}": 1,
               "{styles.countryFlag}": 1,
@@ -2672,9 +2706,9 @@
             }
           },
           "numberOfLines": {
-            "count": 107,
+            "count": 109,
             "values": {
-              "1": 92,
+              "1": 94,
               "2": 10,
               "3": 3,
               "{isCarousel ? 2 : undefined}": 1,
@@ -2735,12 +2769,13 @@
             }
           },
           "key": {
-            "count": 7,
+            "count": 8,
             "values": {
               "{key}": 3,
               "{index}": 2,
-              "{childKey}": 1,
-              "{itemKey}": 1
+              "{`event-${index}`}": 1,
+              "{`quote-error-${index}`}": 1,
+              "{childKey}": 1
             }
           },
           "maxFontSizeMultiplier": {
@@ -2822,13 +2857,13 @@
         }
       },
       "deprecated": {
-        "totalInstances": 1715,
+        "totalInstances": 1720,
         "filesCount": 526,
         "props": {
           "variant": {
-            "count": 1385,
+            "count": 1390,
             "values": {
-              "{TextVariant.BodyMD}": 503,
+              "{TextVariant.BodyMD}": 508,
               "{TextVariant.BodySM}": 228,
               "{TextVariant.BodyMDMedium}": 181,
               "{TextVariant.BodyLGMedium}": 112,
@@ -2855,10 +2890,10 @@
             }
           },
           "color": {
-            "count": 793,
+            "count": 798,
             "values": {
               "{TextColor.Alternative}": 399,
-              "{TextColor.Default}": 173,
+              "{TextColor.Default}": 178,
               "{TextColor.Error}": 37,
               "{TextColor.Primary}": 29,
               "{TextColor.Muted}": 29,
@@ -2923,7 +2958,7 @@
             }
           },
           "style": {
-            "count": 702,
+            "count": 708,
             "values": {
               "{styles.title}": 49,
               "{styles.description}": 41,
@@ -2956,6 +2991,7 @@
               "{styles.amount}": 4,
               "{styles.dot}": 4,
               "{styles.subHeading}": 4,
+              "{styles.messageText}": 4,
               "{styles.detailsItem}": 3,
               "{styles.textAddress}": 3,
               "{textStyle}": 3,
@@ -2982,6 +3018,7 @@
               "{styles.disclaimer}": 2,
               "{styles.backupAlertMessage}": 2,
               "{styles.tokenSymbol}": 2,
+              "{styles.tokenName}": 2,
               "{styles.networkName}": 2,
               "{styles.getStartedButtonText}": 2,
               "{styles.forgotPasswordPointText}": 2,
@@ -3026,7 +3063,7 @@
               "{styles.inputText}": 2,
               "{styles.input}": 2,
               "{styles.labelElementText}": 2,
-              "{styles.messageText}": 2,
+              "{styles.qrDescriptionText}": 2,
               "{styles.tipText}": 2,
               "{styles.inputTitle}": 1,
               "{{ ...style.text, ...(centered ? style.centered : {}), ...(hero ? style.hero :...}": 1,
@@ -3054,7 +3091,6 @@
               "{styles.errorMessage}": 1,
               "{styles.accountNameText}": 1,
               "{styles.recipientText}": 1,
-              "{styles.tokenName}": 1,
               "{styles.textTransform}": 1,
               "{styles.cancelButtonText}": 1,
               "{styles.urlBarText}": 1,
@@ -3225,6 +3261,7 @@
               "{styles.accountNameLabelText}": 1,
               "{styles.contactLabel}": 1,
               "{styles.currentAppText}": 1,
+              "{styles.qrErrorText}": 1,
               "{styles.tipsHeader}": 1,
               "{styles.tipBullet}": 1,
               "{styles.deviceName}": 1,
@@ -3233,7 +3270,7 @@
             }
           },
           "testID": {
-            "count": 128,
+            "count": 129,
             "values": {
               "{testID}": 6,
               "{WalletViewSelectorsIDs.ACCOUNT_NAME_LABEL_TEXT}": 3,
@@ -3270,6 +3307,7 @@
               "{PerpsOrderViewSelectorsIDs.MARGIN_VALUE}": 1,
               "{PerpsOrderViewSelectorsIDs.LIQUIDATION_PRICE_VALUE}": 1,
               "{PerpsPositionsViewSelectorsIDs.POSITIONS_SECTION_TITLE}": 1,
+              "{PerpsWithdrawViewSelectorsIDs.AVAILABLE_BALANCE_TEXT}": 1,
               "{PerpsWithdrawViewSelectorsIDs.FEE_VALUE}": 1,
               "{PerpsWithdrawViewSelectorsIDs.TIME_VALUE}": 1,
               "{PerpsWithdrawViewSelectorsIDs.RECEIVE_VALUE}": 1,
@@ -3523,27 +3561,27 @@
         }
       },
       "overall": {
-        "totalInstances": 3016,
-        "filesCount": 905,
+        "totalInstances": 3083,
+        "filesCount": 918,
         "props": {
           "variant": {
-            "count": 2610,
+            "count": 2678,
             "values": {
-              "{TextVariant.BodyMd}": 544,
-              "{TextVariant.BodyMD}": 503,
-              "{TextVariant.BodySm}": 366,
+              "{TextVariant.BodyMd}": 557,
+              "{TextVariant.BodyMD}": 508,
+              "{TextVariant.BodySm}": 388,
               "{TextVariant.BodySM}": 228,
               "{TextVariant.BodyMDMedium}": 181,
               "{TextVariant.BodyLGMedium}": 112,
               "{TextVariant.HeadingMD}": 105,
-              "{TextVariant.HeadingMd}": 81,
-              "{TextVariant.BodyXs}": 66,
+              "{TextVariant.HeadingMd}": 85,
+              "{TextVariant.BodyXs}": 81,
               "{TextVariant.BodySMMedium}": 46,
+              "{TextVariant.HeadingSm}": 45,
               "{TextVariant.HeadingLG}": 45,
               "{TextVariant.HeadingLg}": 42,
-              "{TextVariant.HeadingSm}": 40,
               "{TextVariant.BodyMDBold}": 39,
-              "{TextVariant.BodyLg}": 37,
+              "{TextVariant.BodyLg}": 38,
               "{TextVariant.BodyXS}": 36,
               "{TextVariant.HeadingSM}": 34,
               "{TextVariant.DisplayMd}": 20,
@@ -3554,12 +3592,12 @@
               "{TextVariant.DisplayLg}": 5,
               "{TextVariant.DisplayLG}": 4,
               "{isCarousel ? TextVariant.BodyXs : TextVariant.BodyMd}": 4,
+              "{DSTextVariant.BodyMd}": 4,
               "{DEFAULT_BANNERBASE_DESCRIPTION_TEXTVARIANT}": 4,
               "{TextVariant.BodyXSMedium}": 3,
               "{TextVariantDS.BodyMd}": 2,
               "{TextVariantDS.BodySm}": 2,
               "{selectedPeriod === period.value ? TextVariant.BodyMDBold : TextVariant.BodySM...}": 2,
-              "{DSTextVariant.BodyMd}": 2,
               "{TEXTVARIANT_BY_AVATARSIZE[size]}": 1,
               "{stepStatus === StatusTypes.PENDING ? TextVariant.BodyMDMedium : TextVariant.B...}": 1,
               "{primaryText?.variant ?? TextVariant.BodyMDMedium}": 1,
@@ -3570,28 +3608,29 @@
               "{DsTextVariant.BodyMd}": 1,
               "{DsTextVariant.BodySm}": 1,
               "{TextVariant.SectionHeading}": 1,
-              "{DSTextVariant.HeadingLg}": 1,
+              "{DSTextVariant.HeadingMd}": 1,
+              "{DesignSystemTextVariant.BodySm}": 1,
               "{labelVariant}": 1
             }
           },
           "color": {
-            "count": 1430,
+            "count": 1482,
             "values": {
               "{TextColor.Alternative}": 399,
-              "{TextColor.TextAlternative}": 298,
-              "{TextColor.Default}": 173,
-              "{TextColor.TextDefault}": 170,
+              "{TextColor.TextAlternative}": 325,
+              "{TextColor.Default}": 178,
+              "{TextColor.TextDefault}": 175,
               "{TextColor.Error}": 37,
               "{TextColor.Primary}": 29,
               "{TextColor.Muted}": 29,
-              "{TextColor.SuccessDefault}": 26,
-              "{TextColor.ErrorDefault}": 25,
-              "{TextColor.PrimaryDefault}": 21,
+              "{TextColor.SuccessDefault}": 28,
+              "{TextColor.ErrorDefault}": 28,
+              "{TextColor.PrimaryDefault}": 24,
               "{textColor}": 17,
               "{TextColor.Success}": 15,
               "{TextColor.Info}": 11,
               "{TextColor.TextMuted}": 10,
-              "{color}": 8,
+              "{color}": 9,
               "{colors.primary.default}": 8,
               "{TextColor.PrimaryInverse}": 6,
               "{TextColor.Inverse}": 5,
@@ -3619,7 +3658,9 @@
               "{amountInputHasError ? TextColor.ErrorDefault : undefined}": 2,
               "{isStateSupported ? TextColor.TextDefault : TextColor.TextAlternative}": 2,
               "{TextColor.InfoDefault}": 2,
+              "{DSTextColor.TextDefault}": 2,
               "{isPasswordTooShort ? TextColor.ErrorDefault : TextColor.TextAlternative}": 2,
+              "{globalOff ? TextColor.TextMuted : TextColor.TextDefault}": 2,
               "{isActive ? TextColor.TextDefault : TextColor.TextAlternative}": 2,
               "{theme.colors.primary.inverse}": 1,
               "{variant === ButtonVariant.Primary ? theme.colors.primary.inverse : theme.colo...}": 1,
@@ -3658,9 +3699,10 @@
               "{outcomeToken.price === 1 ? TextColor.TextDefault : TextColor.TextAlternative}": 1,
               "{outcomeToken?.title === 'Yes' ? TextColor.SuccessDefault : TextColor.ErrorDef...}": 1,
               "{outcomeTokenTitle === 'Yes' ? TextColor.SuccessDefault : TextColor.ErrorDefault}": 1,
-              "{activeTab === index ? TextColor.TextDefault : TextColor.TextAlternative}": 1,
               "{index >= amountTier[0] ? TextColor.Muted : TextColor.Default}": 1,
               "{isSelected ? TextColor.Inverse : TextColor.Default}": 1,
+              "{isOverridden ? TextColor.WarningDefault : TextColor.TextAlternative}": 1,
+              "{isSelected ? TextColor.PrimaryDefault : TextColor.TextDefault}": 1,
               "{paymentMethodsError ? TextColor.TextAlternative : TextColor.PrimaryDefault}": 1,
               "{valueColor}": 1,
               "{colorScheme === 'dark' ? TextColor.SuccessDefault : TextColor.OverlayInverse}": 1,
@@ -3674,10 +3716,10 @@
               "{titleColor}": 1,
               "{color ?? TextColor.Success}": 1,
               "{isLoadingOnClaim ? TextColor.Muted : TextColor.Primary}": 1,
-              "{securityBadge.textColor}": 1,
-              "{DSTextColor.TextDefault}": 1,
               "{DSTextColor.TextAlternative}": 1,
+              "{severity === 'Malicious' ? DSTextColor.PrimaryInverse : DSTextColor.TextDefault}": 1,
               "{DSTextColor.PrimaryInverse}": 1,
+              "{securityBadge.textColor}": 1,
               "{getPriceChangeColor(pricePercentChange)}": 1,
               "{colors.error.default}": 1,
               "{hasClaimableBonus ? TextColor.PrimaryDefault : TextColor.SuccessDefault}": 1,
@@ -3688,6 +3730,7 @@
               "{TextColor.InfoInverse}": 1,
               "{showError ? TextColor.ErrorDefault : TextColor.TextAlternative}": 1,
               "{correctAnswer ? TextColor.SuccessDefault : TextColor.ErrorDefault}": 1,
+              "{isDisabled ? TextColor.TextMuted : TextColor.TextDefault}": 1,
               "{usdAmount ? TextColor.TextDefault : TextColor.TextAlternative}": 1,
               "{hasPnl ? undefined : TextColor.TextAlternative}": 1,
               "{isWinRatePositive ? undefined : TextColor.TextDefault}": 1,
@@ -3701,7 +3744,7 @@
             }
           },
           "style": {
-            "count": 879,
+            "count": 899,
             "values": {
               "{styles.title}": 56,
               "{styles.description}": 49,
@@ -3718,7 +3761,7 @@
               "{styles.successText}": 12,
               "{styles.label}": 10,
               "{styles.labelText}": 9,
-              "{tw.style('text-center')}": 9,
+              "{tw.style('text-center')}": 8,
               "{styles.error}": 8,
               "{styles.textSection}": 7,
               "{styles.value}": 6,
@@ -3744,6 +3787,7 @@
               "{styles.centeredText}": 4,
               "{styles.dot}": 4,
               "{styles.subHeading}": 4,
+              "{styles.messageText}": 4,
               "{styles.descriptionText}": 3,
               "{styles.detailsItem}": 3,
               "{styles.textAddress}": 3,
@@ -3775,9 +3819,11 @@
               "{styles.warning}": 2,
               "{styles.tagText}": 2,
               "{styles.disclaimer}": 2,
+              "{isLightMode && displayDiff > 0 ? { color: LIGHT_MODE_SUCCESS_GREEN } : undefined}": 2,
               "{styles.backupAlertMessage}": 2,
               "{styles.strikethroughText}": 2,
               "{styles.tokenSymbol}": 2,
+              "{styles.tokenName}": 2,
               "{styles.networkName}": 2,
               "{styles.getStartedButtonText}": 2,
               "{styles.forgotPasswordPointText}": 2,
@@ -3807,6 +3853,7 @@
               "{styles.descriptionCompact}": 2,
               "{styles.agreementText}": 2,
               "{selectedStateName ? styles.selectorText : [styles.selectorText, styles.placeh...}": 2,
+              "{styles.actionsHint}": 2,
               "{styles.base}": 2,
               "{styles.content}": 2,
               "{styles.bottomSheetText}": 2,
@@ -3829,7 +3876,7 @@
               "{styles.checkboxText}": 2,
               "{styles.inputText}": 2,
               "{styles.labelElementText}": 2,
-              "{styles.messageText}": 2,
+              "{styles.qrDescriptionText}": 2,
               "{styles.tipText}": 2,
               "{styles.inputTitle}": 1,
               "{{ ...style.text, ...(centered ? style.centered : {}), ...(hero ? style.hero :...}": 1,
@@ -3858,7 +3905,6 @@
               "{tw`text-right`}": 1,
               "{styles.accountNameText}": 1,
               "{styles.recipientText}": 1,
-              "{styles.tokenName}": 1,
               "{styles.textTransform}": 1,
               "{styles.cancelButtonText}": 1,
               "{styles.urlBarText}": 1,
@@ -3970,6 +4016,17 @@
               "{styles.countryName}": 1,
               "{styles.countryCallingCode}": 1,
               "{styles.poweredByText}": 1,
+              "{styles.selectedRowLabel}": 1,
+              "{styles.selectableRowLabel}": 1,
+              "{styles.summaryTitle}": 1,
+              "{styles.headlessSectionTitle}": 1,
+              "{styles.headlessSectionWarning}": 1,
+              "{styles.amountLabel}": 1,
+              "{styles.eventLogTitle}": 1,
+              "{styles.eventLogLine}": 1,
+              "{styles.quoteErrorsTitle}": 1,
+              "{styles.quoteRowDetailLabel}": 1,
+              "{styles.quoteRowDetailValue}": 1,
               "{styles.phoneFlagEmoji}": 1,
               "{styles.phonePrefix}": 1,
               "{[styles.text, !hasMeasured && styles.measuring]}": 1,
@@ -4064,6 +4121,7 @@
               "{styles.accountNameLabelText}": 1,
               "{styles.contactLabel}": 1,
               "{styles.currentAppText}": 1,
+              "{styles.qrErrorText}": 1,
               "{styles.tipsHeader}": 1,
               "{styles.tipBullet}": 1,
               "{styles.deviceName}": 1,
@@ -4072,18 +4130,18 @@
             }
           },
           "twClassName": {
-            "count": 462,
+            "count": 473,
             "values": {
-              "\"font-medium\"": 44,
-              "\"text-center\"": 39,
+              "\"text-center\"": 45,
+              "\"font-medium\"": 43,
               "\"text-alternative\"": 39,
               "\"text-text-alternative\"": 32,
-              "\"text-error-default\"": 27,
+              "\"text-error-default\"": 29,
               "\"text-default\"": 27,
               "\"text-alternative text-center\"": 9,
+              "\"flex-1\"": 7,
               "\"text-info-default\"": 6,
               "\"text-primary-default underline\"": 6,
-              "\"flex-1\"": 6,
               "\"mb-2\"": 6,
               "\"text-text-default\"": 5,
               "\"text-error-default text-center\"": 5,
@@ -4102,8 +4160,9 @@
               "\"shrink\"": 3,
               "\"mt-2\"": 3,
               "\"mt-3\"": 3,
+              "\"mt-1\"": 3,
               "\"font-bold\"": 3,
-              "\"text-center mb-2\"": 3,
+              "{isPnlPositive ? 'text-success-default' : 'text-error-default'}": 3,
               "\"text-warning-default\"": 3,
               "\"text-alternative mt-2\"": 2,
               "\"mb-3\"": 2,
@@ -4112,24 +4171,23 @@
               "\"text-white opacity-80 mt-4\"": 2,
               "\"flex-1 flex-shrink text-text-alternative\"": 2,
               "{isSelected ? 'text-text-default' : 'text-text-alternative'}": 2,
-              "\"text-success-default\"": 2,
               "\"underline\"": 2,
               "\"flex-1 pr-2\"": 2,
               "\"text-right\"": 2,
-              "\"mt-1\"": 2,
               "\"text-primary\"": 2,
               "\"text-default text-center\"": 2,
               "\"text-default leading-none\"": 2,
               "\"text-primary text-primary-default\"": 2,
               "{`text-[${amountFontSize}px] tracking-tight leading-[${amountLineHeight}px] fo...}": 2,
+              "\"text-center mb-2\"": 2,
               "\"text-alternative text-center mb-8\"": 2,
               "\"mb-1\"": 2,
               "{bodyClassName}": 2,
               "\"flex-1 text-center\"": 2,
+              "\"mt-0.5\"": 2,
               "\"text-primary shrink-0\"": 2,
               "\"uppercase\"": 2,
               "{isRoiPositive ? 'text-success-default' : 'text-error-default'}": 2,
-              "{isPnlPositive ? 'text-success-default' : 'text-error-default'}": 2,
               "{hasPnl ? isPnlPositive ? 'text-success-default' : 'text-error-default' : unde...}": 2,
               "\"m-4\"": 2,
               "\"font-medium text-center\"": 1,
@@ -4161,6 +4219,7 @@
               "\"text-text-muted uppercase mb-1 tracking-widest\"": 1,
               "\"text-text-muted mt-0.5\"": 1,
               "\"text-text-muted\"": 1,
+              "\"text-success-default\"": 1,
               "{showClaimButton ? 'pt-1 pb-4' : 'pt-1'}": 1,
               "\"pt-1\"": 1,
               "\"pt-3\"": 1,
@@ -4184,6 +4243,7 @@
               "\"text-primary-default mr-1\"": 1,
               "\"mr-2\"": 1,
               "\"py-3\"": 1,
+              "\"text-center px-10\"": 1,
               "\"max-w-[60%]\"": 1,
               "\"w-8\"": 1,
               "\"px-3\"": 1,
@@ -4204,16 +4264,16 @@
               "\"text-white mb-2\"": 1,
               "\"min-w-0 shrink\"": 1,
               "\"pt-6 pb-3\"": 1,
-              "\"mt-0.5\"": 1,
               "\"text-primary shrink\"": 1,
               "\"-mr-1\"": 1,
-              "\"overflow-hidden text-center\"": 1,
+              "\"text-center mb-1\"": 1,
+              "\"whitespace-nowrap\"": 1,
               "\"text-left self-start mb-4\"": 1,
               "{twClassName}": 1,
               "\"my-4\"": 1,
               "\"mt-5 text-center\"": 1,
               "\"text-right max-w-[100px] flex-wrap\"": 1,
-              "\"w-6 text-right\"": 1,
+              "\"w-8 text-right\"": 1,
               "\"w-[95%]\"": 1,
               "\"my-6 text-center\"": 1,
               "\"flex-row items-center w-[90%]\"": 1,
@@ -4221,8 +4281,8 @@
               "\"text-center p-2\"": 1,
               "\"mt-6\"": 1,
               "\"w-[90%] mb-6\"": 1,
-              "{trade.isPositive ? 'text-success-default' : 'text-error-default'}": 1,
-              "{MOCK_POSITION.isPositive ? 'text-success-default' : 'text-error-default'}": 1,
+              "{isEntry ? 'text-success-default' : 'text-error-default'}": 1,
+              "{pricePercentChange >= 0 ? 'text-success-default' : 'text-error-default'}": 1,
               "{isWinRatePositive ? 'text-success-default' : undefined}": 1,
               "\"text-left mb-6 w-full\"": 1,
               "\"bg-background-alternative ml-2 mt-1 py-0 px-1 rounded-md\"": 1,
@@ -4232,19 +4292,21 @@
             }
           },
           "fontWeight": {
-            "count": 363,
+            "count": 384,
             "values": {
-              "{FontWeight.Medium}": 274,
-              "{FontWeight.Bold}": 61,
-              "{FontWeight.Regular}": 22,
+              "{FontWeight.Medium}": 285,
+              "{FontWeight.Bold}": 67,
+              "{FontWeight.Regular}": 23,
               "{fontWeight}": 2,
+              "{isSelected ? FontWeight.Medium : FontWeight.Regular}": 2,
               "{'600' as FontWeight}": 2,
-              "{isSelected ? FontWeight.Medium : FontWeight.Regular}": 1,
-              "{isBold ? FontWeight.Bold : undefined}": 1
+              "{isOverridden ? FontWeight.Medium : FontWeight.Regular}": 1,
+              "{isBold ? FontWeight.Bold : undefined}": 1,
+              "{titleFontWeight}": 1
             }
           },
           "testID": {
-            "count": 316,
+            "count": 323,
             "values": {
               "{testID}": 8,
               "{TransactionPayComponentIDs.PAY_WITH_SYMBOL}": 4,
@@ -4339,6 +4401,10 @@
               "{MoneyActivityViewTestIds.DATE_HEADER}": 1,
               "{MoneyActivityViewTestIds.TITLE}": 1,
               "{MoneyActivityViewTestIds.EMPTY_LIST_MESSAGE}": 1,
+              "{MoneyHowItWorksViewTestIds.SECTION_TITLE}": 1,
+              "{MoneyHowItWorksViewTestIds.DESCRIPTION_1}": 1,
+              "{MoneyHowItWorksViewTestIds.DESCRIPTION_2}": 1,
+              "{MoneyHowItWorksViewTestIds.FAQ_TITLE}": 1,
               "{MoneyBalanceSummaryTestIds.TITLE}": 1,
               "{MoneyBalanceSummaryTestIds.BALANCE}": 1,
               "{MoneyBalanceSummaryTestIds.APY}": 1,
@@ -4360,6 +4426,7 @@
               "{PerpsOrderViewSelectorsIDs.MARGIN_VALUE}": 1,
               "{PerpsOrderViewSelectorsIDs.LIQUIDATION_PRICE_VALUE}": 1,
               "{PerpsPositionsViewSelectorsIDs.POSITIONS_SECTION_TITLE}": 1,
+              "{PerpsWithdrawViewSelectorsIDs.AVAILABLE_BALANCE_TEXT}": 1,
               "{PerpsWithdrawViewSelectorsIDs.FEE_VALUE}": 1,
               "{PerpsWithdrawViewSelectorsIDs.TIME_VALUE}": 1,
               "{PerpsWithdrawViewSelectorsIDs.RECEIVE_VALUE}": 1,
@@ -4492,8 +4559,10 @@
               "{MULTICHAIN_ACCOUNTS_INTRO_MODAL_TEST_IDS.SECTION_2_DESCRIPTION}": 1,
               "{PrivateKeyListIds.PASSWORD_TITLE}": 1,
               "{PrivateKeyListIds.PASSWORD_ERROR}": 1,
+              "{NetworkDetailsViewSelectorsIDs.BLOCK_EXPLORER_SHEET_SUBMIT_ERROR}": 1,
               "{NetworkDetailsViewSelectorsIDs.RPC_WARNING_BANNER}": 1,
               "{CellComponentSelectorsIDs.BASE_TITLE}": 1,
+              "{NetworkDetailsViewSelectorsIDs.RPC_SHEET_SUBMIT_ERROR}": 1,
               "{NotificationDetailsViewSelectorsIDs.TITLE}": 1,
               "{EnableNotificationModalSelectorsIDs.TITLE}": 1,
               "{NotificationMenuViewSelectorsIDs.TITLE}": 1,
@@ -4541,9 +4610,9 @@
             }
           },
           "numberOfLines": {
-            "count": 194,
+            "count": 196,
             "values": {
-              "1": 169,
+              "1": 171,
               "2": 12,
               "3": 3,
               "{isStackedLayout ? undefined : 2}": 4,
@@ -4637,7 +4706,7 @@
             }
           },
           "key": {
-            "count": 20,
+            "count": 21,
             "values": {
               "{index}": 5,
               "{key}": 4,
@@ -4645,8 +4714,9 @@
               "{`value-${i}`}": 1,
               "{`${word}-${wordIndex}`}": 1,
               "{error}": 1,
+              "{`event-${index}`}": 1,
+              "{`quote-error-${index}`}": 1,
               "{childKey}": 1,
-              "{itemKey}": 1,
               "{`details-${i}`}": 1,
               "{`feature-${i}`}": 1,
               "{`resource-${index}`}": 1,
@@ -4795,7 +4865,7 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "Text": 1715
+        "Text": 1720
       }
     }
   }
