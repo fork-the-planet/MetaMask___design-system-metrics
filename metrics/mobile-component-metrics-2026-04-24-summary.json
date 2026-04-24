@@ -1,11 +1,11 @@
 {
   "project": "mobile",
   "date": "2026-04-24",
-  "mmdsInstances": 4217,
+  "mmdsInstances": 4225,
   "deprecatedInstances": 3012,
-  "mmdsUsageTotal": 2098,
-  "totalInstances": 7229,
-  "migrationPercentage": "58.33",
+  "mmdsUsageTotal": 2102,
+  "totalInstances": 7237,
+  "migrationPercentage": "58.38",
   "componentsTracked": 42,
   "mmdsComponentsAvailable": 63,
   "mmdsComponentsList": [
@@ -124,10 +124,10 @@
       "filesCount": 0
     },
     "@MetaMask/earn": {
-      "mmdsInstances": 258,
+      "mmdsInstances": 266,
       "deprecatedInstances": 286,
-      "totalInstances": 544,
-      "migrationPercentage": "47.43",
+      "totalInstances": 552,
+      "migrationPercentage": "48.19",
       "filesCount": 96
     },
     "@MetaMask/metamask-assets": {

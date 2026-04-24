@@ -1,7 +1,7 @@
 {
   "project": "mobile",
   "date": "2026-04-24",
-  "generatedAt": "2026-04-24T16:10:30.787Z",
+  "generatedAt": "2026-04-24T16:46:13.073Z",
   "mmdsComponentsAvailable": 63,
   "mmdsComponentsList": [
     "ActionListItem",
@@ -75,10 +75,10 @@
   ],
   "summary": {
     "totalComponents": 42,
-    "mmdsInstances": 4217,
+    "mmdsInstances": 4225,
     "deprecatedInstances": 3012,
-    "totalInstances": 7229,
-    "migrationPercentage": "58.33",
+    "totalInstances": 7237,
+    "migrationPercentage": "58.38",
     "fullyMigrated": 0,
     "inProgress": 22,
     "notStarted": 20,
@@ -126,10 +126,10 @@
         "filesCount": 0
       },
       "@MetaMask/earn": {
-        "mmdsInstances": 258,
+        "mmdsInstances": 266,
         "deprecatedInstances": 286,
-        "totalInstances": 544,
-        "migrationPercentage": "47.43",
+        "totalInstances": 552,
+        "migrationPercentage": "48.19",
         "filesCount": 96
       },
       "@MetaMask/metamask-assets": {
@@ -260,9 +260,9 @@
         "Text"
       ],
       "legacyInstances": 1656,
-      "mmdsInstances": 1355,
-      "totalInstances": 3011,
-      "migrationPercentage": "45.00"
+      "mmdsInstances": 1357,
+      "totalInstances": 3013,
+      "migrationPercentage": "45.04"
     },
     {
       "replacementComponent": "Button",
@@ -272,9 +272,9 @@
         "ButtonSecondary"
       ],
       "legacyInstances": 202,
-      "mmdsInstances": 308,
-      "totalInstances": 510,
-      "migrationPercentage": "60.39"
+      "mmdsInstances": 309,
+      "totalInstances": 511,
+      "migrationPercentage": "60.47"
     },
     {
       "replacementComponent": "Icon",
@@ -282,9 +282,9 @@
         "Icon"
       ],
       "legacyInstances": 290,
-      "mmdsInstances": 190,
-      "totalInstances": 480,
-      "migrationPercentage": "39.58"
+      "mmdsInstances": 191,
+      "totalInstances": 481,
+      "migrationPercentage": "39.71"
     },
     {
       "replacementComponent": "BottomSheet",

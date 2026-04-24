@@ -1,6 +1,6 @@
 {
   "component": "Button",
-  "generatedAt": "2026-04-24T16:21:49.237Z",
+  "generatedAt": "2026-04-24T16:57:23.143Z",
   "projects": {
     "extension": {
       "filesScanned": 3089,
@@ -1982,11 +1982,11 @@
       "filesScanned": 6077,
       "targetComponent": "Button",
       "mmds": {
-        "totalInstances": 309,
+        "totalInstances": 310,
         "filesCount": 213,
         "props": {
           "onPress": {
-            "count": 309,
+            "count": 310,
             "values": {
               "{handleClose}": 10,
               "{handleContinue}": 10,
@@ -2062,6 +2062,7 @@
               "{() => setFilter(MoneyActivityFilter.Transfers)}": 1,
               "{handleGoBack}": 1,
               "{onAddMoneyPress}": 1,
+              "{onLinkPress}": 1,
               "{onAddPress}": 1,
               "{handleCtaPress}": 1,
               "{handleViewAllNfts}": 1,
@@ -2211,10 +2212,10 @@
             }
           },
           "variant": {
-            "count": 297,
+            "count": 298,
             "values": {
               "{ButtonVariant.Primary}": 154,
-              "{ButtonVariant.Secondary}": 107,
+              "{ButtonVariant.Secondary}": 108,
               "{ButtonVariant.Tertiary}": 18,
               "{confirmAction.variant || ButtonVariant.Primary}": 5,
               "{trader.isFollowing ? ButtonVariant.Primary : ButtonVariant.Secondary}": 2,
@@ -2232,9 +2233,9 @@
             }
           },
           "size": {
-            "count": 248,
+            "count": 249,
             "values": {
-              "{ButtonSize.Lg}": 173,
+              "{ButtonSize.Lg}": 174,
               "{ButtonSize.Md}": 32,
               "{ButtonBaseSize.Lg}": 24,
               "{ButtonSize.Sm}": 7,
@@ -2248,7 +2249,7 @@
             }
           },
           "testID": {
-            "count": 191,
+            "count": 192,
             "values": {
               "{testID}": 5,
               "{CAMPAIGN_CTA_TEST_IDS.CTA_BUTTON}": 4,
@@ -2306,6 +2307,7 @@
               "{MoneyActivityListTestIds.VIEW_ALL_BUTTON}": 1,
               "{MoneyConvertStablecoinsTestIds.LEARN_MORE_CTA}": 1,
               "{MoneyFooterTestIds.ADD_MONEY_BUTTON}": 1,
+              "{MoneyMetaMaskCardTestIds.LINK_BUTTON}": 1,
               "{MoneyMusdTokenRowTestIds.ADD_BUTTON}": 1,
               "{MoneyOnboardingCardTestIds.CTA_BUTTON}": 1,
               "{MoneyPotentialEarningsTestIds.VIEW_POTENTIAL_EARNINGS_BUTTON}": 1,
@@ -2428,9 +2430,9 @@
             }
           },
           "isFullWidth": {
-            "count": 171,
+            "count": 172,
             "values": {
-              "true (shorthand)": 171
+              "true (shorthand)": 172
             }
           },
           "style": {
@@ -3454,11 +3456,11 @@
         }
       },
       "overall": {
-        "totalInstances": 547,
+        "totalInstances": 548,
         "filesCount": 351,
         "props": {
           "onPress": {
-            "count": 546,
+            "count": 547,
             "values": {
               "{handleContinue}": 16,
               "{handleSubmit}": 13,
@@ -3591,6 +3593,7 @@
               "{() => setFilter(MoneyActivityFilter.Transfers)}": 1,
               "{handleGoBack}": 1,
               "{onAddMoneyPress}": 1,
+              "{onLinkPress}": 1,
               "{onAddPress}": 1,
               "{handleCtaPress}": 1,
               "{() => viewOnBlockExplorer(TransactionDetailRow.TransactionID)}": 1,
@@ -3820,10 +3823,10 @@
             }
           },
           "variant": {
-            "count": 510,
+            "count": 511,
             "values": {
               "{ButtonVariant.Primary}": 154,
-              "{ButtonVariant.Secondary}": 107,
+              "{ButtonVariant.Secondary}": 108,
               "{ButtonVariants.Primary}": 100,
               "{ButtonVariants.Secondary}": 85,
               "{ButtonVariants.Link}": 22,
@@ -3850,9 +3853,9 @@
             }
           },
           "size": {
-            "count": 456,
+            "count": 457,
             "values": {
-              "{ButtonSize.Lg}": 332,
+              "{ButtonSize.Lg}": 333,
               "{ButtonSize.Md}": 60,
               "{ButtonBaseSize.Lg}": 24,
               "{ButtonSize.Sm}": 18,
@@ -3872,7 +3875,7 @@
             }
           },
           "testID": {
-            "count": 302,
+            "count": 303,
             "values": {
               "{testID}": 6,
               "{CAMPAIGN_CTA_TEST_IDS.CTA_BUTTON}": 4,
@@ -3957,6 +3960,7 @@
               "{MoneyActivityListTestIds.VIEW_ALL_BUTTON}": 1,
               "{MoneyConvertStablecoinsTestIds.LEARN_MORE_CTA}": 1,
               "{MoneyFooterTestIds.ADD_MONEY_BUTTON}": 1,
+              "{MoneyMetaMaskCardTestIds.LINK_BUTTON}": 1,
               "{MoneyMusdTokenRowTestIds.ADD_BUTTON}": 1,
               "{MoneyOnboardingCardTestIds.CTA_BUTTON}": 1,
               "{MoneyPotentialEarningsTestIds.VIEW_POTENTIAL_EARNINGS_BUTTON}": 1,
@@ -4421,9 +4425,9 @@
             }
           },
           "isFullWidth": {
-            "count": 171,
+            "count": 172,
             "values": {
-              "true (shorthand)": 171
+              "true (shorthand)": 172
             }
           },
           "width": {
