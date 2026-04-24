@@ -194,7 +194,7 @@
       },
       {
         "name": "Tag",
-        "status": "to_do"
+        "status": "complete"
       },
       {
         "name": "Text",
@@ -223,12 +223,13 @@
     ],
     "totalTickets": 53,
     "statusCounts": {
-      "to_do": 11,
-      "not_doing": 0,
-      "complete": 42
+      "to_do": 0,
+      "not_doing": 1,
+      "complete": 49,
+      "cancelled": 3
     },
     "fetchedAt": "2026-02-23",
-    "updatedAt": "2026-03-06"
+    "updatedAt": "2026-04-24"
   },
   "extension": {
     "source": "DSYS-302",
