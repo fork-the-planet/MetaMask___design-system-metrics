@@ -1,20 +1,20 @@
 {
   "component": "AvatarNetwork",
-  "generatedAt": "2026-04-24T16:53:29.373Z",
+  "generatedAt": "2026-05-01T15:38:39.279Z",
   "projects": {
     "extension": {
-      "filesScanned": 3089,
+      "filesScanned": 3104,
       "targetComponent": "AvatarNetwork",
       "mmds": {
-        "totalInstances": 24,
-        "filesCount": 24,
+        "totalInstances": 25,
+        "filesCount": 25,
         "props": {
           "src": {
-            "count": 24,
+            "count": 25,
             "values": {
               "{networkImageSrc}": 4,
+              "{networkImageUrl}": 3,
               "{networkIcon}": 2,
-              "{networkImageUrl}": 2,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[network.chainId]}": 2,
               "{networkImage}": 2,
               "{getNetworkImageUrl()}": 1,
@@ -32,10 +32,10 @@
             }
           },
           "name": {
-            "count": 23,
+            "count": 24,
             "values": {
               "{networkName}": 8,
-              "{network.name}": 3,
+              "{network.name}": 4,
               "{chainId}": 2,
               "{displayNetwork?.name || displayNetwork?.nickname}": 1,
               "{(dappActiveNetwork as { name?: string })?.name ?? (dappActiveNetwork as { nic...}": 1,
@@ -50,13 +50,14 @@
             }
           },
           "size": {
-            "count": 20,
+            "count": 21,
             "values": {
               "{AvatarNetworkSize.Xs}": 13,
               "{AvatarNetworkSize.Md}": 3,
               "{AvatarNetworkSize.Sm}": 2,
               "{size}": 1,
-              "{AvatarNetworkSize.Lg}": 1
+              "{AvatarNetworkSize.Lg}": 1,
+              "\"md\"": 1
             }
           },
           "className": {
@@ -289,14 +290,14 @@
         }
       },
       "overall": {
-        "totalInstances": 70,
-        "filesCount": 62,
+        "totalInstances": 71,
+        "filesCount": 63,
         "props": {
           "src": {
-            "count": 70,
+            "count": 71,
             "values": {
+              "{networkImageUrl}": 6,
               "{networkIcon}": 5,
-              "{networkImageUrl}": 5,
               "{networkImageSrc}": 4,
               "{CHAIN_ID_TO_NETWORK_IMAGE_URL_MAP[network.chainId]}": 4,
               "{networkImageUrl ?? undefined}": 3,
@@ -345,10 +346,10 @@
             }
           },
           "name": {
-            "count": 69,
+            "count": 70,
             "values": {
               "{networkName}": 12,
-              "{network.name}": 8,
+              "{network.name}": 9,
               "{allNetworks?.[chainId as Hex]?.name}": 3,
               "{networkImageUrl}": 2,
               "{currentNetwork?.nickname}": 2,
@@ -390,7 +391,7 @@
             }
           },
           "size": {
-            "count": 66,
+            "count": 67,
             "values": {
               "{AvatarNetworkSize.Xs}": 40,
               "{AvatarNetworkSize.Sm}": 14,
@@ -399,7 +400,8 @@
               "{size}": 1,
               "{iconSize as AvatarNetworkSize}": 1,
               "{AvatarNetworkSize.Lg}": 1,
-              "{NETWORK_BADGE_SIZE_MAP[size]}": 1
+              "{NETWORK_BADGE_SIZE_MAP[size]}": 1,
+              "\"md\"": 1
             }
           },
           "className": {
@@ -527,7 +529,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 6077,
+      "filesScanned": 6139,
       "targetComponent": "AvatarNetwork",
       "mmds": {
         "totalInstances": 3,

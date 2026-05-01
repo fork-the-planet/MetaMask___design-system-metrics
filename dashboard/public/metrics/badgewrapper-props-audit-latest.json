@@ -1,9 +1,9 @@
 {
   "component": "BadgeWrapper",
-  "generatedAt": "2026-04-24T16:55:39.240Z",
+  "generatedAt": "2026-05-01T15:40:56.913Z",
   "projects": {
     "extension": {
-      "filesScanned": 3089,
+      "filesScanned": 3104,
       "targetComponent": "BadgeWrapper",
       "mmds": {
         "totalInstances": 15,
@@ -297,27 +297,29 @@
       }
     },
     "mobile": {
-      "filesScanned": 6077,
+      "filesScanned": 6139,
       "targetComponent": "BadgeWrapper",
       "mmds": {
-        "totalInstances": 6,
-        "filesCount": 6,
+        "totalInstances": 8,
+        "filesCount": 8,
         "props": {
           "position": {
-            "count": 6,
+            "count": 8,
             "values": {
-              "{BadgeWrapperPosition.BottomRight}": 4,
+              "{BadgeWrapperPosition.BottomRight}": 6,
               "{BadgeWrapperPosition.TopRight}": 2
             }
           },
           "badge": {
-            "count": 6,
+            "count": 8,
             "values": {
               "{!hasViewedCardButton && variant.showBadge ? ( <BadgeStatus testID={WalletView...}": 1,
               "{srcChainHex ? ( <Badge variant={BadgeVariant.Network} size={AvatarSize.Xs} is...}": 1,
               "{getChainHex(pendingPicker.row.tokenAsset) ? ( <Badge variant={BadgeVariant.Ne...}": 1,
               "{chainHex ? ( <Badge variant={BadgeVariant.Network} size={AvatarSize.Xs} isSca...}": 1,
               "{rowChainHex ? ( <Badge variant={BadgeVariant.Network} size={AvatarSize.Xs} is...}": 1,
+              "{sourceChainId ? ( <BadgeNetwork name={sourceToken?.symbol ?? ''} src={getNetw...}": 1,
+              "{<BadgeNetwork name={item.symbol} src={getNetworkImageSource({ chainId: item.c...}": 1,
               "{isNotificationEnabled && unreadNotificationCount > 0 ? ( <BadgeStatus status=...}": 1
             }
           },
@@ -330,11 +332,11 @@
         }
       },
       "deprecated": {
-        "totalInstances": 66,
-        "filesCount": 65,
+        "totalInstances": 65,
+        "filesCount": 64,
         "props": {
           "badgeElement": {
-            "count": 66,
+            "count": 65,
             "values": {
               "{<Badge variant={BadgeVariant.Network} name={networkName} imageSource={network...}": 5,
               "{<Badge testID={'badge-element'} variant={BadgeVariant.Network} imageSource={b...}": 4,
@@ -375,17 +377,16 @@
               "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource( item?....}": 1,
               "{connected ? ( <Badge variant={BadgeVariant.Status} state={BadgeStatusState.Ac...}": 1,
               "{connection.connected ? ( <Badge variant={BadgeVariant.Status} state={BadgeSta...}": 1,
-              "{sourceChainId ? ( <BadgeNetwork name={sourceToken?.symbol ?? ''} imageSource=...}": 1,
-              "{<BadgeNetwork name={item.symbol} imageSource={getNetworkImageSource({ chainId...}": 1,
+              "{<BadgeNetwork name={position.chain} imageSource={getNetworkImageSource({ chai...}": 1,
               "{<Badge variant={BadgeVariant.Network} name={inputNetworkName} imageSource={ge...}": 1,
               "{<Badge variant={BadgeVariant.Network} name={outputNetworkName} imageSource={g...}": 1,
               "{showNetwork && ( <Badge variant={BadgeVariant.Network} imageSource={networkIm...}": 1
             }
           },
           "badgePosition": {
-            "count": 57,
+            "count": 56,
             "values": {
-              "{BadgePosition.BottomRight}": 55,
+              "{BadgePosition.BottomRight}": 54,
               "{{ bottom: 5, right: 5, }}": 1,
               "{BOTTOM_BADGEWRAPPER_BADGEPOSITION}": 1
             }
@@ -420,11 +421,11 @@
         }
       },
       "overall": {
-        "totalInstances": 72,
-        "filesCount": 71,
+        "totalInstances": 73,
+        "filesCount": 72,
         "props": {
           "badgeElement": {
-            "count": 66,
+            "count": 65,
             "values": {
               "{<Badge variant={BadgeVariant.Network} name={networkName} imageSource={network...}": 5,
               "{<Badge testID={'badge-element'} variant={BadgeVariant.Network} imageSource={b...}": 4,
@@ -465,17 +466,16 @@
               "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource( item?....}": 1,
               "{connected ? ( <Badge variant={BadgeVariant.Status} state={BadgeStatusState.Ac...}": 1,
               "{connection.connected ? ( <Badge variant={BadgeVariant.Status} state={BadgeSta...}": 1,
-              "{sourceChainId ? ( <BadgeNetwork name={sourceToken?.symbol ?? ''} imageSource=...}": 1,
-              "{<BadgeNetwork name={item.symbol} imageSource={getNetworkImageSource({ chainId...}": 1,
+              "{<BadgeNetwork name={position.chain} imageSource={getNetworkImageSource({ chai...}": 1,
               "{<Badge variant={BadgeVariant.Network} name={inputNetworkName} imageSource={ge...}": 1,
               "{<Badge variant={BadgeVariant.Network} name={outputNetworkName} imageSource={g...}": 1,
               "{showNetwork && ( <Badge variant={BadgeVariant.Network} imageSource={networkIm...}": 1
             }
           },
           "badgePosition": {
-            "count": 57,
+            "count": 56,
             "values": {
-              "{BadgePosition.BottomRight}": 55,
+              "{BadgePosition.BottomRight}": 54,
               "{{ bottom: 5, right: 5, }}": 1,
               "{BOTTOM_BADGEWRAPPER_BADGEPOSITION}": 1
             }
@@ -495,20 +495,22 @@
             }
           },
           "position": {
-            "count": 6,
+            "count": 8,
             "values": {
-              "{BadgeWrapperPosition.BottomRight}": 4,
+              "{BadgeWrapperPosition.BottomRight}": 6,
               "{BadgeWrapperPosition.TopRight}": 2
             }
           },
           "badge": {
-            "count": 6,
+            "count": 8,
             "values": {
               "{!hasViewedCardButton && variant.showBadge ? ( <BadgeStatus testID={WalletView...}": 1,
               "{srcChainHex ? ( <Badge variant={BadgeVariant.Network} size={AvatarSize.Xs} is...}": 1,
               "{getChainHex(pendingPicker.row.tokenAsset) ? ( <Badge variant={BadgeVariant.Ne...}": 1,
               "{chainHex ? ( <Badge variant={BadgeVariant.Network} size={AvatarSize.Xs} isSca...}": 1,
               "{rowChainHex ? ( <Badge variant={BadgeVariant.Network} size={AvatarSize.Xs} is...}": 1,
+              "{sourceChainId ? ( <BadgeNetwork name={sourceToken?.symbol ?? ''} src={getNetw...}": 1,
+              "{<BadgeNetwork name={item.symbol} src={getNetworkImageSource({ chainId: item.c...}": 1,
               "{isNotificationEnabled && unreadNotificationCount > 0 ? ( <BadgeStatus status=...}": 1
             }
           },
@@ -534,7 +536,7 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "BadgeWrapper": 66
+        "BadgeWrapper": 65
       }
     }
   }

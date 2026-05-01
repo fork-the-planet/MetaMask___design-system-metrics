@@ -1,26 +1,26 @@
 {
   "component": "Box",
-  "generatedAt": "2026-04-24T16:56:56.999Z",
+  "generatedAt": "2026-05-01T15:42:22.629Z",
   "projects": {
     "extension": {
-      "filesScanned": 3089,
+      "filesScanned": 3104,
       "targetComponent": "Box",
       "mmds": {
-        "totalInstances": 1288,
-        "filesCount": 308,
+        "totalInstances": 1316,
+        "filesCount": 312,
         "props": {
           "className": {
-            "count": 671,
+            "count": 686,
             "values": {
-              "\"w-full\"": 37,
+              "\"w-full\"": 39,
+              "\"shrink-0\"": 13,
               "\"min-w-0 flex-1\"": 13,
               "\"flex\"": 12,
-              "\"shrink-0\"": 11,
               "\"flex-1\"": 11,
               "\"overflow-hidden\"": 10,
               "\"rounded-lg\"": 8,
+              "\"flex-1 min-w-0\"": 8,
               "\"flex w-full flex-col\"": 8,
-              "\"flex-1 min-w-0\"": 7,
               "\"bg-muted px-4 py-3\"": 7,
               "\"h-full\"": 7,
               "\"overflow-hidden rounded-xl\"": 6,
@@ -45,7 +45,7 @@
               "{className}": 3,
               "\"flex flex-col gap-2 flex-1 justify-end\"": 3,
               "\"flex flex-col justify-end my-2\"": 3,
-              "\"hover:bg-background-default-hover cursor-pointer transition-all duration-200 w-full text-left outline-none focus:outline-none focus:shadow-none focus-visible:shadow-[inset_0_0_0_2px_var(--color-primary-default)]\"": 3,
+              "\"flex min-h-0 flex-1 flex-col overflow-auto\"": 3,
               "\"flex h-12 items-center rounded-xl border border-border-muted bg-background-muted\"": 3,
               "\"hw-tutorial\"": 3,
               "\"p-4 md:px-8\"": 3,
@@ -62,8 +62,6 @@
               "{twMerge( 'flex-1 py-2 rounded-lg text-center transition-colors', isSaving ? '...}": 2,
               "\"max-w-[65%] flex-wrap justify-end\"": 2,
               "\"flex-1 px-3\"": 2,
-              "\"shrink-0 w-20\"": 2,
-              "\"rounded-xl\"": 2,
               "\"rounded-full\"": 2,
               "\"gap-1\"": 2,
               "{`h-3 rounded-xl ${index === currentStep - 1 ? `w-6 ${activeColor}` : 'w-3 h-3...}": 2,
@@ -77,12 +75,13 @@
               "\"flex flex-1 min-h-0 w-full flex-col\"": 2,
               "\"bg-background-default\"": 2,
               "\"flex flex-col\"": 2,
-              "\"flex min-h-0 flex-1 flex-col overflow-auto\"": 2,
+              "\"flex h-full w-full min-h-0 flex-col\"": 2,
               "\"flex flex-col items-center\"": 2,
               "\"shrink-0 flex-row bg-background-default\"": 2,
               "\"hw-connect__btn-wrapper\"": 2,
               "\"mb-4 w-full\"": 2,
               "\"w-full text-left\"": 2,
+              "\"flex w-full flex-col gap-1\"": 2,
               "\"w-full h-px border-t border-muted\"": 2,
               "\"riv-animation__wallet-ready-container\"": 2,
               "\"privacy-settings__header\"": 2,
@@ -206,7 +205,7 @@
               "\"flex-shrink-0 flex flex-row items-center justify-start p-4 w-full overflow-hidden\"": 1,
               "\"flex-1 min-h-0 overflow-y-auto overflow-x-hidden pb-6\"": 1,
               "\"flex flex-row items-center justify-between\"": 1,
-              "{classnames('srp-list__container', { 'srp-list__container--settings': isSettin...}": 1,
+              "{classnames('srp-list__container', { 'min-h-0': isSettingsPage, })}": 1,
               "\"notifications-settings-box w-full min-w-0\"": 1,
               "\"w-10 min-w-10 shrink-0\"": 1,
               "\"multichain-permissions-list-item\"": 1,
@@ -256,7 +255,6 @@
               "\"flex w-full flex-col overflow-auto\"": 1,
               "\"flex flex-col items-center justify-center\"": 1,
               "\"flex max-w-[218px] flex-col items-center\"": 1,
-              "\"flex h-full w-full min-h-0 flex-col\"": 1,
               "\"flex w-full flex-col px-4 pt-4\"": 1,
               "\"flex w-full flex-col gap-6\"": 1,
               "\"flex h-full w-full min-h-0 flex-1 flex-col\"": 1,
@@ -298,11 +296,24 @@
               "\"page-container h-full md:w-[490px]\"": 1,
               "\"flex w-full p-4 rounded-lg border-l-4 border-l-[var(--color-error-default)]\"": 1,
               "\"flex h-full w-full\"": 1,
+              "\"rounded-xl cursor-pointer\"": 1,
+              "\"flex items-center justify-center w-10 h-10 shrink-0 rounded-xl\"": 1,
               "\"flex justify-center\"": 1,
               "\"multichain-wallet-details-page__rows-container\"": 1,
               "{classnames( 'multichain-wallet-details-page__row', 'multichain-wallet-details...}": 1,
               "\"multichain-wallet-details-page__row\"": 1,
+              "\"rounded-xl\"": 1,
               "\"musd-education-screen\"": 1,
+              "\"flex w-full flex-col gap-6 px-4 pt-4\"": 1,
+              "\"shrink-0 flex-row\"": 1,
+              "\"network-manager__additional-network-item w-full px-4\"": 1,
+              "\"rounded-md px-2 py-1\"": 1,
+              "\"flex h-full min-h-0 w-full flex-col\"": 1,
+              "\"flex-1 overflow-y-auto pt-2\"": 1,
+              "\"px-4\"": 1,
+              "\"min-h-0 flex-1\"": 1,
+              "\"flex h-full min-h-0 w-full flex-col overflow-hidden bg-background-default\"": 1,
+              "\"flex w-full items-center gap-3 rounded-xl border border-border-muted bg-background-section p-3\"": 1,
               "\"mb-6 w-full\"": 1,
               "\"h-full w-full\"": 1,
               "\"creation-successful__settings-actions\"": 1,
@@ -412,16 +423,16 @@
             }
           },
           "flexDirection": {
-            "count": 670,
+            "count": 686,
             "values": {
-              "{BoxFlexDirection.Row}": 345,
-              "{BoxFlexDirection.Column}": 325
+              "{BoxFlexDirection.Row}": 351,
+              "{BoxFlexDirection.Column}": 335
             }
           },
           "alignItems": {
-            "count": 420,
+            "count": 428,
             "values": {
-              "{BoxAlignItems.Center}": 354,
+              "{BoxAlignItems.Center}": 362,
               "{BoxAlignItems.Start}": 34,
               "{BoxAlignItems.End}": 15,
               "{BoxAlignItems.Stretch}": 10,
@@ -430,13 +441,13 @@
             }
           },
           "gap": {
-            "count": 359,
+            "count": 368,
             "values": {
               "0": 2,
-              "1": 75,
-              "2": 136,
-              "3": 35,
-              "4": 92,
+              "1": 77,
+              "2": 139,
+              "3": 33,
+              "4": 98,
               "5": 2,
               "6": 15,
               "{loading ? 2 : 0}": 1,
@@ -444,18 +455,18 @@
             }
           },
           "justifyContent": {
-            "count": 243,
+            "count": 247,
             "values": {
-              "{BoxJustifyContent.Between}": 131,
-              "{BoxJustifyContent.Center}": 80,
-              "{BoxJustifyContent.Start}": 19,
+              "{BoxJustifyContent.Between}": 133,
+              "{BoxJustifyContent.Center}": 81,
+              "{BoxJustifyContent.Start}": 20,
               "{BoxJustifyContent.End}": 11,
               "{BoxJustifyContent.Evenly}": 1,
               "{pathname === ONBOARDING_WELCOME_ROUTE ? BoxJustifyContent.End : BoxJustifyCon...}": 1
             }
           },
           "data-testid": {
-            "count": 218,
+            "count": 220,
             "values": {
               "\"perps-tutorial-step-image\"": 6,
               "{dataTestId}": 5,
@@ -510,6 +521,7 @@
               "\"perps-home-card-skeleton\"": 1,
               "\"perps-section-skeleton\"": 1,
               "\"perps-start-trade-cta-skeleton\"": 1,
+              "\"perps-basic-functionality-off\"": 1,
               "{icon.dataTestId}": 1,
               "\"perps-tutorial-animation-loading\"": 1,
               "\"perps-tutorial-animation\"": 1,
@@ -561,9 +573,6 @@
               "{`account-details-row-${label .toLowerCase() .replaceAll(' ', '-')}`}": 1,
               "{`add-multichain-account-button`}": 1,
               "\"add-multichain-account-icon-box\"": 1,
-              "{`add-wallet-modal-${option.id}`}": 1,
-              "{`add-wallet-modal-snap-account`}": 1,
-              "{`add-wallet-modal-watch-ethereum-account`}": 1,
               "\"account-cell-avatar\"": 1,
               "{`multichain-account-cell-${accountId}`}": 1,
               "\"multichain-account-cell-hovered-addresses\"": 1,
@@ -603,6 +612,10 @@
               "\"import-srp-restore-vault\"": 1,
               "\"qr-srp\"": 1,
               "\"reveal-seed-page\"": 1,
+              "{`choose-wallet-type-${option.id}`}": 1,
+              "{`popular-network-${network.chainId}`}": 1,
+              "\"networks-page-list\"": 1,
+              "\"networks-page-network-success-toast\"": 1,
               "\"notifications-settings-per-types\"": 1,
               "\"notifications-settings-per-account\"": 1,
               "\"wallet-ready\"": 1,
@@ -659,29 +672,30 @@
             }
           },
           "style": {
-            "count": 90,
+            "count": 95,
             "values": {
               "{{ width: '100%' }}": 6,
               "{gatorPermissionDetailRowStyle}": 6,
               "{{ flex: 1 }}": 5,
               "{{ flexShrink: 0 }}": 5,
               "{{ minWidth: 0, flex: 1 }}": 3,
-              "{{ borderRadius: 8 }}": 2,
+              "{{ scrollbarColor: 'var(--color-icon-muted) transparent' }}": 3,
               "{{ flex: 1, minWidth: 0 }}": 2,
+              "{{ width: '4.5rem' }}": 2,
               "{{ minHeight: '70px' }}": 2,
               "{containerStyle}": 2,
               "{{ flexGrow: '1' }}": 2,
-              "{{ flex: '1', alignSelf: 'center' }}": 2,
               "{{ display: 'inline-flex' }}": 2,
               "{{ scrollbarColor: 'var(--color-icon-muted) transparent', }}": 2,
-              "{{ scrollbarColor: 'var(--color-icon-muted) transparent' }}": 2,
               "{{ flex: 1, minHeight: 0 }}": 2,
               "{{ width: '100%', maxWidth: 400 }}": 1,
+              "{{ borderRadius: 16 }}": 1,
+              "{{ borderRadius: 8 }}": 1,
               "{{ width: 40, height: 40, borderRadius: 8, flexShrink: 0, }}": 1,
               "{wrapperStyle}": 1,
               "{{ height: ASSET_CELL_HEIGHT }}": 1,
               "{{ width: `${CLOSE_PERCENT_CHIP_WIDTH_REM}rem`, flexShrink: 0, }}": 1,
-              "{{ marginRight: 'calc(80px + 8px)' }}": 1,
+              "{{ marginRight: 'calc(72px + 8px)' }}": 1,
               "{{ width: '100%', height, borderRadius: '8px', overflow: 'hidden', }}": 1,
               "{{ width: '96px', height: '96px', borderRadius: '50%', backgroundColor: 'var(-...}": 1,
               "{{ gap: '1px' }}": 1,
@@ -690,7 +704,11 @@
               "{{ backgroundImage: 'url(https://images.ctfassets.net/9sy2a0egs6zh/3IxIZWE6JZH...}": 1,
               "{{ height: 64 }}": 1,
               "{{ position: 'relative' }}": 1,
+              "{isSettingsPage ? { maxHeight: '100%', minHeight: 0, overflowY: 'auto', } : un...}": 1,
               "{{ cursor: 'pointer' }}": 1,
+              "{{ alignItems: 'center' }}": 1,
+              "{{ flex: 1, minWidth: 0, alignItems: 'center', }}": 1,
+              "{{ flex: '1', alignSelf: 'center' }}": 1,
               "{{ flex: '1', alignSelf: 'center', cursor: 'pointer' }}": 1,
               "{style}": 1,
               "{{ cursor: isLoadingState ? 'not-allowed' : 'pointer', }}": 1,
@@ -724,19 +742,39 @@
             }
           },
           "paddingBottom": {
-            "count": 88,
+            "count": 94,
             "values": {
               "0": 2,
               "1": 10,
-              "2": 24,
-              "3": 8,
-              "4": 29,
-              "6": 7,
+              "2": 25,
+              "3": 9,
+              "4": 31,
+              "6": 8,
               "8": 3,
               "9": 1,
+              "10": 1,
               "12": 2,
               "{rootPaddingBottom}": 1,
               "{paddingBottomValue}": 1
+            }
+          },
+          "paddingTop": {
+            "count": 85,
+            "values": {
+              "0": 2,
+              "1": 5,
+              "2": 15,
+              "3": 16,
+              "4": 33,
+              "6": 2,
+              "8": 3,
+              "10": 1,
+              "12": 2,
+              "{sectionIndex > 0 ? 4 : 2}": 2,
+              "{hasPositions ? 0 : 4}": 1,
+              "{paddingTopValue}": 1,
+              "{paddingTop === undefined ? 0 : paddingTop}": 1,
+              "{hasDuplicates ? 4 : 0}": 1
             }
           },
           "marginBottom": {
@@ -754,59 +792,41 @@
             }
           },
           "padding": {
-            "count": 81,
+            "count": 80,
             "values": {
               "1": 4,
               "2": 9,
               "3": 12,
-              "4": 53,
+              "4": 52,
               "6": 2,
               "{isSettingsPage ? 0 : 4}": 1
             }
           },
-          "paddingTop": {
-            "count": 81,
-            "values": {
-              "0": 2,
-              "1": 5,
-              "2": 16,
-              "3": 14,
-              "4": 31,
-              "6": 2,
-              "8": 3,
-              "12": 2,
-              "{sectionIndex > 0 ? 4 : 2}": 2,
-              "{hasPositions ? 0 : 4}": 1,
-              "{paddingTopValue}": 1,
-              "{paddingTop === undefined ? 0 : paddingTop}": 1,
-              "{hasDuplicates ? 4 : 0}": 1
-            }
-          },
           "paddingLeft": {
-            "count": 78,
+            "count": 79,
             "values": {
               "1": 1,
               "2": 7,
               "3": 1,
-              "4": 66,
+              "4": 67,
               "5": 2,
               "6": 1
             }
           },
           "paddingRight": {
-            "count": 73,
+            "count": 74,
             "values": {
               "2": 5,
               "3": 1,
-              "4": 65,
+              "4": 66,
               "5": 2
             }
           },
           "backgroundColor": {
-            "count": 72,
+            "count": 71,
             "values": {
-              "{BoxBackgroundColor.BackgroundDefault}": 24,
-              "{BoxBackgroundColor.BackgroundMuted}": 13,
+              "{BoxBackgroundColor.BackgroundDefault}": 21,
+              "{BoxBackgroundColor.BackgroundMuted}": 14,
               "{BoxBackgroundColor.BackgroundSection}": 7,
               "{BoxBackgroundColor.ErrorMuted}": 4,
               "{BoxBackgroundColor.PrimaryDefault}": 4,
@@ -814,6 +834,7 @@
               "{BoxBackgroundColor.BackgroundAlternative}": 2,
               "{BoxBackgroundColor.Transparent}": 2,
               "{BoxBackgroundColor.WarningMuted}": 2,
+              "{BoxBackgroundColor.SuccessMuted}": 2,
               "{selected ? BoxBackgroundColor.BackgroundMuted : BoxBackgroundColor.Transparent}": 1,
               "{isLoadingState ? BoxBackgroundColor.Transparent : BoxBackgroundColor.InfoMuted}": 1,
               "{selected && !startAccessory ? BoxBackgroundColor.BackgroundMuted : BoxBackgro...}": 1,
@@ -821,14 +842,13 @@
               "{isSelected ? BoxBackgroundColor.PrimaryMuted : undefined}": 1,
               "{showBackground ? BoxBackgroundColor.BackgroundAlternative : undefined}": 1,
               "{BoxBackgroundColor.InfoMuted}": 1,
-              "{BoxBackgroundColor.SuccessMuted}": 1,
               "{isQuizWord ? BoxBackgroundColor.BackgroundDefault : BoxBackgroundColor.Backgr...}": 1,
               "{selectedPaymentMethod === PAYMENT_TYPES.byCrypto ? BoxBackgroundColor.Primary...}": 1,
               "{selectedPaymentMethod === PAYMENT_TYPES.byCard ? BoxBackgroundColor.PrimaryMu...}": 1
             }
           },
           "onClick": {
-            "count": 64,
+            "count": 63,
             "values": {
               "{onClick}": 8,
               "{() => handleSelect(value)}": 5,
@@ -846,9 +866,6 @@
               "{() => { // Without this check, the account will be selected after // the acco...}": 1,
               "{toggle}": 1,
               "{handleCreateMultichainAccountClick}": 1,
-              "{() => handleOptionClick(option)}": 1,
-              "{() => handleSnapAccountLinkClick()}": 1,
-              "{() => handleAddWatchAccount()}": 1,
               "{handleDefaultAddressClick}": 1,
               "{item.onClick}": 1,
               "{displayDefaultAddress ? handleDefaultAddressClick : undefined}": 1,
@@ -859,6 +876,8 @@
               "{() => onClick?.()}": 1,
               "{onSelect}": 1,
               "{() => { onSelect?.(chainId); onClose(); }}": 1,
+              "{option.onClick}": 1,
+              "{async () => { await dispatch(addNetwork(network, { setActive: false })); disp...}": 1,
               "{isInteractive ? () => checkboxRef.current?.toggle() : undefined}": 1,
               "{() => handleItemSelected(item)}": 1,
               "{() => { dispatch( setEditedNetwork({ chainId: network.chainId, }), ); dispatc...}": 1,
@@ -893,11 +912,11 @@
             }
           },
           "key": {
-            "count": 47,
+            "count": 46,
             "values": {
               "{index}": 6,
               "{value}": 5,
-              "{network.chainId}": 3,
+              "{network.chainId}": 4,
               "{section.titleKey}": 1,
               "{groupIndex}": 1,
               "{`tp-edit-${preset}`}": 1,
@@ -906,9 +925,6 @@
               "{section.id}": 1,
               "{accountId}": 1,
               "{`add-multichain-account-button-${walletId}`}": 1,
-              "{option.id}": 1,
-              "\"snap-account\"": 1,
-              "\"watch-ethereum-account\"": 1,
               "{`multichain-account-cell-${accountId}`}": 1,
               "{item.textKey}": 1,
               "{i}": 1,
@@ -919,6 +935,7 @@
               "{chainId}": 1,
               "{account.address}": 1,
               "{brand.deviceName}": 1,
+              "{option.id}": 1,
               "{walletGroup.walletId}": 1,
               "{item.id}": 1,
               "\"recovery-phrase-chips\"": 1,
@@ -980,19 +997,12 @@
             }
           },
           "borderColor": {
-            "count": 14,
+            "count": 11,
             "values": {
-              "{BoxBorderColor.BorderMuted}": 9,
+              "{BoxBorderColor.BorderMuted}": 6,
               "{BoxBorderColor.BorderDefault}": 3,
               "{BoxBorderColor.Transparent}": 1,
               "{isTargetIndex ? BoxBorderColor.PrimaryDefault : BoxBorderColor.BorderMuted}": 1
-            }
-          },
-          "tabIndex": {
-            "count": 11,
-            "values": {
-              "0": 10,
-              "{isInteractive ? 0 : undefined}": 1
             }
           },
           "marginHorizontal": {
@@ -1000,6 +1010,13 @@
             "values": {
               "4": 7,
               "5": 3
+            }
+          },
+          "tabIndex": {
+            "count": 9,
+            "values": {
+              "0": 8,
+              "{isInteractive ? 0 : undefined}": 1
             }
           },
           "aria-label": {
@@ -1037,21 +1054,21 @@
               "4": 1
             }
           },
-          "onKeyDown": {
-            "count": 6,
-            "values": {
-              "{(e: React.KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') { e.pre...}": 3,
-              "{(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClic...}": 1,
-              "{onKeyDown}": 1,
-              "{(e: React.KeyboardEvent<HTMLDivElement>) => { if ((e.key === ' ' || e.key ===...}": 1
-            }
-          },
           "borderWidth": {
             "count": 4,
             "values": {
               "1": 2,
               "2": 1,
               "{isTargetIndex ? 2 : 1}": 1
+            }
+          },
+          "onKeyDown": {
+            "count": 4,
+            "values": {
+              "{(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClic...}": 1,
+              "{onKeyDown}": 1,
+              "{(e: React.KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') { e.pre...}": 1,
+              "{(e: React.KeyboardEvent<HTMLDivElement>) => { if ((e.key === ' ' || e.key ===...}": 1
             }
           },
           "flexWrap": {
@@ -1166,14 +1183,14 @@
         }
       },
       "deprecated": {
-        "totalInstances": 1191,
+        "totalInstances": 1177,
         "filesCount": 382,
         "props": {
           "display": {
-            "count": 763,
+            "count": 748,
             "values": {
-              "{Display.Flex}": 711,
-              "{Display.InlineFlex}": 23,
+              "{Display.Flex}": 699,
+              "{Display.InlineFlex}": 20,
               "{Display.Block}": 16,
               "{Display.Inline}": 5,
               "{Display.InlineBlock}": 2,
@@ -1185,10 +1202,10 @@
             }
           },
           "flexDirection": {
-            "count": 413,
+            "count": 401,
             "values": {
-              "{FlexDirection.Column}": 261,
-              "{FlexDirection.Row}": 149,
+              "{FlexDirection.Column}": 257,
+              "{FlexDirection.Row}": 141,
               "{isCollapsible ? FlexDirection.Column : FlexDirection.Row}": 1,
               "{showAvatarAccount ? FlexDirection.Row : FlexDirection.Column}": 1,
               "{FlexDirection.RowReverse}": 1
@@ -1208,9 +1225,9 @@
             }
           },
           "className": {
-            "count": 343,
+            "count": 331,
             "values": {
-              "\"settings-page__content-row\"": 42,
+              "\"settings-page__content-row\"": 30,
               "\"dropdown-editor__item-dropdown\"": 3,
               "\"snap-home-menu__item\"": 3,
               "\"gap-1\"": 3,
@@ -1462,8 +1479,8 @@
               "\"multichain-account-list-item__account-name\"": 1,
               "\"network-indicator\"": 1,
               "\"networks-tab__scrollable\"": 1,
-              "\"networks-tab__network-form__footer\"": 1,
-              "\"srp-reveal-list\"": 1,
+              "{`networks-tab__network-form__footer${ usePageFooterStyle ? ' networks-tab__ne...}": 1,
+              "\"srp-reveal-list h-full min-h-0 overflow-y-auto\"": 1,
               "\"srp-reveal-list__divider\"": 1,
               "\"srp-reveal-list__srp-list\"": 1,
               "\"smart-transaction-status-page__description\"": 1,
@@ -1480,9 +1497,9 @@
             }
           },
           "justifyContent": {
-            "count": 318,
+            "count": 310,
             "values": {
-              "{JustifyContent.spaceBetween}": 148,
+              "{JustifyContent.spaceBetween}": 140,
               "{JustifyContent.center}": 129,
               "{JustifyContent.flexEnd}": 17,
               "{JustifyContent.flexStart}": 15,
@@ -1495,7 +1512,7 @@
             }
           },
           "gap": {
-            "count": 251,
+            "count": 243,
             "values": {
               "0": 1,
               "1": 44,
@@ -1503,7 +1520,6 @@
               "3": 25,
               "4": 96,
               "6": 2,
-              "{[null, 4]}": 8,
               "{showAvatarAccount ? 2 : 0}": 1
             }
           },
@@ -1637,7 +1653,7 @@
             }
           },
           "data-testid": {
-            "count": 124,
+            "count": 114,
             "values": {
               "{dataTestId}": 9,
               "\"notifications-list-loading\"": 3,
@@ -1651,8 +1667,6 @@
               "\"no-connections\"": 2,
               "\"network-loader\"": 2,
               "\"pay-token-amount\"": 2,
-              "\"advanced-setting-show-testnet-conversion\"": 2,
-              "\"advanced-setting-dismiss-reminder\"": 2,
               "\"inline-alert\"": 1,
               "\"defi-tab-error-message\"": 1,
               "\"nft-default-image\"": 1,
@@ -1714,6 +1728,8 @@
               "\"pay-with-row-skeleton\"": 1,
               "\"pay-with-pill\"": 1,
               "\"pay-with-row\"": 1,
+              "\"receive-row-skeleton\"": 1,
+              "\"receive-row\"": 1,
               "\"total-row-skeleton\"": 1,
               "\"total-row\"": 1,
               "\"simulation-details-amount-pill\"": 1,
@@ -1724,21 +1740,13 @@
               "{`notification-list-item-${notification.id}`}": 1,
               "\"notifications-list-placeholder\"": 1,
               "\"notifications-list\"": 1,
-              "\"advanced-setting-state-logs\"": 1,
-              "\"advanced-setting-reset-account\"": 1,
-              "\"advanced-setting-dismiss-smart-account-suggestion-enabled\"": 1,
-              "\"advanced-setting-enable-smart-transactions\"": 1,
-              "\"advanced-setting-hex-data\"": 1,
-              "\"advanced-setting-show-testnets\"": 1,
-              "\"advanced-setting-show-extension-in-full-size-view\"": 1,
-              "\"advanced-setting-auto-lock\"": 1,
-              "\"advanced-setting-data-backup\"": 1,
               "\"participate-in-meta-metrics-container\"": 1,
               "\"select-srp-container\"": 1,
               "\"advanced-setting-choose-your-network\"": 1,
               "\"setting-safe-chains-validation\"": 1,
               "\"setting-ipfs-gateway\"": 1,
               "\"advanced-setting-gas-fee-estimation\"": 1,
+              "\"advanced-setting-show-testnet-conversion\"": 1,
               "\"setting-skip-deep-link-interstitial\"": 1
             }
           },
@@ -1764,7 +1772,7 @@
           "backgroundColor": {
             "count": 108,
             "values": {
-              "{BackgroundColor.backgroundDefault}": 36,
+              "{BackgroundColor.backgroundDefault}": 35,
               "{BackgroundColor.backgroundAlternative}": 14,
               "{BackgroundColor.primaryDefault}": 8,
               "{BackgroundColor.transparent}": 8,
@@ -1795,7 +1803,8 @@
               "{showAdvancedDetails ? BackgroundColor.infoMuted : BackgroundColor.transparent}": 1,
               "{hasMoreThanOneGasFeeTokenToChooseFrom ? BackgroundColor.backgroundMuted : Bac...}": 1,
               "{canEdit ? BackgroundColor.backgroundMuted : BackgroundColor.transparent}": 1,
-              "{BackgroundColor.errorMuted}": 1
+              "{BackgroundColor.errorMuted}": 1,
+              "{usePageFooterStyle ? BackgroundColor.transparent : BackgroundColor.background...}": 1
             }
           },
           "paddingLeft": {
@@ -1846,7 +1855,7 @@
             }
           },
           "marginTop": {
-            "count": 95,
+            "count": 94,
             "values": {
               "0": 1,
               "1": 8,
@@ -1854,7 +1863,7 @@
               "3": 4,
               "4": 49,
               "5": 1,
-              "6": 8,
+              "6": 7,
               "8": 1,
               "12": 4,
               "{isPopUp ? 0 : 4}": 2,
@@ -1897,45 +1906,6 @@
             "values": {
               "{BlockSize.Full}": 58,
               "{BlockSize.Min}": 2
-            }
-          },
-          "ref": {
-            "count": 57,
-            "values": {
-              "{ref}": 10,
-              "{setBoxRef}": 4,
-              "{this.settingsRefs[4]}": 3,
-              "{this.settingsRefs[9]}": 3,
-              "{popoverRef}": 2,
-              "{this.settingsRefs[0]}": 2,
-              "{this.settingsRefs[3]}": 2,
-              "{this.settingsRefs[5]}": 2,
-              "{this.settingsRefs[8]}": 2,
-              "{this.settingsRefs[7]}": 2,
-              "{this.settingsRefs[10]}": 2,
-              "{containerRef}": 1,
-              "{dropdownRef}": 1,
-              "{contentRef}": 1,
-              "{scrollContainerRef}": 1,
-              "{titleRef}": 1,
-              "{dropdown}": 1,
-              "{provided.innerRef}": 1,
-              "{providedDrag.innerRef}": 1,
-              "{headerRef}": 1,
-              "{!isLoading && !hasError ? ref : undefined}": 1,
-              "{this.settingsRefs[1]}": 1,
-              "{this.settingsRefs[6]}": 1,
-              "{settingsRefs[1] as React.RefObject<HTMLDivElement>}": 1,
-              "{settingsRefs[2] as React.RefObject<HTMLDivElement>}": 1,
-              "{settingsRef}": 1,
-              "{scrollableRef}": 1,
-              "{this.settingsRefs[2]}": 1,
-              "{this.settingsRefs[19]}": 1,
-              "{this.settingsRefs[14]}": 1,
-              "{this.settingsRefs[11]}": 1,
-              "{this.settingsRefs[12]}": 1,
-              "{this.settingsRefs[13]}": 1,
-              "{this.settingsRefs[17]}": 1
             }
           },
           "marginBottom": {
@@ -1984,6 +1954,42 @@
               "{() => { handleCopy(checksummedAddress); trackEvent({ category: MetaMetricsEve...}": 1,
               "{() => onClick(recipient)}": 1,
               "{() => onClick?.()}": 1
+            }
+          },
+          "ref": {
+            "count": 45,
+            "values": {
+              "{ref}": 10,
+              "{setBoxRef}": 4,
+              "{popoverRef}": 2,
+              "{this.settingsRefs[4]}": 2,
+              "{containerRef}": 1,
+              "{dropdownRef}": 1,
+              "{contentRef}": 1,
+              "{scrollContainerRef}": 1,
+              "{titleRef}": 1,
+              "{dropdown}": 1,
+              "{provided.innerRef}": 1,
+              "{providedDrag.innerRef}": 1,
+              "{headerRef}": 1,
+              "{!isLoading && !hasError ? ref : undefined}": 1,
+              "{settingsRefs[1] as React.RefObject<HTMLDivElement>}": 1,
+              "{settingsRefs[2] as React.RefObject<HTMLDivElement>}": 1,
+              "{settingsRef}": 1,
+              "{scrollableRef}": 1,
+              "{this.settingsRefs[2]}": 1,
+              "{this.settingsRefs[19]}": 1,
+              "{this.settingsRefs[14]}": 1,
+              "{this.settingsRefs[7]}": 1,
+              "{this.settingsRefs[11]}": 1,
+              "{this.settingsRefs[8]}": 1,
+              "{this.settingsRefs[9]}": 1,
+              "{this.settingsRefs[10]}": 1,
+              "{this.settingsRefs[12]}": 1,
+              "{this.settingsRefs[13]}": 1,
+              "{this.settingsRefs[17]}": 1,
+              "{this.settingsRefs[0]}": 1,
+              "{this.settingsRefs[3]}": 1
             }
           },
           "key": {
@@ -2332,35 +2338,35 @@
         }
       },
       "overall": {
-        "totalInstances": 2479,
-        "filesCount": 690,
+        "totalInstances": 2493,
+        "filesCount": 694,
         "props": {
           "flexDirection": {
-            "count": 1083,
+            "count": 1087,
             "values": {
-              "{BoxFlexDirection.Row}": 345,
-              "{BoxFlexDirection.Column}": 325,
-              "{FlexDirection.Column}": 261,
-              "{FlexDirection.Row}": 149,
+              "{BoxFlexDirection.Row}": 351,
+              "{BoxFlexDirection.Column}": 335,
+              "{FlexDirection.Column}": 257,
+              "{FlexDirection.Row}": 141,
               "{isCollapsible ? FlexDirection.Column : FlexDirection.Row}": 1,
               "{showAvatarAccount ? FlexDirection.Row : FlexDirection.Column}": 1,
               "{FlexDirection.RowReverse}": 1
             }
           },
           "className": {
-            "count": 1014,
+            "count": 1017,
             "values": {
-              "\"settings-page__content-row\"": 42,
-              "\"w-full\"": 38,
+              "\"w-full\"": 40,
+              "\"settings-page__content-row\"": 30,
+              "\"shrink-0\"": 13,
               "\"min-w-0 flex-1\"": 13,
               "\"flex\"": 12,
-              "\"shrink-0\"": 11,
               "\"flex-1\"": 11,
               "\"overflow-hidden\"": 10,
               "\"rounded-lg\"": 8,
+              "\"flex-1 min-w-0\"": 8,
               "\"flex w-full flex-col\"": 8,
               "\"main-container asset__container\"": 7,
-              "\"flex-1 min-w-0\"": 7,
               "\"bg-muted px-4 py-3\"": 7,
               "\"h-full\"": 7,
               "\"min-w-0\"": 6,
@@ -2389,8 +2395,8 @@
               "\"flex flex-col justify-end my-2\"": 3,
               "\"snap-home-menu__item\"": 3,
               "\"add-non-evm-account-modal\"": 3,
-              "\"hover:bg-background-default-hover cursor-pointer transition-all duration-200 w-full text-left outline-none focus:outline-none focus:shadow-none focus-visible:shadow-[inset_0_0_0_2px_var(--color-primary-default)]\"": 3,
               "\"simulation-details-layout\"": 3,
+              "\"flex min-h-0 flex-1 flex-col overflow-auto\"": 3,
               "\"flex h-12 items-center rounded-xl border border-border-muted bg-background-muted\"": 3,
               "\"hw-tutorial\"": 3,
               "\"p-4 md:px-8\"": 3,
@@ -2412,8 +2418,6 @@
               "{twMerge( 'flex-1 py-2 rounded-lg text-center transition-colors', isSaving ? '...}": 2,
               "\"max-w-[65%] flex-wrap justify-end\"": 2,
               "\"flex-1 px-3\"": 2,
-              "\"shrink-0 w-20\"": 2,
-              "\"rounded-xl\"": 2,
               "\"rounded-full\"": 2,
               "{`h-3 rounded-xl ${index === currentStep - 1 ? `w-6 ${activeColor}` : 'w-3 h-3...}": 2,
               "{isSaving ? 'flex-1 py-1.5 rounded-lg bg-muted text-center opacity-50 cursor-n...}": 2,
@@ -2449,7 +2453,7 @@
               "\"flex flex-1 min-h-0 w-full flex-col\"": 2,
               "\"bg-background-default\"": 2,
               "\"flex flex-col\"": 2,
-              "\"flex min-h-0 flex-1 flex-col overflow-auto\"": 2,
+              "\"flex h-full w-full min-h-0 flex-col\"": 2,
               "\"flex flex-col items-center\"": 2,
               "\"shrink-0 flex-row bg-background-default\"": 2,
               "\"hw-connect__btn-wrapper\"": 2,
@@ -2457,6 +2461,7 @@
               "\"create-snap-account-page\"": 2,
               "\"w-full text-left\"": 2,
               "\"connect-page__accounts-empty\"": 2,
+              "\"flex w-full flex-col gap-1\"": 2,
               "\"w-full h-px border-t border-muted\"": 2,
               "\"riv-animation__wallet-ready-container\"": 2,
               "\"privacy-settings__header\"": 2,
@@ -2681,7 +2686,7 @@
               "\"import-tokens-modal__body\"": 1,
               "\"import-tokens-modal__custom-token-form__container\"": 1,
               "\"flex flex-row items-center justify-between\"": 1,
-              "{classnames('srp-list__container', { 'srp-list__container--settings': isSettin...}": 1,
+              "{classnames('srp-list__container', { 'min-h-0': isSettingsPage, })}": 1,
               "{classnames('multichain-network-list-item', { 'multichain-network-list-item--s...}": 1,
               "\"multichain-network-list-item__rpc-endpoint\"": 1,
               "\"add-block-explorer-modal\"": 1,
@@ -2809,7 +2814,6 @@
               "\"flex w-full flex-col overflow-auto\"": 1,
               "\"flex flex-col items-center justify-center\"": 1,
               "\"flex max-w-[218px] flex-col items-center\"": 1,
-              "\"flex h-full w-full min-h-0 flex-col\"": 1,
               "\"flex w-full flex-col px-4 pt-4\"": 1,
               "\"flex w-full flex-col gap-6\"": 1,
               "\"flex h-full w-full min-h-0 flex-1 flex-col\"": 1,
@@ -2853,12 +2857,25 @@
               "\"page-container h-full md:w-[490px]\"": 1,
               "\"flex w-full p-4 rounded-lg border-l-4 border-l-[var(--color-error-default)]\"": 1,
               "\"flex h-full w-full\"": 1,
+              "\"rounded-xl cursor-pointer\"": 1,
+              "\"flex items-center justify-center w-10 h-10 shrink-0 rounded-xl\"": 1,
               "\"flex justify-center\"": 1,
               "\"connect-page__edit-icon\"": 1,
               "\"multichain-wallet-details-page__rows-container\"": 1,
               "{classnames( 'multichain-wallet-details-page__row', 'multichain-wallet-details...}": 1,
               "\"multichain-wallet-details-page__row\"": 1,
+              "\"rounded-xl\"": 1,
               "\"musd-education-screen\"": 1,
+              "\"flex w-full flex-col gap-6 px-4 pt-4\"": 1,
+              "\"shrink-0 flex-row\"": 1,
+              "\"network-manager__additional-network-item w-full px-4\"": 1,
+              "\"rounded-md px-2 py-1\"": 1,
+              "\"flex h-full min-h-0 w-full flex-col\"": 1,
+              "\"flex-1 overflow-y-auto pt-2\"": 1,
+              "\"px-4\"": 1,
+              "\"min-h-0 flex-1\"": 1,
+              "\"flex h-full min-h-0 w-full flex-col overflow-hidden bg-background-default\"": 1,
+              "\"flex w-full items-center gap-3 rounded-xl border border-border-muted bg-background-section p-3\"": 1,
               "\"notifications__list__read__all__button\"": 1,
               "\"notifications__list\"": 1,
               "\"mb-6 w-full\"": 1,
@@ -2940,10 +2957,10 @@
               "\"multichain-account-list-item__account-name\"": 1,
               "\"flex justify-center items-center flex-1\"": 1,
               "\"networks-tab__scrollable\"": 1,
-              "\"networks-tab__network-form__footer\"": 1,
+              "{`networks-tab__network-form__footer${ usePageFooterStyle ? ' networks-tab__ne...}": 1,
               "\"change-password\"": 1,
               "\"create-password__terms-container\"": 1,
-              "\"srp-reveal-list\"": 1,
+              "\"srp-reveal-list h-full min-h-0 overflow-y-auto\"": 1,
               "\"srp-reveal-list__divider\"": 1,
               "\"srp-reveal-list__srp-list\"": 1,
               "{classnames( 'account-selector-modal__account w-full flex items-center gap-4 p...}": 1,
@@ -3003,9 +3020,9 @@
             }
           },
           "alignItems": {
-            "count": 780,
+            "count": 788,
             "values": {
-              "{BoxAlignItems.Center}": 354,
+              "{BoxAlignItems.Center}": 362,
               "{AlignItems.center}": 311,
               "{BoxAlignItems.Start}": 34,
               "{AlignItems.flexStart}": 21,
@@ -3022,10 +3039,10 @@
             }
           },
           "display": {
-            "count": 763,
+            "count": 748,
             "values": {
-              "{Display.Flex}": 711,
-              "{Display.InlineFlex}": 23,
+              "{Display.Flex}": 699,
+              "{Display.InlineFlex}": 20,
               "{Display.Block}": 16,
               "{Display.Inline}": 5,
               "{Display.InlineBlock}": 2,
@@ -3037,29 +3054,28 @@
             }
           },
           "gap": {
-            "count": 610,
+            "count": 611,
             "values": {
               "0": 3,
-              "1": 119,
-              "2": 210,
-              "3": 60,
-              "4": 188,
+              "1": 121,
+              "2": 213,
+              "3": 58,
+              "4": 194,
               "5": 2,
               "6": 17,
-              "{[null, 4]}": 8,
               "{showAvatarAccount ? 2 : 0}": 1,
               "{loading ? 2 : 0}": 1,
               "{showSkeletonLoader ? 2 : 0}": 1
             }
           },
           "justifyContent": {
-            "count": 561,
+            "count": 557,
             "values": {
-              "{JustifyContent.spaceBetween}": 148,
-              "{BoxJustifyContent.Between}": 131,
+              "{JustifyContent.spaceBetween}": 140,
+              "{BoxJustifyContent.Between}": 133,
               "{JustifyContent.center}": 129,
-              "{BoxJustifyContent.Center}": 80,
-              "{BoxJustifyContent.Start}": 19,
+              "{BoxJustifyContent.Center}": 81,
+              "{BoxJustifyContent.Start}": 20,
               "{JustifyContent.flexEnd}": 17,
               "{JustifyContent.flexStart}": 15,
               "{BoxJustifyContent.End}": 11,
@@ -3074,7 +3090,7 @@
             }
           },
           "data-testid": {
-            "count": 342,
+            "count": 334,
             "values": {
               "{dataTestId}": 14,
               "{testId}": 6,
@@ -3092,14 +3108,13 @@
               "{`select-network-item-${network.chainId}`}": 2,
               "\"select-srp-container\"": 2,
               "{`network-list-item-${chainId}`}": 2,
+              "{`popular-network-${network.chainId}`}": 2,
               "\"nft-image\"": 2,
               "\"multichain-address-row\"": 2,
               "\"multichain-address-rows-list\"": 2,
               "\"pay-token-amount\"": 2,
               "\"perps-market-detail-back-button\"": 2,
               "\"perps-order-entry-back-button\"": 2,
-              "\"advanced-setting-show-testnet-conversion\"": 2,
-              "\"advanced-setting-dismiss-reminder\"": 2,
               "\"inline-alert\"": 1,
               "\"defi-tab-error-message\"": 1,
               "\"nft-default-image\"": 1,
@@ -3148,6 +3163,7 @@
               "\"perps-home-card-skeleton\"": 1,
               "\"perps-section-skeleton\"": 1,
               "\"perps-start-trade-cta-skeleton\"": 1,
+              "\"perps-basic-functionality-off\"": 1,
               "{icon.dataTestId}": 1,
               "\"perps-tutorial-animation-loading\"": 1,
               "\"perps-tutorial-animation\"": 1,
@@ -3205,7 +3221,6 @@
               "\"srp-list\"": 1,
               "{name}": 1,
               "{`network-rpc-name-button-${chainId}`}": 1,
-              "{`popular-network-${network.chainId}`}": 1,
               "\"test-add-button\"": 1,
               "\"additional-network-item\"": 1,
               "\"network-manager-select-all\"": 1,
@@ -3224,9 +3239,6 @@
               "{`account-details-row-${label .toLowerCase() .replaceAll(' ', '-')}`}": 1,
               "{`add-multichain-account-button`}": 1,
               "\"add-multichain-account-icon-box\"": 1,
-              "{`add-wallet-modal-${option.id}`}": 1,
-              "{`add-wallet-modal-snap-account`}": 1,
-              "{`add-wallet-modal-watch-ethereum-account`}": 1,
               "\"account-cell-avatar\"": 1,
               "{`multichain-account-cell-${accountId}`}": 1,
               "\"multichain-account-cell-hovered-addresses\"": 1,
@@ -3277,6 +3289,8 @@
               "\"pay-with-row-skeleton\"": 1,
               "\"pay-with-pill\"": 1,
               "\"pay-with-row\"": 1,
+              "\"receive-row-skeleton\"": 1,
+              "\"receive-row\"": 1,
               "\"total-row-skeleton\"": 1,
               "\"total-row\"": 1,
               "\"simulation-details-amount-pill\"": 1,
@@ -3296,6 +3310,9 @@
               "\"import-srp-restore-vault\"": 1,
               "\"qr-srp\"": 1,
               "\"reveal-seed-page\"": 1,
+              "{`choose-wallet-type-${option.id}`}": 1,
+              "\"networks-page-list\"": 1,
+              "\"networks-page-network-success-toast\"": 1,
               "{`notification-list-item-${notification.id}`}": 1,
               "\"notifications-list-placeholder\"": 1,
               "\"notifications-list\"": 1,
@@ -3332,20 +3349,12 @@
               "\"perps-trade-cta-buttons\"": 1,
               "\"perps-order-entry-page\"": 1,
               "\"perps-withdraw-summary-asset-value\"": 1,
-              "\"advanced-setting-state-logs\"": 1,
-              "\"advanced-setting-reset-account\"": 1,
-              "\"advanced-setting-dismiss-smart-account-suggestion-enabled\"": 1,
-              "\"advanced-setting-enable-smart-transactions\"": 1,
-              "\"advanced-setting-hex-data\"": 1,
-              "\"advanced-setting-show-testnets\"": 1,
-              "\"advanced-setting-show-extension-in-full-size-view\"": 1,
-              "\"advanced-setting-auto-lock\"": 1,
-              "\"advanced-setting-data-backup\"": 1,
               "\"participate-in-meta-metrics-container\"": 1,
               "\"advanced-setting-choose-your-network\"": 1,
               "\"setting-safe-chains-validation\"": 1,
               "\"setting-ipfs-gateway\"": 1,
               "\"advanced-setting-gas-fee-estimation\"": 1,
+              "\"advanced-setting-show-testnet-conversion\"": 1,
               "\"setting-skip-deep-link-interstitial\"": 1,
               "\"submit-claim-page\"": 1,
               "{`claim-item-${id}`}": 1,
@@ -3370,28 +3379,29 @@
             }
           },
           "style": {
-            "count": 245,
+            "count": 250,
             "values": {
               "{{ overflow: 'hidden' }}": 14,
               "{{ flex: 1 }}": 9,
               "{{ marginLeft: 'auto', maxWidth: '100%' }}": 8,
               "{{ width: '100%' }}": 6,
               "{gatorPermissionDetailRowStyle}": 6,
-              "{{ flex: '1', alignSelf: 'center' }}": 5,
               "{{ flexShrink: 0 }}": 5,
               "{{ height: '40px', width: '40px' }}": 5,
               "{style}": 4,
               "{{ minHeight: '70px' }}": 4,
               "{{ position: 'relative' }}": 4,
+              "{{ flex: '1', alignSelf: 'center' }}": 4,
               "{{ height: '1px', borderBottomWidth: 0, borderBottomStyle: 'solid', }}": 3,
               "{{ overflowY: 'auto', }}": 3,
               "{{ cursor: 'pointer' }}": 3,
               "{{ minWidth: 0, flex: 1 }}": 3,
+              "{{ scrollbarColor: 'var(--color-icon-muted) transparent' }}": 3,
               "{{ flexGrow: 1 }}": 3,
               "{{ flexGrow: 1, overflow: 'hidden' }}": 2,
-              "{{ borderRadius: 8 }}": 2,
               "{{ flex: 1, minWidth: 0 }}": 2,
               "{{ boxShadow: 'var(--shadow-size-lg) var(--color-shadow-default)', }}": 2,
+              "{{ width: '4.5rem' }}": 2,
               "{containerStyle}": 2,
               "{{ flexGrow: '1' }}": 2,
               "{{ minWidth: 0 }}": 2,
@@ -3400,13 +3410,14 @@
               "{{ display: 'inline-flex' }}": 2,
               "{{ flexShrink: 1, flexBasis: 'auto', minWidth: 0, }}": 2,
               "{{ scrollbarColor: 'var(--color-icon-muted) transparent', }}": 2,
-              "{{ scrollbarColor: 'var(--color-icon-muted) transparent' }}": 2,
               "{{ listStyleType: 'circle' }}": 2,
               "{{ flex: 1, minHeight: 0 }}": 2,
               "{{ cursor: onClick ? 'pointer' : 'default', ...style, }}": 1,
               "{{ height: ASSET_CELL_HEIGHT, }}": 1,
               "{{ margin: 16 }}": 1,
               "{{ width: '100%', maxWidth: 400 }}": 1,
+              "{{ borderRadius: 16 }}": 1,
+              "{{ borderRadius: 8 }}": 1,
               "{{ width: 40, height: 40, borderRadius: 8, flexShrink: 0, }}": 1,
               "{{ columnGap: '8px', fontSize: 'var(--font-size-3)', }}": 1,
               "{{ height: expanded ? ref.current?.scrollHeight : '0px', }}": 1,
@@ -3419,7 +3430,7 @@
               "{{ height: ASSET_CELL_HEIGHT }}": 1,
               "{{ textAlign: 'center', }}": 1,
               "{{ width: `${CLOSE_PERCENT_CHIP_WIDTH_REM}rem`, flexShrink: 0, }}": 1,
-              "{{ marginRight: 'calc(80px + 8px)' }}": 1,
+              "{{ marginRight: 'calc(72px + 8px)' }}": 1,
               "{{ width: '100%', height, borderRadius: '8px', overflow: 'hidden', }}": 1,
               "{{ width: '96px', height: '96px', borderRadius: '50%', backgroundColor: 'var(-...}": 1,
               "{{ gap: '1px' }}": 1,
@@ -3447,9 +3458,12 @@
               "{{ height: '100%', minHeight: '400px', paddingTop: '72px' }}": 1,
               "{{ marginLeft: i === 0 ? '0' : marginLeftValue }}": 1,
               "{isConnected ? undefined : { borderBottomWidth: '1px', borderBottomStyle: 'sol...}": 1,
+              "{isSettingsPage ? { maxHeight: '100%', minHeight: 0, overflowY: 'auto', } : un...}": 1,
               "{{ position: 'relative', }}": 1,
               "{{ paddingLeft: '6px', paddingRight: '6px', paddingTop: '2px' }}": 1,
               "{{ position: 'absolute', cursor: 'pointer', top: 0, left: '50%', zIndex: 1, }}": 1,
+              "{{ alignItems: 'center' }}": 1,
+              "{{ flex: 1, minWidth: 0, alignItems: 'center', }}": 1,
               "{{ flex: '1', alignSelf: 'center', cursor: 'pointer' }}": 1,
               "{styles}": 1,
               "{{ alignSelf: 'center' }}": 1,
@@ -3536,17 +3550,18 @@
             }
           },
           "paddingBottom": {
-            "count": 199,
+            "count": 205,
             "values": {
               "0": 7,
               "1": 12,
-              "2": 57,
-              "3": 18,
-              "4": 72,
+              "2": 58,
+              "3": 19,
+              "4": 74,
               "5": 2,
-              "6": 9,
+              "6": 10,
               "8": 8,
               "9": 1,
+              "10": 1,
               "12": 6,
               "{paddingBottomValue}": 2,
               "{rootPaddingBottom}": 1,
@@ -3557,13 +3572,13 @@
             }
           },
           "paddingLeft": {
-            "count": 185,
+            "count": 186,
             "values": {
               "0": 2,
               "1": 3,
               "2": 21,
               "3": 1,
-              "4": 146,
+              "4": 147,
               "5": 4,
               "6": 6,
               "8": 1,
@@ -3571,16 +3586,17 @@
             }
           },
           "paddingTop": {
-            "count": 182,
+            "count": 186,
             "values": {
               "0": 8,
               "1": 11,
-              "2": 42,
-              "3": 24,
-              "4": 63,
+              "2": 41,
+              "3": 26,
+              "4": 65,
               "5": 3,
               "6": 6,
               "8": 8,
+              "10": 1,
               "12": 5,
               "{sectionIndex > 0 ? 4 : 2}": 2,
               "{paddingTopValue}": 2,
@@ -3595,12 +3611,12 @@
             }
           },
           "backgroundColor": {
-            "count": 180,
+            "count": 179,
             "values": {
-              "{BackgroundColor.backgroundDefault}": 36,
-              "{BoxBackgroundColor.BackgroundDefault}": 24,
+              "{BackgroundColor.backgroundDefault}": 35,
+              "{BoxBackgroundColor.BackgroundDefault}": 21,
+              "{BoxBackgroundColor.BackgroundMuted}": 14,
               "{BackgroundColor.backgroundAlternative}": 14,
-              "{BoxBackgroundColor.BackgroundMuted}": 13,
               "{BackgroundColor.primaryDefault}": 8,
               "{BackgroundColor.transparent}": 8,
               "{BoxBackgroundColor.BackgroundSection}": 7,
@@ -3617,6 +3633,7 @@
               "{BackgroundColor.errorDefault}": 2,
               "{BackgroundColor.backgroundMuted}": 2,
               "{isSelected ? BackgroundColor.primaryMuted : undefined}": 2,
+              "{BoxBackgroundColor.SuccessMuted}": 2,
               "{BackgroundColor.infoMuted}": 2,
               "{customDetails ? undefined : alertDetailsBackgroundColor}": 1,
               "{severityStyle.background}": 1,
@@ -3644,21 +3661,21 @@
               "{showBackground ? BoxBackgroundColor.BackgroundAlternative : undefined}": 1,
               "{BoxBackgroundColor.InfoMuted}": 1,
               "{canEdit ? BackgroundColor.backgroundMuted : BackgroundColor.transparent}": 1,
-              "{BoxBackgroundColor.SuccessMuted}": 1,
               "{BackgroundColor.errorMuted}": 1,
               "{isQuizWord ? BoxBackgroundColor.BackgroundDefault : BoxBackgroundColor.Backgr...}": 1,
+              "{usePageFooterStyle ? BackgroundColor.transparent : BackgroundColor.background...}": 1,
               "{selectedPaymentMethod === PAYMENT_TYPES.byCrypto ? BoxBackgroundColor.Primary...}": 1,
               "{selectedPaymentMethod === PAYMENT_TYPES.byCard ? BoxBackgroundColor.PrimaryMu...}": 1
             }
           },
           "paddingRight": {
-            "count": 176,
+            "count": 177,
             "values": {
               "0": 2,
               "1": 1,
               "2": 17,
               "3": 2,
-              "4": 145,
+              "4": 146,
               "5": 4,
               "6": 3,
               "{isSmall ? 0 : 2}": 1,
@@ -3680,13 +3697,13 @@
             }
           },
           "padding": {
-            "count": 171,
+            "count": 170,
             "values": {
               "0": 6,
               "1": 13,
               "2": 19,
               "3": 16,
-              "4": 108,
+              "4": 107,
               "6": 2,
               "10": 1,
               "{customDetails ? 0 : 2}": 1,
@@ -3698,7 +3715,7 @@
             }
           },
           "marginTop": {
-            "count": 152,
+            "count": 151,
             "values": {
               "0": 1,
               "1": 12,
@@ -3706,7 +3723,7 @@
               "3": 7,
               "4": 64,
               "5": 7,
-              "6": 17,
+              "6": 16,
               "8": 1,
               "12": 5,
               "{isPopUp ? 0 : 4}": 2,
@@ -3737,7 +3754,7 @@
             }
           },
           "onClick": {
-            "count": 111,
+            "count": 110,
             "values": {
               "{onClick}": 22,
               "{handleClick}": 8,
@@ -3777,9 +3794,6 @@
               "{handleButtonClick}": 1,
               "{toggle}": 1,
               "{handleCreateMultichainAccountClick}": 1,
-              "{() => handleOptionClick(option)}": 1,
-              "{() => handleSnapAccountLinkClick()}": 1,
-              "{() => handleAddWatchAccount()}": 1,
               "{handleDefaultAddressClick}": 1,
               "{togglePopover}": 1,
               "{item.onClick}": 1,
@@ -3793,6 +3807,8 @@
               "{updateSwapToSelectedQuote}": 1,
               "{onSelect}": 1,
               "{() => { onSelect?.(chainId); onClose(); }}": 1,
+              "{option.onClick}": 1,
+              "{async () => { await dispatch(addNetwork(network, { setActive: false })); disp...}": 1,
               "{isInteractive ? () => checkboxRef.current?.toggle() : undefined}": 1,
               "{() => handleItemSelected(item)}": 1,
               "{() => { dispatch( setEditedNetwork({ chainId: network.chainId, }), ); dispatc...}": 1,
@@ -3813,11 +3829,23 @@
               "{() => setShowPaymentModal(true)}": 1
             }
           },
-          "key": {
+          "borderRadius": {
             "count": 87,
             "values": {
+              "{BorderRadius.LG}": 29,
+              "{BorderRadius.pill}": 21,
+              "{BorderRadius.MD}": 14,
+              "{BorderRadius.XL}": 10,
+              "{BorderRadius.SM}": 8,
+              "{BorderRadius.full}": 4,
+              "{BorderRadius.XS}": 1
+            }
+          },
+          "key": {
+            "count": 86,
+            "values": {
+              "{network.chainId}": 10,
               "{index}": 9,
-              "{network.chainId}": 9,
               "{value}": 5,
               "{id}": 3,
               "{key}": 2,
@@ -3848,9 +3876,6 @@
               "{rpcEndpoint.url}": 1,
               "{acc.address}": 1,
               "{`add-multichain-account-button-${walletId}`}": 1,
-              "{option.id}": 1,
-              "\"snap-account\"": 1,
-              "\"watch-ethereum-account\"": 1,
               "{`multichain-account-cell-${accountId}`}": 1,
               "{item.textKey}": 1,
               "{acc.id}": 1,
@@ -3867,6 +3892,7 @@
               "{brand.deviceName}": 1,
               "\"extra-description\"": 1,
               "{type}": 1,
+              "{option.id}": 1,
               "{walletGroup.walletId}": 1,
               "{item.id}": 1,
               "\"recovery-phrase-chips\"": 1,
@@ -3879,34 +3905,15 @@
               "{plan.id}": 1
             }
           },
-          "borderRadius": {
-            "count": 87,
-            "values": {
-              "{BorderRadius.LG}": 29,
-              "{BorderRadius.pill}": 21,
-              "{BorderRadius.MD}": 14,
-              "{BorderRadius.XL}": 10,
-              "{BorderRadius.SM}": 8,
-              "{BorderRadius.full}": 4,
-              "{BorderRadius.XS}": 1
-            }
-          },
           "ref": {
-            "count": 74,
+            "count": 62,
             "values": {
               "{ref}": 10,
               "{setBoxRef}": 4,
               "{containerRef}": 4,
-              "{this.settingsRefs[4]}": 3,
-              "{this.settingsRefs[9]}": 3,
               "{dropdownRef}": 2,
               "{popoverRef}": 2,
-              "{this.settingsRefs[0]}": 2,
-              "{this.settingsRefs[3]}": 2,
-              "{this.settingsRefs[5]}": 2,
-              "{this.settingsRefs[8]}": 2,
-              "{this.settingsRefs[7]}": 2,
-              "{this.settingsRefs[10]}": 2,
+              "{this.settingsRefs[4]}": 2,
               "{contentRef}": 1,
               "{scrollContainerRef}": 1,
               "{itemRef}": 1,
@@ -3919,8 +3926,6 @@
               "{!isLoading && !hasError ? ref : undefined}": 1,
               "{marginMenuRef}": 1,
               "{modifyMenuRef}": 1,
-              "{this.settingsRefs[1]}": 1,
-              "{this.settingsRefs[6]}": 1,
               "{settingsRefs[1] as React.RefObject<HTMLDivElement>}": 1,
               "{settingsRefs[2] as React.RefObject<HTMLDivElement>}": 1,
               "{settingsRef}": 1,
@@ -3928,10 +3933,16 @@
               "{this.settingsRefs[2]}": 1,
               "{this.settingsRefs[19]}": 1,
               "{this.settingsRefs[14]}": 1,
+              "{this.settingsRefs[7]}": 1,
               "{this.settingsRefs[11]}": 1,
+              "{this.settingsRefs[8]}": 1,
+              "{this.settingsRefs[9]}": 1,
+              "{this.settingsRefs[10]}": 1,
               "{this.settingsRefs[12]}": 1,
               "{this.settingsRefs[13]}": 1,
               "{this.settingsRefs[17]}": 1,
+              "{this.settingsRefs[0]}": 1,
+              "{this.settingsRefs[3]}": 1,
               "{settingsRefs[1]}": 1,
               "{settingsRefs[2]}": 1,
               "{settingsRefs[3]}": 1,
@@ -3988,12 +3999,20 @@
               "{tabContentProps}": 1
             }
           },
+          "flexWrap": {
+            "count": 38,
+            "values": {
+              "{FlexWrap.Wrap}": 24,
+              "{FlexWrap.NoWrap}": 10,
+              "{BoxFlexWrap.Wrap}": 4
+            }
+          },
           "borderColor": {
-            "count": 41,
+            "count": 38,
             "values": {
               "{BorderColor.borderDefault}": 12,
               "{BorderColor.borderMuted}": 10,
-              "{BoxBorderColor.BorderMuted}": 9,
+              "{BoxBorderColor.BorderMuted}": 6,
               "{BoxBorderColor.BorderDefault}": 3,
               "{isTransactionsRedesign ? BorderColor.transparent : BorderColor.borderDefault}": 2,
               "{badgeBorderColor}": 1,
@@ -4001,14 +4020,6 @@
               "{BoxBorderColor.Transparent}": 1,
               "{BorderColor.transparent}": 1,
               "{isTargetIndex ? BoxBorderColor.PrimaryDefault : BoxBorderColor.BorderMuted}": 1
-            }
-          },
-          "flexWrap": {
-            "count": 38,
-            "values": {
-              "{FlexWrap.Wrap}": 24,
-              "{FlexWrap.NoWrap}": 10,
-              "{BoxFlexWrap.Wrap}": 4
             }
           },
           "as": {
@@ -4080,18 +4091,18 @@
               "{noPadding ? 0 : 2}": 1
             }
           },
-          "tabIndex": {
-            "count": 13,
-            "values": {
-              "0": 12,
-              "{isInteractive ? 0 : undefined}": 1
-            }
-          },
           "borderStyle": {
             "count": 13,
             "values": {
               "{BorderStyle.none}": 8,
               "{BorderStyle.solid}": 5
+            }
+          },
+          "tabIndex": {
+            "count": 11,
+            "values": {
+              "0": 10,
+              "{isInteractive ? 0 : undefined}": 1
             }
           },
           "margin": {
@@ -4184,15 +4195,6 @@
               "{() => setIsHovered(false)}": 1
             }
           },
-          "onKeyDown": {
-            "count": 6,
-            "values": {
-              "{(e: React.KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') { e.pre...}": 3,
-              "{(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClic...}": 1,
-              "{onKeyDown}": 1,
-              "{(e: React.KeyboardEvent<HTMLDivElement>) => { if ((e.key === ' ' || e.key ===...}": 1
-            }
-          },
           "paddingInlineStart": {
             "count": 5,
             "values": {
@@ -4223,6 +4225,15 @@
               "{color ?? TextColor.textAlternative}": 1,
               "{TextColor.textDefault}": 1,
               "{TextColor.primaryDefault}": 1
+            }
+          },
+          "onKeyDown": {
+            "count": 4,
+            "values": {
+              "{(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClic...}": 1,
+              "{onKeyDown}": 1,
+              "{(e: React.KeyboardEvent) => { if (e.key === 'Enter' || e.key === ' ') { e.pre...}": 1,
+              "{(e: React.KeyboardEvent<HTMLDivElement>) => { if ((e.key === ' ' || e.key ===...}": 1
             }
           },
           "onScroll": {
@@ -4388,33 +4399,33 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "Box": 1191
+        "Box": 1177
       }
     },
     "mobile": {
-      "filesScanned": 6077,
+      "filesScanned": 6139,
       "targetComponent": "Box",
       "mmds": {
-        "totalInstances": 2020,
-        "filesCount": 493,
+        "totalInstances": 2052,
+        "filesCount": 501,
         "props": {
           "twClassName": {
-            "count": 1603,
+            "count": 1623,
             "values": {
-              "\"flex-1\"": 138,
-              "\"gap-1\"": 44,
+              "\"flex-1\"": 140,
+              "\"gap-1\"": 45,
               "\"gap-2\"": 42,
               "\"gap-3\"": 36,
-              "\"w-full\"": 28,
-              "\"px-4\"": 26,
+              "\"w-full\"": 31,
+              "\"px-4\"": 30,
               "\"gap-4\"": 20,
               "\"mb-4\"": 16,
               "\"px-4 py-3\"": 16,
+              "\"p-4\"": 13,
+              "\"flex-1 min-w-0\"": 13,
               "\"flex-1 px-4\"": 12,
               "\"px-4 pb-4\"": 12,
               "\"flex-1 bg-default\"": 12,
-              "\"p-4\"": 12,
-              "\"flex-1 min-w-0\"": 12,
               "\"py-3\"": 11,
               "\"px-4 py-4\"": 9,
               "\"flex-row items-center gap-1\"": 9,
@@ -4429,16 +4440,17 @@
               "\"px-4 pb-6\"": 7,
               "\"py-2\"": 7,
               "\"w-full flex-1\"": 7,
-              "\"px-4 pt-4\"": 7,
               "\"items-end\"": 6,
               "\"mb-2\"": 6,
               "\"h-px bg-border-muted my-5\"": 6,
               "\"px-4 py-2\"": 6,
+              "\"px-4 pt-4\"": 6,
               "\"bg-muted rounded-xl p-4 mt-2 gap-2\"": 6,
               "\"mt-6\"": 5,
               "\"mt-4\"": 5,
               "\"pt-3\"": 5,
               "\"px-2 py-2\"": 5,
+              "\"w-10\"": 5,
               "\"flex-row gap-2\"": 5,
               "\"w-full h-full bg-muted\"": 5,
               "\"flex-row justify-between items-center\"": 5,
@@ -4449,14 +4461,12 @@
               "\"w-full gap-3\"": 4,
               "\"p-4 items-center\"": 4,
               "\"pb-6\"": 4,
-              "\"w-10\"": 4,
               "\"py-1\"": 4,
               "\"flex-1 gap-1\"": 4,
               "\"px-5 py-2\"": 4,
               "\"flex-1 gap-4\"": 4,
               "\"pb-2 pt-8 self-stretch -mx-4\"": 4,
               "\"flex-1 py-1\"": 4,
-              "\"flex-1 min-w-0 mr-3\"": 4,
               "\"flex-row items-center\"": 4,
               "\"w-full px-4\"": 3,
               "\"flex-col w-[337px] items-stretch\"": 3,
@@ -4475,6 +4485,7 @@
               "\"px-4 pt-2\"": 3,
               "\"px-4 py-3 gap-3\"": 3,
               "\"ml-1\"": 3,
+              "\"px-4 pt-2 pb-4\"": 3,
               "\"w-10 h-10 rounded-lg bg-muted overflow-hidden\"": 3,
               "\"border-t border-muted\"": 3,
               "\"flex-1 justify-center items-center\"": 3,
@@ -4491,9 +4502,12 @@
               "\"w-8 h-1.5 bg-primary-default mr-0.5\"": 3,
               "\"px-4 py-6\"": 3,
               "\"flex-row items-center justify-between px-4 my-4\"": 3,
+              "\"flex-1 min-w-0 mr-3\"": 3,
               "\"h-12 justify-center\"": 3,
+              "\"justify-center items-center\"": 2,
               "\"pt-2 pb-4 pl-4\"": 2,
               "\"w-full rounded-xl overflow-hidden\"": 2,
+              "\"pt-4\"": 2,
               "\"flex-row justify-between items-center py-3\"": 2,
               "\"flex-1 justify-center items-center px-6\"": 2,
               "\"flex flex-col items-center justify-center gap-2\"": 2,
@@ -4523,6 +4537,7 @@
               "\"px-4 py-3 gap-4\"": 2,
               "\"pt-3 pb-9\"": 2,
               "\"pt-4 mx-4 flex gap-4\"": 2,
+              "\"gap-3 mt-4\"": 2,
               "\"pr-3\"": 2,
               "\"bg-section rounded-xl p-4 h-full justify-between\"": 2,
               "\"mb-1\"": 2,
@@ -4534,7 +4549,6 @@
               "\"flex-1 gap-3\"": 2,
               "\"w-10 h-10 self-start mt-1\"": 2,
               "\"gap-3 flex-1 min-w-0\"": 2,
-              "\"items-center\"": 2,
               "\"w-[40px]\"": 2,
               "\"mr-1\"": 2,
               "\"w-full gap-4 p-4\"": 2,
@@ -4578,7 +4592,6 @@
               "\"pt-[2px]\"": 2,
               "\"flex-1 ml-5\"": 2,
               "\"pt-4 px-4\"": 2,
-              "\"bg-muted rounded-lg px-3\"": 2,
               "\"flex-col items-start px-0.5\"": 2,
               "\"flex-1 justify-center px-1\"": 2,
               "\"p-4 border-b border-border-muted\"": 2,
@@ -4599,12 +4612,10 @@
               "\"px-4 py-8\"": 2,
               "\"pt-4 pb-6 px-4\"": 2,
               "\"flex-col pt-9 pb-24 justify-center items-center gap-3 flex-1\"": 2,
-              "\"-mx-4 mb-6\"": 2,
               "\"items-center py-8 px-4\"": 2,
               "\"absolute inset-0 justify-center items-center z-[2]\"": 1,
               "\"mt-3 w-full\"": 1,
               "\"mt-3 w-full overflow-hidden\"": 1,
-              "\"justify-center items-center\"": 1,
               "\"relative items-center justify-center\"": 1,
               "\"items-center justify-center rounded-full bg-muted\"": 1,
               "\"w-full bg-default p-4 mt-4 mb-4\"": 1,
@@ -4615,6 +4626,8 @@
               "\"gap-2 mb-3 w-full\"": 1,
               "py-2": 1,
               "\"mx-4 p-4 rounded-xl border border-muted bg-default gap-3.5\"": 1,
+              "\"mt-5 w-full rounded-2xl pl-[25px] pr-4 py-3\"": 1,
+              "\"px-2 py-1\"": 1,
               "\"bg-default border-t border-muted min-h-[60px] px-4 py-2\"": 1,
               "\"flex-row justify-between gap-2\"": 1,
               "\"flex flex-col items-center justify-center w-full p-4\"": 1,
@@ -4728,14 +4741,14 @@
               "\"flex-1 bg-default pt-20\"": 1,
               "\"py-12 px-4\"": 1,
               "\"flex-row justify-between gap-2 pt-1\"": 1,
+              "{isMultiProviderEnabled ? 'w-full flex-nowrap' : 'w-full flex-wrap gap-y-1'}": 1,
+              "\"ml-auto flex-shrink-0\"": 1,
               "\"flex-1 bg-muted rounded-lg px-3 py-1 mr-2\"": 1,
               "bg-default pt-20": 1,
-              "\"mx-4 mt-4 mb-4 px-4 py-6 rounded-xl\"": 1,
-              "{isBalanceEmpty ? 'mt-4 mb-4 rounded-xl' : 'mb-4'}": 1,
+              "\"mx-4 mb-4 px-4 py-6 rounded-xl\"": 1,
+              "{isBalanceEmpty ? 'mb-4 rounded-xl' : 'mb-4'}": 1,
               "\"w-full flex-row justify-between\"": 1,
               "\"w-full border-b border-muted\"": 1,
-              "\"px-4 pt-4 pb-4\"": 1,
-              "\"gap-3 mt-4\"": 1,
               "\"flex-1 items-center justify-center bg-error-muted\"": 1,
               "\"bg-default rounded-lg\"": 1,
               "\"overflow-hidden rounded-lg\"": 1,
@@ -4814,6 +4827,7 @@
               "\"w-full bg-muted rounded-2xl p-4 mb-4\"": 1,
               "\"justify-between mb-3\"": 1,
               "\"items-center justify-center h-[40px]\"": 1,
+              "\"items-center\"": 1,
               "\"w-full py-3 gap-2\"": 1,
               "{`w-[${PULSE_RING_SIZE}px] h-[${PULSE_RING_SIZE}px] items-center justify-center`}": 1,
               "{`w-[${PULSE_DOT_SIZE}px] h-[${PULSE_DOT_SIZE}px] rounded-full bg-error-default`}": 1,
@@ -4826,13 +4840,13 @@
               "{`px-4 pb-0${hideBorder ? '' : ' border-t border-muted'}`}": 1,
               "\"text-center items-center justify-center px-1\"": 1,
               "\"px-12 pb-4\"": 1,
+              "{`mb-5 p-3 rounded-lg gap-3 ${styles.containerClass}`}": 1,
               "\"flex-1 min-w-0 gap-3\"": 1,
               "\"gap-1 flex-wrap\"": 1,
               "{rowClassName}": 1,
               "{`rounded-full py-2 pl-[9px] pr-[16px] mt-2 ${!canEdit ? '' : 'bg-muted'} mx-a...}": 1,
               "\"gap-2 py-2\"": 1,
-              "\"w-full py-2 px-4 gap-3\"": 1,
-              "\"flex-1 bg-muted rounded-lg px-3 py-2\"": 1,
+              "\"w-full py-2\"": 1,
               "\"flex-1 relative\"": 1,
               "\"px-3\"": 1,
               "\"px-3 bg-default border-t border-muted\"": 1,
@@ -4864,7 +4878,6 @@
               "\"mx-4 mt-1 mb-2 rounded-lg bg-background-muted px-3 py-3\"": 1,
               "\"mr-3 rounded-full bg-background-muted\"": 1,
               "\"items-center pt-8 pb-6\"": 1,
-              "\"items-center mt-1\"": 1,
               "\"bg-muted rounded h-[18px] w-32\"": 1,
               "\"bg-muted rounded h-[18px] w-40\"": 1,
               "\"bg-muted rounded h-[18px] w-20\"": 1,
@@ -4906,8 +4919,7 @@
               "\"rounded-full px-4 py-2 gap-1\"": 1,
               "\"bg-muted rounded-xl p-4 gap-3\"": 1,
               "{`py-2 px-4 ${rowBg}`}": 1,
-              "\"gap-1 mb-2 self-start px-4\"": 1,
-              "\"mt-2 px-4\"": 1,
+              "\"gap-2 mb-2 px-4\"": 1,
               "\"justify-end mb-4\"": 1,
               "\"bg-success-muted rounded-[6px] px-1.5\"": 1,
               "\"h-3 rounded-full bg-muted overflow-hidden\"": 1,
@@ -5010,6 +5022,7 @@
               "\"py-8 self-stretch -mx-4\"": 1,
               "\"bg-muted rounded self-start min-w-[22px] px-1.5 py-0.5\"": 1,
               "\"rounded self-start px-1.5 py-0.5\"": 1,
+              "{`rounded min-w-[22px] px-1.5 gap-1 shrink-0 ${twBg}`}": 1,
               "{`w-10 h-10 rounded-full bg-white border border-muted mr-4 overflow-hidden ite...}": 1,
               "\"w-10 h-10 mr-4 items-center justify-center\"": 1,
               "\"flex-1 flex-row items-center\"": 1,
@@ -5034,7 +5047,6 @@
               "{isFullView ? 'px-4 items-center' : 'items-center'}": 1,
               "{!isFullView ? 'bg-default' : 'flex-1 bg-default'}": 1,
               "\"px-4 pt-6 pb-2 items-center\"": 1,
-              "{`rounded min-w-[22px] px-1.5 gap-1 shrink-0 ${securityBadge.bg}`}": 1,
               "\"justify-center py-8\"": 1,
               "\"bg-background-alternative\"": 1,
               "{`flex-1 bg-muted rounded-lg ${Platform.OS === 'ios' ? 'py-3' : 'py-1'} px-3 m...}": 1,
@@ -5055,14 +5067,13 @@
               "\"items-center pt-4 px-4\"": 1,
               "\"flex-1 justify-center items-center px-4\"": 1,
               "\"flex-1 bg-default px-4\"": 1,
-              "\"pt-4\"": 1,
               "\"mt-4 items-center\"": 1,
               "\"items-start\"": 1,
               "\"mr-2\"": 1,
               "\"flex-row items-center absolute px-4 right-0\"": 1,
               "\"m-4\"": 1,
+              "\"bg-muted rounded-lg px-3\"": 1,
               "\"flex-1 justify-center items-center px-[30px]\"": 1,
-              "\"px-2 py-4\"": 1,
               "\"h-10 w-10 rounded-xl bg-muted\"": 1,
               "\"px-4 pt-4 gap-2\"": 1,
               "\"flex-1 ml-3 gap-1\"": 1,
@@ -5095,8 +5106,8 @@
               "\"w-[240px] rounded-2xl bg-background-muted flex-1\"": 1,
               "\"w-10 h-10 rounded-lg mt-1 bg-background-alternative\"": 1,
               "\"flex-1 justify-center ml-5\"": 1,
-              "\"w-[200px] rounded-2xl bg-muted p-4 overflow-hidden\"": 1,
-              "\"flex-1 gap-2 mb-3\"": 1,
+              "{`w-[${TOP_TRADER_CARD_WIDTH}px] h-auto rounded-2xl bg-muted p-4 overflow-hidd...}": 1,
+              "\"w-full gap-0.5\"": 1,
               "\"w-[280px] h-[248px] rounded-2xl bg-background-muted overflow-hidden\"": 1,
               "\"flex-wrap gap-1\"": 1,
               "\"rounded-xl w-full\"": 1,
@@ -5125,7 +5136,6 @@
               "\"p-6 border border-muted rounded-2xl\"": 1,
               "\"p-6 border border-muted rounded-2xl bg-white\"": 1,
               "\"flex-1 gap-4 pt-4 mb-6\"": 1,
-              "\"px-4 pt-2 pb-4\"": 1,
               "{`flex-row items-center justify-between min-h-12 rounded-xl border border-soli...}": 1,
               "\"flex-1 mr-2\"": 1,
               "\"flex-1 items-center justify-center py-8\"": 1,
@@ -5161,13 +5171,18 @@
               "\"-mt-4\"": 1,
               "{`px-4 py-3${isDisabled ? ' opacity-50' : ''}`}": 1,
               "\"px-4 pt-5 pb-2\"": 1,
-              "\"px-4 pt-2 pb-3 mb-2\"": 1,
+              "{`px-4 py-4${disabled ? ' opacity-50' : ''}`}": 1,
+              "\"flex-1 mr-3\"": 1,
+              "\"px-4 pt-2 pb-3\"": 1,
+              "\"px-4 pt-3 pb-4 bg-default\"": 1,
+              "\"rounded-xl bg-muted px-4 py-3\"": 1,
+              "\"rounded-xl bg-muted overflow-hidden\"": 1,
               "\"h-20 px-4\"": 1,
-              "\"w-12 h-12 rounded-xl overflow-hidden\"": 1,
+              "\"pb-1\"": 1,
               "\"pb-2\"": 1,
+              "\"pb-0.5\"": 1,
               "{`flex-1 items-center justify-center px-2 py-1 rounded ${ isActive ? 'bg-muted...}": 1,
               "\"mx-4 my-3\"": 1,
-              "\"w-10 items-end\"": 1,
               "\"mx-4 p-4 bg-muted rounded-2xl\"": 1,
               "\"px-4 mt-5\"": 1,
               "\"self-start pb-2 border-b-2 border-white\"": 1,
@@ -5180,12 +5195,15 @@
               "\"px-4 mb-2\"": 1,
               "\"mr-3\"": 1,
               "\"flex-1 h-[46px]\"": 1,
-              "\"flex-row items-center gap-2 px-4\"": 1,
-              "\"rounded-md items-center justify-center h-8 w-8 border-2 border-text-default\"": 1,
+              "\"mt-3 flex-row items-center gap-2 px-4\"": 1,
+              "\"rounded-lg items-center justify-center h-8 w-8 border border-muted bg-section\"": 1,
               "{isHidden ? 'hidden' : undefined}": 1,
               "\"px-4 pb-3 gap-3\"": 1,
+              "\"h-12 gap-3 rounded-full border border-border-muted bg-muted px-4\"": 1,
               "\"py-2 bg-default\"": 1,
-              "\"mt-1 mb-4 -mx-4\"": 1,
+              "\"mb-7 -mx-4\"": 1,
+              "\"-mx-4 mb-9\"": 1,
+              "\"-mx-4 mb-6\"": 1,
               "{`rounded-2xl overflow-hidden ${!isLastItem ? 'pr-4' : ''}`}": 1,
               "\"flex-1 items-center pt-12\"": 1,
               "\"flex-row bg-info-muted rounded-lg p-3 mb-6 w-full\"": 1,
@@ -5211,28 +5229,29 @@
             }
           },
           "flexDirection": {
-            "count": 495,
+            "count": 503,
             "values": {
-              "{BoxFlexDirection.Row}": 417,
+              "{BoxFlexDirection.Row}": 425,
               "{BoxFlexDirection.Column}": 78
             }
           },
           "alignItems": {
-            "count": 471,
+            "count": 478,
             "values": {
-              "{BoxAlignItems.Center}": 410,
-              "{BoxAlignItems.Start}": 39,
-              "{BoxAlignItems.End}": 17,
+              "{BoxAlignItems.Center}": 417,
+              "{BoxAlignItems.Start}": 40,
+              "{BoxAlignItems.End}": 16,
               "{typeof title === 'string' ? BoxAlignItems.Center : BoxAlignItems.Start}": 2,
               "{typeof description === 'string' ? BoxAlignItems.Center : BoxAlignItems.Start}": 2,
               "{BoxAlignItems.Stretch}": 1
             }
           },
           "testID": {
-            "count": 280,
+            "count": 290,
             "values": {
-              "{testID}": 49,
+              "{testID}": 53,
               "{ONDO_PRIZE_POOL_TEST_IDS.CONTAINER}": 3,
+              "\"price-chart-loading\"": 2,
               "\"onboarding-step-actions\"": 2,
               "{CAMPAIGN_STATS_SUMMARY_TEST_IDS.NOT_ELIGIBLE_BANNER}": 2,
               "\"progress-indicator-container\"": 2,
@@ -5246,7 +5265,6 @@
               "\"icon\"": 2,
               "snap-ui-renderer__date-time-picker": 1,
               "{hasInsufficientData ? 'price-chart-insufficient-data' : 'price-chart-no-data'}": 1,
-              "\"price-chart-loading\"": 1,
               "\"resource-ring-container\"": 1,
               "\"resource-ring-icon-container\"": 1,
               "\"basic-functionality-empty-state\"": 1,
@@ -5257,6 +5275,7 @@
               "\"quote-details-card-loading-row\"": 1,
               "\"international-location-box\"": 1,
               "\"us-location-box\"": 1,
+              "{CashbackSelectors.FUNDING_WARNING}": 1,
               "{CashbackSelectors.BALANCE_TITLE}": 1,
               "{CashbackSelectors.DETAILS_CARD}": 1,
               "{`${ChooseYourCardSelectors.CARD_IMAGE}-${item.id}`}": 1,
@@ -5348,6 +5367,7 @@
               "{CAMPAIGN_MECHANICS_TEST_IDS.NOTES_SECTION}": 1,
               "{REWARDS_VIEW_SELECTORS.TOP_BENEFIT_DETAILS}": 1,
               "{REWARDS_VIEW_SELECTORS.TOP_BENEFIT_SECTION}": 1,
+              "{CAMPAIGN_ENDED_STATS_TEST_IDS.CONTAINER}": 1,
               "{CAMPAIGN_HOW_IT_WORKS_TEST_IDS.CONTAINER}": 1,
               "{`${CAMPAIGN_HOW_IT_WORKS_TEST_IDS.STEP}-${stepIndex}`}": 1,
               "{`${CAMPAIGN_HOW_IT_WORKS_TEST_IDS.STEP_INDEX}-${stepIndex}`}": 1,
@@ -5440,7 +5460,9 @@
               "{NotificationPreferencesViewSelectorsIDs.TRADERS_ERROR}": 1,
               "{NotificationPreferencesViewSelectorsIDs.TRADERS_EMPTY}": 1,
               "\"quick-buy-content-loading\"": 1,
+              "\"quick-buy-price-impact\"": 1,
               "{`trade-row-${trade.transactionHash}`}": 1,
+              "{TraderPositionViewSelectorsIDs.FALLBACK}": 1,
               "{TraderProfileViewSelectorsIDs.ERROR_BANNER}": 1,
               "{TraderProfileViewSelectorsIDs.HEADER}": 1,
               "{TraderProfileViewSelectorsIDs.STATS_ROW}": 1,
@@ -5449,13 +5471,14 @@
               "{TEXTFIELD_ENDACCESSORY_TEST_ID}": 1,
               "\"empty-error-trending-state\"": 1,
               "\"empty-search-result-state\"": 1,
+              "\"explore-view-search-input\"": 1,
               "{`recipient-avatar-${recipient.address}`}": 1
             }
           },
           "justifyContent": {
-            "count": 227,
+            "count": 231,
             "values": {
-              "{BoxJustifyContent.Between}": 109,
+              "{BoxJustifyContent.Between}": 113,
               "{BoxJustifyContent.Center}": 78,
               "{BoxJustifyContent.Start}": 22,
               "{BoxJustifyContent.End}": 12,
@@ -5467,13 +5490,13 @@
             }
           },
           "gap": {
-            "count": 173,
+            "count": 181,
             "values": {
               "0": 2,
-              "1": 37,
+              "1": 39,
               "2": 38,
-              "3": 49,
-              "4": 35,
+              "3": 54,
+              "4": 36,
               "5": 1,
               "6": 5,
               "8": 3,
@@ -5483,7 +5506,7 @@
             }
           },
           "style": {
-            "count": 166,
+            "count": 167,
             "values": {
               "{styles.container}": 9,
               "{tw.style('flex-1 flex-shrink mr-2 -mt-1')}": 3,
@@ -5501,7 +5524,6 @@
               "{tw.style('flex-row items-center gap-3 h-12', twClassName)}": 2,
               "{tw.style('mb-2 flex-1')}": 2,
               "{tw.style('px-4 py-3')}": 2,
-              "{tw.style('min-h-[44px]')}": 2,
               "{tw.style('flex-1 p-4', { backgroundColor: mockTheme.colors.background.default...}": 2,
               "{{ flex: 1, backgroundColor: mockTheme.colors.background.default, }}": 2,
               "{{ paddingTop: insets.top + (Platform.OS === 'android' ? 16 : 0) }}": 2,
@@ -5551,6 +5573,7 @@
               "{styles.countdownContainer}": 1,
               "{styles.countdownPill}": 1,
               "{sectionIndex > 0 ? styles.sectionSpacing : undefined}": 1,
+              "{tw.style('mb-6 border-t border-muted')}": 1,
               "{tw.style('bg-background-section')}": 1,
               "{tw.style('mt-1')}": 1,
               "{styles.contentRow}": 1,
@@ -5603,11 +5626,13 @@
               "{tw.style( 'rounded-lg px-2 py-0.5 min-w-6 items-center justify-center', { bac...}": 1,
               "{tw.style('px-4 py-3 flex-row gap-4 justify-between')}": 1,
               "{tw.style('pt-4 m-4', { paddingBottom: bottomInset })}": 1,
+              "{tw.style('min-h-[44px]')}": 1,
               "{tw.style('px-4 pt-6', Platform.OS !== 'android' && 'pb-4')}": 1,
               "{animationWrapperStyle}": 1,
               "{textWrapperStyle}": 1,
               "{tw.style(Platform.OS === 'android' ? 'mb-6' : 'mb-4')}": 1,
               "{tw.style('flex-1')}": 1,
+              "{{ height: TRADER_ROW_HEIGHT }}": 1,
               "{tw.style( 'w-full gap-y-4 mt-auto', Platform.OS === 'android' ? 'mb-6' : 'mb-...}": 1,
               "{{ height: windowHeight - 290 }}": 1,
               "{isVisible ? styles.screenVisible : styles.screenHidden}": 1,
@@ -5624,7 +5649,7 @@
             }
           },
           "key": {
-            "count": 46,
+            "count": 47,
             "values": {
               "{index}": 5,
               "{key}": 4,
@@ -5634,6 +5659,7 @@
               "{label}": 2,
               "{`skeleton-${index}`}": 2,
               "{preset}": 2,
+              "{feature.featureId}": 1,
               "{`feature-${index}`}": 1,
               "{`order-item-${index}`}": 1,
               "{`future-${visibleSlides[safeActiveSlideIndex + 2].id}`}": 1,
@@ -5671,39 +5697,40 @@
             }
           },
           "paddingTop": {
-            "count": 17,
+            "count": 19,
             "values": {
               "1": 3,
-              "2": 2,
+              "2": 4,
               "3": 6,
-              "4": 3,
+              "4": 2,
               "6": 2,
-              "8": 1
+              "8": 2
             }
           },
           "backgroundColor": {
-            "count": 15,
+            "count": 16,
             "values": {
               "{BoxBackgroundColor.BackgroundMuted}": 6,
               "{BoxBackgroundColor.BackgroundDefault}": 3,
               "{BoxBackgroundColor.BackgroundSection}": 3,
               "{selected ? BoxBackgroundColor.BackgroundMuted : BoxBackgroundColor.Background...}": 1,
+              "{BoxBackgroundColor.ErrorMuted}": 1,
               "{bg}": 1,
               "{BoxBackgroundColor.PrimaryMuted}": 1
             }
           },
           "padding": {
-            "count": 12,
+            "count": 13,
             "values": {
-              "4": 12
+              "4": 13
             }
           },
           "paddingBottom": {
             "count": 11,
             "values": {
               "3": 5,
-              "4": 3,
-              "6": 3
+              "4": 4,
+              "6": 2
             }
           },
           "marginBottom": {
@@ -5744,10 +5771,10 @@
             }
           },
           "paddingVertical": {
-            "count": 5,
+            "count": 6,
             "values": {
               "1": 1,
-              "2": 2,
+              "2": 3,
               "3": 2
             }
           },
@@ -5838,26 +5865,26 @@
         "props": {}
       },
       "overall": {
-        "totalInstances": 2020,
-        "filesCount": 493,
+        "totalInstances": 2052,
+        "filesCount": 501,
         "props": {
           "twClassName": {
-            "count": 1603,
+            "count": 1623,
             "values": {
-              "\"flex-1\"": 138,
-              "\"gap-1\"": 44,
+              "\"flex-1\"": 140,
+              "\"gap-1\"": 45,
               "\"gap-2\"": 42,
               "\"gap-3\"": 36,
-              "\"w-full\"": 28,
-              "\"px-4\"": 26,
+              "\"w-full\"": 31,
+              "\"px-4\"": 30,
               "\"gap-4\"": 20,
               "\"mb-4\"": 16,
               "\"px-4 py-3\"": 16,
+              "\"p-4\"": 13,
+              "\"flex-1 min-w-0\"": 13,
               "\"flex-1 px-4\"": 12,
               "\"px-4 pb-4\"": 12,
               "\"flex-1 bg-default\"": 12,
-              "\"p-4\"": 12,
-              "\"flex-1 min-w-0\"": 12,
               "\"py-3\"": 11,
               "\"px-4 py-4\"": 9,
               "\"flex-row items-center gap-1\"": 9,
@@ -5872,16 +5899,17 @@
               "\"px-4 pb-6\"": 7,
               "\"py-2\"": 7,
               "\"w-full flex-1\"": 7,
-              "\"px-4 pt-4\"": 7,
               "\"items-end\"": 6,
               "\"mb-2\"": 6,
               "\"h-px bg-border-muted my-5\"": 6,
               "\"px-4 py-2\"": 6,
+              "\"px-4 pt-4\"": 6,
               "\"bg-muted rounded-xl p-4 mt-2 gap-2\"": 6,
               "\"mt-6\"": 5,
               "\"mt-4\"": 5,
               "\"pt-3\"": 5,
               "\"px-2 py-2\"": 5,
+              "\"w-10\"": 5,
               "\"flex-row gap-2\"": 5,
               "\"w-full h-full bg-muted\"": 5,
               "\"flex-row justify-between items-center\"": 5,
@@ -5892,14 +5920,12 @@
               "\"w-full gap-3\"": 4,
               "\"p-4 items-center\"": 4,
               "\"pb-6\"": 4,
-              "\"w-10\"": 4,
               "\"py-1\"": 4,
               "\"flex-1 gap-1\"": 4,
               "\"px-5 py-2\"": 4,
               "\"flex-1 gap-4\"": 4,
               "\"pb-2 pt-8 self-stretch -mx-4\"": 4,
               "\"flex-1 py-1\"": 4,
-              "\"flex-1 min-w-0 mr-3\"": 4,
               "\"flex-row items-center\"": 4,
               "\"w-full px-4\"": 3,
               "\"flex-col w-[337px] items-stretch\"": 3,
@@ -5918,6 +5944,7 @@
               "\"px-4 pt-2\"": 3,
               "\"px-4 py-3 gap-3\"": 3,
               "\"ml-1\"": 3,
+              "\"px-4 pt-2 pb-4\"": 3,
               "\"w-10 h-10 rounded-lg bg-muted overflow-hidden\"": 3,
               "\"border-t border-muted\"": 3,
               "\"flex-1 justify-center items-center\"": 3,
@@ -5934,9 +5961,12 @@
               "\"w-8 h-1.5 bg-primary-default mr-0.5\"": 3,
               "\"px-4 py-6\"": 3,
               "\"flex-row items-center justify-between px-4 my-4\"": 3,
+              "\"flex-1 min-w-0 mr-3\"": 3,
               "\"h-12 justify-center\"": 3,
+              "\"justify-center items-center\"": 2,
               "\"pt-2 pb-4 pl-4\"": 2,
               "\"w-full rounded-xl overflow-hidden\"": 2,
+              "\"pt-4\"": 2,
               "\"flex-row justify-between items-center py-3\"": 2,
               "\"flex-1 justify-center items-center px-6\"": 2,
               "\"flex flex-col items-center justify-center gap-2\"": 2,
@@ -5966,6 +5996,7 @@
               "\"px-4 py-3 gap-4\"": 2,
               "\"pt-3 pb-9\"": 2,
               "\"pt-4 mx-4 flex gap-4\"": 2,
+              "\"gap-3 mt-4\"": 2,
               "\"pr-3\"": 2,
               "\"bg-section rounded-xl p-4 h-full justify-between\"": 2,
               "\"mb-1\"": 2,
@@ -5977,7 +6008,6 @@
               "\"flex-1 gap-3\"": 2,
               "\"w-10 h-10 self-start mt-1\"": 2,
               "\"gap-3 flex-1 min-w-0\"": 2,
-              "\"items-center\"": 2,
               "\"w-[40px]\"": 2,
               "\"mr-1\"": 2,
               "\"w-full gap-4 p-4\"": 2,
@@ -6021,7 +6051,6 @@
               "\"pt-[2px]\"": 2,
               "\"flex-1 ml-5\"": 2,
               "\"pt-4 px-4\"": 2,
-              "\"bg-muted rounded-lg px-3\"": 2,
               "\"flex-col items-start px-0.5\"": 2,
               "\"flex-1 justify-center px-1\"": 2,
               "\"p-4 border-b border-border-muted\"": 2,
@@ -6042,12 +6071,10 @@
               "\"px-4 py-8\"": 2,
               "\"pt-4 pb-6 px-4\"": 2,
               "\"flex-col pt-9 pb-24 justify-center items-center gap-3 flex-1\"": 2,
-              "\"-mx-4 mb-6\"": 2,
               "\"items-center py-8 px-4\"": 2,
               "\"absolute inset-0 justify-center items-center z-[2]\"": 1,
               "\"mt-3 w-full\"": 1,
               "\"mt-3 w-full overflow-hidden\"": 1,
-              "\"justify-center items-center\"": 1,
               "\"relative items-center justify-center\"": 1,
               "\"items-center justify-center rounded-full bg-muted\"": 1,
               "\"w-full bg-default p-4 mt-4 mb-4\"": 1,
@@ -6058,6 +6085,8 @@
               "\"gap-2 mb-3 w-full\"": 1,
               "py-2": 1,
               "\"mx-4 p-4 rounded-xl border border-muted bg-default gap-3.5\"": 1,
+              "\"mt-5 w-full rounded-2xl pl-[25px] pr-4 py-3\"": 1,
+              "\"px-2 py-1\"": 1,
               "\"bg-default border-t border-muted min-h-[60px] px-4 py-2\"": 1,
               "\"flex-row justify-between gap-2\"": 1,
               "\"flex flex-col items-center justify-center w-full p-4\"": 1,
@@ -6171,14 +6200,14 @@
               "\"flex-1 bg-default pt-20\"": 1,
               "\"py-12 px-4\"": 1,
               "\"flex-row justify-between gap-2 pt-1\"": 1,
+              "{isMultiProviderEnabled ? 'w-full flex-nowrap' : 'w-full flex-wrap gap-y-1'}": 1,
+              "\"ml-auto flex-shrink-0\"": 1,
               "\"flex-1 bg-muted rounded-lg px-3 py-1 mr-2\"": 1,
               "bg-default pt-20": 1,
-              "\"mx-4 mt-4 mb-4 px-4 py-6 rounded-xl\"": 1,
-              "{isBalanceEmpty ? 'mt-4 mb-4 rounded-xl' : 'mb-4'}": 1,
+              "\"mx-4 mb-4 px-4 py-6 rounded-xl\"": 1,
+              "{isBalanceEmpty ? 'mb-4 rounded-xl' : 'mb-4'}": 1,
               "\"w-full flex-row justify-between\"": 1,
               "\"w-full border-b border-muted\"": 1,
-              "\"px-4 pt-4 pb-4\"": 1,
-              "\"gap-3 mt-4\"": 1,
               "\"flex-1 items-center justify-center bg-error-muted\"": 1,
               "\"bg-default rounded-lg\"": 1,
               "\"overflow-hidden rounded-lg\"": 1,
@@ -6257,6 +6286,7 @@
               "\"w-full bg-muted rounded-2xl p-4 mb-4\"": 1,
               "\"justify-between mb-3\"": 1,
               "\"items-center justify-center h-[40px]\"": 1,
+              "\"items-center\"": 1,
               "\"w-full py-3 gap-2\"": 1,
               "{`w-[${PULSE_RING_SIZE}px] h-[${PULSE_RING_SIZE}px] items-center justify-center`}": 1,
               "{`w-[${PULSE_DOT_SIZE}px] h-[${PULSE_DOT_SIZE}px] rounded-full bg-error-default`}": 1,
@@ -6269,13 +6299,13 @@
               "{`px-4 pb-0${hideBorder ? '' : ' border-t border-muted'}`}": 1,
               "\"text-center items-center justify-center px-1\"": 1,
               "\"px-12 pb-4\"": 1,
+              "{`mb-5 p-3 rounded-lg gap-3 ${styles.containerClass}`}": 1,
               "\"flex-1 min-w-0 gap-3\"": 1,
               "\"gap-1 flex-wrap\"": 1,
               "{rowClassName}": 1,
               "{`rounded-full py-2 pl-[9px] pr-[16px] mt-2 ${!canEdit ? '' : 'bg-muted'} mx-a...}": 1,
               "\"gap-2 py-2\"": 1,
-              "\"w-full py-2 px-4 gap-3\"": 1,
-              "\"flex-1 bg-muted rounded-lg px-3 py-2\"": 1,
+              "\"w-full py-2\"": 1,
               "\"flex-1 relative\"": 1,
               "\"px-3\"": 1,
               "\"px-3 bg-default border-t border-muted\"": 1,
@@ -6307,7 +6337,6 @@
               "\"mx-4 mt-1 mb-2 rounded-lg bg-background-muted px-3 py-3\"": 1,
               "\"mr-3 rounded-full bg-background-muted\"": 1,
               "\"items-center pt-8 pb-6\"": 1,
-              "\"items-center mt-1\"": 1,
               "\"bg-muted rounded h-[18px] w-32\"": 1,
               "\"bg-muted rounded h-[18px] w-40\"": 1,
               "\"bg-muted rounded h-[18px] w-20\"": 1,
@@ -6349,8 +6378,7 @@
               "\"rounded-full px-4 py-2 gap-1\"": 1,
               "\"bg-muted rounded-xl p-4 gap-3\"": 1,
               "{`py-2 px-4 ${rowBg}`}": 1,
-              "\"gap-1 mb-2 self-start px-4\"": 1,
-              "\"mt-2 px-4\"": 1,
+              "\"gap-2 mb-2 px-4\"": 1,
               "\"justify-end mb-4\"": 1,
               "\"bg-success-muted rounded-[6px] px-1.5\"": 1,
               "\"h-3 rounded-full bg-muted overflow-hidden\"": 1,
@@ -6453,6 +6481,7 @@
               "\"py-8 self-stretch -mx-4\"": 1,
               "\"bg-muted rounded self-start min-w-[22px] px-1.5 py-0.5\"": 1,
               "\"rounded self-start px-1.5 py-0.5\"": 1,
+              "{`rounded min-w-[22px] px-1.5 gap-1 shrink-0 ${twBg}`}": 1,
               "{`w-10 h-10 rounded-full bg-white border border-muted mr-4 overflow-hidden ite...}": 1,
               "\"w-10 h-10 mr-4 items-center justify-center\"": 1,
               "\"flex-1 flex-row items-center\"": 1,
@@ -6477,7 +6506,6 @@
               "{isFullView ? 'px-4 items-center' : 'items-center'}": 1,
               "{!isFullView ? 'bg-default' : 'flex-1 bg-default'}": 1,
               "\"px-4 pt-6 pb-2 items-center\"": 1,
-              "{`rounded min-w-[22px] px-1.5 gap-1 shrink-0 ${securityBadge.bg}`}": 1,
               "\"justify-center py-8\"": 1,
               "\"bg-background-alternative\"": 1,
               "{`flex-1 bg-muted rounded-lg ${Platform.OS === 'ios' ? 'py-3' : 'py-1'} px-3 m...}": 1,
@@ -6498,14 +6526,13 @@
               "\"items-center pt-4 px-4\"": 1,
               "\"flex-1 justify-center items-center px-4\"": 1,
               "\"flex-1 bg-default px-4\"": 1,
-              "\"pt-4\"": 1,
               "\"mt-4 items-center\"": 1,
               "\"items-start\"": 1,
               "\"mr-2\"": 1,
               "\"flex-row items-center absolute px-4 right-0\"": 1,
               "\"m-4\"": 1,
+              "\"bg-muted rounded-lg px-3\"": 1,
               "\"flex-1 justify-center items-center px-[30px]\"": 1,
-              "\"px-2 py-4\"": 1,
               "\"h-10 w-10 rounded-xl bg-muted\"": 1,
               "\"px-4 pt-4 gap-2\"": 1,
               "\"flex-1 ml-3 gap-1\"": 1,
@@ -6538,8 +6565,8 @@
               "\"w-[240px] rounded-2xl bg-background-muted flex-1\"": 1,
               "\"w-10 h-10 rounded-lg mt-1 bg-background-alternative\"": 1,
               "\"flex-1 justify-center ml-5\"": 1,
-              "\"w-[200px] rounded-2xl bg-muted p-4 overflow-hidden\"": 1,
-              "\"flex-1 gap-2 mb-3\"": 1,
+              "{`w-[${TOP_TRADER_CARD_WIDTH}px] h-auto rounded-2xl bg-muted p-4 overflow-hidd...}": 1,
+              "\"w-full gap-0.5\"": 1,
               "\"w-[280px] h-[248px] rounded-2xl bg-background-muted overflow-hidden\"": 1,
               "\"flex-wrap gap-1\"": 1,
               "\"rounded-xl w-full\"": 1,
@@ -6568,7 +6595,6 @@
               "\"p-6 border border-muted rounded-2xl\"": 1,
               "\"p-6 border border-muted rounded-2xl bg-white\"": 1,
               "\"flex-1 gap-4 pt-4 mb-6\"": 1,
-              "\"px-4 pt-2 pb-4\"": 1,
               "{`flex-row items-center justify-between min-h-12 rounded-xl border border-soli...}": 1,
               "\"flex-1 mr-2\"": 1,
               "\"flex-1 items-center justify-center py-8\"": 1,
@@ -6604,13 +6630,18 @@
               "\"-mt-4\"": 1,
               "{`px-4 py-3${isDisabled ? ' opacity-50' : ''}`}": 1,
               "\"px-4 pt-5 pb-2\"": 1,
-              "\"px-4 pt-2 pb-3 mb-2\"": 1,
+              "{`px-4 py-4${disabled ? ' opacity-50' : ''}`}": 1,
+              "\"flex-1 mr-3\"": 1,
+              "\"px-4 pt-2 pb-3\"": 1,
+              "\"px-4 pt-3 pb-4 bg-default\"": 1,
+              "\"rounded-xl bg-muted px-4 py-3\"": 1,
+              "\"rounded-xl bg-muted overflow-hidden\"": 1,
               "\"h-20 px-4\"": 1,
-              "\"w-12 h-12 rounded-xl overflow-hidden\"": 1,
+              "\"pb-1\"": 1,
               "\"pb-2\"": 1,
+              "\"pb-0.5\"": 1,
               "{`flex-1 items-center justify-center px-2 py-1 rounded ${ isActive ? 'bg-muted...}": 1,
               "\"mx-4 my-3\"": 1,
-              "\"w-10 items-end\"": 1,
               "\"mx-4 p-4 bg-muted rounded-2xl\"": 1,
               "\"px-4 mt-5\"": 1,
               "\"self-start pb-2 border-b-2 border-white\"": 1,
@@ -6623,12 +6654,15 @@
               "\"px-4 mb-2\"": 1,
               "\"mr-3\"": 1,
               "\"flex-1 h-[46px]\"": 1,
-              "\"flex-row items-center gap-2 px-4\"": 1,
-              "\"rounded-md items-center justify-center h-8 w-8 border-2 border-text-default\"": 1,
+              "\"mt-3 flex-row items-center gap-2 px-4\"": 1,
+              "\"rounded-lg items-center justify-center h-8 w-8 border border-muted bg-section\"": 1,
               "{isHidden ? 'hidden' : undefined}": 1,
               "\"px-4 pb-3 gap-3\"": 1,
+              "\"h-12 gap-3 rounded-full border border-border-muted bg-muted px-4\"": 1,
               "\"py-2 bg-default\"": 1,
-              "\"mt-1 mb-4 -mx-4\"": 1,
+              "\"mb-7 -mx-4\"": 1,
+              "\"-mx-4 mb-9\"": 1,
+              "\"-mx-4 mb-6\"": 1,
               "{`rounded-2xl overflow-hidden ${!isLastItem ? 'pr-4' : ''}`}": 1,
               "\"flex-1 items-center pt-12\"": 1,
               "\"flex-row bg-info-muted rounded-lg p-3 mb-6 w-full\"": 1,
@@ -6654,28 +6688,29 @@
             }
           },
           "flexDirection": {
-            "count": 495,
+            "count": 503,
             "values": {
-              "{BoxFlexDirection.Row}": 417,
+              "{BoxFlexDirection.Row}": 425,
               "{BoxFlexDirection.Column}": 78
             }
           },
           "alignItems": {
-            "count": 471,
+            "count": 478,
             "values": {
-              "{BoxAlignItems.Center}": 410,
-              "{BoxAlignItems.Start}": 39,
-              "{BoxAlignItems.End}": 17,
+              "{BoxAlignItems.Center}": 417,
+              "{BoxAlignItems.Start}": 40,
+              "{BoxAlignItems.End}": 16,
               "{typeof title === 'string' ? BoxAlignItems.Center : BoxAlignItems.Start}": 2,
               "{typeof description === 'string' ? BoxAlignItems.Center : BoxAlignItems.Start}": 2,
               "{BoxAlignItems.Stretch}": 1
             }
           },
           "testID": {
-            "count": 280,
+            "count": 290,
             "values": {
-              "{testID}": 49,
+              "{testID}": 53,
               "{ONDO_PRIZE_POOL_TEST_IDS.CONTAINER}": 3,
+              "\"price-chart-loading\"": 2,
               "\"onboarding-step-actions\"": 2,
               "{CAMPAIGN_STATS_SUMMARY_TEST_IDS.NOT_ELIGIBLE_BANNER}": 2,
               "\"progress-indicator-container\"": 2,
@@ -6689,7 +6724,6 @@
               "\"icon\"": 2,
               "snap-ui-renderer__date-time-picker": 1,
               "{hasInsufficientData ? 'price-chart-insufficient-data' : 'price-chart-no-data'}": 1,
-              "\"price-chart-loading\"": 1,
               "\"resource-ring-container\"": 1,
               "\"resource-ring-icon-container\"": 1,
               "\"basic-functionality-empty-state\"": 1,
@@ -6700,6 +6734,7 @@
               "\"quote-details-card-loading-row\"": 1,
               "\"international-location-box\"": 1,
               "\"us-location-box\"": 1,
+              "{CashbackSelectors.FUNDING_WARNING}": 1,
               "{CashbackSelectors.BALANCE_TITLE}": 1,
               "{CashbackSelectors.DETAILS_CARD}": 1,
               "{`${ChooseYourCardSelectors.CARD_IMAGE}-${item.id}`}": 1,
@@ -6791,6 +6826,7 @@
               "{CAMPAIGN_MECHANICS_TEST_IDS.NOTES_SECTION}": 1,
               "{REWARDS_VIEW_SELECTORS.TOP_BENEFIT_DETAILS}": 1,
               "{REWARDS_VIEW_SELECTORS.TOP_BENEFIT_SECTION}": 1,
+              "{CAMPAIGN_ENDED_STATS_TEST_IDS.CONTAINER}": 1,
               "{CAMPAIGN_HOW_IT_WORKS_TEST_IDS.CONTAINER}": 1,
               "{`${CAMPAIGN_HOW_IT_WORKS_TEST_IDS.STEP}-${stepIndex}`}": 1,
               "{`${CAMPAIGN_HOW_IT_WORKS_TEST_IDS.STEP_INDEX}-${stepIndex}`}": 1,
@@ -6883,7 +6919,9 @@
               "{NotificationPreferencesViewSelectorsIDs.TRADERS_ERROR}": 1,
               "{NotificationPreferencesViewSelectorsIDs.TRADERS_EMPTY}": 1,
               "\"quick-buy-content-loading\"": 1,
+              "\"quick-buy-price-impact\"": 1,
               "{`trade-row-${trade.transactionHash}`}": 1,
+              "{TraderPositionViewSelectorsIDs.FALLBACK}": 1,
               "{TraderProfileViewSelectorsIDs.ERROR_BANNER}": 1,
               "{TraderProfileViewSelectorsIDs.HEADER}": 1,
               "{TraderProfileViewSelectorsIDs.STATS_ROW}": 1,
@@ -6892,13 +6930,14 @@
               "{TEXTFIELD_ENDACCESSORY_TEST_ID}": 1,
               "\"empty-error-trending-state\"": 1,
               "\"empty-search-result-state\"": 1,
+              "\"explore-view-search-input\"": 1,
               "{`recipient-avatar-${recipient.address}`}": 1
             }
           },
           "justifyContent": {
-            "count": 227,
+            "count": 231,
             "values": {
-              "{BoxJustifyContent.Between}": 109,
+              "{BoxJustifyContent.Between}": 113,
               "{BoxJustifyContent.Center}": 78,
               "{BoxJustifyContent.Start}": 22,
               "{BoxJustifyContent.End}": 12,
@@ -6910,13 +6949,13 @@
             }
           },
           "gap": {
-            "count": 173,
+            "count": 181,
             "values": {
               "0": 2,
-              "1": 37,
+              "1": 39,
               "2": 38,
-              "3": 49,
-              "4": 35,
+              "3": 54,
+              "4": 36,
               "5": 1,
               "6": 5,
               "8": 3,
@@ -6926,7 +6965,7 @@
             }
           },
           "style": {
-            "count": 166,
+            "count": 167,
             "values": {
               "{styles.container}": 9,
               "{tw.style('flex-1 flex-shrink mr-2 -mt-1')}": 3,
@@ -6944,7 +6983,6 @@
               "{tw.style('flex-row items-center gap-3 h-12', twClassName)}": 2,
               "{tw.style('mb-2 flex-1')}": 2,
               "{tw.style('px-4 py-3')}": 2,
-              "{tw.style('min-h-[44px]')}": 2,
               "{tw.style('flex-1 p-4', { backgroundColor: mockTheme.colors.background.default...}": 2,
               "{{ flex: 1, backgroundColor: mockTheme.colors.background.default, }}": 2,
               "{{ paddingTop: insets.top + (Platform.OS === 'android' ? 16 : 0) }}": 2,
@@ -6994,6 +7032,7 @@
               "{styles.countdownContainer}": 1,
               "{styles.countdownPill}": 1,
               "{sectionIndex > 0 ? styles.sectionSpacing : undefined}": 1,
+              "{tw.style('mb-6 border-t border-muted')}": 1,
               "{tw.style('bg-background-section')}": 1,
               "{tw.style('mt-1')}": 1,
               "{styles.contentRow}": 1,
@@ -7046,11 +7085,13 @@
               "{tw.style( 'rounded-lg px-2 py-0.5 min-w-6 items-center justify-center', { bac...}": 1,
               "{tw.style('px-4 py-3 flex-row gap-4 justify-between')}": 1,
               "{tw.style('pt-4 m-4', { paddingBottom: bottomInset })}": 1,
+              "{tw.style('min-h-[44px]')}": 1,
               "{tw.style('px-4 pt-6', Platform.OS !== 'android' && 'pb-4')}": 1,
               "{animationWrapperStyle}": 1,
               "{textWrapperStyle}": 1,
               "{tw.style(Platform.OS === 'android' ? 'mb-6' : 'mb-4')}": 1,
               "{tw.style('flex-1')}": 1,
+              "{{ height: TRADER_ROW_HEIGHT }}": 1,
               "{tw.style( 'w-full gap-y-4 mt-auto', Platform.OS === 'android' ? 'mb-6' : 'mb-...}": 1,
               "{{ height: windowHeight - 290 }}": 1,
               "{isVisible ? styles.screenVisible : styles.screenHidden}": 1,
@@ -7067,7 +7108,7 @@
             }
           },
           "key": {
-            "count": 46,
+            "count": 47,
             "values": {
               "{index}": 5,
               "{key}": 4,
@@ -7077,6 +7118,7 @@
               "{label}": 2,
               "{`skeleton-${index}`}": 2,
               "{preset}": 2,
+              "{feature.featureId}": 1,
               "{`feature-${index}`}": 1,
               "{`order-item-${index}`}": 1,
               "{`future-${visibleSlides[safeActiveSlideIndex + 2].id}`}": 1,
@@ -7114,39 +7156,40 @@
             }
           },
           "paddingTop": {
-            "count": 17,
+            "count": 19,
             "values": {
               "1": 3,
-              "2": 2,
+              "2": 4,
               "3": 6,
-              "4": 3,
+              "4": 2,
               "6": 2,
-              "8": 1
+              "8": 2
             }
           },
           "backgroundColor": {
-            "count": 15,
+            "count": 16,
             "values": {
               "{BoxBackgroundColor.BackgroundMuted}": 6,
               "{BoxBackgroundColor.BackgroundDefault}": 3,
               "{BoxBackgroundColor.BackgroundSection}": 3,
               "{selected ? BoxBackgroundColor.BackgroundMuted : BoxBackgroundColor.Background...}": 1,
+              "{BoxBackgroundColor.ErrorMuted}": 1,
               "{bg}": 1,
               "{BoxBackgroundColor.PrimaryMuted}": 1
             }
           },
           "padding": {
-            "count": 12,
+            "count": 13,
             "values": {
-              "4": 12
+              "4": 13
             }
           },
           "paddingBottom": {
             "count": 11,
             "values": {
               "3": 5,
-              "4": 3,
-              "6": 3
+              "4": 4,
+              "6": 2
             }
           },
           "marginBottom": {
@@ -7187,10 +7230,10 @@
             }
           },
           "paddingVertical": {
-            "count": 5,
+            "count": 6,
             "values": {
               "1": 1,
-              "2": 2,
+              "2": 3,
               "3": 2
             }
           },

@@ -1,9 +1,9 @@
 {
   "component": "BottomSheetFooter",
-  "generatedAt": "2026-04-24T16:56:05.348Z",
+  "generatedAt": "2026-05-01T15:41:25.562Z",
   "projects": {
     "extension": {
-      "filesScanned": 3089,
+      "filesScanned": 3104,
       "targetComponent": "BottomSheetFooter",
       "mmds": {
         "totalInstances": 0,
@@ -23,7 +23,7 @@
       "deprecatedByLegacyComponent": {}
     },
     "mobile": {
-      "filesScanned": 6077,
+      "filesScanned": 6139,
       "targetComponent": "BottomSheetFooter",
       "mmds": {
         "totalInstances": 8,
@@ -78,11 +78,11 @@
         }
       },
       "deprecated": {
-        "totalInstances": 43,
-        "filesCount": 42,
+        "totalInstances": 45,
+        "filesCount": 44,
         "props": {
           "buttonPropsArray": {
-            "count": 43,
+            "count": 45,
             "values": {
               "{footerButtons}": 7,
               "{buttons}": 5,
@@ -110,6 +110,8 @@
               "{[ { variant: ButtonVariants.Secondary, label: strings('privacy_policy.pna25_o...}": 1,
               "{[ { onPress: onCancel, label: strings('confirmation_modal.cancel_cta'), varia...}": 1,
               "{buttonPropsArray}": 1,
+              "{[ { variant: ButtonVariants.Primary, label: strings( 'social_leaderboard.trad...}": 1,
+              "{[ { variant: ButtonVariants.Primary, label: strings('social_leaderboard.trade...}": 1,
               "{[ { variant: ButtonVariants.Secondary, size: ButtonSize.Lg, label: strings('s...}": 1
             }
           },
@@ -121,12 +123,13 @@
             }
           },
           "style": {
-            "count": 23,
+            "count": 25,
             "values": {
               "{styles.footer}": 6,
               "{styles.footerContainer}": 5,
               "{tw.style('px-6')}": 3,
               "{styles.footerPadding}": 2,
+              "{tw.style('px-4 mb-4')}": 2,
               "{styles.footerButtonsContainer}": 1,
               "{tw.style('px-4')}": 1,
               "{style}": 1,
@@ -139,11 +142,11 @@
         }
       },
       "overall": {
-        "totalInstances": 51,
-        "filesCount": 49,
+        "totalInstances": 53,
+        "filesCount": 51,
         "props": {
           "buttonPropsArray": {
-            "count": 43,
+            "count": 45,
             "values": {
               "{footerButtons}": 7,
               "{buttons}": 5,
@@ -171,6 +174,8 @@
               "{[ { variant: ButtonVariants.Secondary, label: strings('privacy_policy.pna25_o...}": 1,
               "{[ { onPress: onCancel, label: strings('confirmation_modal.cancel_cta'), varia...}": 1,
               "{buttonPropsArray}": 1,
+              "{[ { variant: ButtonVariants.Primary, label: strings( 'social_leaderboard.trad...}": 1,
+              "{[ { variant: ButtonVariants.Primary, label: strings('social_leaderboard.trade...}": 1,
               "{[ { variant: ButtonVariants.Secondary, size: ButtonSize.Lg, label: strings('s...}": 1
             }
           },
@@ -182,13 +187,14 @@
             }
           },
           "style": {
-            "count": 27,
+            "count": 29,
             "values": {
               "{styles.footer}": 7,
               "{styles.footerContainer}": 6,
               "{tw.style('px-6')}": 3,
               "{styles.footerPadding}": 2,
               "{tw.style('px-4')}": 2,
+              "{tw.style('px-4 mb-4')}": 2,
               "{styles.footerButtonsContainer}": 1,
               "{style}": 1,
               "{tw.style('px-4 pt-6', Platform.OS !== 'android' && 'pb-4')}": 1,
@@ -232,7 +238,7 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "BottomSheetFooter": 43
+        "BottomSheetFooter": 45
       }
     }
   }

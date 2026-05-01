@@ -1,9 +1,9 @@
 {
   "component": "AvatarBase",
-  "generatedAt": "2026-04-24T16:51:41.537Z",
+  "generatedAt": "2026-05-01T15:36:44.643Z",
   "projects": {
     "extension": {
-      "filesScanned": 3089,
+      "filesScanned": 3104,
       "targetComponent": "AvatarBase",
       "mmds": {
         "totalInstances": 0,
@@ -183,7 +183,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 6077,
+      "filesScanned": 6139,
       "targetComponent": "AvatarBase",
       "mmds": {
         "totalInstances": 5,
@@ -192,7 +192,8 @@
           "size": {
             "count": 5,
             "values": {
-              "{AvatarBaseSize.Lg}": 4,
+              "{AvatarBaseSize.Lg}": 3,
+              "{AvatarBaseSize.Xl}": 1,
               "{AvatarBaseSize.Md}": 1
             }
           },
@@ -203,6 +204,12 @@
               "{username.charAt(0).toUpperCase()}": 1,
               "{traderName.charAt(0).toUpperCase()}": 1,
               "{profile.name.charAt(0).toUpperCase()}": 1
+            }
+          },
+          "twClassName": {
+            "count": 1,
+            "values": {
+              "{`w-[${AVATAR_SIZE}px] h-[${AVATAR_SIZE}px]`}": 1
             }
           }
         }
@@ -250,10 +257,11 @@
           "size": {
             "count": 9,
             "values": {
-              "{AvatarBaseSize.Lg}": 4,
+              "{AvatarBaseSize.Lg}": 3,
               "{AvatarSize.Sm}": 2,
               "{AvatarSize.Xl}": 1,
               "{avatarSize as unknown as AvatarSize}": 1,
+              "{AvatarBaseSize.Xl}": 1,
               "{AvatarBaseSize.Md}": 1
             }
           },
@@ -286,6 +294,12 @@
             "count": 1,
             "values": {
               "{props}": 1
+            }
+          },
+          "twClassName": {
+            "count": 1,
+            "values": {
+              "{`w-[${AVATAR_SIZE}px] h-[${AVATAR_SIZE}px]`}": 1
             }
           }
         }
