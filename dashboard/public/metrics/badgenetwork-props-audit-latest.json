@@ -1,9 +1,9 @@
 {
   "component": "BadgeNetwork",
-  "generatedAt": "2026-04-24T16:54:47.231Z",
+  "generatedAt": "2026-05-01T15:40:01.941Z",
   "projects": {
     "extension": {
-      "filesScanned": 3089,
+      "filesScanned": 3104,
       "targetComponent": "BadgeNetwork",
       "mmds": {
         "totalInstances": 4,
@@ -49,67 +49,99 @@
       "deprecatedByLegacyComponent": {}
     },
     "mobile": {
-      "filesScanned": 6077,
+      "filesScanned": 6139,
       "targetComponent": "BadgeNetwork",
       "mmds": {
-        "totalInstances": 0,
-        "filesCount": 0,
-        "props": {}
-      },
-      "deprecated": {
-        "totalInstances": 8,
-        "filesCount": 8,
+        "totalInstances": 2,
+        "filesCount": 2,
         "props": {
           "name": {
-            "count": 8,
+            "count": 2,
+            "values": {
+              "{sourceToken?.symbol ?? ''}": 1,
+              "{item.symbol}": 1
+            }
+          },
+          "src": {
+            "count": 2,
+            "values": {
+              "{getNetworkImageSource({ chainId: sourceChainId, })}": 1,
+              "{getNetworkImageSource({ chainId: item.chainId, })}": 1
+            }
+          },
+          "twClassName": {
+            "count": 2,
+            "values": {
+              "\"scale-75\"": 2
+            }
+          }
+        }
+      },
+      "deprecated": {
+        "totalInstances": 7,
+        "filesCount": 7,
+        "props": {
+          "name": {
+            "count": 7,
             "values": {
               "{networkName}": 3,
               "{token.network?.shortName}": 1,
               "{normalizedNetworkChainId}": 1,
               "{depositNetworkName ?? networkName}": 1,
-              "{sourceToken?.symbol ?? ''}": 1,
-              "{item.symbol}": 1
+              "{position.chain}": 1
             }
           },
           "imageSource": {
-            "count": 8,
+            "count": 7,
             "values": {
               "{networkImageSource}": 5,
               "{getNetworkImageForToken(token)}": 1,
-              "{getNetworkImageSource({ chainId: sourceChainId, })}": 1,
-              "{getNetworkImageSource({ chainId: item.chainId, })}": 1
+              "{getNetworkImageSource({ chainId: caipChainId })}": 1
             }
           }
         }
       },
       "overall": {
-        "totalInstances": 8,
-        "filesCount": 8,
+        "totalInstances": 9,
+        "filesCount": 9,
         "props": {
           "name": {
-            "count": 8,
+            "count": 9,
             "values": {
               "{networkName}": 3,
               "{token.network?.shortName}": 1,
               "{normalizedNetworkChainId}": 1,
               "{depositNetworkName ?? networkName}": 1,
               "{sourceToken?.symbol ?? ''}": 1,
-              "{item.symbol}": 1
+              "{item.symbol}": 1,
+              "{position.chain}": 1
             }
           },
           "imageSource": {
-            "count": 8,
+            "count": 7,
             "values": {
               "{networkImageSource}": 5,
               "{getNetworkImageForToken(token)}": 1,
+              "{getNetworkImageSource({ chainId: caipChainId })}": 1
+            }
+          },
+          "src": {
+            "count": 2,
+            "values": {
               "{getNetworkImageSource({ chainId: sourceChainId, })}": 1,
               "{getNetworkImageSource({ chainId: item.chainId, })}": 1
+            }
+          },
+          "twClassName": {
+            "count": 2,
+            "values": {
+              "\"scale-75\"": 2
             }
           }
         }
       },
       "deprecatedByLegacyComponent": {
-        "BadgeNetwork": 8
+        "BadgeNetwork": 7
       }
     }
   }

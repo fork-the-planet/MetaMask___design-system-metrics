@@ -1,9 +1,9 @@
 {
   "component": "ButtonBase",
-  "generatedAt": "2026-04-24T16:57:49.124Z",
+  "generatedAt": "2026-05-01T15:43:17.710Z",
   "projects": {
     "extension": {
-      "filesScanned": 3089,
+      "filesScanned": 3104,
       "targetComponent": "ButtonBase",
       "mmds": {
         "totalInstances": 28,
@@ -826,7 +826,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 6077,
+      "filesScanned": 6139,
       "targetComponent": "ButtonBase",
       "mmds": {
         "totalInstances": 10,

@@ -1,9 +1,9 @@
 {
   "component": "TextButton",
-  "generatedAt": "2026-04-24T17:02:34.873Z",
+  "generatedAt": "2026-05-01T15:48:19.173Z",
   "projects": {
     "extension": {
-      "filesScanned": 3089,
+      "filesScanned": 3104,
       "targetComponent": "TextButton",
       "mmds": {
         "totalInstances": 63,
@@ -207,8 +207,8 @@
         }
       },
       "deprecated": {
-        "totalInstances": 85,
-        "filesCount": 54,
+        "totalInstances": 84,
+        "filesCount": 53,
         "props": {
           "onClick": {
             "count": 54,
@@ -264,9 +264,9 @@
             }
           },
           "size": {
-            "count": 49,
+            "count": 48,
             "values": {
-              "{ButtonLinkSize.Inherit}": 21,
+              "{ButtonLinkSize.Inherit}": 20,
               "{ButtonLinkSize.Sm}": 16,
               "{ButtonLinkSize.Auto}": 4,
               "{Size.inherit}": 3,
@@ -276,16 +276,16 @@
             }
           },
           "href": {
-            "count": 34,
+            "count": 33,
             "values": {
               "{safeWebsite.toString()}": 2,
               "{url}": 2,
               "{ZENDESK_URLS.IMPORTED_ACCOUNTS_PRIVATE_KEY}": 2,
               "{blockExplorerLink}": 2,
-              "{SMART_TRANSACTIONS_LEARN_MORE_URL}": 2,
               "{ZENDESK_URLS.UPDATE_VERSION}": 2,
               "{SECURITY_PROVIDER_CONFIG[provider]?.url}": 1,
               "{reportUrl ?? ZENDESK_URLS.SUPPORT_URL}": 1,
+              "{ZENDESK_URLS.NETWORK_DEPRECATED}": 1,
               "{ZENDESK_URLS.CUSTOMIZE_NONCE}": 1,
               "{getTransactionUrl( id, srcNetwork?.chainId ?? transaction.chain, )}": 1,
               "{getChainExplorerUrl( status.destChain.txHash, status.destChain.chainId?.toStr...}": 1,
@@ -300,18 +300,18 @@
               "{blockExplorerTokenLink}": 1,
               "{SUPPORT_LINK}": 1,
               "{link}": 1,
+              "{SMART_TRANSACTIONS_LEARN_MORE_URL}": 1,
               "{ZENDESK_URLS.ACCOUNT_UPGRADE}": 1,
               "{ZENDESK_URLS.SPEEDUP_CANCEL}": 1,
-              "{ZENDESK_URLS.NETWORK_DEPRECATED}": 1,
               "\"https://snaps.metamask.io/\"": 1,
               "{ZENDESK_URLS.GAS_FEES}": 1,
               "{ZENDESK_URLS.SWAPS_USER_GUIDE}": 1
             }
           },
           "target": {
-            "count": 25,
+            "count": 24,
             "values": {
-              "\"_blank\"": 25
+              "\"_blank\"": 24
             }
           },
           "data-testid": {
@@ -341,6 +341,7 @@
               "\"update-metamask-link\"": 2,
               "{`security-provider-button-link-${provider}`}": 1,
               "{`security-provider-button-supporturl-${provider}`}": 1,
+              "\"import-token-fake-token-warning\"": 1,
               "\"updateRpc\"": 1,
               "\"switchToInfura\"": 1,
               "\"permission-connect-footer-learn-more-link\"": 1,
@@ -350,7 +351,6 @@
               "\"nftAddressError\"": 1,
               "\"token-detection-announcement\"": 1,
               "{origin}": 1,
-              "\"import-token-fake-token-warning\"": 1,
               "\"gas-fees-learn-more\"": 1
             }
           },
@@ -362,17 +362,10 @@
             }
           },
           "as": {
-            "count": 17,
-            "values": {
-              "\"a\"": 14,
-              "\"button\"": 3
-            }
-          },
-          "rel": {
             "count": 16,
             "values": {
-              "\"noopener noreferrer\"": 14,
-              "\"noreferrer noopener\"": 2
+              "\"a\"": 13,
+              "\"button\"": 3
             }
           },
           "className": {
@@ -392,14 +385,11 @@
               "\"import-tokens-modal__autodetect\"": 1
             }
           },
-          "textProps": {
-            "count": 12,
+          "rel": {
+            "count": 15,
             "values": {
-              "{{ variant: TextVariant.bodyMd, alignItems: AlignItems.flexStart, }}": 7,
-              "{{ display: Display.Inline, }}": 2,
-              "{{ width: BlockSize.Full }}": 1,
-              "{{ variant: TextVariant.bodyMdMedium }}": 1,
-              "{{ variant: TextVariant.bodySm, }}": 1
+              "\"noopener noreferrer\"": 13,
+              "\"noreferrer noopener\"": 2
             }
           },
           "variant": {
@@ -420,6 +410,16 @@
               "{IconName.Hardware}": 1,
               "{IconName.Snaps}": 1,
               "{IconName.Eye}": 1
+            }
+          },
+          "textProps": {
+            "count": 11,
+            "values": {
+              "{{ variant: TextVariant.bodyMd, alignItems: AlignItems.flexStart, }}": 6,
+              "{{ display: Display.Inline, }}": 2,
+              "{{ width: BlockSize.Full }}": 1,
+              "{{ variant: TextVariant.bodyMdMedium }}": 1,
+              "{{ variant: TextVariant.bodySm, }}": 1
             }
           },
           "startIconProps": {
@@ -519,6 +519,12 @@
               "4": 1
             }
           },
+          "fontWeight": {
+            "count": 1,
+            "values": {
+              "{FontWeight.Normal}": 1
+            }
+          },
           "width": {
             "count": 1,
             "values": {
@@ -548,18 +554,12 @@
             "values": {
               "2": 1
             }
-          },
-          "fontWeight": {
-            "count": 1,
-            "values": {
-              "{FontWeight.Normal}": 1
-            }
           }
         }
       },
       "overall": {
-        "totalInstances": 148,
-        "filesCount": 90,
+        "totalInstances": 147,
+        "filesCount": 89,
         "props": {
           "onClick": {
             "count": 88,
@@ -642,9 +642,9 @@
             }
           },
           "size": {
-            "count": 67,
+            "count": 66,
             "values": {
-              "{ButtonLinkSize.Inherit}": 21,
+              "{ButtonLinkSize.Inherit}": 20,
               "{ButtonLinkSize.Sm}": 16,
               "{TextButtonSize.BodyMd}": 10,
               "{TextButtonSize.BodySm}": 7,
@@ -699,8 +699,8 @@
               "\"terms-link\"": 3,
               "\"link\"": 3,
               "\"need-help-link\"": 3,
-              "\"terms\"": 2,
               "\"import-token-fake-token-warning\"": 2,
+              "\"terms\"": 2,
               "\"u2f-error-1\"": 2,
               "\"update-metamask-link\"": 2,
               "\"here-link\"": 2,
@@ -770,16 +770,16 @@
             }
           },
           "href": {
-            "count": 34,
+            "count": 33,
             "values": {
               "{safeWebsite.toString()}": 2,
               "{url}": 2,
               "{ZENDESK_URLS.IMPORTED_ACCOUNTS_PRIVATE_KEY}": 2,
               "{blockExplorerLink}": 2,
-              "{SMART_TRANSACTIONS_LEARN_MORE_URL}": 2,
               "{ZENDESK_URLS.UPDATE_VERSION}": 2,
               "{SECURITY_PROVIDER_CONFIG[provider]?.url}": 1,
               "{reportUrl ?? ZENDESK_URLS.SUPPORT_URL}": 1,
+              "{ZENDESK_URLS.NETWORK_DEPRECATED}": 1,
               "{ZENDESK_URLS.CUSTOMIZE_NONCE}": 1,
               "{getTransactionUrl( id, srcNetwork?.chainId ?? transaction.chain, )}": 1,
               "{getChainExplorerUrl( status.destChain.txHash, status.destChain.chainId?.toStr...}": 1,
@@ -794,9 +794,9 @@
               "{blockExplorerTokenLink}": 1,
               "{SUPPORT_LINK}": 1,
               "{link}": 1,
+              "{SMART_TRANSACTIONS_LEARN_MORE_URL}": 1,
               "{ZENDESK_URLS.ACCOUNT_UPGRADE}": 1,
               "{ZENDESK_URLS.SPEEDUP_CANCEL}": 1,
-              "{ZENDESK_URLS.NETWORK_DEPRECATED}": 1,
               "\"https://snaps.metamask.io/\"": 1,
               "{ZENDESK_URLS.GAS_FEES}": 1,
               "{ZENDESK_URLS.SWAPS_USER_GUIDE}": 1
@@ -809,9 +809,9 @@
             }
           },
           "target": {
-            "count": 25,
+            "count": 24,
             "values": {
-              "\"_blank\"": 25
+              "\"_blank\"": 24
             }
           },
           "externalLink": {
@@ -822,23 +822,23 @@
             }
           },
           "as": {
-            "count": 17,
+            "count": 16,
             "values": {
-              "\"a\"": 14,
+              "\"a\"": 13,
               "\"button\"": 3
             }
           },
           "rel": {
-            "count": 16,
+            "count": 15,
             "values": {
-              "\"noopener noreferrer\"": 14,
+              "\"noopener noreferrer\"": 13,
               "\"noreferrer noopener\"": 2
             }
           },
           "textProps": {
-            "count": 14,
+            "count": 13,
             "values": {
-              "{{ variant: TextVariant.bodyMd, alignItems: AlignItems.flexStart, }}": 7,
+              "{{ variant: TextVariant.bodyMd, alignItems: AlignItems.flexStart, }}": 6,
               "{{ display: Display.Inline, }}": 2,
               "{{ variant: TextVariant.BodyMd, }}": 1,
               "{{ variant: TextVariant.BodySm }}": 1,
@@ -995,6 +995,12 @@
               "4": 1
             }
           },
+          "fontWeight": {
+            "count": 1,
+            "values": {
+              "{FontWeight.Normal}": 1
+            }
+          },
           "startAccessory": {
             "count": 1,
             "values": {
@@ -1031,12 +1037,6 @@
               "2": 1
             }
           },
-          "fontWeight": {
-            "count": 1,
-            "values": {
-              "{FontWeight.Normal}": 1
-            }
-          },
           "type": {
             "count": 1,
             "values": {
@@ -1046,11 +1046,11 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "ButtonLink": 85
+        "ButtonLink": 84
       }
     },
     "mobile": {
-      "filesScanned": 6077,
+      "filesScanned": 6139,
       "targetComponent": "TextButton",
       "mmds": {
         "totalInstances": 6,

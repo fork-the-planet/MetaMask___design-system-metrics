@@ -1,9 +1,9 @@
 {
   "component": "AvatarIcon",
-  "generatedAt": "2026-04-24T16:53:02.825Z",
+  "generatedAt": "2026-05-01T15:38:10.546Z",
   "projects": {
     "extension": {
-      "filesScanned": 3089,
+      "filesScanned": 3104,
       "targetComponent": "AvatarIcon",
       "mmds": {
         "totalInstances": 4,
@@ -354,7 +354,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 6077,
+      "filesScanned": 6139,
       "targetComponent": "AvatarIcon",
       "mmds": {
         "totalInstances": 0,

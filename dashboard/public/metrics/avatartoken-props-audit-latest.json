@@ -1,9 +1,9 @@
 {
   "component": "AvatarToken",
-  "generatedAt": "2026-04-24T16:53:55.359Z",
+  "generatedAt": "2026-05-01T15:39:07.708Z",
   "projects": {
     "extension": {
-      "filesScanned": 3089,
+      "filesScanned": 3104,
       "targetComponent": "AvatarToken",
       "mmds": {
         "totalInstances": 22,
@@ -414,46 +414,45 @@
       }
     },
     "mobile": {
-      "filesScanned": 6077,
+      "filesScanned": 6139,
       "targetComponent": "AvatarToken",
       "mmds": {
-        "totalInstances": 14,
-        "filesCount": 14,
+        "totalInstances": 13,
+        "filesCount": 13,
         "props": {
           "name": {
-            "count": 13,
+            "count": 12,
             "values": {
               "{MUSD_TOKEN.symbol}": 3,
-              "{position.tokenSymbol}": 2,
               "{selectedAsset?.symbol}": 1,
               "{token.symbol}": 1,
               "{sourceToken?.symbol ?? ''}": 1,
               "{item.symbol}": 1,
               "{symbol}": 1,
+              "{position.tokenSymbol}": 1,
               "{item.name}": 1,
               "{asset.name || asset.collectionName || 'NFT'}": 1,
               "{asset.symbol || asset.name || 'Token'}": 1
             }
           },
           "src": {
-            "count": 12,
+            "count": 11,
             "values": {
               "{MUSD_TOKEN.imageSource as number}": 2,
               "{asset.image ? { uri: asset.image } : undefined}": 2,
               "{MUSD_TOKEN.imageSource as ImageOrSvgSrc}": 1,
               "{{ uri: selectedAsset?.logo }}": 1,
               "{{ uri: token.logo }}": 1,
-              "{sourceToken?.image ? { uri: sourceToken.image } : undefined}": 1,
-              "{destToken?.image ? { uri: destToken.image } : undefined}": 1,
-              "{item.image ? { uri: item.image } : undefined}": 1,
+              "{sourceToken ? getBridgeTokenImageSource(sourceToken) : undefined}": 1,
+              "{getBridgeTokenImageSource(item)}": 1,
               "{src}": 1,
               "{item.icon ? { uri: item.icon } : undefined}": 1
             }
           },
           "size": {
-            "count": 11,
+            "count": 10,
             "values": {
-              "{AvatarTokenSize.Lg}": 6,
+              "{AvatarTokenSize.Lg}": 5,
               "{AvatarTokenSize.Md}": 1,
               "{AvatarTokenSize.Xl}": 1,
               "{AvatarTokenSize.Xs}": 1,
@@ -597,15 +596,15 @@
         }
       },
       "overall": {
-        "totalInstances": 50,
-        "filesCount": 47,
+        "totalInstances": 49,
+        "filesCount": 46,
         "props": {
           "size": {
-            "count": 47,
+            "count": 46,
             "values": {
               "{AvatarSize.Lg}": 16,
               "{AvatarSize.Md}": 12,
-              "{AvatarTokenSize.Lg}": 6,
+              "{AvatarTokenSize.Lg}": 5,
               "{AvatarSize.Sm}": 3,
               "{AvatarSize.Xs}": 2,
               "{size}": 2,
@@ -618,7 +617,7 @@
             }
           },
           "name": {
-            "count": 46,
+            "count": 45,
             "values": {
               "{token.symbol}": 6,
               "{asset.symbol}": 4,
@@ -628,7 +627,6 @@
               "{iconTitle}": 2,
               "{token.name}": 2,
               "{sessionName}": 2,
-              "{position.tokenSymbol}": 2,
               "{selectedToken.symbol ?? ''}": 1,
               "{avatarName}": 1,
               "{(tokenToRender as TokenI).symbol ?? ''}": 1,
@@ -641,6 +639,7 @@
               "{cryptoSymbol}": 1,
               "{sourceToken?.symbol ?? ''}": 1,
               "{item.symbol}": 1,
+              "{position.tokenSymbol}": 1,
               "{item.name}": 1,
               "{asset.name || asset.collectionName || 'NFT'}": 1,
               "{asset.symbol || asset.name || 'Token'}": 1,
@@ -680,16 +679,15 @@
             }
           },
           "src": {
-            "count": 12,
+            "count": 11,
             "values": {
               "{MUSD_TOKEN.imageSource as number}": 2,
               "{asset.image ? { uri: asset.image } : undefined}": 2,
               "{MUSD_TOKEN.imageSource as ImageOrSvgSrc}": 1,
               "{{ uri: selectedAsset?.logo }}": 1,
               "{{ uri: token.logo }}": 1,
-              "{sourceToken?.image ? { uri: sourceToken.image } : undefined}": 1,
-              "{destToken?.image ? { uri: destToken.image } : undefined}": 1,
-              "{item.image ? { uri: item.image } : undefined}": 1,
+              "{sourceToken ? getBridgeTokenImageSource(sourceToken) : undefined}": 1,
+              "{getBridgeTokenImageSource(item)}": 1,
               "{src}": 1,
               "{item.icon ? { uri: item.icon } : undefined}": 1
             }
