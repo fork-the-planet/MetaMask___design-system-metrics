@@ -1,9 +1,9 @@
 {
   "component": "AvatarGroup",
-  "generatedAt": "2026-05-11T08:46:14.277Z",
+  "generatedAt": "2026-05-18T07:57:17.795Z",
   "projects": {
     "extension": {
-      "filesScanned": 3137,
+      "filesScanned": 3111,
       "targetComponent": "AvatarGroup",
       "mmds": {
         "totalInstances": 0,
@@ -23,7 +23,7 @@
       "deprecatedByLegacyComponent": {}
     },
     "mobile": {
-      "filesScanned": 6312,
+      "filesScanned": 6443,
       "targetComponent": "AvatarGroup",
       "mmds": {
         "totalInstances": 0,
