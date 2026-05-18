@@ -2,9 +2,10 @@ name: Weekly Design System Metrics
 
 on:
   schedule:
-    # Friday 15:00 UTC. Cron is UTC-only (workflow timezone not supported on these runners).
-    # London: 16:00 BST / 15:00 GMT. Pacific: ~8:00 PDT / ~7:00 PST.
-    - cron: '0 15 * * 5'
+    # Monday 09:00 UK time. Cron is UTC-only (workflow timezone not supported on these runners).
+    # London: 09:00 BST (UTC+1, Mar–Oct) = 08:00 UTC / 09:00 GMT (UTC+0, Nov–Feb) = 09:00 UTC.
+    # Note: runs at 08:00 UTC year-round as a fixed approximation; off by 1hr in winter.
+    - cron: '0 8 * * 1'
   workflow_dispatch: # Allow manual trigger
 
 permissions:
