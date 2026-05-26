@@ -1,9 +1,9 @@
 {
   "component": "HeaderBase",
-  "generatedAt": "2026-05-18T08:04:45.444Z",
+  "generatedAt": "2026-05-26T16:37:26.336Z",
   "projects": {
     "extension": {
-      "filesScanned": 3111,
+      "filesScanned": 3152,
       "targetComponent": "HeaderBase",
       "mmds": {
         "totalInstances": 0,
@@ -177,7 +177,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 6443,
+      "filesScanned": 6546,
       "targetComponent": "HeaderBase",
       "mmds": {
         "totalInstances": 5,

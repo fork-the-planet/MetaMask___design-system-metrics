@@ -1,9 +1,9 @@
 {
   "component": "BadgeNetwork",
-  "generatedAt": "2026-05-18T07:59:35.779Z",
+  "generatedAt": "2026-05-26T16:32:23.661Z",
   "projects": {
     "extension": {
-      "filesScanned": 3111,
+      "filesScanned": 3152,
       "targetComponent": "BadgeNetwork",
       "mmds": {
         "totalInstances": 4,
@@ -49,30 +49,16 @@
       "deprecatedByLegacyComponent": {}
     },
     "mobile": {
-      "filesScanned": 6443,
+      "filesScanned": 6546,
       "targetComponent": "BadgeNetwork",
       "mmds": {
-        "totalInstances": 2,
-        "filesCount": 2,
+        "totalInstances": 1,
+        "filesCount": 1,
         "props": {
-          "name": {
-            "count": 2,
-            "values": {
-              "{sourceToken?.symbol ?? ''}": 1,
-              "{item.symbol}": 1
-            }
-          },
           "src": {
-            "count": 2,
+            "count": 1,
             "values": {
-              "{getNetworkImageSource({ chainId: sourceChainId, })}": 1,
-              "{getNetworkImageSource({ chainId: item.chainId, })}": 1
-            }
-          },
-          "twClassName": {
-            "count": 2,
-            "values": {
-              "\"scale-75\"": 2
+              "{networkImage}": 1
             }
           }
         }
@@ -102,18 +88,16 @@
         }
       },
       "overall": {
-        "totalInstances": 9,
-        "filesCount": 9,
+        "totalInstances": 8,
+        "filesCount": 8,
         "props": {
           "name": {
-            "count": 9,
+            "count": 7,
             "values": {
               "{networkName}": 3,
               "{token.network?.shortName}": 1,
               "{normalizedNetworkChainId}": 1,
               "{depositNetworkName ?? networkName}": 1,
-              "{sourceToken?.symbol ?? ''}": 1,
-              "{item.symbol}": 1,
               "{position.chain}": 1
             }
           },
@@ -126,16 +110,9 @@
             }
           },
           "src": {
-            "count": 2,
+            "count": 1,
             "values": {
-              "{getNetworkImageSource({ chainId: sourceChainId, })}": 1,
-              "{getNetworkImageSource({ chainId: item.chainId, })}": 1
-            }
-          },
-          "twClassName": {
-            "count": 2,
-            "values": {
-              "\"scale-75\"": 2
+              "{networkImage}": 1
             }
           }
         }
