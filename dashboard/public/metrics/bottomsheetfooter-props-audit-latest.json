@@ -1,9 +1,9 @@
 {
   "component": "BottomSheetFooter",
-  "generatedAt": "2026-05-18T08:00:58.298Z",
+  "generatedAt": "2026-05-26T16:33:46.017Z",
   "projects": {
     "extension": {
-      "filesScanned": 3111,
+      "filesScanned": 3152,
       "targetComponent": "BottomSheetFooter",
       "mmds": {
         "totalInstances": 0,
@@ -23,7 +23,7 @@
       "deprecatedByLegacyComponent": {}
     },
     "mobile": {
-      "filesScanned": 6443,
+      "filesScanned": 6546,
       "targetComponent": "BottomSheetFooter",
       "mmds": {
         "totalInstances": 12,
@@ -85,15 +85,15 @@
         }
       },
       "deprecated": {
-        "totalInstances": 44,
-        "filesCount": 43,
+        "totalInstances": 45,
+        "filesCount": 44,
         "props": {
           "buttonPropsArray": {
-            "count": 44,
+            "count": 45,
             "values": {
+              "{footerButtonProps}": 6,
               "{footerButtons}": 6,
               "{buttons}": 5,
-              "{footerButtonProps}": 4,
               "{[cancelButtonProps, connectButtonProps]}": 2,
               "{[okButtonProps]}": 2,
               "{[cancelButtonProps, deleteButtonProps]}": 2,
@@ -118,7 +118,6 @@
               "{[ { onPress: onCancel, label: strings('confirmation_modal.cancel_cta'), varia...}": 1,
               "{buttonPropsArray}": 1,
               "{[ { variant: ButtonVariants.Primary, label: strings( 'social_leaderboard.trad...}": 1,
-              "{[ { variant: ButtonVariants.Primary, label: strings('social_leaderboard.trade...}": 1,
               "{[ { variant: ButtonVariants.Secondary, size: ButtonSize.Lg, label: strings('s...}": 1
             }
           },
@@ -130,18 +129,18 @@
             }
           },
           "style": {
-            "count": 24,
+            "count": 23,
             "values": {
               "{styles.footer}": 6,
               "{styles.footerContainer}": 4,
               "{tw.style('px-6')}": 3,
               "{styles.footerPadding}": 2,
-              "{tw.style('px-4 mb-4')}": 2,
               "{styles.footerButtonsContainer}": 1,
               "{tw.style('px-4')}": 1,
               "{style}": 1,
               "{tw.style('px-4 pt-6', Platform.OS !== 'android' && 'pb-4')}": 1,
               "{styles.buttonContainer}": 1,
+              "{tw.style('px-4 mb-4')}": 1,
               "{styles.base}": 1,
               "{tw.style('px-0')}": 1
             }
@@ -149,15 +148,15 @@
         }
       },
       "overall": {
-        "totalInstances": 56,
-        "filesCount": 54,
+        "totalInstances": 57,
+        "filesCount": 55,
         "props": {
           "buttonPropsArray": {
-            "count": 44,
+            "count": 45,
             "values": {
+              "{footerButtonProps}": 6,
               "{footerButtons}": 6,
               "{buttons}": 5,
-              "{footerButtonProps}": 4,
               "{[cancelButtonProps, connectButtonProps]}": 2,
               "{[okButtonProps]}": 2,
               "{[cancelButtonProps, deleteButtonProps]}": 2,
@@ -182,7 +181,6 @@
               "{[ { onPress: onCancel, label: strings('confirmation_modal.cancel_cta'), varia...}": 1,
               "{buttonPropsArray}": 1,
               "{[ { variant: ButtonVariants.Primary, label: strings( 'social_leaderboard.trad...}": 1,
-              "{[ { variant: ButtonVariants.Primary, label: strings('social_leaderboard.trade...}": 1,
               "{[ { variant: ButtonVariants.Secondary, size: ButtonSize.Lg, label: strings('s...}": 1
             }
           },
@@ -194,18 +192,18 @@
             }
           },
           "style": {
-            "count": 27,
+            "count": 26,
             "values": {
               "{styles.footer}": 7,
               "{styles.footerContainer}": 4,
               "{tw.style('px-6')}": 3,
               "{styles.footerPadding}": 2,
               "{tw.style('px-4')}": 2,
-              "{tw.style('px-4 mb-4')}": 2,
               "{styles.footerButtonsContainer}": 1,
               "{style}": 1,
               "{tw.style('px-4 pt-6', Platform.OS !== 'android' && 'pb-4')}": 1,
               "{styles.buttonContainer}": 1,
+              "{tw.style('px-4 mb-4')}": 1,
               "{tw.style({ paddingBottom: footerText ? 0 : insets.bottom })}": 1,
               "{styles.base}": 1,
               "{tw.style('px-0')}": 1
@@ -253,7 +251,7 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "BottomSheetFooter": 44
+        "BottomSheetFooter": 45
       }
     }
   }
