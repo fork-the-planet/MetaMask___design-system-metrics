@@ -1,9 +1,9 @@
 {
   "component": "TextField",
-  "generatedAt": "2026-05-26T16:41:06.299Z",
+  "generatedAt": "2026-06-02T15:36:30.583Z",
   "projects": {
     "extension": {
-      "filesScanned": 3152,
+      "filesScanned": 3162,
       "targetComponent": "TextField",
       "mmds": {
         "totalInstances": 0,
@@ -793,14 +793,14 @@
       }
     },
     "mobile": {
-      "filesScanned": 6546,
+      "filesScanned": 6593,
       "targetComponent": "TextField",
       "mmds": {
-        "totalInstances": 13,
-        "filesCount": 8,
+        "totalInstances": 14,
+        "filesCount": 9,
         "props": {
           "onChangeText": {
-            "count": 13,
+            "count": 14,
             "values": {
               "{onPasswordChange}": 5,
               "{handlePasswordChange}": 3,
@@ -808,21 +808,23 @@
               "{handleEmailChange}": 1,
               "{handleReferralCodeChange}": 1,
               "{setConfirmPasswordValue}": 1,
+              "{(newName: string) => { setAccountName(newName); if (error) { setError(null); } }}": 1,
               "{setConfirmPassword}": 1
             }
           },
           "value": {
-            "count": 13,
+            "count": 14,
             "values": {
               "{password}": 8,
               "{confirmPassword}": 2,
               "{confirmCode}": 1,
               "{email}": 1,
-              "{referralCode}": 1
+              "{referralCode}": 1,
+              "{accountName}": 1
             }
           },
           "inputProps": {
-            "count": 13,
+            "count": 14,
             "values": {
               "{{ secureTextEntry: showPasswordIndex.includes(0), testID: ChoosePasswordSelec...}": 2,
               "{{ secureTextEntry: showPasswordIndex.includes(1), testID: ChoosePasswordSelec...}": 2,
@@ -832,8 +834,33 @@
               "{{ autoCapitalize: 'none', autoComplete: 'password', numberOfLines: 1, maxLeng...}": 1,
               "{{ autoCapitalize: 'characters', testID: 'referral-input', }}": 1,
               "{{ secureTextEntry: true, onSubmitEditing: tryUnlock, testID: ManualBackUpStep...}": 1,
+              "{{ testID: EditAccountNameIds.ACCOUNT_NAME_INPUT, spellCheck: false, keyboardA...}": 1,
               "{{ secureTextEntry: true, onSubmitEditing: reauthenticateWithPassword, testID:...}": 1,
               "{{ secureTextEntry: !showPassword, autoCapitalize: 'none', onSubmitEditing: on...}": 1
+            }
+          },
+          "placeholder": {
+            "count": 9,
+            "values": {
+              "{strings('login.password_placeholder')}": 2,
+              "{strings('rewards.onboarding.referral_placeholder')}": 1,
+              "{strings('manual_backup_step_1.password')}": 1,
+              "{initialName}": 1,
+              "{strings('password_reset.password_title')}": 1,
+              "{strings( 'reset_password.new_password_placeholder', )}": 1,
+              "{strings( 'reset_password.confirm_password_placeholder', )}": 1,
+              "Password": 1
+            }
+          },
+          "isError": {
+            "count": 8,
+            "values": {
+              "{!!error}": 3,
+              "{referralCodeReadyForValidation && !referralCodeIsValid && !isValidatingReferr...}": 1,
+              "{isPasswordTooShort}": 1,
+              "{checkError()}": 1,
+              "{Boolean(error)}": 1,
+              "{isPasswordTooShort()}": 1
             }
           },
           "endAccessory": {
@@ -849,26 +876,10 @@
               "{<ButtonIcon iconName={showPassword ? IconName.Eye : IconName.EyeSlash} onPres...}": 1
             }
           },
-          "placeholder": {
-            "count": 8,
+          "autoFocus": {
+            "count": 4,
             "values": {
-              "{strings('login.password_placeholder')}": 2,
-              "{strings('rewards.onboarding.referral_placeholder')}": 1,
-              "{strings('manual_backup_step_1.password')}": 1,
-              "{strings('password_reset.password_title')}": 1,
-              "{strings( 'reset_password.new_password_placeholder', )}": 1,
-              "{strings( 'reset_password.confirm_password_placeholder', )}": 1,
-              "Password": 1
-            }
-          },
-          "isError": {
-            "count": 7,
-            "values": {
-              "{!!error}": 3,
-              "{referralCodeReadyForValidation && !referralCodeIsValid && !isValidatingReferr...}": 1,
-              "{isPasswordTooShort}": 1,
-              "{checkError()}": 1,
-              "{isPasswordTooShort()}": 1
+              "true (shorthand)": 4
             }
           },
           "isDisabled": {
@@ -878,12 +889,6 @@
               "{password === ''}": 1,
               "{loading}": 1,
               "{disabledInput}": 1
-            }
-          },
-          "autoFocus": {
-            "count": 3,
-            "values": {
-              "true (shorthand)": 3
             }
           },
           "inputRef": {
@@ -919,11 +924,12 @@
               "{inputValue}": 3,
               "{value}": 2,
               "{formatDateForDisplay(value, type)}": 2,
-              "{displayedAmount}": 2,
               "{confirmCode}": 2,
               "{password}": 2,
               "{accountName}": 2,
               "{blockExplorerUrlForm}": 2,
+              "{displayedAmount}": 1,
+              "{primaryAmountDisplayValue}": 1,
               "{firstName}": 1,
               "{lastName}": 1,
               "{SSN}": 1,
@@ -1389,22 +1395,23 @@
         }
       },
       "overall": {
-        "totalInstances": 58,
-        "filesCount": 38,
+        "totalInstances": 59,
+        "filesCount": 39,
         "props": {
           "value": {
-            "count": 55,
+            "count": 56,
             "values": {
               "{password}": 10,
               "{email}": 5,
               "{confirmCode}": 3,
               "{inputValue}": 3,
+              "{accountName}": 3,
               "{confirmPassword}": 3,
               "{value}": 2,
               "{formatDateForDisplay(value, type)}": 2,
-              "{displayedAmount}": 2,
-              "{accountName}": 2,
               "{blockExplorerUrlForm}": 2,
+              "{displayedAmount}": 1,
+              "{primaryAmountDisplayValue}": 1,
               "{firstName}": 1,
               "{lastName}": 1,
               "{SSN}": 1,
@@ -1429,7 +1436,7 @@
             }
           },
           "onChangeText": {
-            "count": 50,
+            "count": 51,
             "values": {
               "{onPasswordChange}": 6,
               "{handlePasswordChange}": 4,
@@ -1459,6 +1466,7 @@
               "{setConfirmPasswordValue}": 1,
               "{onChangeName}": 1,
               "{onPasswordConfirmChange}": 1,
+              "{(newName: string) => { setAccountName(newName); if (error) { setError(null); } }}": 1,
               "{onNicknameChange}": 1,
               "{onChainIDChange}": 1,
               "{onTickerChange}": 1,
@@ -1518,7 +1526,7 @@
             }
           },
           "placeholder": {
-            "count": 32,
+            "count": 33,
             "values": {
               "{placeholder}": 3,
               "\"0\"": 2,
@@ -1535,6 +1543,7 @@
               "{accountName}": 1,
               "{formatAddress(selectedAccount?.address, 'mid')}": 1,
               "{strings('manual_backup_step_1.password')}": 1,
+              "{initialName}": 1,
               "{strings('app_settings.network_name_label')}": 1,
               "{strings('app_settings.network_chain_id_placeholder')}": 1,
               "{strings('app_settings.network_symbol_label')}": 1,
@@ -1549,7 +1558,7 @@
             }
           },
           "isError": {
-            "count": 22,
+            "count": 23,
             "values": {
               "{!!error}": 3,
               "{verifyIsError}": 2,
@@ -1563,6 +1572,7 @@
               "{showClientValidationError || Boolean(applyReferralCodeError)}": 1,
               "{checkError()}": 1,
               "{isError}": 1,
+              "{Boolean(error)}": 1,
               "{hasInvalidUrl}": 1,
               "{!!warningName}": 1,
               "{!!warningChainId}": 1,
@@ -1640,6 +1650,22 @@
               "{renderEndAccessory}": 1
             }
           },
+          "inputProps": {
+            "count": 14,
+            "values": {
+              "{{ secureTextEntry: showPasswordIndex.includes(0), testID: ChoosePasswordSelec...}": 2,
+              "{{ secureTextEntry: showPasswordIndex.includes(1), testID: ChoosePasswordSelec...}": 2,
+              "{{ testID: LoginViewSelectors.PASSWORD_INPUT, accessibilityLabel: LoginViewSel...}": 2,
+              "{{ autoCapitalize: 'none', numberOfLines: 1, keyboardType: 'number-pad', textC...}": 1,
+              "{{ autoCapitalize: 'none', autoComplete: 'username', numberOfLines: 1, returnK...}": 1,
+              "{{ autoCapitalize: 'none', autoComplete: 'password', numberOfLines: 1, maxLeng...}": 1,
+              "{{ autoCapitalize: 'characters', testID: 'referral-input', }}": 1,
+              "{{ secureTextEntry: true, onSubmitEditing: tryUnlock, testID: ManualBackUpStep...}": 1,
+              "{{ testID: EditAccountNameIds.ACCOUNT_NAME_INPUT, spellCheck: false, keyboardA...}": 1,
+              "{{ secureTextEntry: true, onSubmitEditing: reauthenticateWithPassword, testID:...}": 1,
+              "{{ secureTextEntry: !showPassword, autoCapitalize: 'none', onSubmitEditing: on...}": 1
+            }
+          },
           "numberOfLines": {
             "count": 14,
             "values": {
@@ -1665,19 +1691,11 @@
               "{ChoosePasswordSelectorsIDs.CONFIRM_PASSWORD_INPUT_ID}": 1
             }
           },
-          "inputProps": {
+          "autoFocus": {
             "count": 13,
             "values": {
-              "{{ secureTextEntry: showPasswordIndex.includes(0), testID: ChoosePasswordSelec...}": 2,
-              "{{ secureTextEntry: showPasswordIndex.includes(1), testID: ChoosePasswordSelec...}": 2,
-              "{{ testID: LoginViewSelectors.PASSWORD_INPUT, accessibilityLabel: LoginViewSel...}": 2,
-              "{{ autoCapitalize: 'none', numberOfLines: 1, keyboardType: 'number-pad', textC...}": 1,
-              "{{ autoCapitalize: 'none', autoComplete: 'username', numberOfLines: 1, returnK...}": 1,
-              "{{ autoCapitalize: 'none', autoComplete: 'password', numberOfLines: 1, maxLeng...}": 1,
-              "{{ autoCapitalize: 'characters', testID: 'referral-input', }}": 1,
-              "{{ secureTextEntry: true, onSubmitEditing: tryUnlock, testID: ManualBackUpStep...}": 1,
-              "{{ secureTextEntry: true, onSubmitEditing: reauthenticateWithPassword, testID:...}": 1,
-              "{{ secureTextEntry: !showPassword, autoCapitalize: 'none', onSubmitEditing: on...}": 1
+              "true (shorthand)": 11,
+              "false": 2
             }
           },
           "maxLength": {
@@ -1693,13 +1711,6 @@
             "count": 12,
             "values": {
               "false": 12
-            }
-          },
-          "autoFocus": {
-            "count": 12,
-            "values": {
-              "true (shorthand)": 10,
-              "false": 2
             }
           },
           "onSubmitEditing": {
