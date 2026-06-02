@@ -326,7 +326,7 @@
       },
       {
         "name": "Container",
-        "status": "to_do"
+        "status": "cancelled"
       },
       {
         "name": "FormTextField",
@@ -435,11 +435,12 @@
     ],
     "totalTickets": 48,
     "statusCounts": {
-      "to_do": 22,
+      "to_do": 21,
       "not_doing": 0,
-      "complete": 26
+      "complete": 26,
+      "cancelled": 1
     },
     "fetchedAt": "2026-02-23",
-    "updatedAt": "2026-03-06"
+    "updatedAt": "2026-06-02"
   }
 }
