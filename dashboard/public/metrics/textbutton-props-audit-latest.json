@@ -1,22 +1,22 @@
 {
   "component": "TextButton",
-  "generatedAt": "2026-05-26T16:40:38.764Z",
+  "generatedAt": "2026-06-02T15:36:02.761Z",
   "projects": {
     "extension": {
-      "filesScanned": 3152,
+      "filesScanned": 3162,
       "targetComponent": "TextButton",
       "mmds": {
-        "totalInstances": 71,
-        "filesCount": 43,
+        "totalInstances": 72,
+        "filesCount": 44,
         "props": {
           "className": {
-            "count": 44,
+            "count": 45,
             "values": {
               "\"inline\"": 7,
               "\"min-w-0\"": 5,
               "\"text-center\"": 4,
+              "\"hover:bg-transparent active:bg-transparent w-fit\"": 4,
               "\"w-full hover:bg-transparent active:bg-transparent\"": 3,
-              "\"hover:bg-transparent active:bg-transparent w-fit\"": 3,
               "\"mt-2 flex w-full justify-start text-left\"": 2,
               "\"text-primary-default\"": 2,
               "\"hw-list-pagination__button\"": 2,
@@ -38,7 +38,7 @@
             }
           },
           "onClick": {
-            "count": 43,
+            "count": 44,
             "values": {
               "{() => setShowPasskeyTroubleshootModal(true)}": 3,
               "{handleClick}": 3,
@@ -46,6 +46,7 @@
               "{onClickFindTransactionHash}": 2,
               "{handleContactSupportTrackEvent}": 2,
               "{handleUseVerifyPassword}": 1,
+              "{handleRepairDevice}": 1,
               "{handleStillHavingTrouble}": 1,
               "{toggleReferralInput}": 1,
               "{openTermsOfUse}": 1,
@@ -53,7 +54,7 @@
               "{handleMaybeLater}": 1,
               "{(event: React.MouseEvent) => { event.stopPropagation(); trackEvent({ category...}": 1,
               "{(e: React.MouseEvent) => { e.stopPropagation(); trackEvent({ category: MetaMe...}": 1,
-              "{() => navigate(SECURITY_ROUTE)}": 1,
+              "{() => navigate(PRIVACY_ROUTE)}": 1,
               "{() => navigate(DEFAULT_ROUTE)}": 1,
               "{goToPreviousPage}": 1,
               "{goToNextPage}": 1,
@@ -138,9 +139,9 @@
             }
           },
           "size": {
-            "count": 19,
+            "count": 20,
             "values": {
-              "{TextButtonSize.BodyMd}": 10,
+              "{TextButtonSize.BodyMd}": 11,
               "{TextButtonSize.BodySm}": 8,
               "{TextButtonSize.BodyXs}": 1
             }
@@ -250,7 +251,7 @@
               "{() => { onMultiselectSubmit?.( Object.keys(checkedChainIds).filter( (chainId)...}": 1,
               "{() => { handleToggleAllNetworks(); }}": 1,
               "{() => { dispatch(showImportNftsModal({ tokenAddress: address })); onClose(); }}": 1,
-              "{() => { onClose(); navigate( `${SECURITY_ROUTE}#auto-detect-tokens`, ); }}": 1,
+              "{() => { onClose(); navigate( `${ASSETS_ROUTE}#autodetect-tokens`, ); }}": 1,
               "{() => { global.platform.openTab({ url: ZENDESK_URLS.UNKNOWN_NETWORK, }); }}": 1,
               "{handleLearnMoreClick}": 1,
               "{() => { setName(suggestedName); }}": 1,
@@ -527,11 +528,11 @@
         }
       },
       "overall": {
-        "totalInstances": 138,
-        "filesCount": 90,
+        "totalInstances": 139,
+        "filesCount": 91,
         "props": {
           "onClick": {
-            "count": 81,
+            "count": 82,
             "values": {
               "{() => setShowPasskeyTroubleshootModal(true)}": 3,
               "{handleClick}": 3,
@@ -548,6 +549,7 @@
               "{() => connectAccount(address)}": 1,
               "{() => this.switchAccount(address)}": 1,
               "{() => { setCustomNonce(nextNonce); }}": 1,
+              "{handleRepairDevice}": 1,
               "{updateRpc}": 1,
               "{switchToInfura}": 1,
               "{handleStillHavingTrouble}": 1,
@@ -566,7 +568,7 @@
               "{() => { onMultiselectSubmit?.( Object.keys(checkedChainIds).filter( (chainId)...}": 1,
               "{() => { handleToggleAllNetworks(); }}": 1,
               "{() => { dispatch(showImportNftsModal({ tokenAddress: address })); onClose(); }}": 1,
-              "{() => { onClose(); navigate( `${SECURITY_ROUTE}#auto-detect-tokens`, ); }}": 1,
+              "{() => { onClose(); navigate( `${ASSETS_ROUTE}#autodetect-tokens`, ); }}": 1,
               "{(event: React.MouseEvent) => { event.stopPropagation(); trackEvent({ category...}": 1,
               "{() => { global.platform.openTab({ url: ZENDESK_URLS.UNKNOWN_NETWORK, }); }}": 1,
               "{() => { setName(suggestedName); }}": 1,
@@ -574,7 +576,7 @@
               "{() => { setTicker(suggestedTicker); }}": 1,
               "{() => onClick()}": 1,
               "{(e: React.MouseEvent) => { e.stopPropagation(); trackEvent({ category: MetaMe...}": 1,
-              "{() => navigate(SECURITY_ROUTE)}": 1,
+              "{() => navigate(PRIVACY_ROUTE)}": 1,
               "{() => navigate(DEFAULT_ROUTE)}": 1,
               "{() => onMaxButtonClick(balanceAmount)}": 1,
               "{() => { dispatch(setWasTxDeclined(false)); }}": 1,
@@ -606,14 +608,14 @@
             }
           },
           "className": {
-            "count": 60,
+            "count": 61,
             "values": {
               "\"inline\"": 7,
               "\"min-w-0\"": 5,
               "\"text-center\"": 4,
+              "\"hover:bg-transparent active:bg-transparent w-fit\"": 4,
               "\"snap-ui-renderer__link\"": 3,
               "\"w-full hover:bg-transparent active:bg-transparent\"": 3,
-              "\"hover:bg-transparent active:bg-transparent w-fit\"": 3,
               "\"mt-2 flex w-full justify-start text-left\"": 2,
               "\"connected-accounts-list__account-status-link\"": 2,
               "\"text-primary-default\"": 2,
@@ -646,10 +648,10 @@
             }
           },
           "size": {
-            "count": 53,
+            "count": 54,
             "values": {
               "{ButtonLinkSize.Inherit}": 20,
-              "{TextButtonSize.BodyMd}": 10,
+              "{TextButtonSize.BodyMd}": 11,
               "{TextButtonSize.BodySm}": 8,
               "{ButtonLinkSize.Auto}": 4,
               "{Size.inherit}": 3,
@@ -988,7 +990,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 6546,
+      "filesScanned": 6593,
       "targetComponent": "TextButton",
       "mmds": {
         "totalInstances": 7,
