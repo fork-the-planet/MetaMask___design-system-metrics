@@ -1,9 +1,9 @@
 {
   "component": "TextButton",
-  "generatedAt": "2026-06-02T15:36:02.761Z",
+  "generatedAt": "2026-06-09T08:24:22.372Z",
   "projects": {
     "extension": {
-      "filesScanned": 3162,
+      "filesScanned": 3216,
       "targetComponent": "TextButton",
       "mmds": {
         "totalInstances": 72,
@@ -75,7 +75,7 @@
               "{() => setShowTroubleshootModal(true)}": 1,
               "{handleUsePassword}": 1,
               "{this.onForgotPasswordOrLoginWithDiffMethods}": 1,
-              "{() => { this.context.trackEvent( { category: MetaMetricsEventCategory.Navigat...}": 1
+              "{() => { this.ctx.trackEvent( { category: MetaMetricsEventCategory.Navigation,...}": 1
             }
           },
           "asChild": {
@@ -495,6 +495,12 @@
               "{FontWeight.Normal}": 1
             }
           },
+          "data-address": {
+            "count": 1,
+            "values": {
+              "{address}": 1
+            }
+          },
           "width": {
             "count": 1,
             "values": {
@@ -604,7 +610,7 @@
               "{() => setShowTroubleshootModal(true)}": 1,
               "{handleUsePassword}": 1,
               "{this.onForgotPasswordOrLoginWithDiffMethods}": 1,
-              "{() => { this.context.trackEvent( { category: MetaMetricsEventCategory.Navigat...}": 1
+              "{() => { this.ctx.trackEvent( { category: MetaMetricsEventCategory.Navigation,...}": 1
             }
           },
           "className": {
@@ -953,6 +959,12 @@
               "{FontWeight.Normal}": 1
             }
           },
+          "data-address": {
+            "count": 1,
+            "values": {
+              "{address}": 1
+            }
+          },
           "startAccessory": {
             "count": 1,
             "values": {
@@ -990,7 +1002,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 6593,
+      "filesScanned": 6702,
       "targetComponent": "TextButton",
       "mmds": {
         "totalInstances": 7,

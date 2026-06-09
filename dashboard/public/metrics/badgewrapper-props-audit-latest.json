@@ -1,9 +1,9 @@
 {
   "component": "BadgeWrapper",
-  "generatedAt": "2026-06-02T15:28:36.542Z",
+  "generatedAt": "2026-06-09T08:17:52.328Z",
   "projects": {
     "extension": {
-      "filesScanned": 3162,
+      "filesScanned": 3216,
       "targetComponent": "BadgeWrapper",
       "mmds": {
         "totalInstances": 15,
@@ -299,23 +299,25 @@
       }
     },
     "mobile": {
-      "filesScanned": 6593,
+      "filesScanned": 6702,
       "targetComponent": "BadgeWrapper",
       "mmds": {
-        "totalInstances": 8,
-        "filesCount": 8,
+        "totalInstances": 12,
+        "filesCount": 12,
         "props": {
           "position": {
-            "count": 8,
+            "count": 12,
             "values": {
-              "{BadgeWrapperPosition.BottomRight}": 6,
+              "{BadgeWrapperPosition.BottomRight}": 10,
               "{BadgeWrapperPosition.TopRight}": 2
             }
           },
           "badge": {
-            "count": 8,
+            "count": 12,
             "values": {
+              "{networkImage ? <BadgeNetwork src={networkImage} /> : null}": 3,
               "{<BadgeNetwork src={networkImage} />}": 2,
+              "{item.caipChainId ? ( <BadgeNetwork src={getNetworkImageSource({ chainId: safe...}": 1,
               "{!hasViewedCardButton && variant.showBadge ? ( <BadgeStatus testID={WalletView...}": 1,
               "{srcChainHex ? ( <Badge variant={BadgeVariant.Network} size={AvatarSize.Xs} is...}": 1,
               "{getChainHex(pendingPicker.row.tokenAsset) ? ( <Badge variant={BadgeVariant.Ne...}": 1,
@@ -324,192 +326,49 @@
               "{isNotificationEnabled && unreadNotificationCount > 0 ? ( <BadgeStatus status=...}": 1
             }
           },
+          "style": {
+            "count": 2,
+            "values": {
+              "{tw.style('self-center')}": 1,
+              "{tw.style('mr-3')}": 1
+            }
+          },
           "positionAnchorShape": {
             "count": 2,
             "values": {
               "{BadgeWrapperPositionAnchorShape.Circular}": 2
+            }
+          },
+          "badgeContainerProps": {
+            "count": 1,
+            "values": {
+              "{{ testID: 'badge-wrapper-badge' }}": 1
             }
           }
         }
       },
       "deprecated": {
-        "totalInstances": 64,
-        "filesCount": 62,
-        "props": {
-          "badgeElement": {
-            "count": 64,
-            "values": {
-              "{<Badge variant={BadgeVariant.Network} name={networkName} imageSource={network...}": 5,
-              "{<Badge testID={'badge-element'} variant={BadgeVariant.Network} imageSource={b...}": 4,
-              "{<Badge variant={BadgeVariant.Network} name={networkName} imageSource={getNetw...}": 3,
-              "{networkBadgeSource && ( <Badge variant={BadgeVariant.Network} imageSource={ne...}": 3,
-              "{<Badge size={AvatarSize.Xs} variant={BadgeVariant.Network} imageSource={netwo...}": 3,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource( safeFo...}": 2,
-              "{networkBadgeSource ? ( <Badge variant={BadgeVariant.Network} imageSource={net...}": 2,
-              "{<Badge variant={BadgeVariant.Network} imageSource={getNetworkImageSource({ ch...}": 2,
-              "{<Badge variant={BadgeVariant.Network} imageSource={networkImageSource} isScal...}": 2,
-              "{networkImageSource ? ( <BadgeNetwork name={networkName} imageSource={networkI...}": 2,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource(chainId...}": 2,
-              "{asset.networkBadgeSource ? ( <Badge variant={BadgeVariant.Network} name={asse...}": 2,
-              "{<Badge imageSource={networkImage} name={networkName} variant={BadgeVariant.Ne...}": 2,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource()} name...}": 1,
-              "{<AvatarIcon name={IconName.Snaps} iconColor={IconColor.Inverse} size={AvatarS...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={networkIcon as ImageSource...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource(tokenCh...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={networkImageSource} name={...}": 1,
-              "{item.caipChainId ? ( <Badge variant={BadgeVariant.Network} imageSource={Netwo...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={networkIconAvatar} />}": 1,
-              "{<Badge variant={BadgeVariant.Network} // @ts-expect-error The utils/network f...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource(receipt...}": 1,
-              "{<Badge variant={BadgeVariant.Network} name={networkName} imageSource={ tokenT...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={networkImageSource} size={...}": 1,
-              "{<BadgeIcon iconName={props.badgeIcon} iconProps={{ size: IconSize.Lg }} />}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={networkImageSource} />}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource(destTok...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={images.POL} style={tw.styl...}": 1,
-              "{networkName && networkImageSource ? ( <BadgeNetwork name={networkName} imageS...}": 1,
-              "{<> {caipChainId ? ( <Badge variant={BadgeVariant.Network} imageSource={getNet...}": 1,
-              "{<BadgeNetwork name={token.network?.shortName} imageSource={getNetworkImageFor...}": 1,
-              "{networkImageSource ? ( <BadgeNetwork name={normalizedNetworkChainId} imageSou...}": 1,
-              "{<BadgeNetwork name={depositNetworkName ?? networkName} imageSource={networkIm...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource(asset.c...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={images.ETHEREUM} name={net...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource(result....}": 1,
-              "{<BadgeNetwork imageSource={NetworkBadgeSource(asset.chainId as `0x${string}`)...}": 1,
-              "{connected ? ( <Badge variant={BadgeVariant.Status} state={BadgeStatusState.Ac...}": 1,
-              "{connection.connected ? ( <Badge variant={BadgeVariant.Status} state={BadgeSta...}": 1,
-              "{<BadgeNetwork name={position.chain} imageSource={getNetworkImageSource({ chai...}": 1,
-              "{<Badge variant={BadgeVariant.Network} name={inputNetworkName} imageSource={ge...}": 1,
-              "{<Badge variant={BadgeVariant.Network} name={outputNetworkName} imageSource={g...}": 1,
-              "{showNetwork && ( <Badge variant={BadgeVariant.Network} imageSource={networkIm...}": 1
-            }
-          },
-          "badgePosition": {
-            "count": 58,
-            "values": {
-              "{BadgePosition.BottomRight}": 53,
-              "{{ bottom: -4, right: -4 }}": 2,
-              "{{ bottom: 5, right: 5, }}": 1,
-              "{BOTTOM_BADGEWRAPPER_BADGEPOSITION}": 1,
-              "{styles.iconBadgePosition}": 1
-            }
-          },
-          "style": {
-            "count": 25,
-            "values": {
-              "{styles.badgeWrapper}": 11,
-              "{tw.style('self-center')}": 4,
-              "{styles.badge}": 4,
-              "{styles.remoteImageBadgeWrapper}": 1,
-              "{style}": 1,
-              "{tw.style('mr-3')}": 1,
-              "{localStyles.badgeWrapperCenter}": 1,
-              "{styles.selfCenter}": 1,
-              "{styles.container}": 1
-            }
-          },
-          "testID": {
-            "count": 3,
-            "values": {
-              "badge-wrapper": 3
-            }
-          },
-          "anchorElementShape": {
-            "count": 2,
-            "values": {
-              "{BadgeAnchorElementShape.Rectangular}": 1,
-              "{BadgeAnchorElementShape.Circular}": 1
-            }
-          }
-        }
+        "totalInstances": 0,
+        "filesCount": 0,
+        "props": {}
       },
       "overall": {
-        "totalInstances": 72,
-        "filesCount": 70,
+        "totalInstances": 12,
+        "filesCount": 12,
         "props": {
-          "badgeElement": {
-            "count": 64,
-            "values": {
-              "{<Badge variant={BadgeVariant.Network} name={networkName} imageSource={network...}": 5,
-              "{<Badge testID={'badge-element'} variant={BadgeVariant.Network} imageSource={b...}": 4,
-              "{<Badge variant={BadgeVariant.Network} name={networkName} imageSource={getNetw...}": 3,
-              "{networkBadgeSource && ( <Badge variant={BadgeVariant.Network} imageSource={ne...}": 3,
-              "{<Badge size={AvatarSize.Xs} variant={BadgeVariant.Network} imageSource={netwo...}": 3,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource( safeFo...}": 2,
-              "{networkBadgeSource ? ( <Badge variant={BadgeVariant.Network} imageSource={net...}": 2,
-              "{<Badge variant={BadgeVariant.Network} imageSource={getNetworkImageSource({ ch...}": 2,
-              "{<Badge variant={BadgeVariant.Network} imageSource={networkImageSource} isScal...}": 2,
-              "{networkImageSource ? ( <BadgeNetwork name={networkName} imageSource={networkI...}": 2,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource(chainId...}": 2,
-              "{asset.networkBadgeSource ? ( <Badge variant={BadgeVariant.Network} name={asse...}": 2,
-              "{<Badge imageSource={networkImage} name={networkName} variant={BadgeVariant.Ne...}": 2,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource()} name...}": 1,
-              "{<AvatarIcon name={IconName.Snaps} iconColor={IconColor.Inverse} size={AvatarS...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={networkIcon as ImageSource...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource(tokenCh...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={networkImageSource} name={...}": 1,
-              "{item.caipChainId ? ( <Badge variant={BadgeVariant.Network} imageSource={Netwo...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={networkIconAvatar} />}": 1,
-              "{<Badge variant={BadgeVariant.Network} // @ts-expect-error The utils/network f...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource(receipt...}": 1,
-              "{<Badge variant={BadgeVariant.Network} name={networkName} imageSource={ tokenT...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={networkImageSource} size={...}": 1,
-              "{<BadgeIcon iconName={props.badgeIcon} iconProps={{ size: IconSize.Lg }} />}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={networkImageSource} />}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource(destTok...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={images.POL} style={tw.styl...}": 1,
-              "{networkName && networkImageSource ? ( <BadgeNetwork name={networkName} imageS...}": 1,
-              "{<> {caipChainId ? ( <Badge variant={BadgeVariant.Network} imageSource={getNet...}": 1,
-              "{<BadgeNetwork name={token.network?.shortName} imageSource={getNetworkImageFor...}": 1,
-              "{networkImageSource ? ( <BadgeNetwork name={normalizedNetworkChainId} imageSou...}": 1,
-              "{<BadgeNetwork name={depositNetworkName ?? networkName} imageSource={networkIm...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource(asset.c...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={images.ETHEREUM} name={net...}": 1,
-              "{<Badge variant={BadgeVariant.Network} imageSource={NetworkBadgeSource(result....}": 1,
-              "{<BadgeNetwork imageSource={NetworkBadgeSource(asset.chainId as `0x${string}`)...}": 1,
-              "{connected ? ( <Badge variant={BadgeVariant.Status} state={BadgeStatusState.Ac...}": 1,
-              "{connection.connected ? ( <Badge variant={BadgeVariant.Status} state={BadgeSta...}": 1,
-              "{<BadgeNetwork name={position.chain} imageSource={getNetworkImageSource({ chai...}": 1,
-              "{<Badge variant={BadgeVariant.Network} name={inputNetworkName} imageSource={ge...}": 1,
-              "{<Badge variant={BadgeVariant.Network} name={outputNetworkName} imageSource={g...}": 1,
-              "{showNetwork && ( <Badge variant={BadgeVariant.Network} imageSource={networkIm...}": 1
-            }
-          },
-          "badgePosition": {
-            "count": 58,
-            "values": {
-              "{BadgePosition.BottomRight}": 53,
-              "{{ bottom: -4, right: -4 }}": 2,
-              "{{ bottom: 5, right: 5, }}": 1,
-              "{BOTTOM_BADGEWRAPPER_BADGEPOSITION}": 1,
-              "{styles.iconBadgePosition}": 1
-            }
-          },
-          "style": {
-            "count": 25,
-            "values": {
-              "{styles.badgeWrapper}": 11,
-              "{tw.style('self-center')}": 4,
-              "{styles.badge}": 4,
-              "{styles.remoteImageBadgeWrapper}": 1,
-              "{style}": 1,
-              "{tw.style('mr-3')}": 1,
-              "{localStyles.badgeWrapperCenter}": 1,
-              "{styles.selfCenter}": 1,
-              "{styles.container}": 1
-            }
-          },
           "position": {
-            "count": 8,
+            "count": 12,
             "values": {
-              "{BadgeWrapperPosition.BottomRight}": 6,
+              "{BadgeWrapperPosition.BottomRight}": 10,
               "{BadgeWrapperPosition.TopRight}": 2
             }
           },
           "badge": {
-            "count": 8,
+            "count": 12,
             "values": {
+              "{networkImage ? <BadgeNetwork src={networkImage} /> : null}": 3,
               "{<BadgeNetwork src={networkImage} />}": 2,
+              "{item.caipChainId ? ( <BadgeNetwork src={getNetworkImageSource({ chainId: safe...}": 1,
               "{!hasViewedCardButton && variant.showBadge ? ( <BadgeStatus testID={WalletView...}": 1,
               "{srcChainHex ? ( <Badge variant={BadgeVariant.Network} size={AvatarSize.Xs} is...}": 1,
               "{getChainHex(pendingPicker.row.tokenAsset) ? ( <Badge variant={BadgeVariant.Ne...}": 1,
@@ -518,17 +377,11 @@
               "{isNotificationEnabled && unreadNotificationCount > 0 ? ( <BadgeStatus status=...}": 1
             }
           },
-          "testID": {
-            "count": 3,
-            "values": {
-              "badge-wrapper": 3
-            }
-          },
-          "anchorElementShape": {
+          "style": {
             "count": 2,
             "values": {
-              "{BadgeAnchorElementShape.Rectangular}": 1,
-              "{BadgeAnchorElementShape.Circular}": 1
+              "{tw.style('self-center')}": 1,
+              "{tw.style('mr-3')}": 1
             }
           },
           "positionAnchorShape": {
@@ -536,12 +389,16 @@
             "values": {
               "{BadgeWrapperPositionAnchorShape.Circular}": 2
             }
+          },
+          "badgeContainerProps": {
+            "count": 1,
+            "values": {
+              "{{ testID: 'badge-wrapper-badge' }}": 1
+            }
           }
         }
       },
-      "deprecatedByLegacyComponent": {
-        "BadgeWrapper": 64
-      }
+      "deprecatedByLegacyComponent": {}
     }
   }
 }

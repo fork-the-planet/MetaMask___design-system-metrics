@@ -1,9 +1,9 @@
 {
   "component": "Card",
-  "generatedAt": "2026-06-02T15:31:49.409Z",
+  "generatedAt": "2026-06-09T08:20:39.425Z",
   "projects": {
     "extension": {
-      "filesScanned": 3162,
+      "filesScanned": 3216,
       "targetComponent": "Card",
       "mmds": {
         "totalInstances": 0,
@@ -23,7 +23,7 @@
       "deprecatedByLegacyComponent": {}
     },
     "mobile": {
-      "filesScanned": 6593,
+      "filesScanned": 6702,
       "targetComponent": "Card",
       "mmds": {
         "totalInstances": 2,
