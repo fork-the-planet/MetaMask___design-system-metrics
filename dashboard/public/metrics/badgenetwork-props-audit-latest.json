@@ -1,9 +1,9 @@
 {
   "component": "BadgeNetwork",
-  "generatedAt": "2026-06-02T15:27:41.529Z",
+  "generatedAt": "2026-06-09T08:17:04.127Z",
   "projects": {
     "extension": {
-      "filesScanned": 3162,
+      "filesScanned": 3216,
       "targetComponent": "BadgeNetwork",
       "mmds": {
         "totalInstances": 4,
@@ -49,16 +49,17 @@
       "deprecatedByLegacyComponent": {}
     },
     "mobile": {
-      "filesScanned": 6593,
+      "filesScanned": 6702,
       "targetComponent": "BadgeNetwork",
       "mmds": {
-        "totalInstances": 2,
-        "filesCount": 2,
+        "totalInstances": 6,
+        "filesCount": 6,
         "props": {
           "src": {
-            "count": 2,
+            "count": 6,
             "values": {
-              "{networkImage}": 2
+              "{networkImage}": 5,
+              "{getNetworkImageSource({ chainId: safeFormatChainIdToHex( item.caipChainId, ) ...}": 1
             }
           }
         }
@@ -89,8 +90,8 @@
         }
       },
       "overall": {
-        "totalInstances": 10,
-        "filesCount": 10,
+        "totalInstances": 14,
+        "filesCount": 14,
         "props": {
           "name": {
             "count": 8,
@@ -112,9 +113,10 @@
             }
           },
           "src": {
-            "count": 2,
+            "count": 6,
             "values": {
-              "{networkImage}": 2
+              "{networkImage}": 5,
+              "{getNetworkImageSource({ chainId: safeFormatChainIdToHex( item.caipChainId, ) ...}": 1
             }
           }
         }

@@ -1,9 +1,9 @@
 {
   "component": "AvatarIcon",
-  "generatedAt": "2026-06-02T15:25:51.372Z",
+  "generatedAt": "2026-06-09T08:15:32.247Z",
   "projects": {
     "extension": {
-      "filesScanned": 3162,
+      "filesScanned": 3216,
       "targetComponent": "AvatarIcon",
       "mmds": {
         "totalInstances": 4,
@@ -354,28 +354,31 @@
       }
     },
     "mobile": {
-      "filesScanned": 6593,
+      "filesScanned": 6702,
       "targetComponent": "AvatarIcon",
       "mmds": {
-        "totalInstances": 2,
-        "filesCount": 1,
+        "totalInstances": 3,
+        "filesCount": 2,
         "props": {
           "iconName": {
-            "count": 2,
+            "count": 3,
             "values": {
-              "{display.icon}": 2
+              "{display.icon}": 2,
+              "{isSuccess ? DSIconName.CheckBold : DSIconName.Error}": 1
             }
           },
           "severity": {
-            "count": 2,
+            "count": 3,
             "values": {
-              "{AvatarIconSeverity.Neutral}": 2
+              "{AvatarIconSeverity.Neutral}": 2,
+              "{isSuccess ? AvatarIconSeverity.Success : AvatarIconSeverity.Error}": 1
             }
           },
           "size": {
-            "count": 2,
+            "count": 3,
             "values": {
-              "{AvatarIconSize.Lg}": 2
+              "{AvatarIconSize.Lg}": 2,
+              "{AvatarIconSize.Xl}": 1
             }
           },
           "testID": {
@@ -417,26 +420,29 @@
         }
       },
       "overall": {
-        "totalInstances": 3,
-        "filesCount": 2,
+        "totalInstances": 4,
+        "filesCount": 3,
         "props": {
           "size": {
-            "count": 3,
+            "count": 4,
             "values": {
               "{AvatarIconSize.Lg}": 2,
-              "{AvatarSize.Md}": 1
+              "{AvatarSize.Md}": 1,
+              "{AvatarIconSize.Xl}": 1
             }
           },
           "iconName": {
-            "count": 2,
+            "count": 3,
             "values": {
-              "{display.icon}": 2
+              "{display.icon}": 2,
+              "{isSuccess ? DSIconName.CheckBold : DSIconName.Error}": 1
             }
           },
           "severity": {
-            "count": 2,
+            "count": 3,
             "values": {
-              "{AvatarIconSeverity.Neutral}": 2
+              "{AvatarIconSeverity.Neutral}": 2,
+              "{isSuccess ? AvatarIconSeverity.Success : AvatarIconSeverity.Error}": 1
             }
           },
           "testID": {
