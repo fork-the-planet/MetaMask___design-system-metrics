@@ -1,9 +1,9 @@
 {
   "component": "BadgeStatus",
-  "generatedAt": "2026-06-09T08:17:28.934Z",
+  "generatedAt": "2026-06-16T16:22:21.687Z",
   "projects": {
     "extension": {
-      "filesScanned": 3216,
+      "filesScanned": 3321,
       "targetComponent": "BadgeStatus",
       "mmds": {
         "totalInstances": 2,
@@ -37,7 +37,7 @@
       "deprecatedByLegacyComponent": {}
     },
     "mobile": {
-      "filesScanned": 6702,
+      "filesScanned": 6833,
       "targetComponent": "BadgeStatus",
       "mmds": {
         "totalInstances": 3,

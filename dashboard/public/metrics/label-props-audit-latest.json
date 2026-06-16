@@ -1,9 +1,9 @@
 {
   "component": "Label",
-  "generatedAt": "2026-06-09T08:22:43.209Z",
+  "generatedAt": "2026-06-16T16:28:58.456Z",
   "projects": {
     "extension": {
-      "filesScanned": 3216,
+      "filesScanned": 3321,
       "targetComponent": "Label",
       "mmds": {
         "totalInstances": 0,
@@ -155,7 +155,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 6702,
+      "filesScanned": 6833,
       "targetComponent": "Label",
       "mmds": {
         "totalInstances": 53,
