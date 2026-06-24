@@ -1,9 +1,9 @@
 {
   "component": "ButtonBase",
-  "generatedAt": "2026-06-16T16:25:25.729Z",
+  "generatedAt": "2026-06-24T15:44:24.954Z",
   "projects": {
     "extension": {
-      "filesScanned": 3321,
+      "filesScanned": 3352,
       "targetComponent": "ButtonBase",
       "mmds": {
         "totalInstances": 35,
@@ -887,7 +887,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 6833,
+      "filesScanned": 6839,
       "targetComponent": "ButtonBase",
       "mmds": {
         "totalInstances": 13,
@@ -929,8 +929,8 @@
               "{PredictCryptoUpDownMarketCardSelectorsIDs.UP_BUTTON}": 1,
               "{PredictCryptoUpDownMarketCardSelectorsIDs.DOWN_BUTTON}": 1,
               "{`show-more-button-${walletId}`}": 1,
-              "{ActivityScreenSelectorsIDs.NETWORK_FILTER_CHIP}": 1,
-              "{ActivityScreenSelectorsIDs.TYPE_FILTER_CHIP}": 1
+              "{suppressTestIDs ? undefined : ActivityScreenSelectorsIDs.NETWORK_FILTER_CHIP}": 1,
+              "{suppressTestIDs ? undefined : ActivityScreenSelectorsIDs.TYPE_FILTER_CHIP}": 1
             }
           },
           "twClassName": {
@@ -958,7 +958,7 @@
             "count": 6,
             "values": {
               "{{ color: IconColor.IconDefault, size: IconSize.Sm, }}": 4,
-              "{isNetworkFilterActive ? { color: IconColor.PrimaryDefault } : undefined}": 1,
+              "{isNetworkFilterDisabled ? { color: IconColor.IconMuted } : isNetworkFilterAct...}": 1,
               "{isTypeFilterActive ? { color: IconColor.PrimaryDefault } : undefined}": 1
             }
           },
@@ -974,7 +974,7 @@
             "count": 4,
             "values": {
               "{{ variant: TextVariant.BodyMd, fontWeight: FontWeight.Medium, }}": 2,
-              "{isNetworkFilterActive ? { color: TextColor.PrimaryDefault } : undefined}": 1,
+              "{isNetworkFilterDisabled ? { color: TextColor.TextMuted } : isNetworkFilterAct...}": 1,
               "{isTypeFilterActive ? { color: TextColor.PrimaryDefault } : undefined}": 1
             }
           },
@@ -996,6 +996,12 @@
             "values": {
               "{!upToken || !isMarketOpen}": 1,
               "{!downToken || !isMarketOpen}": 1
+            }
+          },
+          "isDisabled": {
+            "count": 1,
+            "values": {
+              "{isNetworkFilterDisabled}": 1
             }
           }
         }
@@ -1161,8 +1167,8 @@
               "{PredictCryptoUpDownMarketCardSelectorsIDs.DOWN_BUTTON}": 1,
               "{PREDICT_GTM_MODAL_TEST_IDS.GET_STARTED_BUTTON}": 1,
               "{`show-more-button-${walletId}`}": 1,
-              "{ActivityScreenSelectorsIDs.NETWORK_FILTER_CHIP}": 1,
-              "{ActivityScreenSelectorsIDs.TYPE_FILTER_CHIP}": 1,
+              "{suppressTestIDs ? undefined : ActivityScreenSelectorsIDs.NETWORK_FILTER_CHIP}": 1,
+              "{suppressTestIDs ? undefined : ActivityScreenSelectorsIDs.TYPE_FILTER_CHIP}": 1,
               "{WalletViewSelectorsIDs.TOKEN_NETWORK_FILTER}": 1
             }
           },
@@ -1236,23 +1242,24 @@
             "count": 6,
             "values": {
               "{{ color: IconColor.IconDefault, size: IconSize.Sm, }}": 4,
-              "{isNetworkFilterActive ? { color: IconColor.PrimaryDefault } : undefined}": 1,
+              "{isNetworkFilterDisabled ? { color: IconColor.IconMuted } : isNetworkFilterAct...}": 1,
               "{isTypeFilterActive ? { color: IconColor.PrimaryDefault } : undefined}": 1
+            }
+          },
+          "isDisabled": {
+            "count": 4,
+            "values": {
+              "{disabled}": 2,
+              "{isNetworkFilterDisabled}": 1,
+              "false": 1
             }
           },
           "textProps": {
             "count": 4,
             "values": {
               "{{ variant: TextVariant.BodyMd, fontWeight: FontWeight.Medium, }}": 2,
-              "{isNetworkFilterActive ? { color: TextColor.PrimaryDefault } : undefined}": 1,
+              "{isNetworkFilterDisabled ? { color: TextColor.TextMuted } : isNetworkFilterAct...}": 1,
               "{isTypeFilterActive ? { color: TextColor.PrimaryDefault } : undefined}": 1
-            }
-          },
-          "isDisabled": {
-            "count": 3,
-            "values": {
-              "{disabled}": 2,
-              "false": 1
             }
           },
           "endIconName": {

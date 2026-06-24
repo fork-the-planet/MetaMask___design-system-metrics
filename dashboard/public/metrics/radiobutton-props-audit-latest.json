@@ -1,9 +1,9 @@
 {
   "component": "RadioButton",
-  "generatedAt": "2026-06-16T16:29:29.975Z",
+  "generatedAt": "2026-06-24T15:48:26.047Z",
   "projects": {
     "extension": {
-      "filesScanned": 3321,
+      "filesScanned": 3352,
       "targetComponent": "RadioButton",
       "mmds": {
         "totalInstances": 0,
@@ -23,7 +23,7 @@
       "deprecatedByLegacyComponent": {}
     },
     "mobile": {
-      "filesScanned": 6833,
+      "filesScanned": 6839,
       "targetComponent": "RadioButton",
       "mmds": {
         "totalInstances": 0,
