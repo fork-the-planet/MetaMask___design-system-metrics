@@ -1,9 +1,9 @@
 {
   "component": "BadgeNetwork",
-  "generatedAt": "2026-06-24T15:41:01.691Z",
+  "generatedAt": "2026-07-01T07:09:30.528Z",
   "projects": {
     "extension": {
-      "filesScanned": 3352,
+      "filesScanned": 3387,
       "targetComponent": "BadgeNetwork",
       "mmds": {
         "totalInstances": 4,
@@ -49,17 +49,24 @@
       "deprecatedByLegacyComponent": {}
     },
     "mobile": {
-      "filesScanned": 6839,
+      "filesScanned": 6953,
       "targetComponent": "BadgeNetwork",
       "mmds": {
-        "totalInstances": 4,
-        "filesCount": 4,
+        "totalInstances": 7,
+        "filesCount": 6,
         "props": {
           "src": {
-            "count": 4,
+            "count": 7,
             "values": {
-              "{networkImage}": 3,
+              "{networkImage}": 5,
+              "{networkImageSource as React.ComponentProps< typeof BadgeNetwork >['src']}": 1,
               "{getNetworkImageSource({ chainId: safeFormatChainIdToHex( item.caipChainId, ) ...}": 1
+            }
+          },
+          "twClassName": {
+            "count": 3,
+            "values": {
+              "\"rounded-md\"": 3
             }
           }
         }
@@ -90,9 +97,17 @@
         }
       },
       "overall": {
-        "totalInstances": 11,
-        "filesCount": 11,
+        "totalInstances": 14,
+        "filesCount": 13,
         "props": {
+          "src": {
+            "count": 7,
+            "values": {
+              "{networkImage}": 5,
+              "{networkImageSource as React.ComponentProps< typeof BadgeNetwork >['src']}": 1,
+              "{getNetworkImageSource({ chainId: safeFormatChainIdToHex( item.caipChainId, ) ...}": 1
+            }
+          },
           "name": {
             "count": 7,
             "values": {
@@ -112,11 +127,10 @@
               "{networkBadge.imageSource}": 1
             }
           },
-          "src": {
-            "count": 4,
+          "twClassName": {
+            "count": 3,
             "values": {
-              "{networkImage}": 3,
-              "{getNetworkImageSource({ chainId: safeFormatChainIdToHex( item.caipChainId, ) ...}": 1
+              "\"rounded-md\"": 3
             }
           }
         }
