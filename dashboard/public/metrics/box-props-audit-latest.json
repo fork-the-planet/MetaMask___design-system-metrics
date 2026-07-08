@@ -1,28 +1,27 @@
 {
   "component": "Box",
-  "generatedAt": "2026-07-01T07:12:13.657Z",
+  "generatedAt": "2026-07-08T07:27:38.327Z",
   "projects": {
     "extension": {
-      "filesScanned": 3387,
+      "filesScanned": 3442,
       "targetComponent": "Box",
       "mmds": {
-        "totalInstances": 1865,
-        "filesCount": 493,
+        "totalInstances": 1909,
+        "filesCount": 506,
         "props": {
           "className": {
-            "count": 1053,
+            "count": 1086,
             "values": {
               "\"flex\"": 117,
-              "\"w-full\"": 51,
-              "\"flex-1\"": 27,
+              "\"w-full\"": 52,
+              "\"flex-1\"": 25,
               "\"flex w-full\"": 20,
-              "\"min-w-0 flex-1\"": 16,
-              "\"flex flex-col\"": 14,
+              "\"min-w-0 flex-1\"": 19,
+              "\"flex flex-col\"": 15,
               "\"shrink-0\"": 13,
               "\"h-full\"": 11,
               "\"rounded-lg\"": 11,
               "\"overflow-hidden\"": 10,
-              "\"flex-1 min-w-0\"": 8,
               "\"flex w-full flex-col\"": 8,
               "\"text-center\"": 7,
               "\"min-w-0\"": 7,
@@ -31,6 +30,7 @@
               "\"overflow-hidden rounded-xl\"": 6,
               "\"flex-1 flex flex-col items-center px-6 pt-4 pb-2\"": 6,
               "\"flex flex-col gap-2\"": 6,
+              "\"flex-1 min-w-0\"": 6,
               "\"asset-page__divider\"": 6,
               "\"text-left\"": 6,
               "\"ml-2\"": 6,
@@ -38,13 +38,14 @@
               "\"main-container asset__container\"": 5,
               "\"flex-1 flex items-center justify-center w-full\"": 5,
               "\"qr-scanner\"": 5,
+              "\"h-full w-full\"": 5,
               "\"text-right\"": 5,
               "\"pb-2\"": 5,
               "{`w-full cursor-pointer border-0 p-4 ${ isSelected ? 'bg-muted hover:bg-muted-...}": 5,
               "\"flex gap-4\"": 4,
+              "\"p-4\"": 4,
               "\"flex items-center gap-1\"": 4,
               "{containerClassName}": 4,
-              "\"h-full w-full\"": 4,
               "\"w-full bg-transparent px-4 py-2 hover:bg-hover active:bg-pressed md:px-8\"": 4,
               "\"h-full min-h-0\"": 4,
               "\"inline-flex\"": 3,
@@ -52,7 +53,6 @@
               "{className}": 3,
               "\"sticky bottom-0 left-0 right-0 bg-default border-t border-muted\"": 3,
               "\"flex rounded-lg\"": 3,
-              "\"p-4\"": 3,
               "\"bg-background-default\"": 3,
               "\"flex min-h-0 flex-1 flex-col overflow-auto\"": 3,
               "\"flex h-12 items-center rounded-xl border border-border-muted bg-background-muted\"": 3,
@@ -65,6 +65,7 @@
               "\"transaction-shield-page__divider my-4\"": 3,
               "\"border-t border-muted w-full h-px\"": 3,
               "\"flex items-center justify-between gap-2 px-4 mb-2\"": 3,
+              "\"min-h-0 flex-1 overflow-y-auto\"": 2,
               "\"flex-shrink-0\"": 2,
               "\"qr-code__image\"": 2,
               "\"qr-code__logo\"": 2,
@@ -82,6 +83,9 @@
               "\"relative\"": 2,
               "\"rounded-full\"": 2,
               "{isSaving ? 'flex-1 py-1.5 rounded-lg bg-muted text-center opacity-50 cursor-n...}": 2,
+              "\"flex h-full flex-col\"": 2,
+              "\"mb-2 flex justify-center\"": 2,
+              "\"flex flex-row gap-2\"": 2,
               "\"flex flex-row\"": 2,
               "\"mt-auto w-full\"": 2,
               "\"flex gap-1\"": 2,
@@ -139,7 +143,6 @@
               "{classnames( 'flex flex-col items-center text-center gap-4 max-w-xs', classNam...}": 1,
               "{classnames( 'flex', `${classPrefix}-overview__primary-balance`, { [`${classPr...}": 1,
               "\"flex items-center justify-center rounded-lg p-1\"": 1,
-              "\"min-h-0 flex-1 overflow-y-auto\"": 1,
               "\"flex min-w-0 items-center gap-3\"": 1,
               "\"px-4 pt-4\"": 1,
               "\"flex items-center justify-center gap-2\"": 1,
@@ -176,7 +179,6 @@
               "\"w-1/6\"": 1,
               "\"flex w-full flex-col gap-2\"": 1,
               "\"flex w-full flex-row gap-2\"": 1,
-              "\"w-full rounded-md\"": 1,
               "\"flex w-8/12\"": 1,
               "\"flex w-11/12\"": 1,
               "\"multichain-bridge-transaction-details-modal__content\"": 1,
@@ -231,6 +233,19 @@
               "{twMerge( '[container-name:list-item] [container-type:inline-size]', variantSt...}": 1,
               "\"pr-4 shrink-0\"": 1,
               "{sharedClassName}": 1,
+              "\"flex flex-1 flex-col gap-2 overflow-y-auto px-4 pt-4\"": 1,
+              "\"bg-muted flex h-12 w-12 shrink-0 items-center justify-center rounded-full\"": 1,
+              "\"mt-2 flex flex-col gap-2\"": 1,
+              "{`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border...}": 1,
+              "\"bg-primary-default h-2.5 w-2.5 rounded-full\"": 1,
+              "\"flex min-h-0 flex-1 flex-col\"": 1,
+              "\"flex flex-1 flex-col gap-4 overflow-y-auto px-4 pt-4\"": 1,
+              "\"bg-error-muted flex h-12 w-12 shrink-0 items-center justify-center rounded-full\"": 1,
+              "\"flex flex-col items-center gap-3 p-4\"": 1,
+              "\"flex items-center px-4 py-3\"": 1,
+              "\"h-8 w-8\"": 1,
+              "\"bg-muted h-1 w-full overflow-hidden\"": 1,
+              "\"bg-primary-default h-full transition-[width] duration-300 ease-out\"": 1,
               "\"qr-scanner__content\"": 1,
               "\"srp-reveal-list h-full min-h-0 overflow-y-auto\"": 1,
               "\"flex-col flex\"": 1,
@@ -238,12 +253,12 @@
               "\"srp-reveal-list__srp-list\"": 1,
               "{`relative flex items-center${boxClassName ? ` ${boxClassName}` : ''}${onClick...}": 1,
               "\"cursor-pointer flex items-center hover:text-text-alternative\"": 1,
-              "\"bg-error-muted rounded-2xl p-4 gap-4 w-full\"": 1,
-              "\"w-8 h-8\"": 1,
-              "\"gap-2\"": 1,
               "w-max rounded-md bg-gradient-to-r from-[#ECB920] to-[65%] to-[#ECBC2D]/[11%] p-[1px] border-1": 1,
               "\"w-max flex flex-row rounded-md bg-warning-inverse\"": 1,
               "\"w-max flex flex-row rounded-md whitespace-nowrap px-2 py-0 gap-1 bg-[#ECBC2D]/[11%]\"": 1,
+              "\"bg-error-muted rounded-2xl p-4 gap-4 w-full\"": 1,
+              "\"w-8 h-8\"": 1,
+              "\"gap-2\"": 1,
               "\"rewards-vip-referral-tag shrink-0 flex flex-row items-center gap-1.5 rounded-md pl-2.5 pr-2 py-1\"": 1,
               "\"flex justify-center items-center\"": 1,
               "\"flex flex-col gap-2 w-full\"": 1,
@@ -317,6 +332,10 @@
               "\"w-full rounded-xl\"": 1,
               "{`min-w-0 flex-1 ${isDisabled ? '' : 'cursor-pointer'}`}": 1,
               "\"h-px w-full bg-border-muted\"": 1,
+              "\"w-full flex-1\"": 1,
+              "{`rounded-xl w-full max-w-[20rem]${isClickable ? ' cursor-pointer' : ''}`}": 1,
+              "\"w-full shrink-0\"": 1,
+              "\"rounded-xl w-full max-w-[20rem]\"": 1,
               "\"w-10 h-10 flex-shrink-0\"": 1,
               "{`multichain-account-cell${disableHoverEffect ? ' multichain-account-cell--no-...}": 1,
               "\"multichain-account-cell__end_accessory\"": 1,
@@ -446,11 +465,17 @@
               "\"musd-education-screen\"": 1,
               "\"flex w-full flex-col gap-6 px-4 pt-4\"": 1,
               "\"shrink-0 flex-row\"": 1,
+              "\"flex min-h-0 flex-1 flex-col overflow-hidden bg-background-default\"": 1,
+              "\"px-4 pb-4\"": 1,
+              "\"flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-muted text-sm font-medium text-text-default\"": 1,
+              "\"flex min-w-0 items-center gap-2\"": 1,
+              "\"shrink-0 rounded bg-muted px-2 py-0.5\"": 1,
               "\"network-manager__additional-network-item w-full px-4\"": 1,
               "\"rounded-md px-2 py-1\"": 1,
               "\"mx-4 border-t border-muted\"": 1,
               "\"flex h-full min-h-0 w-full flex-col\"": 1,
               "\"flex h-full min-h-0 w-full flex-col overflow-hidden bg-background-default\"": 1,
+              "\"flex h-full flex-col items-center justify-center gap-4 px-6 text-center\"": 1,
               "\"h-full w-full px-4 pt-4 text-center\"": 1,
               "\"w-full h-px border-t border-muted\"": 1,
               "\"mt-auto\"": 1,
@@ -510,6 +535,7 @@
               "\"sticky top-0 z-10 bg-background-default\"": 1,
               "\"p-2 -ml-2 cursor-pointer\"": 1,
               "\"shrink-0 rounded-md bg-background-muted px-1.5\"": 1,
+              "\"shrink-0 cursor-pointer p-1 -m-1\"": 1,
               "\"p-2 cursor-pointer transition-transform hover:scale-110\"": 1,
               "\"flex-1 cursor-pointer rounded-xl bg-muted px-4 py-3 hover:bg-muted-hover active:bg-muted-pressed\"": 1,
               "\"relative flex-1 rounded-xl bg-muted px-4 py-3 cursor-pointer hover:bg-muted-hover active:bg-muted-pressed transition-colors\"": 1,
@@ -572,16 +598,16 @@
             }
           },
           "flexDirection": {
-            "count": 909,
+            "count": 921,
             "values": {
-              "{BoxFlexDirection.Column}": 470,
-              "{BoxFlexDirection.Row}": 439
+              "{BoxFlexDirection.Column}": 478,
+              "{BoxFlexDirection.Row}": 443
             }
           },
           "alignItems": {
-            "count": 608,
+            "count": 615,
             "values": {
-              "{BoxAlignItems.Center}": 524,
+              "{BoxAlignItems.Center}": 531,
               "{BoxAlignItems.Start}": 37,
               "{BoxAlignItems.End}": 22,
               "{BoxAlignItems.Stretch}": 17,
@@ -590,25 +616,25 @@
             }
           },
           "gap": {
-            "count": 541,
+            "count": 550,
             "values": {
               "0": 1,
               "1": 120,
-              "2": 179,
+              "2": 184,
               "3": 55,
-              "4": 156,
+              "4": 158,
               "5": 2,
               "6": 23,
-              "8": 3,
+              "8": 5,
               "{loading ? 2 : 0}": 1,
               "{showSkeletonLoader ? 2 : 0}": 1
             }
           },
           "justifyContent": {
-            "count": 363,
+            "count": 364,
             "values": {
               "{BoxJustifyContent.Between}": 182,
-              "{BoxJustifyContent.Center}": 133,
+              "{BoxJustifyContent.Center}": 134,
               "{BoxJustifyContent.Start}": 27,
               "{BoxJustifyContent.End}": 15,
               "{BoxJustifyContent.Evenly}": 4,
@@ -617,10 +643,10 @@
             }
           },
           "data-testid": {
-            "count": 280,
+            "count": 289,
             "values": {
-              "{dataTestId}": 7,
-              "{testId}": 6,
+              "{dataTestId}": 8,
+              "{testId}": 7,
               "\"perps-tutorial-step-image\"": 6,
               "\"transaction-shield-page\"": 3,
               "{`${classPrefix}-overview__primary-currency`}": 2,
@@ -718,7 +744,6 @@
               "\"rewards-points-balance\"": 1,
               "\"rewards-error-banner\"": 1,
               "\"rewards-error-toast\"": 1,
-              "\"rewards-vip-badge\"": 1,
               "\"rewards-vip-referral-tag\"": 1,
               "\"rewards-onboarding-main-image\"": 1,
               "\"rewards-onboarding-main-info\"": 1,
@@ -745,6 +770,11 @@
               "\"hardware-account-address-row\"": 1,
               "\"hardware-account-card\"": 1,
               "\"hardware-account-card-header\"": 1,
+              "{`ledger-connection-status-${status}`}": 1,
+              "\"ledger-connection-status-device-selector\"": 1,
+              "\"ledger-connection-status-illustration\"": 1,
+              "\"ledger-connection-status-instructions\"": 1,
+              "{`ledger-connection-status-instruction-${messageKey}`}": 1,
               "\"account-cell-avatar\"": 1,
               "{`multichain-account-cell-${accountId}`}": 1,
               "\"multichain-account-cell-hovered-addresses\"": 1,
@@ -803,6 +833,8 @@
               "\"reveal-seed-malicious-block\"": 1,
               "\"reveal-seed-page\"": 1,
               "{`choose-wallet-type-${option.id}`}": 1,
+              "\"networks-page-chainlist-network-list\"": 1,
+              "\"networks-page-chainlist-added-pill\"": 1,
               "{`popular-network-${network.chainId}`}": 1,
               "\"networks-page-list\"": 1,
               "\"networks-page-network-success-toast\"": 1,
@@ -834,6 +866,7 @@
               "{`perps-activity-group-${group.date}`}": 1,
               "\"perps-market-detail-page\"": 1,
               "\"perps-market-max-leverage\"": 1,
+              "\"perps-market-detail-market-list-button\"": 1,
               "\"perps-market-detail-favorite-button\"": 1,
               "\"perps-market-detail-chart\"": 1,
               "\"perps-margin-card\"": 1,
@@ -874,13 +907,13 @@
             }
           },
           "paddingBottom": {
-            "count": 142,
+            "count": 145,
             "values": {
               "0": 3,
               "1": 13,
-              "2": 40,
+              "2": 42,
               "3": 16,
-              "4": 47,
+              "4": 48,
               "5": 1,
               "6": 12,
               "8": 3,
@@ -892,12 +925,13 @@
             }
           },
           "style": {
-            "count": 133,
+            "count": 140,
             "values": {
               "{{ width: '100%' }}": 7,
               "{gatorPermissionDetailRowStyle}": 7,
               "{{ flex: 1 }}": 5,
               "{{ flexShrink: 0 }}": 5,
+              "{{ width: STORY_FRAME_WIDTH }}": 4,
               "{{ minWidth: 0, flex: 1 }}": 3,
               "{{ scrollbarColor: 'var(--color-icon-muted) transparent' }}": 3,
               "{{ width: '100%', maxWidth: 400 }}": 2,
@@ -930,6 +964,7 @@
               "{{ width: '96px', height: '96px', borderRadius: '50%', backgroundColor: 'var(-...}": 1,
               "{{ gap: '1px' }}": 1,
               "{{ height: isPopup ? 180 : 280, width: '100%', display: 'flex', justifyContent...}": 1,
+              "{{ width: `${fillPercent}%` }}": 1,
               "{{ backgroundColor: VIP_GOLD_BACKGROUND_MUTED, '--rewards-vip-referral-tag-hea...}": 1,
               "{{ maxHeight: `${POPOVER_MAX_HEIGHT}px` }}": 1,
               "{isSettingsPage ? { maxHeight: '100%', minHeight: 0, overflowY: 'auto', } : un...}": 1,
@@ -939,6 +974,8 @@
               "{{ flex: '1', alignSelf: 'center' }}": 1,
               "{{ flex: '1', alignSelf: 'center', cursor: 'pointer' }}": 1,
               "{{ cursor: isLoadingState ? 'not-allowed' : 'pointer', }}": 1,
+              "{{ width: STORY_FRAME_WIDTH, minHeight: 640 }}": 1,
+              "{{ width: STORY_FRAME_WIDTH, minHeight: 560 }}": 1,
               "{{ cursor: onClick ? 'pointer' : 'default', position: 'relative', }}": 1,
               "{{ flexShrink: 1, width: 'fit-content', }}": 1,
               "{{ borderRadius: '8px' }}": 1,
@@ -992,13 +1029,13 @@
             }
           },
           "paddingTop": {
-            "count": 131,
+            "count": 134,
             "values": {
               "0": 2,
               "1": 9,
-              "2": 25,
+              "2": 27,
               "3": 24,
-              "4": 48,
+              "4": 49,
               "5": 1,
               "6": 3,
               "8": 8,
@@ -1013,13 +1050,13 @@
             }
           },
           "padding": {
-            "count": 126,
+            "count": 133,
             "values": {
               "0": 2,
               "1": 7,
               "2": 18,
-              "3": 17,
-              "4": 74,
+              "3": 18,
+              "4": 80,
               "6": 5,
               "10": 1,
               "{customDetails ? 0 : 2}": 1,
@@ -1027,10 +1064,10 @@
             }
           },
           "backgroundColor": {
-            "count": 111,
+            "count": 119,
             "values": {
-              "{BoxBackgroundColor.BackgroundDefault}": 32,
-              "{BoxBackgroundColor.BackgroundMuted}": 19,
+              "{BoxBackgroundColor.BackgroundDefault}": 39,
+              "{BoxBackgroundColor.BackgroundMuted}": 20,
               "{BoxBackgroundColor.BackgroundSection}": 10,
               "{BoxBackgroundColor.BackgroundAlternative}": 7,
               "{BoxBackgroundColor.PrimaryDefault}": 6,
@@ -1060,34 +1097,34 @@
             }
           },
           "paddingLeft": {
-            "count": 108,
+            "count": 111,
             "values": {
               "1": 1,
               "2": 9,
-              "3": 1,
-              "4": 89,
+              "3": 2,
+              "4": 91,
               "5": 3,
               "6": 5
             }
           },
           "paddingRight": {
-            "count": 102,
+            "count": 105,
             "values": {
-              "2": 8,
+              "2": 9,
               "3": 2,
-              "4": 87,
+              "4": 89,
               "5": 3,
               "6": 2
             }
           },
           "marginBottom": {
-            "count": 97,
+            "count": 96,
             "values": {
               "0": 1,
               "1": 5,
               "2": 20,
               "3": 15,
-              "4": 41,
+              "4": 40,
               "5": 6,
               "6": 4,
               "8": 1,
@@ -1113,7 +1150,7 @@
             }
           },
           "onClick": {
-            "count": 73,
+            "count": 74,
             "values": {
               "{onClick}": 10,
               "{() => handleSelect(value)}": 5,
@@ -1154,6 +1191,7 @@
               "{() => { dispatch( setEditedNetwork({ chainId: network.chainId, }), ); dispatc...}": 1,
               "{() => { if (!isQuizWord) { return; } if (wordToDisplay === '') { setIndexToFo...}": 1,
               "{() => { revealPhrase?.(); }}": 1,
+              "{handleMarketListClick}": 1,
               "{handleFavoriteClick}": 1,
               "{() => { setShowSizeInFiat((prev) => !prev); }}": 1,
               "{handleOpenMarginMenu}": 1,
@@ -1170,13 +1208,14 @@
             }
           },
           "key": {
-            "count": 58,
+            "count": 61,
             "values": {
               "{index}": 6,
               "{value}": 5,
               "{network.chainId}": 4,
               "{section.key}": 3,
               "{key}": 2,
+              "{status}": 2,
               "{selectedAlert.key}": 1,
               "{`${selectedAlert.key}-detail-${index}`}": 1,
               "{`disclosure-detail-${index}`}": 1,
@@ -1191,6 +1230,7 @@
               "{section.id}": 1,
               "{accountId}": 1,
               "{`add-multichain-account-button-${walletId}`}": 1,
+              "{messageKey}": 1,
               "{`multichain-account-cell-${accountId}`}": 1,
               "{item.textKey}": 1,
               "{i}": 1,
@@ -1218,9 +1258,9 @@
             }
           },
           "asChild": {
-            "count": 47,
+            "count": 46,
             "values": {
-              "true (shorthand)": 47
+              "true (shorthand)": 46
             }
           },
           "paddingHorizontal": {
@@ -1235,12 +1275,13 @@
             }
           },
           "[spread]": {
-            "count": 19,
+            "count": 20,
             "values": {
               "{linkItemProps}": 7,
               "{props}": 4,
               "{rowStylesProps}": 2,
               "{alertKey && { 'data-alert-key': alertKey }}": 1,
+              "{isClickable ? { onClick: onDeviceSelectorClick } : {}}": 1,
               "{wrappingLabelProps}": 1,
               "{titleHeadingWrapperProps}": 1,
               "{titleDetailWrapperProps}": 1,
@@ -1308,23 +1349,24 @@
               "4": 7
             }
           },
-          "tabIndex": {
-            "count": 11,
-            "values": {
-              "0": 9,
-              "{isDisabled ? undefined : 0}": 1,
-              "{isInteractive ? 0 : undefined}": 1
-            }
-          },
           "aria-label": {
-            "count": 11,
+            "count": 12,
             "values": {
               "{t('back')}": 4,
               "{modalTitle}": 2,
               "{t('loading')}": 2,
               "{`${ariaLabelName} options`}": 1,
               "{t(item.textKey)}": 1,
+              "{t('perpsMarkets')}": 1,
               "{isInWatchlist ? t('perpsRemoveFromFavorites') : t('perpsAddToFavorites')}": 1
+            }
+          },
+          "tabIndex": {
+            "count": 11,
+            "values": {
+              "0": 9,
+              "{isDisabled ? undefined : 0}": 1,
+              "{isInteractive ? 0 : undefined}": 1
             }
           },
           "marginHorizontal": {
@@ -1336,9 +1378,10 @@
             }
           },
           "role": {
-            "count": 9,
+            "count": 10,
             "values": {
               "\"button\"": 3,
+              "\"progressbar\"": 1,
               "{isDisabled ? undefined : 'button'}": 1,
               "\"tablist\"": 1,
               "\"tabpanel\"": 1,
@@ -1434,6 +1477,24 @@
               "true": 1
             }
           },
+          "aria-valuemin": {
+            "count": 1,
+            "values": {
+              "1": 1
+            }
+          },
+          "aria-valuemax": {
+            "count": 1,
+            "values": {
+              "{totalSteps}": 1
+            }
+          },
+          "aria-valuenow": {
+            "count": 1,
+            "values": {
+              "{currentStep + 1}": 1
+            }
+          },
           "borderRadius": {
             "count": 1,
             "values": {
@@ -1474,6 +1535,12 @@
             "count": 1,
             "values": {
               "{(e: React.PointerEvent) => e.stopPropagation()}": 1
+            }
+          },
+          "onScroll": {
+            "count": 1,
+            "values": {
+              "{handleChainlistScroll}": 1
             }
           },
           "data-checked": {
@@ -1527,15 +1594,15 @@
         }
       },
       "deprecated": {
-        "totalInstances": 719,
+        "totalInstances": 714,
         "filesCount": 244,
         "props": {
           "display": {
-            "count": 465,
+            "count": 461,
             "values": {
               "{Display.Flex}": 426,
               "{Display.Block}": 15,
-              "{Display.InlineFlex}": 14,
+              "{Display.InlineFlex}": 10,
               "{Display.Inline}": 5,
               "{[Display.Flex]}": 2,
               "{isCollapsable && isCollapsed ? Display.None : Display.Flex}": 1,
@@ -1849,7 +1916,7 @@
               "{{ zIndex: 2, position: 'relative', }}": 1,
               "{{ /** As a flex child, this ensures the element stretches the full available ...}": 1,
               "{{ overflow: 'auto' }}": 1,
-              "{{ cursor: canEdit ? 'pointer' : 'default', padding: canEdit ? '4px 8px' : '0p...}": 1,
+              "{{ cursor: canEdit ? 'pointer' : 'default' }}": 1,
               "{{ flex: 1, height: '100%' }}": 1,
               "{{ minWidth: 0 }}": 1,
               "{{ width: '100%', position: 'relative', overflow: 'hidden' }}": 1,
@@ -1953,7 +2020,7 @@
             }
           },
           "backgroundColor": {
-            "count": 76,
+            "count": 75,
             "values": {
               "{BackgroundColor.backgroundDefault}": 26,
               "{BackgroundColor.backgroundAlternative}": 10,
@@ -1976,7 +2043,6 @@
               "{BackgroundColor.infoDefault}": 1,
               "{BackgroundColor.iconAlternative}": 1,
               "{showAdvancedDetails ? BackgroundColor.infoMuted : BackgroundColor.transparent}": 1,
-              "{canEdit ? BackgroundColor.backgroundMuted : BackgroundColor.transparent}": 1,
               "{BackgroundColor.backgroundMuted}": 1
             }
           },
@@ -2076,22 +2142,22 @@
               "{[4, 7]}": 1
             }
           },
-          "borderRadius": {
-            "count": 54,
-            "values": {
-              "{BorderRadius.LG}": 20,
-              "{BorderRadius.pill}": 14,
-              "{BorderRadius.MD}": 8,
-              "{BorderRadius.XL}": 5,
-              "{BorderRadius.SM}": 4,
-              "{BorderRadius.full}": 3
-            }
-          },
           "height": {
             "count": 53,
             "values": {
               "{BlockSize.Full}": 51,
               "{BlockSize.Min}": 2
+            }
+          },
+          "borderRadius": {
+            "count": 53,
+            "values": {
+              "{BorderRadius.LG}": 20,
+              "{BorderRadius.pill}": 13,
+              "{BorderRadius.MD}": 8,
+              "{BorderRadius.XL}": 5,
+              "{BorderRadius.SM}": 4,
+              "{BorderRadius.full}": 3
             }
           },
           "onClick": {
@@ -2117,7 +2183,7 @@
               "{onHeaderClick}": 1,
               "{() => onClick(recipient)}": 1,
               "{() => onClick?.()}": 1,
-              "{canEdit ? onOpenModal : undefined}": 1
+              "{canEdit ? openModal : undefined}": 1
             }
           },
           "marginBottom": {
@@ -2443,24 +2509,23 @@
         }
       },
       "overall": {
-        "totalInstances": 2584,
-        "filesCount": 737,
+        "totalInstances": 2623,
+        "filesCount": 750,
         "props": {
           "className": {
-            "count": 1264,
+            "count": 1297,
             "values": {
               "\"flex\"": 117,
-              "\"w-full\"": 52,
-              "\"flex-1\"": 27,
+              "\"w-full\"": 53,
+              "\"flex-1\"": 25,
               "\"flex w-full\"": 20,
-              "\"min-w-0 flex-1\"": 16,
-              "\"flex flex-col\"": 15,
+              "\"min-w-0 flex-1\"": 19,
+              "\"flex flex-col\"": 16,
               "\"shrink-0\"": 13,
               "\"h-full\"": 11,
               "\"rounded-lg\"": 11,
               "\"overflow-hidden\"": 10,
               "\"min-w-0\"": 9,
-              "\"flex-1 min-w-0\"": 8,
               "\"flex w-full flex-col\"": 8,
               "\"text-center\"": 7,
               "\"flex-1 overflow-y-auto\"": 7,
@@ -2469,6 +2534,7 @@
               "\"overflow-hidden rounded-xl\"": 6,
               "\"flex-1 flex flex-col items-center px-6 pt-4 pb-2\"": 6,
               "\"flex flex-col gap-2\"": 6,
+              "\"flex-1 min-w-0\"": 6,
               "\"asset-page__divider\"": 6,
               "\"text-left\"": 6,
               "\"ml-2\"": 6,
@@ -2476,14 +2542,15 @@
               "\"flex flex-col w-full\"": 5,
               "\"flex-1 flex items-center justify-center w-full\"": 5,
               "\"qr-scanner\"": 5,
+              "\"h-full w-full\"": 5,
               "\"text-right\"": 5,
               "\"pb-2\"": 5,
               "{`w-full cursor-pointer border-0 p-4 ${ isSelected ? 'bg-muted hover:bg-muted-...}": 5,
               "\"flex gap-4\"": 4,
               "{className}": 4,
+              "\"p-4\"": 4,
               "\"flex items-center gap-1\"": 4,
               "{containerClassName}": 4,
-              "\"h-full w-full\"": 4,
               "\"w-full bg-transparent px-4 py-2 hover:bg-hover active:bg-pressed md:px-8\"": 4,
               "\"h-full min-h-0\"": 4,
               "\"flex-shrink-0\"": 3,
@@ -2493,7 +2560,6 @@
               "\"sticky bottom-0 left-0 right-0 bg-default border-t border-muted\"": 3,
               "\"snap-home-menu__item\"": 3,
               "\"flex rounded-lg\"": 3,
-              "\"p-4\"": 3,
               "\"simulation-details-layout\"": 3,
               "\"bg-background-default\"": 3,
               "\"flex min-h-0 flex-1 flex-col overflow-auto\"": 3,
@@ -2507,6 +2573,7 @@
               "\"transaction-shield-page__divider my-4\"": 3,
               "\"border-t border-muted w-full h-px\"": 3,
               "\"flex items-center justify-between gap-2 px-4 mb-2\"": 3,
+              "\"min-h-0 flex-1 overflow-y-auto\"": 2,
               "\"qr-code__image\"": 2,
               "\"qr-code__logo\"": 2,
               "\"flex settings-page__content-row\"": 2,
@@ -2525,6 +2592,9 @@
               "\"rounded-full\"": 2,
               "\"gap-1\"": 2,
               "{isSaving ? 'flex-1 py-1.5 rounded-lg bg-muted text-center opacity-50 cursor-n...}": 2,
+              "\"flex h-full flex-col\"": 2,
+              "\"mb-2 flex justify-center\"": 2,
+              "\"flex flex-row gap-2\"": 2,
               "\"flex flex-row\"": 2,
               "\"mt-auto w-full\"": 2,
               "{classnames('snap-ui-renderer__file-input', { 'snap-ui-renderer__field': label...}": 2,
@@ -2601,7 +2671,6 @@
               "\"asset-list-control-bar__buttons\"": 1,
               "\"nfts-tab__link\"": 1,
               "\"flex items-center justify-center rounded-lg p-1\"": 1,
-              "\"min-h-0 flex-1 overflow-y-auto\"": 1,
               "\"flex min-w-0 items-center gap-3\"": 1,
               "\"px-4 pt-4\"": 1,
               "\"flex items-center justify-center gap-2\"": 1,
@@ -2647,7 +2716,6 @@
               "\"w-1/6\"": 1,
               "\"flex w-full flex-col gap-2\"": 1,
               "\"flex w-full flex-row gap-2\"": 1,
-              "\"w-full rounded-md\"": 1,
               "\"flex w-8/12\"": 1,
               "\"flex w-11/12\"": 1,
               "\"multichain-bridge-transaction-details-modal__content\"": 1,
@@ -2701,6 +2769,19 @@
               "{twMerge( '[container-name:list-item] [container-type:inline-size]', variantSt...}": 1,
               "\"pr-4 shrink-0\"": 1,
               "{sharedClassName}": 1,
+              "\"flex flex-1 flex-col gap-2 overflow-y-auto px-4 pt-4\"": 1,
+              "\"bg-muted flex h-12 w-12 shrink-0 items-center justify-center rounded-full\"": 1,
+              "\"mt-2 flex flex-col gap-2\"": 1,
+              "{`mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border...}": 1,
+              "\"bg-primary-default h-2.5 w-2.5 rounded-full\"": 1,
+              "\"flex min-h-0 flex-1 flex-col\"": 1,
+              "\"flex flex-1 flex-col gap-4 overflow-y-auto px-4 pt-4\"": 1,
+              "\"bg-error-muted flex h-12 w-12 shrink-0 items-center justify-center rounded-full\"": 1,
+              "\"flex flex-col items-center gap-3 p-4\"": 1,
+              "\"flex items-center px-4 py-3\"": 1,
+              "\"h-8 w-8\"": 1,
+              "\"bg-muted h-1 w-full overflow-hidden\"": 1,
+              "\"bg-primary-default h-full transition-[width] duration-300 ease-out\"": 1,
               "\"qr-scanner__content\"": 1,
               "\"srp-reveal-list h-full min-h-0 overflow-y-auto\"": 1,
               "\"flex-col flex\"": 1,
@@ -2708,12 +2789,12 @@
               "\"srp-reveal-list__srp-list\"": 1,
               "{`relative flex items-center${boxClassName ? ` ${boxClassName}` : ''}${onClick...}": 1,
               "\"cursor-pointer flex items-center hover:text-text-alternative\"": 1,
-              "\"bg-error-muted rounded-2xl p-4 gap-4 w-full\"": 1,
-              "\"w-8 h-8\"": 1,
-              "\"gap-2\"": 1,
               "w-max rounded-md bg-gradient-to-r from-[#ECB920] to-[65%] to-[#ECBC2D]/[11%] p-[1px] border-1": 1,
               "\"w-max flex flex-row rounded-md bg-warning-inverse\"": 1,
               "\"w-max flex flex-row rounded-md whitespace-nowrap px-2 py-0 gap-1 bg-[#ECBC2D]/[11%]\"": 1,
+              "\"bg-error-muted rounded-2xl p-4 gap-4 w-full\"": 1,
+              "\"w-8 h-8\"": 1,
+              "\"gap-2\"": 1,
               "\"rewards-vip-referral-tag shrink-0 flex flex-row items-center gap-1.5 rounded-md pl-2.5 pr-2 py-1\"": 1,
               "\"flex justify-center items-center\"": 1,
               "\"flex flex-col gap-2 w-full\"": 1,
@@ -2884,6 +2965,10 @@
               "\"w-full rounded-xl\"": 1,
               "{`min-w-0 flex-1 ${isDisabled ? '' : 'cursor-pointer'}`}": 1,
               "\"h-px w-full bg-border-muted\"": 1,
+              "\"w-full flex-1\"": 1,
+              "{`rounded-xl w-full max-w-[20rem]${isClickable ? ' cursor-pointer' : ''}`}": 1,
+              "\"w-full shrink-0\"": 1,
+              "\"rounded-xl w-full max-w-[20rem]\"": 1,
               "\"w-10 h-10 flex-shrink-0\"": 1,
               "{`multichain-account-cell${disableHoverEffect ? ' multichain-account-cell--no-...}": 1,
               "\"multichain-account-cell__end_accessory\"": 1,
@@ -3032,11 +3117,17 @@
               "\"musd-education-screen\"": 1,
               "\"flex w-full flex-col gap-6 px-4 pt-4\"": 1,
               "\"shrink-0 flex-row\"": 1,
+              "\"flex min-h-0 flex-1 flex-col overflow-hidden bg-background-default\"": 1,
+              "\"px-4 pb-4\"": 1,
+              "\"flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-muted text-sm font-medium text-text-default\"": 1,
+              "\"flex min-w-0 items-center gap-2\"": 1,
+              "\"shrink-0 rounded bg-muted px-2 py-0.5\"": 1,
               "\"network-manager__additional-network-item w-full px-4\"": 1,
               "\"rounded-md px-2 py-1\"": 1,
               "\"mx-4 border-t border-muted\"": 1,
               "\"flex h-full min-h-0 w-full flex-col\"": 1,
               "\"flex h-full min-h-0 w-full flex-col overflow-hidden bg-background-default\"": 1,
+              "\"flex h-full flex-col items-center justify-center gap-4 px-6 text-center\"": 1,
               "\"h-full w-full px-4 pt-4 text-center\"": 1,
               "\"notifications__list__read__all__button\"": 1,
               "\"notifications__list\"": 1,
@@ -3109,6 +3200,7 @@
               "\"sticky top-0 z-10 bg-background-default\"": 1,
               "\"p-2 -ml-2 cursor-pointer\"": 1,
               "\"shrink-0 rounded-md bg-background-muted px-1.5\"": 1,
+              "\"shrink-0 cursor-pointer p-1 -m-1\"": 1,
               "\"p-2 cursor-pointer transition-transform hover:scale-110\"": 1,
               "\"flex-1 cursor-pointer rounded-xl bg-muted px-4 py-3 hover:bg-muted-hover active:bg-muted-pressed\"": 1,
               "\"relative flex-1 rounded-xl bg-muted px-4 py-3 cursor-pointer hover:bg-muted-hover active:bg-muted-pressed transition-colors\"": 1,
@@ -3184,10 +3276,10 @@
             }
           },
           "flexDirection": {
-            "count": 1158,
+            "count": 1170,
             "values": {
-              "{BoxFlexDirection.Column}": 470,
-              "{BoxFlexDirection.Row}": 439,
+              "{BoxFlexDirection.Column}": 478,
+              "{BoxFlexDirection.Row}": 443,
               "{FlexDirection.Column}": 151,
               "{FlexDirection.Row}": 95,
               "{isCollapsible ? FlexDirection.Column : FlexDirection.Row}": 1,
@@ -3196,9 +3288,9 @@
             }
           },
           "alignItems": {
-            "count": 846,
+            "count": 853,
             "values": {
-              "{BoxAlignItems.Center}": 524,
+              "{BoxAlignItems.Center}": 531,
               "{AlignItems.center}": 202,
               "{BoxAlignItems.Start}": 37,
               "{BoxAlignItems.End}": 22,
@@ -3214,26 +3306,26 @@
             }
           },
           "gap": {
-            "count": 664,
+            "count": 673,
             "values": {
               "0": 2,
               "1": 140,
-              "2": 226,
+              "2": 231,
               "3": 70,
-              "4": 194,
+              "4": 196,
               "5": 2,
               "6": 24,
-              "8": 3,
+              "8": 5,
               "{showAvatarAccount ? 2 : 0}": 1,
               "{loading ? 2 : 0}": 1,
               "{showSkeletonLoader ? 2 : 0}": 1
             }
           },
           "justifyContent": {
-            "count": 548,
+            "count": 549,
             "values": {
               "{BoxJustifyContent.Between}": 182,
-              "{BoxJustifyContent.Center}": 133,
+              "{BoxJustifyContent.Center}": 134,
               "{JustifyContent.spaceBetween}": 83,
               "{JustifyContent.center}": 79,
               "{BoxJustifyContent.Start}": 27,
@@ -3248,11 +3340,11 @@
             }
           },
           "display": {
-            "count": 465,
+            "count": 461,
             "values": {
               "{Display.Flex}": 426,
               "{Display.Block}": 15,
-              "{Display.InlineFlex}": 14,
+              "{Display.InlineFlex}": 10,
               "{Display.Inline}": 5,
               "{[Display.Flex]}": 2,
               "{isCollapsable && isCollapsed ? Display.None : Display.Flex}": 1,
@@ -3261,10 +3353,10 @@
             }
           },
           "data-testid": {
-            "count": 369,
+            "count": 378,
             "values": {
-              "{dataTestId}": 15,
-              "{testId}": 7,
+              "{dataTestId}": 16,
+              "{testId}": 8,
               "\"perps-tutorial-step-image\"": 6,
               "\"no-connections\"": 4,
               "\"network-loader\"": 3,
@@ -3374,7 +3466,6 @@
               "\"rewards-points-balance\"": 1,
               "\"rewards-error-banner\"": 1,
               "\"rewards-error-toast\"": 1,
-              "\"rewards-vip-badge\"": 1,
               "\"rewards-vip-referral-tag\"": 1,
               "\"rewards-onboarding-main-image\"": 1,
               "\"rewards-onboarding-main-info\"": 1,
@@ -3426,6 +3517,11 @@
               "\"hardware-account-address-row\"": 1,
               "\"hardware-account-card\"": 1,
               "\"hardware-account-card-header\"": 1,
+              "{`ledger-connection-status-${status}`}": 1,
+              "\"ledger-connection-status-device-selector\"": 1,
+              "\"ledger-connection-status-illustration\"": 1,
+              "\"ledger-connection-status-instructions\"": 1,
+              "{`ledger-connection-status-instruction-${messageKey}`}": 1,
               "\"account-cell-avatar\"": 1,
               "{`multichain-account-cell-${accountId}`}": 1,
               "\"multichain-account-cell-hovered-addresses\"": 1,
@@ -3509,6 +3605,8 @@
               "\"reveal-seed-malicious-block\"": 1,
               "\"reveal-seed-page\"": 1,
               "{`choose-wallet-type-${option.id}`}": 1,
+              "\"networks-page-chainlist-network-list\"": 1,
+              "\"networks-page-chainlist-added-pill\"": 1,
               "\"networks-page-list\"": 1,
               "\"networks-page-network-success-toast\"": 1,
               "\"notifications-list-disabled-notifications\"": 1,
@@ -3542,6 +3640,7 @@
               "{`perps-activity-group-${group.date}`}": 1,
               "\"perps-market-detail-page\"": 1,
               "\"perps-market-max-leverage\"": 1,
+              "\"perps-market-detail-market-list-button\"": 1,
               "\"perps-market-detail-favorite-button\"": 1,
               "\"perps-market-detail-chart\"": 1,
               "\"perps-margin-card\"": 1,
@@ -3582,7 +3681,7 @@
             }
           },
           "style": {
-            "count": 253,
+            "count": 260,
             "values": {
               "{{ overflow: 'hidden' }}": 13,
               "{{ flex: 1 }}": 9,
@@ -3595,6 +3694,7 @@
               "{{ position: 'relative' }}": 4,
               "{{ cursor: 'pointer' }}": 4,
               "{{ flex: '1', alignSelf: 'center' }}": 4,
+              "{{ width: STORY_FRAME_WIDTH }}": 4,
               "{{ height: '40px', width: '40px' }}": 4,
               "{{ height: '1px', borderBottomWidth: 0, borderBottomStyle: 'solid', }}": 3,
               "{{ overflowY: 'auto', }}": 3,
@@ -3637,6 +3737,7 @@
               "{{ width: '96px', height: '96px', borderRadius: '50%', backgroundColor: 'var(-...}": 1,
               "{{ gap: '1px' }}": 1,
               "{{ height: isPopup ? 180 : 280, width: '100%', display: 'flex', justifyContent...}": 1,
+              "{{ width: `${fillPercent}%` }}": 1,
               "{{ backgroundColor: VIP_GOLD_BACKGROUND_MUTED, '--rewards-vip-referral-tag-hea...}": 1,
               "{{ position: 'relative', overflow: 'hidden', maxHeight: isOpen ? 'none' : unde...}": 1,
               "{{ position: 'absolute', bottom: 0, right: 0, // Avoids see-through with muted...}": 1,
@@ -3673,6 +3774,8 @@
               "{{ height: 62 }}": 1,
               "{{ flexGrow: 1, overflow: 'hidden' }}": 1,
               "{{ cursor: isLoadingState ? 'not-allowed' : 'pointer', }}": 1,
+              "{{ width: STORY_FRAME_WIDTH, minHeight: 640 }}": 1,
+              "{{ width: STORY_FRAME_WIDTH, minHeight: 560 }}": 1,
               "{{ cursor: onClick ? 'pointer' : 'default', position: 'relative', }}": 1,
               "{{ flexShrink: 1, width: 'fit-content', }}": 1,
               "{{ borderRadius: '8px' }}": 1,
@@ -3726,7 +3829,7 @@
               "{{ zIndex: 2, position: 'relative', }}": 1,
               "{{ /** As a flex child, this ensures the element stretches the full available ...}": 1,
               "{{ overflow: 'auto' }}": 1,
-              "{{ cursor: canEdit ? 'pointer' : 'default', padding: canEdit ? '4px 8px' : '0p...}": 1,
+              "{{ cursor: canEdit ? 'pointer' : 'default' }}": 1,
               "{{ flex: 1, height: '100%' }}": 1,
               "{{ width: '100%', position: 'relative', overflow: 'hidden' }}": 1,
               "{{ display: 'flex', flexDirection: 'column', height: '592px', width: '360px', ...}": 1,
@@ -3755,13 +3858,13 @@
             }
           },
           "paddingBottom": {
-            "count": 213,
+            "count": 216,
             "values": {
               "0": 5,
               "1": 15,
-              "2": 64,
+              "2": 66,
               "3": 25,
-              "4": 66,
+              "4": 67,
               "5": 2,
               "6": 13,
               "8": 8,
@@ -3777,13 +3880,13 @@
             }
           },
           "paddingTop": {
-            "count": 203,
+            "count": 206,
             "values": {
               "0": 7,
               "1": 14,
-              "2": 42,
+              "2": 44,
               "3": 33,
-              "4": 70,
+              "4": 71,
               "5": 3,
               "6": 6,
               "8": 10,
@@ -3802,11 +3905,11 @@
             }
           },
           "backgroundColor": {
-            "count": 187,
+            "count": 194,
             "values": {
-              "{BoxBackgroundColor.BackgroundDefault}": 32,
+              "{BoxBackgroundColor.BackgroundDefault}": 39,
               "{BackgroundColor.backgroundDefault}": 26,
-              "{BoxBackgroundColor.BackgroundMuted}": 19,
+              "{BoxBackgroundColor.BackgroundMuted}": 20,
               "{BoxBackgroundColor.BackgroundSection}": 10,
               "{BackgroundColor.backgroundAlternative}": 10,
               "{BoxBackgroundColor.BackgroundAlternative}": 7,
@@ -3849,7 +3952,6 @@
               "{BackgroundColor.iconAlternative}": 1,
               "{showAdvancedDetails ? BackgroundColor.infoMuted : BackgroundColor.transparent}": 1,
               "{showBackground ? BoxBackgroundColor.BackgroundAlternative : undefined}": 1,
-              "{canEdit ? BackgroundColor.backgroundMuted : BackgroundColor.transparent}": 1,
               "{dotBackgroundColor}": 1,
               "{BackgroundColor.backgroundMuted}": 1,
               "{isQuizWord ? BoxBackgroundColor.BackgroundDefault : BoxBackgroundColor.Backgr...}": 1,
@@ -3858,13 +3960,13 @@
             }
           },
           "padding": {
-            "count": 183,
+            "count": 190,
             "values": {
               "0": 6,
               "1": 11,
               "2": 23,
-              "3": 21,
-              "4": 110,
+              "3": 22,
+              "4": 116,
               "6": 5,
               "10": 1,
               "{customDetails ? 0 : 2}": 1,
@@ -3876,13 +3978,13 @@
             }
           },
           "paddingLeft": {
-            "count": 180,
+            "count": 183,
             "values": {
               "0": 2,
               "1": 3,
               "2": 20,
-              "3": 1,
-              "4": 141,
+              "3": 2,
+              "4": 143,
               "5": 5,
               "6": 6,
               "8": 1,
@@ -3890,13 +3992,13 @@
             }
           },
           "paddingRight": {
-            "count": 172,
+            "count": 175,
             "values": {
               "0": 2,
               "1": 1,
-              "2": 17,
+              "2": 18,
               "3": 3,
-              "4": 139,
+              "4": 141,
               "5": 5,
               "6": 3,
               "{isSmall ? 0 : 2}": 1,
@@ -3924,13 +4026,13 @@
             }
           },
           "marginBottom": {
-            "count": 123,
+            "count": 122,
             "values": {
               "0": 3,
               "1": 7,
               "2": 22,
               "3": 15,
-              "4": 54,
+              "4": 53,
               "5": 6,
               "6": 6,
               "8": 2,
@@ -3953,7 +4055,7 @@
             }
           },
           "onClick": {
-            "count": 109,
+            "count": 110,
             "values": {
               "{onClick}": 22,
               "{handleClick}": 8,
@@ -4004,7 +4106,7 @@
               "{() => onClick(recipient)}": 1,
               "{updateSwapToSelectedQuote}": 1,
               "{isSponsorshipEligible ? handleOpenSponsorshipModal : undefined}": 1,
-              "{canEdit ? onOpenModal : undefined}": 1,
+              "{canEdit ? openModal : undefined}": 1,
               "{onSelect}": 1,
               "{option.onClick}": 1,
               "{isInteractive ? () => checkboxRef.current?.toggle() : undefined}": 1,
@@ -4012,6 +4114,7 @@
               "{() => { dispatch( setEditedNetwork({ chainId: network.chainId, }), ); dispatc...}": 1,
               "{() => { if (!isQuizWord) { return; } if (wordToDisplay === '') { setIndexToFo...}": 1,
               "{() => { revealPhrase?.(); }}": 1,
+              "{handleMarketListClick}": 1,
               "{handleFavoriteClick}": 1,
               "{() => { setShowSizeInFiat((prev) => !prev); }}": 1,
               "{handleOpenMarginMenu}": 1,
@@ -4028,7 +4131,7 @@
             }
           },
           "key": {
-            "count": 83,
+            "count": 86,
             "values": {
               "{network.chainId}": 9,
               "{index}": 6,
@@ -4038,6 +4141,7 @@
               "{key}": 2,
               "{i}": 2,
               "{address}": 2,
+              "{status}": 2,
               "{selectedAlert.key}": 1,
               "{`${selectedAlert.key}-detail-${index}`}": 1,
               "{`disclosure-detail-${index}`}": 1,
@@ -4062,6 +4166,7 @@
               "\"learn-more-link\"": 1,
               "{rpcEndpoint.url}": 1,
               "{`add-multichain-account-button-${walletId}`}": 1,
+              "{messageKey}": 1,
               "{`multichain-account-cell-${accountId}`}": 1,
               "{item.textKey}": 1,
               "{acc.id}": 1,
@@ -4091,10 +4196,10 @@
             }
           },
           "borderRadius": {
-            "count": 55,
+            "count": 54,
             "values": {
               "{BorderRadius.LG}": 20,
-              "{BorderRadius.pill}": 15,
+              "{BorderRadius.pill}": 14,
               "{BorderRadius.MD}": 8,
               "{BorderRadius.XL}": 5,
               "{BorderRadius.SM}": 4,
@@ -4109,9 +4214,9 @@
             }
           },
           "asChild": {
-            "count": 47,
+            "count": 46,
             "values": {
-              "true (shorthand)": 47
+              "true (shorthand)": 46
             }
           },
           "marginLeft": {
@@ -4150,19 +4255,8 @@
               "{BoxFlexWrap.NoWrap}": 4
             }
           },
-          "paddingHorizontal": {
-            "count": 39,
-            "values": {
-              "0": 1,
-              "1": 1,
-              "2": 8,
-              "3": 1,
-              "4": 27,
-              "{rootPaddingHorizontal}": 1
-            }
-          },
           "[spread]": {
-            "count": 38,
+            "count": 39,
             "values": {
               "{props}": 10,
               "{linkItemProps}": 7,
@@ -4177,6 +4271,7 @@
               "{!name && { borderWidth: 2, borderStyle: BorderStyle.solid, borderColor: Borde...}": 1,
               "{contentProps}": 1,
               "{onClick && { as: 'a', href: '#', onClick: (e: React.MouseEvent<HTMLAnchorElem...}": 1,
+              "{isClickable ? { onClick: onDeviceSelectorClick } : {}}": 1,
               "{contentBoxProps}": 1,
               "{wrapperBoxProps}": 1,
               "{wrappingLabelProps}": 1,
@@ -4184,6 +4279,17 @@
               "{titleDetailWrapperProps}": 1,
               "{tabListProps}": 1,
               "{tabContentProps}": 1
+            }
+          },
+          "paddingHorizontal": {
+            "count": 39,
+            "values": {
+              "0": 1,
+              "1": 1,
+              "2": 8,
+              "3": 1,
+              "4": 27,
+              "{rootPaddingHorizontal}": 1
             }
           },
           "ref": {
@@ -4276,13 +4382,14 @@
             }
           },
           "aria-label": {
-            "count": 11,
+            "count": 12,
             "values": {
               "{t('back')}": 4,
               "{modalTitle}": 2,
               "{t('loading')}": 2,
               "{`${ariaLabelName} options`}": 1,
               "{t(item.textKey)}": 1,
+              "{t('perpsMarkets')}": 1,
               "{isInWatchlist ? t('perpsRemoveFromFavorites') : t('perpsAddToFavorites')}": 1
             }
           },
@@ -4304,6 +4411,19 @@
               "\"auto\"": 1
             }
           },
+          "role": {
+            "count": 10,
+            "values": {
+              "\"button\"": 3,
+              "\"progressbar\"": 1,
+              "{isDisabled ? undefined : 'button'}": 1,
+              "\"tablist\"": 1,
+              "\"tabpanel\"": 1,
+              "{isInteractive ? 'button' : undefined}": 1,
+              "\"separator\"": 1,
+              "\"listbox\"": 1
+            }
+          },
           "paddingInline": {
             "count": 9,
             "values": {
@@ -4311,18 +4431,6 @@
               "3": 4,
               "4": 2,
               "{noPadding ? 0 : 2}": 1
-            }
-          },
-          "role": {
-            "count": 9,
-            "values": {
-              "\"button\"": 3,
-              "{isDisabled ? undefined : 'button'}": 1,
-              "\"tablist\"": 1,
-              "\"tabpanel\"": 1,
-              "{isInteractive ? 'button' : undefined}": 1,
-              "\"separator\"": 1,
-              "\"listbox\"": 1
             }
           },
           "onMouseEnter": {
@@ -4368,6 +4476,13 @@
               "{(e: React.KeyboardEvent<HTMLDivElement>) => { if ((e.key === ' ' || e.key ===...}": 1
             }
           },
+          "onScroll": {
+            "count": 5,
+            "values": {
+              "{onScroll}": 4,
+              "{handleChainlistScroll}": 1
+            }
+          },
           "title": {
             "count": 5,
             "values": {
@@ -4392,12 +4507,6 @@
               "{color ?? TextColor.textAlternative}": 1,
               "{TextColor.textDefault}": 1,
               "{TextColor.primaryDefault}": 1
-            }
-          },
-          "onScroll": {
-            "count": 4,
-            "values": {
-              "{onScroll}": 4
             }
           },
           "alt": {
@@ -4488,6 +4597,24 @@
             "count": 1,
             "values": {
               "true": 1
+            }
+          },
+          "aria-valuemin": {
+            "count": 1,
+            "values": {
+              "1": 1
+            }
+          },
+          "aria-valuemax": {
+            "count": 1,
+            "values": {
+              "{totalSteps}": 1
+            }
+          },
+          "aria-valuenow": {
+            "count": 1,
+            "values": {
+              "{currentStep + 1}": 1
             }
           },
           "onDragOver": {
@@ -4589,48 +4716,48 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "Box": 719
+        "Box": 714
       }
     },
     "mobile": {
-      "filesScanned": 6953,
+      "filesScanned": 7036,
       "targetComponent": "Box",
       "mmds": {
-        "totalInstances": 2734,
-        "filesCount": 707,
+        "totalInstances": 2769,
+        "filesCount": 718,
         "props": {
           "twClassName": {
-            "count": 2178,
+            "count": 2219,
             "values": {
-              "\"flex-1\"": 182,
+              "\"flex-1\"": 185,
+              "\"px-4\"": 59,
               "\"gap-1\"": 58,
-              "\"px-4\"": 56,
               "\"gap-2\"": 51,
-              "\"w-full\"": 47,
+              "\"w-full\"": 48,
               "\"gap-3\"": 40,
-              "\"flex-1 bg-default\"": 27,
+              "\"flex-1 bg-default\"": 28,
               "\"gap-4\"": 23,
               "\"p-4\"": 23,
+              "\"px-4 pb-4\"": 21,
               "\"mb-4\"": 20,
-              "\"px-4 pb-4\"": 19,
               "\"flex-1 px-4\"": 18,
               "\"px-4 py-3\"": 15,
               "\"flex-1 gap-1\"": 14,
               "\"flex-1 min-w-0\"": 14,
               "\"px-4 py-2\"": 13,
+              "\"py-3\"": 13,
               "\"gap-6\"": 13,
               "\"my-1 border-b border-border-muted\"": 13,
-              "\"py-3\"": 11,
-              "\"py-4\"": 11,
+              "\"pb-4\"": 11,
               "\"flex-row items-center gap-1\"": 11,
-              "\"pb-4\"": 10,
+              "\"py-4\"": 11,
               "\"h-px bg-border-muted\"": 9,
+              "\"px-4 py-4\"": 9,
               "\"items-end\"": 9,
-              "\"py-2\"": 9,
               "\"flex-row items-center gap-3\"": 9,
-              "\"px-4 py-4\"": 8,
               "\"mb-6\"": 8,
               "\"p-4 items-center\"": 8,
+              "\"py-2\"": 8,
               "\"w-10\"": 8,
               "\"px-4 pt-4\"": 8,
               "\"bg-muted rounded-xl p-4 mt-2 gap-2\"": 8,
@@ -4640,39 +4767,39 @@
               "\"px-4 pb-6\"": 7,
               "\"mb-2\"": 7,
               "\"pt-3\"": 7,
+              "\"flex-row gap-2\"": 7,
               "\"flex-1 gap-2\"": 7,
               "\"p-4 mb-2\"": 7,
               "\"gap-3 px-4\"": 7,
+              "\"mt-6\"": 6,
               "\"px-4 pb-3\"": 6,
+              "\"flex-row items-center gap-2\"": 6,
+              "\"flex-row items-center gap-2 shrink min-w-0\"": 6,
               "\"mt-3\"": 6,
               "\"mt-4\"": 6,
               "\"pr-3\"": 6,
               "\"gap-2.5\"": 6,
               "\"w-full gap-2\"": 6,
-              "\"-mx-4\"": 6,
               "\"w-full flex-1\"": 6,
               "\"gap-2 mt-2\"": 6,
-              "\"mt-6\"": 5,
               "\"px-4 pt-2\"": 5,
+              "\"flex-row gap-3\"": 5,
+              "\"px-4 pt-2 pb-4\"": 5,
               "\"h-px bg-border-muted my-5\"": 5,
               "\"py-1\"": 5,
-              "\"flex-row gap-2\"": 5,
               "\"flex-1 justify-center items-center p-8\"": 5,
+              "\"pb-3\"": 5,
               "\"mt-4 border-b border-border-muted\"": 5,
               "\"ml-3\"": 5,
               "\"mx-4 mt-2\"": 4,
-              "\"flex-row items-center gap-2\"": 4,
               "\"w-full gap-3\"": 4,
               "\"flex-row items-center p-4\"": 4,
-              "\"flex-row items-center gap-2 shrink min-w-0\"": 4,
-              "\"px-4 pt-2 pb-4\"": 4,
               "\"flex-wrap\"": 4,
               "\"pb-6\"": 4,
               "\"flex-1 items-center\"": 4,
               "\"px-4 py-3 gap-3\"": 4,
               "\"px-5 py-2\"": 4,
               "\"w-full h-full bg-muted\"": 4,
-              "\"pb-3\"": 4,
               "\"my-2\"": 4,
               "\"flex-row\"": 4,
               "\"px-4 pt-4 gap-4\"": 4,
@@ -4693,7 +4820,6 @@
               "\"flex flex-col justify-center gap-2\"": 3,
               "\"flex-1 bg-background-default\"": 3,
               "\"flex-col\"": 3,
-              "\"flex-row gap-3\"": 3,
               "\"flex flex-1 items-center justify-center\"": 3,
               "\"mt-1\"": 3,
               "\"bg-default\"": 3,
@@ -4702,7 +4828,7 @@
               "\"gap-0.5\"": 3,
               "\"px-4 py-3 gap-4\"": 3,
               "\"gap-3 mt-4\"": 3,
-              "\"mb-3\"": 3,
+              "\"gap-1.5\"": 3,
               "\"w-10 h-10 rounded-lg bg-muted overflow-hidden\"": 3,
               "\"absolute inset-0\"": 3,
               "\"items-center gap-3\"": 3,
@@ -4710,9 +4836,11 @@
               "\"border-t border-muted\"": 3,
               "\"flex-row items-start gap-4 py-2\"": 3,
               "\"items-end gap-2\"": 3,
+              "\"gap-2 py-1\"": 3,
               "\"px-3 pt-4 pb-8\"": 3,
               "\"gap-2 mb-3\"": 3,
               "\"p-4 gap-3\"": 3,
+              "\"gap-2 px-4\"": 3,
               "\"gap-4 p-4\"": 3,
               "\"flex-1 w-full\"": 3,
               "\"gap-4 w-full\"": 3,
@@ -4737,8 +4865,8 @@
               "\"pt-2 pb-4 pl-4\"": 2,
               "\"w-full mt-4\"": 2,
               "\"w-full rounded-xl overflow-hidden\"": 2,
-              "\"pt-4\"": 2,
               "\"rounded-xl overflow-hidden\"": 2,
+              "\"pt-4\"": 2,
               "\"flex-row justify-between items-center py-3\"": 2,
               "\"flex-1 justify-center items-center px-6\"": 2,
               "\"self-start\"": 2,
@@ -4770,8 +4898,9 @@
               "\"flex-row gap-2 items-center\"": 2,
               "\"pt-3 pb-9\"": 2,
               "\"pt-4 mx-4 flex gap-4\"": 2,
-              "\"gap-1.5\"": 2,
+              "\"px-4 mb-3\"": 2,
               "\"bg-section rounded-xl p-4 h-full justify-between\"": 2,
+              "\"mb-3\"": 2,
               "\"mb-1\"": 2,
               "\"h-10 w-10 items-center justify-center rounded-full bg-muted mr-3 overflow-hidden mt-1\"": 2,
               "\"items-end ml-3\"": 2,
@@ -4798,6 +4927,7 @@
               "\"flex-row justify-between items-center\"": 2,
               "\"absolute inset-0 z-50\"": 2,
               "\"rounded-2xl overflow-hidden\"": 2,
+              "\"-mx-4\"": 2,
               "\"w-full border-t border-muted\"": 2,
               "\"space-y-4\"": 2,
               "\"bg-default pt-4\"": 2,
@@ -4813,7 +4943,6 @@
               "\"gap-4 px-4\"": 2,
               "\"items-center justify-between rounded-2xl border px-4 py-3\"": 2,
               "\"mt-4 -mx-4 border-b border-border-muted\"": 2,
-              "\"gap-2 px-4\"": 2,
               "\"items-end gap-1\"": 2,
               "\"py-6 gap-3\"": 2,
               "\"py-1 px-4\"": 2,
@@ -4829,6 +4958,7 @@
               "\"flex-1 ml-5\"": 2,
               "\"rounded-full\"": 2,
               "\"flex-nowrap gap-2\"": 2,
+              "\"flex-row items-center gap-1 shrink\"": 2,
               "\"flex-1 h-16\"": 2,
               "\"flex-1 ml-5 justify-center\"": 2,
               "\"pt-4 px-4\"": 2,
@@ -4850,7 +4980,6 @@
               "\"pb-5 pt-0\"": 2,
               "\"mb-1 items-end pr-2\"": 2,
               "\"mb-2 px-6\"": 2,
-              "\"mx-4 mt-4 mb-2\"": 2,
               "\"flex-1 h-px bg-border-muted\"": 2,
               "\"flex-1 pb-[30px]\"": 2,
               "\"relative flex-col gap-2\"": 2,
@@ -4893,6 +5022,7 @@
               "\"h-12 w-12 rounded-full\"": 1,
               "py-2": 1,
               "\"mx-4 p-4 rounded-xl border border-muted bg-default gap-3.5\"": 1,
+              "\"px-1\"": 1,
               "\"mt-5 w-full rounded-2xl pl-[25px] pr-4 py-3\"": 1,
               "\"px-2 py-1\"": 1,
               "\"bg-default border-t border-muted min-h-[60px] px-4 py-2\"": 1,
@@ -4902,13 +5032,12 @@
               "\"flex-1 items-center justify-center gap-2\"": 1,
               "\"mt-4 bg-background-muted rounded-lg mx-4 py-4 px-4\"": 1,
               "\"w-full relative\"": 1,
+              "\"mx-4 mt-4\"": 1,
               "\"w-full px-4 pt-4 items-center justify-center\"": 1,
               "\"mb-6 mt-7\"": 1,
               "\"items-center justify-between flex-row w-full mt-4\"": 1,
               "{`h-px mx-4 bg-border-muted ${hasAlerts || hasSetupActions ? 'hidden' : ''}`}": 1,
               "\"gap-6 mt-4\"": 1,
-              "\"rounded-xl bg-background-muted p-4 items-center\"": 1,
-              "\"rounded-xl bg-background-muted p-4\"": 1,
               "\"flex-row items-start gap-2\"": 1,
               "\"mt-4 relative\"": 1,
               "\"flex-row justify-center items-center gap-1 mt-4\"": 1,
@@ -4918,6 +5047,9 @@
               "\"px-4 mt-4 gap-4 flex-1\"": 1,
               "\"px-4 pb-4 gap-2\"": 1,
               "\"flex-1 items-center \"": 1,
+              "\"flex-row items-center gap-1 mt-1\"": 1,
+              "\"rounded-xl bg-background-muted p-4 items-center\"": 1,
+              "\"rounded-xl bg-background-muted p-4\"": 1,
               "\"bg-background-muted rounded-xl p-4 mt-4\"": 1,
               "\"pb-4 gap-3\"": 1,
               "\"bg-background-muted rounded-2xl overflow-hidden mb-6\"": 1,
@@ -5022,6 +5154,8 @@
               "\"flex-1 bg-default pt-20\"": 1,
               "\"py-12 px-4\"": 1,
               "\"flex-row justify-between gap-2 pt-1\"": 1,
+              "{sectionIndex > 0 ? 'mt-4' : undefined}": 1,
+              "\"w-full items-center py-3\"": 1,
               "{isMultiProviderEnabled ? 'w-full flex-nowrap' : 'w-full flex-wrap gap-y-1'}": 1,
               "\"ml-auto flex-shrink-0\"": 1,
               "\"flex-1 bg-muted rounded-lg px-3 py-1 mr-2\"": 1,
@@ -5032,7 +5166,6 @@
               "\"w-full border-b border-muted\"": 1,
               "\"gap-3 px-4 pt-1 pb-3\"": 1,
               "\"flex-1 gap-1.5\"": 1,
-              "\"px-4 mb-3\"": 1,
               "\"flex-1 items-center justify-center bg-error-muted\"": 1,
               "\"bg-default rounded-lg\"": 1,
               "\"overflow-hidden rounded-lg\"": 1,
@@ -5150,7 +5283,6 @@
               "{rowClassName}": 1,
               "\"px-4 pt-4 pb-2\"": 1,
               "{`rounded-full py-2 pl-[9px] pr-[16px] mt-2 ${!canEdit ? '' : 'bg-muted'} mx-a...}": 1,
-              "\"gap-2 py-1\"": 1,
               "\"flex-1 relative overflow-hidden\"": 1,
               "\"pt-2 pb-2\"": 1,
               "\"items-center justify-center gap-2 rounded-xl bg-muted py-4 px-2\"": 1,
@@ -5286,15 +5418,15 @@
               "\"mb-6 w-full\"": 1,
               "\"w-full gap-2 px-2\"": 1,
               "\"w-full flex-row justify-end\"": 1,
+              "\"h-[24px] items-center\"": 1,
+              "\"rounded-[4px] bg-default\"": 1,
+              "\"filter blur-sm max-w-min w-min flex flex-row rounded-sm whitespace-nowrap px-2 py-0 gap-1 bg-warning-default bg-opacity-10 items-center\"": 1,
               "\"bg-error-muted rounded-2xl p-4 gap-4 w-full\"": 1,
               "\"flex-1 bg-black/80 justify-center items-center\"": 1,
               "\"absolute right-10 top-1/4 z-50\"": 1,
               "\"bg-info-muted rounded-2xl p-4 gap-4 w-full\"": 1,
               "{`px-4 py-4 ${ option.value === selectedValue ? 'bg-background-muted' : '' }`}": 1,
               "\"flex-1 bg-default px-6\"": 1,
-              "\"h-[24px] items-center\"": 1,
-              "\"rounded-[4px] bg-default\"": 1,
-              "\"filter blur-sm max-w-min w-min flex flex-row rounded-sm whitespace-nowrap px-2 py-0 gap-1 bg-warning-default bg-opacity-10 items-center\"": 1,
               "\"py-3 gap-3\"": 1,
               "\"mb-6 gap-2\"": 1,
               "\"gap-4 flex-col py-4 px-4\"": 1,
@@ -5396,7 +5528,8 @@
               "\"flex-row items-center justify-end gap-2 shrink\"": 1,
               "\"overflow-hidden border border-background-default bg-default\"": 1,
               "\"flex-row items-start justify-between gap-4\"": 1,
-              "\"flex-row items-center gap-1 shrink\"": 1,
+              "\"rounded-2xl bg-muted p-4 mb-4 gap-3\"": 1,
+              "\"flex-row items-center justify-between\"": 1,
               "\"items-center -mt-0.5 gap-0.5\"": 1,
               "\"w-1 h-1 rounded-full bg-border-muted\"": 1,
               "\"gap-0\"": 1,
@@ -5427,6 +5560,8 @@
               "\"w-8 h-8 rounded-full items-center justify-center\"": 1,
               "\"flex-1 gap-5 px-4 py-4\"": 1,
               "\"flex-col gap-4 mt-2\"": 1,
+              "\"mt-auto gap-4\"": 1,
+              "\"rounded-xl p-4 gap-3\"": 1,
               "\"h-10 w-10 rounded-xl bg-muted\"": 1,
               "\"px-4 pt-4 gap-2\"": 1,
               "\"flex-1 ml-3 gap-1\"": 1,
@@ -5440,6 +5575,9 @@
               "\"bg-background-default\"": 1,
               "\"mt-2 bg-section rounded-lg p-4\"": 1,
               "\"w-full mt-auto\"": 1,
+              "\"flex-1 justify-center\"": 1,
+              "\"w-full gap-4 px-4 pb-6\"": 1,
+              "\"gap-2 px-2\"": 1,
               "{`w-2 h-2 rounded-full flex items-center justify-center ${ isVersionSupported ...}": 1,
               "\"flex-1 ml-2 justify-center min-w-[160px]\"": 1,
               "\"flex-1 ml-2\"": 1,
@@ -5502,8 +5640,11 @@
               "{`flex-1 w-full px-5 ${Device.isMediumDevice() ? 'gap-y-4' : 'gap-y-6'}`}": 1,
               "\"flex-1 py-4\"": 1,
               "\"absolute top-0 left-0 right-0 bottom-0\"": 1,
+              "\"mx-4 mt-4 mb-2\"": 1,
               "\"gap-2 py-2\"": 1,
-              "\"min-h-[96px] flex-1\"": 1,
+              "\"mx-4 mb-4 flex flex-col gap-y-2\"": 1,
+              "\"flex-1 flex-row items-center gap-x-2 ml-3\"": 1,
+              "\"mt-4 px-4 pb-6\"": 1,
               "\"p-4 gap-y-4\"": 1,
               "\"flex flex-col items-center gap-4 mb-6\"": 1,
               "\"px-6 pb-8 gap-6\"": 1,
@@ -5553,7 +5694,6 @@
               "{`pb-2 ${isActive ? 'border-b-2 border-default' : ''}`}": 1,
               "\"h-px bg-muted mx-4 mt-5 mb-4\"": 1,
               "\"px-4 mb-2\"": 1,
-              "\"px-4 py-4 mb-4\"": 1,
               "\"bg-muted rounded px-1.5 py-0.5\"": 1,
               "\"mr-3\"": 1,
               "\"flex-1 h-[46px]\"": 1,
@@ -5562,6 +5702,7 @@
               "\"h-12 gap-3 rounded-full border border-border-muted bg-muted px-4\"": 1,
               "{index < sections.length - 1 && !section.isVerticalList ? 'pb-3' : undefined}": 1,
               "{`rounded-2xl overflow-hidden ${ !isLastItem ? 'pr-3' : '' }`}": 1,
+              "\"flex-1 justify-end items-end\"": 1,
               "{showOtherResults ? 'mb-4' : ''}": 1,
               "\"rounded-xl bg-secondary py-6 px-4 items-center mb-4\"": 1,
               "{showSportsPredictions ? 'pb-3' : undefined}": 1,
@@ -5579,6 +5720,7 @@
               "\"relative flex-1 min-h-0\"": 1,
               "{`${aiPillContainerClass}${ pressed ? ' opacity-60' : '' }`}": 1,
               "{`${impactBgClass} rounded px-2 py-1 self-start border border-transparent`}": 1,
+              "\"bg-warning-muted rounded px-2 py-1 self-start border border-transparent\"": 1,
               "{pressed ? 'pt-2 pb-4 opacity-60' : 'pt-2 pb-4'}": 1,
               "\"flex-shrink\"": 1,
               "\"flex-row items-center flex-1 min-w-0\"": 1,
@@ -5597,6 +5739,8 @@
               "\"px-4 h-12 justify-center items-end shrink-0\"": 1,
               "\"pl-4 py-2\"": 1,
               "\"mb-8\"": 1,
+              "\"h-[30px] items-center justify-center rounded-lg bg-muted px-1\"": 1,
+              "\"flex-row items-center gap-2.5\"": 1,
               "\"w-full px-4 py-2\"": 1,
               "\"flex-1 justify-center items-center p-4\"": 1,
               "\"rounded-lg bg-background-alternative p-3\"": 1,
@@ -5610,28 +5754,28 @@
             }
           },
           "flexDirection": {
-            "count": 666,
+            "count": 669,
             "values": {
-              "{BoxFlexDirection.Row}": 567,
-              "{BoxFlexDirection.Column}": 99
+              "{BoxFlexDirection.Row}": 571,
+              "{BoxFlexDirection.Column}": 98
             }
           },
           "alignItems": {
-            "count": 623,
+            "count": 629,
             "values": {
-              "{BoxAlignItems.Center}": 551,
-              "{BoxAlignItems.Start}": 46,
+              "{BoxAlignItems.Center}": 559,
+              "{BoxAlignItems.Start}": 45,
               "{BoxAlignItems.End}": 19,
-              "{BoxAlignItems.Stretch}": 4,
+              "{BoxAlignItems.Stretch}": 3,
               "{typeof title === 'string' ? BoxAlignItems.Center : BoxAlignItems.Start}": 1,
               "{typeof description === 'string' ? BoxAlignItems.Center : BoxAlignItems.Start}": 1,
               "{BoxAlignItems.Baseline}": 1
             }
           },
           "testID": {
-            "count": 456,
+            "count": 465,
             "values": {
-              "{testID}": 72,
+              "{testID}": 73,
               "{ActivityDetailsSelectorsIDs.AMOUNT_HEADER}": 5,
               "{PerpsWatchlistSelectorsIDs.SECTION}": 3,
               "{CAMPAIGN_PRIZE_POOL_TEST_IDS.CONTAINER}": 3,
@@ -5677,13 +5821,16 @@
               "\"bridge-rewards-row\"": 1,
               "{BridgeViewSelectorsIDs.QUOTE_DETAILS_SKELETON}": 1,
               "\"quote-details-card-loading-row\"": 1,
+              "{SwapDiscoveryFeedTestIds.ROOT}": 1,
               "{CardAuthenticationSelectors.INTERNATIONAL_LOCATION_BOX}": 1,
               "{CardAuthenticationSelectors.US_LOCATION_BOX}": 1,
+              "{CardHomeSelectors.CREDIT_BANNER}": 1,
               "{CardHomeSelectors.LINK_MONEY_ACCOUNT_DIVIDER_BOTTOM}": 1,
-              "{CashbackSelectors.FUNDING_WARNING}": 1,
-              "{CashbackSelectors.BALANCE_TITLE}": 1,
-              "{CashbackSelectors.DETAILS_CARD}": 1,
               "{`${ChooseYourCardSelectors.CARD_IMAGE}-${item.id}`}": 1,
+              "{testIds.FUNDING_WARNING}": 1,
+              "{testIds.BALANCE_TITLE}": 1,
+              "{testIds.DETAILS_CARD}": 1,
+              "{testIds.TO_ROW}": 1,
               "{`${ReviewOrderSelectors.ORDER_ITEM}-${index}`}": 1,
               "{ReviewOrderSelectors.SHIPPING_ADDRESS_CARD}": 1,
               "{ReviewOrderSelectors.ORDER_SUMMARY}": 1,
@@ -5716,6 +5863,8 @@
               "{MarketInsightsSelectorsIDs.VIEW_HEADER}": 1,
               "{MarketInsightsSelectorsIDs.VIEW_SKELETON}": 1,
               "{MarketInsightsSelectorsIDs.ENTRY_CARD_SKELETON}": 1,
+              "{MoneyActivityViewTestIds.LOAD_ERROR}": 1,
+              "{MoneyActivityViewTestIds.LOAD_MORE_SPINNER}": 1,
               "{MoneyActivityViewTestIds.CONTAINER}": 1,
               "{MoneyActivityViewTestIds.EMPTY_LIST}": 1,
               "{MoneyHomeViewTestIds.CONTAINER}": 1,
@@ -5883,7 +6032,6 @@
               "{REWARDS_VIEW_SELECTORS.TIER_REWARD_DESCRIPTION}": 1,
               "\"rewards-image-modal\"": 1,
               "\"rewards-update-required-container\"": 1,
-              "\"rewards-vip-badge\"": 1,
               "\"opt-out-section\"": 1,
               "\"referred-by-code-section-loading\"": 1,
               "\"referred-by-code-section-error\"": 1,
@@ -5917,9 +6065,11 @@
               "{TokenOverviewSelectorsIDs.CONTAINER}": 1,
               "{WalletViewSelectorsIDs.TOKENS_CONTAINER_LIST}": 1,
               "{WalletViewSelectorsIDs.TOKENS_CONTAINER}": 1,
+              "\"pill-scroll-list-wrapper\"": 1,
               "{listTestId ? `${listTestId}-row-${rowIndex}` : undefined}": 1,
               "{`${testID}-hero-${currentStep.kind}`}": 1,
               "\"fee-network-badge\"": 1,
+              "{ActivityDetailsSelectorsIDs.PENDING_BANNER}": 1,
               "{ActivityDetailsSelectorsIDs.STATUS_PILL}": 1,
               "{ActivityScreenSelectorsIDs.LIST}": 1,
               "\"add-asset-nft-banner\"": 1,
@@ -5945,7 +6095,7 @@
               "{NetworksManagementViewSelectorsIDs.EMPTY_STATE}": 1,
               "{NetworksManagementViewSelectorsIDs.NETWORK_ITEM(item.chainId)}": 1,
               "{`${OnboardingCryptoExperienceQuestionnaireTestIds.SKILL_BAR_PREFIX}${level}`}": 1,
-              "{`${OnboardingInterestQuestionnaireTestIds.GRID_ROW_PREFIX}${rowIndex}`}": 1,
+              "{InterestSelectionIndicatorTestIds.CONTAINER}": 1,
               "{OnboardingSheetSelectorIDs.CONTAINER_ID}": 1,
               "\"onboarding-success-end-animation\"": 1,
               "{OnboardingSuccessSelectorIDs.CONTAINER_ID}": 1,
@@ -5979,10 +6129,12 @@
               "{TEXTFIELD_STARTACCESSORY_TEST_ID}": 1,
               "{TEXTFIELD_ENDACCESSORY_TEST_ID}": 1,
               "{TrendingViewSelectorsIDs.EXPLORE_SAFE_AREA}": 1,
+              "\"explore-card-list\"": 1,
               "\"empty-error-trending-state\"": 1,
               "\"empty-search-result-state\"": 1,
               "{TrendingViewSelectorsIDs.EXPLORE_VIEW_SEARCH_INPUT}": 1,
               "\"explore-section-divider\"": 1,
+              "{`explore-section-${section.key}`}": 1,
               "{testIdPrefix}": 1,
               "\"all-sports-empty-state\"": 1,
               "{index === activeIndex ? 'page-indicator-dot-active' : 'page-indicator-dot'}": 1,
@@ -5994,10 +6146,10 @@
             }
           },
           "justifyContent": {
-            "count": 279,
+            "count": 282,
             "values": {
-              "{BoxJustifyContent.Between}": 127,
-              "{BoxJustifyContent.Center}": 108,
+              "{BoxJustifyContent.Between}": 129,
+              "{BoxJustifyContent.Center}": 109,
               "{BoxJustifyContent.Start}": 21,
               "{BoxJustifyContent.End}": 17,
               "{BoxJustifyContent.SpaceBetween}": 2,
@@ -6008,9 +6160,9 @@
             }
           },
           "style": {
-            "count": 233,
+            "count": 229,
             "values": {
-              "{styles.container}": 10,
+              "{styles.container}": 9,
               "{styles.detailRow}": 6,
               "{styles.banner}": 4,
               "{tw.style('flex-1 flex-shrink mr-2 -mt-1')}": 3,
@@ -6026,7 +6178,6 @@
               "{tw.style('w-full bg-background-default', { height })}": 2,
               "{[styles.safeArea, { paddingTop: insets.top }]}": 2,
               "{styles.iconContainer}": 2,
-              "{styles.periodOptionsGrid}": 2,
               "{styles.titleRow}": 2,
               "{styles.searchBarContainer}": 2,
               "{style}": 2,
@@ -6092,7 +6243,6 @@
               "{styles.titleContainer}": 1,
               "{styles.countdownContainer}": 1,
               "{styles.countdownPill}": 1,
-              "{sectionIndex > 0 ? styles.sectionSpacing : undefined}": 1,
               "{tw.style('bg-background-section')}": 1,
               "{tw.style('mt-1')}": 1,
               "{styles.contentRow}": 1,
@@ -6151,6 +6301,7 @@
               "{barFillStyle}": 1,
               "{containerStyle}": 1,
               "{styles.bookmarkIco}": 1,
+              "{styles.sectionGap}": 1,
               "{tw.style('h-px my-2 mx-4', { backgroundColor: colors.border.muted, opacity: 0...}": 1,
               "{tw.style('flex-row items-center gap-2')}": 1,
               "{tw.style( 'rounded-lg px-2 py-0.5 min-w-6 items-center justify-center', { bac...}": 1,
@@ -6172,8 +6323,7 @@
               "{tw.style( 'mt-auto w-full gap-4 px-4', Platform.OS === 'android' && 'pb-3', )}": 1,
               "{tw.style( { zIndex: 1000 }, { backgroundColor: themeContext.themeAppearance =...}": 1,
               "{tw.style('items-end gap-0.5')}": 1,
-              "{tw.style({ marginHorizontal: -GRID_GUTTER_PX, marginBottom: GRID_GUTTER_PX * ...}": 1,
-              "{tw.style({ width: '50%', paddingHorizontal: GRID_GUTTER_PX, })}": 1,
+              "{tw.style('h-[22px] w-[22px] rounded-full bg-icon-default')}": 1,
               "{{ height: screenHeight * 0.5 }}": 1,
               "{{ paddingBottom: bottomSpacing }}": 1,
               "{{ backgroundColor: colors.text.default }}": 1,
@@ -6194,12 +6344,12 @@
             }
           },
           "gap": {
-            "count": 223,
+            "count": 220,
             "values": {
               "0": 4,
-              "1": 60,
+              "1": 58,
               "2": 65,
-              "3": 43,
+              "3": 42,
               "4": 43,
               "5": 1,
               "6": 2,
@@ -6228,6 +6378,8 @@
               "{`${index}-${message}`}": 1,
               "{`${source.name}-${source.url}`}": 1,
               "{`${token.address}-${token.chainId}`}": 1,
+              "{`period-spacer-${index}`}": 1,
+              "{period.value}": 1,
               "{section.title}": 1,
               "{key ?? label}": 1,
               "{`${seriesItem.label}-${index}`}": 1,
@@ -6245,8 +6397,6 @@
               "{network.chainId}": 1,
               "{`nft-row-${rowIndex}`}": 1,
               "{`empty-${rowIndex}-${i}`}": 1,
-              "{rowOptions.map((option) => option.id).join('-')}": 1,
-              "{option.id}": 1,
               "\"now\"": 1,
               "\"macro\"": 1,
               "\"rwas\"": 1,
@@ -6270,19 +6420,19 @@
             }
           },
           "paddingBottom": {
-            "count": 32,
+            "count": 33,
             "values": {
               "2": 1,
-              "3": 18,
+              "3": 19,
               "4": 11,
               "6": 2
             }
           },
           "backgroundColor": {
-            "count": 29,
+            "count": 30,
             "values": {
               "{BoxBackgroundColor.BackgroundMuted}": 14,
-              "{BoxBackgroundColor.BackgroundSection}": 4,
+              "{BoxBackgroundColor.BackgroundSection}": 5,
               "{BoxBackgroundColor.BackgroundDefault}": 3,
               "{BoxBackgroundColor.PrimaryMuted}": 2,
               "{BoxBackgroundColor.WarningMuted}": 2,
@@ -6309,6 +6459,15 @@
               "4": 15
             }
           },
+          "paddingVertical": {
+            "count": 14,
+            "values": {
+              "1": 2,
+              "2": 6,
+              "3": 4,
+              "4": 2
+            }
+          },
           "marginBottom": {
             "count": 13,
             "values": {
@@ -6329,14 +6488,6 @@
               "{{ tabLabel: strings('trending.tabs.crypto'), } as TabViewProps}": 1,
               "{{ tabLabel: strings('trending.tabs.sports'), } as TabViewProps}": 1,
               "{{ tabLabel: strings('trending.tabs.dapps'), } as TabViewProps}": 1
-            }
-          },
-          "paddingVertical": {
-            "count": 12,
-            "values": {
-              "1": 2,
-              "2": 6,
-              "3": 4
             }
           },
           "onLayout": {
@@ -6413,7 +6564,7 @@
           "onTouchEnd": {
             "count": 2,
             "values": {
-              "{shouldShowTrendingTokens ? dismissInputAndKeypad : undefined}": 1,
+              "{hasInteractiveDiscoverySurface ? dismissInputAndKeypad : undefined}": 1,
               "{() => { if (!didScroll.current) onTap?.(); }}": 1
             }
           },
@@ -6452,7 +6603,7 @@
           "onStartShouldSetResponder": {
             "count": 1,
             "values": {
-              "{() => !shouldShowTrendingTokens}": 1
+              "{() => !hasInteractiveDiscoverySurface}": 1
             }
           },
           "onResponderRelease": {
@@ -6499,41 +6650,41 @@
         "props": {}
       },
       "overall": {
-        "totalInstances": 2734,
-        "filesCount": 707,
+        "totalInstances": 2769,
+        "filesCount": 718,
         "props": {
           "twClassName": {
-            "count": 2178,
+            "count": 2219,
             "values": {
-              "\"flex-1\"": 182,
+              "\"flex-1\"": 185,
+              "\"px-4\"": 59,
               "\"gap-1\"": 58,
-              "\"px-4\"": 56,
               "\"gap-2\"": 51,
-              "\"w-full\"": 47,
+              "\"w-full\"": 48,
               "\"gap-3\"": 40,
-              "\"flex-1 bg-default\"": 27,
+              "\"flex-1 bg-default\"": 28,
               "\"gap-4\"": 23,
               "\"p-4\"": 23,
+              "\"px-4 pb-4\"": 21,
               "\"mb-4\"": 20,
-              "\"px-4 pb-4\"": 19,
               "\"flex-1 px-4\"": 18,
               "\"px-4 py-3\"": 15,
               "\"flex-1 gap-1\"": 14,
               "\"flex-1 min-w-0\"": 14,
               "\"px-4 py-2\"": 13,
+              "\"py-3\"": 13,
               "\"gap-6\"": 13,
               "\"my-1 border-b border-border-muted\"": 13,
-              "\"py-3\"": 11,
-              "\"py-4\"": 11,
+              "\"pb-4\"": 11,
               "\"flex-row items-center gap-1\"": 11,
-              "\"pb-4\"": 10,
+              "\"py-4\"": 11,
               "\"h-px bg-border-muted\"": 9,
+              "\"px-4 py-4\"": 9,
               "\"items-end\"": 9,
-              "\"py-2\"": 9,
               "\"flex-row items-center gap-3\"": 9,
-              "\"px-4 py-4\"": 8,
               "\"mb-6\"": 8,
               "\"p-4 items-center\"": 8,
+              "\"py-2\"": 8,
               "\"w-10\"": 8,
               "\"px-4 pt-4\"": 8,
               "\"bg-muted rounded-xl p-4 mt-2 gap-2\"": 8,
@@ -6543,39 +6694,39 @@
               "\"px-4 pb-6\"": 7,
               "\"mb-2\"": 7,
               "\"pt-3\"": 7,
+              "\"flex-row gap-2\"": 7,
               "\"flex-1 gap-2\"": 7,
               "\"p-4 mb-2\"": 7,
               "\"gap-3 px-4\"": 7,
+              "\"mt-6\"": 6,
               "\"px-4 pb-3\"": 6,
+              "\"flex-row items-center gap-2\"": 6,
+              "\"flex-row items-center gap-2 shrink min-w-0\"": 6,
               "\"mt-3\"": 6,
               "\"mt-4\"": 6,
               "\"pr-3\"": 6,
               "\"gap-2.5\"": 6,
               "\"w-full gap-2\"": 6,
-              "\"-mx-4\"": 6,
               "\"w-full flex-1\"": 6,
               "\"gap-2 mt-2\"": 6,
-              "\"mt-6\"": 5,
               "\"px-4 pt-2\"": 5,
+              "\"flex-row gap-3\"": 5,
+              "\"px-4 pt-2 pb-4\"": 5,
               "\"h-px bg-border-muted my-5\"": 5,
               "\"py-1\"": 5,
-              "\"flex-row gap-2\"": 5,
               "\"flex-1 justify-center items-center p-8\"": 5,
+              "\"pb-3\"": 5,
               "\"mt-4 border-b border-border-muted\"": 5,
               "\"ml-3\"": 5,
               "\"mx-4 mt-2\"": 4,
-              "\"flex-row items-center gap-2\"": 4,
               "\"w-full gap-3\"": 4,
               "\"flex-row items-center p-4\"": 4,
-              "\"flex-row items-center gap-2 shrink min-w-0\"": 4,
-              "\"px-4 pt-2 pb-4\"": 4,
               "\"flex-wrap\"": 4,
               "\"pb-6\"": 4,
               "\"flex-1 items-center\"": 4,
               "\"px-4 py-3 gap-3\"": 4,
               "\"px-5 py-2\"": 4,
               "\"w-full h-full bg-muted\"": 4,
-              "\"pb-3\"": 4,
               "\"my-2\"": 4,
               "\"flex-row\"": 4,
               "\"px-4 pt-4 gap-4\"": 4,
@@ -6596,7 +6747,6 @@
               "\"flex flex-col justify-center gap-2\"": 3,
               "\"flex-1 bg-background-default\"": 3,
               "\"flex-col\"": 3,
-              "\"flex-row gap-3\"": 3,
               "\"flex flex-1 items-center justify-center\"": 3,
               "\"mt-1\"": 3,
               "\"bg-default\"": 3,
@@ -6605,7 +6755,7 @@
               "\"gap-0.5\"": 3,
               "\"px-4 py-3 gap-4\"": 3,
               "\"gap-3 mt-4\"": 3,
-              "\"mb-3\"": 3,
+              "\"gap-1.5\"": 3,
               "\"w-10 h-10 rounded-lg bg-muted overflow-hidden\"": 3,
               "\"absolute inset-0\"": 3,
               "\"items-center gap-3\"": 3,
@@ -6613,9 +6763,11 @@
               "\"border-t border-muted\"": 3,
               "\"flex-row items-start gap-4 py-2\"": 3,
               "\"items-end gap-2\"": 3,
+              "\"gap-2 py-1\"": 3,
               "\"px-3 pt-4 pb-8\"": 3,
               "\"gap-2 mb-3\"": 3,
               "\"p-4 gap-3\"": 3,
+              "\"gap-2 px-4\"": 3,
               "\"gap-4 p-4\"": 3,
               "\"flex-1 w-full\"": 3,
               "\"gap-4 w-full\"": 3,
@@ -6640,8 +6792,8 @@
               "\"pt-2 pb-4 pl-4\"": 2,
               "\"w-full mt-4\"": 2,
               "\"w-full rounded-xl overflow-hidden\"": 2,
-              "\"pt-4\"": 2,
               "\"rounded-xl overflow-hidden\"": 2,
+              "\"pt-4\"": 2,
               "\"flex-row justify-between items-center py-3\"": 2,
               "\"flex-1 justify-center items-center px-6\"": 2,
               "\"self-start\"": 2,
@@ -6673,8 +6825,9 @@
               "\"flex-row gap-2 items-center\"": 2,
               "\"pt-3 pb-9\"": 2,
               "\"pt-4 mx-4 flex gap-4\"": 2,
-              "\"gap-1.5\"": 2,
+              "\"px-4 mb-3\"": 2,
               "\"bg-section rounded-xl p-4 h-full justify-between\"": 2,
+              "\"mb-3\"": 2,
               "\"mb-1\"": 2,
               "\"h-10 w-10 items-center justify-center rounded-full bg-muted mr-3 overflow-hidden mt-1\"": 2,
               "\"items-end ml-3\"": 2,
@@ -6701,6 +6854,7 @@
               "\"flex-row justify-between items-center\"": 2,
               "\"absolute inset-0 z-50\"": 2,
               "\"rounded-2xl overflow-hidden\"": 2,
+              "\"-mx-4\"": 2,
               "\"w-full border-t border-muted\"": 2,
               "\"space-y-4\"": 2,
               "\"bg-default pt-4\"": 2,
@@ -6716,7 +6870,6 @@
               "\"gap-4 px-4\"": 2,
               "\"items-center justify-between rounded-2xl border px-4 py-3\"": 2,
               "\"mt-4 -mx-4 border-b border-border-muted\"": 2,
-              "\"gap-2 px-4\"": 2,
               "\"items-end gap-1\"": 2,
               "\"py-6 gap-3\"": 2,
               "\"py-1 px-4\"": 2,
@@ -6732,6 +6885,7 @@
               "\"flex-1 ml-5\"": 2,
               "\"rounded-full\"": 2,
               "\"flex-nowrap gap-2\"": 2,
+              "\"flex-row items-center gap-1 shrink\"": 2,
               "\"flex-1 h-16\"": 2,
               "\"flex-1 ml-5 justify-center\"": 2,
               "\"pt-4 px-4\"": 2,
@@ -6753,7 +6907,6 @@
               "\"pb-5 pt-0\"": 2,
               "\"mb-1 items-end pr-2\"": 2,
               "\"mb-2 px-6\"": 2,
-              "\"mx-4 mt-4 mb-2\"": 2,
               "\"flex-1 h-px bg-border-muted\"": 2,
               "\"flex-1 pb-[30px]\"": 2,
               "\"relative flex-col gap-2\"": 2,
@@ -6796,6 +6949,7 @@
               "\"h-12 w-12 rounded-full\"": 1,
               "py-2": 1,
               "\"mx-4 p-4 rounded-xl border border-muted bg-default gap-3.5\"": 1,
+              "\"px-1\"": 1,
               "\"mt-5 w-full rounded-2xl pl-[25px] pr-4 py-3\"": 1,
               "\"px-2 py-1\"": 1,
               "\"bg-default border-t border-muted min-h-[60px] px-4 py-2\"": 1,
@@ -6805,13 +6959,12 @@
               "\"flex-1 items-center justify-center gap-2\"": 1,
               "\"mt-4 bg-background-muted rounded-lg mx-4 py-4 px-4\"": 1,
               "\"w-full relative\"": 1,
+              "\"mx-4 mt-4\"": 1,
               "\"w-full px-4 pt-4 items-center justify-center\"": 1,
               "\"mb-6 mt-7\"": 1,
               "\"items-center justify-between flex-row w-full mt-4\"": 1,
               "{`h-px mx-4 bg-border-muted ${hasAlerts || hasSetupActions ? 'hidden' : ''}`}": 1,
               "\"gap-6 mt-4\"": 1,
-              "\"rounded-xl bg-background-muted p-4 items-center\"": 1,
-              "\"rounded-xl bg-background-muted p-4\"": 1,
               "\"flex-row items-start gap-2\"": 1,
               "\"mt-4 relative\"": 1,
               "\"flex-row justify-center items-center gap-1 mt-4\"": 1,
@@ -6821,6 +6974,9 @@
               "\"px-4 mt-4 gap-4 flex-1\"": 1,
               "\"px-4 pb-4 gap-2\"": 1,
               "\"flex-1 items-center \"": 1,
+              "\"flex-row items-center gap-1 mt-1\"": 1,
+              "\"rounded-xl bg-background-muted p-4 items-center\"": 1,
+              "\"rounded-xl bg-background-muted p-4\"": 1,
               "\"bg-background-muted rounded-xl p-4 mt-4\"": 1,
               "\"pb-4 gap-3\"": 1,
               "\"bg-background-muted rounded-2xl overflow-hidden mb-6\"": 1,
@@ -6925,6 +7081,8 @@
               "\"flex-1 bg-default pt-20\"": 1,
               "\"py-12 px-4\"": 1,
               "\"flex-row justify-between gap-2 pt-1\"": 1,
+              "{sectionIndex > 0 ? 'mt-4' : undefined}": 1,
+              "\"w-full items-center py-3\"": 1,
               "{isMultiProviderEnabled ? 'w-full flex-nowrap' : 'w-full flex-wrap gap-y-1'}": 1,
               "\"ml-auto flex-shrink-0\"": 1,
               "\"flex-1 bg-muted rounded-lg px-3 py-1 mr-2\"": 1,
@@ -6935,7 +7093,6 @@
               "\"w-full border-b border-muted\"": 1,
               "\"gap-3 px-4 pt-1 pb-3\"": 1,
               "\"flex-1 gap-1.5\"": 1,
-              "\"px-4 mb-3\"": 1,
               "\"flex-1 items-center justify-center bg-error-muted\"": 1,
               "\"bg-default rounded-lg\"": 1,
               "\"overflow-hidden rounded-lg\"": 1,
@@ -7053,7 +7210,6 @@
               "{rowClassName}": 1,
               "\"px-4 pt-4 pb-2\"": 1,
               "{`rounded-full py-2 pl-[9px] pr-[16px] mt-2 ${!canEdit ? '' : 'bg-muted'} mx-a...}": 1,
-              "\"gap-2 py-1\"": 1,
               "\"flex-1 relative overflow-hidden\"": 1,
               "\"pt-2 pb-2\"": 1,
               "\"items-center justify-center gap-2 rounded-xl bg-muted py-4 px-2\"": 1,
@@ -7189,15 +7345,15 @@
               "\"mb-6 w-full\"": 1,
               "\"w-full gap-2 px-2\"": 1,
               "\"w-full flex-row justify-end\"": 1,
+              "\"h-[24px] items-center\"": 1,
+              "\"rounded-[4px] bg-default\"": 1,
+              "\"filter blur-sm max-w-min w-min flex flex-row rounded-sm whitespace-nowrap px-2 py-0 gap-1 bg-warning-default bg-opacity-10 items-center\"": 1,
               "\"bg-error-muted rounded-2xl p-4 gap-4 w-full\"": 1,
               "\"flex-1 bg-black/80 justify-center items-center\"": 1,
               "\"absolute right-10 top-1/4 z-50\"": 1,
               "\"bg-info-muted rounded-2xl p-4 gap-4 w-full\"": 1,
               "{`px-4 py-4 ${ option.value === selectedValue ? 'bg-background-muted' : '' }`}": 1,
               "\"flex-1 bg-default px-6\"": 1,
-              "\"h-[24px] items-center\"": 1,
-              "\"rounded-[4px] bg-default\"": 1,
-              "\"filter blur-sm max-w-min w-min flex flex-row rounded-sm whitespace-nowrap px-2 py-0 gap-1 bg-warning-default bg-opacity-10 items-center\"": 1,
               "\"py-3 gap-3\"": 1,
               "\"mb-6 gap-2\"": 1,
               "\"gap-4 flex-col py-4 px-4\"": 1,
@@ -7299,7 +7455,8 @@
               "\"flex-row items-center justify-end gap-2 shrink\"": 1,
               "\"overflow-hidden border border-background-default bg-default\"": 1,
               "\"flex-row items-start justify-between gap-4\"": 1,
-              "\"flex-row items-center gap-1 shrink\"": 1,
+              "\"rounded-2xl bg-muted p-4 mb-4 gap-3\"": 1,
+              "\"flex-row items-center justify-between\"": 1,
               "\"items-center -mt-0.5 gap-0.5\"": 1,
               "\"w-1 h-1 rounded-full bg-border-muted\"": 1,
               "\"gap-0\"": 1,
@@ -7330,6 +7487,8 @@
               "\"w-8 h-8 rounded-full items-center justify-center\"": 1,
               "\"flex-1 gap-5 px-4 py-4\"": 1,
               "\"flex-col gap-4 mt-2\"": 1,
+              "\"mt-auto gap-4\"": 1,
+              "\"rounded-xl p-4 gap-3\"": 1,
               "\"h-10 w-10 rounded-xl bg-muted\"": 1,
               "\"px-4 pt-4 gap-2\"": 1,
               "\"flex-1 ml-3 gap-1\"": 1,
@@ -7343,6 +7502,9 @@
               "\"bg-background-default\"": 1,
               "\"mt-2 bg-section rounded-lg p-4\"": 1,
               "\"w-full mt-auto\"": 1,
+              "\"flex-1 justify-center\"": 1,
+              "\"w-full gap-4 px-4 pb-6\"": 1,
+              "\"gap-2 px-2\"": 1,
               "{`w-2 h-2 rounded-full flex items-center justify-center ${ isVersionSupported ...}": 1,
               "\"flex-1 ml-2 justify-center min-w-[160px]\"": 1,
               "\"flex-1 ml-2\"": 1,
@@ -7405,8 +7567,11 @@
               "{`flex-1 w-full px-5 ${Device.isMediumDevice() ? 'gap-y-4' : 'gap-y-6'}`}": 1,
               "\"flex-1 py-4\"": 1,
               "\"absolute top-0 left-0 right-0 bottom-0\"": 1,
+              "\"mx-4 mt-4 mb-2\"": 1,
               "\"gap-2 py-2\"": 1,
-              "\"min-h-[96px] flex-1\"": 1,
+              "\"mx-4 mb-4 flex flex-col gap-y-2\"": 1,
+              "\"flex-1 flex-row items-center gap-x-2 ml-3\"": 1,
+              "\"mt-4 px-4 pb-6\"": 1,
               "\"p-4 gap-y-4\"": 1,
               "\"flex flex-col items-center gap-4 mb-6\"": 1,
               "\"px-6 pb-8 gap-6\"": 1,
@@ -7456,7 +7621,6 @@
               "{`pb-2 ${isActive ? 'border-b-2 border-default' : ''}`}": 1,
               "\"h-px bg-muted mx-4 mt-5 mb-4\"": 1,
               "\"px-4 mb-2\"": 1,
-              "\"px-4 py-4 mb-4\"": 1,
               "\"bg-muted rounded px-1.5 py-0.5\"": 1,
               "\"mr-3\"": 1,
               "\"flex-1 h-[46px]\"": 1,
@@ -7465,6 +7629,7 @@
               "\"h-12 gap-3 rounded-full border border-border-muted bg-muted px-4\"": 1,
               "{index < sections.length - 1 && !section.isVerticalList ? 'pb-3' : undefined}": 1,
               "{`rounded-2xl overflow-hidden ${ !isLastItem ? 'pr-3' : '' }`}": 1,
+              "\"flex-1 justify-end items-end\"": 1,
               "{showOtherResults ? 'mb-4' : ''}": 1,
               "\"rounded-xl bg-secondary py-6 px-4 items-center mb-4\"": 1,
               "{showSportsPredictions ? 'pb-3' : undefined}": 1,
@@ -7482,6 +7647,7 @@
               "\"relative flex-1 min-h-0\"": 1,
               "{`${aiPillContainerClass}${ pressed ? ' opacity-60' : '' }`}": 1,
               "{`${impactBgClass} rounded px-2 py-1 self-start border border-transparent`}": 1,
+              "\"bg-warning-muted rounded px-2 py-1 self-start border border-transparent\"": 1,
               "{pressed ? 'pt-2 pb-4 opacity-60' : 'pt-2 pb-4'}": 1,
               "\"flex-shrink\"": 1,
               "\"flex-row items-center flex-1 min-w-0\"": 1,
@@ -7500,6 +7666,8 @@
               "\"px-4 h-12 justify-center items-end shrink-0\"": 1,
               "\"pl-4 py-2\"": 1,
               "\"mb-8\"": 1,
+              "\"h-[30px] items-center justify-center rounded-lg bg-muted px-1\"": 1,
+              "\"flex-row items-center gap-2.5\"": 1,
               "\"w-full px-4 py-2\"": 1,
               "\"flex-1 justify-center items-center p-4\"": 1,
               "\"rounded-lg bg-background-alternative p-3\"": 1,
@@ -7513,28 +7681,28 @@
             }
           },
           "flexDirection": {
-            "count": 666,
+            "count": 669,
             "values": {
-              "{BoxFlexDirection.Row}": 567,
-              "{BoxFlexDirection.Column}": 99
+              "{BoxFlexDirection.Row}": 571,
+              "{BoxFlexDirection.Column}": 98
             }
           },
           "alignItems": {
-            "count": 623,
+            "count": 629,
             "values": {
-              "{BoxAlignItems.Center}": 551,
-              "{BoxAlignItems.Start}": 46,
+              "{BoxAlignItems.Center}": 559,
+              "{BoxAlignItems.Start}": 45,
               "{BoxAlignItems.End}": 19,
-              "{BoxAlignItems.Stretch}": 4,
+              "{BoxAlignItems.Stretch}": 3,
               "{typeof title === 'string' ? BoxAlignItems.Center : BoxAlignItems.Start}": 1,
               "{typeof description === 'string' ? BoxAlignItems.Center : BoxAlignItems.Start}": 1,
               "{BoxAlignItems.Baseline}": 1
             }
           },
           "testID": {
-            "count": 456,
+            "count": 465,
             "values": {
-              "{testID}": 72,
+              "{testID}": 73,
               "{ActivityDetailsSelectorsIDs.AMOUNT_HEADER}": 5,
               "{PerpsWatchlistSelectorsIDs.SECTION}": 3,
               "{CAMPAIGN_PRIZE_POOL_TEST_IDS.CONTAINER}": 3,
@@ -7580,13 +7748,16 @@
               "\"bridge-rewards-row\"": 1,
               "{BridgeViewSelectorsIDs.QUOTE_DETAILS_SKELETON}": 1,
               "\"quote-details-card-loading-row\"": 1,
+              "{SwapDiscoveryFeedTestIds.ROOT}": 1,
               "{CardAuthenticationSelectors.INTERNATIONAL_LOCATION_BOX}": 1,
               "{CardAuthenticationSelectors.US_LOCATION_BOX}": 1,
+              "{CardHomeSelectors.CREDIT_BANNER}": 1,
               "{CardHomeSelectors.LINK_MONEY_ACCOUNT_DIVIDER_BOTTOM}": 1,
-              "{CashbackSelectors.FUNDING_WARNING}": 1,
-              "{CashbackSelectors.BALANCE_TITLE}": 1,
-              "{CashbackSelectors.DETAILS_CARD}": 1,
               "{`${ChooseYourCardSelectors.CARD_IMAGE}-${item.id}`}": 1,
+              "{testIds.FUNDING_WARNING}": 1,
+              "{testIds.BALANCE_TITLE}": 1,
+              "{testIds.DETAILS_CARD}": 1,
+              "{testIds.TO_ROW}": 1,
               "{`${ReviewOrderSelectors.ORDER_ITEM}-${index}`}": 1,
               "{ReviewOrderSelectors.SHIPPING_ADDRESS_CARD}": 1,
               "{ReviewOrderSelectors.ORDER_SUMMARY}": 1,
@@ -7619,6 +7790,8 @@
               "{MarketInsightsSelectorsIDs.VIEW_HEADER}": 1,
               "{MarketInsightsSelectorsIDs.VIEW_SKELETON}": 1,
               "{MarketInsightsSelectorsIDs.ENTRY_CARD_SKELETON}": 1,
+              "{MoneyActivityViewTestIds.LOAD_ERROR}": 1,
+              "{MoneyActivityViewTestIds.LOAD_MORE_SPINNER}": 1,
               "{MoneyActivityViewTestIds.CONTAINER}": 1,
               "{MoneyActivityViewTestIds.EMPTY_LIST}": 1,
               "{MoneyHomeViewTestIds.CONTAINER}": 1,
@@ -7786,7 +7959,6 @@
               "{REWARDS_VIEW_SELECTORS.TIER_REWARD_DESCRIPTION}": 1,
               "\"rewards-image-modal\"": 1,
               "\"rewards-update-required-container\"": 1,
-              "\"rewards-vip-badge\"": 1,
               "\"opt-out-section\"": 1,
               "\"referred-by-code-section-loading\"": 1,
               "\"referred-by-code-section-error\"": 1,
@@ -7820,9 +7992,11 @@
               "{TokenOverviewSelectorsIDs.CONTAINER}": 1,
               "{WalletViewSelectorsIDs.TOKENS_CONTAINER_LIST}": 1,
               "{WalletViewSelectorsIDs.TOKENS_CONTAINER}": 1,
+              "\"pill-scroll-list-wrapper\"": 1,
               "{listTestId ? `${listTestId}-row-${rowIndex}` : undefined}": 1,
               "{`${testID}-hero-${currentStep.kind}`}": 1,
               "\"fee-network-badge\"": 1,
+              "{ActivityDetailsSelectorsIDs.PENDING_BANNER}": 1,
               "{ActivityDetailsSelectorsIDs.STATUS_PILL}": 1,
               "{ActivityScreenSelectorsIDs.LIST}": 1,
               "\"add-asset-nft-banner\"": 1,
@@ -7848,7 +8022,7 @@
               "{NetworksManagementViewSelectorsIDs.EMPTY_STATE}": 1,
               "{NetworksManagementViewSelectorsIDs.NETWORK_ITEM(item.chainId)}": 1,
               "{`${OnboardingCryptoExperienceQuestionnaireTestIds.SKILL_BAR_PREFIX}${level}`}": 1,
-              "{`${OnboardingInterestQuestionnaireTestIds.GRID_ROW_PREFIX}${rowIndex}`}": 1,
+              "{InterestSelectionIndicatorTestIds.CONTAINER}": 1,
               "{OnboardingSheetSelectorIDs.CONTAINER_ID}": 1,
               "\"onboarding-success-end-animation\"": 1,
               "{OnboardingSuccessSelectorIDs.CONTAINER_ID}": 1,
@@ -7882,10 +8056,12 @@
               "{TEXTFIELD_STARTACCESSORY_TEST_ID}": 1,
               "{TEXTFIELD_ENDACCESSORY_TEST_ID}": 1,
               "{TrendingViewSelectorsIDs.EXPLORE_SAFE_AREA}": 1,
+              "\"explore-card-list\"": 1,
               "\"empty-error-trending-state\"": 1,
               "\"empty-search-result-state\"": 1,
               "{TrendingViewSelectorsIDs.EXPLORE_VIEW_SEARCH_INPUT}": 1,
               "\"explore-section-divider\"": 1,
+              "{`explore-section-${section.key}`}": 1,
               "{testIdPrefix}": 1,
               "\"all-sports-empty-state\"": 1,
               "{index === activeIndex ? 'page-indicator-dot-active' : 'page-indicator-dot'}": 1,
@@ -7897,10 +8073,10 @@
             }
           },
           "justifyContent": {
-            "count": 279,
+            "count": 282,
             "values": {
-              "{BoxJustifyContent.Between}": 127,
-              "{BoxJustifyContent.Center}": 108,
+              "{BoxJustifyContent.Between}": 129,
+              "{BoxJustifyContent.Center}": 109,
               "{BoxJustifyContent.Start}": 21,
               "{BoxJustifyContent.End}": 17,
               "{BoxJustifyContent.SpaceBetween}": 2,
@@ -7911,9 +8087,9 @@
             }
           },
           "style": {
-            "count": 233,
+            "count": 229,
             "values": {
-              "{styles.container}": 10,
+              "{styles.container}": 9,
               "{styles.detailRow}": 6,
               "{styles.banner}": 4,
               "{tw.style('flex-1 flex-shrink mr-2 -mt-1')}": 3,
@@ -7929,7 +8105,6 @@
               "{tw.style('w-full bg-background-default', { height })}": 2,
               "{[styles.safeArea, { paddingTop: insets.top }]}": 2,
               "{styles.iconContainer}": 2,
-              "{styles.periodOptionsGrid}": 2,
               "{styles.titleRow}": 2,
               "{styles.searchBarContainer}": 2,
               "{style}": 2,
@@ -7995,7 +8170,6 @@
               "{styles.titleContainer}": 1,
               "{styles.countdownContainer}": 1,
               "{styles.countdownPill}": 1,
-              "{sectionIndex > 0 ? styles.sectionSpacing : undefined}": 1,
               "{tw.style('bg-background-section')}": 1,
               "{tw.style('mt-1')}": 1,
               "{styles.contentRow}": 1,
@@ -8054,6 +8228,7 @@
               "{barFillStyle}": 1,
               "{containerStyle}": 1,
               "{styles.bookmarkIco}": 1,
+              "{styles.sectionGap}": 1,
               "{tw.style('h-px my-2 mx-4', { backgroundColor: colors.border.muted, opacity: 0...}": 1,
               "{tw.style('flex-row items-center gap-2')}": 1,
               "{tw.style( 'rounded-lg px-2 py-0.5 min-w-6 items-center justify-center', { bac...}": 1,
@@ -8075,8 +8250,7 @@
               "{tw.style( 'mt-auto w-full gap-4 px-4', Platform.OS === 'android' && 'pb-3', )}": 1,
               "{tw.style( { zIndex: 1000 }, { backgroundColor: themeContext.themeAppearance =...}": 1,
               "{tw.style('items-end gap-0.5')}": 1,
-              "{tw.style({ marginHorizontal: -GRID_GUTTER_PX, marginBottom: GRID_GUTTER_PX * ...}": 1,
-              "{tw.style({ width: '50%', paddingHorizontal: GRID_GUTTER_PX, })}": 1,
+              "{tw.style('h-[22px] w-[22px] rounded-full bg-icon-default')}": 1,
               "{{ height: screenHeight * 0.5 }}": 1,
               "{{ paddingBottom: bottomSpacing }}": 1,
               "{{ backgroundColor: colors.text.default }}": 1,
@@ -8097,12 +8271,12 @@
             }
           },
           "gap": {
-            "count": 223,
+            "count": 220,
             "values": {
               "0": 4,
-              "1": 60,
+              "1": 58,
               "2": 65,
-              "3": 43,
+              "3": 42,
               "4": 43,
               "5": 1,
               "6": 2,
@@ -8131,6 +8305,8 @@
               "{`${index}-${message}`}": 1,
               "{`${source.name}-${source.url}`}": 1,
               "{`${token.address}-${token.chainId}`}": 1,
+              "{`period-spacer-${index}`}": 1,
+              "{period.value}": 1,
               "{section.title}": 1,
               "{key ?? label}": 1,
               "{`${seriesItem.label}-${index}`}": 1,
@@ -8148,8 +8324,6 @@
               "{network.chainId}": 1,
               "{`nft-row-${rowIndex}`}": 1,
               "{`empty-${rowIndex}-${i}`}": 1,
-              "{rowOptions.map((option) => option.id).join('-')}": 1,
-              "{option.id}": 1,
               "\"now\"": 1,
               "\"macro\"": 1,
               "\"rwas\"": 1,
@@ -8173,19 +8347,19 @@
             }
           },
           "paddingBottom": {
-            "count": 32,
+            "count": 33,
             "values": {
               "2": 1,
-              "3": 18,
+              "3": 19,
               "4": 11,
               "6": 2
             }
           },
           "backgroundColor": {
-            "count": 29,
+            "count": 30,
             "values": {
               "{BoxBackgroundColor.BackgroundMuted}": 14,
-              "{BoxBackgroundColor.BackgroundSection}": 4,
+              "{BoxBackgroundColor.BackgroundSection}": 5,
               "{BoxBackgroundColor.BackgroundDefault}": 3,
               "{BoxBackgroundColor.PrimaryMuted}": 2,
               "{BoxBackgroundColor.WarningMuted}": 2,
@@ -8212,6 +8386,15 @@
               "4": 15
             }
           },
+          "paddingVertical": {
+            "count": 14,
+            "values": {
+              "1": 2,
+              "2": 6,
+              "3": 4,
+              "4": 2
+            }
+          },
           "marginBottom": {
             "count": 13,
             "values": {
@@ -8232,14 +8415,6 @@
               "{{ tabLabel: strings('trending.tabs.crypto'), } as TabViewProps}": 1,
               "{{ tabLabel: strings('trending.tabs.sports'), } as TabViewProps}": 1,
               "{{ tabLabel: strings('trending.tabs.dapps'), } as TabViewProps}": 1
-            }
-          },
-          "paddingVertical": {
-            "count": 12,
-            "values": {
-              "1": 2,
-              "2": 6,
-              "3": 4
             }
           },
           "onLayout": {
@@ -8316,7 +8491,7 @@
           "onTouchEnd": {
             "count": 2,
             "values": {
-              "{shouldShowTrendingTokens ? dismissInputAndKeypad : undefined}": 1,
+              "{hasInteractiveDiscoverySurface ? dismissInputAndKeypad : undefined}": 1,
               "{() => { if (!didScroll.current) onTap?.(); }}": 1
             }
           },
@@ -8355,7 +8530,7 @@
           "onStartShouldSetResponder": {
             "count": 1,
             "values": {
-              "{() => !shouldShowTrendingTokens}": 1
+              "{() => !hasInteractiveDiscoverySurface}": 1
             }
           },
           "onResponderRelease": {

@@ -1,32 +1,33 @@
 {
   "component": "Icon",
-  "generatedAt": "2026-07-01T07:15:59.440Z",
+  "generatedAt": "2026-07-08T07:29:44.781Z",
   "projects": {
     "extension": {
-      "filesScanned": 3387,
+      "filesScanned": 3442,
       "targetComponent": "Icon",
       "mmds": {
-        "totalInstances": 223,
-        "filesCount": 146,
+        "totalInstances": 230,
+        "filesCount": 149,
         "props": {
           "name": {
-            "count": 223,
+            "count": 230,
             "values": {
-              "{IconName.ArrowRight}": 21,
-              "{IconName.Danger}": 16,
+              "{IconName.ArrowRight}": 22,
+              "{IconName.Danger}": 17,
               "{IconName.Check}": 14,
               "{IconName.Warning}": 10,
               "{IconName.Loading}": 9,
+              "{IconName.ArrowDown}": 7,
               "{IconName.ArrowLeft}": 7,
               "{IconName.Info}": 7,
+              "{iconName}": 6,
               "{IconName.Confirmation}": 6,
-              "{IconName.ArrowDown}": 6,
-              "{iconName}": 5,
               "{IconName.CheckBold}": 5,
               "{IconName.Add}": 4,
               "{IconName.Arrow2Up}": 4,
               "{IconName.Error}": 3,
               "{isExpanded ? IconName.ArrowUp : IconName.ArrowDown}": 3,
+              "{icon}": 3,
               "{IconName.Question}": 3,
               "{DsIconName.Confirmation}": 3,
               "{DsIconName.CircleX}": 3,
@@ -37,13 +38,14 @@
               "{DsIconName.Loading}": 2,
               "{IconName.FullCircle}": 2,
               "{IconName.SwapHorizontal}": 2,
+              "{IconName.Refresh}": 2,
               "{IconName.AppleLogo}": 2,
               "{IconName.Telegram}": 2,
               "{IconName.SwapVertical}": 2,
               "{IconName.Send}": 2,
               "{IconName.EyeSlash}": 2,
               "{IconName.Setting}": 2,
-              "{icon}": 2,
+              "{IconName.Mobile}": 2,
               "{addressCopied ? IconName.CopySuccess : IconName.Copy}": 2,
               "{item.iconName}": 2,
               "{activeAlert.severity === 'danger' ? IconName.Danger : IconName.Warning}": 2,
@@ -55,13 +57,12 @@
               "{standardErrorContent.icon}": 1,
               "{IconName.ShieldLock}": 1,
               "{mode === 'add' ? IconName.AddCircle : IconName.RemoveMinus}": 1,
-              "{IconName.AddCircle}": 1,
               "{IconName.Edit}": 1,
               "{isDropdownOpen ? IconName.ArrowUp : IconName.ArrowDown}": 1,
               "{IconName.TrendUp}": 1,
               "{IconName.Star}": 1,
               "{icon.name}": 1,
-              "{IconName.Refresh}": 1,
+              "{IconName.Flag}": 1,
               "{IconName.Close}": 1,
               "{startIconName}": 1,
               "{copied ? IconName.CopySuccess : IconName.Copy}": 1,
@@ -94,7 +95,6 @@
               "{isInWatchlist ? IconName.StarFilled : IconName.Star}": 1,
               "{isModifyMenuOpen ? IconName.ArrowUp : IconName.ArrowDown}": 1,
               "{IconName.Monitor}": 1,
-              "{IconName.Mobile}": 1,
               "{item.isExpanded ? IconName.ArrowUp : IconName.ArrowDown}": 1,
               "{item.iconName as IconName}": 1,
               "{IconName.Coin}": 1,
@@ -105,12 +105,12 @@
             }
           },
           "size": {
-            "count": 200,
+            "count": 207,
             "values": {
-              "{IconSize.Sm}": 74,
-              "{IconSize.Md}": 40,
+              "{IconSize.Sm}": 76,
+              "{IconSize.Md}": 41,
+              "{IconSize.Lg}": 31,
               "{IconSize.Xl}": 28,
-              "{IconSize.Lg}": 27,
               "{IconSize.Xs}": 20,
               "{DsIconSize.Lg}": 8,
               "{iconSize || IconSize.Md}": 2,
@@ -118,11 +118,11 @@
             }
           },
           "color": {
-            "count": 172,
+            "count": 177,
             "values": {
               "{IconColor.IconAlternative}": 54,
-              "{IconColor.IconDefault}": 29,
-              "{IconColor.ErrorDefault}": 16,
+              "{IconColor.IconDefault}": 30,
+              "{IconColor.ErrorDefault}": 19,
               "{IconColor.SuccessDefault}": 16,
               "{IconColor.WarningDefault}": 12,
               "{IconColor.IconMuted}": 8,
@@ -134,6 +134,7 @@
               "{DsIconColor.IconDefault}": 2,
               "{addressCopied ? IconColor.SuccessDefault : IconColor.IconAlternative}": 2,
               "{activeAlert.severity === 'danger' ? IconColor.ErrorDefault : IconColor.Warnin...}": 2,
+              "{isActive ? IconColor.IconDefault : IconColor.IconAlternative}": 1,
               "{standardErrorContent.iconColor}": 1,
               "{icon.color}": 1,
               "{copied ? IconColor.SuccessDefault : IconColor.IconAlternative}": 1,
@@ -149,7 +150,7 @@
             }
           },
           "className": {
-            "count": 52,
+            "count": 54,
             "values": {
               "\"animate-spin\"": 5,
               "\"mb-2\"": 4,
@@ -157,6 +158,7 @@
               "\"mr-3\"": 3,
               "\"text-icon-alternative\"": 3,
               "\"shrink-0\"": 2,
+              "\"mt-1 shrink-0\"": 2,
               "\"text-error-default\"": 2,
               "\"add-multichain-account__icon-box__icon-loading\"": 2,
               "\"disclosure__summary--icon\"": 2,
@@ -165,7 +167,7 @@
               "\"mx-auto\"": 2,
               "\"mt-2\"": 2,
               "\"w-12 h-12\"": 1,
-              "\"bg-transparent border-0 p-0 cursor-pointer flex items-center\"": 1,
+              "\"group-hover/tab:text-icon-default-hover\"": 1,
               "{onlyEnabledAction.iconClassName}": 1,
               "{action.iconClassName}": 1,
               "\"account-pinned-icon\"": 1,
@@ -186,12 +188,12 @@
           "data-testid": {
             "count": 13,
             "values": {
-              "\"amount-input-add-funds\"": 1,
               "\"perps-balance-dropdown-chevron\"": 1,
               "\"account-pinned-icon\"": 1,
               "{`dapp-bar-network-selector-popover__selected-${network.chainId}`}": 1,
               "\"unread-dot\"": 1,
               "\"icon\"": 1,
+              "\"ledger-connection-status-device-selector-indicator\"": 1,
               "\"bridge-asset-verified-badge\"": 1,
               "\"gas-sponsorship-chevron\"": 1,
               "\"gas-sponsorship-selected-check\"": 1,
@@ -213,9 +215,8 @@
             }
           },
           "aria-label": {
-            "count": 4,
+            "count": 3,
             "values": {
-              "\"Add Funds\"": 1,
               "{t('close')}": 1,
               "{t('copyAddressShort')}": 1,
               "{t('srpRevealMaliciousBlockIconAriaLabel')}": 1
@@ -229,17 +230,16 @@
               "\"keep\"": 1
             }
           },
-          "onClick": {
-            "count": 2,
-            "values": {
-              "{onAddFunds}": 1,
-              "{onAlertIconClick}": 1
-            }
-          },
           "[spread]": {
             "count": 1,
             "values": {
               "{iconColor === undefined ? {} : { color: iconColor }}": 1
+            }
+          },
+          "onClick": {
+            "count": 1,
+            "values": {
+              "{onAlertIconClick}": 1
             }
           }
         }
@@ -503,35 +503,36 @@
         }
       },
       "overall": {
-        "totalInstances": 361,
-        "filesCount": 238,
+        "totalInstances": 368,
+        "filesCount": 241,
         "props": {
           "name": {
-            "count": 361,
+            "count": 368,
             "values": {
-              "{IconName.Danger}": 30,
-              "{IconName.ArrowRight}": 26,
+              "{IconName.Danger}": 31,
+              "{IconName.ArrowRight}": 27,
               "{IconName.Info}": 24,
               "{IconName.Check}": 18,
               "{IconName.Warning}": 16,
+              "{IconName.ArrowDown}": 12,
               "{IconName.Export}": 11,
               "{IconName.Loading}": 11,
-              "{IconName.ArrowDown}": 11,
               "{IconName.Confirmation}": 9,
+              "{iconName}": 8,
               "{IconName.ArrowLeft}": 8,
               "{IconName.Add}": 7,
-              "{iconName}": 7,
               "{IconName.CheckBold}": 7,
               "{IconName.Question}": 6,
               "{IconName.Setting}": 5,
+              "{IconName.Refresh}": 4,
               "{isExpanded ? IconName.ArrowUp : IconName.ArrowDown}": 4,
+              "{icon}": 4,
               "{IconName.VerifiedFilled}": 4,
               "{IconName.FullCircle}": 4,
               "{IconName.CircleX}": 4,
               "{IconName.Send}": 4,
               "{IconName.Arrow2Up}": 4,
               "{IconName.Error}": 3,
-              "{IconName.Refresh}": 3,
               "{DsIconName.Confirmation}": 3,
               "{DsIconName.CircleX}": 3,
               "{icon.name}": 3,
@@ -540,7 +541,6 @@
               "{IconName.Notification}": 3,
               "{IconName.SwapVertical}": 3,
               "{IconName.EyeSlash}": 3,
-              "{icon}": 3,
               "{IconName.Search}": 3,
               "{IconName.SecurityTick}": 2,
               "{section.iconName}": 2,
@@ -552,6 +552,7 @@
               "{IconName.Clock}": 2,
               "{copied ? IconName.CopySuccess : IconName.Copy}": 2,
               "{isOpen ? IconName.ArrowUp : IconName.ArrowDown}": 2,
+              "{IconName.Mobile}": 2,
               "{IconName.MoreVertical}": 2,
               "{addressCopied ? IconName.CopySuccess : IconName.Copy}": 2,
               "{item.iconName}": 2,
@@ -576,10 +577,10 @@
               "{IconName.ShieldLock}": 1,
               "{infoIcon}": 1,
               "{mode === 'add' ? IconName.AddCircle : IconName.RemoveMinus}": 1,
-              "{IconName.AddCircle}": 1,
               "{isDropdownOpen ? IconName.ArrowUp : IconName.ArrowDown}": 1,
               "{IconName.TrendUp}": 1,
               "{IconName.Star}": 1,
+              "{IconName.Flag}": 1,
               "{startIconName}": 1,
               "{this.state.copied ? IconName.CopySuccess : IconName.Copy}": 1,
               "{isVisible ? IconName.EyeSlash : IconName.Eye}": 1,
@@ -620,7 +621,6 @@
               "{isInWatchlist ? IconName.StarFilled : IconName.Star}": 1,
               "{isModifyMenuOpen ? IconName.ArrowUp : IconName.ArrowDown}": 1,
               "{IconName.Monitor}": 1,
-              "{IconName.Mobile}": 1,
               "{item.isExpanded ? IconName.ArrowUp : IconName.ArrowDown}": 1,
               "{item.iconName as IconName}": 1,
               "{IconName.Coin}": 1,
@@ -631,12 +631,12 @@
             }
           },
           "size": {
-            "count": 303,
+            "count": 310,
             "values": {
-              "{IconSize.Sm}": 130,
-              "{IconSize.Md}": 47,
+              "{IconSize.Sm}": 132,
+              "{IconSize.Md}": 48,
               "{IconSize.Xl}": 41,
-              "{IconSize.Lg}": 37,
+              "{IconSize.Lg}": 41,
               "{IconSize.Xs}": 25,
               "{DsIconSize.Lg}": 8,
               "{IconSize.Inherit}": 5,
@@ -651,11 +651,11 @@
             }
           },
           "color": {
-            "count": 267,
+            "count": 272,
             "values": {
               "{IconColor.IconAlternative}": 54,
-              "{IconColor.IconDefault}": 29,
-              "{IconColor.ErrorDefault}": 16,
+              "{IconColor.IconDefault}": 30,
+              "{IconColor.ErrorDefault}": 19,
               "{IconColor.SuccessDefault}": 16,
               "{IconColor.primaryDefault}": 14,
               "{IconColor.iconAlternative}": 14,
@@ -678,6 +678,7 @@
               "{addressCopied ? IconColor.SuccessDefault : IconColor.IconAlternative}": 2,
               "{activeAlert.severity === 'danger' ? IconColor.ErrorDefault : IconColor.Warnin...}": 2,
               "{iconColor ?? severityStyle.icon}": 1,
+              "{isActive ? IconColor.IconDefault : IconColor.IconAlternative}": 1,
               "{tooltipIconColor ?? (TOOLTIP_ICON_COLORS[variant] as unknown as IconColor)}": 1,
               "{standardErrorContent.iconColor}": 1,
               "{snapRemovalResult.result === 'success' ? IconColor.successDefault : IconColor...}": 1,
@@ -702,7 +703,7 @@
             }
           },
           "className": {
-            "count": 69,
+            "count": 71,
             "values": {
               "\"animate-spin\"": 5,
               "\"mb-2\"": 4,
@@ -711,6 +712,7 @@
               "\"mr-3\"": 3,
               "\"text-icon-alternative\"": 3,
               "\"shrink-0\"": 2,
+              "\"mt-1 shrink-0\"": 2,
               "\"text-error-default\"": 2,
               "\"notification-list-item__unread-dot__dot\"": 2,
               "\"add-multichain-account__icon-box__icon-loading\"": 2,
@@ -720,9 +722,9 @@
               "\"mx-auto\"": 2,
               "\"mt-2\"": 2,
               "\"w-12 h-12\"": 1,
+              "\"group-hover/tab:text-icon-default-hover\"": 1,
               "\"name__icon\"": 1,
               "{icon.className}": 1,
-              "\"bg-transparent border-0 p-0 cursor-pointer flex items-center\"": 1,
               "\"copyable__icon\"": 1,
               "\"snap-delineator__expansion-icon\"": 1,
               "\"snap-ui-renderer__matched-account-info__clear-button\"": 1,
@@ -754,12 +756,12 @@
             "values": {
               "\"icon\"": 2,
               "\"unread-dot\"": 2,
-              "\"amount-input-add-funds\"": 1,
               "\"perps-balance-dropdown-chevron\"": 1,
               "\"reveal-icon\"": 1,
               "\"copy-icon\"": 1,
               "\"account-pinned-icon\"": 1,
               "{`dapp-bar-network-selector-popover__selected-${network.chainId}`}": 1,
+              "\"ledger-connection-status-device-selector-indicator\"": 1,
               "\"asset__back\"": 1,
               "\"bridge-asset-verified-badge\"": 1,
               "{`transaction-status-icon-${status}`}": 1,
@@ -805,12 +807,11 @@
             }
           },
           "onClick": {
-            "count": 9,
+            "count": 8,
             "values": {
               "{handleClear}": 2,
               "{() => navigator.clipboard.writeText( getAddressUrl(address as string, chain), )}": 1,
               "{() => navigator.clipboard.writeText( getTransactionUrl(id, chain), )}": 1,
-              "{onAddFunds}": 1,
               "{handleVisibilityClick}": 1,
               "{onClick}": 1,
               "{onAlertIconClick}": 1,
@@ -826,9 +827,8 @@
             }
           },
           "aria-label": {
-            "count": 5,
+            "count": 4,
             "values": {
-              "\"Add Funds\"": 1,
               "{t('close')}": 1,
               "{t('copyAddressShort')}": 1,
               "{t('scrollDown')}": 1,
@@ -908,7 +908,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 6953,
+      "filesScanned": 7036,
       "targetComponent": "Icon",
       "mmds": {
         "totalInstances": 310,
@@ -917,10 +917,10 @@
           "name": {
             "count": 309,
             "values": {
-              "{IconName.ArrowRight}": 50,
+              "{IconName.ArrowRight}": 48,
               "{IconName.Info}": 34,
               "{IconName.Check}": 17,
-              "{IconName.ArrowDown}": 15,
+              "{IconName.ArrowDown}": 14,
               "{IconName.Danger}": 13,
               "{iconName}": 10,
               "{IconName.Clock}": 8,
@@ -928,15 +928,15 @@
               "{IconName.Error}": 6,
               "{IconName.Export}": 6,
               "{IconName.Confirmation}": 5,
+              "{IconName.Add}": 5,
               "{IconName.ArrowLeft}": 5,
               "{icon}": 4,
               "{IconName.Edit}": 4,
+              "{IconName.CheckBold}": 4,
               "{IconName.X}": 4,
+              "{IconName.Notification}": 4,
               "{IconName.Search}": 4,
-              "{IconName.Add}": 4,
               "{item.icon}": 3,
-              "{IconName.CheckBold}": 3,
-              "{IconName.Notification}": 3,
               "{isExpanded ? IconName.ArrowUp : IconName.ArrowDown}": 3,
               "{IconName.Copy}": 3,
               "{IconName.Close}": 2,
@@ -983,6 +983,7 @@
               "{feedbackGiven === 'down' ? IconName.ThumbDownFilled : IconName.ThumbDown}": 1,
               "{IconName.Ai}": 1,
               "{errorContent.icon}": 1,
+              "{sortDirection === 'asc' ? IconName.Arrow2Up : IconName.Arrow2Down}": 1,
               "{IconName.Book}": 1,
               "{item.iconName}": 1,
               "{IconName.Loading}": 1,
@@ -1014,20 +1015,19 @@
               "{HOMEPAGE_DISCOVERY_PILL_GRAY_ICONS[pillId]}": 1,
               "{IconName.ShieldLock}": 1,
               "{correctAnswer ? IconName.Confirmation : IconName.CircleX}": 1,
-              "{IconName.PageInfo}": 1,
               "{IconName.Explore}": 1,
               "{IconName.Sparkle}": 1
             }
           },
           "size": {
-            "count": 302,
+            "count": 303,
             "values": {
-              "{IconSize.Sm}": 108,
+              "{IconSize.Sm}": 107,
               "{IconSize.Md}": 89,
-              "{IconSize.Lg}": 53,
+              "{IconSize.Lg}": 55,
               "{IconSize.Xl}": 36,
-              "{IconSize.Xs}": 12,
-              "{iconSize}": 2,
+              "{IconSize.Xs}": 11,
+              "{iconSize}": 3,
               "{ARROW_ICON_SIZE}": 1,
               "{description.icon.size}": 1
             }
@@ -1035,7 +1035,7 @@
           "color": {
             "count": 241,
             "values": {
-              "{IconColor.IconAlternative}": 103,
+              "{IconColor.IconAlternative}": 101,
               "{IconColor.IconDefault}": 42,
               "{IconColor.ErrorDefault}": 17,
               "{IconColor.SuccessDefault}": 17,
@@ -1044,6 +1044,7 @@
               "{IconColor.WarningDefault}": 8,
               "{iconColor}": 6,
               "{IconColor.InfoDefault}": 3,
+              "{IconColor.PrimaryInverse}": 2,
               "{badge.iconColor}": 2,
               "{securityConfig.iconColor}": 1,
               "{description.icon.color}": 1,
@@ -1059,13 +1060,13 @@
               "{warningStyles.iconColor}": 1,
               "{item.arrowColor ?? IconColor.IconAlternative}": 1,
               "{isTestnet ? IconColor.WarningDefault : IconColor.IconAlternative}": 1,
-              "{IconColor.PrimaryInverse}": 1,
               "{toastConfig.iconColor}": 1,
               "{isFirstSelected ? IconColor.IconMuted : IconColor.IconDefault}": 1,
               "{isLastSelected ? IconColor.IconMuted : IconColor.IconDefault}": 1,
               "{styles.iconColor}": 1,
               "{IconColor.PrimaryAlternative}": 1,
               "{correctAnswer ? IconColor.SuccessDefault : IconColor.ErrorDefault}": 1,
+              "{isMuted ? IconColor.IconMuted : IconColor.IconDefault}": 1,
               "{disabled ? IconColor.IconMuted : IconColor.IconAlternative}": 1
             }
           },
@@ -1102,7 +1103,7 @@
             }
           },
           "testID": {
-            "count": 33,
+            "count": 35,
             "values": {
               "{MoneyPotentialEarningsTestIds.INFO_BUTTON}": 2,
               "\"resource-ring-icon\"": 1,
@@ -1116,6 +1117,7 @@
               "{PerpsOrderViewSelectorsIDs.MARGIN_INFO_ICON}": 1,
               "{PerpsOrderViewSelectorsIDs.LIQUIDATION_PRICE_INFO_ICON}": 1,
               "{PerpsOrderViewSelectorsIDs.FEES_INFO_ICON}": 1,
+              "{testID ? `${testID}-direction-indicator` : undefined}": 1,
               "{PerpsMarketTabsSelectorsIDs.ORDERS_EMPTY_ICON}": 1,
               "{testID ? `${testID}-check-${option.id}` : undefined}": 1,
               "{PerpsStopLossPromptSelectorsIDs.SUCCESS_ICON}": 1,
@@ -1131,6 +1133,7 @@
               "{iconTestID}": 1,
               "{`activity-details-step-${index}-icon`}": 1,
               "{NotificationsViewSelectorsIDs.DISABLED_NOTIFICATIONS_ICON}": 1,
+              "{InterestSelectionIndicatorTestIds.CONTAINER}": 1,
               "{ChoosePasswordSelectorsIDs.NEW_PASSWORD_SHOW_ICON_ID}": 1,
               "{ChoosePasswordSelectorsIDs.CONFIRM_PASSWORD_SHOW_ICON_ID}": 1,
               "\"payment-method-row-checkmark\"": 1,
@@ -1175,15 +1178,15 @@
       },
       "deprecated": {
         "totalInstances": 203,
-        "filesCount": 141,
+        "filesCount": 140,
         "props": {
           "name": {
             "count": 203,
             "values": {
               "{IconName.Danger}": 18,
               "{IconName.ArrowRight}": 13,
+              "{IconName.Info}": 12,
               "{IconName.ArrowDown}": 11,
-              "{IconName.Info}": 11,
               "{IconName.Check}": 10,
               "{IconName.Close}": 10,
               "{IconName.Export}": 9,
@@ -1227,7 +1230,6 @@
               "{IconName.Loading}": 1,
               "{icon.name}": 1,
               "{IconName.MoreVertical}": 1,
-              "{sortDirection === 'asc' ? IconName.Arrow2Up : IconName.Arrow2Down}": 1,
               "{isLong ? IconName.TrendDown : IconName.TrendUp}": 1,
               "{IconName.Refresh}": 1,
               "{IconName.Share}": 1,
@@ -1255,8 +1257,8 @@
           "size": {
             "count": 187,
             "values": {
-              "{IconSize.Sm}": 49,
-              "{IconSize.Md}": 49,
+              "{IconSize.Sm}": 50,
+              "{IconSize.Md}": 48,
               "{IconSize.Lg}": 33,
               "{IconSize.Xl}": 32,
               "{IconSize.Xs}": 15,
@@ -1272,11 +1274,11 @@
           "color": {
             "count": 160,
             "values": {
-              "{IconColor.Alternative}": 30,
+              "{IconColor.Alternative}": 31,
               "{IconColor.Primary}": 13,
               "{IconColor.Default}": 12,
               "{IconColor.Error}": 11,
-              "{IconColor.Muted}": 11,
+              "{IconColor.Muted}": 10,
               "{IconColor.Success}": 7,
               "{colors.primary.default}": 7,
               "{colors.icon.alternative}": 6,
@@ -1409,16 +1411,16 @@
       },
       "overall": {
         "totalInstances": 513,
-        "filesCount": 368,
+        "filesCount": 367,
         "props": {
           "name": {
             "count": 512,
             "values": {
-              "{IconName.ArrowRight}": 63,
-              "{IconName.Info}": 45,
+              "{IconName.ArrowRight}": 61,
+              "{IconName.Info}": 46,
               "{IconName.Danger}": 31,
               "{IconName.Check}": 27,
-              "{IconName.ArrowDown}": 26,
+              "{IconName.ArrowDown}": 25,
               "{IconName.Warning}": 15,
               "{IconName.Export}": 15,
               "{iconName}": 14,
@@ -1427,15 +1429,15 @@
               "{IconName.ArrowLeft}": 12,
               "{IconName.Copy}": 12,
               "{IconName.Clock}": 11,
-              "{IconName.CheckBold}": 10,
+              "{IconName.CheckBold}": 11,
+              "{IconName.Add}": 8,
               "{IconName.Edit}": 7,
-              "{IconName.Add}": 7,
               "{IconName.Search}": 7,
               "{icon}": 6,
               "{IconName.Error}": 6,
               "{IconName.SecurityTick}": 5,
+              "{IconName.Notification}": 5,
               "{IconName.SwapVertical}": 5,
-              "{IconName.Notification}": 4,
               "{IconName.Arrow2Down}": 4,
               "{IconName.CircleX}": 4,
               "{IconName.X}": 4,
@@ -1542,7 +1544,6 @@
               "{correctAnswer ? IconName.Confirmation : IconName.CircleX}": 1,
               "{IconName.SnapsMobile}": 1,
               "{IconName.Key}": 1,
-              "{IconName.PageInfo}": 1,
               "{getIcon}": 1,
               "{IconName.Explore}": 1,
               "{LegacyIconName.ArrowRight}": 1,
@@ -1555,14 +1556,14 @@
             }
           },
           "size": {
-            "count": 489,
+            "count": 490,
             "values": {
               "{IconSize.Sm}": 157,
-              "{IconSize.Md}": 138,
-              "{IconSize.Lg}": 86,
+              "{IconSize.Md}": 137,
+              "{IconSize.Lg}": 88,
               "{IconSize.Xl}": 68,
-              "{IconSize.Xs}": 27,
-              "{iconSize}": 4,
+              "{IconSize.Xs}": 26,
+              "{iconSize}": 5,
               "{size}": 2,
               "{ARROW_ICON_SIZE}": 1,
               "{description.icon.size}": 1,
@@ -1576,9 +1577,9 @@
           "color": {
             "count": 401,
             "values": {
-              "{IconColor.IconAlternative}": 103,
+              "{IconColor.IconAlternative}": 101,
               "{IconColor.IconDefault}": 42,
-              "{IconColor.Alternative}": 30,
+              "{IconColor.Alternative}": 31,
               "{IconColor.ErrorDefault}": 17,
               "{IconColor.SuccessDefault}": 17,
               "{IconColor.Primary}": 13,
@@ -1586,7 +1587,7 @@
               "{IconColor.IconMuted}": 12,
               "{IconColor.Error}": 11,
               "{iconColor}": 11,
-              "{IconColor.Muted}": 11,
+              "{IconColor.Muted}": 10,
               "{IconColor.PrimaryDefault}": 9,
               "{IconColor.WarningDefault}": 8,
               "{IconColor.Success}": 7,
@@ -1604,6 +1605,7 @@
               "{theme.colors.success.default}": 2,
               "{theme.colors.error.default}": 2,
               "{icon.color}": 2,
+              "{IconColor.PrimaryInverse}": 2,
               "{colors.text.alternative}": 2,
               "{theme.colors.icon.alternative}": 2,
               "{colors.warning.default}": 2,
@@ -1625,7 +1627,6 @@
               "{warningStyles.iconColor}": 1,
               "{item.arrowColor ?? IconColor.IconAlternative}": 1,
               "{isTestnet ? IconColor.WarningDefault : IconColor.IconAlternative}": 1,
-              "{IconColor.PrimaryInverse}": 1,
               "{toastConfig.iconColor}": 1,
               "{outcomeToken.price === 1 ? TextColor.SuccessDefault : TextColor.TextMuted}": 1,
               "{isFirstSelected ? IconColor.IconMuted : IconColor.IconDefault}": 1,
@@ -1639,6 +1640,7 @@
               "{colors.success.default}": 1,
               "{correctAnswer ? IconColor.SuccessDefault : IconColor.ErrorDefault}": 1,
               "{tw.style('text-primary-inverse').color as string}": 1,
+              "{isMuted ? IconColor.IconMuted : IconColor.IconDefault}": 1,
               "{getIconColor}": 1,
               "{LegacyIconColor.Alternative}": 1,
               "{withIcon.color}": 1,
@@ -1699,7 +1701,7 @@
             }
           },
           "testID": {
-            "count": 52,
+            "count": 54,
             "values": {
               "{MoneyPotentialEarningsTestIds.INFO_BUTTON}": 2,
               "\"reveal-icon\"": 1,
@@ -1719,6 +1721,7 @@
               "{PerpsOrderViewSelectorsIDs.MARGIN_INFO_ICON}": 1,
               "{PerpsOrderViewSelectorsIDs.LIQUIDATION_PRICE_INFO_ICON}": 1,
               "{PerpsOrderViewSelectorsIDs.FEES_INFO_ICON}": 1,
+              "{testID ? `${testID}-direction-indicator` : undefined}": 1,
               "{PerpsMarketTabsSelectorsIDs.ORDERS_EMPTY_ICON}": 1,
               "{testID ? `${testID}-check-${option.id}` : undefined}": 1,
               "{PerpsStopLossPromptSelectorsIDs.SUCCESS_ICON}": 1,
@@ -1739,6 +1742,7 @@
               "{ImportFromSeedSelectorsIDs.NEW_PASSWORD_VISIBILITY_ID}": 1,
               "{ImportFromSeedSelectorsIDs.CONFIRM_PASSWORD_VISIBILITY_ID}": 1,
               "{NotificationsViewSelectorsIDs.DISABLED_NOTIFICATIONS_ICON}": 1,
+              "{InterestSelectionIndicatorTestIds.CONTAINER}": 1,
               "{ChoosePasswordSelectorsIDs.NEW_PASSWORD_SHOW_ICON_ID}": 1,
               "{ChoosePasswordSelectorsIDs.CONFIRM_PASSWORD_SHOW_ICON_ID}": 1,
               "{`${testID}-arrow`}": 1,
