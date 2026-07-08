@@ -1,9 +1,9 @@
 {
   "component": "AvatarBase",
-  "generatedAt": "2026-07-01T07:05:43.621Z",
+  "generatedAt": "2026-07-08T07:24:05.477Z",
   "projects": {
     "extension": {
-      "filesScanned": 3387,
+      "filesScanned": 3442,
       "targetComponent": "AvatarBase",
       "mmds": {
         "totalInstances": 1,
@@ -214,7 +214,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 6953,
+      "filesScanned": 7036,
       "targetComponent": "AvatarBase",
       "mmds": {
         "totalInstances": 3,
