@@ -1,29 +1,29 @@
 {
   "component": "Box",
-  "generatedAt": "2026-07-08T07:27:38.327Z",
+  "generatedAt": "2026-07-13T09:28:29.360Z",
   "projects": {
     "extension": {
-      "filesScanned": 3442,
+      "filesScanned": 3458,
       "targetComponent": "Box",
       "mmds": {
-        "totalInstances": 1909,
-        "filesCount": 506,
+        "totalInstances": 1934,
+        "filesCount": 512,
         "props": {
           "className": {
-            "count": 1086,
+            "count": 1104,
             "values": {
               "\"flex\"": 117,
-              "\"w-full\"": 52,
-              "\"flex-1\"": 25,
-              "\"flex w-full\"": 20,
-              "\"min-w-0 flex-1\"": 19,
+              "\"w-full\"": 54,
+              "\"flex-1\"": 26,
+              "\"min-w-0 flex-1\"": 20,
+              "\"flex w-full\"": 19,
               "\"flex flex-col\"": 15,
               "\"shrink-0\"": 13,
               "\"h-full\"": 11,
               "\"rounded-lg\"": 11,
               "\"overflow-hidden\"": 10,
+              "\"text-center\"": 8,
               "\"flex w-full flex-col\"": 8,
-              "\"text-center\"": 7,
               "\"min-w-0\"": 7,
               "\"flex-1 overflow-y-auto\"": 7,
               "\"bg-muted px-4 py-3\"": 7,
@@ -47,17 +47,19 @@
               "\"flex items-center gap-1\"": 4,
               "{containerClassName}": 4,
               "\"w-full bg-transparent px-4 py-2 hover:bg-hover active:bg-pressed md:px-8\"": 4,
+              "{STEP_ICON_CLASSNAME}": 4,
+              "\"w-full mt-auto\"": 4,
               "\"h-full min-h-0\"": 4,
               "\"inline-flex\"": 3,
               "\"flex size-11 shrink-0 items-center\"": 3,
               "{className}": 3,
               "\"sticky bottom-0 left-0 right-0 bg-default border-t border-muted\"": 3,
               "\"flex rounded-lg\"": 3,
+              "\"rounded-xl\"": 3,
               "\"bg-background-default\"": 3,
               "\"flex min-h-0 flex-1 flex-col overflow-auto\"": 3,
               "\"flex h-12 items-center rounded-xl border border-border-muted bg-background-muted\"": 3,
               "\"p-4 md:px-8\"": 3,
-              "\"w-full mt-auto\"": 3,
               "\"multichain-account-details-page__section\"": 3,
               "\"recovery-phrase__header grid w-full\"": 3,
               "\"min-h-0 shrink-0\"": 3,
@@ -103,11 +105,11 @@
               "\"shrink-0 flex-row bg-background-default\"": 2,
               "\"mx-auto\"": 2,
               "\"mb-4 w-full\"": 2,
+              "\"min-w-0 flex-1 min-h-8\"": 2,
               "\"hardware-wallet-signatures__device-animation\"": 2,
               "\"w-full mt-auto cta-footer\"": 2,
               "\"w-full text-left\"": 2,
               "\"flex h-full w-full\"": 2,
-              "\"rounded-xl\"": 2,
               "\"flex w-full flex-col gap-1\"": 2,
               "\"min-h-0 flex-1\"": 2,
               "\"flex w-full items-center gap-3 rounded-xl border border-border-muted bg-background-section p-3\"": 2,
@@ -120,9 +122,9 @@
               "\"p-2 cursor-pointer\"": 2,
               "\"flex-1 rounded-xl bg-muted px-4 py-3\"": 2,
               "\"w-full min-h-0 flex-1\"": 2,
-              "\"rounded-md\"": 2,
               "\"overflow-y-auto\"": 2,
               "\"pt-3 pb-3\"": 2,
+              "\"rounded-md\"": 2,
               "{twMerge( 'payment-method-item flex items-center justify-between w-full gap-4 ...}": 2,
               "\"payment-method-item__selected-indicator rounded-full\"": 2,
               "\"flex items-center justify-between w-full\"": 2,
@@ -203,6 +205,7 @@
               "\"flex-1 min-w-0 h-10 bg-transparent border border-border-muted rounded-lg p-1 gap-0\"": 1,
               "\"px-3 justify-between\"": 1,
               "\"min-w-0 w-full\"": 1,
+              "\"w-full max-w-full\"": 1,
               "\"w-full h-full overflow-x-hidden\"": 1,
               "\"flex-1 overflow-y-auto overflow-x-hidden pb-4\"": 1,
               "\"absolute right-0 top-full z-10 mt-1 min-w-[120px] overflow-hidden rounded-lg border border-border-muted bg-background-default shadow-lg\"": 1,
@@ -449,6 +452,11 @@
               "\"flex error-page__header\"": 1,
               "\"flex rounded-lg error-page__error-message-wrapper\"": 1,
               "\"flex shrink-0\"": 1,
+              "\"hardware-wallet-signatures__footer\"": 1,
+              "\"hardware-wallet-signatures__qr-code\"": 1,
+              "\"qr-hardware-signing-page flex-1 w-full min-h-full\"": 1,
+              "\"flex-1 w-full\"": 1,
+              "\"qr-hardware-signing-page__viewport w-full min-h-[293px] rounded-lg overflow-hidden\"": 1,
               "\"import-srp-restore-vault h-full rounded-lg border border-solid\"": 1,
               "\"mt-4 relative\"": 1,
               "\"w-full pt-10\"": 1,
@@ -525,6 +533,7 @@
               "\"flex rounded-full\"": 1,
               "\"absolute left-0 top-full z-10 mt-1 min-w-[120px] overflow-hidden rounded-lg border border-border-muted bg-background-default shadow-lg\"": 1,
               "\"cursor-pointer bg-default px-4 py-3 hover:bg-hover active:bg-pressed\"": 1,
+              "\"min-w-0 max-w-full\"": 1,
               "\"w-full px-4 pb-3\"": 1,
               "\"w-full px-4 pb-3 pt-5\"": 1,
               "\"flex h-full flex-col bg-background-default\"": 1,
@@ -547,9 +556,6 @@
               "\"w-9 shrink-0\"": 1,
               "{twMerge( 'flex-1 overflow-y-auto overflow-x-hidden', isOrderPending && 'point...}": 1,
               "\"flex justify-center items-center flex-1\"": 1,
-              "\"add-device-tab h-full\"": 1,
-              "\"flex-1 min-h-0\"": 1,
-              "\"w-10 h-10\"": 1,
               "\"h-full min-h-0 overflow-y-auto\"": 1,
               "{ipfsToggle ? 'mb-4' : undefined}": 1,
               "\"rounded-none hover:bg-background-default-hover\"": 1,
@@ -562,6 +568,8 @@
               "\"w-full h-full overflow-y-auto\"": 1,
               "\"w-full gap-2 px-4 py-3\"": 1,
               "\"w-full px-4 py-2\"": 1,
+              "\"flex-1 min-h-0\"": 1,
+              "\"w-10 h-10\"": 1,
               "\"w-full h-full overflow-y-auto py-4\"": 1,
               "\"w-full pt-2\"": 1,
               "\"shield-plan-page__plans grid gap-2 mb-4 pt-2\"": 1,
@@ -598,43 +606,43 @@
             }
           },
           "flexDirection": {
-            "count": 921,
+            "count": 945,
             "values": {
-              "{BoxFlexDirection.Column}": 478,
-              "{BoxFlexDirection.Row}": 443
+              "{BoxFlexDirection.Column}": 496,
+              "{BoxFlexDirection.Row}": 449
             }
           },
           "alignItems": {
-            "count": 615,
+            "count": 622,
             "values": {
-              "{BoxAlignItems.Center}": 531,
-              "{BoxAlignItems.Start}": 37,
+              "{BoxAlignItems.Center}": 536,
+              "{BoxAlignItems.Start}": 38,
               "{BoxAlignItems.End}": 22,
               "{BoxAlignItems.Stretch}": 17,
-              "{BoxAlignItems.Baseline}": 7,
+              "{BoxAlignItems.Baseline}": 8,
               "{pathname === ONBOARDING_WELCOME_ROUTE ? BoxAlignItems.Start : BoxAlignItems.C...}": 1
             }
           },
           "gap": {
-            "count": 550,
+            "count": 570,
             "values": {
               "0": 1,
-              "1": 120,
-              "2": 184,
-              "3": 55,
-              "4": 158,
+              "1": 128,
+              "2": 188,
+              "3": 59,
+              "4": 160,
               "5": 2,
-              "6": 23,
-              "8": 5,
+              "6": 24,
+              "8": 6,
               "{loading ? 2 : 0}": 1,
               "{showSkeletonLoader ? 2 : 0}": 1
             }
           },
           "justifyContent": {
-            "count": 364,
+            "count": 363,
             "values": {
               "{BoxJustifyContent.Between}": 182,
-              "{BoxJustifyContent.Center}": 134,
+              "{BoxJustifyContent.Center}": 133,
               "{BoxJustifyContent.Start}": 27,
               "{BoxJustifyContent.End}": 15,
               "{BoxJustifyContent.Evenly}": 4,
@@ -643,10 +651,10 @@
             }
           },
           "data-testid": {
-            "count": 289,
+            "count": 296,
             "values": {
+              "{testId}": 9,
               "{dataTestId}": 8,
-              "{testId}": 7,
               "\"perps-tutorial-step-image\"": 6,
               "\"transaction-shield-page\"": 3,
               "{`${classPrefix}-overview__primary-currency`}": 2,
@@ -787,6 +795,8 @@
               "\"avatar-group\"": 1,
               "\"multichain-srp-backup\"": 1,
               "\"address-copy-button-text\"": 1,
+              "\"asset-activate-card\"": 1,
+              "{`asset-activation-error-container`}": 1,
               "\"asset-network\"": 1,
               "\"asset-chart-empty-state\"": 1,
               "\"asset-price-chart\"": 1,
@@ -795,6 +805,7 @@
               "\"musd-stacked-avatars\"": 1,
               "\"musd-convert-benefit-tags\"": 1,
               "\"musd-position-section\"": 1,
+              "\"spendable-balance-section\"": 1,
               "\"basic-functionality-off-description\"": 1,
               "\"basic-functionality-off-toggle-row\"": 1,
               "\"batch-sell-review-page\"": 1,
@@ -825,6 +836,8 @@
               "\"create-password\"": 1,
               "\"generic-hardware-wallet-animation-loading\"": 1,
               "\"generic-hardware-wallet-animation\"": 1,
+              "\"qr-hardware-signing-page\"": 1,
+              "\"qr-hardware-signing-page__viewport\"": 1,
               "\"reveal-seed-password-footer\"": 1,
               "\"reveal-seed-quiz-introduction\"": 1,
               "\"reveal-seed-quiz-question\"": 1,
@@ -907,12 +920,12 @@
             }
           },
           "paddingBottom": {
-            "count": 145,
+            "count": 146,
             "values": {
               "0": 3,
               "1": 13,
               "2": 42,
-              "3": 16,
+              "3": 17,
               "4": 48,
               "5": 1,
               "6": 12,
@@ -925,11 +938,11 @@
             }
           },
           "style": {
-            "count": 140,
+            "count": 145,
             "values": {
+              "{{ flex: 1 }}": 9,
               "{{ width: '100%' }}": 7,
               "{gatorPermissionDetailRowStyle}": 7,
-              "{{ flex: 1 }}": 5,
               "{{ flexShrink: 0 }}": 5,
               "{{ width: STORY_FRAME_WIDTH }}": 4,
               "{{ minWidth: 0, flex: 1 }}": 3,
@@ -1014,6 +1027,7 @@
               "{{ color: 'var(--color-primary-default)', backgroundColor: 'var(--color-primar...}": 1,
               "{{ borderTop: '1px solid var(--color-border-muted)', }}": 1,
               "{{ cursor: 'not-allowed' }}": 1,
+              "{FOOTER_STYLE}": 1,
               "{{ width: QR_CODE_CONTAINER_SIZE, height: QR_CODE_CONTAINER_SIZE, padding: QR_...}": 1,
               "{{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, width: '10...}": 1,
               "{{ flex: 1, minHeight: 0, overflowY: 'auto' }}": 1,
@@ -1024,21 +1038,35 @@
               "{{ opacity: isAnimationComplete ? 1 : 0, transform: isAnimationComplete ? 'tra...}": 1,
               "{{ boxShadow: targetSubjectMetadata.subjectType === SubjectType.Snap ? 'var(--...}": 1,
               "{{ width: 32 }}": 1,
-              "{{ opacity: shouldDimQr ? 0.3 : 1 }}": 1,
+              "{{ opacity: shouldDimQr ? 0.3 : 1, filter: shouldDimQr ? 'blur(4px)' : 'none', }}": 1,
               "{{ height: '1lh' }}": 1
             }
           },
+          "padding": {
+            "count": 137,
+            "values": {
+              "0": 2,
+              "1": 7,
+              "2": 18,
+              "3": 18,
+              "4": 84,
+              "6": 5,
+              "10": 1,
+              "{customDetails ? 0 : 2}": 1,
+              "{isSettingsPage ? 0 : 4}": 1
+            }
+          },
           "paddingTop": {
-            "count": 134,
+            "count": 136,
             "values": {
               "0": 2,
               "1": 9,
               "2": 27,
-              "3": 24,
+              "3": 25,
               "4": 49,
               "5": 1,
               "6": 3,
-              "8": 8,
+              "8": 9,
               "10": 1,
               "12": 3,
               "{sectionIndex > 0 ? 4 : 2}": 2,
@@ -1049,34 +1077,20 @@
               "{hasDuplicates ? 4 : 0}": 1
             }
           },
-          "padding": {
-            "count": 133,
-            "values": {
-              "0": 2,
-              "1": 7,
-              "2": 18,
-              "3": 18,
-              "4": 80,
-              "6": 5,
-              "10": 1,
-              "{customDetails ? 0 : 2}": 1,
-              "{isSettingsPage ? 0 : 4}": 1
-            }
-          },
           "backgroundColor": {
-            "count": 119,
+            "count": 125,
             "values": {
               "{BoxBackgroundColor.BackgroundDefault}": 39,
-              "{BoxBackgroundColor.BackgroundMuted}": 20,
+              "{BoxBackgroundColor.BackgroundMuted}": 23,
               "{BoxBackgroundColor.BackgroundSection}": 10,
               "{BoxBackgroundColor.BackgroundAlternative}": 7,
               "{BoxBackgroundColor.PrimaryDefault}": 6,
-              "{BoxBackgroundColor.ErrorMuted}": 4,
-              "{BoxBackgroundColor.PrimaryMuted}": 4,
+              "{BoxBackgroundColor.ErrorMuted}": 5,
+              "{BoxBackgroundColor.PrimaryMuted}": 5,
+              "{BoxBackgroundColor.WarningMuted}": 3,
               "{addressCopied ? BoxBackgroundColor.SuccessMuted : BoxBackgroundColor.Backgrou...}": 3,
               "{BoxBackgroundColor.InfoMuted}": 3,
               "{BoxBackgroundColor.Transparent}": 2,
-              "{BoxBackgroundColor.WarningMuted}": 2,
               "{isSelected ? BoxBackgroundColor.PrimaryMuted : undefined}": 2,
               "{BoxBackgroundColor.SuccessMuted}": 2,
               "{customDetails || customAlertBg ? undefined : severityStyle.background}": 1,
@@ -1097,34 +1111,34 @@
             }
           },
           "paddingLeft": {
-            "count": 111,
+            "count": 113,
             "values": {
               "1": 1,
               "2": 9,
               "3": 2,
-              "4": 91,
+              "4": 93,
               "5": 3,
               "6": 5
             }
           },
           "paddingRight": {
-            "count": 105,
+            "count": 107,
             "values": {
               "2": 9,
               "3": 2,
-              "4": 89,
+              "4": 91,
               "5": 3,
               "6": 2
             }
           },
           "marginBottom": {
-            "count": 96,
+            "count": 97,
             "values": {
               "0": 1,
               "1": 5,
               "2": 20,
               "3": 15,
-              "4": 40,
+              "4": 41,
               "5": 6,
               "6": 4,
               "8": 1,
@@ -1135,13 +1149,13 @@
             }
           },
           "marginTop": {
-            "count": 82,
+            "count": 85,
             "values": {
               "0": 1,
               "1": 5,
               "2": 24,
-              "3": 4,
-              "4": 28,
+              "3": 6,
+              "4": 29,
               "5": 6,
               "6": 10,
               "12": 2,
@@ -1150,14 +1164,13 @@
             }
           },
           "onClick": {
-            "count": 74,
+            "count": 73,
             "values": {
               "{onClick}": 10,
               "{() => handleSelect(value)}": 5,
               "{handleClick}": 4,
               "{handleConvert}": 2,
               "{(e: React.MouseEvent) => e.stopPropagation()}": 2,
-              "{(event) => event.stopPropagation()}": 2,
               "{handleBackClick}": 2,
               "{() => handleBackClick()}": 2,
               "{(e?: React.MouseEvent) => { e?.preventDefault(); handleClick(); }}": 1,
@@ -1173,6 +1186,7 @@
               "{handleCreateMultichainAccountClick}": 1,
               "{isDisabled ? undefined : handleToggleSelection}": 1,
               "{handleDefaultAddressClick}": 1,
+              "{(event) => event.stopPropagation()}": 1,
               "{togglePopover}": 1,
               "{item.onClick}": 1,
               "{displayDefaultAddress ? handleDefaultAddressClick : undefined}": 1,
@@ -1269,8 +1283,7 @@
               "0": 1,
               "1": 1,
               "2": 8,
-              "3": 1,
-              "4": 27,
+              "4": 28,
               "{rootPaddingHorizontal}": 1
             }
           },
@@ -1309,7 +1322,7 @@
             }
           },
           "ref": {
-            "count": 17,
+            "count": 18,
             "values": {
               "{containerRef}": 5,
               "{ref}": 2,
@@ -1318,6 +1331,7 @@
               "{itemRef}": 1,
               "{popoverRef}": 1,
               "{setReferenceElement}": 1,
+              "{tabListRef}": 1,
               "{setBoxRef}": 1,
               "{dropdownRef}": 1,
               "{marginMenuRef}": 1,
@@ -1333,12 +1347,11 @@
             }
           },
           "paddingVertical": {
-            "count": 15,
+            "count": 14,
             "values": {
               "1": 2,
               "2": 2,
-              "3": 10,
-              "4": 1
+              "3": 10
             }
           },
           "marginRight": {
@@ -1369,18 +1382,11 @@
               "{isInteractive ? 0 : undefined}": 1
             }
           },
-          "marginHorizontal": {
+          "role": {
             "count": 11,
             "values": {
-              "2": 1,
-              "4": 7,
-              "5": 3
-            }
-          },
-          "role": {
-            "count": 10,
-            "values": {
               "\"button\"": 3,
+              "\"tooltip\"": 1,
               "\"progressbar\"": 1,
               "{isDisabled ? undefined : 'button'}": 1,
               "\"tablist\"": 1,
@@ -1388,6 +1394,14 @@
               "{isInteractive ? 'button' : undefined}": 1,
               "\"separator\"": 1,
               "\"listbox\"": 1
+            }
+          },
+          "marginHorizontal": {
+            "count": 11,
+            "values": {
+              "2": 1,
+              "4": 7,
+              "5": 3
             }
           },
           "borderWidth": {
@@ -1594,13 +1608,13 @@
         }
       },
       "deprecated": {
-        "totalInstances": 714,
-        "filesCount": 244,
+        "totalInstances": 677,
+        "filesCount": 238,
         "props": {
           "display": {
-            "count": 461,
+            "count": 447,
             "values": {
-              "{Display.Flex}": 426,
+              "{Display.Flex}": 412,
               "{Display.Block}": 15,
               "{Display.InlineFlex}": 10,
               "{Display.Inline}": 5,
@@ -1611,35 +1625,33 @@
             }
           },
           "flexDirection": {
-            "count": 249,
+            "count": 243,
             "values": {
-              "{FlexDirection.Column}": 151,
-              "{FlexDirection.Row}": 95,
+              "{FlexDirection.Column}": 146,
+              "{FlexDirection.Row}": 94,
               "{isCollapsible ? FlexDirection.Column : FlexDirection.Row}": 1,
               "{showAvatarAccount ? FlexDirection.Row : FlexDirection.Column}": 1,
               "{FlexDirection.RowReverse}": 1
             }
           },
           "alignItems": {
-            "count": 238,
+            "count": 230,
             "values": {
-              "{AlignItems.center}": 202,
-              "{AlignItems.flexStart}": 17,
-              "{AlignItems.flexEnd}": 10,
+              "{AlignItems.center}": 199,
+              "{AlignItems.flexStart}": 15,
+              "{AlignItems.flexEnd}": 9,
               "{AlignItems.baseline}": 4,
               "{isSmall ? AlignItems.center : AlignItems.flexStart}": 2,
-              "\"center\"": 2,
               "{isLoading && AlignItems.center}": 1
             }
           },
           "className": {
-            "count": 211,
+            "count": 201,
             "values": {
               "\"settings-page__content-row\"": 6,
-              "\"dropdown-editor__item-dropdown\"": 3,
               "\"snap-home-menu__item\"": 3,
               "\"simulation-details-layout\"": 3,
-              "\"token-list__empty-list\"": 2,
+              "\"dropdown-editor__item-dropdown\"": 2,
               "{classnames('snap-ui-renderer__file-input', { 'snap-ui-renderer__field': label...}": 2,
               "\"min-w-0\"": 2,
               "{`carousel-container ${className}`}": 2,
@@ -1663,9 +1675,6 @@
               "\"expandable\"": 1,
               "\"confirm-info-row\"": 1,
               "{onClick && 'hoverable'}": 1,
-              "\"token-list\"": 1,
-              "\"token-list__tokens-container\"": 1,
-              "{classnames('token-list__token_component', { 'token-list__token_component--dis...}": 1,
               "{className}": 1,
               "{classnames('copyable', { sensitive, clicked: isClicked, visible: isVisible, })}": 1,
               "\"copyable__icon\"": 1,
@@ -1726,10 +1735,6 @@
               "\"dropdown-editor__item-selected-pill\"": 1,
               "\"dropdown-editor__item\"": 1,
               "\"funding-method-item\"": 1,
-              "\"import-tokens-modal__confirmation-list\"": 1,
-              "\"import-tokens-modal__confirm-token-list-item-wrapper\"": 1,
-              "\"import-tokens-modal__body\"": 1,
-              "\"import-tokens-modal__custom-token-form__container\"": 1,
               "{classnames('multichain-network-list-item', { 'multichain-network-list-item--s...}": 1,
               "\"multichain-network-list-item__rpc-endpoint\"": 1,
               "\"add-block-explorer-modal\"": 1,
@@ -1824,23 +1829,22 @@
             }
           },
           "justifyContent": {
-            "count": 185,
+            "count": 180,
             "values": {
-              "{JustifyContent.spaceBetween}": 83,
+              "{JustifyContent.spaceBetween}": 80,
               "{JustifyContent.center}": 79,
               "{JustifyContent.flexEnd}": 13,
               "{JustifyContent.flexStart}": 7,
-              "\"center\"": 2,
               "{isLoading && JustifyContent.center}": 1
             }
           },
           "gap": {
-            "count": 123,
+            "count": 121,
             "values": {
               "0": 1,
               "1": 20,
               "2": 47,
-              "3": 15,
+              "3": 13,
               "4": 38,
               "6": 1,
               "{showAvatarAccount ? 2 : 0}": 1
@@ -1934,23 +1938,22 @@
             }
           },
           "width": {
-            "count": 113,
+            "count": 110,
             "values": {
-              "{BlockSize.Full}": 109,
+              "{BlockSize.Full}": 106,
               "{BlockSize.FiveTwelfths}": 2,
               "{BlockSize.TenTwelfths}": 1,
               "\"full\"": 1
             }
           },
           "data-testid": {
-            "count": 89,
+            "count": 86,
             "values": {
               "{dataTestId}": 8,
               "\"notifications-list-loading\"": 3,
               "\"simulation-details-layout\"": 3,
               "\"app-header-logo\"": 2,
               "\"carousel-container\"": 2,
-              "{`select-network-item-${network.chainId}`}": 2,
               "\"nft-image\"": 2,
               "\"no-connections\"": 2,
               "\"pay-token-amount\"": 2,
@@ -1968,8 +1971,7 @@
               "\"multichain-send-page__recipient__item\"": 1,
               "\"multichain-send-page__recipient__item__title\"": 1,
               "\"multichain-send-page__recipient__item__subtitle\"": 1,
-              "\"import-tokens-loading\"": 1,
-              "\"import-tokens-no-support\"": 1,
+              "{`select-network-item-${network.chainId}`}": 1,
               "{`network-list-item-${chainId}`}": 1,
               "{name}": 1,
               "{`network-rpc-name-button-${chainId}`}": 1,
@@ -2020,7 +2022,7 @@
             }
           },
           "backgroundColor": {
-            "count": 75,
+            "count": 74,
             "values": {
               "{BackgroundColor.backgroundDefault}": 26,
               "{BackgroundColor.backgroundAlternative}": 10,
@@ -2033,7 +2035,6 @@
               "{BackgroundColor.errorDefault}": 2,
               "{isSelected ? BackgroundColor.primaryMuted : undefined}": 2,
               "{BACKGROUND_COLORS[variant]}": 1,
-              "{selectedTokens[address] ? BackgroundColor.primaryMuted : BackgroundColor.tran...}": 1,
               "{isVisible && sensitive ? BackgroundColor.errorMuted : BackgroundColor.primary...}": 1,
               "{isError ? BackgroundColor.errorMuted : BackgroundColor.backgroundDefault}": 1,
               "{userAgree ? BackgroundColor.infoMuted : BackgroundColor.backgroundAlternative}": 1,
@@ -2046,49 +2047,17 @@
               "{BackgroundColor.backgroundMuted}": 1
             }
           },
-          "paddingLeft": {
-            "count": 72,
-            "values": {
-              "0": 2,
-              "1": 2,
-              "2": 11,
-              "4": 52,
-              "5": 2,
-              "6": 1,
-              "8": 1,
-              "{isSmall ? 0 : 2}": 1
-            }
-          },
-          "paddingTop": {
-            "count": 72,
-            "values": {
-              "0": 5,
-              "1": 5,
-              "2": 17,
-              "3": 9,
-              "4": 22,
-              "5": 2,
-              "6": 3,
-              "8": 2,
-              "12": 2,
-              "{noPadding ? 0 : 1}": 1,
-              "{rpcEndpoint ? 2 : 4}": 1,
-              "{padding}": 1,
-              "{buttonContainerPaddingTop}": 1,
-              "{paddingTopValue}": 1
-            }
-          },
           "paddingBottom": {
-            "count": 71,
+            "count": 65,
             "values": {
               "0": 2,
               "1": 2,
-              "2": 24,
-              "3": 9,
-              "4": 19,
+              "2": 23,
+              "3": 7,
+              "4": 18,
               "5": 1,
               "6": 1,
-              "8": 5,
+              "8": 3,
               "12": 3,
               "{noPadding ? 0 : 1}": 1,
               "{rpcEndpoint ? 2 : 4}": 1,
@@ -2097,14 +2066,44 @@
               "{isExpanded ? 0 : 2}": 1
             }
           },
+          "paddingLeft": {
+            "count": 62,
+            "values": {
+              "0": 2,
+              "1": 2,
+              "2": 11,
+              "4": 42,
+              "5": 2,
+              "6": 1,
+              "8": 1,
+              "{isSmall ? 0 : 2}": 1
+            }
+          },
+          "paddingTop": {
+            "count": 61,
+            "values": {
+              "0": 5,
+              "1": 5,
+              "2": 16,
+              "3": 7,
+              "4": 20,
+              "5": 1,
+              "12": 2,
+              "{noPadding ? 0 : 1}": 1,
+              "{rpcEndpoint ? 2 : 4}": 1,
+              "{padding}": 1,
+              "{buttonContainerPaddingTop}": 1,
+              "{paddingTopValue}": 1
+            }
+          },
           "paddingRight": {
-            "count": 70,
+            "count": 60,
             "values": {
               "0": 2,
               "1": 1,
-              "2": 9,
+              "2": 8,
               "3": 1,
-              "4": 52,
+              "4": 43,
               "5": 2,
               "6": 1,
               "{isSmall ? 0 : 2}": 1,
@@ -2112,13 +2111,13 @@
             }
           },
           "padding": {
-            "count": 57,
+            "count": 56,
             "values": {
               "0": 4,
               "1": 4,
               "2": 5,
               "3": 4,
-              "4": 36,
+              "4": 35,
               "{!disablePadding || isLoading ? 4 : 0}": 1,
               "{[2, 4]}": 1,
               "{hasHeader || hasHeaderMaybe ? 0 : 4}": 1,
@@ -2150,9 +2149,9 @@
             }
           },
           "borderRadius": {
-            "count": 53,
+            "count": 52,
             "values": {
-              "{BorderRadius.LG}": 20,
+              "{BorderRadius.LG}": 19,
               "{BorderRadius.pill}": 13,
               "{BorderRadius.MD}": 8,
               "{BorderRadius.XL}": 5,
@@ -2161,13 +2160,11 @@
             }
           },
           "onClick": {
-            "count": 36,
+            "count": 32,
             "values": {
-              "{onClick}": 12,
+              "{onClick}": 11,
               "{handleClick}": 4,
-              "{setDropdownOpen}": 2,
               "{isSnapUsingThis ? () => null : handleDisplayNameClick}": 1,
-              "{openListNetwork}": 1,
               "{onSelectNetwork}": 1,
               "{sensitive && !isVisible ? handleVisibilityClick : handleCopyClick}": 1,
               "{handleMainMenuToggle}": 1,
@@ -2200,30 +2197,6 @@
               "{marginBottom}": 1
             }
           },
-          "key": {
-            "count": 25,
-            "values": {
-              "{network.chainId}": 5,
-              "{address}": 2,
-              "{id}": 2,
-              "{uniqueKey}": 1,
-              "\"foo\"": 1,
-              "\"bar\"": 1,
-              "\"account1\"": 1,
-              "\"account2\"": 1,
-              "{`${token.symbol}-${tokenAddress ?? ''}-${token.chainId}`}": 1,
-              "{token.address}": 1,
-              "{section.key}": 1,
-              "{i}": 1,
-              "{itemKey(item)}": 1,
-              "\"learn-more-link\"": 1,
-              "{rpcEndpoint.url}": 1,
-              "{alert.key}": 1,
-              "{`${split.str}-${split.confusable.point}`}": 1,
-              "{`${split.str}-${split.confusable.similarTo}`}": 1,
-              "\"extra-description\"": 1
-            }
-          },
           "marginLeft": {
             "count": 24,
             "values": {
@@ -2237,38 +2210,44 @@
             }
           },
           "flexWrap": {
-            "count": 24,
+            "count": 23,
             "values": {
               "{FlexWrap.Wrap}": 18,
-              "{FlexWrap.NoWrap}": 6
+              "{FlexWrap.NoWrap}": 5
             }
           },
           "borderColor": {
-            "count": 24,
+            "count": 23,
             "values": {
-              "{BorderColor.borderDefault}": 10,
               "{BorderColor.borderMuted}": 9,
+              "{BorderColor.borderDefault}": 9,
               "{isTransactionsRedesign ? BorderColor.transparent : BorderColor.borderDefault}": 2,
               "{badgeBorderColor}": 1,
               "{borderColor}": 1,
               "{BorderColor.transparent}": 1
             }
           },
-          "ref": {
-            "count": 19,
+          "key": {
+            "count": 22,
             "values": {
-              "{ref}": 7,
-              "{setBoxRef}": 2,
-              "{dropdownRef}": 1,
-              "{contentRef}": 1,
-              "{titleRef}": 1,
-              "{dropdown}": 1,
-              "{provided.innerRef}": 1,
-              "{providedDrag.innerRef}": 1,
-              "{scrollableRef}": 1,
-              "{headerRef}": 1,
-              "{!isLoading && !hasError ? ref : undefined}": 1,
-              "{settingsRef}": 1
+              "{network.chainId}": 4,
+              "{id}": 2,
+              "\"foo\"": 1,
+              "\"bar\"": 1,
+              "\"account1\"": 1,
+              "\"account2\"": 1,
+              "{`${token.symbol}-${tokenAddress ?? ''}-${token.chainId}`}": 1,
+              "{token.address}": 1,
+              "{section.key}": 1,
+              "{i}": 1,
+              "{address}": 1,
+              "{itemKey(item)}": 1,
+              "\"learn-more-link\"": 1,
+              "{rpcEndpoint.url}": 1,
+              "{alert.key}": 1,
+              "{`${split.str}-${split.confusable.point}`}": 1,
+              "{`${split.str}-${split.confusable.similarTo}`}": 1,
+              "\"extra-description\"": 1
             }
           },
           "[spread]": {
@@ -2286,6 +2265,22 @@
               "{onClick && { as: 'a', href: '#', onClick: (e: React.MouseEvent<HTMLAnchorElem...}": 1,
               "{contentBoxProps}": 1,
               "{wrapperBoxProps}": 1
+            }
+          },
+          "ref": {
+            "count": 18,
+            "values": {
+              "{ref}": 7,
+              "{setBoxRef}": 2,
+              "{contentRef}": 1,
+              "{titleRef}": 1,
+              "{dropdown}": 1,
+              "{provided.innerRef}": 1,
+              "{providedDrag.innerRef}": 1,
+              "{scrollableRef}": 1,
+              "{headerRef}": 1,
+              "{!isLoading && !hasError ? ref : undefined}": 1,
+              "{settingsRef}": 1
             }
           },
           "marginRight": {
@@ -2318,18 +2313,18 @@
               "{TextAlign.End}": 1
             }
           },
-          "borderWidth": {
-            "count": 12,
-            "values": {
-              "1": 11,
-              "2": 1
-            }
-          },
           "borderStyle": {
             "count": 12,
             "values": {
               "{BorderStyle.none}": 7,
               "{BorderStyle.solid}": 5
+            }
+          },
+          "borderWidth": {
+            "count": 11,
+            "values": {
+              "1": 10,
+              "2": 1
             }
           },
           "paddingInline": {
@@ -2509,25 +2504,25 @@
         }
       },
       "overall": {
-        "totalInstances": 2623,
-        "filesCount": 750,
+        "totalInstances": 2611,
+        "filesCount": 749,
         "props": {
           "className": {
-            "count": 1297,
+            "count": 1305,
             "values": {
               "\"flex\"": 117,
-              "\"w-full\"": 53,
-              "\"flex-1\"": 25,
-              "\"flex w-full\"": 20,
-              "\"min-w-0 flex-1\"": 19,
+              "\"w-full\"": 55,
+              "\"flex-1\"": 26,
+              "\"min-w-0 flex-1\"": 20,
+              "\"flex w-full\"": 19,
               "\"flex flex-col\"": 16,
               "\"shrink-0\"": 13,
               "\"h-full\"": 11,
               "\"rounded-lg\"": 11,
               "\"overflow-hidden\"": 10,
               "\"min-w-0\"": 9,
+              "\"text-center\"": 8,
               "\"flex w-full flex-col\"": 8,
-              "\"text-center\"": 7,
               "\"flex-1 overflow-y-auto\"": 7,
               "\"bg-muted px-4 py-3\"": 7,
               "\"main-container asset__container\"": 6,
@@ -2552,20 +2547,21 @@
               "\"flex items-center gap-1\"": 4,
               "{containerClassName}": 4,
               "\"w-full bg-transparent px-4 py-2 hover:bg-hover active:bg-pressed md:px-8\"": 4,
+              "{STEP_ICON_CLASSNAME}": 4,
+              "\"w-full mt-auto\"": 4,
               "\"h-full min-h-0\"": 4,
               "\"flex-shrink-0\"": 3,
               "\"inline-flex\"": 3,
-              "\"dropdown-editor__item-dropdown\"": 3,
               "\"flex size-11 shrink-0 items-center\"": 3,
               "\"sticky bottom-0 left-0 right-0 bg-default border-t border-muted\"": 3,
               "\"snap-home-menu__item\"": 3,
               "\"flex rounded-lg\"": 3,
+              "\"rounded-xl\"": 3,
               "\"simulation-details-layout\"": 3,
               "\"bg-background-default\"": 3,
               "\"flex min-h-0 flex-1 flex-col overflow-auto\"": 3,
               "\"flex h-12 items-center rounded-xl border border-border-muted bg-background-muted\"": 3,
               "\"p-4 md:px-8\"": 3,
-              "\"w-full mt-auto\"": 3,
               "\"multichain-account-details-page__section\"": 3,
               "\"recovery-phrase__header grid w-full\"": 3,
               "\"min-h-0 shrink-0\"": 3,
@@ -2579,7 +2575,7 @@
               "\"flex settings-page__content-row\"": 2,
               "\"hold-to-reveal-button__absolute-fill\"": 2,
               "\"privacy-settings__setting__wrapper\"": 2,
-              "\"token-list__empty-list\"": 2,
+              "\"dropdown-editor__item-dropdown\"": 2,
               "\"flex items-center justify-center\"": 2,
               "\"flex flex-col items-center gap-4\"": 2,
               "\"flex rounded-sm\"": 2,
@@ -2628,11 +2624,11 @@
               "\"mx-auto\"": 2,
               "\"mb-4 w-full\"": 2,
               "\"create-snap-account-page\"": 2,
+              "\"min-w-0 flex-1 min-h-8\"": 2,
               "\"hardware-wallet-signatures__device-animation\"": 2,
               "\"w-full mt-auto cta-footer\"": 2,
               "\"w-full text-left\"": 2,
               "\"flex h-full w-full\"": 2,
-              "\"rounded-xl\"": 2,
               "\"flex w-full flex-col gap-1\"": 2,
               "\"min-h-0 flex-1\"": 2,
               "\"flex w-full items-center gap-3 rounded-xl border border-border-muted bg-background-section p-3\"": 2,
@@ -2645,9 +2641,9 @@
               "\"p-2 cursor-pointer\"": 2,
               "\"flex-1 rounded-xl bg-muted px-4 py-3\"": 2,
               "\"w-full min-h-0 flex-1\"": 2,
-              "\"rounded-md\"": 2,
               "\"overflow-y-auto\"": 2,
               "\"pt-3 pb-3\"": 2,
+              "\"rounded-md\"": 2,
               "{twMerge( 'payment-method-item flex items-center justify-between w-full gap-4 ...}": 2,
               "\"payment-method-item__selected-indicator rounded-full\"": 2,
               "\"flex items-center justify-between w-full\"": 2,
@@ -2709,9 +2705,6 @@
               "{classnames('hold-to-reveal-button__absolute-fill', { 'hold-to-reveal-button__...}": 1,
               "\"flex hold-to-reveal-button__lock-icon-container\"": 1,
               "\"hold-to-reveal-button__icon-container\"": 1,
-              "\"token-list\"": 1,
-              "\"token-list__tokens-container\"": 1,
-              "{classnames('token-list__token_component', { 'token-list__token_component--dis...}": 1,
               "\"add-funds-modal__row flex items-center w-full gap-3 p-4\"": 1,
               "\"w-1/6\"": 1,
               "\"flex w-full flex-col gap-2\"": 1,
@@ -2740,6 +2733,7 @@
               "\"flex-1 min-w-0 h-10 bg-transparent border border-border-muted rounded-lg p-1 gap-0\"": 1,
               "\"px-3 justify-between\"": 1,
               "\"min-w-0 w-full\"": 1,
+              "\"w-full max-w-full\"": 1,
               "\"w-full h-full overflow-x-hidden\"": 1,
               "\"flex-1 overflow-y-auto overflow-x-hidden pb-4\"": 1,
               "\"absolute right-0 top-full z-10 mt-1 min-w-[120px] overflow-hidden rounded-lg border border-border-muted bg-background-default shadow-lg\"": 1,
@@ -2903,10 +2897,6 @@
               "\"h-full min-h-0 flex flex-col overflow-hidden bg-[var(--color-background-default)] shadow-[var(--shadow-size-lg)_var(--color-shadow-default)]\"": 1,
               "\"flex-shrink-0 flex flex-row items-center justify-start p-4 w-full overflow-hidden\"": 1,
               "\"flex-1 min-h-0 overflow-y-auto overflow-x-hidden pb-6\"": 1,
-              "\"import-tokens-modal__confirmation-list\"": 1,
-              "\"import-tokens-modal__confirm-token-list-item-wrapper\"": 1,
-              "\"import-tokens-modal__body\"": 1,
-              "\"import-tokens-modal__custom-token-form__container\"": 1,
               "\"flex flex-row items-center justify-between\"": 1,
               "{classnames('srp-list__container', { 'min-h-0': isSettingsPage, })}": 1,
               "{classnames('multichain-network-list-item', { 'multichain-network-list-item--s...}": 1,
@@ -3101,6 +3091,11 @@
               "\"flex error-page__header\"": 1,
               "\"flex rounded-lg error-page__error-message-wrapper\"": 1,
               "\"flex shrink-0\"": 1,
+              "\"hardware-wallet-signatures__footer\"": 1,
+              "\"hardware-wallet-signatures__qr-code\"": 1,
+              "\"qr-hardware-signing-page flex-1 w-full min-h-full\"": 1,
+              "\"flex-1 w-full\"": 1,
+              "\"qr-hardware-signing-page__viewport w-full min-h-[293px] rounded-lg overflow-hidden\"": 1,
               "\"import-srp-restore-vault h-full rounded-lg border border-solid\"": 1,
               "\"mt-4 relative\"": 1,
               "\"w-full pt-10\"": 1,
@@ -3190,6 +3185,7 @@
               "\"snaps-connect\"": 1,
               "\"absolute left-0 top-full z-10 mt-1 min-w-[120px] overflow-hidden rounded-lg border border-border-muted bg-background-default shadow-lg\"": 1,
               "\"cursor-pointer bg-default px-4 py-3 hover:bg-hover active:bg-pressed\"": 1,
+              "\"min-w-0 max-w-full\"": 1,
               "\"w-full px-4 pb-3\"": 1,
               "\"w-full px-4 pb-3 pt-5\"": 1,
               "\"flex h-full flex-col bg-background-default\"": 1,
@@ -3217,9 +3213,6 @@
               "\"multichain-account-list-item__content\"": 1,
               "\"multichain-account-list-item__account-name\"": 1,
               "\"flex justify-center items-center flex-1\"": 1,
-              "\"add-device-tab h-full\"": 1,
-              "\"flex-1 min-h-0\"": 1,
-              "\"w-10 h-10\"": 1,
               "\"h-full min-h-0 overflow-y-auto\"": 1,
               "{ipfsToggle ? 'mb-4' : undefined}": 1,
               "\"rounded-none hover:bg-background-default-hover\"": 1,
@@ -3232,6 +3225,8 @@
               "\"w-full h-full overflow-y-auto\"": 1,
               "\"w-full gap-2 px-4 py-3\"": 1,
               "\"w-full px-4 py-2\"": 1,
+              "\"flex-1 min-h-0\"": 1,
+              "\"w-10 h-10\"": 1,
               "\"w-full h-full overflow-y-auto py-4\"": 1,
               "\"w-full pt-2\"": 1,
               "\"shield-plan-page__plans grid gap-2 mb-4 pt-2\"": 1,
@@ -3276,73 +3271,71 @@
             }
           },
           "flexDirection": {
-            "count": 1170,
+            "count": 1188,
             "values": {
-              "{BoxFlexDirection.Column}": 478,
-              "{BoxFlexDirection.Row}": 443,
-              "{FlexDirection.Column}": 151,
-              "{FlexDirection.Row}": 95,
+              "{BoxFlexDirection.Column}": 496,
+              "{BoxFlexDirection.Row}": 449,
+              "{FlexDirection.Column}": 146,
+              "{FlexDirection.Row}": 94,
               "{isCollapsible ? FlexDirection.Column : FlexDirection.Row}": 1,
               "{showAvatarAccount ? FlexDirection.Row : FlexDirection.Column}": 1,
               "{FlexDirection.RowReverse}": 1
             }
           },
           "alignItems": {
-            "count": 853,
+            "count": 852,
             "values": {
-              "{BoxAlignItems.Center}": 531,
-              "{AlignItems.center}": 202,
-              "{BoxAlignItems.Start}": 37,
+              "{BoxAlignItems.Center}": 536,
+              "{AlignItems.center}": 199,
+              "{BoxAlignItems.Start}": 38,
               "{BoxAlignItems.End}": 22,
-              "{AlignItems.flexStart}": 17,
               "{BoxAlignItems.Stretch}": 17,
-              "{AlignItems.flexEnd}": 10,
-              "{BoxAlignItems.Baseline}": 7,
+              "{AlignItems.flexStart}": 15,
+              "{AlignItems.flexEnd}": 9,
+              "{BoxAlignItems.Baseline}": 8,
               "{AlignItems.baseline}": 4,
               "{isSmall ? AlignItems.center : AlignItems.flexStart}": 2,
-              "\"center\"": 2,
               "{isLoading && AlignItems.center}": 1,
               "{pathname === ONBOARDING_WELCOME_ROUTE ? BoxAlignItems.Start : BoxAlignItems.C...}": 1
             }
           },
           "gap": {
-            "count": 673,
+            "count": 691,
             "values": {
               "0": 2,
-              "1": 140,
-              "2": 231,
-              "3": 70,
-              "4": 196,
+              "1": 148,
+              "2": 235,
+              "3": 72,
+              "4": 198,
               "5": 2,
-              "6": 24,
-              "8": 5,
+              "6": 25,
+              "8": 6,
               "{showAvatarAccount ? 2 : 0}": 1,
               "{loading ? 2 : 0}": 1,
               "{showSkeletonLoader ? 2 : 0}": 1
             }
           },
           "justifyContent": {
-            "count": 549,
+            "count": 543,
             "values": {
               "{BoxJustifyContent.Between}": 182,
-              "{BoxJustifyContent.Center}": 134,
-              "{JustifyContent.spaceBetween}": 83,
+              "{BoxJustifyContent.Center}": 133,
+              "{JustifyContent.spaceBetween}": 80,
               "{JustifyContent.center}": 79,
               "{BoxJustifyContent.Start}": 27,
               "{BoxJustifyContent.End}": 15,
               "{JustifyContent.flexEnd}": 13,
               "{JustifyContent.flexStart}": 7,
               "{BoxJustifyContent.Evenly}": 4,
-              "\"center\"": 2,
               "{isLoading && JustifyContent.center}": 1,
               "{currentPrice ? BoxJustifyContent.End : BoxJustifyContent.Start}": 1,
               "{pathname === ONBOARDING_WELCOME_ROUTE ? BoxJustifyContent.End : BoxJustifyCon...}": 1
             }
           },
           "display": {
-            "count": 461,
+            "count": 447,
             "values": {
-              "{Display.Flex}": 426,
+              "{Display.Flex}": 412,
               "{Display.Block}": 15,
               "{Display.InlineFlex}": 10,
               "{Display.Inline}": 5,
@@ -3353,10 +3346,10 @@
             }
           },
           "data-testid": {
-            "count": 378,
+            "count": 382,
             "values": {
               "{dataTestId}": 16,
-              "{testId}": 8,
+              "{testId}": 10,
               "\"perps-tutorial-step-image\"": 6,
               "\"no-connections\"": 4,
               "\"network-loader\"": 3,
@@ -3372,7 +3365,6 @@
               "\"app-header-logo\"": 2,
               "\"avatar-group\"": 2,
               "\"carousel-container\"": 2,
-              "{`select-network-item-${network.chainId}`}": 2,
               "{`popular-network-${network.chainId}`}": 2,
               "\"nft-image\"": 2,
               "\"multichain-address-row\"": 2,
@@ -3490,8 +3482,7 @@
               "\"multichain-send-page__recipient__item\"": 1,
               "\"multichain-send-page__recipient__item__title\"": 1,
               "\"multichain-send-page__recipient__item__subtitle\"": 1,
-              "\"import-tokens-loading\"": 1,
-              "\"import-tokens-no-support\"": 1,
+              "{`select-network-item-${network.chainId}`}": 1,
               "\"srp-list\"": 1,
               "{`network-list-item-${chainId}`}": 1,
               "{name}": 1,
@@ -3533,6 +3524,8 @@
               "\"multichain-private-keyring-list\"": 1,
               "\"multichain-srp-backup\"": 1,
               "\"address-copy-button-text\"": 1,
+              "\"asset-activate-card\"": 1,
+              "{`asset-activation-error-container`}": 1,
               "\"asset-network\"": 1,
               "\"asset-chart-empty-state\"": 1,
               "\"asset-price-chart\"": 1,
@@ -3541,6 +3534,7 @@
               "\"musd-stacked-avatars\"": 1,
               "\"musd-convert-benefit-tags\"": 1,
               "\"musd-position-section\"": 1,
+              "\"spendable-balance-section\"": 1,
               "\"basic-functionality-off-description\"": 1,
               "\"basic-functionality-off-toggle-row\"": 1,
               "\"batch-sell-review-page\"": 1,
@@ -3597,6 +3591,8 @@
               "\"deep-link-description\"": 1,
               "\"generic-hardware-wallet-animation-loading\"": 1,
               "\"generic-hardware-wallet-animation\"": 1,
+              "\"qr-hardware-signing-page\"": 1,
+              "\"qr-hardware-signing-page__viewport\"": 1,
               "\"reveal-seed-password-footer\"": 1,
               "\"reveal-seed-quiz-introduction\"": 1,
               "\"reveal-seed-quiz-question\"": 1,
@@ -3681,10 +3677,10 @@
             }
           },
           "style": {
-            "count": 260,
+            "count": 265,
             "values": {
               "{{ overflow: 'hidden' }}": 13,
-              "{{ flex: 1 }}": 9,
+              "{{ flex: 1 }}": 13,
               "{{ marginLeft: 'auto', maxWidth: '100%' }}": 8,
               "{{ width: '100%' }}": 7,
               "{gatorPermissionDetailRowStyle}": 7,
@@ -3838,6 +3834,7 @@
               "{{ flex: '1 0 auto', minHeight: 0 }}": 1,
               "{{ cursor: 'not-allowed' }}": 1,
               "{{ width: '446px', minHeight: '592px' }}": 1,
+              "{FOOTER_STYLE}": 1,
               "{{ width: QR_CODE_CONTAINER_SIZE, height: QR_CODE_CONTAINER_SIZE, padding: QR_...}": 1,
               "{{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, width: '10...}": 1,
               "{{ flex: 1, minHeight: 0, overflowY: 'auto' }}": 1,
@@ -3853,21 +3850,21 @@
               "{{ overflowY: 'hidden' }}": 1,
               "{{ overflowY: 'auto', flex: 1 }}": 1,
               "{{ width: 32 }}": 1,
-              "{{ opacity: shouldDimQr ? 0.3 : 1 }}": 1,
+              "{{ opacity: shouldDimQr ? 0.3 : 1, filter: shouldDimQr ? 'blur(4px)' : 'none', }}": 1,
               "{{ height: '1lh' }}": 1
             }
           },
           "paddingBottom": {
-            "count": 216,
+            "count": 211,
             "values": {
               "0": 5,
               "1": 15,
-              "2": 66,
-              "3": 25,
-              "4": 67,
+              "2": 65,
+              "3": 24,
+              "4": 66,
               "5": 2,
               "6": 13,
-              "8": 8,
+              "8": 6,
               "9": 1,
               "10": 1,
               "12": 6,
@@ -3879,51 +3876,26 @@
               "{isExpanded ? 0 : 2}": 1
             }
           },
-          "paddingTop": {
-            "count": 206,
-            "values": {
-              "0": 7,
-              "1": 14,
-              "2": 44,
-              "3": 33,
-              "4": 71,
-              "5": 3,
-              "6": 6,
-              "8": 10,
-              "10": 1,
-              "12": 5,
-              "{sectionIndex > 0 ? 4 : 2}": 2,
-              "{paddingTopValue}": 2,
-              "{paddingTop}": 1,
-              "{noPadding ? 0 : 1}": 1,
-              "{hasPositions ? 0 : 4}": 1,
-              "{rpcEndpoint ? 2 : 4}": 1,
-              "{padding}": 1,
-              "{buttonContainerPaddingTop}": 1,
-              "{paddingTop === undefined ? 0 : paddingTop}": 1,
-              "{hasDuplicates ? 4 : 0}": 1
-            }
-          },
           "backgroundColor": {
-            "count": 194,
+            "count": 199,
             "values": {
               "{BoxBackgroundColor.BackgroundDefault}": 39,
               "{BackgroundColor.backgroundDefault}": 26,
-              "{BoxBackgroundColor.BackgroundMuted}": 20,
+              "{BoxBackgroundColor.BackgroundMuted}": 23,
               "{BoxBackgroundColor.BackgroundSection}": 10,
               "{BackgroundColor.backgroundAlternative}": 10,
               "{BoxBackgroundColor.BackgroundAlternative}": 7,
               "{BackgroundColor.transparent}": 7,
               "{BoxBackgroundColor.PrimaryDefault}": 6,
               "{BackgroundColor.primaryDefault}": 6,
-              "{BoxBackgroundColor.ErrorMuted}": 4,
-              "{BoxBackgroundColor.PrimaryMuted}": 4,
+              "{BoxBackgroundColor.ErrorMuted}": 5,
+              "{BoxBackgroundColor.PrimaryMuted}": 5,
               "{BackgroundColor.backgroundSection}": 3,
+              "{BoxBackgroundColor.WarningMuted}": 3,
               "{addressCopied ? BoxBackgroundColor.SuccessMuted : BoxBackgroundColor.Backgrou...}": 3,
               "{isSelected ? BackgroundColor.backgroundHover : BackgroundColor.transparent}": 3,
               "{BoxBackgroundColor.InfoMuted}": 3,
               "{BoxBackgroundColor.Transparent}": 2,
-              "{BoxBackgroundColor.WarningMuted}": 2,
               "{backgroundColor}": 2,
               "{BackgroundColor.primaryMuted}": 2,
               "{BackgroundColor.errorDefault}": 2,
@@ -3934,7 +3906,6 @@
               "{severityStyle.background}": 1,
               "{BACKGROUND_COLORS[variant]}": 1,
               "{containerbackgroundColor}": 1,
-              "{selectedTokens[address] ? BackgroundColor.primaryMuted : BackgroundColor.tran...}": 1,
               "{isVisible && sensitive ? BackgroundColor.errorMuted : BackgroundColor.primary...}": 1,
               "{isError ? BackgroundColor.errorMuted : BackgroundColor.backgroundDefault}": 1,
               "{userAgree ? BackgroundColor.infoMuted : BackgroundColor.backgroundAlternative}": 1,
@@ -3959,14 +3930,39 @@
               "{selectedPaymentMethod === PAYMENT_TYPES.byCard ? BoxBackgroundColor.PrimaryMu...}": 1
             }
           },
+          "paddingTop": {
+            "count": 197,
+            "values": {
+              "0": 7,
+              "1": 14,
+              "2": 43,
+              "3": 32,
+              "4": 69,
+              "5": 2,
+              "6": 3,
+              "8": 9,
+              "10": 1,
+              "12": 5,
+              "{sectionIndex > 0 ? 4 : 2}": 2,
+              "{paddingTopValue}": 2,
+              "{paddingTop}": 1,
+              "{noPadding ? 0 : 1}": 1,
+              "{hasPositions ? 0 : 4}": 1,
+              "{rpcEndpoint ? 2 : 4}": 1,
+              "{padding}": 1,
+              "{buttonContainerPaddingTop}": 1,
+              "{paddingTop === undefined ? 0 : paddingTop}": 1,
+              "{hasDuplicates ? 4 : 0}": 1
+            }
+          },
           "padding": {
-            "count": 190,
+            "count": 193,
             "values": {
               "0": 6,
               "1": 11,
               "2": 23,
               "3": 22,
-              "4": 116,
+              "4": 119,
               "6": 5,
               "10": 1,
               "{customDetails ? 0 : 2}": 1,
@@ -3978,13 +3974,13 @@
             }
           },
           "paddingLeft": {
-            "count": 183,
+            "count": 175,
             "values": {
               "0": 2,
               "1": 3,
               "2": 20,
               "3": 2,
-              "4": 143,
+              "4": 135,
               "5": 5,
               "6": 6,
               "8": 1,
@@ -3992,13 +3988,13 @@
             }
           },
           "paddingRight": {
-            "count": 175,
+            "count": 167,
             "values": {
               "0": 2,
               "1": 1,
-              "2": 18,
+              "2": 17,
               "3": 3,
-              "4": 141,
+              "4": 134,
               "5": 5,
               "6": 3,
               "{isSmall ? 0 : 2}": 1,
@@ -4006,13 +4002,13 @@
             }
           },
           "marginTop": {
-            "count": 136,
+            "count": 139,
             "values": {
               "0": 1,
               "1": 11,
               "2": 31,
-              "3": 5,
-              "4": 52,
+              "3": 7,
+              "4": 53,
               "5": 6,
               "6": 16,
               "8": 1,
@@ -4026,13 +4022,13 @@
             }
           },
           "marginBottom": {
-            "count": 122,
+            "count": 123,
             "values": {
               "0": 3,
               "1": 7,
               "2": 22,
               "3": 15,
-              "4": 53,
+              "4": 54,
               "5": 6,
               "6": 6,
               "8": 2,
@@ -4046,29 +4042,26 @@
             }
           },
           "width": {
-            "count": 117,
+            "count": 114,
             "values": {
-              "{BlockSize.Full}": 113,
+              "{BlockSize.Full}": 110,
               "{BlockSize.FiveTwelfths}": 2,
               "{BlockSize.TenTwelfths}": 1,
               "\"full\"": 1
             }
           },
           "onClick": {
-            "count": 110,
+            "count": 105,
             "values": {
-              "{onClick}": 22,
+              "{onClick}": 21,
               "{handleClick}": 8,
               "{() => handleSelect(value)}": 5,
-              "{setDropdownOpen}": 2,
               "{handleConvert}": 2,
               "{(e: React.MouseEvent) => e.stopPropagation()}": 2,
-              "{(event) => event.stopPropagation()}": 2,
               "{() => onClick?.()}": 2,
               "{handleBackClick}": 2,
               "{() => handleBackClick()}": 2,
               "{isSnapUsingThis ? () => null : handleDisplayNameClick}": 1,
-              "{openListNetwork}": 1,
               "{onSelectNetwork}": 1,
               "{(e?: React.MouseEvent) => { e?.preventDefault(); handleClick(); }}": 1,
               "{(event: React.MouseEvent) => { event.stopPropagation(); }}": 1,
@@ -4094,6 +4087,7 @@
               "{handleCreateMultichainAccountClick}": 1,
               "{isDisabled ? undefined : handleToggleSelection}": 1,
               "{handleDefaultAddressClick}": 1,
+              "{(event) => event.stopPropagation()}": 1,
               "{togglePopover}": 1,
               "{item.onClick}": 1,
               "{displayDefaultAddress ? handleDefaultAddressClick : undefined}": 1,
@@ -4131,22 +4125,20 @@
             }
           },
           "key": {
-            "count": 86,
+            "count": 83,
             "values": {
-              "{network.chainId}": 9,
+              "{network.chainId}": 8,
               "{index}": 6,
               "{value}": 5,
               "{section.key}": 4,
               "{id}": 3,
               "{key}": 2,
               "{i}": 2,
-              "{address}": 2,
               "{status}": 2,
               "{selectedAlert.key}": 1,
               "{`${selectedAlert.key}-detail-${index}`}": 1,
               "{`disclosure-detail-${index}`}": 1,
               "{subject.origin}": 1,
-              "{uniqueKey}": 1,
               "{`${network.name}_${index}`}": 1,
               "{`${account.avatarValue}_${index}`}": 1,
               "{section.titleKey}": 1,
@@ -4160,6 +4152,7 @@
               "\"account2\"": 1,
               "{`${token.symbol}-${tokenAddress ?? ''}-${token.chainId}`}": 1,
               "{token.address}": 1,
+              "{address}": 1,
               "{itemKey(item)}": 1,
               "{section.id}": 1,
               "{accountId}": 1,
@@ -4195,22 +4188,22 @@
               "{file.originalname || index}": 1
             }
           },
-          "borderRadius": {
-            "count": 54,
-            "values": {
-              "{BorderRadius.LG}": 20,
-              "{BorderRadius.pill}": 14,
-              "{BorderRadius.MD}": 8,
-              "{BorderRadius.XL}": 5,
-              "{BorderRadius.SM}": 4,
-              "{BorderRadius.full}": 3
-            }
-          },
           "height": {
             "count": 53,
             "values": {
               "{BlockSize.Full}": 51,
               "{BlockSize.Min}": 2
+            }
+          },
+          "borderRadius": {
+            "count": 53,
+            "values": {
+              "{BorderRadius.LG}": 19,
+              "{BorderRadius.pill}": 14,
+              "{BorderRadius.MD}": 8,
+              "{BorderRadius.XL}": 5,
+              "{BorderRadius.SM}": 4,
+              "{BorderRadius.full}": 3
             }
           },
           "asChild": {
@@ -4232,10 +4225,10 @@
             }
           },
           "borderColor": {
-            "count": 43,
+            "count": 42,
             "values": {
               "{BoxBorderColor.BorderMuted}": 12,
-              "{BorderColor.borderDefault}": 11,
+              "{BorderColor.borderDefault}": 10,
               "{BorderColor.borderMuted}": 9,
               "{BoxBorderColor.BorderDefault}": 4,
               "{isTransactionsRedesign ? BorderColor.transparent : BorderColor.borderDefault}": 2,
@@ -4244,15 +4237,6 @@
               "{BoxBorderColor.Transparent}": 1,
               "{BorderColor.transparent}": 1,
               "{isTargetIndex ? BoxBorderColor.PrimaryDefault : BoxBorderColor.BorderMuted}": 1
-            }
-          },
-          "flexWrap": {
-            "count": 40,
-            "values": {
-              "{FlexWrap.Wrap}": 18,
-              "{BoxFlexWrap.Wrap}": 12,
-              "{FlexWrap.NoWrap}": 6,
-              "{BoxFlexWrap.NoWrap}": 4
             }
           },
           "[spread]": {
@@ -4281,14 +4265,22 @@
               "{tabContentProps}": 1
             }
           },
+          "flexWrap": {
+            "count": 39,
+            "values": {
+              "{FlexWrap.Wrap}": 18,
+              "{BoxFlexWrap.Wrap}": 12,
+              "{FlexWrap.NoWrap}": 5,
+              "{BoxFlexWrap.NoWrap}": 4
+            }
+          },
           "paddingHorizontal": {
             "count": 39,
             "values": {
               "0": 1,
               "1": 1,
               "2": 8,
-              "3": 1,
-              "4": 27,
+              "4": 28,
               "{rootPaddingHorizontal}": 1
             }
           },
@@ -4298,7 +4290,6 @@
               "{ref}": 9,
               "{containerRef}": 5,
               "{setBoxRef}": 3,
-              "{dropdownRef}": 2,
               "{sectionRef}": 1,
               "{contentRef}": 1,
               "{scrollContainerRef}": 1,
@@ -4311,7 +4302,9 @@
               "{headerRef}": 1,
               "{popoverRef}": 1,
               "{setReferenceElement}": 1,
+              "{tabListRef}": 1,
               "{!isLoading && !hasError ? ref : undefined}": 1,
+              "{dropdownRef}": 1,
               "{marginMenuRef}": 1,
               "{modifyMenuRef}": 1,
               "{settingsRef}": 1,
@@ -4330,9 +4323,9 @@
             }
           },
           "borderWidth": {
-            "count": 20,
+            "count": 19,
             "values": {
-              "1": 16,
+              "1": 15,
               "2": 2,
               "{isSelected ? 1 : 0}": 1,
               "{isTargetIndex ? 2 : 1}": 1
@@ -4358,12 +4351,11 @@
             }
           },
           "paddingVertical": {
-            "count": 15,
+            "count": 14,
             "values": {
               "1": 2,
               "2": 2,
-              "3": 10,
-              "4": 1
+              "3": 10
             }
           },
           "tabIndex": {
@@ -4393,6 +4385,20 @@
               "{isInWatchlist ? t('perpsRemoveFromFavorites') : t('perpsAddToFavorites')}": 1
             }
           },
+          "role": {
+            "count": 11,
+            "values": {
+              "\"button\"": 3,
+              "\"tooltip\"": 1,
+              "\"progressbar\"": 1,
+              "{isDisabled ? undefined : 'button'}": 1,
+              "\"tablist\"": 1,
+              "\"tabpanel\"": 1,
+              "{isInteractive ? 'button' : undefined}": 1,
+              "\"separator\"": 1,
+              "\"listbox\"": 1
+            }
+          },
           "marginHorizontal": {
             "count": 11,
             "values": {
@@ -4409,19 +4415,6 @@
               "4": 2,
               "{isTransactionsRedesign ? null : 4}": 2,
               "\"auto\"": 1
-            }
-          },
-          "role": {
-            "count": 10,
-            "values": {
-              "\"button\"": 3,
-              "\"progressbar\"": 1,
-              "{isDisabled ? undefined : 'button'}": 1,
-              "\"tablist\"": 1,
-              "\"tabpanel\"": 1,
-              "{isInteractive ? 'button' : undefined}": 1,
-              "\"separator\"": 1,
-              "\"listbox\"": 1
             }
           },
           "paddingInline": {
@@ -4716,24 +4709,24 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "Box": 714
+        "Box": 677
       }
     },
     "mobile": {
-      "filesScanned": 7036,
+      "filesScanned": 7127,
       "targetComponent": "Box",
       "mmds": {
-        "totalInstances": 2769,
-        "filesCount": 718,
+        "totalInstances": 2770,
+        "filesCount": 721,
         "props": {
           "twClassName": {
-            "count": 2219,
+            "count": 2221,
             "values": {
               "\"flex-1\"": 185,
               "\"px-4\"": 59,
               "\"gap-1\"": 58,
-              "\"gap-2\"": 51,
-              "\"w-full\"": 48,
+              "\"gap-2\"": 53,
+              "\"w-full\"": 49,
               "\"gap-3\"": 40,
               "\"flex-1 bg-default\"": 28,
               "\"gap-4\"": 23,
@@ -4742,15 +4735,15 @@
               "\"mb-4\"": 20,
               "\"flex-1 px-4\"": 18,
               "\"px-4 py-3\"": 15,
-              "\"flex-1 gap-1\"": 14,
               "\"flex-1 min-w-0\"": 14,
               "\"px-4 py-2\"": 13,
               "\"py-3\"": 13,
+              "\"flex-1 gap-1\"": 13,
               "\"gap-6\"": 13,
               "\"my-1 border-b border-border-muted\"": 13,
-              "\"pb-4\"": 11,
               "\"flex-row items-center gap-1\"": 11,
               "\"py-4\"": 11,
+              "\"pb-4\"": 10,
               "\"h-px bg-border-muted\"": 9,
               "\"px-4 py-4\"": 9,
               "\"items-end\"": 9,
@@ -4822,12 +4815,12 @@
               "\"flex-col\"": 3,
               "\"flex flex-1 items-center justify-center\"": 3,
               "\"mt-1\"": 3,
-              "\"bg-default\"": 3,
               "\"px-2 py-2\"": 3,
               "\"px-4 pt-3\"": 3,
               "\"gap-0.5\"": 3,
               "\"px-4 py-3 gap-4\"": 3,
               "\"gap-3 mt-4\"": 3,
+              "\"flex-1 mr-2\"": 3,
               "\"gap-1.5\"": 3,
               "\"w-10 h-10 rounded-lg bg-muted overflow-hidden\"": 3,
               "\"absolute inset-0\"": 3,
@@ -4886,6 +4879,7 @@
               "\"h-10 w-10 rounded-full bg-muted mr-4 items-center justify-center\"": 2,
               "\"h-10 w-10\"": 2,
               "\"px-4 pt-4 pb-3\"": 2,
+              "\"bg-default\"": 2,
               "\"pr-1\"": 2,
               "\"bg-background-muted rounded-xl\"": 2,
               "\"mt-0.5\"": 2,
@@ -4910,9 +4904,6 @@
               "\"flex-1 pr-4 gap-1\"": 2,
               "\"w-full justify-center items-center\"": 2,
               "{`h-[${CHART_HEIGHT}px] justify-center items-center`}": 2,
-              "\"items-start py-2 gap-4 w-full\"": 2,
-              "\"pt-1\"": 2,
-              "\"gap-1 items-end\"": 2,
               "\"w-10 h-10 self-start mt-1\"": 2,
               "\"h-px bg-default\"": 2,
               "\"gap-3 py-4\"": 2,
@@ -4976,11 +4967,11 @@
               "\"mx-4 rounded-xl overflow-hidden border border-border-muted\"": 2,
               "\"mx-4 mt-4 p-4 gap-4 rounded-xl bg-background-muted\"": 2,
               "\"self-center pt-4\"": 2,
-              "\"flex-1 mr-2\"": 2,
               "\"pb-5 pt-0\"": 2,
               "\"mb-1 items-end pr-2\"": 2,
               "\"mb-2 px-6\"": 2,
               "\"flex-1 h-px bg-border-muted\"": 2,
+              "\"flex-1 justify-center px-6\"": 2,
               "\"flex-1 pb-[30px]\"": 2,
               "\"relative flex-col gap-2\"": 2,
               "\"p-5 pb-0\"": 2,
@@ -5023,6 +5014,7 @@
               "py-2": 1,
               "\"mx-4 p-4 rounded-xl border border-muted bg-default gap-3.5\"": 1,
               "\"px-1\"": 1,
+              "\"content-end px-4 gap-4 pt-4\"": 1,
               "\"mt-5 w-full rounded-2xl pl-[25px] pr-4 py-3\"": 1,
               "\"px-2 py-1\"": 1,
               "\"bg-default border-t border-muted min-h-[60px] px-4 py-2\"": 1,
@@ -5108,7 +5100,7 @@
               "{`flex-1 bg-default pt-[${insets.top}px]`}": 1,
               "\"w-4 h-4 rounded-full overflow-hidden mr-2\"": 1,
               "\"px-4 pb-6 mt-4\"": 1,
-              "\"px-4 mt-2 mb-4\"": 1,
+              "\"px-4 mt-2 mb-3\"": 1,
               "{`h-6 w-6 rounded-full border ${ isSelected ? 'border-primary-default' : 'bord...}": 1,
               "\"h-3 w-3 rounded-full bg-primary-default\"": 1,
               "\"pt-2 gap-2\"": 1,
@@ -5138,6 +5130,7 @@
               "\"pt-3 gap-3\"": 1,
               "\"gap-3 flex-1\"": 1,
               "\"gap-1 flex-1\"": 1,
+              "{animate ? 'w-full aspect-video overflow-hidden rounded-2xl' : 'w-full aspect-...}": 1,
               "\"rounded bg-primary-muted px-1.5\"": 1,
               "\"shrink-0 pt-1\"": 1,
               "\"mt-3 mb-3 gap-3\"": 1,
@@ -5222,9 +5215,6 @@
               "\"justify-center gap-2 pt-2 px-4\"": 1,
               "\"px-4 pb-4 flex-col gap-2\"": 1,
               "px-4 pt-3 border-t border-muted": 1,
-              "\"bg-background-alternative rounded-xl p-3 mr-4\"": 1,
-              "\"items-center gap-3 mb-3\"": 1,
-              "\"items-center mb-2 gap-1\"": 1,
               "{isCarousel ? 'flex-1' : ''}": 1,
               "{isCarousel ? 'mb-2 gap-2' : 'mb-3 gap-4'}": 1,
               "{`${isCarousel ? 'w-8 h-8' : 'w-10 h-10'} rounded-lg bg-muted overflow-hidden`}": 1,
@@ -5259,6 +5249,7 @@
               "\"gap-4 pb-4 pt-2\"": 1,
               "\"px-4 pb-3 mt-3\"": 1,
               "\"flex-1 min-w-0 shrink\"": 1,
+              "\"gap-1 min-w-0\"": 1,
               "\"w-full py-2\"": 1,
               "\"w-full bg-muted rounded-2xl p-4 mb-4\"": 1,
               "\"justify-between mb-3\"": 1,
@@ -5546,6 +5537,7 @@
               "\"flex-1 flex-row items-start gap-2\"": 1,
               "\"absolute top-0 left-0 right-0 bg-default\"": 1,
               "\"flex-1 items-center justify-center pb-32\"": 1,
+              "\"pb-2\"": 1,
               "\"flex-1 pt-2\"": 1,
               "\"items-center pt-4 px-4\"": 1,
               "\"flex-1 justify-center items-center px-4\"": 1,
@@ -5590,6 +5582,9 @@
               "\"p-8 items-center\"": 1,
               "\"flex-1 gap-0\"": 1,
               "\"flex-row gap-1\"": 1,
+              "\"items-start py-2 gap-4 w-full\"": 1,
+              "\"pt-1\"": 1,
+              "\"gap-1 items-end\"": 1,
               "\"mx-1 h-7 shrink-0 rounded-full px-2\"": 1,
               "\"h-4 w-4 shrink-0 rounded-full\"": 1,
               "\"h-2 w-2 rounded-full bg-success-default\"": 1,
@@ -5690,6 +5685,7 @@
               "\"max-w-full px-1\"": 1,
               "\"mx-4 mt-3 mb-1 p-4 bg-muted rounded-2xl\"": 1,
               "\"px-4 pt-3 pb-3\"": 1,
+              "\"translate-y-0.5\"": 1,
               "\"px-4 py-6 items-center\"": 1,
               "{`pb-2 ${isActive ? 'border-b-2 border-default' : ''}`}": 1,
               "\"h-px bg-muted mx-4 mt-5 mb-4\"": 1,
@@ -5732,7 +5728,7 @@
               "{`w-10 h-10 rounded-full ${ isSelected ? 'bg-muted' : 'bg-section' }`}": 1,
               "\"ml-3 flex-1 min-w-0\"": 1,
               "\"min-w-6\"": 1,
-              "{`px-4 py-3 ${ isSelected ? 'bg-section' : 'bg-default' } ${disabled ? 'opacit...}": 1,
+              "{`px-4 py-3 ${rowBackgroundClass} ${ disabled ? 'opacity-50' : '' }`}": 1,
               "\"ml-4 h-12 justify-center flex-1\"": 1,
               "\"flex-row items-center px-4 flex-1 min-w-0\"": 1,
               "\"ml-4 h-12 justify-center flex-1 min-w-0\"": 1,
@@ -5754,16 +5750,16 @@
             }
           },
           "flexDirection": {
-            "count": 669,
+            "count": 671,
             "values": {
-              "{BoxFlexDirection.Row}": 571,
+              "{BoxFlexDirection.Row}": 573,
               "{BoxFlexDirection.Column}": 98
             }
           },
           "alignItems": {
-            "count": 629,
+            "count": 634,
             "values": {
-              "{BoxAlignItems.Center}": 559,
+              "{BoxAlignItems.Center}": 564,
               "{BoxAlignItems.Start}": 45,
               "{BoxAlignItems.End}": 19,
               "{BoxAlignItems.Stretch}": 3,
@@ -5773,9 +5769,9 @@
             }
           },
           "testID": {
-            "count": 465,
+            "count": 459,
             "values": {
-              "{testID}": 73,
+              "{testID}": 67,
               "{ActivityDetailsSelectorsIDs.AMOUNT_HEADER}": 5,
               "{PerpsWatchlistSelectorsIDs.SECTION}": 3,
               "{CAMPAIGN_PRIZE_POOL_TEST_IDS.CONTAINER}": 3,
@@ -5874,6 +5870,7 @@
               "{MoneyActivityListTestIds.CONTAINER}": 1,
               "{MoneyActivityLoadingTestIds.CONTAINER}": 1,
               "{MoneyBalanceCardTestIds.BALANCE_ERROR}": 1,
+              "{MoneyBalanceSummaryTestIds.APY}": 1,
               "{MoneyBalanceSummaryTestIds.CONTAINER}": 1,
               "{MoneyCondensedInfoCardsTestIds.CONTAINER}": 1,
               "{MoneyConvertStablecoinsTestIds.FEATURE_TAGS}": 1,
@@ -5888,6 +5885,7 @@
               "{containerTestID}": 1,
               "{MoneyMetaMaskCardTestIds.MANAGE_CONTAINER}": 1,
               "{MoneyMetaMaskCardTestIds.CONTAINER}": 1,
+              "{testID ?? MoneyNextBestActionParallaxTestIds.CONTAINER}": 1,
               "{MoneyPotentialEarningsTestIds.CONTAINER}": 1,
               "{MoneyWhatYouGetTestIds.CONTAINER}": 1,
               "{NETWORK_MULTI_SELECTOR_TEST_IDS.CUSTOM_NETWORK_CONTAINER}": 1,
@@ -5897,6 +5895,7 @@
               "{PerpsMarketBalanceActionsSelectorsIDs.AVAILABLE_BALANCE_TEXT}": 1,
               "{TEST_ID}": 1,
               "\"perps-progress-bar\"": 1,
+              "{PerpsRelatedMarketsSelectorsIDs.RAIL}": 1,
               "{PerpsHomeViewSelectorsIDs.TOP_MOVERS_SECTION}": 1,
               "{`${testID}-error`}": 1,
               "{testID || TradingViewChartSelectorsIDs.CONTAINER}": 1,
@@ -5918,9 +5917,6 @@
               "{PredictCryptoUpDownPositionsSelectorsIDs.LIST}": 1,
               "{PREDICT_GAME_DETAILS_CONTENT_TEST_IDS.TAB_CONTENT}": 1,
               "{PREDICT_GAME_DETAILS_CONTENT_TEST_IDS.OUTCOMES_CONTENT}": 1,
-              "{PredictPositionsSelectorsIDs.ACTIVE_POSITIONS_LIST}": 1,
-              "{PredictPositionsSelectorsIDs.CLAIMABLE_POSITIONS_LIST}": 1,
-              "{`${testID}${PREDICT_HOME_SKELETON_TEST_IDS.ITEM}${index}`}": 1,
               "{PredictOrderRetrySheetSelectorsIDs.CONTAINER}": 1,
               "{`${testID}${PREDICT_PICKS_FOR_CARD_TEST_IDS.SEPARATOR}`}": 1,
               "{PredictPositionsEmptySelectorsIDs.ICON}": 1,
@@ -6146,9 +6142,9 @@
             }
           },
           "justifyContent": {
-            "count": 282,
+            "count": 285,
             "values": {
-              "{BoxJustifyContent.Between}": 129,
+              "{BoxJustifyContent.Between}": 132,
               "{BoxJustifyContent.Center}": 109,
               "{BoxJustifyContent.Start}": 21,
               "{BoxJustifyContent.End}": 17,
@@ -6160,12 +6156,13 @@
             }
           },
           "style": {
-            "count": 229,
+            "count": 228,
             "values": {
               "{styles.container}": 9,
               "{styles.detailRow}": 6,
               "{styles.banner}": 4,
               "{tw.style('flex-1 flex-shrink mr-2 -mt-1')}": 3,
+              "{style}": 3,
               "{styles.textContainer}": 3,
               "{sectionStyle}": 3,
               "{contentContainerStyle}": 3,
@@ -6180,7 +6177,6 @@
               "{styles.iconContainer}": 2,
               "{styles.titleRow}": 2,
               "{styles.searchBarContainer}": 2,
-              "{style}": 2,
               "{styles.ohlcRow}": 2,
               "{{ paddingTop: insets.top + 12 }}": 2,
               "{{ backgroundColor: colors.background.default }}": 2,
@@ -6246,7 +6242,6 @@
               "{tw.style('bg-background-section')}": 1,
               "{tw.style('mt-1')}": 1,
               "{styles.contentRow}": 1,
-              "{styles.contentContainer}": 1,
               "{styles.progress}": 1,
               "{styles.durationButtonsContainer}": 1,
               "{{ height }}": 1,
@@ -6260,7 +6255,6 @@
               "{{ backgroundColor: seriesItem.color, }}": 1,
               "{{ minHeight: loadingContainerMinHeight }}": 1,
               "{{ paddingBottom: Math.max(insets.bottom, 16) }}": 1,
-              "{tw.style({ width: CARD_WIDTH, height: CARD_HEIGHT })}": 1,
               "{{ width: size, height: size / 2 }}": 1,
               "{tw.style('flex-1 items-center justify-center px-6')}": 1,
               "{tw.style('flex-1 items-center justify-center px-8 py-10')}": 1,
@@ -6347,8 +6341,8 @@
             "count": 220,
             "values": {
               "0": 4,
-              "1": 58,
-              "2": 65,
+              "1": 57,
+              "2": 66,
               "3": 42,
               "4": 43,
               "5": 1,
@@ -6361,14 +6355,13 @@
             }
           },
           "key": {
-            "count": 59,
+            "count": 57,
             "values": {
               "{index}": 10,
               "{tag.label}": 3,
               "{i}": 2,
               "{label}": 2,
               "{item.key}": 2,
-              "{`skeleton-${index}`}": 2,
               "{key}": 2,
               "{`${sourceTokenKey}-${index}`}": 1,
               "{feature.featureId}": 1,
@@ -6409,10 +6402,10 @@
             }
           },
           "paddingHorizontal": {
-            "count": 47,
+            "count": 49,
             "values": {
               "2": 4,
-              "4": 36,
+              "4": 38,
               "5": 1,
               "6": 2,
               "10": 2,
@@ -6420,10 +6413,10 @@
             }
           },
           "paddingBottom": {
-            "count": 33,
+            "count": 39,
             "values": {
               "2": 1,
-              "3": 19,
+              "3": 25,
               "4": 11,
               "6": 2
             }
@@ -6532,20 +6525,21 @@
               "true (shorthand)": 1
             }
           },
+          "accessibilityLabel": {
+            "count": 5,
+            "values": {
+              "{accessibilityLabel}": 2,
+              "{`${strings('perps.market.related_markets')} - ${collection.label}`}": 1,
+              "{isHidden ? strings('predict.portfolio.value_hidden_accessibility') : strings(...}": 1,
+              "{walletHomeOnboardingTitleForStep(currentStep.kind)}": 1
+            }
+          },
           "borderColor": {
             "count": 5,
             "values": {
               "{BoxBorderColor.BorderDefault}": 3,
               "{border}": 1,
               "{BoxBorderColor.BorderMuted}": 1
-            }
-          },
-          "accessibilityLabel": {
-            "count": 4,
-            "values": {
-              "{accessibilityLabel}": 2,
-              "{isHidden ? strings('predict.portfolio.value_hidden_accessibility') : strings(...}": 1,
-              "{walletHomeOnboardingTitleForStep(currentStep.kind)}": 1
             }
           },
           "borderWidth": {
@@ -6650,17 +6644,17 @@
         "props": {}
       },
       "overall": {
-        "totalInstances": 2769,
-        "filesCount": 718,
+        "totalInstances": 2770,
+        "filesCount": 721,
         "props": {
           "twClassName": {
-            "count": 2219,
+            "count": 2221,
             "values": {
               "\"flex-1\"": 185,
               "\"px-4\"": 59,
               "\"gap-1\"": 58,
-              "\"gap-2\"": 51,
-              "\"w-full\"": 48,
+              "\"gap-2\"": 53,
+              "\"w-full\"": 49,
               "\"gap-3\"": 40,
               "\"flex-1 bg-default\"": 28,
               "\"gap-4\"": 23,
@@ -6669,15 +6663,15 @@
               "\"mb-4\"": 20,
               "\"flex-1 px-4\"": 18,
               "\"px-4 py-3\"": 15,
-              "\"flex-1 gap-1\"": 14,
               "\"flex-1 min-w-0\"": 14,
               "\"px-4 py-2\"": 13,
               "\"py-3\"": 13,
+              "\"flex-1 gap-1\"": 13,
               "\"gap-6\"": 13,
               "\"my-1 border-b border-border-muted\"": 13,
-              "\"pb-4\"": 11,
               "\"flex-row items-center gap-1\"": 11,
               "\"py-4\"": 11,
+              "\"pb-4\"": 10,
               "\"h-px bg-border-muted\"": 9,
               "\"px-4 py-4\"": 9,
               "\"items-end\"": 9,
@@ -6749,12 +6743,12 @@
               "\"flex-col\"": 3,
               "\"flex flex-1 items-center justify-center\"": 3,
               "\"mt-1\"": 3,
-              "\"bg-default\"": 3,
               "\"px-2 py-2\"": 3,
               "\"px-4 pt-3\"": 3,
               "\"gap-0.5\"": 3,
               "\"px-4 py-3 gap-4\"": 3,
               "\"gap-3 mt-4\"": 3,
+              "\"flex-1 mr-2\"": 3,
               "\"gap-1.5\"": 3,
               "\"w-10 h-10 rounded-lg bg-muted overflow-hidden\"": 3,
               "\"absolute inset-0\"": 3,
@@ -6813,6 +6807,7 @@
               "\"h-10 w-10 rounded-full bg-muted mr-4 items-center justify-center\"": 2,
               "\"h-10 w-10\"": 2,
               "\"px-4 pt-4 pb-3\"": 2,
+              "\"bg-default\"": 2,
               "\"pr-1\"": 2,
               "\"bg-background-muted rounded-xl\"": 2,
               "\"mt-0.5\"": 2,
@@ -6837,9 +6832,6 @@
               "\"flex-1 pr-4 gap-1\"": 2,
               "\"w-full justify-center items-center\"": 2,
               "{`h-[${CHART_HEIGHT}px] justify-center items-center`}": 2,
-              "\"items-start py-2 gap-4 w-full\"": 2,
-              "\"pt-1\"": 2,
-              "\"gap-1 items-end\"": 2,
               "\"w-10 h-10 self-start mt-1\"": 2,
               "\"h-px bg-default\"": 2,
               "\"gap-3 py-4\"": 2,
@@ -6903,11 +6895,11 @@
               "\"mx-4 rounded-xl overflow-hidden border border-border-muted\"": 2,
               "\"mx-4 mt-4 p-4 gap-4 rounded-xl bg-background-muted\"": 2,
               "\"self-center pt-4\"": 2,
-              "\"flex-1 mr-2\"": 2,
               "\"pb-5 pt-0\"": 2,
               "\"mb-1 items-end pr-2\"": 2,
               "\"mb-2 px-6\"": 2,
               "\"flex-1 h-px bg-border-muted\"": 2,
+              "\"flex-1 justify-center px-6\"": 2,
               "\"flex-1 pb-[30px]\"": 2,
               "\"relative flex-col gap-2\"": 2,
               "\"p-5 pb-0\"": 2,
@@ -6950,6 +6942,7 @@
               "py-2": 1,
               "\"mx-4 p-4 rounded-xl border border-muted bg-default gap-3.5\"": 1,
               "\"px-1\"": 1,
+              "\"content-end px-4 gap-4 pt-4\"": 1,
               "\"mt-5 w-full rounded-2xl pl-[25px] pr-4 py-3\"": 1,
               "\"px-2 py-1\"": 1,
               "\"bg-default border-t border-muted min-h-[60px] px-4 py-2\"": 1,
@@ -7035,7 +7028,7 @@
               "{`flex-1 bg-default pt-[${insets.top}px]`}": 1,
               "\"w-4 h-4 rounded-full overflow-hidden mr-2\"": 1,
               "\"px-4 pb-6 mt-4\"": 1,
-              "\"px-4 mt-2 mb-4\"": 1,
+              "\"px-4 mt-2 mb-3\"": 1,
               "{`h-6 w-6 rounded-full border ${ isSelected ? 'border-primary-default' : 'bord...}": 1,
               "\"h-3 w-3 rounded-full bg-primary-default\"": 1,
               "\"pt-2 gap-2\"": 1,
@@ -7065,6 +7058,7 @@
               "\"pt-3 gap-3\"": 1,
               "\"gap-3 flex-1\"": 1,
               "\"gap-1 flex-1\"": 1,
+              "{animate ? 'w-full aspect-video overflow-hidden rounded-2xl' : 'w-full aspect-...}": 1,
               "\"rounded bg-primary-muted px-1.5\"": 1,
               "\"shrink-0 pt-1\"": 1,
               "\"mt-3 mb-3 gap-3\"": 1,
@@ -7149,9 +7143,6 @@
               "\"justify-center gap-2 pt-2 px-4\"": 1,
               "\"px-4 pb-4 flex-col gap-2\"": 1,
               "px-4 pt-3 border-t border-muted": 1,
-              "\"bg-background-alternative rounded-xl p-3 mr-4\"": 1,
-              "\"items-center gap-3 mb-3\"": 1,
-              "\"items-center mb-2 gap-1\"": 1,
               "{isCarousel ? 'flex-1' : ''}": 1,
               "{isCarousel ? 'mb-2 gap-2' : 'mb-3 gap-4'}": 1,
               "{`${isCarousel ? 'w-8 h-8' : 'w-10 h-10'} rounded-lg bg-muted overflow-hidden`}": 1,
@@ -7186,6 +7177,7 @@
               "\"gap-4 pb-4 pt-2\"": 1,
               "\"px-4 pb-3 mt-3\"": 1,
               "\"flex-1 min-w-0 shrink\"": 1,
+              "\"gap-1 min-w-0\"": 1,
               "\"w-full py-2\"": 1,
               "\"w-full bg-muted rounded-2xl p-4 mb-4\"": 1,
               "\"justify-between mb-3\"": 1,
@@ -7473,6 +7465,7 @@
               "\"flex-1 flex-row items-start gap-2\"": 1,
               "\"absolute top-0 left-0 right-0 bg-default\"": 1,
               "\"flex-1 items-center justify-center pb-32\"": 1,
+              "\"pb-2\"": 1,
               "\"flex-1 pt-2\"": 1,
               "\"items-center pt-4 px-4\"": 1,
               "\"flex-1 justify-center items-center px-4\"": 1,
@@ -7517,6 +7510,9 @@
               "\"p-8 items-center\"": 1,
               "\"flex-1 gap-0\"": 1,
               "\"flex-row gap-1\"": 1,
+              "\"items-start py-2 gap-4 w-full\"": 1,
+              "\"pt-1\"": 1,
+              "\"gap-1 items-end\"": 1,
               "\"mx-1 h-7 shrink-0 rounded-full px-2\"": 1,
               "\"h-4 w-4 shrink-0 rounded-full\"": 1,
               "\"h-2 w-2 rounded-full bg-success-default\"": 1,
@@ -7617,6 +7613,7 @@
               "\"max-w-full px-1\"": 1,
               "\"mx-4 mt-3 mb-1 p-4 bg-muted rounded-2xl\"": 1,
               "\"px-4 pt-3 pb-3\"": 1,
+              "\"translate-y-0.5\"": 1,
               "\"px-4 py-6 items-center\"": 1,
               "{`pb-2 ${isActive ? 'border-b-2 border-default' : ''}`}": 1,
               "\"h-px bg-muted mx-4 mt-5 mb-4\"": 1,
@@ -7659,7 +7656,7 @@
               "{`w-10 h-10 rounded-full ${ isSelected ? 'bg-muted' : 'bg-section' }`}": 1,
               "\"ml-3 flex-1 min-w-0\"": 1,
               "\"min-w-6\"": 1,
-              "{`px-4 py-3 ${ isSelected ? 'bg-section' : 'bg-default' } ${disabled ? 'opacit...}": 1,
+              "{`px-4 py-3 ${rowBackgroundClass} ${ disabled ? 'opacity-50' : '' }`}": 1,
               "\"ml-4 h-12 justify-center flex-1\"": 1,
               "\"flex-row items-center px-4 flex-1 min-w-0\"": 1,
               "\"ml-4 h-12 justify-center flex-1 min-w-0\"": 1,
@@ -7681,16 +7678,16 @@
             }
           },
           "flexDirection": {
-            "count": 669,
+            "count": 671,
             "values": {
-              "{BoxFlexDirection.Row}": 571,
+              "{BoxFlexDirection.Row}": 573,
               "{BoxFlexDirection.Column}": 98
             }
           },
           "alignItems": {
-            "count": 629,
+            "count": 634,
             "values": {
-              "{BoxAlignItems.Center}": 559,
+              "{BoxAlignItems.Center}": 564,
               "{BoxAlignItems.Start}": 45,
               "{BoxAlignItems.End}": 19,
               "{BoxAlignItems.Stretch}": 3,
@@ -7700,9 +7697,9 @@
             }
           },
           "testID": {
-            "count": 465,
+            "count": 459,
             "values": {
-              "{testID}": 73,
+              "{testID}": 67,
               "{ActivityDetailsSelectorsIDs.AMOUNT_HEADER}": 5,
               "{PerpsWatchlistSelectorsIDs.SECTION}": 3,
               "{CAMPAIGN_PRIZE_POOL_TEST_IDS.CONTAINER}": 3,
@@ -7801,6 +7798,7 @@
               "{MoneyActivityListTestIds.CONTAINER}": 1,
               "{MoneyActivityLoadingTestIds.CONTAINER}": 1,
               "{MoneyBalanceCardTestIds.BALANCE_ERROR}": 1,
+              "{MoneyBalanceSummaryTestIds.APY}": 1,
               "{MoneyBalanceSummaryTestIds.CONTAINER}": 1,
               "{MoneyCondensedInfoCardsTestIds.CONTAINER}": 1,
               "{MoneyConvertStablecoinsTestIds.FEATURE_TAGS}": 1,
@@ -7815,6 +7813,7 @@
               "{containerTestID}": 1,
               "{MoneyMetaMaskCardTestIds.MANAGE_CONTAINER}": 1,
               "{MoneyMetaMaskCardTestIds.CONTAINER}": 1,
+              "{testID ?? MoneyNextBestActionParallaxTestIds.CONTAINER}": 1,
               "{MoneyPotentialEarningsTestIds.CONTAINER}": 1,
               "{MoneyWhatYouGetTestIds.CONTAINER}": 1,
               "{NETWORK_MULTI_SELECTOR_TEST_IDS.CUSTOM_NETWORK_CONTAINER}": 1,
@@ -7824,6 +7823,7 @@
               "{PerpsMarketBalanceActionsSelectorsIDs.AVAILABLE_BALANCE_TEXT}": 1,
               "{TEST_ID}": 1,
               "\"perps-progress-bar\"": 1,
+              "{PerpsRelatedMarketsSelectorsIDs.RAIL}": 1,
               "{PerpsHomeViewSelectorsIDs.TOP_MOVERS_SECTION}": 1,
               "{`${testID}-error`}": 1,
               "{testID || TradingViewChartSelectorsIDs.CONTAINER}": 1,
@@ -7845,9 +7845,6 @@
               "{PredictCryptoUpDownPositionsSelectorsIDs.LIST}": 1,
               "{PREDICT_GAME_DETAILS_CONTENT_TEST_IDS.TAB_CONTENT}": 1,
               "{PREDICT_GAME_DETAILS_CONTENT_TEST_IDS.OUTCOMES_CONTENT}": 1,
-              "{PredictPositionsSelectorsIDs.ACTIVE_POSITIONS_LIST}": 1,
-              "{PredictPositionsSelectorsIDs.CLAIMABLE_POSITIONS_LIST}": 1,
-              "{`${testID}${PREDICT_HOME_SKELETON_TEST_IDS.ITEM}${index}`}": 1,
               "{PredictOrderRetrySheetSelectorsIDs.CONTAINER}": 1,
               "{`${testID}${PREDICT_PICKS_FOR_CARD_TEST_IDS.SEPARATOR}`}": 1,
               "{PredictPositionsEmptySelectorsIDs.ICON}": 1,
@@ -8073,9 +8070,9 @@
             }
           },
           "justifyContent": {
-            "count": 282,
+            "count": 285,
             "values": {
-              "{BoxJustifyContent.Between}": 129,
+              "{BoxJustifyContent.Between}": 132,
               "{BoxJustifyContent.Center}": 109,
               "{BoxJustifyContent.Start}": 21,
               "{BoxJustifyContent.End}": 17,
@@ -8087,12 +8084,13 @@
             }
           },
           "style": {
-            "count": 229,
+            "count": 228,
             "values": {
               "{styles.container}": 9,
               "{styles.detailRow}": 6,
               "{styles.banner}": 4,
               "{tw.style('flex-1 flex-shrink mr-2 -mt-1')}": 3,
+              "{style}": 3,
               "{styles.textContainer}": 3,
               "{sectionStyle}": 3,
               "{contentContainerStyle}": 3,
@@ -8107,7 +8105,6 @@
               "{styles.iconContainer}": 2,
               "{styles.titleRow}": 2,
               "{styles.searchBarContainer}": 2,
-              "{style}": 2,
               "{styles.ohlcRow}": 2,
               "{{ paddingTop: insets.top + 12 }}": 2,
               "{{ backgroundColor: colors.background.default }}": 2,
@@ -8173,7 +8170,6 @@
               "{tw.style('bg-background-section')}": 1,
               "{tw.style('mt-1')}": 1,
               "{styles.contentRow}": 1,
-              "{styles.contentContainer}": 1,
               "{styles.progress}": 1,
               "{styles.durationButtonsContainer}": 1,
               "{{ height }}": 1,
@@ -8187,7 +8183,6 @@
               "{{ backgroundColor: seriesItem.color, }}": 1,
               "{{ minHeight: loadingContainerMinHeight }}": 1,
               "{{ paddingBottom: Math.max(insets.bottom, 16) }}": 1,
-              "{tw.style({ width: CARD_WIDTH, height: CARD_HEIGHT })}": 1,
               "{{ width: size, height: size / 2 }}": 1,
               "{tw.style('flex-1 items-center justify-center px-6')}": 1,
               "{tw.style('flex-1 items-center justify-center px-8 py-10')}": 1,
@@ -8274,8 +8269,8 @@
             "count": 220,
             "values": {
               "0": 4,
-              "1": 58,
-              "2": 65,
+              "1": 57,
+              "2": 66,
               "3": 42,
               "4": 43,
               "5": 1,
@@ -8288,14 +8283,13 @@
             }
           },
           "key": {
-            "count": 59,
+            "count": 57,
             "values": {
               "{index}": 10,
               "{tag.label}": 3,
               "{i}": 2,
               "{label}": 2,
               "{item.key}": 2,
-              "{`skeleton-${index}`}": 2,
               "{key}": 2,
               "{`${sourceTokenKey}-${index}`}": 1,
               "{feature.featureId}": 1,
@@ -8336,10 +8330,10 @@
             }
           },
           "paddingHorizontal": {
-            "count": 47,
+            "count": 49,
             "values": {
               "2": 4,
-              "4": 36,
+              "4": 38,
               "5": 1,
               "6": 2,
               "10": 2,
@@ -8347,10 +8341,10 @@
             }
           },
           "paddingBottom": {
-            "count": 33,
+            "count": 39,
             "values": {
               "2": 1,
-              "3": 19,
+              "3": 25,
               "4": 11,
               "6": 2
             }
@@ -8459,20 +8453,21 @@
               "true (shorthand)": 1
             }
           },
+          "accessibilityLabel": {
+            "count": 5,
+            "values": {
+              "{accessibilityLabel}": 2,
+              "{`${strings('perps.market.related_markets')} - ${collection.label}`}": 1,
+              "{isHidden ? strings('predict.portfolio.value_hidden_accessibility') : strings(...}": 1,
+              "{walletHomeOnboardingTitleForStep(currentStep.kind)}": 1
+            }
+          },
           "borderColor": {
             "count": 5,
             "values": {
               "{BoxBorderColor.BorderDefault}": 3,
               "{border}": 1,
               "{BoxBorderColor.BorderMuted}": 1
-            }
-          },
-          "accessibilityLabel": {
-            "count": 4,
-            "values": {
-              "{accessibilityLabel}": 2,
-              "{isHidden ? strings('predict.portfolio.value_hidden_accessibility') : strings(...}": 1,
-              "{walletHomeOnboardingTitleForStep(currentStep.kind)}": 1
             }
           },
           "borderWidth": {

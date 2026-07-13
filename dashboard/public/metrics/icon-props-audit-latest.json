@@ -1,25 +1,25 @@
 {
   "component": "Icon",
-  "generatedAt": "2026-07-08T07:29:44.781Z",
+  "generatedAt": "2026-07-13T09:32:05.922Z",
   "projects": {
     "extension": {
-      "filesScanned": 3442,
+      "filesScanned": 3458,
       "targetComponent": "Icon",
       "mmds": {
-        "totalInstances": 230,
-        "filesCount": 149,
+        "totalInstances": 231,
+        "filesCount": 150,
         "props": {
           "name": {
-            "count": 230,
+            "count": 231,
             "values": {
               "{IconName.ArrowRight}": 22,
-              "{IconName.Danger}": 17,
+              "{IconName.Danger}": 19,
               "{IconName.Check}": 14,
+              "{IconName.Loading}": 10,
               "{IconName.Warning}": 10,
-              "{IconName.Loading}": 9,
+              "{IconName.Info}": 8,
               "{IconName.ArrowDown}": 7,
               "{IconName.ArrowLeft}": 7,
-              "{IconName.Info}": 7,
               "{iconName}": 6,
               "{IconName.Confirmation}": 6,
               "{IconName.CheckBold}": 5,
@@ -29,13 +29,12 @@
               "{isExpanded ? IconName.ArrowUp : IconName.ArrowDown}": 3,
               "{icon}": 3,
               "{IconName.Question}": 3,
-              "{DsIconName.Confirmation}": 3,
-              "{DsIconName.CircleX}": 3,
               "{IconName.CircleX}": 3,
               "{IconName.Search}": 3,
               "{IconName.VerifiedFilled}": 2,
               "{section.iconName}": 2,
-              "{DsIconName.Loading}": 2,
+              "{DsIconName.Confirmation}": 2,
+              "{DsIconName.CircleX}": 2,
               "{IconName.FullCircle}": 2,
               "{IconName.SwapHorizontal}": 2,
               "{IconName.Refresh}": 2,
@@ -56,6 +55,7 @@
               "{headerIconName(variant)}": 1,
               "{standardErrorContent.icon}": 1,
               "{IconName.ShieldLock}": 1,
+              "{DsIconName.Loading}": 1,
               "{mode === 'add' ? IconName.AddCircle : IconName.RemoveMinus}": 1,
               "{IconName.Edit}": 1,
               "{isDropdownOpen ? IconName.ArrowUp : IconName.ArrowDown}": 1,
@@ -94,9 +94,9 @@
               "{isOpen ? IconName.ArrowUp : IconName.ArrowDown}": 1,
               "{isInWatchlist ? IconName.StarFilled : IconName.Star}": 1,
               "{isModifyMenuOpen ? IconName.ArrowUp : IconName.ArrowDown}": 1,
+              "{item.iconName as IconName}": 1,
               "{IconName.Monitor}": 1,
               "{item.isExpanded ? IconName.ArrowUp : IconName.ArrowDown}": 1,
-              "{item.iconName as IconName}": 1,
               "{IconName.Coin}": 1,
               "{file.contentType?.includes('image') ? IconName.Image : IconName.File}": 1,
               "{endIconName ?? IconName.ArrowRight}": 1,
@@ -105,37 +105,37 @@
             }
           },
           "size": {
-            "count": 207,
+            "count": 208,
             "values": {
-              "{IconSize.Sm}": 76,
+              "{IconSize.Sm}": 78,
               "{IconSize.Md}": 41,
-              "{IconSize.Lg}": 31,
-              "{IconSize.Xl}": 28,
+              "{IconSize.Lg}": 32,
+              "{IconSize.Xl}": 29,
               "{IconSize.Xs}": 20,
-              "{DsIconSize.Lg}": 8,
+              "{DsIconSize.Lg}": 5,
               "{iconSize || IconSize.Md}": 2,
               "{iconSize}": 1
             }
           },
           "color": {
-            "count": 177,
+            "count": 178,
             "values": {
-              "{IconColor.IconAlternative}": 54,
-              "{IconColor.IconDefault}": 30,
-              "{IconColor.ErrorDefault}": 19,
+              "{IconColor.IconAlternative}": 55,
+              "{IconColor.IconDefault}": 31,
+              "{IconColor.ErrorDefault}": 20,
               "{IconColor.SuccessDefault}": 16,
-              "{IconColor.WarningDefault}": 12,
+              "{IconColor.WarningDefault}": 13,
               "{IconColor.IconMuted}": 8,
               "{IconColor.PrimaryDefault}": 6,
               "{IconColor.InfoDefault}": 4,
-              "{DsIconColor.SuccessDefault}": 3,
-              "{DsIconColor.ErrorDefault}": 3,
               "{iconColor}": 3,
-              "{DsIconColor.IconDefault}": 2,
+              "{DsIconColor.SuccessDefault}": 2,
+              "{DsIconColor.ErrorDefault}": 2,
               "{addressCopied ? IconColor.SuccessDefault : IconColor.IconAlternative}": 2,
               "{activeAlert.severity === 'danger' ? IconColor.ErrorDefault : IconColor.Warnin...}": 2,
               "{isActive ? IconColor.IconDefault : IconColor.IconAlternative}": 1,
               "{standardErrorContent.iconColor}": 1,
+              "{DsIconColor.IconDefault}": 1,
               "{icon.color}": 1,
               "{copied ? IconColor.SuccessDefault : IconColor.IconAlternative}": 1,
               "{shouldTriggerBackup && isSettingsPage ? IconColor.ErrorDefault : IconColor.Ic...}": 1,
@@ -150,21 +150,21 @@
             }
           },
           "className": {
-            "count": 54,
+            "count": 57,
             "values": {
-              "\"animate-spin\"": 5,
+              "\"animate-spin\"": 6,
               "\"mb-2\"": 4,
               "\"ml-auto\"": 4,
+              "\"shrink-0\"": 3,
               "\"mr-3\"": 3,
               "\"text-icon-alternative\"": 3,
-              "\"shrink-0\"": 2,
+              "\"mx-auto\"": 3,
               "\"mt-1 shrink-0\"": 2,
               "\"text-error-default\"": 2,
               "\"add-multichain-account__icon-box__icon-loading\"": 2,
               "\"disclosure__summary--icon\"": 2,
               "\"mr-2\"": 2,
               "\"onboarding-app-header__banner-tip-icon\"": 2,
-              "\"mx-auto\"": 2,
               "\"mt-2\"": 2,
               "\"w-12 h-12\"": 1,
               "\"group-hover/tab:text-icon-default-hover\"": 1,
@@ -204,9 +204,9 @@
             }
           },
           "style": {
-            "count": 10,
+            "count": 9,
             "values": {
-              "{{ animation: 'spin 1.2s linear infinite' }}": 4,
+              "{{ animation: 'spin 1.2s linear infinite' }}": 3,
               "{{ color: 'var(--color-telegram-blue)' }}": 2,
               "{{ marginInlineStart: '8px' }}": 1,
               "{{ marginInlineEnd: '8px' }}": 1,
@@ -246,24 +246,24 @@
       },
       "deprecated": {
         "totalInstances": 138,
-        "filesCount": 94,
+        "filesCount": 95,
         "props": {
           "name": {
             "count": 138,
             "values": {
               "{IconName.Info}": 17,
-              "{IconName.Danger}": 14,
+              "{IconName.Danger}": 15,
               "{IconName.Export}": 10,
               "{IconName.Warning}": 6,
               "{IconName.ArrowRight}": 5,
               "{IconName.ArrowDown}": 5,
               "{IconName.Check}": 4,
               "{IconName.Setting}": 3,
-              "{IconName.Add}": 3,
               "{IconName.Confirmation}": 3,
               "{IconName.Question}": 3,
               "{IconName.SecurityTick}": 2,
               "{IconName.Refresh}": 2,
+              "{IconName.Add}": 2,
               "{IconName.VerifiedFilled}": 2,
               "{icon.name}": 2,
               "{IconName.Close}": 2,
@@ -316,9 +316,9 @@
             }
           },
           "size": {
-            "count": 103,
+            "count": 102,
             "values": {
-              "{IconSize.Sm}": 56,
+              "{IconSize.Sm}": 55,
               "{IconSize.Xl}": 13,
               "{IconSize.Lg}": 10,
               "{IconSize.Md}": 7,
@@ -333,14 +333,14 @@
             }
           },
           "color": {
-            "count": 95,
+            "count": 96,
             "values": {
               "{IconColor.primaryDefault}": 14,
               "{IconColor.iconAlternative}": 14,
               "{IconColor.iconDefault}": 10,
               "{IconColor.iconMuted}": 10,
+              "{IconColor.errorDefault}": 9,
               "{IconColor.warningDefault}": 8,
-              "{IconColor.errorDefault}": 8,
               "{IconColor.successDefault}": 8,
               "{IconColor.infoDefault}": 5,
               "{iconColor}": 3,
@@ -387,10 +387,10 @@
             }
           },
           "marginInlineEnd": {
-            "count": 13,
+            "count": 12,
             "values": {
               "1": 4,
-              "2": 8,
+              "2": 7,
               "3": 1
             }
           },
@@ -503,25 +503,25 @@
         }
       },
       "overall": {
-        "totalInstances": 368,
-        "filesCount": 241,
+        "totalInstances": 369,
+        "filesCount": 243,
         "props": {
           "name": {
-            "count": 368,
+            "count": 369,
             "values": {
-              "{IconName.Danger}": 31,
+              "{IconName.Danger}": 34,
               "{IconName.ArrowRight}": 27,
-              "{IconName.Info}": 24,
+              "{IconName.Info}": 25,
               "{IconName.Check}": 18,
               "{IconName.Warning}": 16,
+              "{IconName.Loading}": 12,
               "{IconName.ArrowDown}": 12,
               "{IconName.Export}": 11,
-              "{IconName.Loading}": 11,
               "{IconName.Confirmation}": 9,
               "{iconName}": 8,
               "{IconName.ArrowLeft}": 8,
-              "{IconName.Add}": 7,
               "{IconName.CheckBold}": 7,
+              "{IconName.Add}": 6,
               "{IconName.Question}": 6,
               "{IconName.Setting}": 5,
               "{IconName.Refresh}": 4,
@@ -533,8 +533,6 @@
               "{IconName.Send}": 4,
               "{IconName.Arrow2Up}": 4,
               "{IconName.Error}": 3,
-              "{DsIconName.Confirmation}": 3,
-              "{DsIconName.CircleX}": 3,
               "{icon.name}": 3,
               "{IconName.SwapHorizontal}": 3,
               "{IconName.Close}": 3,
@@ -544,7 +542,8 @@
               "{IconName.Search}": 3,
               "{IconName.SecurityTick}": 2,
               "{section.iconName}": 2,
-              "{DsIconName.Loading}": 2,
+              "{DsIconName.Confirmation}": 2,
+              "{DsIconName.CircleX}": 2,
               "{IconName.Edit}": 2,
               "{IconName.AppleLogo}": 2,
               "{IconName.Telegram}": 2,
@@ -575,6 +574,7 @@
               "{standardErrorContent.icon}": 1,
               "{snapRemovalResult.result === 'success' ? IconName.Confirmation : IconName.Danger}": 1,
               "{IconName.ShieldLock}": 1,
+              "{DsIconName.Loading}": 1,
               "{infoIcon}": 1,
               "{mode === 'add' ? IconName.AddCircle : IconName.RemoveMinus}": 1,
               "{isDropdownOpen ? IconName.ArrowUp : IconName.ArrowDown}": 1,
@@ -620,9 +620,9 @@
               "{isError ? IconName.CircleX : IconName.Confirmation}": 1,
               "{isInWatchlist ? IconName.StarFilled : IconName.Star}": 1,
               "{isModifyMenuOpen ? IconName.ArrowUp : IconName.ArrowDown}": 1,
+              "{item.iconName as IconName}": 1,
               "{IconName.Monitor}": 1,
               "{item.isExpanded ? IconName.ArrowUp : IconName.ArrowDown}": 1,
-              "{item.iconName as IconName}": 1,
               "{IconName.Coin}": 1,
               "{file.contentType?.includes('image') ? IconName.Image : IconName.File}": 1,
               "{endIconName ?? IconName.ArrowRight}": 1,
@@ -633,13 +633,13 @@
           "size": {
             "count": 310,
             "values": {
-              "{IconSize.Sm}": 132,
+              "{IconSize.Sm}": 133,
               "{IconSize.Md}": 48,
-              "{IconSize.Xl}": 41,
-              "{IconSize.Lg}": 41,
+              "{IconSize.Xl}": 42,
+              "{IconSize.Lg}": 42,
               "{IconSize.Xs}": 25,
-              "{DsIconSize.Lg}": 8,
               "{IconSize.Inherit}": 5,
+              "{DsIconSize.Lg}": 5,
               "{iconSize || IconSize.Md}": 2,
               "{iconSizeLegacy || IconSizeLegacy.Sm}": 2,
               "{iconSize}": 1,
@@ -651,29 +651,28 @@
             }
           },
           "color": {
-            "count": 272,
+            "count": 274,
             "values": {
-              "{IconColor.IconAlternative}": 54,
-              "{IconColor.IconDefault}": 30,
-              "{IconColor.ErrorDefault}": 19,
+              "{IconColor.IconAlternative}": 55,
+              "{IconColor.IconDefault}": 31,
+              "{IconColor.ErrorDefault}": 20,
               "{IconColor.SuccessDefault}": 16,
               "{IconColor.primaryDefault}": 14,
               "{IconColor.iconAlternative}": 14,
-              "{IconColor.WarningDefault}": 12,
+              "{IconColor.WarningDefault}": 13,
               "{IconColor.iconDefault}": 10,
               "{IconColor.iconMuted}": 10,
+              "{IconColor.errorDefault}": 9,
               "{IconColor.warningDefault}": 8,
-              "{IconColor.errorDefault}": 8,
               "{IconColor.IconMuted}": 8,
               "{IconColor.successDefault}": 8,
               "{iconColor}": 6,
               "{IconColor.PrimaryDefault}": 6,
               "{IconColor.infoDefault}": 5,
               "{IconColor.InfoDefault}": 4,
-              "{DsIconColor.SuccessDefault}": 3,
-              "{DsIconColor.ErrorDefault}": 3,
               "{icon.color}": 3,
-              "{DsIconColor.IconDefault}": 2,
+              "{DsIconColor.SuccessDefault}": 2,
+              "{DsIconColor.ErrorDefault}": 2,
               "{isVisible && sensitive ? Color.errorAlternative : IconColor.iconAlternative}": 2,
               "{addressCopied ? IconColor.SuccessDefault : IconColor.IconAlternative}": 2,
               "{activeAlert.severity === 'danger' ? IconColor.ErrorDefault : IconColor.Warnin...}": 2,
@@ -682,6 +681,7 @@
               "{tooltipIconColor ?? (TOOLTIP_ICON_COLORS[variant] as unknown as IconColor)}": 1,
               "{standardErrorContent.iconColor}": 1,
               "{snapRemovalResult.result === 'success' ? IconColor.successDefault : IconColor...}": 1,
+              "{DsIconColor.IconDefault}": 1,
               "{infoIconColor}": 1,
               "{active ? IconColor.infoDefault : IconColor.iconAlternative}": 1,
               "{color}": 1,
@@ -703,15 +703,16 @@
             }
           },
           "className": {
-            "count": 71,
+            "count": 74,
             "values": {
-              "\"animate-spin\"": 5,
+              "\"animate-spin\"": 6,
               "\"mb-2\"": 4,
               "\"ml-auto\"": 4,
               "\"settings-page-developer-options__icon-check\"": 4,
+              "\"shrink-0\"": 3,
               "\"mr-3\"": 3,
               "\"text-icon-alternative\"": 3,
-              "\"shrink-0\"": 2,
+              "\"mx-auto\"": 3,
               "\"mt-1 shrink-0\"": 2,
               "\"text-error-default\"": 2,
               "\"notification-list-item__unread-dot__dot\"": 2,
@@ -719,7 +720,6 @@
               "\"disclosure__summary--icon\"": 2,
               "\"mr-2\"": 2,
               "\"onboarding-app-header__banner-tip-icon\"": 2,
-              "\"mx-auto\"": 2,
               "\"mt-2\"": 2,
               "\"w-12 h-12\"": 1,
               "\"group-hover/tab:text-icon-default-hover\"": 1,
@@ -784,9 +784,9 @@
             }
           },
           "style": {
-            "count": 17,
+            "count": 16,
             "values": {
-              "{{ animation: 'spin 1.2s linear infinite' }}": 6,
+              "{{ animation: 'spin 1.2s linear infinite' }}": 5,
               "{{ color: 'var(--color-telegram-blue)' }}": 2,
               "{{ cursor: 'pointer' }}": 2,
               "{{ marginTop: icon.verticalAdjustment }}": 1,
@@ -799,10 +799,10 @@
             }
           },
           "marginInlineEnd": {
-            "count": 13,
+            "count": 12,
             "values": {
               "1": 4,
-              "2": 8,
+              "2": 7,
               "3": 1
             }
           },
@@ -908,17 +908,17 @@
       }
     },
     "mobile": {
-      "filesScanned": 7036,
+      "filesScanned": 7127,
       "targetComponent": "Icon",
       "mmds": {
-        "totalInstances": 310,
-        "filesCount": 229,
+        "totalInstances": 296,
+        "filesCount": 224,
         "props": {
           "name": {
-            "count": 309,
+            "count": 295,
             "values": {
-              "{IconName.ArrowRight}": 48,
-              "{IconName.Info}": 34,
+              "{IconName.ArrowRight}": 44,
+              "{IconName.Info}": 27,
               "{IconName.Check}": 17,
               "{IconName.ArrowDown}": 14,
               "{IconName.Danger}": 13,
@@ -931,12 +931,12 @@
               "{IconName.Add}": 5,
               "{IconName.ArrowLeft}": 5,
               "{icon}": 4,
-              "{IconName.Edit}": 4,
               "{IconName.CheckBold}": 4,
               "{IconName.X}": 4,
               "{IconName.Notification}": 4,
-              "{IconName.Search}": 4,
+              "{IconName.Edit}": 3,
               "{item.icon}": 3,
+              "{IconName.Search}": 3,
               "{isExpanded ? IconName.ArrowUp : IconName.ArrowDown}": 3,
               "{IconName.Copy}": 3,
               "{IconName.Close}": 2,
@@ -944,7 +944,6 @@
               "{IconName.EyeSlash}": 2,
               "{IconName.Diagram}": 2,
               "{IconName.Candlestick}": 2,
-              "{option.iconName}": 2,
               "{IconName.CircleX}": 2,
               "{IconName.SwapVertical}": 2,
               "{IconName.Setting}": 2,
@@ -982,6 +981,7 @@
               "{feedbackGiven === 'up' ? IconName.ThumbUpFilled : IconName.ThumbUp}": 1,
               "{feedbackGiven === 'down' ? IconName.ThumbDownFilled : IconName.ThumbDown}": 1,
               "{IconName.Ai}": 1,
+              "{option.iconName}": 1,
               "{errorContent.icon}": 1,
               "{sortDirection === 'asc' ? IconName.Arrow2Up : IconName.Arrow2Down}": 1,
               "{IconName.Book}": 1,
@@ -1020,12 +1020,12 @@
             }
           },
           "size": {
-            "count": 303,
+            "count": 289,
             "values": {
-              "{IconSize.Sm}": 107,
-              "{IconSize.Md}": 89,
-              "{IconSize.Lg}": 55,
-              "{IconSize.Xl}": 36,
+              "{IconSize.Sm}": 96,
+              "{IconSize.Md}": 88,
+              "{IconSize.Lg}": 54,
+              "{IconSize.Xl}": 35,
               "{IconSize.Xs}": 11,
               "{iconSize}": 3,
               "{ARROW_ICON_SIZE}": 1,
@@ -1033,14 +1033,14 @@
             }
           },
           "color": {
-            "count": 241,
+            "count": 227,
             "values": {
-              "{IconColor.IconAlternative}": 101,
-              "{IconColor.IconDefault}": 42,
+              "{IconColor.IconAlternative}": 91,
+              "{IconColor.IconDefault}": 40,
               "{IconColor.ErrorDefault}": 17,
               "{IconColor.SuccessDefault}": 17,
-              "{IconColor.IconMuted}": 12,
-              "{IconColor.PrimaryDefault}": 9,
+              "{IconColor.IconMuted}": 11,
+              "{IconColor.PrimaryDefault}": 8,
               "{IconColor.WarningDefault}": 8,
               "{iconColor}": 6,
               "{IconColor.InfoDefault}": 3,
@@ -1103,20 +1103,15 @@
             }
           },
           "testID": {
-            "count": 35,
+            "count": 29,
             "values": {
-              "{MoneyPotentialEarningsTestIds.INFO_BUTTON}": 2,
               "\"resource-ring-icon\"": 1,
               "\"input-stepper-description-icon\"": 1,
               "\"swaps-token-verified-icon\"": 1,
               "{`token-verified-icon-${token.symbol}`}": 1,
               "\"confirm-modal-icon\"": 1,
+              "{MoneyPotentialEarningsTestIds.INFO_BUTTON}": 1,
               "{MoneySectionHeaderTestIds.CHEVRON}": 1,
-              "{PerpsOrderViewSelectorsIDs.LEVERAGE_INFO_ICON}": 1,
-              "{PerpsOrderViewSelectorsIDs.TP_SL_INFO_ICON}": 1,
-              "{PerpsOrderViewSelectorsIDs.MARGIN_INFO_ICON}": 1,
-              "{PerpsOrderViewSelectorsIDs.LIQUIDATION_PRICE_INFO_ICON}": 1,
-              "{PerpsOrderViewSelectorsIDs.FEES_INFO_ICON}": 1,
               "{testID ? `${testID}-direction-indicator` : undefined}": 1,
               "{PerpsMarketTabsSelectorsIDs.ORDERS_EMPTY_ICON}": 1,
               "{testID ? `${testID}-check-${option.id}` : undefined}": 1,
@@ -1142,12 +1137,10 @@
             }
           },
           "style": {
-            "count": 28,
+            "count": 25,
             "values": {
-              "{styles.icon}": 6,
+              "{styles.icon}": 7,
               "{tw.style('self-center shrink-0')}": 3,
-              "{styles.emptyStateIcon}": 3,
-              "{{ transform: [{ translateY: 3 }] }}": 2,
               "{tw.style({ color: commonColors.telegramBlue })}": 2,
               "{styles.assetDirectionIcon}": 2,
               "{styles.verifiedIcon}": 1,
@@ -1155,6 +1148,7 @@
               "{styles.errorIcon}": 1,
               "{tw.style('mr-2')}": 1,
               "{styles.warningIcon}": 1,
+              "{styles.emptyStateIcon}": 1,
               "{styles.fillBadgeIcon}": 1,
               "{styles.checkIcon}": 1,
               "{localStyles.inlineIcon}": 1,
@@ -1163,9 +1157,9 @@
             }
           },
           "onPress": {
-            "count": 2,
+            "count": 1,
             "values": {
-              "{onInfoPress}": 2
+              "{onInfoPress}": 1
             }
           },
           "[spread]": {
@@ -1177,16 +1171,16 @@
         }
       },
       "deprecated": {
-        "totalInstances": 203,
-        "filesCount": 140,
+        "totalInstances": 202,
+        "filesCount": 139,
         "props": {
           "name": {
-            "count": 203,
+            "count": 202,
             "values": {
               "{IconName.Danger}": 18,
               "{IconName.ArrowRight}": 13,
               "{IconName.Info}": 12,
-              "{IconName.ArrowDown}": 11,
+              "{IconName.ArrowDown}": 10,
               "{IconName.Check}": 10,
               "{IconName.Close}": 10,
               "{IconName.Export}": 9,
@@ -1255,13 +1249,13 @@
             }
           },
           "size": {
-            "count": 187,
+            "count": 186,
             "values": {
               "{IconSize.Sm}": 50,
               "{IconSize.Md}": 48,
               "{IconSize.Lg}": 33,
               "{IconSize.Xl}": 32,
-              "{IconSize.Xs}": 15,
+              "{IconSize.Xs}": 14,
               "{size}": 2,
               "{iconSize}": 2,
               "{ICON_SIZE}": 1,
@@ -1272,12 +1266,12 @@
             }
           },
           "color": {
-            "count": 160,
+            "count": 159,
             "values": {
               "{IconColor.Alternative}": 31,
               "{IconColor.Primary}": 13,
-              "{IconColor.Default}": 12,
               "{IconColor.Error}": 11,
+              "{IconColor.Default}": 11,
               "{IconColor.Muted}": 10,
               "{IconColor.Success}": 7,
               "{colors.primary.default}": 7,
@@ -1319,7 +1313,7 @@
             }
           },
           "style": {
-            "count": 45,
+            "count": 44,
             "values": {
               "{styles.icon}": 8,
               "{innerStyles.headerBackIcon}": 3,
@@ -1333,7 +1327,6 @@
               "{styles.connectionIcon}": 1,
               "{styles.warningIcon}": 1,
               "{styles.urlIcon}": 1,
-              "{styles.marketButtonIcon}": 1,
               "{tw.style('mr-1 flex-shrink-0')}": 1,
               "{tw.style('mb-4')}": 1,
               "{styles.chevron}": 1,
@@ -1410,17 +1403,17 @@
         }
       },
       "overall": {
-        "totalInstances": 513,
-        "filesCount": 367,
+        "totalInstances": 498,
+        "filesCount": 361,
         "props": {
           "name": {
-            "count": 512,
+            "count": 497,
             "values": {
-              "{IconName.ArrowRight}": 61,
-              "{IconName.Info}": 46,
+              "{IconName.ArrowRight}": 57,
+              "{IconName.Info}": 39,
               "{IconName.Danger}": 31,
               "{IconName.Check}": 27,
-              "{IconName.ArrowDown}": 25,
+              "{IconName.ArrowDown}": 24,
               "{IconName.Warning}": 15,
               "{IconName.Export}": 15,
               "{iconName}": 14,
@@ -1431,10 +1424,10 @@
               "{IconName.Clock}": 11,
               "{IconName.CheckBold}": 11,
               "{IconName.Add}": 8,
-              "{IconName.Edit}": 7,
-              "{IconName.Search}": 7,
               "{icon}": 6,
               "{IconName.Error}": 6,
+              "{IconName.Edit}": 6,
+              "{IconName.Search}": 6,
               "{IconName.SecurityTick}": 5,
               "{IconName.Notification}": 5,
               "{IconName.SwapVertical}": 5,
@@ -1459,7 +1452,6 @@
               "{icon.name}": 2,
               "{IconName.Loading}": 2,
               "{IconName.Question}": 2,
-              "{option.iconName}": 2,
               "{IconName.Chart}": 2,
               "{IconName.Card}": 2,
               "{badge.icon}": 2,
@@ -1504,6 +1496,7 @@
               "\"arrow-right\"": 1,
               "{IconName.Ai}": 1,
               "{IconName.MoreVertical}": 1,
+              "{option.iconName}": 1,
               "{errorContent.icon}": 1,
               "{sortDirection === 'asc' ? IconName.Arrow2Up : IconName.Arrow2Down}": 1,
               "{IconName.Book}": 1,
@@ -1556,13 +1549,13 @@
             }
           },
           "size": {
-            "count": 490,
+            "count": 475,
             "values": {
-              "{IconSize.Sm}": 157,
-              "{IconSize.Md}": 137,
-              "{IconSize.Lg}": 88,
-              "{IconSize.Xl}": 68,
-              "{IconSize.Xs}": 26,
+              "{IconSize.Sm}": 146,
+              "{IconSize.Md}": 136,
+              "{IconSize.Lg}": 87,
+              "{IconSize.Xl}": 67,
+              "{IconSize.Xs}": 25,
               "{iconSize}": 5,
               "{size}": 2,
               "{ARROW_ICON_SIZE}": 1,
@@ -1575,20 +1568,20 @@
             }
           },
           "color": {
-            "count": 401,
+            "count": 386,
             "values": {
-              "{IconColor.IconAlternative}": 101,
-              "{IconColor.IconDefault}": 42,
+              "{IconColor.IconAlternative}": 91,
+              "{IconColor.IconDefault}": 40,
               "{IconColor.Alternative}": 31,
               "{IconColor.ErrorDefault}": 17,
               "{IconColor.SuccessDefault}": 17,
               "{IconColor.Primary}": 13,
-              "{IconColor.Default}": 12,
-              "{IconColor.IconMuted}": 12,
               "{IconColor.Error}": 11,
+              "{IconColor.Default}": 11,
+              "{IconColor.IconMuted}": 11,
               "{iconColor}": 11,
               "{IconColor.Muted}": 10,
-              "{IconColor.PrimaryDefault}": 9,
+              "{IconColor.PrimaryDefault}": 8,
               "{IconColor.WarningDefault}": 8,
               "{IconColor.Success}": 7,
               "{colors.primary.default}": 7,
@@ -1653,17 +1646,15 @@
             }
           },
           "style": {
-            "count": 73,
+            "count": 69,
             "values": {
-              "{styles.icon}": 14,
+              "{styles.icon}": 15,
               "{tw.style('self-center shrink-0')}": 3,
               "{innerStyles.headerBackIcon}": 3,
-              "{styles.emptyStateIcon}": 3,
               "{styles.iconExport}": 3,
               "{styles.backIcon}": 3,
               "{styles.action}": 2,
               "{styles.warningIcon}": 2,
-              "{{ transform: [{ translateY: 3 }] }}": 2,
               "{styles.errorIcon}": 2,
               "{tw.style('mr-2')}": 2,
               "{tw.style({ color: commonColors.telegramBlue })}": 2,
@@ -1676,8 +1667,8 @@
               "{styles.connectionIcon}": 1,
               "{styles.text}": 1,
               "{styles.urlIcon}": 1,
+              "{styles.emptyStateIcon}": 1,
               "{styles.fillBadgeIcon}": 1,
-              "{styles.marketButtonIcon}": 1,
               "{styles.checkIcon}": 1,
               "{tw.style('mr-1 flex-shrink-0')}": 1,
               "{tw.style('mb-4')}": 1,
@@ -1701,9 +1692,8 @@
             }
           },
           "testID": {
-            "count": 54,
+            "count": 48,
             "values": {
-              "{MoneyPotentialEarningsTestIds.INFO_BUTTON}": 2,
               "\"reveal-icon\"": 1,
               "\"copy-icon\"": 1,
               "\"snaps-ui-link-icon\"": 1,
@@ -1714,13 +1704,9 @@
               "\"swaps-token-verified-icon\"": 1,
               "{`token-verified-icon-${token.symbol}`}": 1,
               "\"confirm-modal-icon\"": 1,
+              "{MoneyPotentialEarningsTestIds.INFO_BUTTON}": 1,
               "{MoneySectionHeaderTestIds.CHEVRON}": 1,
               "\"trust-signal-icon\"": 1,
-              "{PerpsOrderViewSelectorsIDs.LEVERAGE_INFO_ICON}": 1,
-              "{PerpsOrderViewSelectorsIDs.TP_SL_INFO_ICON}": 1,
-              "{PerpsOrderViewSelectorsIDs.MARGIN_INFO_ICON}": 1,
-              "{PerpsOrderViewSelectorsIDs.LIQUIDATION_PRICE_INFO_ICON}": 1,
-              "{PerpsOrderViewSelectorsIDs.FEES_INFO_ICON}": 1,
               "{testID ? `${testID}-direction-indicator` : undefined}": 1,
               "{PerpsMarketTabsSelectorsIDs.ORDERS_EMPTY_ICON}": 1,
               "{testID ? `${testID}-check-${option.id}` : undefined}": 1,
@@ -1791,9 +1777,9 @@
             }
           },
           "onPress": {
-            "count": 5,
+            "count": 4,
             "values": {
-              "{onInfoPress}": 2,
+              "{onInfoPress}": 1,
               "{toggleModal}": 1,
               "{() => toggleShowPassword(0)}": 1,
               "{() => toggleShowPassword(1)}": 1
@@ -1829,7 +1815,7 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "Icon": 203
+        "Icon": 202
       }
     }
   }

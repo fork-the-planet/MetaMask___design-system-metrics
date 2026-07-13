@@ -1,9 +1,9 @@
 {
   "component": "AvatarToken",
-  "generatedAt": "2026-07-08T07:25:34.296Z",
+  "generatedAt": "2026-07-13T09:25:00.813Z",
   "projects": {
     "extension": {
-      "filesScanned": 3442,
+      "filesScanned": 3458,
       "targetComponent": "AvatarToken",
       "mmds": {
         "totalInstances": 30,
@@ -111,17 +111,16 @@
         }
       },
       "deprecated": {
-        "totalInstances": 26,
-        "filesCount": 21,
+        "totalInstances": 23,
+        "filesCount": 18,
         "props": {
           "src": {
-            "count": 26,
+            "count": 23,
             "values": {
-              "{tokenImage}": 3,
               "{icon.src}": 2,
               "{src}": 2,
+              "{tokenImage}": 2,
               "{avatarTokenSrc}": 1,
-              "{results[i]?.iconUrl}": 1,
               "{musdIconUrl}": 1,
               "{icon}": 1,
               "{sendingAsset.image}": 1,
@@ -137,14 +136,13 @@
               "\"/images/logo/metamask-fox.svg\"": 1,
               "{SUPPORTED_PAYMENT_TOKEN_IMAGES[token]}": 1,
               "{selectedToken?.image}": 1,
-              "{selectedToken?.image || ''}": 1,
-              "{tokenForImport.iconUrl}": 1
+              "{selectedToken?.image || ''}": 1
             }
           },
           "name": {
-            "count": 21,
+            "count": 18,
             "values": {
-              "{symbol}": 7,
+              "{symbol}": 5,
               "\"mUSD\"": 1,
               "{sendingAsset.symbol}": 1,
               "{member.symbol}": 1,
@@ -157,17 +155,16 @@
               "\"metamask-fox\"": 1,
               "{token}": 1,
               "{selectedToken?.symbol}": 1,
-              "{selectedToken?.symbol || ''}": 1,
-              "{tokenForImport.symbol}": 1
+              "{selectedToken?.symbol || ''}": 1
             }
           },
           "size": {
-            "count": 16,
+            "count": 15,
             "values": {
               "{AvatarTokenSize.Xs}": 4,
               "{AvatarTokenSize.Sm}": 3,
-              "{AvatarTokenSize.Xl}": 3,
               "{AvatarTokenSize.Md}": 2,
+              "{AvatarTokenSize.Xl}": 2,
               "{AvatarTokenSize.Lg}": 2,
               "{size}": 1,
               "{TOKEN_ICON_SIZE_MAP[size]}": 1
@@ -247,22 +244,21 @@
         }
       },
       "overall": {
-        "totalInstances": 56,
-        "filesCount": 46,
+        "totalInstances": 53,
+        "filesCount": 43,
         "props": {
           "src": {
-            "count": 56,
+            "count": 53,
             "values": {
               "{image}": 5,
               "{asset.iconUrl ?? undefined}": 4,
               "{src}": 3,
-              "{tokenImage}": 3,
               "{icon.src}": 2,
+              "{tokenImage}": 2,
               "{iconUrl}": 2,
               "{source}": 2,
               "{getCaipAssetImageUrl(assetId as CaipAssetType)}": 1,
               "{avatarTokenSrc}": 1,
-              "{results[i]?.iconUrl}": 1,
               "{musdIconUrl}": 1,
               "{resolvedSrc}": 1,
               "{icon}": 1,
@@ -293,14 +289,13 @@
               "{ARBITRUM_USDC_TOKEN_ICON_URL}": 1,
               "{SUPPORTED_PAYMENT_TOKEN_IMAGES[token]}": 1,
               "{selectedToken?.image}": 1,
-              "{selectedToken?.image || ''}": 1,
-              "{tokenForImport.iconUrl}": 1
+              "{selectedToken?.image || ''}": 1
             }
           },
           "name": {
-            "count": 49,
+            "count": 46,
             "values": {
-              "{symbol}": 11,
+              "{symbol}": 9,
               "{asset.symbol}": 3,
               "{nativeCurrency}": 3,
               "{token.symbol}": 2,
@@ -331,17 +326,16 @@
               "\"metamask-fox\"": 1,
               "{token}": 1,
               "{selectedToken?.symbol}": 1,
-              "{selectedToken?.symbol || ''}": 1,
-              "{tokenForImport.symbol}": 1
+              "{selectedToken?.symbol || ''}": 1
             }
           },
           "size": {
-            "count": 45,
+            "count": 44,
             "values": {
               "{AvatarTokenSize.Md}": 11,
               "{AvatarTokenSize.Xs}": 8,
-              "{AvatarTokenSize.Xl}": 7,
               "{AvatarTokenSize.Lg}": 7,
+              "{AvatarTokenSize.Xl}": 6,
               "{AvatarTokenSize.Sm}": 6,
               "{size}": 2,
               "{MUSD_CONVERT_LIST_TOKEN_SIZE}": 1,
@@ -447,11 +441,11 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "AvatarToken": 26
+        "AvatarToken": 23
       }
     },
     "mobile": {
-      "filesScanned": 7036,
+      "filesScanned": 7127,
       "targetComponent": "AvatarToken",
       "mmds": {
         "totalInstances": 31,
@@ -603,12 +597,13 @@
           "imageSource": {
             "count": 22,
             "values": {
-              "{getTokenImageSource( token.symbol, token.image, token.address, token.chainId, )}": 2,
               "{{ uri: token.image }}": 2,
               "{{ uri: asset.image }}": 2,
               "{{ uri: USDC_TOKEN_ICON_URL }}": 2,
               "{{ uri: token.iconUrl }}": 2,
               "{{ uri: icon }}": 1,
+              "{tokenImageSource}": 1,
+              "{getTokenImageSource( token.symbol, token.image, token.address, token.chainId, )}": 1,
               "{{ uri: avatarIconUrl }}": 1,
               "{{ uri: token.image, }}": 1,
               "{{ uri: (tokenToRender as TokenI).image }}": 1,
@@ -744,12 +739,13 @@
           "imageSource": {
             "count": 22,
             "values": {
-              "{getTokenImageSource( token.symbol, token.image, token.address, token.chainId, )}": 2,
               "{{ uri: token.image }}": 2,
               "{{ uri: asset.image }}": 2,
               "{{ uri: USDC_TOKEN_ICON_URL }}": 2,
               "{{ uri: token.iconUrl }}": 2,
               "{{ uri: icon }}": 1,
+              "{tokenImageSource}": 1,
+              "{getTokenImageSource( token.symbol, token.image, token.address, token.chainId, )}": 1,
               "{{ uri: avatarIconUrl }}": 1,
               "{{ uri: token.image, }}": 1,
               "{{ uri: (tokenToRender as TokenI).image }}": 1,

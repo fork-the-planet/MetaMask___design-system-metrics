@@ -1,9 +1,9 @@
 {
   "component": "Input",
-  "generatedAt": "2026-07-08T07:30:02.744Z",
+  "generatedAt": "2026-07-13T09:32:38.524Z",
   "projects": {
     "extension": {
-      "filesScanned": 3442,
+      "filesScanned": 3458,
       "targetComponent": "Input",
       "mmds": {
         "totalInstances": 3,
@@ -129,7 +129,7 @@
           "isDisabled": {
             "count": 1,
             "values": {
-              "{isExpired}": 1
+              "{isExpired || hasMaxedOutAttempts}": 1
             }
           }
         }
@@ -326,7 +326,7 @@
           "isDisabled": {
             "count": 1,
             "values": {
-              "{isExpired}": 1
+              "{isExpired || hasMaxedOutAttempts}": 1
             }
           }
         }
@@ -336,7 +336,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 7036,
+      "filesScanned": 7127,
       "targetComponent": "Input",
       "mmds": {
         "totalInstances": 5,

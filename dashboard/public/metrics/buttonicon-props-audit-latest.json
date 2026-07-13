@@ -1,34 +1,33 @@
 {
   "component": "ButtonIcon",
-  "generatedAt": "2026-07-08T07:28:31.785Z",
+  "generatedAt": "2026-07-13T09:29:59.235Z",
   "projects": {
     "extension": {
-      "filesScanned": 3442,
+      "filesScanned": 3458,
       "targetComponent": "ButtonIcon",
       "mmds": {
-        "totalInstances": 117,
-        "filesCount": 78,
+        "totalInstances": 119,
+        "filesCount": 80,
         "props": {
           "iconName": {
-            "count": 117,
+            "count": 119,
             "values": {
-              "{IconName.ArrowLeft}": 43,
+              "{IconName.ArrowLeft}": 45,
               "{IconName.Close}": 19,
               "{IconName.ArrowRight}": 13,
               "{IconName.Edit}": 4,
               "{IconName.MoreVertical}": 3,
               "{copied ? IconName.CopySuccess : IconName.Copy}": 3,
               "{IconName.Info}": 3,
+              "{DsIconName.MoreVertical}": 2,
               "{IconName.Add}": 2,
               "{IconName.ArrowDown}": 2,
               "{DsIconName.ListArrow}": 1,
-              "{isTokenManagementFilterEnabled ? DsIconName.MoreVertical : DsIconName.Add}": 1,
               "{showPassword ? IconName.EyeSlash : IconName.Eye}": 1,
               "{showConfirmPassword ? IconName.EyeSlash : IconName.Eye}": 1,
               "{IconName.AddCircle}": 1,
               "{IconName.SwapHorizontal}": 1,
               "{privateKeyCopied ? IconName.CopySuccess : IconName.Copy}": 1,
-              "{DsIconName.MoreVertical}": 1,
               "{isExpanded ? IconName.ArrowUp : IconName.ArrowDown}": 1,
               "{copyIcon}": 1,
               "{IconName.QrCode}": 1,
@@ -49,9 +48,9 @@
             }
           },
           "ariaLabel": {
-            "count": 117,
+            "count": 119,
             "values": {
-              "{t('back')}": 34,
+              "{t('back')}": 36,
               "{t('close')}": 14,
               "{t('back') as string}": 4,
               "{t('next')}": 3,
@@ -62,7 +61,7 @@
               "\"Back\"": 2,
               "\"Next\"": 2,
               "{t('sortBy')}": 1,
-              "{isTokenManagementFilterEnabled ? t('manageTokens') : t('importTokensCamelCase')}": 1,
+              "{t('manageTokens')}": 1,
               "{t('assetOptions')}": 1,
               "{t('dismiss') as string}": 1,
               "{showConfirmPassword ? t('passwordToggleHide') : t('passwordToggleShow')}": 1,
@@ -114,9 +113,9 @@
             }
           },
           "size": {
-            "count": 103,
+            "count": 105,
             "values": {
-              "{ButtonIconSize.Md}": 69,
+              "{ButtonIconSize.Md}": 71,
               "{ButtonIconSize.Sm}": 24,
               "{ButtonIconSize.Lg}": 4,
               "{DsButtonIconSize.Sm}": 2,
@@ -126,12 +125,12 @@
             }
           },
           "onClick": {
-            "count": 95,
+            "count": 97,
             "values": {
-              "{handleBack}": 15,
+              "{handleBack}": 16,
+              "{onBack}": 9,
               "{onClose}": 8,
               "{() => navigate(PREVIOUS_ROUTE)}": 8,
-              "{onBack}": 8,
               "{handleClose}": 5,
               "{onClick}": 2,
               "{handleClick}": 2,
@@ -140,7 +139,7 @@
               "{dismissPageToast}": 2,
               "{returnToPreviousPage}": 2,
               "{toggleTokenSortPopover}": 1,
-              "{isTokenManagementFilterEnabled ? handleOpenTokenManagement : handleTokenImpor...}": 1,
+              "{handleOpenTokenManagement}": 1,
               "{(e: React.MouseEvent) => { e.stopPropagation(); handleDismiss(); }}": 1,
               "{(e: React.MouseEvent<HTMLButtonElement>) => { e.stopPropagation(); setShowPas...}": 1,
               "{(e: React.MouseEvent<HTMLButtonElement>) => { e.stopPropagation(); setShowCon...}": 1,
@@ -167,7 +166,7 @@
               "{handleAddressClearOrScan}": 1,
               "{onCopy}": 1,
               "{() => handleCopy(checkSummedAddress)}": 1,
-              "{() => { trackEvent({ category: MetaMetricsEventCategory.Accounts, event: 'Cli...}": 1,
+              "{() => { trackEvent( createEventBuilder('Clicked Block Explorer Link') .addCat...}": 1,
               "{onSettingsClick}": 1,
               "{onTogglePasswordVisibility}": 1,
               "{handleSkip}": 1,
@@ -181,7 +180,7 @@
             }
           },
           "data-testid": {
-            "count": 81,
+            "count": 83,
             "values": {
               "\"back-button\"": 5,
               "\"edit-gas-fee-icon\"": 2,
@@ -228,6 +227,7 @@
               "\"custom-token-import-close-button\"": 1,
               "\"transaction-details-back-button\"": 1,
               "\"hardware-wallet-repair-close-header\"": 1,
+              "\"qr-hardware-signing-page__back-button\"": 1,
               "\"add-wallet-page-back-button\"": 1,
               "\"account-name-action\"": 1,
               "\"network-addresses-link\"": 1,
@@ -252,6 +252,7 @@
               "\"settings-header-search-button\"": 1,
               "\"settings-header-close-button\"": 1,
               "\"settings-header-back-button\"": 1,
+              "\"sync-accounts-back-button\"": 1,
               "\"shield-plan-back-button\"": 1,
               "\"token-management-header-back-button\"": 1,
               "\"unlock-with-passkey\"": 1
@@ -358,11 +359,11 @@
         }
       },
       "deprecated": {
-        "totalInstances": 96,
-        "filesCount": 67,
+        "totalInstances": 95,
+        "filesCount": 66,
         "props": {
           "iconName": {
-            "count": 96,
+            "count": 95,
             "values": {
               "{IconName.ArrowLeft}": 25,
               "{IconName.Close}": 15,
@@ -373,7 +374,6 @@
               "{addressCopied ? IconName.CopySuccess : IconName.Copy}": 3,
               "{copied ? IconName.CopySuccess : IconName.Copy}": 3,
               "{IconName.Danger}": 2,
-              "{isDropdownOpen ? IconName.ArrowUp : IconName.ArrowDown}": 2,
               "{IconName.Info}": 2,
               "{IconName.Setting}": 2,
               "{IconName.SwapVertical}": 2,
@@ -386,6 +386,7 @@
               "{IconName.Upload}": 1,
               "{IconNameDeprecated.Menu}": 1,
               "{IconName.Trash}": 1,
+              "{isDropdownOpen ? IconName.ArrowUp : IconName.ArrowDown}": 1,
               "{IconName.Add}": 1,
               "{IconName.Check}": 1,
               "{IconName.Customize}": 1,
@@ -394,7 +395,7 @@
             }
           },
           "ariaLabel": {
-            "count": 90,
+            "count": 89,
             "values": {
               "{t('back')}": 14,
               "\"Back\"": 11,
@@ -403,9 +404,9 @@
               "\"copy\"": 3,
               "\"\"": 3,
               "{t('edit')}": 3,
-              "{title}": 3,
               "\"Close\"": 3,
               "{t('options')}": 2,
+              "{title}": 2,
               "{t('scrollDown')}": 2,
               "{t('next')}": 1,
               "\"export\"": 1,
@@ -448,10 +449,10 @@
             }
           },
           "size": {
-            "count": 87,
+            "count": 86,
             "values": {
               "{ButtonIconSize.Md}": 42,
-              "{ButtonIconSize.Sm}": 37,
+              "{ButtonIconSize.Sm}": 36,
               "{IconSize.Sm}": 4,
               "{Size.SM}": 2,
               "{ButtonIconSize.Lg}": 1,
@@ -459,7 +460,7 @@
             }
           },
           "onClick": {
-            "count": 83,
+            "count": 82,
             "values": {
               "{handleBack}": 6,
               "{handleClick}": 3,
@@ -482,7 +483,6 @@
               "{(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => { e.preventDefault();...}": 1,
               "{onEditClick}": 1,
               "{onShowOptions}": 1,
-              "{setDropdownOpen}": 1,
               "{hideModal}": 1,
               "{handleCopyClick}": 1,
               "{handleOpen}": 1,
@@ -548,11 +548,10 @@
             }
           },
           "data-testid": {
-            "count": 54,
+            "count": 53,
             "values": {
               "\"nft-address-copy\"": 3,
               "\"scam-warning\"": 2,
-              "{buttonDataTestId}": 2,
               "\"back-button\"": 2,
               "\"alert-modal-back-button\"": 1,
               "\"alert-modal-next-button\"": 1,
@@ -568,6 +567,7 @@
               "\"account-options-menu-button\"": 1,
               "{`carousel-slide-${slide.id}-close-button`}": 1,
               "{`delete-item-${index}`}": 1,
+              "{buttonDataTestId}": 1,
               "\"permissions-page-back\"": 1,
               "\"multichain-product-tour-menu-popover-prevIcon\"": 1,
               "\"save-account-label-input\"": 1,
@@ -648,14 +648,6 @@
               "2": 3
             }
           },
-          "marginLeft": {
-            "count": 6,
-            "values": {
-              "1": 2,
-              "\"auto\"": 3,
-              "auto": 1
-            }
-          },
           "style": {
             "count": 5,
             "values": {
@@ -663,6 +655,14 @@
               "{{ cursor: 'pointer', position: 'absolute', right: 0, top: 2, ...style, }}": 1,
               "{{ cursor: 'pointer', position: 'absolute', right: 8, }}": 1,
               "{{ alignSelf: 'center', borderRadius: '100%', width: '100%', height: '100%', }}": 1
+            }
+          },
+          "marginLeft": {
+            "count": 5,
+            "values": {
+              "1": 2,
+              "\"auto\"": 2,
+              "auto": 1
             }
           },
           "display": {
@@ -746,13 +746,13 @@
         }
       },
       "overall": {
-        "totalInstances": 213,
-        "filesCount": 145,
+        "totalInstances": 214,
+        "filesCount": 146,
         "props": {
           "iconName": {
-            "count": 213,
+            "count": 214,
             "values": {
-              "{IconName.ArrowLeft}": 68,
+              "{IconName.ArrowLeft}": 70,
               "{IconName.Close}": 34,
               "{IconName.ArrowRight}": 17,
               "{IconName.Export}": 10,
@@ -764,14 +764,13 @@
               "{IconName.ArrowDown}": 3,
               "{IconName.Add}": 3,
               "{IconName.Setting}": 3,
+              "{DsIconName.MoreVertical}": 2,
               "{IconName.Danger}": 2,
-              "{isDropdownOpen ? IconName.ArrowUp : IconName.ArrowDown}": 2,
               "{IconName.Customize}": 2,
               "{IconName.SwapVertical}": 2,
               "{IconName.Arrow2Down}": 2,
               "\"arrow-left\"": 2,
               "{DsIconName.ListArrow}": 1,
-              "{isTokenManagementFilterEnabled ? DsIconName.MoreVertical : DsIconName.Add}": 1,
               "{expanded ? IconName.Collapse : IconName.Expand}": 1,
               "{expanded ? IconName.ArrowUp : IconName.ArrowDown}": 1,
               "{copiedAddress ? IconName.CopySuccess : IconName.Copy}": 1,
@@ -783,7 +782,7 @@
               "{privateKeyCopied ? IconName.CopySuccess : IconName.Copy}": 1,
               "{IconNameDeprecated.Menu}": 1,
               "{IconName.Trash}": 1,
-              "{DsIconName.MoreVertical}": 1,
+              "{isDropdownOpen ? IconName.ArrowUp : IconName.ArrowDown}": 1,
               "{isExpanded ? IconName.ArrowUp : IconName.ArrowDown}": 1,
               "{copyIcon}": 1,
               "{IconName.QrCode}": 1,
@@ -804,9 +803,9 @@
             }
           },
           "ariaLabel": {
-            "count": 207,
+            "count": 208,
             "values": {
-              "{t('back')}": 48,
+              "{t('back')}": 50,
               "{t('close')}": 19,
               "\"Back\"": 13,
               "{t('edit')}": 5,
@@ -815,12 +814,12 @@
               "\"redirect\"": 3,
               "\"copy\"": 3,
               "\"\"": 3,
-              "{title}": 3,
               "\"Close\"": 3,
               "{t('assetOptions')}": 2,
               "\"copy-button\"": 2,
               "\"expand\"": 2,
               "{t('options')}": 2,
+              "{title}": 2,
               "{showPassword ? t('passwordToggleHide') : t('passwordToggleShow')}": 2,
               "{t('delete')}": 2,
               "{t('addNetwork')}": 2,
@@ -831,7 +830,7 @@
               "{t('copyToClipboard')}": 2,
               "\"Next\"": 2,
               "{t('sortBy')}": 1,
-              "{isTokenManagementFilterEnabled ? t('manageTokens') : t('importTokensCamelCase')}": 1,
+              "{t('manageTokens')}": 1,
               "\"export\"": 1,
               "{t('nftOptions')}": 1,
               "\"collapse-button\"": 1,
@@ -906,10 +905,10 @@
             }
           },
           "size": {
-            "count": 190,
+            "count": 191,
             "values": {
-              "{ButtonIconSize.Md}": 111,
-              "{ButtonIconSize.Sm}": 61,
+              "{ButtonIconSize.Md}": 113,
+              "{ButtonIconSize.Sm}": 60,
               "{ButtonIconSize.Lg}": 5,
               "{IconSize.Sm}": 4,
               "{DsButtonIconSize.Sm}": 2,
@@ -921,11 +920,11 @@
             }
           },
           "onClick": {
-            "count": 178,
+            "count": 179,
             "values": {
-              "{handleBack}": 21,
+              "{handleBack}": 22,
+              "{onBack}": 11,
               "{onClose}": 10,
-              "{onBack}": 10,
               "{() => navigate(PREVIOUS_ROUTE)}": 9,
               "{handleClick}": 5,
               "{handleClose}": 5,
@@ -945,7 +944,7 @@
               "{onBackButtonClick}": 1,
               "{onNextButtonClick}": 1,
               "{toggleTokenSortPopover}": 1,
-              "{isTokenManagementFilterEnabled ? handleOpenTokenManagement : handleTokenImpor...}": 1,
+              "{handleOpenTokenManagement}": 1,
               "{() => { global.platform.openTab({ url: 'test', }); }}": 1,
               "{() => { global.platform.openTab({ url: collection?.floorAsk?.source?.url as s...}": 1,
               "{() => { global.platform.openTab({ url: getTopBidSourceDomain() as string, // ...}": 1,
@@ -954,7 +953,6 @@
               "{(e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => { e.preventDefault();...}": 1,
               "{onEditClick}": 1,
               "{onShowOptions}": 1,
-              "{setDropdownOpen}": 1,
               "{hideModal}": 1,
               "{(e: React.MouseEvent) => { e.stopPropagation(); handleDismiss(); }}": 1,
               "{(e: React.MouseEvent<HTMLButtonElement>) => { e.stopPropagation(); setShowPas...}": 1,
@@ -1019,7 +1017,7 @@
               "{handleAddressClearOrScan}": 1,
               "{onCopy}": 1,
               "{() => handleCopy(checkSummedAddress)}": 1,
-              "{() => { trackEvent({ category: MetaMetricsEventCategory.Accounts, event: 'Cli...}": 1,
+              "{() => { trackEvent( createEventBuilder('Clicked Block Explorer Link') .addCat...}": 1,
               "{onSettingsClick}": 1,
               "{onTogglePasswordVisibility}": 1,
               "{handleSkip}": 1,
@@ -1035,12 +1033,11 @@
             }
           },
           "data-testid": {
-            "count": 135,
+            "count": 136,
             "values": {
               "\"back-button\"": 7,
               "\"nft-address-copy\"": 3,
               "\"scam-warning\"": 2,
-              "{buttonDataTestId}": 2,
               "\"edit-gas-fee-icon\"": 2,
               "\"close-recipient-modal-btn\"": 2,
               "\"ens-qr-scan-button\"": 2,
@@ -1072,6 +1069,7 @@
               "\"account-options-menu-button\"": 1,
               "{`carousel-slide-${slide.id}-close-button`}": 1,
               "{`delete-item-${index}`}": 1,
+              "{buttonDataTestId}": 1,
               "\"drawer-close-button\"": 1,
               "{`network-list-item-options-button-${chainId}`}": 1,
               "\"permissions-page-back\"": 1,
@@ -1124,6 +1122,7 @@
               "\"defi-details-page-back-button\"": 1,
               "\"transaction-details-back-button\"": 1,
               "\"hardware-wallet-repair-close-header\"": 1,
+              "\"qr-hardware-signing-page__back-button\"": 1,
               "\"add-wallet-page-back-button\"": 1,
               "\"account-name-action\"": 1,
               "\"network-addresses-link\"": 1,
@@ -1151,6 +1150,7 @@
               "\"settings-header-search-button\"": 1,
               "\"settings-header-close-button\"": 1,
               "\"settings-header-back-button\"": 1,
+              "\"sync-accounts-back-button\"": 1,
               "\"shield-plan-back-button\"": 1,
               "\"snap-account-redirect-url-icon\"": 1,
               "\"token-management-header-back-button\"": 1,
@@ -1301,10 +1301,10 @@
             }
           },
           "marginLeft": {
-            "count": 6,
+            "count": 5,
             "values": {
               "1": 2,
-              "\"auto\"": 3,
+              "\"auto\"": 2,
               "auto": 1
             }
           },
@@ -1379,20 +1379,20 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "ButtonIcon": 96
+        "ButtonIcon": 95
       }
     },
     "mobile": {
-      "filesScanned": 7036,
+      "filesScanned": 7127,
       "targetComponent": "ButtonIcon",
       "mmds": {
-        "totalInstances": 95,
-        "filesCount": 73,
+        "totalInstances": 96,
+        "filesCount": 74,
         "props": {
           "iconName": {
-            "count": 94,
+            "count": 95,
             "values": {
-              "{IconName.Close}": 21,
+              "{IconName.Close}": 22,
               "{IconName.ArrowLeft}": 20,
               "{IconName.Info}": 16,
               "{IconName.Copy}": 3,
@@ -1427,19 +1427,19 @@
             }
           },
           "onPress": {
-            "count": 92,
+            "count": 93,
             "values": {
               "{onClose}": 10,
               "{handleBackPress}": 7,
-              "{handleInfoPress}": 4,
+              "{handleInfoPress}": 5,
               "{onBackPress}": 4,
+              "{onDismiss}": 3,
               "{onInfoPress}": 3,
               "{onBack}": 3,
               "{handleCancel}": 2,
               "{handleClose}": 2,
               "{handleGoBack}": 2,
               "{navigationPop}": 2,
-              "{onDismiss}": 2,
               "{onPress}": 2,
               "{handleHamburgerPress}": 2,
               "{handleOnPress}": 1,
@@ -1447,7 +1447,6 @@
               "{handleOpenQuoteDetails}": 1,
               "{() => onSlippagePress?.(token)}": 1,
               "{handleRemovePress}": 1,
-              "{() => handleInfoButtonPress(item)}": 1,
               "{onDecrease}": 1,
               "{onIncrease}": 1,
               "{onPressHandler}": 1,
@@ -1492,16 +1491,16 @@
             }
           },
           "size": {
-            "count": 79,
+            "count": 80,
             "values": {
               "{ButtonIconSize.Md}": 50,
-              "{ButtonIconSize.Sm}": 19,
+              "{ButtonIconSize.Sm}": 20,
               "{ButtonIconSize.Lg}": 8,
               "{ButtonIconSize.Xs}": 2
             }
           },
           "testID": {
-            "count": 76,
+            "count": 77,
             "values": {
               "{CommonSelectorsIDs.BACK_ARROW_BUTTON}": 2,
               "\"back-button\"": 2,
@@ -1511,6 +1510,7 @@
               "{BatchSellReviewSelectorsIDs.TOTAL_RECEIVED_INFO_BUTTON}": 1,
               "{`${BatchSellReviewSelectorsIDs.CUSTOMIZE_BUTTON}-${tokenKey}`}": 1,
               "{`${BatchSellReviewSelectorsIDs.REMOVE_BUTTON}-${tokenKey}`}": 1,
+              "{BATCH_SELL_ASSET_PICKER_BANNER_DISMISS_TEST_ID}": 1,
               "\"input-stepper-minus-button\"": 1,
               "\"input-stepper-plus-button\"": 1,
               "{WalletViewSelectorsIDs.CARD_BUTTON}": 1,
@@ -1579,10 +1579,10 @@
             }
           },
           "iconProps": {
-            "count": 46,
+            "count": 47,
             "values": {
+              "{{ color: IconColor.IconDefault }}": 11,
               "{{ color: IconColor.IconAlternative }}": 11,
-              "{{ color: IconColor.IconDefault }}": 10,
               "{{ color: IconColor.IconAlternative, size: IconSize.Sm }}": 6,
               "{{ color: MMDSIconColor.IconDefault, }}": 3,
               "{{ color: MMDSIconColor.IconDefault }}": 2,
@@ -1626,10 +1626,11 @@
             }
           },
           "style": {
-            "count": 11,
+            "count": 12,
             "values": {
               "{innerStyles.accessories}": 2,
               "{tw.style('self-center')}": 1,
+              "{styles.dismissButton}": 1,
               "{tw.style(minusPressed ? 'bg-muted-pressed' : 'bg-muted')}": 1,
               "{tw.style(plusPressed ? 'bg-muted-pressed' : 'bg-muted')}": 1,
               "{tw.style('mx-4')}": 1,
@@ -1737,14 +1738,14 @@
         }
       },
       "deprecated": {
-        "totalInstances": 61,
-        "filesCount": 48,
+        "totalInstances": 60,
+        "filesCount": 47,
         "props": {
           "iconName": {
-            "count": 61,
+            "count": 60,
             "values": {
-              "{IconName.ArrowLeft}": 18,
               "{IconName.Close}": 17,
+              "{IconName.ArrowLeft}": 17,
               "{IconName.Info}": 6,
               "{IconName.ArrowDown}": 4,
               "{IconName.Add}": 2,
@@ -1764,10 +1765,9 @@
             }
           },
           "onPress": {
-            "count": 59,
+            "count": 58,
             "values": {
               "{handleClosePress}": 4,
-              "{handleBack}": 3,
               "{handleClear}": 2,
               "{navigateToHome}": 2,
               "{withMetaMetrics(onDisplayAnnualRateTooltip, { event: MetaMetricsEvents.TOOLTI...}": 2,
@@ -1776,6 +1776,7 @@
               "{() => { navigate(Routes.MODAL.ROOT_MODAL_FLOW, { screen: Routes.SHEET.CONNECT...}": 2,
               "{() => navigation.goBack()}": 2,
               "{handleClose}": 2,
+              "{handleBack}": 2,
               "{() => bottomSheetRef.current?.onCloseBottomSheet()}": 2,
               "{onBackButtonClick}": 2,
               "{() => setHasValueModalOpen(false)}": 2,
@@ -1812,9 +1813,9 @@
             }
           },
           "iconColor": {
-            "count": 46,
+            "count": 45,
             "values": {
-              "{IconColor.Default}": 31,
+              "{IconColor.Default}": 30,
               "{IconColor.Alternative}": 3,
               "{IconColor.Info}": 2,
               "{importedColors.white}": 2,
@@ -1826,7 +1827,7 @@
             }
           },
           "testID": {
-            "count": 43,
+            "count": 42,
             "values": {
               "{CHECKOUT_TEST_IDS.CLOSE_BUTTON}": 4,
               "\"snap-ui-address-input__clear-button\"": 2,
@@ -1844,7 +1845,6 @@
               "{PerpsPositionsViewSelectorsIDs.BACK_BUTTON}": 1,
               "{PerpsTPSLViewSelectorsIDs.BACK_BUTTON}": 1,
               "\"perps-chart-fullscreen-close-button\"": 1,
-              "{PerpsOrderHeaderSelectorsIDs.BACK_BUTTON}": 1,
               "{PerpsPositionCardSelectorsIDs.SHARE_BUTTON}": 1,
               "{PerpsPositionCardSelectorsIDs.FLIP_ICON}": 1,
               "{PerpsPositionCardSelectorsIDs.MARGIN_CHEVRON}": 1,
@@ -1867,9 +1867,9 @@
             }
           },
           "size": {
-            "count": 43,
+            "count": 42,
             "values": {
-              "{ButtonIconSizes.Md}": 15,
+              "{ButtonIconSizes.Md}": 14,
               "{ButtonIconSizes.Lg}": 13,
               "{ButtonIconSizes.Sm}": 9,
               "{ButtonIconSizes.Xs}": 3,
@@ -1952,8 +1952,8 @@
           "iconName": {
             "count": 155,
             "values": {
-              "{IconName.Close}": 38,
-              "{IconName.ArrowLeft}": 38,
+              "{IconName.Close}": 39,
+              "{IconName.ArrowLeft}": 37,
               "{IconName.Info}": 22,
               "{IconName.Add}": 5,
               "{IconName.ArrowRight}": 5,
@@ -2002,14 +2002,15 @@
             "values": {
               "{onClose}": 11,
               "{handleBackPress}": 8,
+              "{handleInfoPress}": 5,
               "{onBack}": 5,
               "{handleClosePress}": 5,
               "{handleClose}": 4,
-              "{handleInfoPress}": 4,
               "{onBackPress}": 4,
               "{onPress}": 4,
-              "{handleBack}": 4,
+              "{onDismiss}": 3,
               "{onInfoPress}": 3,
+              "{handleBack}": 3,
               "{handleClear}": 2,
               "{handleCancel}": 2,
               "{navigateToHome}": 2,
@@ -2019,7 +2020,6 @@
               "{goBack}": 2,
               "{() => { navigate(Routes.MODAL.ROOT_MODAL_FLOW, { screen: Routes.SHEET.CONNECT...}": 2,
               "{() => navigation.goBack()}": 2,
-              "{onDismiss}": 2,
               "{() => bottomSheetRef.current?.onCloseBottomSheet()}": 2,
               "{handleHamburgerPress}": 2,
               "{onBackButtonClick}": 2,
@@ -2030,7 +2030,6 @@
               "{() => onSlippagePress?.(token)}": 1,
               "{handleRemovePress}": 1,
               "{handleTooltipPress}": 1,
-              "{() => handleInfoButtonPress(item)}": 1,
               "{onDecrease}": 1,
               "{onIncrease}": 1,
               "{onClearInput}": 1,
@@ -2101,8 +2100,8 @@
             "count": 122,
             "values": {
               "{ButtonIconSize.Md}": 50,
-              "{ButtonIconSize.Sm}": 19,
-              "{ButtonIconSizes.Md}": 15,
+              "{ButtonIconSize.Sm}": 20,
+              "{ButtonIconSizes.Md}": 14,
               "{ButtonIconSizes.Lg}": 13,
               "{ButtonIconSizes.Sm}": 9,
               "{ButtonIconSize.Lg}": 8,
@@ -2129,6 +2128,7 @@
               "{BatchSellReviewSelectorsIDs.TOTAL_RECEIVED_INFO_BUTTON}": 1,
               "{`${BatchSellReviewSelectorsIDs.CUSTOMIZE_BUTTON}-${tokenKey}`}": 1,
               "{`${BatchSellReviewSelectorsIDs.REMOVE_BUTTON}-${tokenKey}`}": 1,
+              "{BATCH_SELL_ASSET_PICKER_BANNER_DISMISS_TEST_ID}": 1,
               "\"input-stepper-minus-button\"": 1,
               "\"input-stepper-plus-button\"": 1,
               "{BrowserURLBarSelectorsIDs.URL_CLEAR_ICON}": 1,
@@ -2163,7 +2163,6 @@
               "{`${testID}-close`}": 1,
               "{PerpsHomeSectionTestIds.ACTION_BUTTON}": 1,
               "{PerpsMarketHeaderSelectorsIDs.BACK_BUTTON}": 1,
-              "{PerpsOrderHeaderSelectorsIDs.BACK_BUTTON}": 1,
               "{PerpsPositionCardSelectorsIDs.SHARE_BUTTON}": 1,
               "{PerpsPositionCardSelectorsIDs.FLIP_ICON}": 1,
               "{PerpsPositionCardSelectorsIDs.MARGIN_CHEVRON}": 1,
@@ -2225,9 +2224,9 @@
             }
           },
           "iconColor": {
-            "count": 48,
+            "count": 47,
             "values": {
-              "{IconColor.Default}": 33,
+              "{IconColor.Default}": 32,
               "{IconColor.Alternative}": 3,
               "{IconColor.Info}": 2,
               "{importedColors.white}": 2,
@@ -2239,10 +2238,10 @@
             }
           },
           "iconProps": {
-            "count": 46,
+            "count": 47,
             "values": {
+              "{{ color: IconColor.IconDefault }}": 11,
               "{{ color: IconColor.IconAlternative }}": 11,
-              "{{ color: IconColor.IconDefault }}": 10,
               "{{ color: IconColor.IconAlternative, size: IconSize.Sm }}": 6,
               "{{ color: MMDSIconColor.IconDefault, }}": 3,
               "{{ color: MMDSIconColor.IconDefault }}": 2,
@@ -2296,13 +2295,14 @@
             }
           },
           "style": {
-            "count": 24,
+            "count": 25,
             "values": {
               "{innerStyles.accessories}": 2,
               "{styles.iconButton}": 2,
               "{styles.valueModalHeaderIcon}": 2,
               "{styles.icon}": 1,
               "{tw.style('self-center')}": 1,
+              "{styles.dismissButton}": 1,
               "{tw.style(minusPressed ? 'bg-muted-pressed' : 'bg-muted')}": 1,
               "{tw.style(plusPressed ? 'bg-muted-pressed' : 'bg-muted')}": 1,
               "{styles.clearButton}": 1,
@@ -2420,7 +2420,7 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "ButtonIcon": 61
+        "ButtonIcon": 60
       }
     }
   }

@@ -1,9 +1,9 @@
 {
   "component": "HeaderBase",
-  "generatedAt": "2026-07-08T07:29:26.786Z",
+  "generatedAt": "2026-07-13T09:31:34.118Z",
   "projects": {
     "extension": {
-      "filesScanned": 3442,
+      "filesScanned": 3458,
       "targetComponent": "HeaderBase",
       "mmds": {
         "totalInstances": 1,
@@ -184,16 +184,16 @@
       }
     },
     "mobile": {
-      "filesScanned": 7036,
+      "filesScanned": 7127,
       "targetComponent": "HeaderBase",
       "mmds": {
-        "totalInstances": 9,
-        "filesCount": 9,
+        "totalInstances": 8,
+        "filesCount": 8,
         "props": {
           "style": {
-            "count": 7,
+            "count": 6,
             "values": {
-              "{styles.header}": 6,
+              "{styles.header}": 5,
               "{tw`p-4`}": 1
             }
           },
@@ -202,15 +202,6 @@
             "values": {
               "\"h-auto\"": 3,
               "\"flex-row items-center px-4\"": 1
-            }
-          },
-          "startButtonIconProps": {
-            "count": 4,
-            "values": {
-              "{{ testID: AccountDetailsIds.BACK_BUTTON, iconName: IconName.ArrowLeft, onPres...}": 1,
-              "{{ testID: SwitchAccountModalSelectorIDs.SMART_ACCOUNT_BACK_BUTTON, iconName: ...}": 1,
-              "{{ testID: AccountDetailsIds.BACK_BUTTON, iconName: IconName.ArrowLeft, size: ...}": 1,
-              "{{ testID: WalletDetailsIds.BACK_BUTTON, iconName: IconName.ArrowLeft, size: B...}": 1
             }
           },
           "includesTopInset": {
@@ -235,10 +226,18 @@
               "{<ButtonIcon iconName={IconName.Close} size={ButtonIconSizes.Md} onPress={goBa...}": 1
             }
           },
-          "textProps": {
-            "count": 2,
+          "startButtonIconProps": {
+            "count": 3,
             "values": {
-              "{{ testID: HEADER_BASE_TITLE_TEST_ID }}": 2
+              "{{ testID: AccountDetailsIds.BACK_BUTTON, iconName: IconName.ArrowLeft, onPres...}": 1,
+              "{{ testID: AccountDetailsIds.BACK_BUTTON, iconName: IconName.ArrowLeft, size: ...}": 1,
+              "{{ testID: WalletDetailsIds.BACK_BUTTON, iconName: IconName.ArrowLeft, size: B...}": 1
+            }
+          },
+          "textProps": {
+            "count": 1,
+            "values": {
+              "{{ testID: HEADER_BASE_TITLE_TEST_ID }}": 1
             }
           }
         }
@@ -274,13 +273,13 @@
         }
       },
       "overall": {
-        "totalInstances": 10,
-        "filesCount": 10,
+        "totalInstances": 9,
+        "filesCount": 9,
         "props": {
           "style": {
-            "count": 8,
+            "count": 7,
             "values": {
-              "{styles.header}": 6,
+              "{styles.header}": 5,
               "{tw`p-4`}": 1,
               "{style}": 1
             }
@@ -310,25 +309,24 @@
               "{<NextButton alertsLength={arrLength} onNextButtonClick={onForward} selectedIn...}": 1
             }
           },
-          "startButtonIconProps": {
-            "count": 4,
-            "values": {
-              "{{ testID: AccountDetailsIds.BACK_BUTTON, iconName: IconName.ArrowLeft, onPres...}": 1,
-              "{{ testID: SwitchAccountModalSelectorIDs.SMART_ACCOUNT_BACK_BUTTON, iconName: ...}": 1,
-              "{{ testID: AccountDetailsIds.BACK_BUTTON, iconName: IconName.ArrowLeft, size: ...}": 1,
-              "{{ testID: WalletDetailsIds.BACK_BUTTON, iconName: IconName.ArrowLeft, size: B...}": 1
-            }
-          },
           "includesTopInset": {
             "count": 3,
             "values": {
               "true (shorthand)": 3
             }
           },
-          "textProps": {
-            "count": 2,
+          "startButtonIconProps": {
+            "count": 3,
             "values": {
-              "{{ testID: HEADER_BASE_TITLE_TEST_ID }}": 2
+              "{{ testID: AccountDetailsIds.BACK_BUTTON, iconName: IconName.ArrowLeft, onPres...}": 1,
+              "{{ testID: AccountDetailsIds.BACK_BUTTON, iconName: IconName.ArrowLeft, size: ...}": 1,
+              "{{ testID: WalletDetailsIds.BACK_BUTTON, iconName: IconName.ArrowLeft, size: B...}": 1
+            }
+          },
+          "textProps": {
+            "count": 1,
+            "values": {
+              "{{ testID: HEADER_BASE_TITLE_TEST_ID }}": 1
             }
           },
           "[spread]": {

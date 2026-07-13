@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-08T07:32:10.230Z",
+  "lastUpdated": "2026-07-13T09:36:32.856Z",
   "projects": {
     "mobile": [
       {
@@ -181,6 +181,10 @@
       {
         "date": "2026-07-08",
         "file": "mobile-component-metrics-2026-07-08-data.json"
+      },
+      {
+        "date": "2026-07-13",
+        "file": "mobile-component-metrics-2026-07-13-data.json"
       }
     ],
     "extension": [
@@ -363,11 +367,15 @@
       {
         "date": "2026-07-08",
         "file": "extension-component-metrics-2026-07-08-data.json"
+      },
+      {
+        "date": "2026-07-13",
+        "file": "extension-component-metrics-2026-07-13-data.json"
       }
     ]
   },
   "latest": {
-    "mobile": "mobile-component-metrics-2026-07-08-data.json",
-    "extension": "extension-component-metrics-2026-07-08-data.json"
+    "mobile": "mobile-component-metrics-2026-07-13-data.json",
+    "extension": "extension-component-metrics-2026-07-13-data.json"
   }
 }

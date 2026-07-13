@@ -1,16 +1,16 @@
 {
   "component": "Checkbox",
-  "generatedAt": "2026-07-08T07:29:08.811Z",
+  "generatedAt": "2026-07-13T09:31:02.449Z",
   "projects": {
     "extension": {
-      "filesScanned": 3442,
+      "filesScanned": 3458,
       "targetComponent": "Checkbox",
       "mmds": {
-        "totalInstances": 18,
+        "totalInstances": 17,
         "filesCount": 15,
         "props": {
           "id": {
-            "count": 17,
+            "count": 16,
             "values": {
               "{`edit-networks-checkbox-${network.caipChainId}`}": 2,
               "\"defi-referral-consent-checkbox\"": 2,
@@ -25,12 +25,11 @@
               "\"create-password-terms\"": 1,
               "{id}": 1,
               "{`wallet-select-${item.walletId}`}": 1,
-              "{`account-select-${item.groupId}`}": 1,
               "\"stripe-test-clocks\"": 1
             }
           },
           "isSelected": {
-            "count": 17,
+            "count": 16,
             "values": {
               "{termsChecked}": 2,
               "{selectedChainIds.includes(network.caipChainId)}": 2,
@@ -43,13 +42,12 @@
               "{isEnabled}": 1,
               "{checked}": 1,
               "{isSelected}": 1,
-              "{allSelected || isIndeterminate}": 1,
-              "{selectedSet.has(item.groupId)}": 1,
+              "{allSelected}": 1,
               "{enableStripeTestClock}": 1
             }
           },
           "onChange": {
-            "count": 17,
+            "count": 16,
             "values": {
               "{toggle}": 4,
               "{() => handleNetworkClick(network.caipChainId)}": 2,
@@ -62,7 +60,6 @@
               "{() => { hasUserInteractedWithTermsRef.current = true; toggle(); }}": 1,
               "{onChange}": 1,
               "{() => toggleWallet(item.groupIds)}": 1,
-              "{() => toggleGroup(item.groupId)}": 1,
               "{() => setEnableStripeTestClock(!enableStripeTestClock)}": 1
             }
           },
@@ -119,12 +116,6 @@
               "{{ variant: TextVariant.BodySm, }}": 1
             }
           },
-          "checkedIconProps": {
-            "count": 2,
-            "values": {
-              "{isIndeterminate ? { name: IconName.MinusBold } : undefined}": 2
-            }
-          },
           "inputProps": {
             "count": 2,
             "values": {
@@ -138,6 +129,12 @@
               "{account.name}": 1
             }
           },
+          "checkedIconProps": {
+            "count": 1,
+            "values": {
+              "{isIndeterminate ? { name: IconName.MinusBold } : undefined}": 1
+            }
+          },
           "ref": {
             "count": 1,
             "values": {
@@ -147,18 +144,17 @@
         }
       },
       "deprecated": {
-        "totalInstances": 15,
-        "filesCount": 12,
+        "totalInstances": 14,
+        "filesCount": 11,
         "props": {
           "isChecked": {
-            "count": 14,
+            "count": 13,
             "values": {
               "true (shorthand)": 2,
               "{checked}": 2,
               "{selectedChainIds.includes(network.caipChainId)}": 2,
               "{isConfirmed}": 1,
               "{termsChecked}": 1,
-              "{selectedTokens[address] || tokenAlreadyAdded}": 1,
               "{userAgree}": 1,
               "{value}": 1,
               "{isTermsOfUseChecked}": 1,
@@ -227,24 +223,11 @@
               "{disabled}": 1
             }
           },
-          "onClick": {
-            "count": 2,
-            "values": {
-              "{onClick}": 1,
-              "{() => (allAreSelected() ? deselectAll() : selectAll())}": 1
-            }
-          },
           "isIndeterminate": {
             "count": 2,
             "values": {
               "{Object.values(checkedChainIds).every((v) => v)}": 1,
               "{isIndeterminate}": 1
-            }
-          },
-          "marginRight": {
-            "count": 1,
-            "values": {
-              "4": 1
             }
           },
           "isRequired": {
@@ -282,15 +265,21 @@
             "values": {
               "4": 1
             }
+          },
+          "onClick": {
+            "count": 1,
+            "values": {
+              "{() => (allAreSelected() ? deselectAll() : selectAll())}": 1
+            }
           }
         }
       },
       "overall": {
-        "totalInstances": 33,
-        "filesCount": 27,
+        "totalInstances": 31,
+        "filesCount": 26,
         "props": {
           "onChange": {
-            "count": 24,
+            "count": 23,
             "values": {
               "{toggle}": 5,
               "{() => handleNetworkClick(network.caipChainId)}": 2,
@@ -309,12 +298,11 @@
               "{onRemindMeStateChanged}": 1,
               "{onChange}": 1,
               "{() => toggleWallet(item.groupIds)}": 1,
-              "{() => toggleGroup(item.groupId)}": 1,
               "{() => setEnableStripeTestClock(!enableStripeTestClock)}": 1
             }
           },
           "id": {
-            "count": 21,
+            "count": 20,
             "values": {
               "{`edit-networks-checkbox-${network.caipChainId}`}": 2,
               "\"defi-referral-consent-checkbox\"": 2,
@@ -333,27 +321,7 @@
               "\"dont-remind-me-checkbox\"": 1,
               "{id}": 1,
               "{`wallet-select-${item.walletId}`}": 1,
-              "{`account-select-${item.groupId}`}": 1,
               "\"stripe-test-clocks\"": 1
-            }
-          },
-          "isSelected": {
-            "count": 17,
-            "values": {
-              "{termsChecked}": 2,
-              "{selectedChainIds.includes(network.caipChainId)}": 2,
-              "{isChecked}": 2,
-              "{hasAgreed}": 1,
-              "{isSelected || isDisabled}": 1,
-              "{selectedAccountGroupsSet.has( groupId as AccountGroupId, )}": 1,
-              "{checked || isIndeterminate}": 1,
-              "{selected}": 1,
-              "{isEnabled}": 1,
-              "{checked}": 1,
-              "{isSelected}": 1,
-              "{allSelected || isIndeterminate}": 1,
-              "{selectedSet.has(item.groupId)}": 1,
-              "{enableStripeTestClock}": 1
             }
           },
           "label": {
@@ -374,15 +342,32 @@
               "\"Enable Stripe Test clocks (for development and testing only)\"": 1
             }
           },
+          "isSelected": {
+            "count": 16,
+            "values": {
+              "{termsChecked}": 2,
+              "{selectedChainIds.includes(network.caipChainId)}": 2,
+              "{isChecked}": 2,
+              "{hasAgreed}": 1,
+              "{isSelected || isDisabled}": 1,
+              "{selectedAccountGroupsSet.has( groupId as AccountGroupId, )}": 1,
+              "{checked || isIndeterminate}": 1,
+              "{selected}": 1,
+              "{isEnabled}": 1,
+              "{checked}": 1,
+              "{isSelected}": 1,
+              "{allSelected}": 1,
+              "{enableStripeTestClock}": 1
+            }
+          },
           "isChecked": {
-            "count": 14,
+            "count": 13,
             "values": {
               "true (shorthand)": 2,
               "{checked}": 2,
               "{selectedChainIds.includes(network.caipChainId)}": 2,
               "{isConfirmed}": 1,
               "{termsChecked}": 1,
-              "{selectedTokens[address] || tokenAlreadyAdded}": 1,
               "{userAgree}": 1,
               "{value}": 1,
               "{isTermsOfUseChecked}": 1,
@@ -424,10 +409,9 @@
             }
           },
           "onClick": {
-            "count": 5,
+            "count": 4,
             "values": {
               "{(event) => event.stopPropagation()}": 2,
-              "{onClick}": 1,
               "{() => (allAreSelected() ? deselectAll() : selectAll())}": 1,
               "{stopClickPropagation}": 1
             }
@@ -458,18 +442,6 @@
             "values": {
               "{Object.values(checkedChainIds).every((v) => v)}": 1,
               "{isIndeterminate}": 1
-            }
-          },
-          "checkedIconProps": {
-            "count": 2,
-            "values": {
-              "{isIndeterminate ? { name: IconName.MinusBold } : undefined}": 2
-            }
-          },
-          "marginRight": {
-            "count": 1,
-            "values": {
-              "4": 1
             }
           },
           "isRequired": {
@@ -508,6 +480,12 @@
               "{account.name}": 1
             }
           },
+          "checkedIconProps": {
+            "count": 1,
+            "values": {
+              "{isIndeterminate ? { name: IconName.MinusBold } : undefined}": 1
+            }
+          },
           "ref": {
             "count": 1,
             "values": {
@@ -517,11 +495,11 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "Checkbox": 15
+        "Checkbox": 14
       }
     },
     "mobile": {
-      "filesScanned": 7036,
+      "filesScanned": 7127,
       "targetComponent": "Checkbox",
       "mmds": {
         "totalInstances": 5,
