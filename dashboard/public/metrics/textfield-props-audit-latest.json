@@ -1,9 +1,9 @@
 {
   "component": "TextField",
-  "generatedAt": "2026-07-08T07:31:52.012Z",
+  "generatedAt": "2026-07-13T09:36:01.308Z",
   "projects": {
     "extension": {
-      "filesScanned": 3442,
+      "filesScanned": 3458,
       "targetComponent": "TextField",
       "mmds": {
         "totalInstances": 0,
@@ -805,7 +805,7 @@
       }
     },
     "mobile": {
-      "filesScanned": 7036,
+      "filesScanned": 7127,
       "targetComponent": "TextField",
       "mmds": {
         "totalInstances": 15,
@@ -1184,11 +1184,12 @@
             }
           },
           "onSubmitEditing": {
-            "count": 10,
+            "count": 11,
             "values": {
               "{handleSubmit}": 3,
               "{handleContinue}": 1,
               "{jumpToConfirmPassword}": 1,
+              "{Keyboard.dismiss}": 1,
               "{handleFormSubmit}": 1,
               "{jumpToRpcURL}": 1,
               "{jumpToSymbol}": 1,
@@ -1238,9 +1239,9 @@
           "returnKeyType": {
             "count": 7,
             "values": {
+              "\"done\"": 3,
               "done": 3,
-              "\"done\"": 2,
-              "next": 2
+              "\"next\"": 1
             }
           },
           "endAccessory": {
@@ -1746,11 +1747,12 @@
             }
           },
           "onSubmitEditing": {
-            "count": 10,
+            "count": 11,
             "values": {
               "{handleSubmit}": 3,
               "{handleContinue}": 1,
               "{jumpToConfirmPassword}": 1,
+              "{Keyboard.dismiss}": 1,
               "{handleFormSubmit}": 1,
               "{jumpToRpcURL}": 1,
               "{jumpToSymbol}": 1,
@@ -1769,9 +1771,9 @@
           "returnKeyType": {
             "count": 7,
             "values": {
+              "\"done\"": 3,
               "done": 3,
-              "\"done\"": 2,
-              "next": 2
+              "\"next\"": 1
             }
           },
           "style": {

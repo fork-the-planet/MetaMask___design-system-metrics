@@ -1,9 +1,9 @@
 {
   "component": "AvatarAccount",
-  "generatedAt": "2026-07-08T07:23:47.420Z",
+  "generatedAt": "2026-07-13T09:21:55.165Z",
   "projects": {
     "extension": {
-      "filesScanned": 3442,
+      "filesScanned": 3458,
       "targetComponent": "AvatarAccount",
       "mmds": {
         "totalInstances": 9,
@@ -109,7 +109,7 @@
       "deprecatedByLegacyComponent": {}
     },
     "mobile": {
-      "filesScanned": 7036,
+      "filesScanned": 7127,
       "targetComponent": "AvatarAccount",
       "mmds": {
         "totalInstances": 8,

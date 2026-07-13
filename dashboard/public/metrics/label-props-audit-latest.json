@@ -1,9 +1,9 @@
 {
   "component": "Label",
-  "generatedAt": "2026-07-08T07:30:21.102Z",
+  "generatedAt": "2026-07-13T09:33:11.270Z",
   "projects": {
     "extension": {
-      "filesScanned": 3442,
+      "filesScanned": 3458,
       "targetComponent": "Label",
       "mmds": {
         "totalInstances": 0,
@@ -11,8 +11,8 @@
         "props": {}
       },
       "deprecated": {
-        "totalInstances": 19,
-        "filesCount": 18,
+        "totalInstances": 18,
+        "filesCount": 17,
         "props": {
           "htmlFor": {
             "count": 11,
@@ -42,9 +42,9 @@
             }
           },
           "variant": {
-            "count": 3,
+            "count": 2,
             "values": {
-              "{TextVariant.bodyMdMedium}": 2,
+              "{TextVariant.bodyMdMedium}": 1,
               "{TextVariant.bodySm}": 1
             }
           },
@@ -81,8 +81,8 @@
         }
       },
       "overall": {
-        "totalInstances": 19,
-        "filesCount": 18,
+        "totalInstances": 18,
+        "filesCount": 17,
         "props": {
           "htmlFor": {
             "count": 11,
@@ -112,9 +112,9 @@
             }
           },
           "variant": {
-            "count": 3,
+            "count": 2,
             "values": {
-              "{TextVariant.bodyMdMedium}": 2,
+              "{TextVariant.bodyMdMedium}": 1,
               "{TextVariant.bodySm}": 1
             }
           },
@@ -151,11 +151,11 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "Label": 19
+        "Label": 18
       }
     },
     "mobile": {
-      "filesScanned": 7036,
+      "filesScanned": 7127,
       "targetComponent": "Label",
       "mmds": {
         "totalInstances": 52,

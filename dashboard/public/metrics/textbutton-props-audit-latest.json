@@ -1,16 +1,16 @@
 {
   "component": "TextButton",
-  "generatedAt": "2026-07-08T07:31:34.328Z",
+  "generatedAt": "2026-07-13T09:35:28.923Z",
   "projects": {
     "extension": {
-      "filesScanned": 3442,
+      "filesScanned": 3458,
       "targetComponent": "TextButton",
       "mmds": {
         "totalInstances": 78,
         "filesCount": 51,
         "props": {
           "onClick": {
-            "count": 48,
+            "count": 49,
             "values": {
               "{handleClick}": 3,
               "{onLearnMore}": 3,
@@ -27,7 +27,7 @@
               "{openLearnMore}": 1,
               "{handleMaybeLater}": 1,
               "{(event: React.MouseEvent) => { event.stopPropagation(); trackEvent( createEve...}": 1,
-              "{(e: React.MouseEvent) => { e.stopPropagation(); trackEvent({ category: MetaMe...}": 1,
+              "{(e: React.MouseEvent) => { e.stopPropagation(); trackEvent( createEventBuilde...}": 1,
               "{() => { global.platform.openTab({ url: ZENDESK_URLS.ACCOUNT_UPGRADE, }); }}": 1,
               "{() => navigate(PRIVACY_ROUTE)}": 1,
               "{() => navigate(DEFAULT_ROUTE)}": 1,
@@ -38,6 +38,7 @@
               "{() => setToggleSrpDetailsModal(true)}": 1,
               "{onCopy}": 1,
               "{handleSrpClick}": 1,
+              "{handleLearnHowToStaySafe}": 1,
               "{handleLearnMoreClick}": 1,
               "{() => navigate(ONBOARDING_PRIVACY_SETTINGS_ROUTE)}": 1,
               "{() => { dispatch( toggleNetworkMenu({ isAddingNewNetwork: true, }), ); }}": 1,
@@ -45,7 +46,7 @@
               "{handleRemindLater}": 1,
               "{() => { trackEvent( createEventBuilder(MetaMetricsEventName.SupportLinkClicke...}": 1,
               "{toggleVisitSupportDataConsentModal}": 1,
-              "{handleRestart}": 1,
+              "{onRestart}": 1,
               "{handleReset}": 1,
               "{() => { navigate(TRANSACTION_SHIELD_MANAGE_PLAN_ROUTE); }}": 1,
               "{() => { handleViewFullBenefitsClicked(); }}": 1,
@@ -54,9 +55,9 @@
             }
           },
           "className": {
-            "count": 46,
+            "count": 45,
             "values": {
-              "\"inline\"": 7,
+              "\"inline\"": 6,
               "\"min-w-0\"": 5,
               "\"hover:bg-transparent active:bg-transparent w-fit\"": 4,
               "\"text-center\"": 4,
@@ -83,9 +84,9 @@
             }
           },
           "asChild": {
-            "count": 35,
+            "count": 34,
             "values": {
-              "true (shorthand)": 35
+              "true (shorthand)": 34
             }
           },
           "data-testid": {
@@ -128,7 +129,6 @@
               "\"u2f-error-1\"": 2,
               "\"here-link\"": 2,
               "\"learnMore\"": 1,
-              "\"import-token-fake-token-warning\"": 1,
               "\"shield-footer-agreement-button\"": 1,
               "\"link\"": 1,
               "\"defi-referral-partner-terms\"": 1,
@@ -136,6 +136,7 @@
               "\"learn-scam-risk\"": 1,
               "\"secret-recovery-phrase\"": 1,
               "\"srp-learn-srp\"": 1,
+              "\"chainlist-learn-how-to-stay-safe\"": 1,
               "\"walletReadyLearn\"": 1,
               "\"seedPhraseReviewDetails\"": 1,
               "\"loginErrorGenericDescription\"": 1,
@@ -232,11 +233,11 @@
         }
       },
       "deprecated": {
-        "totalInstances": 65,
-        "filesCount": 46,
+        "totalInstances": 62,
+        "filesCount": 45,
         "props": {
           "onClick": {
-            "count": 36,
+            "count": 34,
             "values": {
               "{setModeToEditAccounts}": 2,
               "{onAlertLinkClick}": 1,
@@ -257,8 +258,6 @@
               "{handlePortfolioOnClick}": 1,
               "{() => { onMultiselectSubmit?.( Object.keys(checkedChainIds).filter( (chainId)...}": 1,
               "{() => { handleToggleAllNetworks(); }}": 1,
-              "{() => { dispatch(showImportNftsModal({ tokenAddress: address })); onClose(); }}": 1,
-              "{() => { onClose(); navigate( `${ASSETS_ROUTE}#autodetect-tokens`, ); }}": 1,
               "{() => { global.platform.openTab({ url: ZENDESK_URLS.UNKNOWN_NETWORK, }); }}": 1,
               "{() => { setName(suggestedName); }}": 1,
               "{() => { const chainIdHex = toHex(chainId); if (chainIdHex) { dispatch( setEdi...}": 1,
@@ -266,12 +265,12 @@
               "{() => onClick()}": 1,
               "{() => onMaxButtonClick(balanceAmount)}": 1,
               "{() => { dispatch(setWasTxDeclined(false)); }}": 1,
-              "{() => { trackEvent( { category: MetaMetricsEventCategory.Home, event: MetaMet...}": 1,
+              "{() => { trackEvent( createEventBuilder( MetaMetricsEventName.SupportLinkClick...}": 1,
               "{onSwitch}": 1,
               "{() => { global.platform.openTab({ url: ZENDESK_URLS.ACCOUNT_UPGRADE, }); }}": 1,
               "{updateToMax}": 1,
               "{dismissAlert}": 1,
-              "{() => { trackEvent({ event: 'Clicked \"Gas Fees: Learn More\" Link', category: ...}": 1,
+              "{() => { trackEvent( createEventBuilder( 'Clicked \"Gas Fees: Learn More\" Link'...}": 1,
               "{(e) => { e.preventDefault(); dispatch(setTransactionSettingsOpened(true)); }}": 1
             }
           },
@@ -288,7 +287,7 @@
             }
           },
           "href": {
-            "count": 32,
+            "count": 31,
             "values": {
               "{safeWebsite.toString()}": 2,
               "{url}": 2,
@@ -308,7 +307,6 @@
               "\"https://consensys.io/privacy-policy/\"": 1,
               "\"https://consensys.io/privacy-policy\"": 1,
               "{ZENDESK_URLS.IMPORTED_ACCOUNT_JSON}": 1,
-              "{blockExplorerTokenLink}": 1,
               "{SUPPORT_LINK}": 1,
               "{link}": 1,
               "{SMART_TRANSACTIONS_LEARN_MORE_URL}": 1,
@@ -320,13 +318,27 @@
             }
           },
           "target": {
-            "count": 23,
+            "count": 22,
             "values": {
-              "\"_blank\"": 23
+              "\"_blank\"": 22
+            }
+          },
+          "as": {
+            "count": 16,
+            "values": {
+              "\"a\"": 13,
+              "\"button\"": 3
+            }
+          },
+          "externalLink": {
+            "count": 15,
+            "values": {
+              "true (shorthand)": 14,
+              "{!isMetaMaskUrl}": 1
             }
           },
           "key": {
-            "count": 17,
+            "count": 14,
             "values": {
               "\"link\"": 2,
               "\"update-metamask-link\"": 2,
@@ -338,22 +350,19 @@
               "\"permission-connect-footer-learn-more-link\"": 1,
               "\"privacyNoticeTermsOfUseLink\"": 1,
               "\"importAccountWithSocialMsgLearnMore\"": 1,
-              "\"import-token-verify-token-decimal\"": 1,
-              "\"nftAddressError\"": 1,
-              "\"token-detection-announcement\"": 1,
               "{origin}": 1,
               "\"gas-fees-learn-more\"": 1
             }
           },
-          "as": {
-            "count": 16,
+          "rel": {
+            "count": 13,
             "values": {
-              "\"a\"": 13,
-              "\"button\"": 3
+              "\"noopener noreferrer\"": 11,
+              "\"noreferrer noopener\"": 2
             }
           },
           "className": {
-            "count": 16,
+            "count": 13,
             "values": {
               "\"snap-ui-renderer__link\"": 3,
               "\"connected-accounts-list__account-status-link\"": 2,
@@ -363,24 +372,7 @@
               "\"customize-nonce-modal__reset\"": 1,
               "\"snap-privacy-warning__content__terms-link\"": 1,
               "\"snap-ui-markdown__link\"": 1,
-              "\"snap-external-pill\"": 1,
-              "\"import-tokens-modal__button-link\"": 1,
-              "\"import-tokens-modal__nft-address-error-link\"": 1,
-              "\"import-tokens-modal__autodetect\"": 1
-            }
-          },
-          "externalLink": {
-            "count": 15,
-            "values": {
-              "true (shorthand)": 14,
-              "{!isMetaMaskUrl}": 1
-            }
-          },
-          "rel": {
-            "count": 14,
-            "values": {
-              "\"noopener noreferrer\"": 12,
-              "\"noreferrer noopener\"": 2
+              "\"snap-external-pill\"": 1
             }
           },
           "variant": {
@@ -399,13 +391,6 @@
               "{{ display: Display.Inline, }}": 2,
               "{{ width: BlockSize.Full }}": 1,
               "{{ variant: TextVariant.bodyMdMedium }}": 1
-            }
-          },
-          "color": {
-            "count": 9,
-            "values": {
-              "{TextColor.primaryDefault}": 8,
-              "{TextColor.infoDefault}": 1
             }
           },
           "data-testid": {
@@ -429,16 +414,17 @@
               "{{ height: 'unset', verticalAlign: 'unset' }}": 1
             }
           },
+          "color": {
+            "count": 8,
+            "values": {
+              "{TextColor.primaryDefault}": 7,
+              "{TextColor.infoDefault}": 1
+            }
+          },
           "display": {
             "count": 3,
             "values": {
               "{Display.Inline}": 3
-            }
-          },
-          "endIconName": {
-            "count": 3,
-            "values": {
-              "{IconName.Export}": 3
             }
           },
           "paddingLeft": {
@@ -475,6 +461,12 @@
             "count": 2,
             "values": {
               "true (shorthand)": 2
+            }
+          },
+          "endIconName": {
+            "count": 2,
+            "values": {
+              "{IconName.Export}": 2
             }
           },
           "paddingRight": {
@@ -540,11 +532,11 @@
         }
       },
       "overall": {
-        "totalInstances": 143,
+        "totalInstances": 140,
         "filesCount": 96,
         "props": {
           "onClick": {
-            "count": 84,
+            "count": 83,
             "values": {
               "{handleClick}": 3,
               "{onLearnMore}": 3,
@@ -580,20 +572,18 @@
               "{handlePortfolioOnClick}": 1,
               "{() => { onMultiselectSubmit?.( Object.keys(checkedChainIds).filter( (chainId)...}": 1,
               "{() => { handleToggleAllNetworks(); }}": 1,
-              "{() => { dispatch(showImportNftsModal({ tokenAddress: address })); onClose(); }}": 1,
-              "{() => { onClose(); navigate( `${ASSETS_ROUTE}#autodetect-tokens`, ); }}": 1,
               "{(event: React.MouseEvent) => { event.stopPropagation(); trackEvent( createEve...}": 1,
               "{() => { global.platform.openTab({ url: ZENDESK_URLS.UNKNOWN_NETWORK, }); }}": 1,
               "{() => { setName(suggestedName); }}": 1,
               "{() => { const chainIdHex = toHex(chainId); if (chainIdHex) { dispatch( setEdi...}": 1,
               "{() => { setTicker(suggestedTicker); }}": 1,
               "{() => onClick()}": 1,
-              "{(e: React.MouseEvent) => { e.stopPropagation(); trackEvent({ category: MetaMe...}": 1,
+              "{(e: React.MouseEvent) => { e.stopPropagation(); trackEvent( createEventBuilde...}": 1,
               "{() => navigate(PRIVACY_ROUTE)}": 1,
               "{() => navigate(DEFAULT_ROUTE)}": 1,
               "{() => onMaxButtonClick(balanceAmount)}": 1,
               "{() => { dispatch(setWasTxDeclined(false)); }}": 1,
-              "{() => { trackEvent( { category: MetaMetricsEventCategory.Home, event: MetaMet...}": 1,
+              "{() => { trackEvent( createEventBuilder( MetaMetricsEventName.SupportLinkClick...}": 1,
               "{onSwitch}": 1,
               "{updateToMax}": 1,
               "{dismissAlert}": 1,
@@ -604,6 +594,7 @@
               "{() => setToggleSrpDetailsModal(true)}": 1,
               "{onCopy}": 1,
               "{handleSrpClick}": 1,
+              "{handleLearnHowToStaySafe}": 1,
               "{handleLearnMoreClick}": 1,
               "{() => navigate(ONBOARDING_PRIVACY_SETTINGS_ROUTE)}": 1,
               "{() => { dispatch( toggleNetworkMenu({ isAddingNewNetwork: true, }), ); }}": 1,
@@ -611,20 +602,20 @@
               "{handleRemindLater}": 1,
               "{() => { trackEvent( createEventBuilder(MetaMetricsEventName.SupportLinkClicke...}": 1,
               "{toggleVisitSupportDataConsentModal}": 1,
-              "{handleRestart}": 1,
+              "{onRestart}": 1,
               "{handleReset}": 1,
               "{() => { navigate(TRANSACTION_SHIELD_MANAGE_PLAN_ROUTE); }}": 1,
               "{() => { handleViewFullBenefitsClicked(); }}": 1,
-              "{() => { trackEvent({ event: 'Clicked \"Gas Fees: Learn More\" Link', category: ...}": 1,
+              "{() => { trackEvent( createEventBuilder( 'Clicked \"Gas Fees: Learn More\" Link'...}": 1,
               "{(e) => { e.preventDefault(); dispatch(setTransactionSettingsOpened(true)); }}": 1,
               "{this.onForgotPasswordOrLoginWithDiffMethods}": 1,
               "{() => { this.ctx.trackEvent( { category: MetaMetricsEventCategory.Navigation,...}": 1
             }
           },
           "className": {
-            "count": 62,
+            "count": 58,
             "values": {
-              "\"inline\"": 7,
+              "\"inline\"": 6,
               "\"min-w-0\"": 5,
               "\"hover:bg-transparent active:bg-transparent w-fit\"": 4,
               "\"text-center\"": 4,
@@ -649,9 +640,6 @@
               "\"snap-privacy-warning__content__terms-link\"": 1,
               "\"snap-ui-markdown__link\"": 1,
               "\"snap-external-pill\"": 1,
-              "\"import-tokens-modal__button-link\"": 1,
-              "\"import-tokens-modal__nft-address-error-link\"": 1,
-              "\"import-tokens-modal__autodetect\"": 1,
               "\"srp-list__show-accounts\"": 1,
               "\"inline font-normal\"": 1,
               "\"w-full hover:bg-transparent\"": 1,
@@ -678,27 +666,24 @@
             }
           },
           "key": {
-            "count": 44,
+            "count": 41,
             "values": {
               "\"terms-link\"": 3,
               "\"link\"": 3,
               "\"need-help-link\"": 3,
-              "\"import-token-fake-token-warning\"": 2,
               "\"terms\"": 2,
               "\"u2f-error-1\"": 2,
               "\"update-metamask-link\"": 2,
               "\"here-link\"": 2,
               "{`security-provider-button-link-${provider}`}": 1,
               "{`security-provider-button-supporturl-${provider}`}": 1,
+              "\"import-token-fake-token-warning\"": 1,
               "\"updateRpc\"": 1,
               "\"switchToInfura\"": 1,
               "\"permission-connect-footer-learn-more-link\"": 1,
               "\"learnMore\"": 1,
               "\"privacyNoticeTermsOfUseLink\"": 1,
               "\"importAccountWithSocialMsgLearnMore\"": 1,
-              "\"import-token-verify-token-decimal\"": 1,
-              "\"nftAddressError\"": 1,
-              "\"token-detection-announcement\"": 1,
               "{origin}": 1,
               "\"shield-footer-agreement-button\"": 1,
               "\"defi-referral-partner-terms\"": 1,
@@ -706,6 +691,7 @@
               "\"learn-scam-risk\"": 1,
               "\"secret-recovery-phrase\"": 1,
               "\"srp-learn-srp\"": 1,
+              "\"chainlist-learn-how-to-stay-safe\"": 1,
               "\"walletReadyLearn\"": 1,
               "\"seedPhraseReviewDetails\"": 1,
               "\"loginErrorGenericDescription\"": 1,
@@ -753,13 +739,13 @@
             }
           },
           "asChild": {
-            "count": 35,
+            "count": 34,
             "values": {
-              "true (shorthand)": 35
+              "true (shorthand)": 34
             }
           },
           "href": {
-            "count": 32,
+            "count": 31,
             "values": {
               "{safeWebsite.toString()}": 2,
               "{url}": 2,
@@ -779,7 +765,6 @@
               "\"https://consensys.io/privacy-policy/\"": 1,
               "\"https://consensys.io/privacy-policy\"": 1,
               "{ZENDESK_URLS.IMPORTED_ACCOUNT_JSON}": 1,
-              "{blockExplorerTokenLink}": 1,
               "{SUPPORT_LINK}": 1,
               "{link}": 1,
               "{SMART_TRANSACTIONS_LEARN_MORE_URL}": 1,
@@ -791,16 +776,16 @@
             }
           },
           "target": {
-            "count": 23,
+            "count": 22,
             "values": {
-              "\"_blank\"": 23
+              "\"_blank\"": 22
             }
           },
           "color": {
-            "count": 19,
+            "count": 18,
             "values": {
               "{TextColor.PrimaryDefault}": 9,
-              "{TextColor.primaryDefault}": 8,
+              "{TextColor.primaryDefault}": 7,
               "{TextColor.infoDefault}": 1,
               "{isRehydrationFlow ? TextColor.TextDefault : TextColor.PrimaryDefault}": 1
             }
@@ -820,9 +805,9 @@
             }
           },
           "rel": {
-            "count": 14,
+            "count": 13,
             "values": {
-              "\"noopener noreferrer\"": 12,
+              "\"noopener noreferrer\"": 11,
               "\"noreferrer noopener\"": 2
             }
           },
@@ -872,9 +857,9 @@
             }
           },
           "endIconName": {
-            "count": 5,
+            "count": 4,
             "values": {
-              "{IconName.Export}": 3,
+              "{IconName.Export}": 2,
               "{IconName.ArrowRight}": 2
             }
           },
@@ -1010,11 +995,11 @@
         }
       },
       "deprecatedByLegacyComponent": {
-        "ButtonLink": 65
+        "ButtonLink": 62
       }
     },
     "mobile": {
-      "filesScanned": 7036,
+      "filesScanned": 7127,
       "targetComponent": "TextButton",
       "mmds": {
         "totalInstances": 8,
