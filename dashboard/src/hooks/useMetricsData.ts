@@ -7,6 +7,7 @@ import type {
   ComponentPropsAuditIndexData,
   MigrationTargetsData,
   UntrackedData,
+  UntrackedTimeline,
 } from '../types/metrics';
 
 const BASE_PATH = import.meta.env.BASE_URL || '/';
@@ -215,6 +216,33 @@ export function useUntrackedData(project: 'mobile' | 'extension') {
 
     fetchData();
   }, [project]);
+
+  return { data, loading, error };
+}
+
+export function useUntrackedTimeline() {
+  const [data, setData] = useState<UntrackedTimeline | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<Error | null>(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        const res = await fetch(`${METRICS_PATH}untracked-timeline.json`);
+        if (res.status === 404) { setData(null); setError(null); return; }
+        if (!res.ok) throw new Error('Failed to fetch untracked-timeline.json');
+        setData(await res.json());
+        setError(null);
+      } catch (err) {
+        setError(err as Error);
+        setData(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchData();
+  }, []);
 
   return { data, loading, error };
 }

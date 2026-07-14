@@ -1,5 +1,5 @@
 import { useTimelineData, useMetricsData, useMigrationTargets } from '../hooks/useMetricsData';
-import type { MigrationTargetsProject } from '../types/metrics';
+import type { MigrationTargetsProject, ProjectTimeline } from '../types/metrics';
 import { Loading } from '../components/Loading';
 import { ErrorMessage } from '../components/ErrorMessage';
 import { MetricsCard } from '../components/MetricsCard';
@@ -7,7 +7,71 @@ import { CodeOwnerAdoptionChart } from '../components/CodeOwnerAdoptionChart';
 import { CodeOwnerTrendChart } from '../components/CodeOwnerTrendChart';
 import { CodeOwnerAdoptionTrendChart } from '../components/CodeOwnerAdoptionTrendChart';
 import { ComponentPropsAuditSection } from '../components/ComponentPropsAuditSection';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceLine, Cell } from 'recharts';
+
+// ─── Deprecated instances weekly-delta sparkline ──────────────────────────────
+
+function DeprecatedDeltaSparkline({ timeline, project }: { timeline: ProjectTimeline; project: string }) {
+  const deltas = timeline.deprecatedInstances.map((v, i) =>
+    i === 0 ? 0 : v - timeline.deprecatedInstances[i - 1],
+  ).slice(1); // drop the first zero
+
+  const dates = timeline.dates.slice(1);
+
+  const chartData = deltas.map((delta, i) => ({ date: dates[i], delta }));
+
+  if (chartData.length === 0) return null;
+
+  const CustomTooltip = ({ active, payload }: any) => {
+    if (!active || !payload?.length) return null;
+    const d = payload[0].payload;
+    const isGood = d.delta < 0;
+    return (
+      <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow p-2.5 text-xs">
+        <p className="text-gray-500 dark:text-gray-400 mb-0.5">{d.date}</p>
+        <p className={`font-semibold ${isGood ? 'text-emerald-600 dark:text-emerald-400' : 'text-red-500 dark:text-red-400'}`}>
+          {d.delta > 0 ? `+${d.delta}` : d.delta} deprecated instances
+        </p>
+        <p className="text-gray-400 dark:text-gray-500 mt-0.5">
+          {isGood ? 'Week-over-week reduction' : d.delta === 0 ? 'No change' : 'Net increase — new deprecated usage added'}
+        </p>
+      </div>
+    );
+  };
+
+  return (
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-5 mt-4">
+      <div className="flex items-center justify-between mb-3">
+        <div>
+          <h4 className="text-sm font-semibold text-gray-900 dark:text-white">
+            {project === 'mobile' ? '📱' : '🧩'} Deprecated instances — weekly change
+          </h4>
+          <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">
+            Green bars = net reduction (good). Red bars = net increase (new deprecated usage added).
+          </p>
+        </div>
+        <div className="flex gap-2 text-xs">
+          <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded-sm inline-block bg-emerald-500" />reduction</span>
+          <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded-sm inline-block bg-red-400" />increase</span>
+        </div>
+      </div>
+      <ResponsiveContainer width="100%" height={100}>
+        <BarChart data={chartData} margin={{ top: 4, right: 8, left: 0, bottom: 0 }}>
+          <CartesianGrid strokeDasharray="3 3" vertical={false} className="stroke-gray-100 dark:stroke-gray-700" />
+          <XAxis dataKey="date" tick={{ fontSize: 9 }} angle={-45} textAnchor="end" height={36} />
+          <YAxis tick={{ fontSize: 10 }} width={36} />
+          <Tooltip content={<CustomTooltip />} />
+          <ReferenceLine y={0} stroke="#9ca3af" strokeWidth={1} />
+          <Bar dataKey="delta" radius={[2, 2, 0, 0]}>
+            {chartData.map((entry, i) => (
+              <Cell key={i} fill={entry.delta < 0 ? '#10b981' : entry.delta === 0 ? '#d1d5db' : '#f87171'} />
+            ))}
+          </Bar>
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
+  );
+}
 
 const MOBILE_EXCLUDED_OWNERS = new Set([
   'design-system-engineers',
@@ -349,11 +413,14 @@ export function Overview() {
             growth with deprecated usage eventually peaking and then declining.
           </p>
 
+          <DeprecatedDeltaSparkline timeline={data.mobile} project="mobile" />
+
           {mobileCodeOwnerStats && Object.keys(mobileCodeOwnerStats).length > 0 && (
             <div className="mt-6">
               <CodeOwnerAdoptionChart
                 codeOwnerStats={mobileCodeOwnerStats}
                 title="Mobile - Code Owner Adoption"
+                threshold={90}
               />
               <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
                 Disclaimer: Code owner adoption reflects migration stage, not code quality.
@@ -556,11 +623,14 @@ export function Overview() {
             growth with deprecated usage eventually peaking and then declining.
           </p>
 
+          <DeprecatedDeltaSparkline timeline={data.extension} project="extension" />
+
           {extensionCodeOwnerStats && Object.keys(extensionCodeOwnerStats).length > 0 && (
             <div className="mt-6">
               <CodeOwnerAdoptionChart
                 codeOwnerStats={extensionCodeOwnerStats}
                 title="Extension - Code Owner Adoption"
+                threshold={90}
               />
               <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
                 Disclaimer: Code owner adoption reflects migration stage, not code quality.

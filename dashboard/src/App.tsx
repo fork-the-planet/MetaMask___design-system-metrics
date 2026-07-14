@@ -5,7 +5,7 @@ import './App.css';
 
 const navItems = [
   { to: '/', label: 'Overview' },
-  { to: '/untracked', label: 'Untracked Components' },
+  { to: '/untracked', label: 'One-off Components' },
 ] as const;
 
 function App() {

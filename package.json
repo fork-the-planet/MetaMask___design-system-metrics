@@ -22,7 +22,8 @@
     "audit-component-props": "node scripts/component-props-audit.js",
     "discover": "node scripts/discover-untracked.js",
     "discover:extension": "node scripts/discover-untracked.js --project extension",
-    "discover:mobile": "node scripts/discover-untracked.js --project mobile"
+    "discover:mobile": "node scripts/discover-untracked.js --project mobile",
+    "update-untracked-timeline": "node scripts/update-untracked-timeline.js"
   },
   "license": "MIT",
   "dependencies": {
