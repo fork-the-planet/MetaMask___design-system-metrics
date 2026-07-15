@@ -1,35 +1,130 @@
 import { useMemo, useState } from 'react';
-import { useUntrackedData } from '../hooks/useMetricsData';
+import { useUntrackedData, useUntrackedTimeline, useMetricsData } from '../hooks/useMetricsData';
 import { Loading } from '../components/Loading';
 import { ErrorMessage } from '../components/ErrorMessage';
-import type { UntrackedData, UntrackedComponent } from '../types/metrics';
+import type { UntrackedData, UntrackedComponent, UntrackedProjectTimeline } from '../types/metrics';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
-// ─── Types ───────────────────────────────────────────────────────────────────
-
-type ReplaceSortField = 'instances' | 'fileCount' | 'confidence';
-type CandidateSortField = 'instances' | 'fileCount';
-interface SortState<F extends string> { field: F; dir: 'asc' | 'desc' }
-
-// ─── Helpers ─────────────────────────────────────────────────────────────────
+// ─── Constants ────────────────────────────────────────────────────────────────
 
 const CONFIDENCE_ORDER = { exact: 0, high: 1, medium: 2 } as const;
+const CONFIDENCE_MULTIPLIER = { exact: 3, high: 2, medium: 1 } as const;
+
+// ─── Types ────────────────────────────────────────────────────────────────────
+
+type ReplaceSortField = 'priority' | 'instances' | 'fileCount' | 'confidence';
+type CandidateSortField = 'breadth' | 'instances' | 'fileCount';
+interface SortState<F extends string> { field: F; dir: 'asc' | 'desc' }
+
+// ─── Filters ─────────────────────────────────────────────────────────────────
+
+/**
+ * A replaceable one-off: strictly local, imported from a relative path in the repo.
+ * Excludes mixed (partially platform/third-party), platform-primitive, and third-party.
+ */
+function isOneoffReplaceable(row: UntrackedComponent): boolean {
+  return row.sourceCategory === 'local-oneoff';
+}
+
+/**
+ * A DS roadmap candidate: strict local-oneoff with a traceable canonical source path.
+ * Excludes untraceable (local or re-export) entries with no path context.
+ */
+function isDSCandidate(row: UntrackedComponent): boolean {
+  return row.sourceCategory === 'local-oneoff' &&
+    !!row.canonicalSource &&
+    !row.canonicalSource.startsWith('(');
+}
+
+// ─── Scoring ─────────────────────────────────────────────────────────────────
+
+/** Priority = instances × confidence weight. Higher = bigger migration win. */
+function priorityScore(row: UntrackedComponent): number {
+  const conf = row.mmdsMatches[0]?.confidence as keyof typeof CONFIDENCE_MULTIPLIER | undefined;
+  return row.instances * (conf ? (CONFIDENCE_MULTIPLIER[conf] ?? 1) : 1);
+}
+
+/** Unique teams using this component (excluding @unknown). */
+function teamBreadth(row: UntrackedComponent): number {
+  if (!row.codeOwnerBreakdown) return 0;
+  return Object.keys(row.codeOwnerBreakdown).filter(o => o !== '@unknown').length;
+}
+
+/** Roadmap score = instances × teams. Higher = stronger DS standardisation signal. */
+function roadmapScore(row: UntrackedComponent): number {
+  return row.instances * Math.max(teamBreadth(row), 1);
+}
+
+// ─── Sorting ─────────────────────────────────────────────────────────────────
+
+function sortReplaceable(rows: UntrackedComponent[], sort: SortState<ReplaceSortField>): UntrackedComponent[] {
+  return [...rows].sort((a, b) => {
+    let cmp = 0;
+    if (sort.field === 'priority') cmp = priorityScore(a) - priorityScore(b);
+    else if (sort.field === 'instances') cmp = a.instances - b.instances;
+    else if (sort.field === 'fileCount') cmp = a.fileCount - b.fileCount;
+    else if (sort.field === 'confidence') {
+      const aO = CONFIDENCE_ORDER[a.mmdsMatches[0]?.confidence as keyof typeof CONFIDENCE_ORDER] ?? 3;
+      const bO = CONFIDENCE_ORDER[b.mmdsMatches[0]?.confidence as keyof typeof CONFIDENCE_ORDER] ?? 3;
+      cmp = aO - bO;
+    }
+    return sort.dir === 'desc' ? -cmp : cmp;
+  });
+}
+
+function sortCandidates(rows: UntrackedComponent[], sort: SortState<CandidateSortField>): UntrackedComponent[] {
+  return [...rows].sort((a, b) => {
+    let cmp = 0;
+    if (sort.field === 'breadth') cmp = roadmapScore(a) - roadmapScore(b);
+    else if (sort.field === 'instances') cmp = a.instances - b.instances;
+    else if (sort.field === 'fileCount') cmp = a.fileCount - b.fileCount;
+    return sort.dir === 'desc' ? -cmp : cmp;
+  });
+}
+
+// ─── Row filtering ────────────────────────────────────────────────────────────
+
+function filterReplaceableRows(rows: UntrackedComponent[], teamFilter: string, search: string): UntrackedComponent[] {
+  return rows
+    .filter(isOneoffReplaceable)
+    .filter(row => !teamFilter || (row.codeOwners ?? []).includes(teamFilter))
+    .filter(row => !search || row.component.toLowerCase().includes(search.toLowerCase()));
+}
+
+function filterCandidateRows(rows: UntrackedComponent[], teamFilter: string, search: string): UntrackedComponent[] {
+  return rows
+    .filter(isDSCandidate)
+    .filter(row => !teamFilter || (row.codeOwners ?? []).includes(teamFilter))
+    .filter(row => !search || row.component.toLowerCase().includes(search.toLowerCase()));
+}
+
+// ─── URL helpers ──────────────────────────────────────────────────────────────
 
 function mmdsComponentUrl(componentName: string, project: string): string {
   const pkg = project === 'mobile' ? 'design-system-react-native' : 'design-system-react';
   return `https://github.com/MetaMask/metamask-design-system/tree/main/packages/${pkg}/src/components/${componentName}`;
 }
 
-function sourceUrl(canonicalSource: string | undefined, importSources: string[], project: string): string | null {
-  const src = canonicalSource ?? importSources[0];
-  if (!src) return null;
-  // Skip platform primitives / npm packages (no leading path segments that map to a repo)
-  if (!src.startsWith('.') && !src.includes('/')) return null;
+/** Always-valid code search — never 404s regardless of path accuracy. */
+function componentSearchUrl(componentName: string, project: string): string {
+  const repo = project === 'mobile' ? 'metamask-mobile' : 'metamask-extension';
+  return `https://github.com/MetaMask/${repo}/search?q=${encodeURIComponent(componentName)}&type=code`;
+}
+
+/**
+ * Best-effort direct tree link. Returns null for bare names or untraceable paths,
+ * so callers can fall back to componentSearchUrl.
+ */
+function sourceTreeUrl(canonicalSource: string | undefined, project: string): string | null {
+  if (!canonicalSource || canonicalSource.startsWith('(') || canonicalSource === '—') return null;
+  if (!canonicalSource.includes('/')) return null;
   const repo = project === 'mobile' ? 'metamask-mobile' : 'metamask-extension';
   const base = project === 'mobile' ? 'app' : 'ui';
-  // canonicalSource has leading ../ stripped — prepend the base dir if it doesn't already start with it
-  const normalised = src.startsWith(base + '/') ? src : `${base}/${src}`;
+  const normalised = canonicalSource.startsWith(base + '/') ? canonicalSource : `${base}/${canonicalSource}`;
   return `https://github.com/MetaMask/${repo}/tree/main/${normalised}`;
 }
+
+// ─── Shared helpers ───────────────────────────────────────────────────────────
 
 function formatTeam(owner: string): string {
   return owner.replace('@MetaMask/', '').replace(/^@/, '');
@@ -38,151 +133,81 @@ function formatTeam(owner: string): string {
 function teamsDisplay(codeOwners: string[] | undefined): string {
   if (!codeOwners || codeOwners.length === 0) return '—';
   const names = codeOwners.filter(o => o !== '@unknown').map(formatTeam);
-  if (names.length === 0) return '—';
-  return names.join(', ');
+  return names.length > 0 ? names.join(', ') : '—';
 }
 
-/** Fallback for rows without canonicalSource (old JSON). */
-function firstNonLocalSource(sources: string[]): string {
-  const external = sources.find(s => !s.startsWith('.') && !s.startsWith('/'));
-  return external ?? sources[0] ?? '—';
-}
+/** Source link cell: tree URL when path is reliable, code search otherwise. */
+function SourceCell({ canonicalSource, componentName, project }: {
+  canonicalSource: string | undefined;
+  componentName: string;
+  project: string;
+}) {
+  const treeUrl = sourceTreeUrl(canonicalSource, project);
+  const searchUrl = componentSearchUrl(componentName, project);
+  const display = canonicalSource || componentName;
 
-const PLATFORM_PRIMITIVE_PREFIXES = ['react-native', 'expo', 'reanimated', '@react-native', 'react-native-reanimated', 'react-native-skeleton'];
-
-function classifySource(src: string): 'local-oneoff' | 'platform-primitive' | 'third-party' {
-  if (src.startsWith('.') || src.startsWith('/')) return 'local-oneoff';
-  if (PLATFORM_PRIMITIVE_PREFIXES.some(p => src === p || src.startsWith(p + '/') || src.startsWith(p + '-'))) return 'platform-primitive';
-  return 'third-party';
-}
-
-/** Returns deduplicated {source, category} pairs for display in the Source cell. For mixed rows, returns one entry per distinct category using the best representative source. */
-function sourceEntries(row: UntrackedComponent): { source: string; category: 'local-oneoff' | 'platform-primitive' | 'third-party' }[] {
-  if (row.sourceCategory !== 'mixed') {
-    const src = row.canonicalSource ?? firstNonLocalSource(row.importSources);
-    const cat = (row.sourceCategory as 'local-oneoff' | 'platform-primitive' | 'third-party') ?? classifySource(src);
-    return [{ source: src, category: cat }];
+  if (treeUrl) {
+    return (
+      <div className="flex items-center gap-1.5">
+        <a
+          href={treeUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="font-mono text-xs text-blue-600 dark:text-blue-400 hover:underline truncate max-w-[200px]"
+          title={canonicalSource}
+        >
+          {display}
+        </a>
+        <a
+          href={searchUrl}
+          target="_blank"
+          rel="noreferrer"
+          title="Search in repo"
+          className="shrink-0 text-gray-400 hover:text-blue-500 dark:hover:text-blue-400"
+        >
+          <svg className="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" />
+          </svg>
+        </a>
+      </div>
+    );
   }
-  // For mixed: deduplicate by category, pick best representative per category.
-  // canonicalSource is a normalised local path (leading ../ stripped) so it may not start
-  // with '.' even though it represents a local-oneoff — use it explicitly for that category
-  // when any raw importSources are relative, then skip relative sources in the loop.
-  const seen = new Map<string, string>();
-  const hasLocalSources = row.importSources.some(s => s.startsWith('.') || s.startsWith('/'));
-  if (row.canonicalSource && hasLocalSources) {
-    seen.set('local-oneoff', row.canonicalSource);
-  }
-  for (const src of row.importSources) {
-    if (src.startsWith('.') || src.startsWith('/')) continue; // local already covered above
-    const cat = classifySource(src);
-    if (!seen.has(cat)) seen.set(cat, src);
-  }
-  // Fallback: if no local sources, classify canonicalSource normally
-  if (row.canonicalSource && !hasLocalSources && !seen.size) {
-    const cat = classifySource(row.canonicalSource);
-    seen.set(cat, row.canonicalSource);
-  }
-  return Array.from(seen.entries()).map(([category, source]) => ({
-    source,
-    category: category as 'local-oneoff' | 'platform-primitive' | 'third-party',
-  }));
+
+  return (
+    <a
+      href={searchUrl}
+      target="_blank"
+      rel="noreferrer"
+      className="font-mono text-xs text-blue-600 dark:text-blue-400 hover:underline truncate max-w-[200px] block"
+      title={`Search for ${componentName} in repo`}
+    >
+      {display}
+    </a>
+  );
 }
 
-function sortReplaceable(
-  rows: UntrackedComponent[],
-  sort: SortState<ReplaceSortField>,
-): UntrackedComponent[] {
-  return [...rows].sort((a, b) => {
-    let cmp = 0;
-    if (sort.field === 'instances') {
-      cmp = a.instances - b.instances;
-    } else if (sort.field === 'fileCount') {
-      cmp = a.fileCount - b.fileCount;
-    } else if (sort.field === 'confidence') {
-      const aConf = CONFIDENCE_ORDER[a.mmdsMatches[0]?.confidence as keyof typeof CONFIDENCE_ORDER] ?? 3;
-      const bConf = CONFIDENCE_ORDER[b.mmdsMatches[0]?.confidence as keyof typeof CONFIDENCE_ORDER] ?? 3;
-      cmp = aConf - bConf; // lower = better, so desc means exact first
-    }
-    return sort.dir === 'desc' ? -cmp : cmp;
-  });
-}
+// ─── Confidence badge ─────────────────────────────────────────────────────────
 
-function sortCandidates(
-  rows: UntrackedComponent[],
-  sort: SortState<CandidateSortField>,
-): UntrackedComponent[] {
-  return [...rows].sort((a, b) => {
-    const cmp = sort.field === 'instances'
-      ? a.instances - b.instances
-      : a.fileCount - b.fileCount;
-    return sort.dir === 'desc' ? -cmp : cmp;
-  });
-}
-
-function filterRows(
-  rows: UntrackedComponent[],
-  teamFilter: string,
-  search: string,
-): UntrackedComponent[] {
-  return rows
-    .filter(row => !teamFilter || (row.codeOwners ?? []).includes(teamFilter))
-    .filter(row => !search || row.component.toLowerCase().includes(search.toLowerCase()));
-}
-
-// ─── Badge components ─────────────────────────────────────────────────────────
-
-function confidenceBadge(confidence: 'exact' | 'high' | 'medium') {
-  const styles: Record<string, string> = {
-    exact: 'bg-green-100 text-green-800 dark:bg-green-900/40 dark:text-green-300',
-    high: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/40 dark:text-yellow-300',
-    medium: 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300',
+function ConfidenceBadge({ confidence }: { confidence: 'exact' | 'high' | 'medium' }) {
+  const styles = {
+    exact: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300 ring-1 ring-emerald-300 dark:ring-emerald-700',
+    high: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/40 dark:text-yellow-300 ring-1 ring-yellow-300 dark:ring-yellow-700',
+    medium: 'bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300',
   };
+  const labels = { exact: 'Exact', high: 'Strong', medium: 'Partial' };
   return (
     <span className={`inline-block rounded-full px-2.5 py-0.5 text-xs font-medium ${styles[confidence]}`}>
-      {confidence}
+      {labels[confidence]}
     </span>
   );
 }
 
-function sourceCategoryBadge(category: string | undefined) {
-  if (!category) return null;
-  const styles: Record<string, string> = {
-    'local-oneoff': 'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300',
-    'platform-primitive': 'bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-400',
-    'third-party': 'bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300',
-    'mixed': 'bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-300',
-  };
-  const labels: Record<string, string> = {
-    'local-oneoff': 'one-off',
-    'platform-primitive': 'primitive',
-    'third-party': '3rd party',
-    'mixed': 'mixed',
-  };
-  const style = styles[category] ?? styles['third-party'];
-  const label = labels[category] ?? category;
-  return (
-    <span className={`inline-block shrink-0 w-fit rounded-full px-2 py-0.5 text-xs font-medium ${style}`}>
-      {label}
-    </span>
-  );
-}
+// ─── Sort / Static headers ────────────────────────────────────────────────────
 
-// ─── Sort header ──────────────────────────────────────────────────────────────
-
-function SortHeader<F extends string>({
-  label,
-  field,
-  sortState,
-  onSort,
-  className = '',
-}: {
-  label: string;
-  field: F;
-  sortState: SortState<F>;
-  onSort: (field: F) => void;
-  className?: string;
+function SortHeader<F extends string>({ label, field, sortState, onSort, className = '' }: {
+  label: string; field: F; sortState: SortState<F>; onSort: (f: F) => void; className?: string;
 }) {
-  const isActive = sortState.field === field;
+  const active = sortState.field === field;
   return (
     <th
       className={`px-4 py-3 text-left text-xs font-medium uppercase tracking-wider cursor-pointer select-none text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 ${className}`}
@@ -190,9 +215,7 @@ function SortHeader<F extends string>({
     >
       <span className="inline-flex items-center gap-1">
         {label}
-        {isActive
-          ? <span>{sortState.dir === 'desc' ? '↓' : '↑'}</span>
-          : <span className="opacity-30">↕</span>}
+        <span className={active ? '' : 'opacity-30'}>{active ? (sortState.dir === 'desc' ? '↓' : '↑') : '↕'}</span>
       </span>
     </th>
   );
@@ -208,122 +231,124 @@ function StaticHeader({ label, className = '' }: { label: string; className?: st
 
 // ─── Summary card ─────────────────────────────────────────────────────────────
 
-function SummaryCard({ title, value, subtitle }: { title: string; value: string | number; subtitle: string }) {
+function SummaryCard({ title, value, subtitle, accent = 'default' }: {
+  title: string; value: string | number; subtitle: string;
+  accent?: 'default' | 'green' | 'blue' | 'purple' | 'amber';
+}) {
+  const colors = {
+    default: 'text-gray-900 dark:text-white',
+    green: 'text-emerald-600 dark:text-emerald-400',
+    blue: 'text-blue-600 dark:text-blue-400',
+    purple: 'text-purple-600 dark:text-purple-400',
+    amber: 'text-amber-600 dark:text-amber-400',
+  };
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
-      <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400 mb-2">{title}</h3>
-      <p className="text-3xl font-semibold text-gray-900 dark:text-white">{value}</p>
-      <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">{subtitle}</p>
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-5 flex flex-col gap-1">
+      <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">{title}</p>
+      <p className={`text-3xl font-bold ${colors[accent]}`}>{value}</p>
+      <p className="text-xs text-gray-500 dark:text-gray-400">{subtitle}</p>
     </div>
   );
 }
 
-// ─── Replaceable table ────────────────────────────────────────────────────────
+// ─── Priority bar ─────────────────────────────────────────────────────────────
 
-function ReplaceableTable({
-  rows,
-  project,
-  search,
-  onSearch,
-  sort,
-  onSort,
-}: {
-  rows: UntrackedComponent[];
-  project: string;
-  search: string;
-  onSearch: (v: string) => void;
-  sort: SortState<ReplaceSortField>;
-  onSort: (field: ReplaceSortField) => void;
+function PriorityBar({ score, maxScore }: { score: number; maxScore: number }) {
+  const pct = maxScore > 0 ? Math.min((score / maxScore) * 100, 100) : 0;
+  const color = pct > 60 ? 'bg-red-400 dark:bg-red-500'
+    : pct > 30 ? 'bg-yellow-400 dark:bg-yellow-500'
+    : 'bg-blue-300 dark:bg-blue-600';
+  return (
+    <div className="flex items-center gap-2 min-w-[80px]">
+      <div className="flex-1 h-1.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+        <div className={`h-full rounded-full ${color}`} style={{ width: `${pct}%` }} />
+      </div>
+      <span className="text-xs tabular-nums text-gray-500 dark:text-gray-400 w-8 text-right">{score}</span>
+    </div>
+  );
+}
+
+// ─── Replace Now table ────────────────────────────────────────────────────────
+
+function ReplaceNowTable({ rows, project, search, onSearch, sort, onSort }: {
+  rows: UntrackedComponent[]; project: string;
+  search: string; onSearch: (v: string) => void;
+  sort: SortState<ReplaceSortField>; onSort: (f: ReplaceSortField) => void;
 }) {
+  const maxPriority = useMemo(() => Math.max(...rows.map(priorityScore), 1), [rows]);
+
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow overflow-hidden">
-      <div className="p-6 pb-4 flex flex-wrap items-center justify-between gap-3">
+      <div className="p-6 pb-4 border-b border-gray-100 dark:border-gray-700 flex flex-wrap items-start justify-between gap-3">
         <div>
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-            Potential MMDS Replacements
-            {rows.length > 0 && (
-              <span className="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400">
-                ({rows.length})
-              </span>
-            )}
-          </h3>
-          <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
-            Components that could switch to an MMDS equivalent today.
+          <div className="flex items-center gap-2">
+            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 text-xs font-bold">✓</span>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              Replace with MMDS today
+              {rows.length > 0 && <span className="ml-2 text-sm font-normal text-gray-400">({rows.length})</span>}
+            </h3>
+          </div>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1 ml-8">
+            In-repo one-off components with a direct MMDS equivalent. Sorted by migration impact.
           </p>
         </div>
         <input
           type="text"
-          placeholder="Search components..."
+          placeholder="Filter components…"
           value={search}
           onChange={e => onSearch(e.target.value)}
-          className="text-sm border border-gray-300 dark:border-gray-600 rounded-md px-3 py-1.5 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 w-48 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="text-sm border border-gray-300 dark:border-gray-600 rounded-md px-3 py-1.5 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 w-44 focus:outline-none focus:ring-1 focus:ring-blue-500"
         />
       </div>
-
       <div className="overflow-x-auto">
-        <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-          <thead className="bg-gray-50 dark:bg-gray-900/50">
+        <table className="min-w-full divide-y divide-gray-100 dark:divide-gray-700">
+          <thead className="bg-gray-50 dark:bg-gray-900/40">
             <tr>
-              <StaticHeader label="#" />
+              <StaticHeader label="#" className="w-8" />
               <StaticHeader label="Component" />
+              <SortHeader label="Priority" field="priority" sortState={sort} onSort={onSort} className="w-36" />
               <SortHeader label="Instances" field="instances" sortState={sort} onSort={onSort} />
               <SortHeader label="Files" field="fileCount" sortState={sort} onSort={onSort} />
-              <StaticHeader label="Best MMDS Match" />
+              <StaticHeader label="MMDS Replacement" />
               <SortHeader label="Confidence" field="confidence" sortState={sort} onSort={onSort} />
               <StaticHeader label="Source" />
               <StaticHeader label="Teams" />
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
+          <tbody className="divide-y divide-gray-100 dark:divide-gray-700/60">
             {rows.map((row, i) => {
               const bestMatch = row.mmdsMatches[0];
-              const entries = sourceEntries(row);
               return (
                 <tr
                   key={row.component}
-                  className={`${i % 2 === 0 ? 'bg-white dark:bg-gray-800' : 'bg-gray-50 dark:bg-gray-800/50'} hover:bg-blue-50/30 dark:hover:bg-gray-700/30`}
+                  className={`${i % 2 === 0 ? 'bg-white dark:bg-gray-800' : 'bg-gray-50/50 dark:bg-gray-800/40'} hover:bg-emerald-50/30 dark:hover:bg-emerald-900/10 transition-colors`}
                 >
-                  <td className="px-4 py-3 text-sm text-gray-400 dark:text-gray-500">{i + 1}</td>
-                  <td className="px-4 py-3 text-sm font-medium text-gray-900 dark:text-white">{row.component}</td>
-                  <td className="px-4 py-3 text-sm text-gray-700 dark:text-gray-300">{row.instances.toLocaleString()}</td>
-                  <td className="px-4 py-3 text-sm text-gray-700 dark:text-gray-300">{row.fileCount}</td>
-                  <td className="px-4 py-3 text-sm text-gray-700 dark:text-gray-300">
+                  <td className="px-4 py-3 text-xs text-gray-400 dark:text-gray-500 tabular-nums">{i + 1}</td>
+                  <td className="px-4 py-3 text-sm font-semibold text-gray-900 dark:text-white">{row.component}</td>
+                  <td className="px-4 py-3">
+                    <PriorityBar score={priorityScore(row)} maxScore={maxPriority} />
+                  </td>
+                  <td className="px-4 py-3 text-sm tabular-nums text-gray-700 dark:text-gray-300">{row.instances.toLocaleString()}</td>
+                  <td className="px-4 py-3 text-sm tabular-nums text-gray-600 dark:text-gray-400">{row.fileCount}</td>
+                  <td className="px-4 py-3 text-sm">
                     {bestMatch ? (
                       <a
                         href={mmdsComponentUrl(bestMatch.component, project)}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-blue-600 dark:text-blue-400 hover:underline font-mono"
+                        className="text-blue-600 dark:text-blue-400 hover:underline font-mono font-medium"
                       >
                         {bestMatch.component}
                       </a>
                     ) : '—'}
                   </td>
-                  <td className="px-4 py-3 text-sm">
-                    {bestMatch ? confidenceBadge(bestMatch.confidence) : '—'}
+                  <td className="px-4 py-3">
+                    {bestMatch ? <ConfidenceBadge confidence={bestMatch.confidence} /> : '—'}
                   </td>
                   <td className="px-4 py-3 text-sm">
-                    <div className="flex flex-col gap-1.5">
-                      {entries.map(({ source, category }) => {
-                        const url = sourceUrl(category === 'local-oneoff' ? source : undefined, [source], project);
-                        return (
-                          <div key={source} className="flex flex-row items-center gap-2">
-                            {url ? (
-                              <a href={url} target="_blank" rel="noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-mono text-xs truncate max-w-xs" title={source}>
-                                {source}
-                              </a>
-                            ) : (
-                              <span className="text-gray-500 dark:text-gray-400 font-mono text-xs truncate max-w-xs" title={source}>
-                                {source}
-                              </span>
-                            )}
-                            {sourceCategoryBadge(category)}
-                          </div>
-                        );
-                      })}
-                    </div>
+                    <SourceCell canonicalSource={row.canonicalSource} componentName={row.component} project={project} />
                   </td>
-                  <td className="px-4 py-3 text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">
+                  <td className="px-4 py-3 text-xs text-gray-500 dark:text-gray-400">
                     {teamsDisplay(row.codeOwners)}
                   </td>
                 </tr>
@@ -331,8 +356,8 @@ function ReplaceableTable({
             })}
             {rows.length === 0 && (
               <tr>
-                <td colSpan={8} className="px-4 py-8 text-center text-sm text-gray-500 dark:text-gray-400">
-                  No replaceable components match the current filters.
+                <td colSpan={9} className="px-4 py-10 text-center text-sm text-gray-400 dark:text-gray-500">
+                  No components match the current filters.
                 </td>
               </tr>
             )}
@@ -343,94 +368,80 @@ function ReplaceableTable({
   );
 }
 
-// ─── Candidates table ─────────────────────────────────────────────────────────
+// ─── DS Roadmap table ─────────────────────────────────────────────────────────
 
-function CandidatesTable({
-  rows,
-  search,
-  onSearch,
-  sort,
-  onSort,
-  project,
-}: {
-  rows: UntrackedComponent[];
-  search: string;
-  onSearch: (v: string) => void;
-  sort: SortState<CandidateSortField>;
-  onSort: (field: CandidateSortField) => void;
-  project: string;
+function DSRoadmapTable({ rows, project, search, onSearch, sort, onSort }: {
+  rows: UntrackedComponent[]; project: string;
+  search: string; onSearch: (v: string) => void;
+  sort: SortState<CandidateSortField>; onSort: (f: CandidateSortField) => void;
 }) {
+  const maxScore = useMemo(() => Math.max(...rows.map(roadmapScore), 1), [rows]);
+
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow overflow-hidden">
-      <div className="p-6 pb-4 flex flex-wrap items-center justify-between gap-3">
+      <div className="p-6 pb-4 border-b border-gray-100 dark:border-gray-700 flex flex-wrap items-start justify-between gap-3">
         <div>
-          <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-            Future DS Candidates
-            {rows.length > 0 && (
-              <span className="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400">
-                ({rows.length})
-              </span>
-            )}
-          </h3>
-          <p className="text-sm text-gray-500 dark:text-gray-400 mt-0.5">
-            No current MMDS equivalent. High usage across multiple teams may indicate a DS roadmap opportunity.
+          <div className="flex items-center gap-2">
+            <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 text-xs font-bold">+</span>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+              Introduce to MMDS
+              {rows.length > 0 && <span className="ml-2 text-sm font-normal text-gray-400">({rows.length})</span>}
+            </h3>
+          </div>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1 ml-8">
+            Custom in-repo components with no MMDS equivalent and a traceable source. High usage across multiple teams signals a DS roadmap opportunity.
           </p>
         </div>
         <input
           type="text"
-          placeholder="Search components..."
+          placeholder="Filter components…"
           value={search}
           onChange={e => onSearch(e.target.value)}
-          className="text-sm border border-gray-300 dark:border-gray-600 rounded-md px-3 py-1.5 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 w-48 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="text-sm border border-gray-300 dark:border-gray-600 rounded-md px-3 py-1.5 bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 w-44 focus:outline-none focus:ring-1 focus:ring-blue-500"
         />
       </div>
-
       <div className="overflow-x-auto">
-        <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-          <thead className="bg-gray-50 dark:bg-gray-900/50">
+        <table className="min-w-full divide-y divide-gray-100 dark:divide-gray-700">
+          <thead className="bg-gray-50 dark:bg-gray-900/40">
             <tr>
-              <StaticHeader label="#" />
+              <StaticHeader label="#" className="w-8" />
               <StaticHeader label="Component" />
+              <SortHeader label="Breadth signal" field="breadth" sortState={sort} onSort={onSort} className="w-36" />
               <SortHeader label="Instances" field="instances" sortState={sort} onSort={onSort} />
               <SortHeader label="Files" field="fileCount" sortState={sort} onSort={onSort} />
-              <StaticHeader label="Source" />
               <StaticHeader label="Teams" />
+              <StaticHeader label="Source" />
+              <StaticHeader label="Top owners" />
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
+          <tbody className="divide-y divide-gray-100 dark:divide-gray-700/60">
             {rows.map((row, i) => {
-              const entries = sourceEntries(row);
+              const breadth = teamBreadth(row);
               return (
                 <tr
                   key={row.component}
-                  className={`${i % 2 === 0 ? 'bg-white dark:bg-gray-800' : 'bg-gray-50 dark:bg-gray-800/50'} hover:bg-blue-50/30 dark:hover:bg-gray-700/30`}
+                  className={`${i % 2 === 0 ? 'bg-white dark:bg-gray-800' : 'bg-gray-50/50 dark:bg-gray-800/40'} hover:bg-purple-50/30 dark:hover:bg-purple-900/10 transition-colors`}
                 >
-                  <td className="px-4 py-3 text-sm text-gray-400 dark:text-gray-500">{i + 1}</td>
-                  <td className="px-4 py-3 text-sm font-medium text-gray-900 dark:text-white">{row.component}</td>
-                  <td className="px-4 py-3 text-sm text-gray-700 dark:text-gray-300">{row.instances.toLocaleString()}</td>
-                  <td className="px-4 py-3 text-sm text-gray-700 dark:text-gray-300">{row.fileCount}</td>
-                  <td className="px-4 py-3 text-sm">
-                    <div className="flex flex-col gap-1.5">
-                      {entries.map(({ source, category }) => {
-                        const url = sourceUrl(category === 'local-oneoff' ? source : undefined, [source], project);
-                        return (
-                          <div key={source} className="flex flex-row items-center gap-2">
-                            {url ? (
-                              <a href={url} target="_blank" rel="noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-mono text-xs truncate max-w-xs" title={source}>
-                                {source}
-                              </a>
-                            ) : (
-                              <span className="text-gray-500 dark:text-gray-400 font-mono text-xs truncate max-w-xs" title={source}>
-                                {source}
-                              </span>
-                            )}
-                            {sourceCategoryBadge(category)}
-                          </div>
-                        );
-                      })}
-                    </div>
+                  <td className="px-4 py-3 text-xs text-gray-400 dark:text-gray-500 tabular-nums">{i + 1}</td>
+                  <td className="px-4 py-3 text-sm font-semibold text-gray-900 dark:text-white">{row.component}</td>
+                  <td className="px-4 py-3">
+                    <PriorityBar score={roadmapScore(row)} maxScore={maxScore} />
                   </td>
-                  <td className="px-4 py-3 text-sm text-gray-500 dark:text-gray-400">
+                  <td className="px-4 py-3 text-sm tabular-nums text-gray-700 dark:text-gray-300">{row.instances.toLocaleString()}</td>
+                  <td className="px-4 py-3 text-sm tabular-nums text-gray-600 dark:text-gray-400">{row.fileCount}</td>
+                  <td className="px-4 py-3">
+                    <span className={`inline-flex items-center text-xs font-medium px-2 py-0.5 rounded-full ${
+                      breadth >= 4 ? 'bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-300'
+                        : breadth >= 2 ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300'
+                        : 'bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-400'
+                    }`}>
+                      {Math.max(breadth, 1)} team{Math.max(breadth, 1) !== 1 ? 's' : ''}
+                    </span>
+                  </td>
+                  <td className="px-4 py-3 text-sm">
+                    <SourceCell canonicalSource={row.canonicalSource} componentName={row.component} project={project} />
+                  </td>
+                  <td className="px-4 py-3 text-xs text-gray-500 dark:text-gray-400">
                     {teamsDisplay(row.codeOwners)}
                   </td>
                 </tr>
@@ -438,36 +449,198 @@ function CandidatesTable({
             })}
             {rows.length === 0 && (
               <tr>
-                <td colSpan={6} className="px-4 py-8 text-center text-sm text-gray-500 dark:text-gray-400">
-                  No future DS candidates match the current filters.
+                <td colSpan={8} className="px-4 py-10 text-center text-sm text-gray-400 dark:text-gray-500">
+                  No candidates match the current filters.
                 </td>
               </tr>
             )}
           </tbody>
         </table>
       </div>
+    </div>
+  );
+}
+
+// ─── One-off trend chart (Target 6) ──────────────────────────────────────────
+
+function OneoffTrendChart({ timeline }: { timeline: UntrackedProjectTimeline; project: string }) {
+  const chartData = timeline.dates.map((date, i) => ({
+    date,
+    replaceable: timeline.replaceableInstances[i] ?? 0,
+    candidates: timeline.candidateInstances[i] ?? 0,
+    total: (timeline.replaceableInstances[i] ?? 0) + (timeline.candidateInstances[i] ?? 0),
+    trueAdoption: timeline.trueAdoption[i] ?? null,
+  }));
+
+  if (chartData.length < 2) return null;
+
+  // Compute a simple linear trend for the "total one-off instances" line
+  const n = chartData.length;
+  const latestTotal = chartData[n - 1].total;
+  const prevTotal = chartData[n > 4 ? n - 5 : 0].total;
+  const weekSpan = n > 4 ? 4 : n - 1;
+  const weeklyChange = weekSpan > 0 ? Math.round((latestTotal - prevTotal) / weekSpan) : 0;
+  const trend = weeklyChange < 0 ? 'down' : weeklyChange > 0 ? 'up' : 'flat';
+
+  const CustomTooltip = ({ active, payload, label }: any) => {
+    if (!active || !payload?.length) return null;
+    return (
+      <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow p-3 text-xs">
+        <p className="font-semibold text-gray-700 dark:text-gray-200 mb-1">{label}</p>
+        {payload.map((p: any) => (
+          <p key={p.dataKey} style={{ color: p.color }} className="mb-0.5">
+            {p.name}: {p.value != null ? (p.dataKey === 'trueAdoption' ? `${p.value.toFixed(1)}%` : p.value.toLocaleString()) : '—'}
+          </p>
+        ))}
+      </div>
+    );
+  };
+
+  return (
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-5 mb-6">
+      <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
+        <div>
+          <h3 className="text-base font-semibold text-gray-900 dark:text-white">
+            One-off component trend
+          </h3>
+          <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">
+            Total replaceable + candidate instances over time. A falling line means the one-off backlog is shrinking.
+          </p>
+        </div>
+        <div className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium ${
+          trend === 'down'
+            ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/30 dark:text-emerald-300'
+            : trend === 'up'
+            ? 'bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-300'
+            : 'bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-400'
+        }`}>
+          {trend === 'down' ? '↓' : trend === 'up' ? '↑' : '→'}
+          {' '}
+          {Math.abs(weeklyChange)} instances/week {trend === 'down' ? 'reduction' : trend === 'up' ? 'increase' : '(flat)'}
+        </div>
+      </div>
+
+      <ResponsiveContainer width="100%" height={220}>
+        <LineChart data={chartData} margin={{ top: 4, right: 60, left: 0, bottom: 30 }}>
+          <CartesianGrid strokeDasharray="3 3" className="stroke-gray-100 dark:stroke-gray-700" />
+          <XAxis
+            dataKey="date"
+            tick={{ fontSize: 10 }}
+            angle={-40}
+            textAnchor="end"
+            height={48}
+          />
+          <YAxis yAxisId="left" tick={{ fontSize: 10 }} width={48} />
+          <YAxis
+            yAxisId="right"
+            orientation="right"
+            tick={{ fontSize: 10 }}
+            width={36}
+            domain={[0, 100]}
+            tickFormatter={v => `${v}%`}
+          />
+          <Tooltip content={<CustomTooltip />} />
+          <Legend wrapperStyle={{ fontSize: 11 }} />
+
+          <Line
+            yAxisId="left"
+            type="monotone"
+            dataKey="replaceable"
+            name="Replaceable instances"
+            stroke="#10b981"
+            strokeWidth={2}
+            dot={{ r: 2 }}
+            connectNulls
+          />
+          <Line
+            yAxisId="left"
+            type="monotone"
+            dataKey="candidates"
+            name="Candidate instances"
+            stroke="#8b5cf6"
+            strokeWidth={2}
+            dot={{ r: 2 }}
+            connectNulls
+          />
+          <Line
+            yAxisId="left"
+            type="monotone"
+            dataKey="total"
+            name="Total one-off instances"
+            stroke="#f59e0b"
+            strokeWidth={2.5}
+            strokeDasharray="5 3"
+            dot={false}
+            connectNulls
+          />
+          <Line
+            yAxisId="right"
+            type="monotone"
+            dataKey="trueAdoption"
+            name="Overall adoption %"
+            stroke="#3b82f6"
+            strokeWidth={2}
+            dot={false}
+            connectNulls
+          />
+        </LineChart>
+      </ResponsiveContainer>
     </div>
   );
 }
 
 // ─── Project section ──────────────────────────────────────────────────────────
 
-function ProjectSection({ data }: { data: UntrackedData }) {
+function ProjectSection({ data, timeline, migrationPct }: {
+  data: UntrackedData;
+  timeline: UntrackedProjectTimeline | null;
+  /** Migration % from the main scanner (index.js / timeline.json). Used as the authoritative base. */
+  migrationPct: number | null;
+}) {
   const [teamFilter, setTeamFilter] = useState('');
   const [replaceSearch, setReplaceSearch] = useState('');
   const [candidateSearch, setCandidateSearch] = useState('');
-  const [replaceSort, setReplaceSort] = useState<SortState<ReplaceSortField>>({ field: 'instances', dir: 'desc' });
-  const [candidateSort, setCandidateSort] = useState<SortState<CandidateSortField>>({ field: 'instances', dir: 'desc' });
+  const [replaceSort, setReplaceSort] = useState<SortState<ReplaceSortField>>({ field: 'priority', dir: 'desc' });
+  const [candidateSort, setCandidateSort] = useState<SortState<CandidateSortField>>({ field: 'breadth', dir: 'desc' });
 
-  const teams = data.teams ?? [];
+  const teams = useMemo(
+    () => (data.teams ?? []).filter(t => t !== '@unknown'),
+    [data.teams],
+  );
 
-  // Fallback replaceableInstances for old JSON without the field
-  const replaceableInstances = data.summary.replaceableInstances
-    ?? data.replaceableWithMMDS.reduce((s, r) => s + r.instances, 0);
+  // All counts are strict local-oneoff only
+  const replaceableRows = useMemo(() => data.replaceableWithMMDS.filter(isOneoffReplaceable), [data.replaceableWithMMDS]);
+  const candidateRows = useMemo(() => data.futureDSCandidates.filter(isDSCandidate), [data.futureDSCandidates]);
 
-  const addressableGap = data.summary.totalJSXUsages > 0
-    ? ((replaceableInstances / data.summary.totalJSXUsages) * 100).toFixed(1)
-    : '0.0';
+  const replaceableInstances = useMemo(() => replaceableRows.reduce((s, r) => s + r.instances, 0), [replaceableRows]);
+  const candidateInstances = useMemo(() => candidateRows.reduce((s, r) => s + r.instances, 0), [candidateRows]);
+
+  // Migration % comes from the main scanner (index.js / timeline.json) — authoritative source.
+  // Overall adoption extends migration by adding one-off instances to the denominator.
+  const { trackedMMDS, trackedDeprecated } = data.summary;
+  const migrationRate = migrationPct !== null ? migrationPct.toFixed(1) : '—';
+
+  // Overall adoption: MMDS / (MMDS + deprecated + one-off replaceable + one-off candidate instances)
+  // Uses untracked scanner's MMDS/deprecated counts as the best available approximation when
+  // migrationPct is unavailable, otherwise derives from the main scanner total.
+  const trueTotal = trackedMMDS + trackedDeprecated + replaceableInstances + candidateInstances;
+  const trueAdoptionRate = trueTotal > 0 ? ((trackedMMDS / trueTotal) * 100).toFixed(1) : '—';
+
+  // Gap: how much lower is overall adoption than the migration rate?
+  const adoptionGap = migrationPct !== null && trueAdoptionRate !== '—'
+    ? (migrationPct - parseFloat(trueAdoptionRate)).toFixed(1)
+    : '—';
+
+  // Teams that actually have local one-off components
+  const teamsWithOneoffs = useMemo(() => {
+    const owners = new Set<string>();
+    [...replaceableRows, ...candidateRows].forEach(row => {
+      Object.keys(row.codeOwnerBreakdown ?? {}).forEach(o => {
+        if (o !== '@unknown') owners.add(o);
+      });
+    });
+    return owners.size;
+  }, [replaceableRows, candidateRows]);
 
   function toggleReplaceSort(field: ReplaceSortField) {
     setReplaceSort(prev =>
@@ -486,79 +659,112 @@ function ProjectSection({ data }: { data: UntrackedData }) {
   }
 
   const filteredReplaceable = useMemo(
-    () => sortReplaceable(filterRows(data.replaceableWithMMDS.filter(r => r.instances >= 5), teamFilter, replaceSearch), replaceSort),
+    () => sortReplaceable(filterReplaceableRows(data.replaceableWithMMDS, teamFilter, replaceSearch), replaceSort),
     [data.replaceableWithMMDS, teamFilter, replaceSearch, replaceSort],
   );
 
   const filteredCandidates = useMemo(
-    () => sortCandidates(filterRows(data.futureDSCandidates, teamFilter, candidateSearch), candidateSort),
+    () => sortCandidates(filterCandidateRows(data.futureDSCandidates, teamFilter, candidateSearch), candidateSort),
     [data.futureDSCandidates, teamFilter, candidateSearch, candidateSort],
   );
 
   return (
-    <section className="mb-10">
-      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4 capitalize">
-        {data.project}
-      </h2>
+    <section className="mb-12">
+      {/* Section header */}
+      <div className="flex items-center justify-between mb-5">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white capitalize flex items-center gap-3">
+          {data.project === 'mobile' ? '📱' : '🧩'} {data.project}
+        </h2>
+        <span className="text-sm text-gray-400 dark:text-gray-500">{data.date}</span>
+      </div>
+
+      {/* Migration vs Adoption callout */}
+      <div className="mb-5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4 flex flex-wrap items-center gap-6">
+        <div className="flex items-center gap-5">
+          <div>
+            <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Migration</p>
+            <p className="text-2xl font-bold text-gray-900 dark:text-white">{migrationRate}%</p>
+            <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">MMDS ÷ (MMDS + deprecated)</p>
+            <p className="text-xs text-gray-400 dark:text-gray-500">Legacy DS → MMDS progress</p>
+          </div>
+          <div className="text-gray-300 dark:text-gray-600 text-lg">vs</div>
+          <div>
+            <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">Overall adoption</p>
+            <p className="text-2xl font-bold text-amber-600 dark:text-amber-400">{trueAdoptionRate}%</p>
+            <p className="text-xs text-gray-400 dark:text-gray-500 mt-0.5">MMDS ÷ (MMDS + deprecated + one-offs)</p>
+            <p className="text-xs text-gray-400 dark:text-gray-500">All component usage</p>
+          </div>
+        </div>
+        <div className="flex-1 min-w-[180px] text-sm text-gray-500 dark:text-gray-400 border-l border-gray-200 dark:border-gray-700 pl-5 space-y-1">
+          <p>
+            <span className="font-semibold text-gray-700 dark:text-gray-200">Migration</span> tracks only the swap from the old deprecated library to MMDS — it ignores custom one-off components entirely.
+          </p>
+          <p>
+            <span className="font-semibold text-gray-700 dark:text-gray-200">Overall adoption</span> adds those one-offs to the denominator, lowering the rate by{' '}
+            <span className="font-semibold text-amber-600 dark:text-amber-400">{adoptionGap} pp</span>.
+            The {replaceableInstances.toLocaleString()} replaceable instances below are what's driving that gap.
+          </p>
+        </div>
+      </div>
 
       {/* Summary cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-5">
         <SummaryCard
-          title="Untracked Instances"
-          value={data.summary.untrackedTotal.toLocaleString()}
-          subtitle="JSX usages outside MMDS and component library"
+          title="Replace Now"
+          value={replaceableRows.length}
+          subtitle={`${replaceableInstances.toLocaleString()} instances · MMDS equivalent exists`}
+          accent="green"
         />
         <SummaryCard
-          title="Potential Replacements"
-          value={data.summary.replaceableNow}
-          subtitle="Unique components with an MMDS equivalent"
+          title="Introduce to MMDS"
+          value={candidateRows.length}
+          subtitle={`${candidateInstances.toLocaleString()} instances · no DS equivalent yet`}
+          accent="purple"
         />
         <SummaryCard
-          title="Future DS Candidates"
-          value={data.summary.futureDSCandidates}
-          subtitle="No current MMDS equivalent — possible roadmap signals"
+          title="Teams with one-offs"
+          value={teamsWithOneoffs}
+          subtitle="Teams owning replaceable or candidate components"
+          accent="blue"
         />
         <SummaryCard
-          title="Addressable Gap"
-          value={`${addressableGap}%`}
-          subtitle="% of total JSX addressable by MMDS today"
+          title="Adoption gap"
+          value={adoptionGap !== '—' ? `${adoptionGap} pp` : '—'}
+          subtitle={`Migration ${migrationRate}% vs overall adoption ${trueAdoptionRate}% — driven by replaceable one-offs`}
+          accent="amber"
         />
       </div>
 
       {/* Team filter */}
       {teams.length > 0 && (
-        <div className="flex flex-wrap items-center gap-3 mb-5 p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
-          <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Filter by team:</span>
+        <div className="flex items-center gap-3 mb-5 px-4 py-3 bg-white dark:bg-gray-800 rounded-lg shadow">
+          <span className="text-sm text-gray-500 dark:text-gray-400">Filter by team:</span>
           <select
             value={teamFilter}
             onChange={e => setTeamFilter(e.target.value)}
             className="text-sm border border-gray-300 dark:border-gray-600 rounded-md px-3 py-1.5 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500"
           >
             <option value="">All teams</option>
-            {teams.map(t => (
-              <option key={t} value={t}>{formatTeam(t)}</option>
-            ))}
+            {teams.map(t => <option key={t} value={t}>{formatTeam(t)}</option>)}
           </select>
           {teamFilter && (
             <button
               type="button"
               onClick={() => setTeamFilter('')}
-              className="text-xs text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 underline"
+              className="text-xs text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 underline"
             >
-              Clear filter
+              Clear
             </button>
-          )}
-          {teamFilter && (
-            <span className="text-xs text-gray-500 dark:text-gray-400">
-              Showing components owned by <span className="font-medium">{formatTeam(teamFilter)}</span>
-            </span>
           )}
         </div>
       )}
 
+      {/* One-off trend chart */}
+      {timeline && <OneoffTrendChart timeline={timeline} project={data.project} />}
+
       {/* Tables */}
       <div className="space-y-6">
-        <ReplaceableTable
+        <ReplaceNowTable
           rows={filteredReplaceable}
           project={data.project}
           search={replaceSearch}
@@ -566,7 +772,7 @@ function ProjectSection({ data }: { data: UntrackedData }) {
           sort={replaceSort}
           onSort={toggleReplaceSort}
         />
-        <CandidatesTable
+        <DSRoadmapTable
           rows={filteredCandidates}
           project={data.project}
           search={candidateSearch}
@@ -584,6 +790,17 @@ function ProjectSection({ data }: { data: UntrackedData }) {
 export function UntrackedComponents() {
   const { data: mobileData, loading: mobileLoading, error: mobileError } = useUntrackedData('mobile');
   const { data: extensionData, loading: extensionLoading, error: extensionError } = useUntrackedData('extension');
+  const { data: untrackedTimeline } = useUntrackedTimeline();
+  // Main scanner data — authoritative source for migration %
+  const { data: mobileMetrics } = useMetricsData('mobile');
+  const { data: extensionMetrics } = useMetricsData('extension');
+
+  const mobileMigrationPct = mobileMetrics
+    ? parseFloat(mobileMetrics.summary.migrationPercentage)
+    : null;
+  const extensionMigrationPct = extensionMetrics
+    ? parseFloat(extensionMetrics.summary.migrationPercentage)
+    : null;
 
   const loading = mobileLoading || extensionLoading;
   const error = mobileError || extensionError;
@@ -594,11 +811,13 @@ export function UntrackedComponents() {
     return (
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-6">
         <div className="max-w-7xl mx-auto text-center py-20">
-          <p className="text-gray-500 dark:text-gray-400 text-lg">
-            No untracked component data available yet.
-          </p>
+          <p className="text-gray-500 dark:text-gray-400 text-lg">No one-off component data available yet.</p>
           <p className="text-gray-400 dark:text-gray-500 text-sm mt-2">
-            Run <code className="font-mono bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded">yarn discover:extension</code> and <code className="font-mono bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded">yarn discover:mobile</code> to generate data.
+            Run{' '}
+            <code className="font-mono bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded">yarn discover:extension</code>
+            {' '}and{' '}
+            <code className="font-mono bg-gray-100 dark:bg-gray-800 px-1.5 py-0.5 rounded">yarn discover:mobile</code>
+            {' '}to generate data.
           </p>
         </div>
       </div>
@@ -609,41 +828,20 @@ export function UntrackedComponents() {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-6">
       <div className="max-w-7xl mx-auto">
         <header className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-2">
-            Untracked Components
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-1">
+            One-off Components
           </h1>
-          <p className="text-gray-600 dark:text-gray-400">
-            Custom components that bypass the Design System — surfaces opportunities to adopt MMDS equivalents and identifies patterns that could become future DS components.
+          <p className="text-gray-500 dark:text-gray-400 max-w-3xl">
+            Custom components built in-repo that bypass the Design System — platform primitives and third-party packages are excluded. Use <span className="font-medium text-gray-700 dark:text-gray-200">Replace with MMDS today</span> to find migration opportunities, and <span className="font-medium text-gray-700 dark:text-gray-200">Introduce to MMDS</span> to inform the DS roadmap.
           </p>
-          {(mobileData || extensionData) && (
-            <p className="text-sm text-gray-500 dark:text-gray-500 mt-2">
-              Last updated:{' '}
-              {(mobileData?.date ?? extensionData?.date) || '—'}
-            </p>
-          )}
-          <div className="mt-4 flex flex-wrap gap-3">
-            <span className="text-xs text-gray-500 dark:text-gray-400 self-center font-medium">Source types:</span>
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300" title="Component imported from a relative path within the same repo — a local one-off not shared via a package">
-              <span>local-oneoff</span>
-              <span className="text-blue-500 dark:text-blue-400 font-normal">· relative import, repo-local</span>
-            </span>
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300" title="Component imported from a platform primitive package such as react-native, expo, or reanimated">
-              <span>platform-primitive</span>
-              <span className="text-gray-500 dark:text-gray-400 font-normal">· react-native / expo built-in</span>
-            </span>
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300" title="Component imported from a third-party npm package outside MetaMask repos">
-              <span>third-party</span>
-              <span className="text-amber-600 dark:text-amber-400 font-normal">· external npm package</span>
-            </span>
-            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800 dark:bg-purple-900/40 dark:text-purple-300" title="Component imported from multiple source types across different usages">
-              <span>mixed</span>
-              <span className="text-purple-500 dark:text-purple-400 font-normal">· multiple import origins</span>
-            </span>
-          </div>
+          <p className="mt-3 text-xs text-gray-400 dark:text-gray-500">
+            <span className="font-medium text-gray-500 dark:text-gray-400">Priority score</span> = instances × confidence weight (exact ×3, strong ×2, partial ×1).{' '}
+            <span className="font-medium text-gray-500 dark:text-gray-400">Breadth signal</span> = instances × unique teams.
+          </p>
         </header>
 
-        {mobileData && <ProjectSection data={mobileData} />}
-        {extensionData && <ProjectSection data={extensionData} />}
+        {mobileData && <ProjectSection data={mobileData} timeline={untrackedTimeline?.mobile ?? null} migrationPct={mobileMigrationPct} />}
+        {extensionData && <ProjectSection data={extensionData} timeline={untrackedTimeline?.extension ?? null} migrationPct={extensionMigrationPct} />}
       </div>
     </div>
   );

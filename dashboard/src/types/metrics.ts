@@ -210,3 +210,20 @@ export interface UntrackedData {
   replaceableWithMMDS: UntrackedComponent[];
   futureDSCandidates: UntrackedComponent[];
 }
+
+export interface UntrackedProjectTimeline {
+  dates: string[];
+  replaceableCount: number[];
+  replaceableInstances: number[];
+  candidateCount: number[];
+  candidateInstances: number[];
+  trackedMMDS: number[];
+  trackedDeprecated: number[];
+  trueAdoption: (number | null)[];
+}
+
+export interface UntrackedTimeline {
+  generatedAt: string;
+  extension: UntrackedProjectTimeline;
+  mobile: UntrackedProjectTimeline;
+}
