@@ -421,6 +421,7 @@ export function Overview() {
                 codeOwnerStats={mobileCodeOwnerStats}
                 title="Mobile - Code Owner Adoption"
                 threshold={90}
+                codeOwnerTimeline={data.mobile.codeOwnerTimeline}
               />
               <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
                 Disclaimer: Code owner adoption reflects migration stage, not code quality.
@@ -631,6 +632,7 @@ export function Overview() {
                 codeOwnerStats={extensionCodeOwnerStats}
                 title="Extension - Code Owner Adoption"
                 threshold={90}
+                codeOwnerTimeline={data.extension.codeOwnerTimeline}
               />
               <p className="mt-3 text-sm text-gray-600 dark:text-gray-300">
                 Disclaimer: Code owner adoption reflects migration stage, not code quality.
