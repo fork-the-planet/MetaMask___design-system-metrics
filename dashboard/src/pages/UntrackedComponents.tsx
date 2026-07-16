@@ -516,9 +516,6 @@ function OneoffTrendChart({ timeline }: { timeline: UntrackedProjectTimeline; pr
   const weeklyChange = weekSpan > 0 ? Math.round((latestTotal - prevTotal) / weekSpan) : 0;
   const isFlat = Math.abs(weeklyChange) <= 2;
   const trend = isFlat ? 'flat' : weeklyChange < 0 ? 'down' : 'up';
-  const trendTooltip = `Smoothed average over the last ${weekSpan} week${weekSpan !== 1 ? 's' : ''}: `
-    + `${latestTotal.toLocaleString()} instances now vs ${prevTotal.toLocaleString()} then`
-    + (isFlat ? `. A rounded average of ±${Math.abs(weeklyChange)} is treated as flat — use the weekly change chart below for week-by-week detail.` : '.');
 
   const CustomTooltip = ({ active, payload, label }: any) => {
     if (!active || !payload?.length) return null;
